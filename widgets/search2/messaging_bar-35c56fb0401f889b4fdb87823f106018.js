@@ -1,1 +1,0 @@
-pe.MessagingBar=function(a,b){pe.init_widget(this,a);this.message="";this.city_name=b};pe.MessagingBar.prototype.read_search_configuration=function(a){if(a=a.filter_value("message"))this.message=pe.templatize(a,{city:this.city_name})};pe.MessagingBar.prototype.update_display=function(){this.message&&this.container.html(this.message);this.message=""};

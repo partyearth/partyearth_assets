@@ -1,1 +1,0 @@
-with(jqUnit)test("pe.TagsWidget.find_top_level_tags() returns only top-level tags",function(){assert_that(pe.TagsWidget.prototype.filter_top_level_tags({Bar:["Dive Bar","Sushi Bar"],Club:[]}),["Bar","Club"])});

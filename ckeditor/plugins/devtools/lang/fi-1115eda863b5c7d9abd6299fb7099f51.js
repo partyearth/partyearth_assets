@@ -1,1 +1,0 @@
-CKEDITOR.plugins.setLang("devtools","fi",{devTools:{title:"Elementin tiedot",dialogName:"Dialogi-ikkunan nimi",tabName:"V\u00e4lilehden nimi",elementId:"Elementin ID",elementType:"Elementin tyyppi"}});

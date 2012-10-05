@@ -1,1 +1,0 @@
-CKEDITOR.plugins.setLang("uicolor","de",{uicolor:{title:"UI Pipette",preview:"Live-Vorschau",config:"F\u00fcgen Sie diese Zeichenfolge in die 'config.js' Datei.",predefined:"Vordefinierte Farbs\u00e4tze"}});

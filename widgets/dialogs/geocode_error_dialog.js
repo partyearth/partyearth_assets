@@ -1,1 +1,0 @@
-pe.GeocodeErrorDialog=function(a){pe.init_widget(this,null);this.container=$(this.html(a));this.container.appendTo("body");this.container.dialog({title:"Geo system error",modal:!0,resizable:!1,width:300,buttons:{Ok:function(){$(this).remove()}}})};pe.GeocodeErrorDialog.prototype.html=function(a){return"<div>The geocoder returned the error '"+a+"'. Please try again later.</div>"};

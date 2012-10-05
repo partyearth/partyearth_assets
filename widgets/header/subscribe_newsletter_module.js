@@ -1,1 +1,0 @@
-pe.SubscribeNewsletterModule=function(a){a.click(pe.SubscribeNewsletterModule.clicked)};pe.SubscribeNewsletterModule.clicked=function(){new pe.BottombarNewsletterSubscriptionPopup($(".BottomBar .Subscribe"))};

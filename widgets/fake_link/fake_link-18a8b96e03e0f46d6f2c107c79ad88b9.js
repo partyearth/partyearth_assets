@@ -1,1 +1,0 @@
-pe.FakeLink=function(a){pe.init_widget(this,a);this.links=a.find(".FakeLink");this.links.live("click",this.callback(this.goto_link))};pe.FakeLink.prototype.goto_link=function(a){0===$(a.target).closest("a").length&&(a=$(a.currentTarget).data("object_path"))&&this.open_link(""+a)};pe.FakeLink.prototype.open_link=function(a){window.location=a};

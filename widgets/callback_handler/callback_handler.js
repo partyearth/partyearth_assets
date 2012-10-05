@@ -1,1 +1,0 @@
-pe.CallbackHandler=function(){this.callbacks={}};pe.CallbackHandler.prototype.add=function(a,b){this.callbacks[a]||(this.callbacks[a]=[]);this.callbacks[a].push(b)};pe.CallbackHandler.prototype.call=function(a,b){var c=Array.prototype.slice.call(arguments,1);if(this.callbacks[a])return _.each(this.callbacks[a],function(a){a.apply(null,c)}),!0};

@@ -1,1 +1,0 @@
-pe.mouse_position={};pe.mouse_position.x=0;pe.mouse_position.y=0;pe.mouse_position.on_mouse_move=function(a){pe.mouse_position.x=a.pageX;pe.mouse_position.y=a.pageY};pe.mouse_position.track=function(){$("body").mousemove(pe.mouse_position.on_mouse_move)};

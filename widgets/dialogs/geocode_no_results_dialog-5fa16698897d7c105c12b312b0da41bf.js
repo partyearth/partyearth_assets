@@ -1,1 +1,0 @@
-pe.GeocodeNoResultsDialog=function(){pe.init_widget(this,null);this.container=$(this.html());this.container.appendTo("body");this.container.dialog({title:"We were unable to find the address you entered.",modal:!0,resizable:!1,width:300,buttons:{Ok:function(){$(this).remove()}}})};pe.GeocodeNoResultsDialog.prototype.html=function(){return"<div>Please try again.</div>"};
