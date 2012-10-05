@@ -1,0 +1,71 @@
+/*BEGIN NEW IN PHOTO GALLERIES STYLES*/
+/*---------------------------------------------*/
+.latest_reviews.pod_rounded {
+  margin: 0 0 12px;
+  padding: 13px 14px; }
+  .latest_reviews.pod_rounded .title {
+    color: #09F;
+    font-size: 15px;
+    font-weight: bold;
+    margin: 0 0 6px; }
+  .latest_reviews.pod_rounded .headline.sub_headline {
+    display: block;
+    text-decoration: underline;
+    margin: 0 0 7px;
+    font-size: 21px;
+    line-height: 22px;
+    color: #375363; }
+  .latest_reviews.pod_rounded .headline.sub_headline:hover {
+    color: #000; }
+  .latest_reviews.pod_rounded .venue_type.top {
+    padding: 0;
+    margin: 0 0 6px; }
+  .latest_reviews.pod_rounded .object_photo {
+    display: block;
+    margin: 0 0 5px;
+    border: 1px solid #ADC0C9; }
+    .latest_reviews.pod_rounded .object_photo img {
+      display: block;
+      width: 210px;
+      height: 140px; }
+  .latest_reviews.pod_rounded .quick_nav_links {
+    border-bottom: 1px dashed #ADC0C9;
+    padding: 0 0 8px;
+    margin: 0 0 8px; }
+  .latest_reviews.pod_rounded .date {
+    margin: 0px;
+    padding: 0px;
+    text-transform: uppercase;
+    font-size: 10px;
+    line-height: 10px;
+    color: #8EA8B5; }
+  .latest_reviews.pod_rounded .desc {
+    position: relative;
+    height: 106px;
+    overflow: hidden; }
+    .latest_reviews.pod_rounded .desc .ellipses_dots {
+      font-size: 12px;
+      line-height: 15px;
+      background: #fff;
+      position: absolute;
+      right: 0;
+      bottom: -1px;
+      max-width: 334px;
+      height: 15px;
+      overflow: hidden; }
+  .latest_reviews.pod_rounded .other_venues {
+    border-top: 1px solid #ADC0C9;
+    margin: 10px 0 0 0;
+    padding: 6px 0 0 0; }
+    .latest_reviews.pod_rounded .other_venues .venue_item {
+      padding: 0 0 1px;
+      margin: 0 0 5px;
+      border-bottom: 1px dashed #ADC0C9; }
+      .latest_reviews.pod_rounded .other_venues .venue_item .venue_type {
+        text-transform: none;
+        display: block;
+        margin-top: -2px; }
+    .latest_reviews.pod_rounded .other_venues .venue_item:last-of-type {
+      border-bottom: none;
+      margin-bottom: 0;
+      padding-bottom: 0; }

@@ -1,0 +1,28 @@
+/* BEGIN RIGHT COLUMN PROPERTIES
+-------------------------------------------------------------*/
+.get_paid_to_party_content .right_column,
+.users_content .right_column,
+.login_content .right_column {
+  margin: 0 0 0 15px;
+  width: 240px; }
+
+/*FOR MEET THE PARTIERS POD*/
+.meet_partiers {
+  margin: 0 0 12px;
+  padding: 13px 10px; }
+
+.meet_partiers .read_more_txt_link_right {
+  background-position: 86px -2904px;
+  margin: 4px 0 0 5px;
+  display: inline-block; }
+
+.meet_partiers .writer_thumbnail {
+  padding: 0 2px 5px 3px; }
+
+.meet_partiers .writer_thumbnail img {
+  opacity: .85;
+  width: 50px;
+  height: 50px; }
+
+.meet_partiers .writer_thumbnail a:hover img {
+  opacity: 100; }

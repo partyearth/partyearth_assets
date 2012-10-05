@@ -1,0 +1,38 @@
+.share_btn,
+.subscribe_btn,
+.follow_btns {
+  background: url(/assets/common/right_colmun_sprite-b6600341c6410c89695fca7a61add8c8.png) no-repeat transparent;
+  cursor: pointer; }
+
+.share_btn,
+.subscribe_btn,
+.follow_btns {
+  width: 243px;
+  height: 44px;
+  position: relative;
+  right: 0;
+  margin: 0 0 10px; }
+
+.share_btn {
+  background-position: -291px -52px; }
+
+.subscribe_btn {
+  background-position: -291px -102px; }
+
+.follow_btns {
+  background-position: -291px -152px;
+  cursor: default !important; }
+  .follow_btns a {
+    display: block;
+    position: absolute;
+    top: 7px;
+    width: 32px;
+    height: 32px;
+    margin: 0; }
+    .follow_btns a img {
+      width: 32px;
+      height: 32px; }
+  .follow_btns .gig-followbar-providerButton {
+    right: 41px; }
+  .follow_btns .gig-followbar-providerButton-last {
+    right: 5px; }

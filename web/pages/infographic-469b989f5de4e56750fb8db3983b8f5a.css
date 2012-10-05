@@ -1,0 +1,77 @@
+/*BEGIN NAVIGATION CSS*/
+/*---------------------------------------------*/
+/*GENERAL PAGE PROPERTIES*/
+/*---------------------------------------------*/
+/*LEFT COLUMN*/
+/*---------------------------------------------*/
+#left_column {
+  width: 706px; }
+  #left_column .infographic_content .infographic {
+    background: url(/assets/content_bg/grey_stripes_repeat-cf3bc21904c8cc8670f9ffff316802f5.gif) repeat scroll 0 0 transparent;
+    padding: 22px; }
+    #left_column .infographic_content .infographic .image {
+      width: 664px;
+      height: 2216px; }
+  #left_column .infographic_content .embed_infographic {
+    margin: 20px 0 0 0; }
+    #left_column .infographic_content .embed_infographic .headline.sub_headline {
+      font-size: 17px;
+      margin: 0 0 8px; }
+    #left_column .infographic_content .embed_infographic .embed_code {
+      width: 678px;
+      height: 63px;
+      border: 1px solid #c4c4c4;
+      padding: 12px 13px;
+      overflow: hidden;
+      color: #adc0c9;
+      box-shadow: inset 0 0 7px #ccc;
+      white-space: normal; }
+
+/*RIGHT COLUMN*/
+/*---------------------------------------------*/
+#right_column {
+  width: 240px;
+  /*GREAT COCKTAILS PROPERTIES*/
+  /*------------------------------*/ }
+  #right_column .great_cocktail_spots .title {
+    color: #375363;
+    font-size: 24px;
+    line-height: 24px;
+    margin: 0 0 14px; }
+  #right_column .great_cocktail_spots .city_section {
+    margin: 0 0 8px; }
+    #right_column .great_cocktail_spots .city_section p {
+      padding: 0; }
+    #right_column .great_cocktail_spots .city_section .venue_item {
+      margin: 0 0 5px; }
+      #right_column .great_cocktail_spots .city_section .venue_item table td {
+        vertical-align: top; }
+      #right_column .great_cocktail_spots .city_section .venue_item .venue_photo {
+        width: 76px;
+        height: 55px;
+        margin: 0 9px 0 0; }
+        #right_column .great_cocktail_spots .city_section .venue_item .venue_photo img {
+          width: 76px;
+          height: 55px; }
+    #right_column .great_cocktail_spots .city_section .city {
+      background: #D2E2E9;
+      padding: 2px 7px 1px;
+      margin: 0 0 9px;
+      color: #000;
+      font-size: 14px;
+      font-weight: bold; }
+    #right_column .great_cocktail_spots .city_section .inner_divider.dashed {
+      margin: 0 0 11px;
+      height: 11px; }
+    #right_column .great_cocktail_spots .city_section .inner_divider {
+      height: 3px; }
+    #right_column .great_cocktail_spots .city_section .more_link {
+      position: relative;
+      top: -2px; }
+      #right_column .great_cocktail_spots .city_section .more_link .fake_link {
+        color: #6C8898; }
+    #right_column .great_cocktail_spots .city_section .blue_text.arrow {
+      top: 0; }
+/*
+
+*/

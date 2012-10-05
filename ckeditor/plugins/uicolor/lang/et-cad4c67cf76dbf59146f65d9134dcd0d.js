@@ -1,0 +1,1 @@
+CKEDITOR.plugins.setLang("uicolor","et",{uicolor:{title:"V\u00e4rvivalija kasutajaliides",preview:"Automaatne eelvaade",config:"Aseta see s\u00f5ne oma config.js faili.",predefined:"Eelm\u00e4\u00e4ratud v\u00e4rvikomplektid"}});

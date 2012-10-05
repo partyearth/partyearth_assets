@@ -1,0 +1,2 @@
+pe.QueryField=function(a){pe.init_widget(this,a);this.last_query=""};pe.QueryField.prototype.add_search_configuration=function(a){var b=this.get_query();b.length&&a.add_filter("query",b)};pe.QueryField.prototype.get_query=function(){return $.trim(this.container.val().replace(/;/g,""))};pe.QueryField.prototype.is_changed=function(){return this.get_query()!==this.last_query};pe.QueryField.prototype.read_search_configuration=function(a){this.set_query(a.filter_value("query"))};
+pe.QueryField.prototype.set_query=function(a){this.last_query=a;this.container.val(a)};

@@ -1,0 +1,28 @@
+/*BEGIN NEW IN PHOTO GALLERIES STYLES*/
+/*---------------------------------------------*/
+.new_photo_galleries {
+  margin: 0 0 12px;
+  padding: 13px 15px; }
+  .new_photo_galleries .title {
+    margin: 0 0 7px;
+    color: #09F;
+    font-size: 15px;
+    font-weight: bold; }
+  .new_photo_galleries .photo_item {
+    width: 100px;
+    margin: 0 10px 8px 0;
+    padding: 11px 0 0;
+    line-height: 15px;
+    border-top: 1px dashed #ADC0C9; }
+    .new_photo_galleries .photo_item .object_photo {
+      display: block;
+      margin: 0 0 3px;
+      border: 1px solid #ADC0C9; }
+      .new_photo_galleries .photo_item .object_photo img {
+        display: block;
+        width: 98px;
+        height: 65px; }
+  .new_photo_galleries .photo_item.last {
+    margin-right: 0; }
+  .new_photo_galleries .photo_item.bottom {
+    margin-bottom: 0; }

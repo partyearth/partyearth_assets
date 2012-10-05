@@ -1,0 +1,15 @@
+#navbar li.nav_link {
+  position: relative; }
+
+#navbar li.nav_link a span {
+  letter-spacing: -1px;
+  padding: 3px 1px 3px 0; }
+
+div.subnav .left_end {
+  background: url(/assets/content_bg/application_sprite.png) -324px -121px no-repeat; }
+
+div.subnav .divider {
+  background: url(/assets/content_bg/application_sprite.png) -340px -121px no-repeat; }
+
+div.subnav .right_end {
+  background: url(/assets/content_bg/application_sprite.png) -332px -121px no-repeat; }

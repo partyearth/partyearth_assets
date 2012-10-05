@@ -1,0 +1,3 @@
+pe.dependency_manager=new pe.DependencyManager;
+$(document).ready(function(){pe.install_easing();pe.load_google_plus_script();pe.convert_to_rounded_corners();$(".EmbedImage").click(function(){pe.animated_scrolling($("textarea#embed-code"),25)});$("textarea#embed-code").click(function(){$(this).select()});setTimeout(function(){$("#masthead_search").find("input").unbind().click(function(){$(".top_line>.toggle_line>span.open").click()}).css({cursor:"default"});$("ul.main_nav").find("a").click(function(){$(".top_line>.toggle_line>span.open").click()})},150);
+$(".logo_city>a").attr("href","/");setTimeout(function(){pe.init_page_framework()},10)});

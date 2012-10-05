@@ -1,0 +1,1 @@
+pe.SearchResultHotspot=function(b,a,c){pe.init_widget(this,null);this.container=$('<div class="result hotspot"></div>');b.append(this.container);this.container.html(pe.SearchResultVenue.prototype.dom_template(a,c));new pe.SearchResultCharacterRatingModule(this.container.find(".CharacterRating"),a)};

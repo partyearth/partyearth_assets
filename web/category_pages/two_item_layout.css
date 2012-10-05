@@ -1,0 +1,103 @@
+.two_item_layout {
+  width: 706px; }
+  .two_item_layout .spot_item {
+    width: 345px;
+    margin: 0 7px 0 0;
+    padding: 0 7px 0 0;
+    border-right: 1px dotted #ccc; }
+    .two_item_layout .spot_item .headline.sub_headline {
+      font-size: 20px;
+      height: 24px;
+      overflow: hidden; }
+      .two_item_layout .spot_item .headline.sub_headline a, .two_item_layout .spot_item .headline.sub_headline a:visited {
+        text-decoration: underline; }
+    .two_item_layout .spot_item .venue_type {
+      padding: 0;
+      margin: 2px 0 6px 0;
+      line-height: 15px;
+      height: 12px;
+      overflow: hidden; }
+      .two_item_layout .spot_item .venue_type .icon_types {
+        margin: 0 5px 0 0; }
+    .two_item_layout .spot_item .item_img, .two_item_layout .spot_item .item_img img {
+      display: block;
+      width: 345px;
+      height: 230px; }
+    .two_item_layout .spot_item .quick_nav_links {
+      margin: 4px 0 8px;
+      border-bottom: 1px solid #dae4e9; }
+    .two_item_layout .spot_item .desc {
+      position: relative;
+      height: 79px;
+      overflow: hidden;
+      width: 337px; }
+      .two_item_layout .spot_item .desc .blue_tag {
+        background-color: #0099ff;
+        color: #fff;
+        float: left;
+        display: inline-block;
+        font-size: 10px;
+        line-height: 10px;
+        padding: 2px 3px 3px 5px;
+        border-radius: 2px 0 0 2px;
+        position: relative;
+        margin: 0 13px 0 0; }
+        .two_item_layout .spot_item .desc .blue_tag a:link, .two_item_layout .spot_item .desc .blue_tag a:visited {
+          color: #fff;
+          text-decoration: none; }
+        .two_item_layout .spot_item .desc .blue_tag a:hover {
+          text-decoration: none; }
+        .two_item_layout .spot_item .desc .blue_tag .point {
+          width: 1px;
+          height: 0;
+          overflow: hidden;
+          border-top: 8px solid transparent;
+          border-left: 8px solid #0099ff;
+          border-right: 7px solid transparent;
+          border-bottom: 7px solid transparent;
+          position: absolute;
+          right: -15px;
+          bottom: 0; }
+      .two_item_layout .spot_item .desc p {
+        padding: 0; }
+      .two_item_layout .spot_item .desc .info {
+        font-size: 12px;
+        line-height: 16px;
+        color: #000;
+        text-decoration: none;
+        display: block; }
+      .two_item_layout .spot_item .desc .ellipses_dots {
+        font-size: 12px;
+        line-height: 15px;
+        background: #fff;
+        position: absolute;
+        right: 0;
+        bottom: -1px;
+        max-width: 334px;
+        height: 15px;
+        overflow: hidden; }
+      .two_item_layout .spot_item .desc .read_more a, .two_item_layout .spot_item .desc .read_more a:visited {
+        font-size: 11px; }
+    .two_item_layout .spot_item .details p {
+      padding-bottom: 0; }
+    .two_item_layout .spot_item .details .date_time {
+      height: 15px;
+      overflow: hidden; }
+      .two_item_layout .spot_item .details .date_time .small_text {
+        font-size: 16px;
+        line-height: 14px;
+        font-weight: bold;
+        text-transform: inherit; }
+    .two_item_layout .spot_item .details .event_venue {
+      font-size: 15px;
+      margin: 8px 0 0;
+      height: 18px;
+      overflow: hidden; }
+      .two_item_layout .spot_item .details .event_venue .black_link {
+        color: #375363 !important; }
+      .two_item_layout .spot_item .details .event_venue .black_link:hover {
+        color: #000 !important; }
+  .two_item_layout .spot_item.second {
+    margin: 0;
+    padding: 0;
+    border: none; }

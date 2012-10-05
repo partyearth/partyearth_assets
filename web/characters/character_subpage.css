@@ -1,0 +1,243 @@
+/*BEGIN NAVIGATION CSS*/
+#masthead .middle_line .additional_links .link.selected {
+  background: none;
+  box-shadow: none; }
+  #masthead .middle_line .additional_links .link.selected a, #masthead .middle_line .additional_links .link.selected a:visited {
+    color: #597686;
+    text-decoration: underline; }
+  #masthead .middle_line .additional_links .link.selected .point {
+    display: none; }
+#masthead .middle_line .additional_links .link.pe_reviewers {
+  background: #fc8f00;
+  box-shadow: 0 1px 0 #ccc; }
+  #masthead .middle_line .additional_links .link.pe_reviewers a, #masthead .middle_line .additional_links .link.pe_reviewers a:visited {
+    color: #fff;
+    text-decoration: none; }
+  #masthead .middle_line .additional_links .link.pe_reviewers .point {
+    display: block;
+    border-color: #bf6c01 transparent transparent #bf6c01;
+    border-width: 4px;
+    border-style: solid;
+    overflow: hidden;
+    position: absolute;
+    bottom: -8px;
+    right: 0; }
+#masthead .middle_line .additional_links:hover .link.pe_reviewers {
+  background: none;
+  box-shadow: none; }
+  #masthead .middle_line .additional_links:hover .link.pe_reviewers a, #masthead .middle_line .additional_links:hover .link.pe_reviewers a:visited {
+    color: #597686;
+    text-decoration: underline; }
+  #masthead .middle_line .additional_links:hover .link.pe_reviewers .point {
+    display: none; }
+#masthead .middle_line .additional_links:hover .link.pe_reviewers:hover {
+  background: #fc8f00;
+  box-shadow: 0 1px 0 #ccc; }
+  #masthead .middle_line .additional_links:hover .link.pe_reviewers:hover a, #masthead .middle_line .additional_links:hover .link.pe_reviewers:hover a:visited {
+    color: #fff;
+    text-decoration: none; }
+  #masthead .middle_line .additional_links:hover .link.pe_reviewers:hover .point {
+    display: block; }
+
+/*BEGIN GENERAL PAGE PROPERTIES*/
+#character_subpage_content {
+  z-index: 2000; }
+  #character_subpage_content .pod_rounded {
+    padding: 13px 10px; }
+
+/*BEGIN LEFT COLUMN*/
+#left_column {
+  width: 360px; }
+
+#left_column .character_selector {
+  width: 360px;
+  height: 400px;
+  margin: 5px 0 0;
+  background-position: left top;
+  background-repeat: no-repeat; }
+
+#left_column .character_selector.lucas {
+  background-image: url(/assets/characters/lucas_subpage.png); }
+
+#left_column .character_selector.adriana {
+  background-image: url(/assets/characters/adriana_subpage.png); }
+
+#left_column .character_selector.jonah {
+  background-image: url(/assets/characters/jonah_subpage.png); }
+
+#left_column .character_selector.emma {
+  background-image: url(/assets/characters/emma_subpage.png); }
+
+#left_column .character_selector #selections {
+  margin: 0 -6px 0 0;
+  height: 249px; }
+
+#left_column .character_selector #selections .character {
+  background-image: url(/assets/characters/character_select_subpage_sprite.png);
+  display: block; }
+
+#left_column .character_selector #selections #lucas {
+  background-position: 0 0;
+  width: 84px;
+  height: 239px; }
+
+#left_column .character_selector #selections #lucas:hover {
+  background-position: -85px 0; }
+
+#left_column .character_selector #selections #adriana {
+  background-position: -169px 0;
+  width: 60px;
+  height: 239px; }
+
+#left_column .character_selector #selections #adriana:hover {
+  background-position: -229px 0; }
+
+#left_column .character_selector #selections #jonah {
+  background-position: -289px 0;
+  width: 74px;
+  height: 239px; }
+
+#left_column .character_selector #selections #jonah:hover {
+  background-position: -363px 0; }
+
+#left_column .character_selector #selections #emma {
+  background-position: -437px 0;
+  width: 60px;
+  height: 239px; }
+
+#left_column .character_selector #selections #emma:hover {
+  background-position: -495px 0; }
+
+#left_column .character_selector #select_callout {
+  background-image: url(/assets/characters/character_select_subpage_sprite.png);
+  background-position: 0 -239px;
+  background-repeat: no-repeat;
+  color: #FFFFFF;
+  font-size: 20px;
+  height: 58px;
+  margin: 0 -3px 0 0;
+  padding: 28px 30px 0;
+  text-align: center;
+  width: 146px; }
+
+#left_column #character_favorites {
+  height: 159px; }
+
+#left_column #character_favorites p {
+  padding: 0; }
+
+#left_column #fav_desc {
+  width: 340px; }
+
+#left_column #fav_desc #fav_image img {
+  width: 120px;
+  height: 120px; }
+
+#left_column #fav_desc table {
+  margin: 0 0 0 8px;
+  width: 212px; }
+
+#left_column #fav_desc table tr {
+  vertical-align: top;
+  font-size: 8pt;
+  line-height: 11px; }
+
+#left_column #fav_desc table tr td.title {
+  color: #777;
+  padding: 0 8px 0 0; }
+
+#left_column #fav_desc table tr td.divider {
+  height: 5px; }
+
+/*BEGIN CENTER COLUMN */
+#center_column {
+  width: 360px;
+  margin: 0 0 0 15px; }
+
+#personality_desc {
+  min-height: 575px;
+  width: 340px; }
+  #personality_desc .slider {
+    margin: 0 auto; }
+    #personality_desc .slider .nivo-prevNav {
+      left: 0; }
+    #personality_desc .slider .nivo-nextNav {
+      right: 0; }
+  #personality_desc .quick_nav_links {
+    float: right; }
+
+/*BEGIN RIGHT COLUMN*/
+#right_column {
+  width: 240px;
+  margin: 0 0 0 15px; }
+
+#right_column #ad_240x400 {
+  margin: 0 0 2px 0; }
+
+#right_column #find_scene {
+  position: relative;
+  z-index: 2000; }
+
+/*FIND SCENE MODULE*/
+#find_scene #search_filters {
+  width: 220px;
+  height: 128px;
+  overflow: visible;
+  position: relative;
+  z-index: 1000; }
+
+#find_scene #search_filters .headline {
+  margin: 0 0 4px;
+  font-size: 16px;
+  line-height: 16px; }
+
+#find_scene #search_filters .show_me_label {
+  position: absolute;
+  top: 0;
+  left: 0; }
+
+#find_scene #search_filters .city_label {
+  position: absolute;
+  top: 52px;
+  left: 0; }
+
+/*BEGIN DROPDOWNS*/
+#find_scene #search_filters .dropdown_wrapper {
+  position: absolute;
+  width: 220px;
+  left: 0; }
+
+#find_scene #search_filters .dropdown_wrapper.character_dropdown {
+  top: 19px;
+  z-index: 3; }
+
+#find_scene #search_filters .dropdown_wrapper.city_dropdown {
+  top: 71px;
+  z-index: 2; }
+
+#find_scene #search_filters .dropdown_wrapper .dropdown {
+  position: absolute;
+  left: 0;
+  top: 24px;
+  z-index: 1000; }
+
+#find_scene #search_filters .dropdown .choices {
+  position: relative;
+  width: 220px;
+  z-index: 1000;
+  font-size: 11px; }
+
+#find_scene #search_filters .dropdown .Choices.choices {
+  max-height: 54px;
+  overflow: auto;
+  width: 218px; }
+
+#find_scene #search_filters .dropdown .footer_bottom {
+  width: 209px; }
+
+#find_scene #search_filters .go_btn {
+  bottom: -3px;
+  position: absolute;
+  right: 0;
+  /*FOR IE 7*/
+  z-index: 0; }

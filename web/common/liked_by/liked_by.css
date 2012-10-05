@@ -1,0 +1,134 @@
+.personalities .label {
+  color: #8ea8b5;
+  margin-bottom: 2px;
+  font-size: 9px; }
+.personalities div, .personalities p, .personalities span {
+  -moz-user-select: none;
+  user-select: none; }
+
+.persona {
+  background: url(/assets/characters/liked_by_sprite.png) 0 0 no-repeat transparent;
+  width: 27px;
+  height: 31px;
+  margin: 0 4px 0 0;
+  cursor: pointer;
+  position: relative; }
+
+.persona.lucas {
+  background-position: 0 0; }
+
+.persona.lucas .title {
+  color: #4175ab; }
+
+.persona.lucas .dialog_img {
+  background: url(/assets/characters/liked_by_sprite.png) no-repeat transparent;
+  background-position: 0 -209px; }
+
+.persona.lucas:hover {
+  background-position: -201px 0; }
+
+.persona.adriana {
+  background-position: -28px 0; }
+
+.persona.adriana .title {
+  color: #c675b1; }
+
+.persona.adriana .dialog_img {
+  background: url(/assets/characters/liked_by_sprite.png) no-repeat transparent;
+  background-position: -32px -209px; }
+
+.persona.adriana:hover {
+  background-position: -231px 0; }
+
+.persona.jonah {
+  background-position: -56px 0; }
+
+.persona.jonah .title {
+  color: #95c946; }
+
+.persona.jonah .dialog_img {
+  background: url(/assets/characters/liked_by_sprite.png) no-repeat transparent;
+  background-position: -64px -209px; }
+
+.persona.jonah:hover {
+  background-position: -261px 0; }
+
+.persona.emma {
+  background-position: -84px 0; }
+
+.persona.emma .title {
+  color: #ffb637; }
+
+.persona.emma .dialog_img {
+  background: url(/assets/characters/liked_by_sprite.png) no-repeat transparent;
+  background-position: -96px -209px; }
+
+.persona.emma:hover {
+  background-position: -291px 0; }
+
+.persona .dialog_box {
+  background: #889aa4;
+  border: 4px solid #889aa4;
+  border-radius: 4px 4px 4px 4px;
+  -webkit-border-radius: 4px 4px 4px 4px;
+  -moz-border-radius: 4px 4px 4px 4px;
+  z-index: 6000;
+  position: absolute;
+  bottom: 39px;
+  left: -27px; }
+
+.persona .dialog_box .dialog_content_wrapper {
+  background: #f7f9fb;
+  border-radius: 3px 3px 3px 3px;
+  -webkit-border-radius: 3px 3px 3px 3px;
+  -moz-border-radius: 3px 3px 3px 3px;
+  width: 190px;
+  height: auto;
+  color: #000;
+  text-align: left;
+  padding: 9px 16px 14px 7px; }
+
+.persona .dialog_box .dialog_content_wrapper .dialog_img {
+  width: 32px;
+  height: 87px; }
+
+.persona .dialog_box .dialog_content_wrapper .dialog_content {
+  width: 134px;
+  padding: 7px 0 0 11px;
+  font-size: 13px;
+  line-height: 16px; }
+
+.persona .dialog_box .dialog_content_wrapper .dialog_content .title {
+  text-transform: uppercase; }
+
+.persona .dialog_box .dialog_content_wrapper .close_btn, .persona .dialog_box .dialog_content_wrapper .close_btn:hover {
+  background: url(/assets/characters/liked_by_sprite.png) -172px -138px no-repeat transparent;
+  width: 8px;
+  height: 8px;
+  position: absolute;
+  top: 12px;
+  right: 12px; }
+
+.persona .dialog_box .dialog_content_wrapper .point {
+  width: 3px;
+  height: 0;
+  overflow: hidden;
+  border-top: 12px solid #889AA4;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  border-bottom: 12px solid transparent;
+  position: absolute;
+  bottom: -24px;
+  left: 23px; }
+
+.persona .dialog_box .dialog_content_wrapper .inner_point {
+  width: 1px;
+  height: 0;
+  overflow: hidden;
+  border-top: 10px solid #F7F9FB;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  position: absolute;
+  bottom: -18px;
+  left: 26px; }
