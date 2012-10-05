@@ -7,6 +7,7 @@
   .top_section_header .blue_section_divider {
     width: 323px; } }
 .top_section_header {
+  width: 715px;
   padding-bottom: 3px;
   margin-bottom: 8px; }
   .top_section_header .blue_section_divider {
@@ -135,7 +136,9 @@
       margin: 0 0 6px; }
       .top_section_content .featured_item .featured_caption .headline.sub_headline a, .top_section_content .featured_item .featured_caption .headline.sub_headline a:visited {
         color: #fff;
-        text-decoration: none !important; }
+        text-decoration: none; }
+        .top_section_content .featured_item .featured_caption .headline.sub_headline a:hover, .top_section_content .featured_item .featured_caption .headline.sub_headline a:visited:hover {
+          text-decoration: underline; }
     .top_section_content .featured_item .featured_caption .venue_type {
       margin: 0; }
       .top_section_content .featured_item .featured_caption .venue_type .fake_link {

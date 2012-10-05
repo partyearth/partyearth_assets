@@ -1,39 +1,32 @@
 /*BEGIN CAROUSEL*/
 /*------------------------------------------*/
 .three_item_carousel {
-  width: 706px; }
+  width: 706px;
+  /* Override styles from liked_by.scss */ }
   .three_item_carousel .page_count {
     display: inline-block;
-    padding: 2px 0 0 0; }
+    padding: 2px 0 0; }
     .three_item_carousel .page_count .dot {
       float: left;
-      border-radius: 50%;
-      background: #16aeeb;
       width: 8px;
       height: 8px;
       margin-left: 10px;
+      background-color: #16aeeb;
+      border-radius: 50%;
       cursor: pointer; }
-    .three_item_carousel .page_count .dot:hover {
+      .three_item_carousel .page_count .dot:hover {
+        background: #fff; }
+    .three_item_carousel .page_count.slide1 .dot.one {
       background: #fff; }
-  .three_item_carousel .page_count.slide1 .dot.one {
-    background: #fff; }
-  .three_item_carousel .page_count.slide2 .dot.two {
-    background: #fff; }
-  .three_item_carousel .page_count.slide3 .dot.three {
-    background: #fff; }
-  .three_item_carousel .page_count.slide4 .dot.four {
-    background: #fff; }
+    .three_item_carousel .page_count.slide2 .dot.two {
+      background: #fff; }
+    .three_item_carousel .page_count.slide3 .dot.three {
+      background: #fff; }
+    .three_item_carousel .page_count.slide4 .dot.four {
+      background: #fff; }
   .three_item_carousel .scroller_wrapper {
     padding: 8px 0 0 0;
-    position: relative;
-    /*.prev_next_btns.prev_btn.disabled,
-    .prev_next_btns.prev_btn.disabled:hover {
-      background-position:-50px -3040px;
-    }     */
-    /*.prev_next_btns.next_btn.disabled,
-    .prev_next_btns.next_btn.disabled:hover {
-      background-position: -75px -3040px;
-    }     */ }
+    position: relative; }
     .three_item_carousel .scroller_wrapper .screens_container {
       height: 347px;
       overflow: hidden;
@@ -194,6 +187,13 @@
       right: -21px; }
     .three_item_carousel .scroller_wrapper .prev_next_btns.next_btn:hover {
       background-position: -171px -3021px; }
+  .three_item_carousel .personalities .label {
+    float: left;
+    margin: 0 10px 0 0; }
+  .three_item_carousel .persona .dialog_box {
+    right: 0; }
+  .three_item_carousel .persona.emma .point {
+    left: -1px; }
 
 .three_item_carousel.two_line_title .scroller_wrapper .screens_container {
   height: 365px; }

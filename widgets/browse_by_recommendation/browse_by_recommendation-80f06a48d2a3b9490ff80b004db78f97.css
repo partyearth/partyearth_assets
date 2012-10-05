@@ -1,0 +1,226 @@
+.category_interest .headline.sub_headline {
+  margin: 0 0 7px;
+  text-decoration: underline; }
+  .category_interest .headline.sub_headline a:hover {
+    color: #597686; }
+.category_interest .by_line {
+  margin: 0;
+  font-size: 9px;
+  line-height: 11px;
+  text-transform: uppercase;
+  font-family: Arial, sans-serif;
+  color: #6C8898; }
+  .category_interest .by_line .lucas {
+    color: #3375C4; }
+  .category_interest .by_line .adriana {
+    color: #B8529E; }
+  .category_interest .by_line .jonah {
+    color: #95C946; }
+  .category_interest .by_line .emma {
+    color: #ffb637; }
+  .category_interest .by_line a:hover {
+    color: #597686; }
+.category_interest .browse_by_category {
+  width: 502px; }
+  .category_interest .browse_by_category .object_photo {
+    width: 75px;
+    height: 55px;
+    display: block;
+    margin: 0 4px 0 0; }
+  .category_interest .browse_by_category ul {
+    width: 154px;
+    overflow: hidden;
+    height: 60px;
+    position: relative;
+    top: -2px; }
+    .category_interest .browse_by_category ul .object_name {
+      margin: 0 0 3px;
+      text-shadow: 0 0 0.08em #dadada; }
+      .category_interest .browse_by_category ul .object_name a {
+        display: inline-block;
+        padding: 0 0 0 11px; }
+      .category_interest .browse_by_category ul .object_name .hovered {
+        background: url(/assets/content_bg/application_sprite-1aed6ecbc106df7d90482e712d7554b2.png) -114px -273px no-repeat transparent; }
+  .category_interest .browse_by_category .grey_text {
+    color: #375363; }
+  .category_interest .browse_by_category .grey_text:hover {
+    color: #000; }
+  .category_interest .browse_by_category .category_data {
+    width: 235px;
+    margin: 0 22px 0 0; }
+    .category_interest .browse_by_category .category_data .headline.sub_headline {
+      height: 20px;
+      overflow: hidden;
+      font-size: 17px; }
+    .category_interest .browse_by_category .category_data .small_text {
+      display: inline-block;
+      zoom: 1;
+      margin: 8px 0 3px 0; }
+      .category_interest .browse_by_category .category_data .small_text .black_link {
+        color: #aaa !important;
+        text-decoration: underline; }
+      .category_interest .browse_by_category .category_data .small_text .black_link:hover {
+        color: #000 !important; }
+  .category_interest .browse_by_category .category_data.last .inner_divider.dashed {
+    display: none; }
+.category_interest .more_links .label {
+  width: 114px;
+  display: inline-block;
+  zoom: 1; }
+.category_interest .more_links .small_text {
+  line-height: 18px; }
+
+/*MULTI-CATEGORY W/ LARGE THUMB: BROWSE BY  CATEGORY*/
+/*---------------------------------------*/
+.multi_category .category_section {
+  float: left;
+  width: 167px;
+  padding: 0 6px;
+  border-right: 1px dotted #d8d8d8; }
+  .multi_category .category_section .headline.sub_headline {
+    font-size: 17px; }
+  .multi_category .category_section .category_img {
+    display: block; }
+    .multi_category .category_section .category_img img {
+      width: 165px;
+      height: 110px; }
+  .multi_category .category_section .img_name {
+    font-size: 10px;
+    color: #597686;
+    padding: 5px 0 4px;
+    margin: 0 0 5px;
+    border-bottom: 1px solid #dae4e9; }
+    .multi_category .category_section .img_name a, .multi_category .category_section .img_name a:visited {
+      text-decoration: none; }
+    .multi_category .category_section .img_name a:hover {
+      text-decoration: underline; }
+  .multi_category .category_section ul {
+    height: 67px;
+    overflow: hidden; }
+    .multi_category .category_section ul li {
+      margin: 0 0 3px; }
+      .multi_category .category_section ul li .blue_text.arrow {
+        top: -1px;
+        float: left;
+        height: 15px;
+        width: 10px;
+        display: block;
+        text-indent: -20px; }
+      .multi_category .category_section ul li .venue_name,
+      .multi_category .category_section ul li .black_link {
+        float: left;
+        width: 148px;
+        color: #375363 !important;
+        text-decoration: underline;
+        text-shadow: 0 0 0.08em #dadada; }
+      .multi_category .category_section ul li .venue_name:hover,
+      .multi_category .category_section ul li .black_link:hover {
+        color: #000 !important; }
+    .multi_category .category_section ul li:hover .blue_text.arrow,
+    .multi_category .category_section ul .hovered .blue_text.arrow {
+      text-indent: -10px; }
+  .multi_category .category_section ul.venues_5 {
+    height: 110px; }
+  .multi_category .category_section .character_likes {
+    color: #fff;
+    padding: 6px 11px;
+    border-radius: 4px;
+    font-size: 11px;
+    line-height: 14px;
+    margin: 0 0 8px 0;
+    height: 44px; }
+    .multi_category .category_section .character_likes .title {
+      display: block; }
+    .multi_category .category_section .character_likes a, .multi_category .category_section .character_likes a:visited, .multi_category .category_section .character_likes .fake_link {
+      color: #fff;
+      text-decoration: underline; }
+    .multi_category .category_section .character_likes a:hover, .multi_category .category_section .character_likes .fake_link:hover {
+      color: #efefef; }
+  .multi_category .category_section .character_likes.lucas {
+    background: #3375C4; }
+  .multi_category .category_section .character_likes.adriana {
+    background: #B8529E; }
+  .multi_category .category_section .character_likes.jonah {
+    background: #95C946; }
+  .multi_category .category_section .character_likes.emma {
+    background: #ffb637; }
+  .multi_category .category_section .small_text {
+    margin: 0 0 5px;
+    display: block; }
+    .multi_category .category_section .small_text .fake_link {
+      color: #aaa;
+      text-decoration: underline; }
+    .multi_category .category_section .small_text .fake_link:hover {
+      color: #000; }
+  .multi_category .category_section .small_text.lucas .fake_link {
+    color: #3375C4;
+    text-decoration: underline; }
+  .multi_category .category_section .small_text.lucas .fake_link:hover {
+    color: #000; }
+  .multi_category .category_section .small_text.adriana .fake_link {
+    color: #B8529E;
+    text-decoration: underline; }
+  .multi_category .category_section .small_text.adriana .fake_link:hover {
+    color: #000; }
+  .multi_category .category_section .small_text.jonah .fake_link {
+    color: #95C946;
+    text-decoration: underline; }
+  .multi_category .category_section .small_text.jonah .fake_link:hover {
+    color: #000; }
+  .multi_category .category_section .small_text.emma .fake_link {
+    color: #ffb637;
+    text-decoration: underline; }
+  .multi_category .category_section .small_text.emma .fake_link:hover {
+    color: #000; }
+.multi_category .category_section.two_line_title .headline.sub_headline {
+  height: 42px; }
+.multi_category .category_section.five_venues {
+  height: 302px; }
+  .multi_category .category_section.five_venues ul {
+    height: 103px; }
+.multi_category .category_section.three_venues {
+  height: 259px; }
+  .multi_category .category_section.three_venues ul {
+    height: 60px; }
+.multi_category .category_section.featured {
+  background: #f0f3f5;
+  border-right: none;
+  padding: 5px 10px 10px;
+  width: 155px;
+  margin-left: 10px;
+  margin-top: -3px; }
+  .multi_category .category_section.featured .title {
+    color: #0099FF;
+    font-size: 15px;
+    font-weight: bold;
+    margin: 0 0 6px; }
+  .multi_category .category_section.featured .name_and_type {
+    padding: 5px 0 0; }
+    .multi_category .category_section.featured .name_and_type .black_link {
+      font-weight: bold; }
+    .multi_category .category_section.featured .name_and_type .venue_type {
+      padding-bottom: 0;
+      margin-bottom: 3px; }
+  .multi_category .category_section.featured .desc {
+    font-size: 11px;
+    line-height: 14px;
+    padding: 0;
+    height: 97px;
+    overflow: hidden;
+    position: relative; }
+    .multi_category .category_section.featured .desc p {
+      padding: 0; }
+    .multi_category .category_section.featured .desc .ellipses_dots {
+      background: #F0F3F5;
+      position: absolute;
+      bottom: -2px;
+      right: 0; }
+.multi_category .category_section.featured.two_line_title .title {
+  height: 42px; }
+.multi_category .category_section.featured.venues_3 .desc {
+  height: 54px; }
+.multi_category .category_section.first {
+  padding-left: 0; }
+.multi_category .category_section.last {
+  border-right: none;
+  padding-right: 0; }

@@ -205,6 +205,10 @@
     color: #375363;
     font-size: 12px;
     line-height: 15px; }
+  .top_section_content .featured_item .personalities {
+    float: left; }
+    .top_section_content .featured_item .personalities .label {
+      margin-right: 10px; }
 .top_section_content .small_items {
   float: left;
   width: 347px; }
@@ -262,12 +266,7 @@
       left: 180px;
       bottom: 11px;
       width: 167px; }
-      .top_section_content .small_items li .personalities .character_icons {
-        float: right; }
     .top_section_content .small_items li .box_link.calendar {
       position: absolute;
       bottom: 8px;
       left: 172px; }
-.top_section_content .personalities .label {
-  float: left;
-  margin: 0 10px 0 0; }

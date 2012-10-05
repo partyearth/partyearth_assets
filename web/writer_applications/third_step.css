@@ -138,7 +138,7 @@ fieldset input, fieldset select, fieldset textarea {
   margin: 0;
   padding: 5px;
   font-size: 13px;
-  line-height: 18px;
+  line-height: 13px;
   background-color: #fff;
   border: 1px solid #c4c3c3;
   border-radius: 3px;
@@ -292,7 +292,7 @@ div.actions fieldset, .store_action_btns fieldset {
 
 /* SOCIAL LOGIN STYLES
 ------------------------------------
-:: Styles for the social login.
+:: Styles for the social login icons.
 ------------------------------------*/
 #social_login {
   margin: 0 0 40px; }
@@ -302,57 +302,70 @@ div.actions fieldset, .store_action_btns fieldset {
   #social_login .social_icons {
     margin: 0 0 12px; }
     #social_login .social_icons li {
-      display: inline-block; }
-    #social_login .social_icons a {
-      width: 30px;
-      height: 30px;
-      font-size: 12px;
-      line-height: 30px; }
-      #social_login .social_icons a.facebook {
-        width: 143px;
-        padding: 0 0 0 30px;
-        color: #fff;
-        text-decoration: none;
-        text-indent: 0;
-        font-weight: bold; }
-        #social_login .social_icons a.facebook:hover {
-          text-shadow: 0 0 1px #769cd6; }
+      display: inline-block;
+      margin: 0 4px 0 0; }
   #social_login .social_icon {
     display: inline-block;
+    width: 24px;
+    height: 24px;
+    font-size: 12px;
+    line-height: 24px;
+    box-shadow: 0 1px 3px #696969;
+    border-radius: 5px;
     text-indent: -9999px;
     background-image: url(/assets/content_bg/social_login_sprite.png); }
-  #social_login .facebook_login, #social_login .facebook_signup {
-    width: 290px;
-    height: 55px;
-    margin-left: -2px; }
-  #social_login .facebook_login {
+    #social_login .social_icon:hover {
+      box-shadow: 0 2px 3px #1c1c1c; }
+    #social_login .social_icon.facebook, #social_login .social_icon.facebook_big {
+      width: 138px;
+      padding: 0 0 0 30px;
+      color: #fff;
+      text-decoration: none;
+      text-indent: 0;
+      font-weight: bold; }
+      #social_login .social_icon.facebook:hover, #social_login .social_icon.facebook_big:hover {
+        text-shadow: 0 0 1px #769cd6; }
+    #social_login .social_icon.facebook_big {
+      width: 224px;
+      height: 50px;
+      padding: 0 0 0 60px;
+      font-size: 18px;
+      font-weight: normal;
+      text-align: left;
+      line-height: 52px;
+      border-radius: 8px; }
+  #social_login .facebook_big {
     background-position: 0 0; }
-  #social_login .facebook_login:hover {
-    background-position: -292px 0; }
-  #social_login .facebook_signup {
-    background-position: -584px 0; }
-  #social_login .facebook_signup:hover {
-    background-position: -876px 0; }
   #social_login .facebook {
-    background-position: -128px -57px; }
+    background-position: 0 -52px; }
   #social_login .twitter {
-    background-position: 0 -57px; }
+    background-position: -170px -52px; }
   #social_login .google {
-    background-position: -32px -57px; }
+    background-position: -196px -52px; }
   #social_login .foursquare {
-    background-position: -64px -57px; }
+    background-position: -222px -52px; }
+  #social_login .messenger {
+    background-position: -248px -52px; }
+  #social_login .aol {
+    background-position: -274px -52px; }
   #social_login .yahoo {
-    background-position: -96px -57px; }
+    background-position: -300px -52px; }
+  #social_login .facebook_big:hover {
+    background-position: -286px 0; }
   #social_login .facebook:hover {
-    background-position: -128px -89px; }
+    background-position: 0 -78px; }
   #social_login .twitter:hover {
-    background-position: 0 -89px; }
+    background-position: -170px -78px; }
   #social_login .google:hover {
-    background-position: -32px -89px; }
+    background-position: -196px -78px; }
   #social_login .foursquare:hover {
-    background-position: -64px -89px; }
-  #social_login .yahoo:hover {
-    background-position: -96px -89px; }
+    background-position: -222px -78px; }
+  #social_login .messenger:hover {
+    background-position: -248px -78px; }
+  #social_login .aol:hover {
+    background-position: -274px -78px; }
+  #social_login .yahoo:hover:hover {
+    background-position: -300px -78px; }
 #right_column .section_divider,
 .right_container .section_divider {
   height: 6px !important; }

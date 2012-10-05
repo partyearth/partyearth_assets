@@ -260,14 +260,11 @@
 .floating_bar_wrapper {
   display: none !important; }
 
-#footer {
-  /*height:338px !important;*/ }
-
-#module_bottom {
+#footer_content {
   height: 316px !important;
   padding-bottom: 0 !important; }
 
-#module_bottom .pod #guide_img {
+#footer_content .pod #guide_img {
   bottom: -84px !important;
   height: 178px !important; }
 

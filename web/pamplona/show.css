@@ -1456,69 +1456,16 @@ td.right_side.pod_sides {
 
 
 */
-/*BEGIN MASTHEAD CSS*/
-/*------------------------------------------------------------*/
-#masthead .logo_city #site_logo {
-  background: url(/assets/pamplona/pamplona_subpage_sprite.png) 0 -1175px no-repeat transparent;
-  width: 244px;
-  height: 51px; }
-  #masthead .logo_city #site_logo img {
-    display: none; }
-#masthead .top_line .preview_cities .city:hover {
-  color: #cc0000; }
-#masthead .top_line .preview_cities .more_cities_list .blue_link,
-#masthead .top_line .preview_cities .more_cities_list .blue_link:visited {
-  color: #cc0000; }
-#masthead .top_line .preview_cities .more_cities_list .blue_link:hover {
-  color: #597686; }
-#masthead .top_line .preview_cities .more_cities_list .arrow_down {
-  border-color: #cc0000 transparent transparent transparent; }
-#masthead .top_line .preview_cities .more_cities_list .list .close_link .arrow_up {
-  border-color: transparent transparent #cc0000 transparent; }
-#masthead .top_line .preview_cities .more_cities_list .list .close_link .border_link:hover {
-  color: #597686 !important; }
-#masthead .search_nav #masthead_search {
-  background: url(/assets/pamplona/pamplona_subpage_sprite.png) 0 -1282px no-repeat transparent; }
-#masthead .search_nav .main_nav .home.link a, #masthead .search_nav .main_nav .home.link a:hover {
-  background: url(/assets/pamplona/pamplona_subpage_sprite.png) 0 -1240px no-repeat transparent; }
-#masthead .search_nav .main_nav .link_divider {
-  margin: 0 8px; }
-
-/*BEGIN NAVIGATION CSS*/
-/*------------------------------------------------------------*/
-#masthead .search_nav .main_nav .link a,
-#masthead .search_nav .main_nav .link a:visited,
-#welcome_box a:link,
-#welcome_box a:visited,
-.red_links a:link,
-.red_links a:visited,
-.red_links .fake_link {
-  color: #cc0000; }
-
-#masthead .search_nav .main_nav .link a:hover,
-#welcome_box #username a:hover,
-.red_links a:hover,
-.red_links .fake_link:hover {
-  color: #cc0000;
-  text-decoration: underline; }
-
-.red_links .border_link:hover {
-  color: #cc0000 !important; }
-
-.red_links .tab_text:hover {
-  /*To prevent the tab labels from turning red on hover*/
-  color: #212121; }
-
 /*BEGIN GENERAL PROPERTIES*/
 /*------------------------------------------------------------*/
 .read_more_arrow {
-  background: url(/assets/pamplona/pamplona_sprite.png) 0 -1107px no-repeat transparent;
-  width: 26px; }
+  width: 26px;
+  background: url(/assets/pamplona/pamplona_sprite.png) 0 -1107px no-repeat transparent; }
 
 .red_text_arrow {
-  background: url(/assets/pamplona/pamplona_sprite.png) 0 -1092px no-repeat transparent;
-  height: 11px;
   width: 14px;
+  height: 11px;
+  background: url(/assets/pamplona/pamplona_sprite.png) 0 -1092px no-repeat transparent;
   *position: relative;
   *top: -5px;
   *margin: 0 5px 0 0; }
@@ -1526,45 +1473,40 @@ td.right_side.pod_sides {
 .top_left_pods {
   width: 735px; }
 
-/*BEGIN IBIZA SCENE DESC SECTION*/
-/*------------------------------------------*/
+/* BEGIN IBIZA SCENE DESC SECTION
+------------------------------------------*/
 .pamplona_desc {
   width: 240px; }
 
 .pamplona_desc_content {
+  width: 220px;
   height: 381px;
-  overflow: hidden;
-  width: 220px; }
+  overflow: hidden; }
+  .pamplona_desc_content .headline {
+    line-height: 25px;
+    line-height: 23px\9; }
+    .pamplona_desc_content .headline .small_text {
+      font-family: "PT Sans Narrow", arial, sans-serif;
+      font-size: 25px;
+      line-height: 37px;
+      line-height: 37px\9;
+      letter-spacing: -1px \9; }
+  .pamplona_desc_content p {
+    margin: 0;
+    padding: 0; }
+  .pamplona_desc_content .desc_info {
+    position: relative;
+    height: 106px;
+    height: 107px\9;
+    overflow: hidden; }
+  .pamplona_desc_content .schedule_link {
+    background-position: 134px -2904px; }
 
-.pamplona_desc_content .headline {
-  line-height: 25px;
-  line-height: 23px\9; }
-
-.pamplona_desc_content .headline .small_text {
-  font-family: "PT Sans Narrow", arial, sans-serif;
-  font-size: 25px;
-  line-height: 37px;
-  line-height: 37px\9;
-  letter-spacing: -1px \9; }
-
-.pamplona_desc_content p {
-  margin: 0;
-  padding: 0; }
-
-.pamplona_desc_content .desc_info {
-  height: 106px;
-  height: 107px\9;
-  overflow: hidden;
-  position: relative; }
-
-.pamplona_desc_content .schedule_link {
-  background-position: 134px -2904px; }
-
-/*BEGIN VIDEO, PHOTOS, and MAP SECTION*/
-/*------------------------------------------*/
+/* BEGIN VIDEO, PHOTOS, and MAP SECTION
+------------------------------------------*/
 .vid_gal_map {
-  margin: 0 0 0 15px;
-  width: 480px; }
+  width: 480px;
+  margin: 0 0 0 15px; }
 
 .vid_gal_map #videos_info,
 .vid_gal_map #gal_info,
@@ -1572,27 +1514,22 @@ td.right_side.pod_sides {
   height: 360px;
   width: 460px; }
 
-/*FOR VIDEOS*/
-/*-------------------------------*/
+/* FOR VIDEOS
+-------------------------------*/
 #videos_info .video_section.horizontal_width480 .video_title.headline {
   width: 460px; }
 
-/*FOR PHOTOS*/
-/*-------------------------------*/
-/*FOR MAP*/
-/*------------------------------*/
+/* FOR MAP
+------------------------------*/
 #pamplona_city_content .vid_gal_map #map_info .map {
-  border: 1px solid #CCCCCC;
+  width: 458px;
   height: 313px;
-  width: 458px; }
-
+  border: 1px solid #ccc; }
 #pamplona_city_content .city_map .overlay {
   bottom: 40px;
   *bottom: 49px; }
-
 #pamplona_city_content .event_popup .read_more_txt_link_right {
   background: url(/assets/pamplona/pamplona_sprite.png) -4px -1090px no-repeat transparent; }
-
 #pamplona_city_content .map .headline a {
   color: #000; }
 

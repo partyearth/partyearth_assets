@@ -149,7 +149,9 @@
     .upcoming_events.pod_rounded .object_photo img {
       display: block;
       width: 210px;
-      height: 140px; }
+      height: 140px;
+      float: none;
+      /* TODO(VH): Remove float when no longer using rounded corder JS. */ }
   .upcoming_events.pod_rounded .img_name {
     padding: 0 0 6px;
     margin: 0 0 8px;
@@ -541,6 +543,10 @@
     color: #375363;
     font-size: 12px;
     line-height: 15px; }
+  .top_section_content .featured_item .personalities {
+    float: left; }
+    .top_section_content .featured_item .personalities .label {
+      margin-right: 10px; }
 .top_section_content .small_items {
   float: left;
   width: 347px; }
@@ -598,15 +604,10 @@
       left: 180px;
       bottom: 11px;
       width: 167px; }
-      .top_section_content .small_items li .personalities .character_icons {
-        float: right; }
     .top_section_content .small_items li .box_link.calendar {
       position: absolute;
       bottom: 8px;
       left: 172px; }
-.top_section_content .personalities .label {
-  float: left;
-  margin: 0 10px 0 0; }
 .category_interest .headline.sub_headline {
   margin: 0 0 7px;
   text-decoration: underline; }
@@ -616,8 +617,6 @@
   width: 502px; }
   .category_interest .browse_by_category .object_photo {
     display: block;
-    width: 75px;
-    height: 50px;
     margin: 0 4px 0 0; }
     .category_interest .browse_by_category .object_photo img {
       display: block;
@@ -670,30 +669,30 @@
 /*---------------------------------------*/
 .multi_category .category_section {
   float: left;
-  width: 168px;
-  padding: 0 5px;
+  width: 167px;
+  padding: 0 4px;
   border-right: 1px dotted #d8d8d8; }
   .multi_category .category_section .headline.sub_headline {
     font-size: 17px; }
-  .multi_category .category_section .category_img {
+  .multi_category .category_section .object_photo {
+    display: block; }
+  .multi_category .category_section .thumbnail {
     display: block;
     width: 165px;
-    height: 110px; }
-    .multi_category .category_section .category_img img {
-      display: block;
-      width: 165px;
-      height: 110px; }
+    height: 110px;
+    border: 1px solid #ccc;
+    border-radius: 4px; }
   .multi_category .category_section .img_name {
-    margin: 0 0 5px;
-    padding: 5px 0 4px;
-    height: 18px;
-    color: #597686;
     font-size: 10px;
-    border-bottom: 1px solid #dae4e9; }
+    color: #597686;
+    padding: 5px 0 4px;
+    margin: 0 0 5px;
+    border-bottom: 1px solid #dae4e9;
+    height: 18px; }
     .multi_category .category_section .img_name a, .multi_category .category_section .img_name a:visited {
       text-decoration: none; }
-      .multi_category .category_section .img_name a:hover, .multi_category .category_section .img_name a:visited:hover {
-        text-decoration: underline; }
+    .multi_category .category_section .img_name a:hover {
+      text-decoration: underline; }
   .multi_category .category_section ul {
     height: 103px;
     overflow: hidden; }
@@ -721,8 +720,8 @@
 .multi_category .category_section.first {
   padding-left: 0; }
 .multi_category .category_section.last {
-  padding-right: 0;
-  border-right: none; }
+  border-right: none;
+  padding-right: 0; }
 /*BEGIN CUSTOM STYLES*/
 /*---------------------------------------------------------*/
 .Datepicker {

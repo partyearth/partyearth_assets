@@ -589,7 +589,9 @@
     .upcoming_events.pod_rounded .object_photo img {
       display: block;
       width: 210px;
-      height: 140px; }
+      height: 140px;
+      float: none;
+      /* TODO(VH): Remove float when no longer using rounded corder JS. */ }
   .upcoming_events.pod_rounded .img_name {
     padding: 0 0 6px;
     margin: 0 0 8px;

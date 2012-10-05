@@ -1,66 +1,183 @@
-/*BEGIN NAVIGATION CSS*/
+.personalities .label {
+  float: left;
+  margin-bottom: 2px;
+  color: #8ea8b5;
+  font-size: 9px; }
+.personalities div, .personalities p, .personalities span {
+  -moz-user-select: none;
+  user-select: none; }
+
+.character_icons {
+  position: relative;
+  float: right; }
+
+.persona {
+  float: left;
+  width: 27px;
+  height: 31px;
+  margin: 0 0 0 4px;
+  cursor: pointer;
+  background-image: url(/assets/characters/liked_by_sprite.png); }
+  .persona .dialog_box {
+    position: absolute;
+    bottom: 41px;
+    right: -9px;
+    z-index: 6000;
+    background-color: #889aa4;
+    border: 4px solid #889aa4;
+    border-radius: 4px 4px 4px 4px;
+    -webkit-border-radius: 4px 4px 4px 4px;
+    -moz-border-radius: 4px 4px 4px 4px; }
+  .persona .dialog_content_wrapper {
+    width: 190px;
+    height: auto;
+    padding: 9px 7px;
+    color: #000;
+    text-align: left;
+    background-color: #f7f9fb;
+    border-radius: 3px 3px 3px 3px;
+    -webkit-border-radius: 3px 3px 3px 3px;
+    -moz-border-radius: 3px 3px 3px 3px; }
+  .persona .dialog_img {
+    width: 32px;
+    height: 87px;
+    background-image: url(/assets/characters/liked_by_sprite.png); }
+  .persona .dialog_content {
+    width: 134px;
+    padding: 7px 0 0 11px;
+    font-size: 13px;
+    line-height: 16px; }
+    .persona .dialog_content .title {
+      text-transform: uppercase; }
+    .persona .dialog_content p {
+      padding: 0; }
+  .persona .close_btn, .persona .close_btn:hover {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 8px;
+    height: 8px;
+    background-image: url(/assets/characters/liked_by_sprite.png);
+    background-position: -172px -138px; }
+  .persona .point {
+    position: relative;
+    bottom: 11px;
+    left: 1px;
+    width: 0;
+    height: 0;
+    border-top: 12px solid #889AA4;
+    border-right: 12px solid transparent;
+    border-bottom: 12px solid transparent;
+    border-left: 12px solid transparent; }
+  .persona .inner_point {
+    position: absolute;
+    bottom: -5px;
+    left: -10px;
+    z-index: 6001;
+    width: 0;
+    height: 0;
+    border-top: 10px solid #F7F9FB;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    overflow: hidden; }
+  .persona.lucas {
+    background-position: 0 0; }
+    .persona.lucas:hover {
+      background-position: -201px 0; }
+    .persona.lucas .title {
+      color: #4175ab; }
+    .persona.lucas .dialog_img {
+      background-position: 0 -209px; }
+  .persona.adriana {
+    background-position: -28px 0; }
+    .persona.adriana:hover {
+      background-position: -231px 0; }
+    .persona.adriana .title {
+      color: #c675b1; }
+    .persona.adriana .dialog_img {
+      background-position: -32px -209px; }
+  .persona.jonah {
+    background-position: -56px 0; }
+    .persona.jonah:hover {
+      background-position: -261px 0; }
+    .persona.jonah .title {
+      color: #95c946; }
+    .persona.jonah .dialog_img {
+      background-position: -64px -209px; }
+  .persona.emma {
+    background-position: -84px 0; }
+    .persona.emma:hover {
+      background-position: -291px 0; }
+    .persona.emma .title {
+      color: #ffb637; }
+    .persona.emma .dialog_img {
+      background-position: -96px -209px; }
 /*
-Contains all main navigation styles for search page.
+
 */
-/*-------------------------------------------------*/
-/*BEGIN GENERAL SEARCH PAGE PROPERTIES*/
-/*
-Contains all general styles for search page.
-*/
-/*-------------------------------------------------*/
+/* BEGIN NAVIGATION CSS
+-------------------------------------------------
+:: Contains all main navigation styles for search page.
+------------------------------------------------- */
+/* BEGIN GENERAL SEARCH PAGE PROPERTIES
+-------------------------------------------------
+:: Contains all general styles for search page.
+------------------------------------------------- */
 .blue_messaging_bar {
+  margin: -7px 15px 38px;
+  padding: 12px 16px;
+  height: 11px;
   color: #fff;
+  font-size: 18px;
+  line-height: 11px;
   background: -webkit-gradient(linear, 0 0, 0 100%, from(#1a76ce), to(#0098fe));
   background: -moz-linear-gradient(top, #1a76ce, #0098fe);
   -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=#1a76ce, endColorStr=#0098fe);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=#1a76ce, endColorStr=#0098fe);
-  font-size: 18px;
-  height: 11px;
-  line-height: 11px;
-  padding: 12px 16px;
   border-radius: 2px 2px 2px 2px;
-  margin: -7px 15px 38px;
   box-shadow: 0px 1px 2px #628495; }
 
 .location_popup {
+  position: absolute;
+  top: 57px;
+  left: 337px;
+  z-index: 9000;
+  /*IMPORTANT: This insures that the popup displays in front of everything in default and "more" dialogue*/
+  width: 278px;
+  padding: 8px 10px;
+  color: #fff;
   background: -webkit-gradient(linear, 0 0, 0 100%, from(#1977ce), to(#0098fe));
   background: -moz-linear-gradient(top, #1977ce, #0098fe);
   -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=#1977ce, endColorStr=#0098fe);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=#1977ce, endColorStr=#0098fe);
-  border-radius: 2px 2px 2px 2px;
-  color: #fff;
-  left: 337px;
-  padding: 8px 10px;
-  position: absolute;
-  top: 57px;
-  width: 278px;
-  z-index: 9000;
-  /*IMPORTANT: This insures that the popup displays in front of everything in default and "more" dialogue*/ }
+  border-radius: 2px 2px 2px 2px; }
   .location_popup .popup_title {
     margin: 0 0 7px; }
   .location_popup .point {
+    position: absolute;
+    top: -13px;
+    left: 51px;
+    width: 1px;
+    height: 0;
     border-color: transparent transparent #1977ce;
     border-style: solid;
     border-width: 7px;
-    height: 0;
-    left: 51px;
-    overflow: hidden;
-    position: absolute;
-    top: -13px;
-    width: 1px; }
+    overflow: hidden; }
   .location_popup input {
-    padding: 5px;
     width: 268px;
+    padding: 5px;
     border-radius: 3px 3px 3px 3px; }
   .location_popup .inner_divider.dashed {
     border-bottom: 1px dashed #82cafb; }
   .location_popup .close_btn {
-    background: url(/assets/search/search2_sprite.png) -183px -138px no-repeat transparent;
-    width: 8px;
-    height: 8px;
     position: absolute;
     top: 8px;
-    right: 8px; }
+    right: 8px;
+    width: 8px;
+    height: 8px;
+    background-image: url(/assets/search/search2_sprite.png);
+    background-position: -183px -138px; }
   .location_popup .results_title {
     margin: 0 0 10px; }
     .location_popup .results_title .blue_text {
@@ -76,24 +193,23 @@ Contains all general styles for search page.
       text-decoration: underline; }
   .location_popup .fake_link {
     color: #fff; }
-  .location_popup .fake_link:hover {
-    color: #fff;
-    text-decoration: underline !important; }
+    .location_popup .fake_link:hover {
+      text-decoration: underline !important; }
   .location_popup .cancel_link {
     margin: 0 0 0 158px;
     padding: 3px 0 0;
     text-decoration: underline !important; }
   .location_popup .blue_btn {
-    box-shadow: 0 1px 5px #4D6775;
     height: 10px;
+    margin: 0 0 0 15px;
+    padding-top: 3px;
+    font-size: 11px;
+    text-shadow: 0 1px 1px #f2af55;
     background: -webkit-gradient(linear, 0 34%, 0 55%, from(#ff8900), to(#c95200));
     background: -moz-linear-gradient(top, #ff8900, #c95200);
     -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=#ff8900, endColorStr=#c95200);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=#ff8900, endColorStr=#c95200);
-    text-shadow: 0 1px 1px #f2af55;
-    font-size: 11px;
-    margin: 0 0 0 15px;
-    padding-top: 3px;
+    box-shadow: 0 1px 5px #4D6775;
     border: none; }
 
 #search_page {
@@ -108,54 +224,51 @@ Contains all general styles for search page.
     #search_page .search_page_content .black_link {
       display: block;
       text-decoration: none; }
-    #search_page .search_page_content .black_link:hover {
-      color: #000 !important;
-      text-decoration: underline; }
+      #search_page .search_page_content .black_link:hover {
+        color: #000 !important;
+        text-decoration: underline; }
     #search_page .search_page_content .scrolling_filters {
-      /*background:#fff;*/
-      width: 956px;
+      position: absolute;
       z-index: 4000;
-      /*padding:10px 0 0 0;*/
-      position: absolute; }
+      width: 956px; }
       #search_page .search_page_content .scrolling_filters .blue_messaging_bar {
         margin: 0;
         position: relative; }
         #search_page .search_page_content .scrolling_filters .blue_messaging_bar .filter_options {
           font-size: 13px; }
-          #search_page .search_page_content .scrolling_filters .blue_messaging_bar .filter_options .show_hide,
-          #search_page .search_page_content .scrolling_filters .blue_messaging_bar .filter_options .clear_link {
+          #search_page .search_page_content .scrolling_filters .blue_messaging_bar .filter_options .show_hide, #search_page .search_page_content .scrolling_filters .blue_messaging_bar .filter_options .clear_link {
             cursor: pointer;
             text-decoration: underline; }
         #search_page .search_page_content .scrolling_filters .blue_messaging_bar .adv_search_popup {
-          background: url(/assets/search/adv_search_popup.png) top left no-repeat transparent;
-          height: 110px;
-          left: 703px !important;
           position: absolute !important;
           top: -97px !important;
-          width: 228px; }
+          left: 703px !important;
+          width: 228px;
+          height: 110px;
+          background: url(/assets/search/adv_search_popup.png) top left no-repeat transparent; }
           #search_page .search_page_content .scrolling_filters .blue_messaging_bar .adv_search_popup .close_btn {
-            background: none;
-            width: 8px;
-            height: 8px;
             position: absolute;
             right: 23px;
             top: 26px;
-            cursor: pointer; }
+            width: 8px;
+            height: 8px;
+            cursor: pointer;
+            background: none; }
       #search_page .search_page_content .scrolling_filters .category_tabs_wrapper {
         background: #fff;
         padding: 10px 0 14px 0; }
       #search_page .search_page_content .scrolling_filters .result_sections {
-        color: #aaa;
-        margin: 17px 0 0 0; }
+        margin: 17px 0 0 0;
+        color: #aaa; }
         #search_page .search_page_content .scrolling_filters .result_sections .result_tab {
-          text-decoration: none;
           position: relative;
-          font-family: Arial, sans-serif; }
+          font-family: Arial, sans-serif;
+          text-decoration: none; }
           #search_page .search_page_content .scrolling_filters .result_sections .result_tab .title {
-            font-size: 15px;
-            text-decoration: underline;
             display: inline-block;
-            zoom: 1; }
+            zoom: 1;
+            font-size: 15px;
+            text-decoration: underline; }
           #search_page .search_page_content .scrolling_filters .result_sections .result_tab .result_count {
             color: #8ea8b5;
             font-size: 11px; }
@@ -164,25 +277,24 @@ Contains all general styles for search page.
             position: absolute;
             top: -22px;
             left: 21%;
-            width: 0px;
-            height: 0px;
-            overflow: hidden;
+            width: 0;
+            height: 0;
             border-width: 13px;
             border-style: solid;
-            border-color: #0098fe transparent transparent transparent; }
-        #search_page .search_page_content .scrolling_filters .result_sections .result_tab.selected {
-          cursor: default; }
-          #search_page .search_page_content .scrolling_filters .result_sections .result_tab.selected .title {
-            color: #000;
-            text-decoration: none; }
-          #search_page .search_page_content .scrolling_filters .result_sections .result_tab.selected .point {
-            display: block; }
-        #search_page .search_page_content .scrolling_filters .result_sections .result_tab.disabled {
-          cursor: default; }
-          #search_page .search_page_content .scrolling_filters .result_sections .result_tab.disabled .title,
-          #search_page .search_page_content .scrolling_filters .result_sections .result_tab.disabled .result_count {
-            color: #aaa;
-            text-decoration: none; }
+            border-color: #0098fe transparent transparent transparent;
+            overflow: hidden; }
+          #search_page .search_page_content .scrolling_filters .result_sections .result_tab.selected {
+            cursor: default; }
+            #search_page .search_page_content .scrolling_filters .result_sections .result_tab.selected .title {
+              color: #000;
+              text-decoration: none; }
+            #search_page .search_page_content .scrolling_filters .result_sections .result_tab.selected .point {
+              display: block; }
+          #search_page .search_page_content .scrolling_filters .result_sections .result_tab.disabled {
+            cursor: default; }
+            #search_page .search_page_content .scrolling_filters .result_sections .result_tab.disabled .title, #search_page .search_page_content .scrolling_filters .result_sections .result_tab.disabled .result_count {
+              color: #aaa;
+              text-decoration: none; }
         #search_page .search_page_content .scrolling_filters .result_sections .divider {
           margin: 0 4px; }
     #search_page .search_page_content .scrolling_filters.fixed {
@@ -190,19 +302,12 @@ Contains all general styles for search page.
       position: fixed;
       top: -2px; }
       #search_page .search_page_content .scrolling_filters.fixed .shadow {
-        border-top: 1px solid #c0c9ce;
+        height: 15px;
         background: url(/assets/search/search2_sprite.png) 0 -622px repeat-x transparent;
-        /*background: -webkit-gradient(linear, 0 34%, 0 55%, from(#e8ecee), to(#fbfcfc));*/
-        /*background: -moz-linear-gradient(top, #e8ecee, #fbfcfc);*/
-        /*-ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=#e8ecee, endColorStr=#fbfcfc);*/
-        /*filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=#e8ecee, endColorStr=#fbfcfc);*/
-        height: 15px; }
+        border-top: 1px solid #c0c9ce; }
     #search_page .search_page_content .search_filters {
       position: relative;
-      width: 956px;
-      /*960px*/
-      /*Place this back in to fix loading overlay issue having higher z-index than filters*/
-      /*z-index:4000;*/ }
+      width: 956px; }
       #search_page .search_page_content .search_filters .filters {
         min-height: 118px;
         padding: 0 0 5px;
@@ -216,7 +321,6 @@ Contains all general styles for search page.
           margin: -1px 3px 10px 0px;
           width: 156px;
           height: 113px;
-          /*overflow: hidden;*/
           border-top: 1px dashed #CCC;
           padding: 12px 0 0;
           /*FOR IE7*/
@@ -226,18 +330,18 @@ Contains all general styles for search page.
             color: #375363;
             margin: 0 0 5px;
             font-weight: bold; }
-          #search_page .search_page_content .search_filters .filters .filter_set .filter_header:hover {
-            text-decoration: underline;
-            cursor: pointer; }
-          #search_page .search_page_content .search_filters .filters .filter_set .filter_header.no_hover:hover {
-            text-decoration: none;
-            cursor: default; }
+            #search_page .search_page_content .search_filters .filters .filter_set .filter_header:hover {
+              text-decoration: underline;
+              cursor: pointer; }
+            #search_page .search_page_content .search_filters .filters .filter_set .filter_header.no_hover:hover {
+              text-decoration: none;
+              cursor: default; }
           #search_page .search_page_content .search_filters .filters .filter_set .more_filters {
             color: #97adb7;
             text-decoration: underline;
             cursor: pointer; }
-          #search_page .search_page_content .search_filters .filters .filter_set .more_filters:hover {
-            color: #000; }
+            #search_page .search_page_content .search_filters .filters .filter_set .more_filters:hover {
+              color: #000; }
           #search_page .search_page_content .search_filters .filters .filter_set .StartDate {
             margin: 0 0 0 7px; }
           #search_page .search_page_content .search_filters .filters .filter_set .StartDate, #search_page .search_page_content .search_filters .filters .filter_set .EndDate {
@@ -271,10 +375,9 @@ Contains all general styles for search page.
               font-size: 10px;
               line-height: 10px;
               height: 19px; }
-          #search_page .search_page_content .search_filters .filters .filter_set .editable_textarea:hover {
-            color: #597686; }
-          #search_page .search_page_content .search_filters .filters .filter_set .editable_textarea,
-          #search_page .search_page_content .search_filters .filters .filter_set label {
+            #search_page .search_page_content .search_filters .filters .filter_set .editable_textarea:hover {
+              color: #597686; }
+          #search_page .search_page_content .search_filters .filters .filter_set .editable_textarea, #search_page .search_page_content .search_filters .filters .filter_set label {
             position: absolute;
             top: 1px;
             padding: 0 0 0 4px !important;
@@ -326,14 +429,7 @@ Contains all general styles for search page.
     #search_page .search_page_content .options_bar {
       color: #597686;
       height: 21px;
-      /*-moz-border-radius:0 0 4px 4px;*/
-      /*border-radius: 0 0 4px 4px;*/
-      /*-webkit-border-radius:0 0 4px 4px;*/
       padding: 5px 8px 5px;
-      /*border-top:1px solid #c3ccd0;*/
-      /*#ccd3d8*/
-      /*border-left:1px solid #e4eaed;*/
-      /*border-right:1px solid #e4eaed;*/
       border-bottom: 1px solid #fff;
       /*#d6dfe4*/
       position: relative;
@@ -348,7 +444,6 @@ Contains all general styles for search page.
         *height: 18px; }
       #search_page .search_page_content .options_bar .dropdowns_pagination {
         background: #e3ebef;
-        /*background:url(/assets/search/search2_sprite.png) 0 -564px repeat-x transparent;*/
         width: 569px;
         padding: 5px 8px 5px 8px;
         position: absolute;
@@ -361,7 +456,6 @@ Contains all general styles for search page.
         #search_page .search_page_content .options_bar .sort_by select {
           width: 96px; }
       #search_page .search_page_content .options_bar .mini_paginator_container {
-        /*width:352px;*/
         width: 347px;
         position: relative;
         top: 2px; }
@@ -389,25 +483,25 @@ Contains all general styles for search page.
         #search_page .search_page_content .options_bar .mini_paginator .prev_btn {
           background-position: -144px -8px;
           margin: 0 0 0 16px; }
-        #search_page .search_page_content .options_bar .mini_paginator .prev_btn:hover {
-          background-position: -123px -8px; }
-        #search_page .search_page_content .options_bar .mini_paginator .prev_btn.disabled {
-          background-position: -144px -25px;
-          cursor: default !important; }
+          #search_page .search_page_content .options_bar .mini_paginator .prev_btn:hover {
+            background-position: -123px -8px; }
+          #search_page .search_page_content .options_bar .mini_paginator .prev_btn.disabled {
+            background-position: -144px -25px;
+            cursor: default !important; }
         #search_page .search_page_content .options_bar .mini_paginator .next_btn {
           background-position: -172px -8px; }
-        #search_page .search_page_content .options_bar .mini_paginator .next_btn:hover {
-          background-position: -123px -25px; }
-        #search_page .search_page_content .options_bar .mini_paginator .next_btn.disabled {
-          background-position: -172px -25px;
-          cursor: default !important; }
+          #search_page .search_page_content .options_bar .mini_paginator .next_btn:hover {
+            background-position: -123px -25px; }
+          #search_page .search_page_content .options_bar .mini_paginator .next_btn.disabled {
+            background-position: -172px -25px;
+            cursor: default !important; }
       #search_page .search_page_content .options_bar .display_arrows {
         position: relative;
         top: 1px; }
       #search_page .search_page_content .options_bar .fake_link {
         color: #597686; }
-      #search_page .search_page_content .options_bar .fake_link:hover {
-        color: #375363; }
+        #search_page .search_page_content .options_bar .fake_link:hover {
+          color: #375363; }
       #search_page .search_page_content .options_bar .clear_link {
         margin: 4px 0 0 0;
         text-decoration: underline;
@@ -420,39 +514,19 @@ Contains all general styles for search page.
         cursor: pointer;
         background: url(/assets/search/search2_sprite.png) 0 -348px no-repeat transparent;
         width: 174px;
-        height: 31px;
-        /*.triangle {*/
-        /*height:27px;*/
-        /*width:41px;*/
-        /*}*/
-        /*.text_wrapper {*/
-        /*color:#fff;*/
-        /*background: -webkit-gradient(linear, 0 0, 0 100%, from(#0098fe), to(#1977ce));*/
-        /*background: -moz-linear-gradient(top, #0098fe, #1977ce);*/
-        /*-ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=#0098fe, endColorStr=#1977ce);*/
-        /*filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=#0098fe, endColorStr=#1977ce);*/
-        /*height: 17px;*/
-        /*border-radius: 0 0 2px 0;*/
-        /*padding: 5px 17px 5px 0;*/
-        /*.label {*/
-        /*text-decoration: underline;*/
-        /*font-family: 'PT Sans', arial, sans-serif;*/
-        /*line-height: 16px;*/
-        /*font-size: 10px;*/
-        /*}*/
-        /*}*/ }
+        height: 31px; }
       #search_page .search_page_content .options_bar .options_toggle.closed {
         background-position: 0 -348px; }
-      #search_page .search_page_content .options_bar .options_toggle.closed:hover {
-        background-position: 0 -380px; }
-      #search_page .search_page_content .options_bar .options_toggle.closed:active {
-        background-position: 0 -412px; }
+        #search_page .search_page_content .options_bar .options_toggle.closed:hover {
+          background-position: 0 -380px; }
+        #search_page .search_page_content .options_bar .options_toggle.closed:active {
+          background-position: 0 -412px; }
       #search_page .search_page_content .options_bar .options_toggle.opened {
         background-position: 0 -444px; }
-      #search_page .search_page_content .options_bar .options_toggle.opened:hover {
-        background-position: 0 -476px; }
-      #search_page .search_page_content .options_bar .options_toggle.opened:active {
-        background-position: 0 -508px; }
+        #search_page .search_page_content .options_bar .options_toggle.opened:hover {
+          background-position: 0 -476px; }
+        #search_page .search_page_content .options_bar .options_toggle.opened:active {
+          background-position: 0 -508px; }
     #search_page .search_page_content .column_wrapper {
       position: relative; }
       #search_page .search_page_content .column_wrapper .spinner_overlay {
@@ -514,10 +588,10 @@ Contains all general styles for search page.
               left: -21px;
               bottom: -16px;
               z-index: 1000; }
-            #search_page .search_page_content .left_column .search_result .result_content .top_left_section .result_image .schedule_icon.team {
-              background-position: -296px -41px; }
-            #search_page .search_page_content .left_column .search_result .result_content .top_left_section .result_image .schedule_icon.performer {
-              background-position: -232px -41px; }
+              #search_page .search_page_content .left_column .search_result .result_content .top_left_section .result_image .schedule_icon.team {
+                background-position: -296px -41px; }
+              #search_page .search_page_content .left_column .search_result .result_content .top_left_section .result_image .schedule_icon.performer {
+                background-position: -232px -41px; }
           #search_page .search_page_content .left_column .search_result .result_content .top_left_section .inner_content {
             position: relative;
             width: 301px;
@@ -539,12 +613,12 @@ Contains all general styles for search page.
                 margin: 0 7px 0 0;
                 letter-spacing: 1px;
                 font-family: Verdana, sans-serif; }
-              #search_page .search_page_content .left_column .search_result .result_content .top_left_section .inner_content .tag_type_desc .result_tag.venue {
-                background: #545454; }
-              #search_page .search_page_content .left_column .search_result .result_content .top_left_section .inner_content .tag_type_desc .result_tag.event {
-                background: #09F; }
-              #search_page .search_page_content .left_column .search_result .result_content .top_left_section .inner_content .tag_type_desc .result_tag.performer {
-                background: #adc0c9; }
+                #search_page .search_page_content .left_column .search_result .result_content .top_left_section .inner_content .tag_type_desc .result_tag.venue {
+                  background: #545454; }
+                #search_page .search_page_content .left_column .search_result .result_content .top_left_section .inner_content .tag_type_desc .result_tag.event {
+                  background: #09F; }
+                #search_page .search_page_content .left_column .search_result .result_content .top_left_section .inner_content .tag_type_desc .result_tag.performer {
+                  background: #adc0c9; }
               #search_page .search_page_content .left_column .search_result .result_content .top_left_section .inner_content .tag_type_desc .result_types {
                 font-size: 9px;
                 line-height: 11px;
@@ -568,7 +642,6 @@ Contains all general styles for search page.
           padding: 0 9px 52px 9px;
           min-height: 64px;
           border-left: 1px solid #ADC0C9;
-          /*border-left: 1px solid #DAE4E9;*/
           color: #6C8898;
           text-align: right;
           line-height: 14px;
@@ -588,8 +661,8 @@ Contains all general styles for search page.
             line-height: 14px;
             font-family: 'PT Sans', arial, sans-serif;
             color: #597686; }
-          #search_page .search_page_content .left_column .search_result .result_content .top_right_section .result_venue:hover {
-            color: #375363; }
+            #search_page .search_page_content .left_column .search_result .result_content .top_right_section .result_venue:hover {
+              color: #375363; }
           #search_page .search_page_content .left_column .search_result .result_content .top_right_section .result_address {
             line-height: 14px; }
           #search_page .search_page_content .left_column .search_result .result_content .top_right_section .personalities {
@@ -599,107 +672,6 @@ Contains all general styles for search page.
             width: 131px; }
             #search_page .search_page_content .left_column .search_result .result_content .top_right_section .personalities .label {
               margin: 0 0 3px; }
-            #search_page .search_page_content .left_column .search_result .result_content .top_right_section .personalities .persona {
-              background: url(/assets/search/search2_sprite.png) 0 0 no-repeat transparent;
-              width: 27px;
-              height: 31px;
-              margin: 0 0 0 4px;
-              cursor: pointer;
-              position: relative; }
-              #search_page .search_page_content .left_column .search_result .result_content .top_right_section .personalities .persona .dialog_box {
-                background: #889aa4;
-                border: 4px solid #889aa4;
-                border-radius: 4px 4px 4px 4px;
-                -webkit-border-radius: 4px 4px 4px 4px;
-                -moz-border-radius: 4px 4px 4px 4px;
-                z-index: 6000;
-                position: absolute;
-                bottom: 39px;
-                left: -27px; }
-                #search_page .search_page_content .left_column .search_result .result_content .top_right_section .personalities .persona .dialog_box .dialog_content_wrapper {
-                  background: #f7f9fb;
-                  border-radius: 3px 3px 3px 3px;
-                  -webkit-border-radius: 3px 3px 3px 3px;
-                  -moz-border-radius: 3px 3px 3px 3px;
-                  width: 190px;
-                  height: auto;
-                  color: #000;
-                  text-align: left;
-                  padding: 9px 16px 14px 7px; }
-                  #search_page .search_page_content .left_column .search_result .result_content .top_right_section .personalities .persona .dialog_box .dialog_content_wrapper .dialog_img {
-                    width: 32px;
-                    height: 87px; }
-                  #search_page .search_page_content .left_column .search_result .result_content .top_right_section .personalities .persona .dialog_box .dialog_content_wrapper .dialog_content {
-                    width: 134px;
-                    padding: 7px 0 0 11px;
-                    font-size: 13px;
-                    line-height: 16px; }
-                    #search_page .search_page_content .left_column .search_result .result_content .top_right_section .personalities .persona .dialog_box .dialog_content_wrapper .dialog_content .title {
-                      text-transform: uppercase; }
-                  #search_page .search_page_content .left_column .search_result .result_content .top_right_section .personalities .persona .dialog_box .dialog_content_wrapper .close_btn,
-                  #search_page .search_page_content .left_column .search_result .result_content .top_right_section .personalities .persona .dialog_box .dialog_content_wrapper .close_btn:hover {
-                    background: url(/assets/search/search2_sprite.png) -172px -138px no-repeat transparent;
-                    width: 8px;
-                    height: 8px;
-                    position: absolute;
-                    top: 12px;
-                    right: 12px; }
-                  #search_page .search_page_content .left_column .search_result .result_content .top_right_section .personalities .persona .dialog_box .dialog_content_wrapper .point {
-                    width: 3px;
-                    height: 0;
-                    overflow: hidden;
-                    border-top: 12px solid #889AA4;
-                    border-left: 12px dotted transparent;
-                    border-right: 12px dotted transparent;
-                    position: absolute;
-                    bottom: -12px;
-                    left: 23px; }
-                  #search_page .search_page_content .left_column .search_result .result_content .top_right_section .personalities .persona .dialog_box .dialog_content_wrapper .inner_point {
-                    width: 1px;
-                    height: 0;
-                    overflow: hidden;
-                    border-top: 10px solid #F7F9FB;
-                    border-left: 10px dotted transparent;
-                    border-right: 10px dotted transparent;
-                    position: absolute;
-                    bottom: -8px;
-                    left: 26px; }
-            #search_page .search_page_content .left_column .search_result .result_content .top_right_section .personalities .persona.lucas {
-              background-position: 0 0; }
-              #search_page .search_page_content .left_column .search_result .result_content .top_right_section .personalities .persona.lucas .title {
-                color: #4175ab; }
-              #search_page .search_page_content .left_column .search_result .result_content .top_right_section .personalities .persona.lucas .dialog_img {
-                background: url(/assets/search/search2_sprite.png) no-repeat transparent;
-                background-position: 0 -209px; }
-            #search_page .search_page_content .left_column .search_result .result_content .top_right_section .personalities .persona.lucas:hover {
-              background-position: -201px 0; }
-            #search_page .search_page_content .left_column .search_result .result_content .top_right_section .personalities .persona.adriana {
-              background-position: -28px 0; }
-              #search_page .search_page_content .left_column .search_result .result_content .top_right_section .personalities .persona.adriana .title {
-                color: #c675b1; }
-              #search_page .search_page_content .left_column .search_result .result_content .top_right_section .personalities .persona.adriana .dialog_img {
-                background: url(/assets/search/search2_sprite.png) no-repeat transparent;
-                background-position: -32px -209px; }
-            #search_page .search_page_content .left_column .search_result .result_content .top_right_section .personalities .persona.adriana:hover {
-              background-position: -231px 0; }
-            #search_page .search_page_content .left_column .search_result .result_content .top_right_section .personalities .persona.jonah {
-              background-position: -56px 0; }
-              #search_page .search_page_content .left_column .search_result .result_content .top_right_section .personalities .persona.jonah .title {
-                color: #95c946; }
-              #search_page .search_page_content .left_column .search_result .result_content .top_right_section .personalities .persona.jonah .dialog_img {
-                background: url(/assets/search/search2_sprite.png) no-repeat transparent;
-                background-position: -64px -209px; }
-            #search_page .search_page_content .left_column .search_result .result_content .top_right_section .personalities .persona.jonah:hover {
-              background-position: -261px 0; }
-            #search_page .search_page_content .left_column .search_result .result_content .top_right_section .personalities .persona.emma {
-              background-position: -84px 0; }
-              #search_page .search_page_content .left_column .search_result .result_content .top_right_section .personalities .persona.emma .title {
-                color: #ffb637; }
-              #search_page .search_page_content .left_column .search_result .result_content .top_right_section .personalities .persona.emma .dialog_img {
-                background: url(/assets/search/search2_sprite.png) no-repeat transparent;
-                background-position: -96px -209px; }
-            #search_page .search_page_content .left_column .search_result .result_content .top_right_section .personalities .persona.emma:hover {
-              background-position: -291px 0; }
           #search_page .search_page_content .left_column .search_result .result_content .top_right_section .calendar_btn {
             font-family: 'PT Sans', arial, sans-serif;
             text-align: left;

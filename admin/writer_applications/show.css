@@ -277,7 +277,10 @@ form.formtastic .choices-group {
 /*Pre-screen Writer Application Interview show page*/
 /*---------------------------------------------------------------------*/
 .attachments {
-  width: 240px; }
+  width: 250px; }
+  .attachments img {
+    display: block;
+    width: 250px; }
 
 .personal_info {
   width: 435px; }
@@ -485,10 +488,6 @@ form.formtastic .choices-group {
 .admin_info table caption {
   font-size: 16px;
   line-height: 120%; }
-.admin_info table th.review_object {
-  width: 50%; }
-.admin_info table th.review_date {
-  text-align: right; }
 
 .admin_info tr {
   -webkit-transition: all 0.5s ease-out;
@@ -966,3 +965,18 @@ form.formtastic .choices-group {
 
 
 */
+th.review_object {
+  width: 50%; }
+
+th.review_date {
+  text-align: right; }
+
+#photo_app_photos li {
+  float: left;
+  margin: 0 9px 9px 0; }
+  #photo_app_photos li:nth-child(4n) {
+    margin-right: 0; }
+#photo_app_photos img {
+  display: block;
+  width: 100px;
+  height: 100px; }

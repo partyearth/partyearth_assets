@@ -105,47 +105,49 @@
 /*---------------------------------------------*/
 #left_column {
   width: 707px; }
-  #left_column .metros_content .headline a, #left_column .metros_content .headline a:visited {
-    text-decoration: underline; }
-  #left_column .metros_content .more_links ul {
-    display: inline; }
-    #left_column .metros_content .more_links ul li {
-      display: inline;
-      margin: 0 10px 0 0;
-      font-size: 11px;
-      line-height: 18px; }
-      #left_column .metros_content .more_links ul li .black_link {
-        color: #0099ff !important;
-        text-decoration: underline; }
-      #left_column .metros_content .more_links ul li .black_link:hover {
-        color: #597686 !important; }
-  #left_column .metros_content .multi_category .category_section {
-    min-height: 280px;
-    height: 100%; }
-    #left_column .metros_content .multi_category .category_section ul {
-      height: 81px; }
-  #left_column .metros_content .browse_by_interest {
-    width: 135px;
-    padding: 5px 16px 2px; }
-    #left_column .metros_content .browse_by_interest .headline.sub_headline {
-      font-size: 15px;
-      line-height: 17px;
-      margin: 0 0 2px; }
-    #left_column .metros_content .browse_by_interest ul li {
-      font-size: 13px; }
-      #left_column .metros_content .browse_by_interest ul li .fake_link {
-        color: #375363;
-        text-decoration: underline; }
-      #left_column .metros_content .browse_by_interest ul li .fake_link:hover {
-        color: #000; }
-  #left_column .more_link {
-    padding: 0;
-    margin: 5px 0;
-    font-family: "Arial";
-    font-size: 14px;
-    font-weight: bold; }
-    #left_column .more_link a, #left_column .more_link .fake_link {
+
+.metros_content .headline a, .metros_content .headline a:visited {
+  text-decoration: underline; }
+.metros_content .more_links ul {
+  display: inline; }
+  .metros_content .more_links ul li {
+    display: inline;
+    margin: 0 10px 0 0;
+    font-size: 11px;
+    line-height: 18px; }
+    .metros_content .more_links ul li .black_link {
+      color: #0099ff !important;
       text-decoration: underline; }
+    .metros_content .more_links ul li .black_link:hover {
+      color: #597686 !important; }
+.metros_content .multi_category .category_section {
+  min-height: 280px;
+  height: 100%; }
+  .metros_content .multi_category .category_section ul {
+    height: 81px; }
+.metros_content .browse_by_interest {
+  width: 135px;
+  padding: 5px 16px 2px; }
+  .metros_content .browse_by_interest .headline.sub_headline {
+    font-size: 15px;
+    line-height: 17px;
+    margin: 0 0 2px; }
+  .metros_content .browse_by_interest ul li {
+    font-size: 13px; }
+    .metros_content .browse_by_interest ul li .fake_link {
+      color: #375363;
+      text-decoration: underline; }
+    .metros_content .browse_by_interest ul li .fake_link:hover {
+      color: #000; }
+
+.more_link {
+  padding: 0;
+  margin: 5px 0;
+  font-family: "Arial";
+  font-size: 14px;
+  font-weight: bold; }
+  .more_link a, .more_link .fake_link {
+    text-decoration: underline; }
 
 /*RIGHT COLUMN*/
 /*---------------------------------------------*/
@@ -160,6 +162,7 @@
   .top_section_header .blue_section_divider {
     width: 323px; } }
 .top_section_header {
+  width: 715px;
   padding-bottom: 3px;
   margin-bottom: 8px; }
   .top_section_header .blue_section_divider {
@@ -288,7 +291,9 @@
       margin: 0 0 6px; }
       .top_section_content .featured_item .featured_caption .headline.sub_headline a, .top_section_content .featured_item .featured_caption .headline.sub_headline a:visited {
         color: #fff;
-        text-decoration: none !important; }
+        text-decoration: none; }
+        .top_section_content .featured_item .featured_caption .headline.sub_headline a:hover, .top_section_content .featured_item .featured_caption .headline.sub_headline a:visited:hover {
+          text-decoration: underline; }
     .top_section_content .featured_item .featured_caption .venue_type {
       margin: 0; }
       .top_section_content .featured_item .featured_caption .venue_type .fake_link {
@@ -946,8 +951,6 @@ div.datepicker {
   width: 502px; }
   .category_interest .browse_by_category .object_photo {
     display: block;
-    width: 75px;
-    height: 50px;
     margin: 0 4px 0 0; }
     .category_interest .browse_by_category .object_photo img {
       display: block;
@@ -1000,30 +1003,30 @@ div.datepicker {
 /*---------------------------------------*/
 .multi_category .category_section {
   float: left;
-  width: 168px;
-  padding: 0 5px;
+  width: 167px;
+  padding: 0 4px;
   border-right: 1px dotted #d8d8d8; }
   .multi_category .category_section .headline.sub_headline {
     font-size: 17px; }
-  .multi_category .category_section .category_img {
+  .multi_category .category_section .object_photo {
+    display: block; }
+  .multi_category .category_section .thumbnail {
     display: block;
     width: 165px;
-    height: 110px; }
-    .multi_category .category_section .category_img img {
-      display: block;
-      width: 165px;
-      height: 110px; }
+    height: 110px;
+    border: 1px solid #ccc;
+    border-radius: 4px; }
   .multi_category .category_section .img_name {
-    margin: 0 0 5px;
-    padding: 5px 0 4px;
-    height: 18px;
-    color: #597686;
     font-size: 10px;
-    border-bottom: 1px solid #dae4e9; }
+    color: #597686;
+    padding: 5px 0 4px;
+    margin: 0 0 5px;
+    border-bottom: 1px solid #dae4e9;
+    height: 18px; }
     .multi_category .category_section .img_name a, .multi_category .category_section .img_name a:visited {
       text-decoration: none; }
-      .multi_category .category_section .img_name a:hover, .multi_category .category_section .img_name a:visited:hover {
-        text-decoration: underline; }
+    .multi_category .category_section .img_name a:hover {
+      text-decoration: underline; }
   .multi_category .category_section ul {
     height: 103px;
     overflow: hidden; }
@@ -1051,8 +1054,8 @@ div.datepicker {
 .multi_category .category_section.first {
   padding-left: 0; }
 .multi_category .category_section.last {
-  padding-right: 0;
-  border-right: none; }
+  border-right: none;
+  padding-right: 0; }
 /*For section with yellow background*/
 /*------------------------------------------------*/
 .browse_by_interest {
@@ -1683,7 +1686,9 @@ div.datepicker {
     .upcoming_events.pod_rounded .object_photo img {
       display: block;
       width: 210px;
-      height: 140px; }
+      height: 140px;
+      float: none;
+      /* TODO(VH): Remove float when no longer using rounded corder JS. */ }
   .upcoming_events.pod_rounded .img_name {
     padding: 0 0 6px;
     margin: 0 0 8px;

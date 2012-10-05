@@ -520,7 +520,9 @@
     .upcoming_events.pod_rounded .object_photo img {
       display: block;
       width: 210px;
-      height: 140px; }
+      height: 140px;
+      float: none;
+      /* TODO(VH): Remove float when no longer using rounded corder JS. */ }
   .upcoming_events.pod_rounded .img_name {
     padding: 0 0 6px;
     margin: 0 0 8px;
@@ -1869,7 +1871,7 @@
         #object_page_info dd.address strong a:hover {
           color: #597686; }
     #object_page_info dd.address a.directions_link {
-      display: block;
+      display: inline-block;
       margin: 7px 0 0; }
     #object_page_info dd.neighborhood a {
       color: #000;
@@ -2183,7 +2185,9 @@ dl#event_reactions {
     width: 334px;
     margin: 0; }
     dl#event_reactions #people_going ul {
-      display: inline-block; }
+      display: inline-block;
+      height: 42px;
+      overflow: hidden; }
       dl#event_reactions #people_going ul li {
         float: left;
         margin: 0 7px 7px 0; }
@@ -2366,8 +2370,9 @@ dl#event_reactions {
     overflow: hidden; }
     #event_tweets .tweets li {
       position: relative;
+      float: left;
       margin-top: 5px;
-      padding: 5px 0 0 123px;
+      padding: 5px 0 0;
       font-size: 11px;
       line-height: 14px;
       border-top: 1px dashed #d1d9dd; }
@@ -2379,9 +2384,12 @@ dl#event_reactions {
         display: none; }
     #event_tweets .tweets .tweeter_name {
       display: block;
-      position: absolute;
-      left: 0;
-      width: 118px; }
+      float: left;
+      width: 118px;
+      margin: 0 5px 0 0; }
+    #event_tweets .tweets .tweet_content {
+      float: left;
+      width: 440px; }
   #event_tweets.tweets_collapsed .controls .more {
     display: block; }
   #event_tweets.tweets_collapsed .controls .prev, #event_tweets.tweets_collapsed .controls .next {

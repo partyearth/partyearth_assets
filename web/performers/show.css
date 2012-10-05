@@ -577,7 +577,9 @@
     .upcoming_events.pod_rounded .object_photo img {
       display: block;
       width: 210px;
-      height: 140px; }
+      height: 140px;
+      float: none;
+      /* TODO(VH): Remove float when no longer using rounded corder JS. */ }
   .upcoming_events.pod_rounded .img_name {
     padding: 0 0 6px;
     margin: 0 0 8px;
@@ -1926,7 +1928,7 @@
         #object_page_info dd.address strong a:hover {
           color: #597686; }
     #object_page_info dd.address a.directions_link {
-      display: block;
+      display: inline-block;
       margin: 7px 0 0; }
     #object_page_info dd.neighborhood a {
       color: #000;
