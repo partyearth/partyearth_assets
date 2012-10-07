@@ -1,0 +1,57 @@
+.browse_events_by_venue .event_venue_content {
+  width: 158px;
+  margin: 0 24px 0 0; }
+  .browse_events_by_venue .event_venue_content .headline.sub_headline {
+    margin: 0 0 1px;
+    height: 21px;
+    overflow: hidden;
+    font-size: 17px;
+    line-height: 18px; }
+    .browse_events_by_venue .event_venue_content .headline.sub_headline a, .browse_events_by_venue .event_venue_content .headline.sub_headline a:visited, .browse_events_by_venue .event_venue_content .headline.sub_headline .fake_link {
+      text-decoration: underline; }
+  .browse_events_by_venue .event_venue_content .venue_type {
+    padding: 0;
+    height: 11px;
+    overflow: hidden; }
+  .browse_events_by_venue .event_venue_content .venue_img {
+    margin: 0 0 6px;
+    width: 159px;
+    height: 104px; }
+    .browse_events_by_venue .event_venue_content .venue_img img {
+      width: 159px;
+      height: 104px; }
+  .browse_events_by_venue .event_venue_content ul {
+    margin: 0 0 7px; }
+    .browse_events_by_venue .event_venue_content ul li {
+      margin: 5px 0 2px;
+      border-bottom: 1px dashed #8ea8b5;
+      padding-bottom: 7px; }
+      .browse_events_by_venue .event_venue_content ul li .blue_text.small_text {
+        font-size: 10px; }
+      .browse_events_by_venue .event_venue_content ul li .black_link {
+        text-decoration: underline;
+        text-shadow: 0 0 0.08em #dadada;
+        display: inline-block;
+        height: 18px;
+        overflow: hidden; }
+  .browse_events_by_venue .event_venue_content .see_more {
+    color: #aaa !important;
+    text-decoration: underline;
+    margin: 0 0 1px;
+    display: inline-block;
+    line-height: 13px; }
+  .browse_events_by_venue .event_venue_content .see_more:hover {
+    color: #000 !important; }
+.browse_events_by_venue .event_venue_content.last {
+  margin: 0; }
+.browse_events_by_venue .more_links .label {
+  display: inline-block;
+  width: 170px; }
+.browse_events_by_venue .more_links a {
+  text-decoration: underline;
+  white-space: nowrap; }
+
+.browse_events_by_venue.two_line_title .event_venue_content .headline.sub_headline {
+  height: 38px;
+  /*previously 41px*/
+  margin: 0 0 4px; }

@@ -1,0 +1,25 @@
+.inline-errors {
+  min-height: 18px; }
+
+/*FORM DROPDOWNS*/
+#order_shipping_state_zip_input {
+  position: relative;
+  top: -5px;
+  margin: -3px 0 5px; }
+
+.store_content.checkout_form_page .state_dropdown {
+  top: 9px; }
+
+/*SHIPPING DROPDOWN*/
+.store_content.checkout_form_page .shipping_dropdown {
+  top: -4px; }
+
+#order_billing_card_type_input label,
+.store_content.checkout_form_page #order_billing_card_type_input .visa_logo,
+.store_content.checkout_form_page #order_billing_card_type_input .mastercard_logo,
+#order_card_expiration_input label {
+  position: relative; }
+
+#order_billing_card_type_input label,
+#order_card_expiration_input label {
+  top: -10px; }

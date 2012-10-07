@@ -1,0 +1,319 @@
+/*HIDE BOTTOM BAR*/
+/*--------------------------------*/
+#container_bg_bottom {
+  padding: 0 !important; }
+
+.floating_bar_wrapper {
+  display: none !important; }
+
+#footer_content {
+  height: 316px !important;
+  padding-bottom: 0 !important; }
+
+#footer_content .pod #guide_img {
+  bottom: -84px !important;
+  height: 178px !important; }
+
+/*--------------------------------*/
+.store_content.checkout_form_page .shipping_checkmark {
+  padding: 0 0 0 85px; }
+
+.store_content.checkout_form_page .inputs ol li {
+  margin: 0 0 10px; }
+
+.store_content.checkout_form_page .inputs ol li ul li {
+  margin: 0; }
+
+.store_content.checkout_form_page .inputs li ul,
+.store_content.checkout_form_page .inputs li ul li {
+  display: inline-block;
+  /*FOR IE7*/
+  *display: inline;
+  zoom: 1; }
+
+/*FOR INLINE ERRORS*/
+.store_content.checkout_form_page .inline-errors {
+  left: 285px;
+  position: absolute;
+  top: 1px;
+  width: 240px; }
+
+.store_content.checkout_form_page .input_inner_wrapper img {
+  left: 290px;
+  position: absolute;
+  top: 6px; }
+
+.store_content.checkout_form_page #order_shipping_zip_input .inline-errors,
+.store_content.checkout_form_page #order_billing_zip_input .inline-errors {
+  left: 89px; }
+
+.store_content.checkout_form_page #order_shipping_zip_input .input_inner_wrapper img,
+.store_content.checkout_form_page #order_billing_zip_input .input_inner_wrapper img {
+  left: 94px;
+  top: 6px; }
+
+.store_content.checkout_form_page .card_number_input .inline-errors {
+  left: 250px; }
+
+.store_content.checkout_form_page .card_number_input .input_inner_wrapper img {
+  left: 255px; }
+
+.store_content.checkout_form_page .security_code_input .inline-errors {
+  left: 84px; }
+
+.store_content.checkout_form_page .security_code_input .input_inner_wrapper img {
+  left: 89px; }
+
+/*GENERAL PROPERTIES*/
+.store_content.checkout_form_page .inputs .input_wrapper {
+  width: 280px;
+  position: relative; }
+
+.store_content.checkout_form_page .inputs .card_info .input_wrapper {
+  width: 245px; }
+
+.store_content.checkout_form_page .inputs .card_info .input_wrapper.security_code_input {
+  width: 58px; }
+
+.store_content.checkout_form_page .inputs label {
+  display: inline-block;
+  width: 84px;
+  /*FOR IE7*/
+  *display: inline;
+  zoom: 1;
+  *position: relative;
+  *top: -5px; }
+
+#order_shipping_type_input label {
+  *padding-bottom: 2px; }
+
+.store_content.checkout_form_page .inputs .card_info label {
+  width: 116px;
+  *padding-bottom: 2px; }
+
+label[for="order_billing_card_type"],
+label[for="card_month"] {
+  position: relative;
+  top: -9px; }
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  /* FOR WEBKIT BROWSERS */
+  label[for="order_billing_card_type"],
+  label[for="card_month"] {
+    position: static;
+    top: 0; } }
+#order_shipping_zip_input label,
+#order_billing_zip_input label {
+  width: 30px; }
+
+.store_content.checkout_form_page .inputs label abbr {
+  color: #0099FF;
+  font-size: 20px;
+  margin: 0 0 0 4px;
+  position: relative;
+  top: 2px; }
+
+#order_shipping_zip_input .input_wrapper,
+#order_billing_zip_input .input_wrapper {
+  width: 84px; }
+
+/*FORM DROPDOWNS*/
+#order_shipping_state_zip_input {
+  margin-top: -9px;
+  /*FOR IE7*/
+  *margin-top: 0; }
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  /* FOR WEBKIT BROWSERS */
+  #order_shipping_state_zip_input {
+    margin-top: 0; } }
+.store_content.checkout_form_page .state_dropdown {
+  position: relative;
+  left: -3px;
+  width: 146px;
+  margin: 0 11px 0 0;
+  top: 9px;
+  /*FOR IE7*/
+  *top: 0;
+  *left: 0;
+  *margin: 0 16px 0 0; }
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  /* FOR WEBKIT BROWSERS */
+  .store_content.checkout_form_page .state_dropdown {
+    top: 0; } }
+#order_shipping_state_zip_input ul {
+  position: relative;
+  z-index: 1000; }
+
+.store_content.checkout_form_page .state_dropdown .Choices.choices {
+  height: 139px;
+  overflow: auto;
+  width: 144px; }
+
+.store_content.checkout_form_page .state_dropdown .footer_bottom {
+  width: 135px; }
+
+.store_content.checkout_form_page .state_dropdown .Title,
+.store_content.checkout_form_page .month_dropdown .Title {
+  padding-right: 0; }
+
+.store_content.checkout_form_page .Title .unselected.error {
+  color: red;
+  font-size: 11px; }
+
+/*SHIPPING DROPDOWN*/
+.store_content.checkout_form_page .shipping_dropdown {
+  left: -3px;
+  position: relative;
+  top: -6px;
+  width: 284px;
+  /*FOR IE7*/
+  *left: 0;
+  *top: -7px; }
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  /* FOR WEBKIT BROWSERS */
+  .store_content.checkout_form_page .shipping_dropdown {
+    top: -14px; } }
+.store_content.checkout_form_page .shipping_dropdown .Choices.choices {
+  width: 282px; }
+
+.store_content.checkout_form_page .shipping_dropdown .footer_bottom {
+  width: 273px; }
+
+/*CREDIT CARD DROPDOWN*/
+#order_billing_card_type_input {
+  z-index: 1000;
+  /*for ie7*/
+  position: relative; }
+
+#order_billing_card_type_input .inline-errors {
+  left: 369px;
+  top: 4px; }
+
+.store_content.checkout_form_page .card_type_dropdown {
+  width: 172px; }
+
+.store_content.checkout_form_page .card_type_dropdown .Choices.choices {
+  width: 170px; }
+
+.store_content.checkout_form_page .card_type_dropdown .footer_bottom {
+  width: 161px; }
+
+/*VISA AND MASTERCARD LOGOS ON BILLING PAGE*/
+.store_content.checkout_form_page #order_billing_card_type_input .visa_logo {
+  position: relative;
+  top: 7px;
+  left: 4px;
+  *top: -10px;
+  /*FOR IE7*/ }
+
+.store_content.checkout_form_page #order_billing_card_type_input .mastercard_logo {
+  left: 11px;
+  position: relative;
+  top: 5px;
+  *top: -8px;
+  /*FOR IE7*/ }
+
+/*CREDIT CARD MONTH DROPDOWN*/
+#order_card_expiration_input {
+  z-index: 1000;
+  /*for ie7*/ }
+
+#order_card_expiration_input ul {
+  position: relative;
+  z-index: 1000; }
+
+#order_card_expiration_input .inline-errors {
+  left: 250px; }
+
+.store_content.checkout_form_page .month_dropdown {
+  width: 145px;
+  margin: 0 12px 0 0; }
+
+.store_content.checkout_form_page .month_dropdown .Choices.choices {
+  width: 143px; }
+
+.store_content.checkout_form_page .month_dropdown .footer_bottom {
+  width: 134px; }
+
+/*CREDIT CARD YEAR DROPDOWN*/
+.store_content.checkout_form_page .year_dropdown {
+  width: 89px; }
+
+.store_content.checkout_form_page .year_dropdown .Choices.choices {
+  width: 87px; }
+
+.store_content.checkout_form_page .year_dropdown .footer_bottom {
+  width: 78px; }
+
+.store_content.checkout_form_page .store_action_btns .buttons {
+  float: left; }
+
+/*FOR SECURITY CODE HELP TOOLTIP*/
+.store_content.checkout_form_page .security_help {
+  left: 187px;
+  position: relative;
+  top: -23px; }
+
+.store_content.checkout_form_page .security_help .help_btn {
+  z-index: 0; }
+
+.store_content.checkout_form_page .security_help .help_btn #tool_tip {
+  z-index: 0;
+  top: -10px; }
+
+.store_content.checkout_form_page .security_help .help_btn #tool_tip .tip_content_container .tip_left_side .tooltip_arrow {
+  top: 12px;
+  *top: 2px;
+  /*FOR IE7*/
+  left: -7px; }
+
+.store_content.checkout_form_page .security_help #tool_tip {
+  width: 514px; }
+
+.store_content.checkout_form_page .security_help #tool_tip .tip_content_container .tip_content {
+  width: 474px; }
+
+.store_content.checkout_form_page .security_help #tool_tip .tip_content_container .tip_content .security-code-help {
+  margin: 0 0 0 15px;
+  width: 250px; }
+
+.store_content.checkout_form_page .security_help #tool_tip .tip_content_container .tip_content .security-code-help img {
+  margin: 6px 0 0 0; }
+
+.store_content.checkout_form_page .security_help #tool_tip .tip_content_container .tip_content .divider {
+  height: 6px; }
+
+.store_content.checkout_form_page .newsletter_opt_in {
+  margin: 0 0 0 85px;
+  width: 287px; }
+
+/*AUTHORIZE.NET SEAL*/
+.store_content.checkout_form_page .seal_wrapper {
+  border: 1px solid #CACACA;
+  height: 97px;
+  margin: -12px 0 6px 115px;
+  padding: 8px;
+  width: 235px; }
+
+.store_content.checkout_form_page .seal_wrapper .seal_container {
+  margin: 0 21px 0 0; }
+
+.store_content.checkout_form_page .seal_wrapper .seal_text {
+  margin: 15px 0 0 0; }
+
+.store_content.checkout_form_page .seal_wrapper .seal_text .line1 {
+  color: #666666;
+  font-size: 17px;
+  font-weight: bold; }
+
+.store_content.checkout_form_page .seal_wrapper .seal_text .line2 {
+  font-size: 16px;
+  margin: 5px 0 0; }
+
+.store_content.checkout_form_page .seal_wrapper .seal_text .line3 {
+  font-size: 11px;
+  line-height: 13px;
+  margin: 5px 0 0; }

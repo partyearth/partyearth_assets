@@ -1,0 +1,131 @@
+/*BEGIN NEW IN PHOTO GALLERIES STYLES*/
+/*---------------------------------------------*/
+.upcoming_events.pod_rounded {
+  margin: 0 0 12px;
+  padding: 13px 14px; }
+  .upcoming_events.pod_rounded .title {
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0;
+    color: #375363;
+    border-bottom: 1px dashed #ADC0C9;
+    padding: 0 0 7px;
+    margin: 0 0 12px; }
+  .upcoming_events.pod_rounded .object_photo {
+    display: block;
+    margin: 0 0 8px;
+    border: 1px solid #ADC0C9; }
+    .upcoming_events.pod_rounded .object_photo img {
+      display: block;
+      width: 210px;
+      height: 140px;
+      float: none;
+      /* TODO(VH): Remove float when no longer using rounded corder JS. */ }
+  .upcoming_events.pod_rounded .img_name {
+    padding: 0 0 6px;
+    margin: 0 0 8px;
+    border-bottom: 1px solid #dae4e9;
+    text-transform: uppercase;
+    font-size: 10px;
+    color: #09f;
+    line-height: 10px;
+    vertical-align: top;
+    height: 10px; }
+    .upcoming_events.pod_rounded .img_name a {
+      display: inline-block;
+      border-left: 1px solid #e4ebef;
+      height: 10px;
+      overflow: hidden;
+      width: 160px;
+      text-transform: none;
+      padding: 0 0 0 6px;
+      margin: 0 0 0 4px;
+      text-decoration: none; }
+  .upcoming_events.pod_rounded .object_item {
+    border-bottom: 1px dashed #ADC0C9;
+    padding: 0 0 8px;
+    margin: 0 0 8px;
+    position: relative; }
+    .upcoming_events.pod_rounded .object_item .point {
+      display: none;
+      position: absolute;
+      top: 10px;
+      left: -15px;
+      border-top: 7px solid transparent;
+      border-left: 7px solid #09f;
+      border-right: 7px solid transparent;
+      border-bottom: 7px solid transparent; }
+    .upcoming_events.pod_rounded .object_item .date_block {
+      background: -webkit-gradient(linear, 0 0, 0 100%, from(#eff2f4), to(#d5dbe0));
+      background: -moz-linear-gradient(top, #eff2f4, #d5dbe0);
+      -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=#eff2f4, endColorStr=#d5dbe0);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=#eff2f4, endColorStr=#d5dbe0);
+      width: 28px;
+      margin: 0 10px 0 0;
+      text-align: center;
+      border-left: 1px solid #E0E4E7;
+      border-right: 1px solid #E0E4E7;
+      border-radius: 2px 2px 2px 2px;
+      color: #09f;
+      text-shadow: 1px 1px 1px #fff;
+      font-family: Arial, sans-serif; }
+      .upcoming_events.pod_rounded .object_item .date_block .month {
+        font-size: 8px;
+        line-height: 4px;
+        padding: 5px 0 2px;
+        font-weight: bold;
+        text-transform: uppercase; }
+      .upcoming_events.pod_rounded .object_item .date_block .day {
+        font-size: 18px;
+        padding: 0 0 5px;
+        border-bottom: 1px solid #B4BABE; }
+    .upcoming_events.pod_rounded .object_item .name_and_type {
+      width: 168px; }
+      .upcoming_events.pod_rounded .object_item .name_and_type .black_link {
+        display: block;
+        line-height: 14px;
+        margin: 0 0 3px; }
+      .upcoming_events.pod_rounded .object_item .name_and_type .venue_type {
+        padding: 0;
+        margin: 0; }
+  .upcoming_events.pod_rounded .object_item:last-of-type {
+    border-bottom: 1px solid #ADC0C9; }
+  .upcoming_events.pod_rounded .object_item.hovered .point {
+    display: block; }
+  .upcoming_events.pod_rounded .more_link {
+    text-align: right;
+    line-height: 10px; }
+    .upcoming_events.pod_rounded .more_link .blue_text.arrow {
+      color: #ff9000;
+      top: 0; }
+/*
+
+*/
+#all_events li {
+  border-top: 1px dashed #adc0c9; }
+  #all_events li:first-child {
+    border-top: none; }
+  #all_events li a {
+    padding: 6px 2px;
+    color: #000;
+    display: block;
+    text-decoration: none; }
+    #all_events li a:hover {
+      background-color: #ffffe5; }
+  #all_events li span {
+    display: block;
+    float: left;
+    font-size: 15px;
+    line-height: 125%; }
+  #all_events li .date {
+    width: 135px;
+    margin: 0 20px 0 0;
+    color: #597686;
+    font-size: 10px;
+    text-transform: uppercase; }
+  #all_events li .title {
+    width: 350px; }
+  #all_events li .location {
+    width: 180px;
+    float: right;
+    color: #8ea8b5; }

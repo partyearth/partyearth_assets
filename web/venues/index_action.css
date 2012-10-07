@@ -1,0 +1,20 @@
+/*BEGIN NAVIGATION CSS*/
+/*---------------------------------------------*/
+/*LEFT COLUMN*/
+/*---------------------------------------------*/
+#left_column {
+  width: 706px; }
+  #left_column .venues_content .more_links ul {
+    display: inline; }
+    #left_column .venues_content .more_links ul li {
+      display: inline;
+      margin: 0 0 0 10px; }
+      #left_column .venues_content .more_links ul li .black_link {
+        color: #0099ff !important; }
+      #left_column .venues_content .more_links ul li .black_link:hover {
+        color: #597686 !important; }
+
+/*RIGHT COLUMN*/
+/*---------------------------------------------*/
+#right_column {
+  width: 240px; }

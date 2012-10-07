@@ -1,0 +1,50 @@
+#navbar li.nav_link a span {
+  letter-spacing: -1px;
+  padding: 3px 1px 3px 0; }
+
+div.subnav .left_end {
+  background: url(/assets/content_bg/application_sprite.png) -324px -121px no-repeat; }
+
+div.subnav .divider {
+  background: url(/assets/content_bg/application_sprite.png) -340px -121px no-repeat; }
+
+div.subnav .right_end {
+  background: url(/assets/content_bg/application_sprite.png) -332px -121px no-repeat; }
+.headline {
+  /* FOR IE7 */
+  *line-height: 36px; }
+
+#container_bg_bottom {
+  *padding: 0 0 20px; }
+
+/*FOOTER RELATED*/
+#footer_content .pod .subtitle {
+  font-size: 11pt;
+  line-height: 1.05em; }
+
+#footer_content {
+  *position: static;
+  *margin: 10px 0 0 -3px; }
+
+/*FOR IE8*/
+.blue_section_divider {
+  -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=#1a76ce, endColorStr=#0098fe);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=#1a76ce, endColorStr=#0098fe); }
+#tool_tip {
+  /* FOR IE7 */
+  *left: 23px; }
+
+#tool_tip .tip_content_container .tip_left_side .tooltip_arrow {
+  top: 20px; }
+
+#tool_tip .tip_content_container .tip_left_side .tooltip_arrow {
+  /* FOR IE7 */
+  *top: 20px;
+  *left: -8px; }
+/**
+ * ie8.css
+ *
+
+
+
+ */

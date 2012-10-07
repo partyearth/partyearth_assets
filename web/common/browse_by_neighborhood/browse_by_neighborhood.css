@@ -1,0 +1,67 @@
+.browse_by_neighborhood .neighborhood_content {
+  width: 167px;
+  margin: 0 0 0 12px; }
+  .browse_by_neighborhood .neighborhood_content:first-child {
+    margin-left: 0; }
+  .browse_by_neighborhood .neighborhood_content .headline.sub_headline {
+    height: 21px;
+    margin: 0 0 6px;
+    font-size: 17px;
+    line-height: 18px;
+    overflow: hidden; }
+  .browse_by_neighborhood .neighborhood_content .headline.sub_headline.two_line {
+    height: 44px;
+    margin: 0 0 1px; }
+  .browse_by_neighborhood .neighborhood_content .black_link {
+    text-decoration: underline; }
+  .browse_by_neighborhood .neighborhood_content .venue_img {
+    display: block;
+    margin: 0 0 9px; }
+    .browse_by_neighborhood .neighborhood_content .venue_img img {
+      display: block;
+      width: 165px;
+      height: 110px;
+      border: 1px solid #ccc;
+      border-radius: 4px; }
+  .browse_by_neighborhood .neighborhood_content ul {
+    height: 123px;
+    /*previously 97px*/
+    overflow: hidden; }
+    .browse_by_neighborhood .neighborhood_content ul li {
+      margin: 0 0 7px;
+      border-bottom: 1px dashed #adc0c9;
+      padding-bottom: 2px; }
+      .browse_by_neighborhood .neighborhood_content ul li .black_link {
+        text-shadow: 0 0 0.08em #dadada; }
+      .browse_by_neighborhood .neighborhood_content ul li .venue_type {
+        padding: 2px 0 0 0;
+        height: 11px;
+        overflow: hidden; }
+  .browse_by_neighborhood .neighborhood_content .see_more {
+    color: #aaa !important;
+    text-decoration: underline;
+    margin: 0 0 2px;
+    display: inline-block;
+    line-height: 12px; }
+  .browse_by_neighborhood .neighborhood_content .see_more:hover {
+    color: #000 !important; }
+.browse_by_neighborhood .neighborhood_content.last {
+  margin: 0; }
+.browse_by_neighborhood .more_links .label {
+  display: inline-block;
+  width: 182px;
+  zoom: 1; }
+.browse_by_neighborhood .more_links a:link,
+.browse_by_neighborhood .more_links .fake_link {
+  white-space: nowrap; }
+.browse_by_neighborhood .more_links .blue_text {
+  text-decoration: underline; }
+
+.browse_by_neighborhood.one_venue .neighborhood_content ul {
+  height: 34px; }
+
+.browse_by_neighborhood.two_venues .neighborhood_content ul {
+  height: 76px; }
+
+.browse_by_neighborhood.three_venues .neighborhood_content ul {
+  height: 123px; }

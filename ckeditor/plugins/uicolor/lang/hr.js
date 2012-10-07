@@ -1,0 +1,1 @@
+CKEDITOR.plugins.setLang("uicolor","hr",{uicolor:{title:"UI odabir boja",preview:"Pregled u\u017eivo",config:"Zalijepite ovaj tekst u Va\u0161u config.js datoteku.",predefined:"Ve\u0107 postavljeni setovi boja"}});
