@@ -1,0 +1,879 @@
+.floater {
+  position: relative; }
+
+.floater.outside {
+  position: absolute;
+  top: 0;
+  z-index: 1000; }
+
+.floater.fixed {
+  position: fixed;
+  top: 0; }
+
+.floater.inside {
+  position: static !important; }
+
+.floater.inside .animation_wrapper {
+  height: auto !important; }
+
+/* Styles for social media Buttons when inside */
+.social_media_btns {
+  position: relative;
+  margin: 9px 0;
+  padding: 0 0 8px;
+  background-color: #fff;
+  border-bottom: 1px dashed #adc0c9; }
+  .social_media_btns .total_count {
+    display: none; }
+  .social_media_btns td {
+    min-width: 65px; }
+  .social_media_btns td td {
+    min-width: 0; }
+  .social_media_btns .gig-counter .gig-counter-text {
+    font-weight: normal !important; }
+
+/* Styles for social media Buttons when inside */
+.outside .social_media_btns {
+  position: absolute;
+  top: 0;
+  left: -70px;
+  width: 30px;
+  margin: 0;
+  padding: 6px 9px;
+  border: none;
+  border-radius: 2px;
+  box-shadow: 0 0 5px #999;
+  overflow: hidden; }
+  .outside .social_media_btns .animation_wrapper {
+    width: 300px;
+    position: relative;
+    right: 270px; }
+    .outside .social_media_btns .animation_wrapper .total_count {
+      display: block;
+      width: 22px;
+      height: 14px;
+      color: white;
+      padding: 9px 4px 4px;
+      font-size: 11px;
+      text-align: center; }
+    .outside .social_media_btns .animation_wrapper .default_view {
+      float: right;
+      width: 30px;
+      height: 128px;
+      margin: 0 0 0 10px;
+      background-image: url(/assets/content_bg/application_sprite-8d81388f106f713282205e46d5c85876.png);
+      background-position: -337px -364px;
+      background-repeat: no-repeat;
+      cursor: pointer; }
+    .outside .social_media_btns .animation_wrapper .button_view {
+      float: right;
+      width: 108px; }
+      .outside .social_media_btns .animation_wrapper .button_view .share_title {
+        margin: 2px 3px 8px;
+        color: #8EA8B5;
+        font-size: 11px;
+        line-height: 12px; }
+
+/* GIGYA BUTTON STYLES
+--------------------------------------
+:: Styles for the width and position of the Gigya buttons..
+-------------------------------------------------------- */
+.gig-button-container {
+  margin: 0 5px 0 0 !important;
+  padding: 0 !important;
+  overflow: hidden; }
+
+/* Width of buttons when inside */
+.inside .gig-button-container-facebook {
+  position: relative;
+  top: -1px; }
+
+.inside .gig-button-container-facebook-like {
+  width: 45px !important; }
+
+.inside .gig-button-container-twitter-tweet {
+  width: 59px !important; }
+
+.inside .gig-button-container-google-plusone {
+  width: 32px !important; }
+
+.inside .gig-button-container-share {
+  width: 58px !important; }
+
+/* Allows to absolutely position buttons */
+.outside .gig-bar-container {
+  position: relative; }
+
+/* Prevent default <td> position */
+.outside .social_media_btns td {
+  display: inline; }
+
+.outside .social_media_btns td td {
+  display: table-cell; }
+
+/* Default position for all buttons when outside. */
+.outside .gig-button-container-facebook,
+.outside .gig-button-container-facebook-like,
+.outside .gig-button-container-twitter-tweet,
+.outside .gig-button-container-google-plusone,
+.outside .gig-button-container-share {
+  position: absolute;
+  top: 0;
+  left: 0; }
+
+/* Specific positions for buttons when outside when outside. */
+.outside .gig-button-container-facebook {
+  top: 0; }
+
+.outside .gig-button-container-facebook-like {
+  top: 27px; }
+
+.outside .gig-button-container-twitter-tweet {
+  top: 54px; }
+
+.outside .gig-button-container-google-plusone {
+  top: 81px; }
+
+.outside .gig-button-container-share {
+  top: 108px; }
+
+.single_photo .outside .gig-button-container-pinterest {
+  top: 0; }
+
+.single_photo .outside .gig-button-container-facebook {
+  top: 26px; }
+
+.single_photo .outside .gig-button-container-facebook-like {
+  top: 52px; }
+
+.single_photo .outside .gig-button-container-twitter-tweet {
+  top: 78px; }
+
+.single_photo .outside .gig-button-container-google-plusone {
+  top: 104px; }
+
+.single_photo .outside .gig-button-container-share {
+  top: 130px; }
+
+.single_photo .outside .gig-button-container-pinterest .gig-counter {
+  width: 33px; }
+
+/* Completely override facebook buton */
+.social_media_btns .gig-button-container-facebook .gig-button-td div {
+  height: 18px;
+  width: 57px;
+  background-image: url(/assets/content_bg/application_sprite-8d81388f106f713282205e46d5c85876.png);
+  background-position: -386px -428px;
+  cursor: pointer; }
+  .social_media_btns .gig-button-container-facebook .gig-button-td div * {
+    display: none; }
+  .social_media_btns .gig-button-container-facebook .gig-button-td div:hover {
+    background-position: -386px -448px; }
+
+/* Styles for Gigya Share Popup */
+.gig-simpleShare.fixed {
+  position: fixed !important;
+  top: 145px !important; }
+
+/* FLOATER COMMENT STYLES
+--------------------------------------
+:: Styles for the comment box on the left rail floater.
+-------------------------------------------------------- */
+.floater_comments {
+  display: none;
+  /* Not displayed by default */
+  position: absolute;
+  top: 144px;
+  left: -70px;
+  width: 48px;
+  padding: 4px 0;
+  color: #999;
+  font-family: 'Arial', sans-serif;
+  font-size: 7px;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #fff;
+  border-radius: 2px;
+  box-shadow: 0 0 5px #999; }
+  .floater_comments:hover {
+    cursor: pointer; }
+  .floater_comments:hover .comment_label {
+    color: #597686; }
+  .floater_comments .comment_count, .floater_comments .comment_label {
+    display: block; }
+  .floater_comments .comment_count {
+    color: #0099ff;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: none; }
+  .floater_comments .comment_label {
+    line-height: 120%; }
+  .floater_comments .tip {
+    position: absolute;
+    right: 0;
+    bottom: -17px;
+    width: 54px;
+    height: 17px;
+    background-image: url(/assets/content_bg/application_sprite-8d81388f106f713282205e46d5c85876.png);
+    background-position: -387px -510px; }
+
+.outside .floater_comments {
+  display: block; }
+
+/* Fix for gigya follow bar whenever there is a left rail social bar present */
+.gig-followbar-dialog-nub,
+.gig-followbar-dialog {
+  position: fixed !important;
+  top: auto !important; }
+
+.gig-followbar-dialog-nub {
+  bottom: 22px !important;
+  background-image: url("http://cdn.gigya.com/gs/i/followbar/Nub_bottom.png") !important; }
+
+.gig-followbar-dialog {
+  bottom: 34px !important; }
+/*
+
+
+
+
+
+
+
+*/
+/*BEGIN GENERAL PAGE PROPERTIES*/
+/*-------------------------------------------------------------------------*/
+.left_column {
+  width: 735px; }
+
+.photo_gallery_content .bread_crumb .separator {
+  padding: 0 7px; }
+
+.photo_gallery_content .headline {
+  margin: 6px 0 11px;
+  line-height: 24px; }
+  .photo_gallery_content .headline .grey_text {
+    color: #ccc;
+    font-size: 18px; }
+    .photo_gallery_content .headline .grey_text span {
+      color: #ccc; }
+  .photo_gallery_content .headline .second_line {
+    font-size: 16px;
+    font-weight: bold;
+    color: #6c8898; }
+
+/*BEGIN PHOTO NAV STYLES*/
+/*-------------------------------------------------------------------------*/
+.photo_nav {
+  height: 16px; }
+
+.photo_nav .prev_btn {
+  background: url(/assets/content_bg/application_sprite-8d81388f106f713282205e46d5c85876.png) -30px -203px no-repeat transparent;
+  width: 16px;
+  height: 16px;
+  cursor: pointer; }
+
+.photo_nav .prev_btn:hover {
+  background-position: -30px -219px; }
+
+.photo_nav .photo_count {
+  width: 59px;
+  text-align: center;
+  position: relative;
+  top: -3px; }
+
+.photo_nav .next_btn {
+  background: url(/assets/content_bg/application_sprite-8d81388f106f713282205e46d5c85876.png) -46px -203px no-repeat transparent;
+  width: 16px;
+  height: 16px;
+  cursor: pointer; }
+
+.photo_nav .next_btn:hover {
+  background-position: -46px -219px; }
+
+/*BEGIN PHOTO CONTENT STYLES*/
+/*-------------------------------------------------------------------------*/
+.photo_content {
+  background: url(/assets/content_bg/grey_stripes_repeat-cf3bc21904c8cc8670f9ffff316802f5.gif) 0 0 repeat transparent;
+  padding: 19px 19px 10px 20px; }
+
+.slider_wrapper {
+  background: #fff;
+  padding: 2px;
+  width: 660px;
+  margin: 0 0 11px; }
+
+#photo_gallery .slider {
+  width: 660px !important;
+  height: 440px !important;
+  background-position: center 50% !important; }
+
+#photo_gallery .nivo-slice {
+  background-color: #fff !important;
+  background-position: center 50% !important; }
+
+#photo_gallery .slider .nivo-prevNav {
+  left: 0; }
+
+#photo_gallery .slider .nivo-nextNav {
+  right: 0; }
+
+.slider_wrapper .below_photo_one p {
+  padding: 5px 9px;
+  font-size: 12px; }
+
+.photo_content .below_photo_two p {
+  padding: 9px; }
+
+.under_photo_right {
+  width: 245px; }
+  .under_photo_right .tags {
+    color: #666; }
+  .under_photo_right .title {
+    display: inline-block;
+    margin: 0 10px 0 0;
+    width: 45px; }
+
+#wrapper #photo_gallery .slider {
+  background-position: left top !important; }
+
+#wrapper #photo_gallery .nivo-slice {
+  background-color: transparent !important;
+  background-position: left top !important; }
+
+#photo_gallery .outside .social_media_btns .animation_wrapper .default_view {
+  background-image: url(/assets/photos/photos_social_default_view_bg-3c01db30d9ec0925b8f17c848c4ece4d.png);
+  background-position: 0 3px; }
+  #photo_gallery .outside .social_media_btns .animation_wrapper .default_view .total_count {
+    display: none; }
+
+.more_photos {
+  height: 55px;
+  width: 663px;
+  overflow: visible;
+  position: relative;
+  margin: 0 0 11px; }
+
+.photo_scroller_container {
+  overflow: hidden;
+  height: 55px;
+  width: 663px;
+  left: 0;
+  position: absolute;
+  top: 0; }
+
+.photo_scroller_wrapper {
+  height: 55px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 150000px; }
+
+.photo_row {
+  width: 663px; }
+  .photo_row a:link, .photo_row a:visited, .photo_row a:hover {
+    border: none; }
+  .photo_row img {
+    float: left;
+    width: 75px;
+    height: 50px;
+    margin: 0 4px 0 0;
+    color: #fff;
+    border: 2px solid #fff;
+    cursor: pointer; }
+    .photo_row img.selected {
+      border-color: #0099ff;
+      cursor: default; }
+    .photo_row img.last {
+      margin: 0; }
+    .photo_row img:hover {
+      border-color: #0099ff; }
+
+.prev_next_btns {
+  border-top: none;
+  position: static;
+  height: 50px;
+  width: 100%; }
+
+.prev_next_btns .prev_btn,
+.prev_next_btns .next_btn {
+  background: url(/assets/content_bg/application_sprite-8d81388f106f713282205e46d5c85876.png) no-repeat transparent;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  text-indent: -9999px;
+  padding: 0;
+  cursor: pointer;
+  top: 15px; }
+
+.prev_next_btns .prev_btn {
+  background-position: -325px -277px;
+  left: -32px; }
+
+.prev_next_btns .prev_btn:hover {
+  background-position: -325px -304px; }
+
+.prev_next_btns .next_btn {
+  background-position: -352px -277px;
+  right: -34px; }
+
+.prev_next_btns .next_btn:hover {
+  background-position: -352px -304px; }
+
+.img_sections_row {
+  height: 21px; }
+
+.img_sections_row .all_photo_link {
+  padding: 5px 4px 0; }
+
+.img_section {
+  position: relative;
+  margin: 0 3px 0 0; }
+
+.img_section a, .img_section a:visited {
+  text-decoration: none; }
+
+.img_section a:hover {
+  color: #0099ff; }
+
+.img_section img {
+  background: #adc0c9;
+  display: block; }
+
+.img_section.selected a {
+  cursor: default; }
+
+.img_section.selected img,
+.img_section:hover img {
+  background: #0099ff; }
+
+.img_section:hover .section_number,
+.img_section.selected .section_number {
+  text-indent: 0px; }
+
+.section_number {
+  display: block;
+  font-size: 9px;
+  width: 100%;
+  height: 11px;
+  text-align: center;
+  text-indent: -9999px;
+  line-height: 9px; }
+
+/*BEGIN RIGHT COLUMN*/
+/*------------------------------------------------*/
+.right_column {
+  width: 240px; }
+  .right_column .related_pages .headline.sub_headline {
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: -1px;
+    color: #375363;
+    border-bottom: 1px dashed #ADC0C9;
+    padding: 0 0 7px;
+    margin: 0 0 12px; }
+/*BEGIN NEW IN PHOTO GALLERIES STYLES*/
+/*---------------------------------------------*/
+.latest_reviews.pod_rounded {
+  margin: 0 0 12px;
+  padding: 13px 14px; }
+  .latest_reviews.pod_rounded .title {
+    color: #09F;
+    font-size: 15px;
+    font-weight: bold;
+    margin: 0 0 6px; }
+  .latest_reviews.pod_rounded .headline.sub_headline {
+    display: block;
+    text-decoration: underline;
+    margin: 0 0 7px;
+    font-size: 21px;
+    line-height: 22px;
+    color: #375363; }
+  .latest_reviews.pod_rounded .headline.sub_headline:hover {
+    color: #000; }
+  .latest_reviews.pod_rounded .venue_type.top {
+    padding: 0;
+    margin: 0 0 6px; }
+  .latest_reviews.pod_rounded .object_photo {
+    display: block;
+    margin: 0 0 5px;
+    border: 1px solid #ADC0C9; }
+    .latest_reviews.pod_rounded .object_photo img {
+      display: block;
+      width: 210px;
+      height: 140px; }
+  .latest_reviews.pod_rounded .quick_nav_links {
+    border-bottom: 1px dashed #ADC0C9;
+    padding: 0 0 8px;
+    margin: 0 0 8px; }
+  .latest_reviews.pod_rounded .date {
+    margin: 0px;
+    padding: 0px;
+    text-transform: uppercase;
+    font-size: 10px;
+    line-height: 10px;
+    color: #8EA8B5; }
+  .latest_reviews.pod_rounded .desc {
+    position: relative;
+    height: 106px;
+    overflow: hidden; }
+    .latest_reviews.pod_rounded .desc .ellipses_dots {
+      font-size: 12px;
+      line-height: 15px;
+      background: #fff;
+      position: absolute;
+      right: 0;
+      bottom: -1px;
+      max-width: 334px;
+      height: 15px;
+      overflow: hidden; }
+  .latest_reviews.pod_rounded .other_venues {
+    border-top: 1px solid #ADC0C9;
+    margin: 10px 0 0 0;
+    padding: 6px 0 0 0; }
+    .latest_reviews.pod_rounded .other_venues .venue_item {
+      padding: 0 0 1px;
+      margin: 0 0 5px;
+      border-bottom: 1px dashed #ADC0C9; }
+      .latest_reviews.pod_rounded .other_venues .venue_item .venue_type {
+        text-transform: none;
+        display: block;
+        margin-top: -2px; }
+    .latest_reviews.pod_rounded .other_venues .venue_item:last-of-type {
+      border-bottom: none;
+      margin-bottom: 0;
+      padding-bottom: 0; }
+/*BEGIN NEW IN PHOTO GALLERIES STYLES*/
+/*---------------------------------------------*/
+.new_photo_galleries {
+  margin: 0 0 12px;
+  padding: 13px 15px; }
+  .new_photo_galleries .title {
+    margin: 0 0 7px;
+    color: #09F;
+    font-size: 15px;
+    font-weight: bold; }
+  .new_photo_galleries .photo_item {
+    width: 100px;
+    margin: 0 10px 8px 0;
+    padding: 11px 0 0;
+    line-height: 15px;
+    border-top: 1px dashed #ADC0C9; }
+    .new_photo_galleries .photo_item .object_photo {
+      display: block;
+      margin: 0 0 3px;
+      border: 1px solid #ADC0C9; }
+      .new_photo_galleries .photo_item .object_photo img {
+        display: block;
+        width: 98px;
+        height: 65px; }
+  .new_photo_galleries .photo_item.last {
+    margin-right: 0; }
+  .new_photo_galleries .photo_item.bottom {
+    margin-bottom: 0; }
+/*BEGIN NEW IN PHOTO GALLERIES STYLES*/
+/*---------------------------------------------*/
+.upcoming_events.pod_rounded {
+  margin: 0 0 12px;
+  padding: 13px 14px; }
+  .upcoming_events.pod_rounded .title {
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0;
+    color: #375363;
+    border-bottom: 1px dashed #ADC0C9;
+    padding: 0 0 7px;
+    margin: 0 0 12px; }
+  .upcoming_events.pod_rounded .object_photo {
+    display: block;
+    margin: 0 0 8px;
+    border: 1px solid #ADC0C9; }
+    .upcoming_events.pod_rounded .object_photo img {
+      display: block;
+      width: 210px;
+      height: 140px;
+      float: none;
+      /* TODO(VH): Remove float when no longer using rounded corder JS. */ }
+  .upcoming_events.pod_rounded .img_name {
+    padding: 0 0 6px;
+    margin: 0 0 8px;
+    border-bottom: 1px solid #dae4e9;
+    text-transform: uppercase;
+    font-size: 10px;
+    color: #09f;
+    line-height: 10px;
+    vertical-align: top;
+    height: 10px; }
+    .upcoming_events.pod_rounded .img_name a {
+      display: inline-block;
+      border-left: 1px solid #e4ebef;
+      height: 10px;
+      overflow: hidden;
+      width: 160px;
+      text-transform: none;
+      padding: 0 0 0 6px;
+      margin: 0 0 0 4px;
+      text-decoration: none; }
+  .upcoming_events.pod_rounded .object_item {
+    border-bottom: 1px dashed #ADC0C9;
+    padding: 0 0 8px;
+    margin: 0 0 8px;
+    position: relative; }
+    .upcoming_events.pod_rounded .object_item .point {
+      display: none;
+      position: absolute;
+      top: 10px;
+      left: -15px;
+      border-top: 7px solid transparent;
+      border-left: 7px solid #09f;
+      border-right: 7px solid transparent;
+      border-bottom: 7px solid transparent; }
+    .upcoming_events.pod_rounded .object_item .date_block {
+      background: -webkit-gradient(linear, 0 0, 0 100%, from(#eff2f4), to(#d5dbe0));
+      background: -moz-linear-gradient(top, #eff2f4, #d5dbe0);
+      -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=#eff2f4, endColorStr=#d5dbe0);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=#eff2f4, endColorStr=#d5dbe0);
+      width: 28px;
+      margin: 0 10px 0 0;
+      text-align: center;
+      border-left: 1px solid #E0E4E7;
+      border-right: 1px solid #E0E4E7;
+      border-radius: 2px 2px 2px 2px;
+      color: #09f;
+      text-shadow: 1px 1px 1px #fff;
+      font-family: Arial, sans-serif; }
+      .upcoming_events.pod_rounded .object_item .date_block .month {
+        font-size: 8px;
+        line-height: 4px;
+        padding: 5px 0 2px;
+        font-weight: bold;
+        text-transform: uppercase; }
+      .upcoming_events.pod_rounded .object_item .date_block .day {
+        font-size: 18px;
+        padding: 0 0 5px;
+        border-bottom: 1px solid #B4BABE; }
+    .upcoming_events.pod_rounded .object_item .name_and_type {
+      width: 168px; }
+      .upcoming_events.pod_rounded .object_item .name_and_type .black_link {
+        display: block;
+        line-height: 14px;
+        margin: 0 0 3px; }
+      .upcoming_events.pod_rounded .object_item .name_and_type .venue_type {
+        padding: 0;
+        margin: 0; }
+  .upcoming_events.pod_rounded .object_item:last-of-type {
+    border-bottom: 1px solid #ADC0C9; }
+  .upcoming_events.pod_rounded .object_item.hovered .point {
+    display: block; }
+  .upcoming_events.pod_rounded .more_link {
+    text-align: right;
+    line-height: 10px; }
+    .upcoming_events.pod_rounded .more_link .blue_text.arrow {
+      color: #ff9000;
+      top: 0; }
+/*
+ * jQuery Nivo Slider v2.7.1
+ * http://nivo.dev7studios.com
+ *
+ * Copyright 2011, Gilbert Pellegrom
+ * Free to use and abuse under the MIT license.
+ * http://www.opensource.org/licenses/mit-license.php
+ * 
+ * March 2010
+ */
+/* The Nivo Slider styles */
+.nivoSlider {
+  position: relative; }
+
+.nivoSlider img {
+  position: absolute;
+  top: 0px;
+  left: 0px; }
+
+/* If an image is wrapped in a link */
+.nivoSlider a.nivo-imageLink {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  z-index: 6;
+  display: none; }
+
+/* The slices and boxes in the Slider */
+.nivo-slice {
+  display: block;
+  position: absolute;
+  z-index: 5;
+  height: 100%; }
+
+.nivo-box {
+  display: block;
+  position: absolute;
+  z-index: 5; }
+
+/* Caption styles */
+.nivo-caption {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  background: #000;
+  color: #fff;
+  opacity: 0.8;
+  /* Overridden by captionOpacity setting */
+  width: 100%;
+  z-index: 8; }
+
+.nivo-caption p {
+  padding: 5px;
+  margin: 0; }
+
+.nivo-caption a {
+  display: inline !important; }
+
+.nivo-html-caption {
+  display: none; }
+
+/* Direction nav styles (e.g. Next & Prev) */
+.nivo-directionNav a {
+  position: absolute;
+  top: 41%;
+  z-index: 99;
+  cursor: pointer;
+  display: block;
+  width: 27px;
+  height: 59px;
+  background-image: url(/assets/content_bg/application_sprite-8d81388f106f713282205e46d5c85876.png);
+  background-repeat: no-repeat;
+  text-indent: -9999px;
+  border: 0; }
+
+/*Default positioning*/
+.nivo-prevNav {
+  left: 0px;
+  background-position: -193px -2957px; }
+
+.nivo-prevNav:hover {
+  background-position: -193px -3018px; }
+
+.nivo-nextNav {
+  background-position: -221px -2957px;
+  right: 0px; }
+
+.nivo-nextNav:hover {
+  background-position: -221px -3018px; }
+
+.rounded_corner_wrapper .nivo-prevNav {
+  left: -1px; }
+
+.rounded_corner_wrapper .nivo-nextNav {
+  right: -1px; }
+
+.slider .nivo-controlNav {
+  position: absolute;
+  bottom: 11px;
+  /* Put the nav below the slider */
+  left: 34px;
+  z-index: 1000; }
+
+.slider .nivo-controlNav img {
+  display: inline;
+  /* Unhide the thumbnails */
+  position: relative;
+  margin-right: 10px;
+  cursor: pointer; }
+/* GIGYA COMMENTS
+------------------------------------
+:: These styles are specifically for the comments which are powered by Gigya..
+------------------------------------*/
+#gigya_header {
+  padding: 0 0 6px;
+  border-bottom: 1px dotted #ccc; }
+  #gigya_header .large_gray_btn {
+    float: right;
+    padding: 0 12px; }
+
+#performer_content #gigya_header,
+#event_content #gigya_header {
+  display: none; }
+
+#gigya_comments h3 {
+  margin: 0 0 10px;
+  padding: 0 0 10px;
+  color: #0099FF;
+  font-size: 21px;
+  font-weight: bold;
+  border-bottom: 1px dashed #ADC0C9; }
+#gigya_comments .gig-comments-container {
+  width: auto !important; }
+#gigya_comments .gig-comments-textarea {
+  width: 694px !important; }
+#gigya_comments #Comments-postButton a {
+  display: inline-block;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 7px 30px;
+  color: white;
+  font-size: 1.1em;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  line-height: 1.1em;
+  text-shadow: 0px 1px 2px #5BC6F3;
+  border: solid #0098FE 1px;
+  cursor: pointer;
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(#0098fe), to(#1977ce));
+  background: -moz-linear-gradient(top, #0098fe, #1977ce);
+  -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=#0098fe, endColorStr=#1977ce);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=#0098fe, endColorStr=#1977ce);
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-box-shadow: 0px 1px 5px #999;
+  -moz-box-shadow: 0px 1px 5px #999; }
+#gigya_comments #Comments-postButton a:hover {
+  background: #2388f5;
+  text-shadow: 0px 0px 12px #fff;
+  /*FOR IE*/
+  -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=#2388f5, endColorStr=#2388f5);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=#2388f5, endColorStr=#2388f5); }
+#gigya_comments .gig-comments-commentList-header-commentsCount {
+  float: left;
+  padding: 0; }
+#gigya_comments .gig-comments-headerLinks {
+  float: right;
+  padding: 0; }
+#gigya_comments .gig-comments-commentBox-bottom {
+  margin-top: 10px; }
+#gigya_comments #article_comments_footer a {
+  float: right; }
+
+#Comments-commentBox div.gig-comments-headerText {
+  padding-top: 0;
+  line-height: 100%; }
+
+.comments_link {
+  color: #375363;
+  display: block;
+  float: right;
+  position: relative; }
+  .comments_link span {
+    display: block;
+    position: absolute;
+    top: -4px;
+    left: -35px;
+    width: 24px;
+    height: 25px;
+    padding: 0 0 0 7px;
+    color: #fff;
+    font-size: 10px;
+    text-align: center;
+    text-decoration: none;
+    line-height: 25px;
+    background-image: url(/assets/content_bg/application_sprite-8d81388f106f713282205e46d5c85876.png);
+    background-position: -387px -483px; }
+
+.comments_link:hover {
+  color: #000; }

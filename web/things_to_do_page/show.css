@@ -1048,13 +1048,14 @@
     text-decoration: underline; }
   .browse_by_neighborhood .neighborhood_content .venue_img {
     display: block;
-    margin: 0 0 9px; }
+    margin: 0 0 9px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    overflow: hidden; }
     .browse_by_neighborhood .neighborhood_content .venue_img img {
       display: block;
       width: 165px;
-      height: 110px;
-      border: 1px solid #ccc;
-      border-radius: 4px; }
+      height: 110px; }
   .browse_by_neighborhood .neighborhood_content ul {
     height: 123px;
     /*previously 97px*/
@@ -1075,16 +1076,13 @@
     margin: 0 0 2px;
     display: inline-block;
     line-height: 12px; }
-  .browse_by_neighborhood .neighborhood_content .see_more:hover {
-    color: #000 !important; }
-.browse_by_neighborhood .neighborhood_content.last {
-  margin: 0; }
+    .browse_by_neighborhood .neighborhood_content .see_more:hover {
+      color: #000 !important; }
 .browse_by_neighborhood .more_links .label {
   display: inline-block;
   width: 182px;
   zoom: 1; }
-.browse_by_neighborhood .more_links a:link,
-.browse_by_neighborhood .more_links .fake_link {
+.browse_by_neighborhood .more_links a:link, .browse_by_neighborhood .more_links .fake_link {
   white-space: nowrap; }
 .browse_by_neighborhood .more_links .blue_text {
   text-decoration: underline; }

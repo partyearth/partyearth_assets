@@ -342,6 +342,8 @@
     min-width: 65px; }
   .social_media_btns td td {
     min-width: 0; }
+  .social_media_btns .gig-counter .gig-counter-text {
+    font-weight: normal !important; }
 
 /* Styles for social media Buttons when inside */
 .outside .social_media_btns {
