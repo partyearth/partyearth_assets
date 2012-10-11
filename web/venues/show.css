@@ -1869,7 +1869,7 @@ ratings_big_wrapper .title {
   z-index: 10;
   float: right;
   width: 347px;
-  padding: 0 0 0 23px;
+  padding: 0 0 0 15px;
   background-color: #fff; }
 
 #gal_cont {
@@ -2091,6 +2091,7 @@ ratings_big_wrapper .title {
       #object_page_info dd.neighborhood a:hover {
         color: #597686; }
   #object_page_info #location_details {
+    clear: left;
     margin: 0 0 9px;
     padding-bottom: 9px;
     border-bottom: 1px dashed #adc0c9; }
@@ -2398,7 +2399,7 @@ ratings_big_wrapper .title {
     margin: -15px 0 0 30px; }
 #object_page_info #liked_by {
   float: left;
-  width: 335px;
+  width: 343px;
   margin: 0 0 8px;
   padding: 0 0 10px 0;
   border-bottom: 1px dashed #ADC0C9; }
@@ -2407,45 +2408,32 @@ ratings_big_wrapper .title {
     width: auto;
     position: static; }
   #object_page_info #liked_by dd {
+    margin: 0;
     position: relative;
     font-size: 12px; }
   #object_page_info #liked_by .character_icons {
     float: left;
     margin: 0 20px 0 0; }
+  #object_page_info #liked_by .being_evaluated, #object_page_info #liked_by .no_reviews {
+    display: block;
+    height: 35px;
+    background-image: url("/assets/content_bg/application_sprite.png"); }
   #object_page_info #liked_by .being_evaluated {
-    display: none; }
-  #object_page_info #liked_by .no_reviews, #object_page_info #liked_by .no_likes .character_icons {
+    display: none;
     float: left;
-    width: 132px;
-    padding: 4px 10px;
-    color: #597686;
-    text-align: center;
-    line-height: 12px;
-    border: 1px solid #b5c2c9;
-    border-radius: 2px; }
+    width: 176px;
+    background-position: -491px -529px; }
+  #object_page_info #liked_by .no_reviews {
+    float: right;
+    width: 159px;
+    background-position: -669px -529px; }
   #object_page_info #liked_by .question_mark {
     position: absolute;
     top: -18px;
     left: 333px; }
-  #object_page_info #liked_by .no_likes .character_icons {
-    position: relative;
-    width: 50px;
-    margin-right: 10px;
-    padding-right: 10px;
-    padding-left: 109px;
-    text-align: left; }
   #object_page_info #liked_by .no_likes .being_evaluated {
-    display: inline; }
-    #object_page_info #liked_by .no_likes .being_evaluated span {
-      display: block;
-      position: absolute;
-      bottom: 0;
-      left: 1px;
-      width: 100px;
-      height: 29px;
-      background-image: url("/assets/content_bg/application_sprite.png");
-      background-position: -491px -529px; }
-  #object_page_info #liked_by .no_likes .persona, #object_page_info #liked_by .no_likes .question_mark {
+    display: block; }
+  #object_page_info #liked_by .no_likes .character_icons, #object_page_info #liked_by .no_likes .question_mark {
     display: none; }
 #object_page_info #user_review_summary {
   clear: left;

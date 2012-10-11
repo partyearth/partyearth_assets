@@ -1717,7 +1717,7 @@
   z-index: 10;
   float: right;
   width: 347px;
-  padding: 0 0 0 23px;
+  padding: 0 0 0 15px;
   background-color: #fff; }
 
 #gal_cont {
@@ -1939,6 +1939,7 @@
       #object_page_info dd.neighborhood a:hover {
         color: #597686; }
   #object_page_info #location_details {
+    clear: left;
     margin: 0 0 9px;
     padding-bottom: 9px;
     border-bottom: 1px dashed #adc0c9; }
