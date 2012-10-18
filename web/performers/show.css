@@ -1816,7 +1816,7 @@
     text-decoration: none; }
 
 #gal_map_footer {
-  padding: 7px 0 0;
+  padding: 7px 0;
   font-size: 11px; }
   #gal_map_footer span {
     display: block;
@@ -1905,10 +1905,13 @@
   #object_page_info dl {
     position: relative;
     padding: 0 0 0 100px; }
+    #object_page_info dl#more_details {
+      width: 245px; }
   #object_page_info dt {
     position: absolute;
     left: 0;
     width: 95px;
+    margin: 2px 0 0;
     color: #8ea8b5;
     font-size: 9px;
     text-transform: uppercase;
@@ -1920,6 +1923,24 @@
     #object_page_info dd p {
       padding: 0;
       line-height: 14px; }
+    #object_page_info dd.clipped {
+      position: relative;
+      height: 14px;
+      overflow: hidden; }
+      #object_page_info dd.clipped .more_link {
+        display: block; }
+    #object_page_info dd .more_link {
+      display: none;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      padding: 0 0 0 10px;
+      color: #597686;
+      text-decoration: underline;
+      cursor: pointer;
+      background-color: #fff; }
+      #object_page_info dd .more_link:hover {
+        color: #000; }
     #object_page_info dd.address, #object_page_info dd.neighborhood {
       font-size: 12px;
       line-height: 16px; }
@@ -2146,6 +2167,9 @@
     font-size: 17px;
     font-weight: bold;
     border-top: 1px dashed #d7d7d7; }
+
+#user_review_page #review_details dt:first-child {
+  border-top: none; }
 
 /*RIGHT COLUMN*/
 /*---------------------------------------*/

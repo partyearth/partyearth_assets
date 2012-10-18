@@ -29,7 +29,7 @@
   width: 674px; }
 
 .top_section_header {
-  width: 715px; }
+  width: 716px; }
   .top_section_header .blue_section_divider {
     margin: 0;
     width: 325px;
@@ -205,53 +205,53 @@
     color: #375363;
     font-size: 12px;
     line-height: 15px; }
-  .top_section_content .featured_item .personalities {
+  .top_section_content .featured_item .liked_by {
     float: left; }
-    .top_section_content .featured_item .personalities .label {
+    .top_section_content .featured_item .liked_by dt {
       margin-right: 10px; }
 .top_section_content .small_items {
   float: left;
   width: 347px; }
-  .top_section_content .small_items li {
+  .top_section_content .small_items li.item {
     position: relative;
     padding: 7px 0 10px;
     min-height: 153px;
     border-top: 1px dashed #adc0c9; }
-    .top_section_content .small_items li:first-child {
+    .top_section_content .small_items li.item:first-child {
       padding-top: 0;
       border-top: none; }
-    .top_section_content .small_items li p {
+    .top_section_content .small_items li.item p {
       padding-bottom: 0; }
-    .top_section_content .small_items li .headline.sub_headline {
+    .top_section_content .small_items li.item .headline.sub_headline {
       text-decoration: underline;
       font-size: 17px;
       position: relative;
       bottom: -2px; }
-    .top_section_content .small_items li .small_text.caps.blue_text {
+    .top_section_content .small_items li.item .small_text.caps.blue_text {
       font-size: 10px; }
-    .top_section_content .small_items li .item_img {
+    .top_section_content .small_items li.item .item_img {
       display: block;
       float: left;
       width: 165px;
       height: 110px;
       margin: 0 12px 0 0; }
-      .top_section_content .small_items li .item_img img {
+      .top_section_content .small_items li.item .item_img img {
         display: block;
         width: 165px;
         height: 110px; }
-    .top_section_content .small_items li .desc {
+    .top_section_content .small_items li.item .desc {
       position: relative;
       height: 62px;
       margin: 0 0 5px;
       overflow: hidden; }
-      .top_section_content .small_items li .desc .info {
+      .top_section_content .small_items li.item .desc .info {
         font-size: 11px;
         line-height: 14px;
         color: #000;
         text-decoration: none;
         margin: 2px 0 0;
         display: block; }
-      .top_section_content .small_items li .desc .ellipses_dots {
+      .top_section_content .small_items li.item .desc .ellipses_dots {
         font-size: 11px;
         line-height: 15px;
         background: #fff;
@@ -261,12 +261,12 @@
         max-width: 176px;
         height: 15px;
         overflow: hidden; }
-    .top_section_content .small_items li .personalities {
+    .top_section_content .small_items li.item .liked_by {
       position: absolute;
       left: 180px;
       bottom: 11px;
       width: 167px; }
-    .top_section_content .small_items li .box_link.calendar {
+    .top_section_content .small_items li.item .box_link.calendar {
       position: absolute;
       bottom: 8px;
       left: 172px; }

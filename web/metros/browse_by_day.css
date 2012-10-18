@@ -7,7 +7,7 @@
   .top_section_header .blue_section_divider {
     width: 323px; } }
 .top_section_header {
-  width: 715px;
+  width: 716px;
   padding-bottom: 3px;
   margin-bottom: 8px; }
   .top_section_header .blue_section_divider {
@@ -223,15 +223,15 @@
     height: 297px;
     margin: 5px 0;
     overflow: hidden; }
-    .top_section_content .vertical_slider .items_collection .small_items li {
+    .top_section_content .vertical_slider .items_collection .small_items li.item {
       padding: 12px 0 0 25px;
       margin: 0 0 4px; }
-      .top_section_content .vertical_slider .items_collection .small_items li .details_wrapper {
+      .top_section_content .vertical_slider .items_collection .small_items li.item .details_wrapper {
         border-bottom: 1px dashed #adc0c9;
         position: relative;
         height: 70px;
         padding: 0 10px 15px 0; }
-        .top_section_content .vertical_slider .items_collection .small_items li .details_wrapper .label {
+        .top_section_content .vertical_slider .items_collection .small_items li.item .details_wrapper .label {
           position: absolute;
           top: -6px;
           left: -1px;
@@ -243,13 +243,13 @@
           height: 11px;
           padding: 0 3px;
           z-index: 2; }
-        .top_section_content .vertical_slider .items_collection .small_items li .details_wrapper .label.venue {
+        .top_section_content .vertical_slider .items_collection .small_items li.item .details_wrapper .label.venue {
           background: #545454; }
-        .top_section_content .vertical_slider .items_collection .small_items li .details_wrapper .label.event {
+        .top_section_content .vertical_slider .items_collection .small_items li.item .details_wrapper .label.event {
           background: #0099ff; }
-        .top_section_content .vertical_slider .items_collection .small_items li .details_wrapper p {
+        .top_section_content .vertical_slider .items_collection .small_items li.item .details_wrapper p {
           padding-bottom: 0; }
-        .top_section_content .vertical_slider .items_collection .small_items li .details_wrapper .item_img {
+        .top_section_content .vertical_slider .items_collection .small_items li.item .details_wrapper .item_img {
           display: block;
           float: left;
           width: 98px;
@@ -257,11 +257,11 @@
           margin: 0 12px 0 0;
           border: 1px solid #ccc;
           border-radius: 2px 2px 2px 2px; }
-          .top_section_content .vertical_slider .items_collection .small_items li .details_wrapper .item_img img {
+          .top_section_content .vertical_slider .items_collection .small_items li.item .details_wrapper .item_img img {
             display: block;
             width: 98px;
             height: 65px; }
-        .top_section_content .vertical_slider .items_collection .small_items li .details_wrapper .headline.sub_headline {
+        .top_section_content .vertical_slider .items_collection .small_items li.item .details_wrapper .headline.sub_headline {
           text-decoration: underline;
           font-size: 17px;
           position: relative;
@@ -271,29 +271,29 @@
           z-index: 0;
           max-height: 38px;
           overflow: hidden; }
-          .top_section_content .vertical_slider .items_collection .small_items li .details_wrapper .headline.sub_headline a:hover {
+          .top_section_content .vertical_slider .items_collection .small_items li.item .details_wrapper .headline.sub_headline a:hover {
             color: #597686; }
-        .top_section_content .vertical_slider .items_collection .small_items li .details_wrapper .date_time {
+        .top_section_content .vertical_slider .items_collection .small_items li.item .details_wrapper .date_time {
           padding: 0;
           margin: 3px 0;
           height: 12px;
           line-height: 6px;
           overflow: hidden; }
-          .top_section_content .vertical_slider .items_collection .small_items li .details_wrapper .date_time .small_text {
+          .top_section_content .vertical_slider .items_collection .small_items li.item .details_wrapper .date_time .small_text {
             font-size: 10px; }
-        .top_section_content .vertical_slider .items_collection .small_items li .details_wrapper .event_venue_name {
+        .top_section_content .vertical_slider .items_collection .small_items li.item .details_wrapper .event_venue_name {
           color: #375363; }
-        .top_section_content .vertical_slider .items_collection .small_items li .details_wrapper .event_venue_name:hover {
+        .top_section_content .vertical_slider .items_collection .small_items li.item .details_wrapper .event_venue_name:hover {
           color: #597686; }
-        .top_section_content .vertical_slider .items_collection .small_items li .details_wrapper .venue_type {
+        .top_section_content .vertical_slider .items_collection .small_items li.item .details_wrapper .venue_type {
           margin-bottom: 0; }
-        .top_section_content .vertical_slider .items_collection .small_items li .details_wrapper .desc {
+        .top_section_content .vertical_slider .items_collection .small_items li.item .details_wrapper .desc {
           position: relative;
           height: 44px;
           overflow: hidden;
           top: -3px;
           margin: 0 7px 0 0; }
-          .top_section_content .vertical_slider .items_collection .small_items li .details_wrapper .desc .blue_tag {
+          .top_section_content .vertical_slider .items_collection .small_items li.item .details_wrapper .desc .blue_tag {
             float: left;
             display: none;
             /*Hiding, but keeping styles in case we need to add back in.*/
@@ -304,19 +304,19 @@
             position: relative;
             top: 6px;
             width: 114px; }
-            .top_section_content .vertical_slider .items_collection .small_items li .details_wrapper .desc .blue_tag a, .top_section_content .vertical_slider .items_collection .small_items li .details_wrapper .desc .blue_tag a:visited {
+            .top_section_content .vertical_slider .items_collection .small_items li.item .details_wrapper .desc .blue_tag a, .top_section_content .vertical_slider .items_collection .small_items li.item .details_wrapper .desc .blue_tag a:visited {
               color: #8ea8b5;
               text-decoration: none; }
-            .top_section_content .vertical_slider .items_collection .small_items li .details_wrapper .desc .blue_tag a:after {
+            .top_section_content .vertical_slider .items_collection .small_items li.item .details_wrapper .desc .blue_tag a:after {
               content: ":"; }
-          .top_section_content .vertical_slider .items_collection .small_items li .details_wrapper .desc .info {
+          .top_section_content .vertical_slider .items_collection .small_items li.item .details_wrapper .desc .info {
             font-size: 11px;
             line-height: 13px;
             color: #000;
             text-decoration: none;
             margin: 5px 0 0;
             display: block; }
-          .top_section_content .vertical_slider .items_collection .small_items li .details_wrapper .desc .ellipses_dots {
+          .top_section_content .vertical_slider .items_collection .small_items li.item .details_wrapper .desc .ellipses_dots {
             font-size: 11px;
             line-height: 15px;
             background: #fff;
@@ -326,12 +326,12 @@
             max-width: 176px;
             height: 15px;
             overflow: hidden; }
-    .top_section_content .vertical_slider .items_collection .small_items li:hover,
-    .top_section_content .vertical_slider .items_collection .small_items li.selected {
+    .top_section_content .vertical_slider .items_collection .small_items li.item:hover,
+    .top_section_content .vertical_slider .items_collection .small_items li.item.selected {
       background: url(/assets/home/homepage_sprite.png) -500px -63px no-repeat transparent; }
-      .top_section_content .vertical_slider .items_collection .small_items li:hover .details_wrapper,
-      .top_section_content .vertical_slider .items_collection .small_items li.selected .details_wrapper {
+      .top_section_content .vertical_slider .items_collection .small_items li.item:hover .details_wrapper,
+      .top_section_content .vertical_slider .items_collection .small_items li.item.selected .details_wrapper {
         /*border-bottom:1px dashed #adc0c9;*/ }
-        .top_section_content .vertical_slider .items_collection .small_items li:hover .details_wrapper .ellipses_dots,
-        .top_section_content .vertical_slider .items_collection .small_items li.selected .details_wrapper .ellipses_dots {
+        .top_section_content .vertical_slider .items_collection .small_items li.item:hover .details_wrapper .ellipses_dots,
+        .top_section_content .vertical_slider .items_collection .small_items li.item.selected .details_wrapper .ellipses_dots {
           background: #eff2f3; }

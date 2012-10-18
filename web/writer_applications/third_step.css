@@ -299,6 +299,8 @@ div.actions fieldset, .store_action_btns fieldset {
   #social_login p {
     margin: 0 0 7px;
     font-size: 15px; }
+    #social_login p.other_account {
+      font-size: 13px; }
   #social_login .social_icons {
     margin: 0 0 12px; }
     #social_login .social_icons li {

@@ -409,7 +409,7 @@
 .top_section_content .small_items {
   float: left;
   width: 335px; }
-  .top_section_content .small_items .item {
+  .top_section_content .small_items li.item {
     position: relative;
     float: left;
     width: 102px;
@@ -417,22 +417,22 @@
     margin: 0 0 10px;
     padding: 0 14px 10px 0;
     border-bottom: 1px dashed #adc0c9; }
-    .top_section_content .small_items .item .black_link {
+    .top_section_content .small_items li.item .black_link {
       display: inline-block;
       margin-bottom: 6px;
       line-height: 15px;
       text-shadow: 0 0 0.08em #dadada; }
-    .top_section_content .small_items .item p {
+    .top_section_content .small_items li.item p {
       padding-bottom: 0; }
-    .top_section_content .small_items .item .venue_type {
+    .top_section_content .small_items li.item .venue_type {
       padding-top: 0; }
-    .top_section_content .small_items .item .thumbnail {
+    .top_section_content .small_items li.item .thumbnail {
       width: 100px;
       height: 100px;
       display: block;
       position: absolute;
       bottom: 10px; }
-      .top_section_content .small_items .item .thumbnail img {
+      .top_section_content .small_items li.item .thumbnail img {
         width: 100px;
         height: 100px; }
   .top_section_content .small_items .item.third {

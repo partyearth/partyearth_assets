@@ -159,12 +159,13 @@
   display: block;
   position: relative;
   float: right;
+  padding: 3px 0 0;
   color: #597686;
   font-size: 11px; }
   .comments_link span, .comments_link:link span, .comments_link:visited span {
     display: block;
     position: absolute;
-    top: -4px;
+    top: 0;
     left: -35px;
     width: 24px;
     height: 25px;

@@ -854,6 +854,10 @@ BODY:first-of-type ul.as-list, x:-moz-any-link, x:default {
 
 .clearfix {
   *zoom: 1; }
+/*
+
+
+*/
 #event_importer .content .as-results,
 #events_review .content .as-results {
   position: relative; }
@@ -862,26 +866,30 @@ BODY:first-of-type ul.as-list, x:-moz-any-link, x:default {
     top: 24px !important;
     height: 472px;
     overflow: auto; }
+#event_importer .content .event_data,
+#events_review .content .event_data {
+  box-shadow: none;
+  border: none; }
 #event_importer .content li.as-original input,
 #events_review .content li.as-original input {
-  font-size: inherit;
   height: auto;
-  padding: 6px; }
+  padding: 6px;
+  font-size: inherit; }
 #event_importer .content .venue_search,
 #events_review .content .venue_search {
   position: relative; }
   #event_importer .content .venue_search form,
   #events_review .content .venue_search form {
+    display: inline-block;
+    min-width: 560px;
+    padding: 10px 19px 5px;
     background: -webkit-gradient(linear, 0 0, 0 100%, from(white), to(#cccccc));
     background: -moz-linear-gradient(top, white, #cccccc);
     -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=#fff, endColorStr=#CCC);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=#fff, endColorStr=#CCC);
-    padding: 10px 19px 5px;
-    box-shadow: inset 0 0 8px #999;
-    border-radius: 26px;
-    display: inline-block;
     border: 1px inset white;
-    min-width: 560px; }
+    border-radius: 26px;
+    box-shadow: inset 0 0 8px #999; }
     #event_importer .content .venue_search form .label_float,
     #events_review .content .venue_search form .label_float {
       color: #444;
@@ -899,6 +907,8 @@ BODY:first-of-type ul.as-list, x:-moz-any-link, x:default {
       margin: 0; }
 #event_importer .content .event_row,
 #events_review .content .event_row {
+  position: relative;
+  margin: 0 0 10px;
   padding: 5px 5px 0;
   border-top: 1px dashed #EBECED;
   border-right: 1px solid #dadada;
@@ -908,26 +918,42 @@ BODY:first-of-type ul.as-list, x:-moz-any-link, x:default {
   border-radius: 4px 4px 4px 4px;
   box-shadow: inset 0 0 14px #ccc;
   margin: 0; }
-#event_importer .content .event_row:hover,
-#events_review .content .event_row:hover {
-  background: #bcc4c9;
-  border-top: 1px solid #999;
-  border-right: 1px solid #999;
-  border-bottom: 1px solid #999;
-  border-left: 1px solid #999;
-  box-shadow: inset 0 0 14px #888; }
-  #event_importer .content .event_row:hover .row_1 .accept_btn.white_btn,
-  #events_review .content .event_row:hover .row_1 .accept_btn.white_btn {
-    background: -webkit-gradient(linear, 0 0, 0 100%, from(#0098fe), to(#1977ce));
-    background: -moz-linear-gradient(top, #0098fe, #1977ce);
-    -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=#0098fe, endColorStr=#1977ce);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=#0098fe, endColorStr=#1977ce);
-    color: #fff;
-    text-shadow: 1px 1px 0px #006CBA;
-    border: solid #0098fe 1px; }
-  #event_importer .content .event_row:hover .row_1 .accept_btn.white_btn:hover,
-  #events_review .content .event_row:hover .row_1 .accept_btn.white_btn:hover {
-    background: #2388F5; }
+  #event_importer .content .event_row:hover,
+  #events_review .content .event_row:hover {
+    background: #bcc4c9;
+    border-top: 1px solid #999;
+    border-right: 1px solid #999;
+    border-bottom: 1px solid #999;
+    border-left: 1px solid #999;
+    box-shadow: inset 0 0 14px #888; }
+    #event_importer .content .event_row:hover .row_1 .accept_btn.white_btn,
+    #events_review .content .event_row:hover .row_1 .accept_btn.white_btn {
+      color: #fff;
+      text-shadow: 1px 1px 0px #006CBA;
+      background: -webkit-gradient(linear, 0 0, 0 100%, from(#0098fe), to(#1977ce));
+      background: -moz-linear-gradient(top, #0098fe, #1977ce);
+      -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=#0098fe, endColorStr=#1977ce);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=#0098fe, endColorStr=#1977ce);
+      border: solid #0098fe 1px; }
+      #event_importer .content .event_row:hover .row_1 .accept_btn.white_btn:hover,
+      #events_review .content .event_row:hover .row_1 .accept_btn.white_btn:hover {
+        background: #2388F5; }
+  #event_importer .content .event_row.disabled .disabled_overlay,
+  #events_review .content .event_row.disabled .disabled_overlay {
+    display: block; }
+  #event_importer .content .event_row .disabled_overlay,
+  #events_review .content .event_row .disabled_overlay {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    opacity: .85;
+    background-image: url(/assets/content_bg/spinner.gif);
+    background-position: center;
+    background-repeat: no-repeat; }
 #event_importer .content .event_item,
 #events_review .content .event_item {
   float: left;
@@ -1016,19 +1042,14 @@ BODY:first-of-type ul.as-list, x:-moz-any-link, x:default {
     height: auto;
     margin: 0 10px 0 0;
     float: left; }
-#event_importer .content .admin_btns.bottom,
-#events_review .content .admin_btns.bottom {
-  float: left;
-  background: -webkit-gradient(linear, 0 0, 0 100%, from(white), to(#cccccc));
-  background: -moz-linear-gradient(top, white, #cccccc);
-  -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=#fff, endColorStr=#CCC);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=#fff, endColorStr=#CCC);
-  padding: 10px 19px;
-  box-shadow: inset 0 0 8px #999;
-  border-radius: 26px;
-  border: 1px inset white; }
-/*
-
-
-
-*/
+  #event_importer .content .admin_btns.bottom,
+  #events_review .content .admin_btns.bottom {
+    float: left;
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(white), to(#cccccc));
+    background: -moz-linear-gradient(top, white, #cccccc);
+    -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=#fff, endColorStr=#CCC);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=#fff, endColorStr=#CCC);
+    padding: 10px 19px;
+    box-shadow: inset 0 0 8px #999;
+    border-radius: 26px;
+    border: 1px inset white; }

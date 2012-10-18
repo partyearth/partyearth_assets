@@ -2233,9 +2233,8 @@ td.right_side.pod_sides {
 .headline {
   font-family: 'PT Sans', arial, sans-serif; }
 
-/*BEGIN NAVIGATION CSS*/
-/*BEGIN GENERAL PROPERTIES*/
-/*------------------------------------------*/
+/* BEGIN GENERAL PROPERTIES
+------------------------------------------ */
 .left_column {
   width: 735px; }
 
@@ -2244,15 +2243,15 @@ td.right_side.pod_sides {
   position: fixed\9 !important;
   height: 450%\9 !important; }
 
-/*BEGIN IBIZA SCENE DESC SECTION*/
-/*------------------------------------------*/
+/* BEGIN IBIZA SCENE DESC SECTION
+------------------------------------------ */
 .ibiza_desc {
   width: 240px; }
 
 .ibiza_desc_content {
+  width: 220px;
   height: 379px;
-  overflow: hidden;
-  width: 220px; }
+  overflow: hidden; }
 
 .ibiza_desc_content .headline {
   *line-height: 33px;
@@ -2270,8 +2269,8 @@ td.right_side.pod_sides {
 .ibiza_desc_content .schedule_link {
   background-position: 134px -2904px; }
 
-/*BEGIN VIDEO, PHOTOS, and MAP SECTION*/
-/*------------------------------------------*/
+/* BEGIN VIDEO, PHOTOS, and MAP SECTION
+------------------------------------------ */
 .vid_gal_map {
   margin: 0 0 0 15px;
   width: 480px; }
@@ -2282,163 +2281,107 @@ td.right_side.pod_sides {
   height: 360px;
   width: 460px; }
 
-/*FOR VIDEOS*/
-/*-------------------------------*/
+/* FOR VIDEOS
+------------------------------- */
 #videos_info .schedule_link {
   font-size: 10px;
   line-height: 10px;
   margin: 11px 0 0;
   text-decoration: none;
   text-transform: uppercase; }
+  #videos_info .schedule_link:hover {
+    text-decoration: none; }
+  #videos_info .schedule_link .sched_text, #videos_info .schedule_link:hover .sched_text {
+    text-decoration: underline; }
 
-#videos_info .schedule_link:hover {
-  text-decoration: none; }
-
-#videos_info .schedule_link .sched_text,
-#videos_info .schedule_link:hover .sched_text {
-  text-decoration: underline; }
-
-/*FOR PHOTOS*/
-/*-------------------------------*/
-/*FOR MAP*/
-/*------------------------------*/
+/* FOR MAP
+------------------------------ */
 #ibiza_home_content .vid_gal_map #map_info .map {
   height: 306px; }
 
 #ibiza_home_content .city_map .overlay {
   bottom: 20px; }
 
-/*BEGIN MIDDLE SECTION*/
-/*------------------------------------------*/
-.ibiza_spots {
-  width: 735px; }
-
+/* BEGIN MIDDLE SECTION
+------------------------------------------ */
 .scroller_wrapper {
-  padding: 0 27px;
-  position: relative; }
+  position: relative;
+  padding: 0 27px; }
 
 .screens_container {
+  position: relative;
   height: 325px;
-  overflow: hidden;
-  position: relative; }
+  overflow: hidden; }
 
 .screens_wrapper {
-  width: 8000px;
   position: absolute;
+  top: 0;
   left: 0;
-  top: 0; }
+  width: 8000px; }
 
-.ibiza_spots .spot_item {
-  width: 145px;
-  height: 325px;
-  margin: 0 27px 0 0; }
+.ibiza_spots {
+  width: 735px;
+  /* Beaches, Sunsets, More Cool Spots */
+  /* Sunsets */ }
+  .ibiza_spots .spot_item {
+    width: 145px;
+    height: 325px;
+    margin: 0 27px 0 0; }
+    .ibiza_spots .spot_item .headline {
+      height: 36px;
+      margin: 0 0 10px;
+      overflow: hidden;
+      letter-spacing: -1px \9;
+      /*FOR IE*/ }
+    .ibiza_spots .spot_item .scene_desc {
+      position: relative;
+      height: 128px;
+      padding-top: 6px;
+      overflow: hidden; }
+      .ibiza_spots .spot_item .scene_desc p {
+        padding: 0;
+        line-height: 16px; }
+  .ibiza_spots .prev_next_btns {
+    position: absolute;
+    top: 45%;
+    width: 25px;
+    height: 47px;
+    text-indent: -9999px;
+    background-image: url(/assets/content_bg/application_sprite.png);
+    cursor: pointer; }
+    .ibiza_spots .prev_next_btns.prev_btn {
+      left: -10px;
+      background-position: 0 -3040px; }
+      .ibiza_spots .prev_next_btns.prev_btn:hover {
+        background-position: -101px -3040px; }
+      .ibiza_spots .prev_next_btns.prev_btn.disabled {
+        background-position: -50px -3040px; }
+    .ibiza_spots .prev_next_btns.next_btn {
+      right: -10px;
+      background-position: -25px -3040px; }
+      .ibiza_spots .prev_next_btns.next_btn:hover {
+        background-position: -126px -3040px; }
+      .ibiza_spots .prev_next_btns.next_btn.disabled {
+        background-position: -75px -3040px; }
+    .ibiza_spots .prev_next_btns.disabled {
+      cursor: default; }
+  .ibiza_spots #beaches_info .spot_item .headline,
+  .ibiza_spots #sunsets_info .spot_item .headline,
+  .ibiza_spots #more_info .spot_item .headline {
+    font-size: 25px;
+    line-height: 25px;
+    height: 52px; }
+  .ibiza_spots #beaches_info .spot_item .scene_desc,
+  .ibiza_spots #sunsets_info .spot_item .scene_desc,
+  .ibiza_spots #more_info .spot_item .scene_desc {
+    height: 143px; }
+  .ibiza_spots #sunsets_info .spot_item .headline {
+    height: 27px; }
+  .ibiza_spots #sunsets_info .spot_item .scene_desc {
+    height: 161px; }
 
-.ibiza_spots .spot_item .headline {
-  height: 36px;
-  margin: 0 0 10px;
-  overflow: hidden;
-  letter-spacing: -1px \9;
-  /*FOR IE*/ }
-
-.ibiza_spots #beaches_info .spot_item .headline {
-  font-size: 25px;
-  line-height: 25px;
-  height: 52px;
-  position: relative; }
-
-.ibiza_spots #more_info .spot_item .headline {
-  font-size: 25px;
-  line-height: 25px;
-  height: 27px;
-  position: relative;
-  line-height: 29px\9;
-  /*FOE IE*/ }
-
-.ibiza_spots #beaches_info .spot_item .headline a,
-.ibiza_spots #more_info .spot_item .headline a {
-  position: absolute;
-  bottom: 2px;
-  left: 0; }
-
-.ibiza_spots .spot_item .scene_desc {
-  height: 128px;
-  overflow: hidden;
-  position: relative;
-  padding-top: 6px; }
-
-.ibiza_spots .spot_item .scene_desc2 {
-  height: 161px;
-  overflow: hidden;
-  position: relative;
-  padding-top: 6px; }
-
-.ibiza_spots #beaches_info .spot_item .scene_desc2 {
-  height: 143px; }
-
-.ibiza_spots #more_info .spot_item .scene_desc2 {
-  height: 161px; }
-
-.ibiza_spots .spot_item .scene_desc p,
-.ibiza_spots .spot_item .scene_desc2 p {
-  padding: 0;
-  line-height: 16px; }
-
-.ibiza_spots .spot_item.spot1 .read_more_txt_link_right {
-  background-position: 93px -2904px; }
-
-.ibiza_spots .spot_item.spot2 .read_more_txt_link_right {
-  background-position: 92px -2904px; }
-
-.ibiza_spots .spot_item.spot3 .read_more_txt_link_right {
-  background-position: 108px -2904px; }
-
-.ibiza_spots .spot_item.spot4 .read_more_txt_link_right {
-  background-position: 106px -2904px; }
-
-.ibiza_spots .spot_item.spot5 .read_more_txt_link_right {
-  background-position: 88px -2904px; }
-
-.ibiza_spots .spot_item.spot6 .read_more_txt_link_right {
-  background-position: 113px -2904px; }
-
-.ibiza_spots .spot_item.spot7 .read_more_txt_link_right {
-  background-position: 119px -2904px; }
-
-.ibiza_spots .prev_next_btns {
-  background: url(/assets/content_bg/application_sprite.png) no-repeat scroll 0 -3040px transparent;
-  cursor: pointer;
-  height: 47px;
-  position: absolute;
-  text-indent: -9999px;
-  top: 45%;
-  width: 25px; }
-
-.ibiza_spots .prev_next_btns.disabled {
-  cursor: default; }
-
-.ibiza_spots .prev_next_btns.prev_btn {
-  left: -10px; }
-
-.ibiza_spots .prev_next_btns.prev_btn:hover {
-  background-position: -101px -3040px; }
-
-.ibiza_spots .prev_next_btns.prev_btn.disabled,
-.ibiza_spots .prev_next_btns.prev_btn.disabled:hover {
-  background-position: -50px -3040px; }
-
-.ibiza_spots .prev_next_btns.next_btn {
-  background-position: -25px -3040px;
-  right: -10px; }
-
-.ibiza_spots .prev_next_btns.next_btn:hover {
-  background-position: -126px -3040px; }
-
-.ibiza_spots .prev_next_btns.next_btn.disabled,
-.ibiza_spots .prev_next_btns.next_btn.disabled:hover {
-  background-position: -75px -3040px; }
-
-/*IBIZA SCHEDULE OF EVENTS*/
-/*------------------------------------------------------------*/
+/* IBIZA SCHEDULE OF EVENTS
+------------------------------------------------------------ */
 .soe_info .headline {
   margin: 0 0 5px; }
 
@@ -2457,9 +2400,9 @@ td.right_side.pod_sides {
 
 .venue_details .venue_photo {
   float: left;
-  margin: 0 15px 10px 0;
   width: 82px;
-  height: 79px; }
+  height: 79px;
+  margin: 0 15px 10px 0; }
 
 .venue_details .venue_photo img {
   width: 82px;
@@ -2567,12 +2510,6 @@ td.right_side.pod_sides {
 .schedule_nav .all_events:hover .blue_link {
   color: #597686; }
 
-/*BEGIN COLLAPSE BAR*/
-/*---------------------------------------*/
-/*BEGIN EXPAND BAR*/
-/*---------------------------------------*/
-/*BEGIN ACCORDION CONTENT*/
-/*---------------------------------------*/
 /*BEGIN RIGHT COLUMN*/
 /*------------------------------------------*/
 .right_column {
