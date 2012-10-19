@@ -2327,18 +2327,18 @@ dl#event_reactions {
         position: absolute;
         top: 4px;
         width: 15px;
-        height: 9px;
+        height: 8px;
         background-image: url(/assets/events/sprite.png); }
     #event_tweets .controls .prev span {
       background-position: -46px -172px;
       left: 21px; }
     #event_tweets .controls .prev.disabled span {
-      background-position: -80px -172px; }
+      background-position: -63px -172px; }
     #event_tweets .controls .next span {
-      background-position: -63px -172px;
+      background-position: -46px -182px;
       left: 22px; }
     #event_tweets .controls .next.disabled span {
-      background-position: -97px -172px; }
+      background-position: -63px -182px; }
     #event_tweets .controls .disabled, #event_tweets .controls .disabled:hover {
       background: #f6f8f9;
       /* Old browsers */

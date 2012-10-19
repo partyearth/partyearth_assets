@@ -881,12 +881,12 @@ span.checkbox, span.radio {
     font-weight: bold;
     line-height: 31px;
     text-transform: uppercase; }
-  #toggle_line a, #toggle_line a:visited {
+  #toggle_line a, #toggle_line a:visited, #toggle_line .fake_link {
     color: #fff;
     font-size: 12px;
     font-weight: bold;
     text-decoration: none; }
-    #toggle_line a:hover, #toggle_line a:visited:hover {
+    #toggle_line a:hover, #toggle_line a:visited:hover, #toggle_line .fake_link:hover {
       text-decoration: underline; }
 
 #welcome_box {
