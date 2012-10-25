@@ -572,7 +572,7 @@
       float: left;
       width: 165px;
       height: 110px;
-      margin: 0 12px 0 0; }
+      margin: 0 7px 0 0; }
       .top_section_content .small_items li.item .item_img img {
         display: block;
         width: 165px;
@@ -601,9 +601,9 @@
         overflow: hidden; }
     .top_section_content .small_items li.item .liked_by {
       position: absolute;
-      left: 180px;
+      left: 173px;
       bottom: 11px;
-      width: 167px; }
+      width: 173px; }
     .top_section_content .small_items li.item .box_link.calendar {
       position: absolute;
       bottom: 8px;

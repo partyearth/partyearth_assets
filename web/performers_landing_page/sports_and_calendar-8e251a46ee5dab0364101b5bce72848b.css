@@ -1,0 +1,164 @@
+/*BEGIN SPORTS AND CALENDAR STYLES*/
+/*------------------------------------------*/
+.performer_schedule {
+  width: 100%; }
+  .performer_schedule p {
+    padding: 0; }
+  .performer_schedule .day {
+    color: #0099ff;
+    font-size: 14px;
+    font-weight: bold; }
+  .performer_schedule .time {
+    color: #8ea8b5;
+    font-size: 11px; }
+  .performer_schedule .item_img {
+    margin: 0 10px 0 0; }
+  .performer_schedule .head {
+    border-bottom: 2px solid #dae4e9; }
+    .performer_schedule .head th {
+      font-size: 11px;
+      color: #666; }
+  .performer_schedule .venue_type {
+    margin: 5px 0 5px; }
+  .performer_schedule .venue_name {
+    color: #8ea8b5; }
+    .performer_schedule .venue_name a, .performer_schedule .venue_name a:visited {
+      color: #8ea8b5; }
+    .performer_schedule .venue_name a:hover {
+      color: #000; }
+
+.featured_teams .item_img {
+  width: 165px;
+  height: 165px;
+  margin: 3px 0; }
+  .featured_teams .item_img img {
+    display: block;
+    width: 165px;
+    height: 165px; }
+.featured_teams .headline.sub_headline {
+  font-size: 15px;
+  line-height: 19px;
+  margin: 0 0 3px;
+  text-decoration: underline; }
+.featured_teams p {
+  padding: 0; }
+.featured_teams .venue_name, .featured_teams .address {
+  color: #375363;
+  line-height: 13px; }
+  .featured_teams .venue_name a, .featured_teams .venue_name a:visited, .featured_teams .address a, .featured_teams .address a:visited {
+    color: #375363; }
+  .featured_teams .venue_name a:hover, .featured_teams .address a:hover {
+    color: #000; }
+
+.featured_teams.one {
+  background: #ffffe5;
+  width: 100px;
+  margin: 0 18px 0 0;
+  padding: 8px 12px; }
+
+.featured_teams.two_or_three .item_img {
+  margin-right: 10px; }
+.featured_teams.two_or_three .team_item.two_teams {
+  width: 342px;
+  position: relative; }
+  .featured_teams.two_or_three .team_item.two_teams .headline.sub_headline {
+    font-size: 19px;
+    line-height: 21px; }
+  .featured_teams.two_or_three .team_item.two_teams .team_details {
+    width: 165px; }
+.featured_teams.two_or_three .team_item {
+  margin: 0 10px 0 0;
+  width: 222px;
+  padding: 0 10px 0 0;
+  border-right: 1px dotted #CCC; }
+  .featured_teams.two_or_three .team_item .team_details {
+    width: 110px; }
+.featured_teams.two_or_three .team_item.last,
+.featured_teams.two_or_three .team_item.second {
+  margin: 0;
+  padding: 0;
+  border-right: none; }
+
+.performer_schedule.one_team {
+  width: 564px; }
+  .performer_schedule.one_team .item_img {
+    margin-bottom: 10px; }
+
+.performer_schedule.default .head {
+  border-top: 2px solid #dae4e9; }
+.performer_schedule.default .date_day {
+  width: 105px; }
+.performer_schedule.default .img_and_event {
+  width: 280px; }
+  .performer_schedule.default .img_and_event .event_name {
+    width: 179px;
+    padding: 0 13px 0 0;
+    /*FOR IE8 AND BELOW*/
+    width: 176px\9; }
+.performer_schedule.default .venue {
+  width: 120px; }
+.performer_schedule.default .time {
+  width: 70px; }
+
+/*BEGIN CAROUSEL*/
+/*------------------------------------------*/
+.featured_teams.carousel {
+  width: 721px;
+  margin-left: -7px; }
+
+.scroller_wrapper {
+  padding: 0 8px;
+  position: relative; }
+
+.screens_container {
+  height: 225px;
+  overflow: hidden;
+  position: relative; }
+
+.screens_wrapper {
+  width: 8000px;
+  position: absolute;
+  left: 0;
+  top: 0; }
+
+.featured_teams.carousel .spot_item {
+  width: 167px;
+  height: 316px;
+  margin: 0 5px 0 0;
+  padding: 0 5px 0 0;
+  border-right: 1px dotted #CCC; }
+  .featured_teams.carousel .spot_item .black_link {
+    text-shadow: 0 0 0.08em #dadada; }
+
+.featured_teams.carousel .prev_next_btns {
+  background: url(/assets/content_bg/application_sprite-0c99d872c88727bf30ed3816fdc5dbb9.png) no-repeat scroll -152px -2957px transparent;
+  cursor: pointer;
+  height: 64px;
+  position: absolute;
+  text-indent: -9999px;
+  top: 43%;
+  width: 19px; }
+
+.featured_teams.carousel .prev_next_btns.disabled {
+  cursor: default; }
+
+.featured_teams.carousel .prev_next_btns.prev_btn {
+  left: -14px; }
+
+.featured_teams.carousel .prev_next_btns.prev_btn:hover {
+  background-position: -152px -3021px; }
+
+.featured_teams.carousel .prev_next_btns.prev_btn.disabled,
+.featured_teams.carousel .prev_next_btns.prev_btn.disabled:hover {
+  background-position: -251px -3021px; }
+
+.featured_teams.carousel .prev_next_btns.next_btn {
+  background-position: -171px -2957px;
+  right: -14px; }
+
+.featured_teams.carousel .prev_next_btns.next_btn:hover {
+  background-position: -171px -3021px; }
+
+.featured_teams.carousel .prev_next_btns.next_btn.disabled,
+.featured_teams.carousel .prev_next_btns.next_btn.disabled:hover {
+  background-position: -270px -3021px; }

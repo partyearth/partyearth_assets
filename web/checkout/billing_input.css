@@ -287,10 +287,13 @@
 
 /*FOR INLINE ERRORS*/
 .store_content.checkout_form_page .inline-errors {
-  left: 285px;
   position: absolute;
+  left: 285px;
   top: 1px;
-  width: 240px; }
+  width: 240px;
+  padding: 0 0 0 22px;
+  background-image: url(/assets/users/error.png);
+  background-repeat: no-repeat; }
 
 .store_content.checkout_form_page .input_inner_wrapper img {
   left: 290px;

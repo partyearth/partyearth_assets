@@ -18,9 +18,11 @@
     position: relative; }
   .liked_by li {
     float: left;
-    margin: 0 3px 0 0;
+    margin: 0 4px 0 0;
     padding: 0 0 2px;
     border-bottom: 2px solid; }
+    .liked_by li:hover {
+      cursor: pointer; }
   .liked_by .character {
     display: block;
     width: 25px;
@@ -98,52 +100,57 @@
     overflow: hidden; }
   .liked_by .lucas {
     border-color: #4175ab; }
-    .liked_by .lucas:hover {
-      border-color: #4175ab; }
     .liked_by .lucas .character {
       background-position: -1px -3px; }
-      .liked_by .lucas .character:hover {
-        border-color: #4175ab !important; }
     .liked_by .lucas .title {
       color: #4175ab; }
     .liked_by .lucas .dialog_img {
       background-position: 0 -209px; }
+    .liked_by .lucas:hover {
+      border-color: #4175ab; }
+      .liked_by .lucas:hover .character {
+        border-color: #4175ab !important;
+        background-position: -1px -3px !important; }
   .liked_by .adriana {
     border-color: #c675b1; }
-    .liked_by .adriana:hover {
-      border-color: #c675b1; }
     .liked_by .adriana .character {
       background-position: -31px -3px; }
-      .liked_by .adriana .character:hover {
-        border-color: #c675b1 !important; }
     .liked_by .adriana .title {
       color: #c675b1; }
     .liked_by .adriana .dialog_img {
       background-position: -32px -209px; }
+    .liked_by .adriana:hover {
+      border-color: #c675b1; }
+      .liked_by .adriana:hover .character {
+        border-color: #c675b1 !important;
+        background-position: -31px -3px !important; }
   .liked_by .jonah {
     border-color: #95c946; }
-    .liked_by .jonah:hover {
-      border-color: #95c946; }
     .liked_by .jonah .character {
       background-position: -61px -3px; }
-      .liked_by .jonah .character:hover {
-        border-color: #95c946 !important; }
     .liked_by .jonah .title {
       color: #95c946; }
     .liked_by .jonah .dialog_img {
       background-position: -64px -209px; }
+    .liked_by .jonah:hover {
+      border-color: #95c946; }
+      .liked_by .jonah:hover .character {
+        border-color: #95c946 !important;
+        background-position: -61px -3px !important; }
   .liked_by .emma {
+    margin-right: 0;
     border-color: #ffb637; }
-    .liked_by .emma:hover {
-      border-color: #ffb637; }
     .liked_by .emma .character {
       background-position: -91px -3px; }
-      .liked_by .emma .character:hover {
-        border-color: #ffb637 !important; }
     .liked_by .emma .title {
       color: #ffb637; }
     .liked_by .emma .dialog_img {
       background-position: -96px -209px; }
+    .liked_by .emma:hover {
+      border-color: #ffb637; }
+      .liked_by .emma:hover .character {
+        border-color: #ffb637 !important;
+        background-position: -91px -3px !important; }
   .liked_by .disabled {
     border-color: #dae4e9; }
     .liked_by .disabled.lucas .character {
@@ -160,25 +167,25 @@
     width: 28px;
     height: 28px; }
   .liked_by.liked_by_big .dialog_box {
-    bottom: 43px; }
+    bottom: 45px; }
   .liked_by.liked_by_big .point {
     bottom: 41px; }
   .liked_by.liked_by_big .lucas .character {
     background-position: 0 0; }
-    .liked_by.liked_by_big .lucas .character:hover {
-      background-position: 0 0 !important; }
+  .liked_by.liked_by_big .lucas:hover .character {
+    background-position: 0 0 !important; }
   .liked_by.liked_by_big .adriana .character {
     background-position: -30px 0; }
-    .liked_by.liked_by_big .adriana .character:hover {
-      background-position: -30px 0 !important; }
+  .liked_by.liked_by_big .adriana:hover .character {
+    background-position: -30px 0 !important; }
   .liked_by.liked_by_big .jonah .character {
     background-position: -60px 0; }
-    .liked_by.liked_by_big .jonah .character:hover {
-      background-position: -60px 0 !important; }
+  .liked_by.liked_by_big .jonah:hover .character {
+    background-position: -60px 0 !important; }
   .liked_by.liked_by_big .emma .character {
     background-position: -90px 0; }
-    .liked_by.liked_by_big .emma .character:hover {
-      background-position: -90px 0 !important; }
+  .liked_by.liked_by_big .emma:hover .character {
+    background-position: -90px 0 !important; }
   .liked_by.liked_by_big .disabled.lucas .character {
     background-position: 0 -30px; }
   .liked_by.liked_by_big .disabled.adriana .character {
@@ -744,8 +751,8 @@
             bottom: 0;
             right: 9px;
             width: 120px; }
-            #search_page .search_page_content .left_column .search_result .result_content .top_right_section .liked_by dt {
-              float: none; }
+            #search_page .search_page_content .left_column .search_result .result_content .top_right_section .liked_by .dialog_content p {
+              text-align: left; }
           #search_page .search_page_content .left_column .search_result .result_content .top_right_section .calendar_btn {
             font-family: 'PT Sans', arial, sans-serif;
             text-align: left;

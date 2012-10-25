@@ -1889,18 +1889,20 @@
     .gig-counter {
       display: none; }
   #object_page_info #review_summary, #object_page_info #description_summary {
-    position: relative;
     clear: left;
-    max-height: 65px;
     margin: 0 0 9px;
     padding: 0 0 9px;
-    border-bottom: 1px dashed #adc0c9;
-    overflow: hidden; }
+    border-bottom: 1px dashed #adc0c9; }
+    #object_page_info #review_summary p, #object_page_info #description_summary p {
+      position: relative;
+      max-height: 72px;
+      padding: 0;
+      overflow: hidden; }
     #object_page_info #review_summary .read_more, #object_page_info #description_summary .read_more {
       display: block;
       position: absolute;
       right: 0;
-      bottom: 2px;
+      bottom: 0;
       background-color: #fff; }
   #object_page_info dl {
     position: relative;
@@ -2245,7 +2247,7 @@
   display: block;
   position: absolute;
   left: 343px;
-  top: -2px;
+  top: 18px;
   z-index: 1000;
   height: 97px;
   width: 97px;

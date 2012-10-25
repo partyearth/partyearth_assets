@@ -1,0 +1,550 @@
+/* GPTP IN THE PRESS POD
+--------------------------------------------------------------------------- */
+#gptp_in_press {
+  margin: 0 0 10px; }
+  #gptp_in_press h2 {
+    margin: 0 0 10px;
+    color: #375363;
+    font-size: 24px;
+    font-weight: normal;
+    line-height: 28px;
+    border-bottom: 1px dashed #ADC0C9; }
+  #gptp_in_press li {
+    padding: 12px 0 0;
+    border-top: 2px solid #adc0c9; }
+    #gptp_in_press li .img {
+      display: block;
+      float: left;
+      width: 48px;
+      height: 48px;
+      margin: 0 10px 0 0;
+      background-image: url(/assets/writer_applications/in_the_press_polaroids-ee5ba6b9790534fbf4ad1a3f2fffeef4.jpg);
+      border: 1px solid #9a9a9a;
+      border-radius: 4px; }
+    #gptp_in_press li .details {
+      float: left;
+      width: 145px; }
+      #gptp_in_press li .details .name_location {
+        display: block;
+        font-size: 10px;
+        color: #8ea8b5;
+        text-decoration: none; }
+        #gptp_in_press li .details .name_location .name {
+          color: #09f;
+          text-decoration: underline; }
+          #gptp_in_press li .details .name_location .name:hover {
+            color: #597686; }
+      #gptp_in_press li .details .article {
+        display: block;
+        color: #375363; }
+        #gptp_in_press li .details .article:hover {
+          color: #000; }
+    #gptp_in_press li .featured {
+      display: block;
+      clear: left;
+      color: #8ea8b5;
+      font-size: 10px;
+      text-transform: uppercase; }
+      #gptp_in_press li .featured span {
+        display: block;
+        position: relative;
+        margin: 0 0 6px;
+        background-image: url(/assets/writer_applications/sprite-c68a5c05c3fe4527f6e8fabb932e616c.png); }
+        #gptp_in_press li .featured span.maxim {
+          width: 126px;
+          height: 33px;
+          margin-top: -18px;
+          margin-bottom: -2px;
+          margin-left: 77px;
+          background-position: 0 -46px; }
+        #gptp_in_press li .featured span.thp {
+          width: 217px;
+          height: 13px;
+          background-position: -128px -46px; }
+        #gptp_in_press li .featured span.look {
+          width: 73px;
+          height: 27px;
+          margin-top: -13px;
+          margin-left: 77px;
+          background-position: -347px -46px; }
+    #gptp_in_press li:first-child {
+      border-top: none; }
+      #gptp_in_press li:first-child .img {
+        display: none; }
+      #gptp_in_press li:first-child .details {
+        float: none;
+        width: auto; }
+      #gptp_in_press li:first-child .name_location {
+        margin-bottom: -15px; }
+        #gptp_in_press li:first-child .name_location .name {
+          display: block;
+          position: relative;
+          top: -10px;
+          left: 7px;
+          width: 196px;
+          height: 208px;
+          text-indent: -9999px;
+          background-image: url(/assets/writer_applications/in_the_press_polaroids-ee5ba6b9790534fbf4ad1a3f2fffeef4.jpg);
+          transform: scale(1) rotate(-4deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
+          -moz-transform: scale(1) rotate(-4deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
+          -webkit-transform: scale(1) rotate(-4deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
+          -o-transform: scale(1) rotate(-4deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
+          -ms-transform: scale(1) rotate(-4deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
+          /* Uncomment if we want to implement for IE8 [https://snipt.net/viatropos/cross-browser-css-rotation-with-and-without-sass/]
+          filter:             progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=#{cos($deg)}, M12=-#{sin($deg)}, M21=#{sin($deg)}, M22=#{cos($deg)});
+          -ms-filter:         "progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=#{cos($deg)}, M12=-#{sin($deg)}, M21=#{sin($deg)}, M22=#{cos($deg)})"; */
+          zoom: 1; }
+        #gptp_in_press li:first-child .name_location .location {
+          visibility: hidden; }
+      #gptp_in_press li:first-child .article {
+        margin: 0 0 3px;
+        color: #09f;
+        font-size: 18px;
+        font-weight: bold; }
+    #gptp_in_press li.sykes .img {
+      background-position: 0 -210px; }
+    #gptp_in_press li.chu .img {
+      background-position: -50px -210px; }
+    #gptp_in_press li.merchants .img {
+      background-position: -100px -210px; }
+    #gptp_in_press li.hogan .img {
+      background-position: -150px -210px; }
+    #gptp_in_press li.sykes .name {
+      background-position: 0 0; }
+    #gptp_in_press li.chu .name {
+      background-position: -198px 0; }
+    #gptp_in_press li.merchants .name {
+      background-position: -396px 0; }
+    #gptp_in_press li.hogan .name {
+      background-position: -600px 0; }
+/*
+
+
+
+
+*/
+/*BEGIN NAVIGATION CSS*/
+/*--------------------------------------------------*/
+#navbar li#get_paid .left_end {
+  background-position: -269px -121px; }
+
+#navbar li#get_paid a:link, #navbar li#get_paid a:visited, #navbar li#get_paid a:active {
+  color: #ffffff; }
+
+#navbar li#get_paid a span {
+  background: url(/assets/content_bg/application_sprite-0c99d872c88727bf30ed3816fdc5dbb9.png) 0 -2663px repeat-x; }
+
+#navbar li#get_paid .right_end {
+  background-position: -283px -121px; }
+
+/*BEGIN PAGE PROPERTIES*/
+/*--------------------------------------------------*/
+.get_paid_to_party_content.writer_bio_page .left_column_wrapper {
+  width: 735px; }
+
+.get_paid_to_party_content.writer_bio_page .left_column {
+  background: url(/assets/writer_applications/left_column_bg_repeat-a2828f421c4cfdb1374fbddfabd1a68d.png) 0 0 repeat-y;
+  margin: 0 0 0 -22px;
+  min-height: 400px;
+  padding: 60px 20px 0 61px;
+  width: 675px;
+  position: relative; }
+
+.get_paid_to_party_content.writer_bio_page .left_column_content {
+  padding: 0 0 64px; }
+
+.get_paid_to_party_content.writer_bio_page .page_title {
+  height: 26px;
+  left: 75px;
+  position: absolute;
+  top: 15px;
+  width: 211px; }
+
+/*INNER LEFT COLUMN*/
+/*--------------------------------------------------*/
+.get_paid_to_party_content.writer_bio_page .inner_left {
+  padding: 0 20px 0 0;
+  width: 220px; }
+
+.get_paid_to_party_content.writer_bio_page .writer_photo {
+  height: 245px;
+  margin: 0 0 17px;
+  position: relative; }
+
+.get_paid_to_party_content.writer_bio_page .writer_photo img {
+  left: -13px;
+  position: absolute;
+  top: -7px; }
+
+.get_paid_to_party_content.writer_bio_page .favorites_title {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 20px;
+  margin: 0 0 7px;
+  text-transform: uppercase; }
+
+.get_paid_to_party_content.writer_bio_page .venue_info {
+  border-bottom: 1px dashed #CCCCCC;
+  margin: 0 0 8px;
+  padding: 0 0 8px; }
+
+.get_paid_to_party_content.writer_bio_page .venue_info p {
+  padding: 0; }
+
+.get_paid_to_party_content.writer_bio_page .venue_info .types span {
+  font-size: 9px;
+  text-transform: uppercase;
+  color: #6c8898; }
+
+.get_paid_to_party_content.writer_bio_page .venue_name {
+  display: block;
+  margin: 0 0 5px;
+  color: #000;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 16px; }
+
+.get_paid_to_party_content.writer_bio_page .venue_name:hover {
+  color: #597686; }
+
+.get_paid_to_party_content.writer_bio_page .venue_name:hover {
+  text-decoration: underline; }
+
+.get_paid_to_party_content.writer_bio_page .types,
+.get_paid_to_party_content.writer_bio_page .types a:link,
+.get_paid_to_party_content.writer_bio_page .types a:visited {
+  color: #a0a0a0; }
+
+.get_paid_to_party_content.writer_bio_page .types a.type,
+.get_paid_to_party_content.writer_bio_page .types a.type:visited {
+  font-size: 9px;
+  text-transform: uppercase;
+  color: #6c8898;
+  text-decoration: none; }
+
+.get_paid_to_party_content.writer_bio_page .types a:hover {
+  color: #597686;
+  text-decoration: underline; }
+
+/*--------------------------------------------------*/
+/*INNER RIGHT COLUMN*/
+/*--------------------------------------------------*/
+.get_paid_to_party_content.writer_bio_page .inner_right {
+  padding: 0 0 14px;
+  position: relative;
+  width: 435px; }
+
+.get_paid_to_party_content.writer_bio_page .corner_writer_navigation {
+  background: url(/assets/writers/writer_bio_page_sprite-b9a95f5aed52095e47ddd26059c909bf.png) 0 -210px no-repeat transparent;
+  height: 124px;
+  position: absolute;
+  right: -20px;
+  top: -60px;
+  width: 165px; }
+
+.get_paid_to_party_content.writer_bio_page .corner_writer_navigation a:link {
+  display: block; }
+
+.get_paid_to_party_content.writer_bio_page .corner_writer_navigation .prev_next_btn {
+  background: url(/assets/writers/writer_bio_page_sprite-b9a95f5aed52095e47ddd26059c909bf.png) 0 0 no-repeat transparent; }
+
+.get_paid_to_party_content.writer_bio_page .corner_writer_navigation .prev_next_btn.previous_writer {
+  background-position: -165px -210px;
+  height: 35px;
+  margin-left: 63px;
+  width: 102px; }
+
+.get_paid_to_party_content.writer_bio_page .corner_writer_navigation .prev_next_btn.previous_writer:hover {
+  background-position: -267px -210px; }
+
+.get_paid_to_party_content.writer_bio_page .corner_writer_navigation .prev_next_btn.next_writer {
+  background-position: -165px -245px;
+  height: 40px;
+  margin-left: 106px;
+  width: 59px; }
+
+.get_paid_to_party_content.writer_bio_page .corner_writer_navigation .prev_next_btn.next_writer:hover {
+  background-position: -266px -245px; }
+
+.get_paid_to_party_content.writer_bio_page .inner_right .section_divider {
+  height: 20px !important; }
+
+.get_paid_to_party_content.writer_bio_page .inner_right .label {
+  vertical-align: top;
+  width: 72px;
+  font-size: 9px;
+  text-transform: uppercase;
+  color: #6c8898;
+  line-height: 21px; }
+
+.get_paid_to_party_content.writer_bio_page .writer_name .name {
+  font-size: 16px;
+  text-transform: uppercase; }
+
+.get_paid_to_party_content.writer_bio_page .writer_cities .city_name {
+  font-size: 16px; }
+
+.get_paid_to_party_content.writer_bio_page .writer_questions .question {
+  color: #000;
+  font-weight: bold; }
+
+.get_paid_to_party_content.writer_bio_page .social_media_btns {
+  z-index: 1;
+  position: relative;
+  margin: 10px 0 0 0; }
+
+.get_paid_to_party_content.writer_bio_page .writer_navigation {
+  bottom: 24px;
+  position: absolute;
+  right: 20px;
+  width: 435px; }
+
+.get_paid_to_party_content.writer_bio_page .writer_navigation .read_more_txt_link_left {
+  background-position: -171px -2904px;
+  left: 0;
+  position: absolute;
+  top: -17px; }
+
+.get_paid_to_party_content.writer_bio_page .writer_navigation .read_more_txt_link_right {
+  right: 0;
+  position: absolute;
+  top: -17px; }
+
+/*--------------------------------------------------*/
+.floater {
+  position: relative; }
+
+.floater.outside {
+  position: absolute;
+  top: 0;
+  z-index: 1000; }
+
+.floater.fixed {
+  position: fixed;
+  top: 0; }
+
+.floater.inside {
+  position: static !important; }
+
+.floater.inside .animation_wrapper {
+  height: auto !important; }
+
+/* Styles for social media Buttons when inside */
+.social_media_btns {
+  position: relative;
+  margin: 9px 0;
+  padding: 0 0 8px;
+  background-color: #fff;
+  border-bottom: 1px dashed #adc0c9; }
+  .social_media_btns .total_count {
+    display: none; }
+  .social_media_btns td {
+    min-width: 65px; }
+  .social_media_btns td td {
+    min-width: 0; }
+  .social_media_btns .gig-counter .gig-counter-text {
+    font-weight: normal !important; }
+
+/* Styles for social media Buttons when inside */
+.outside .social_media_btns {
+  position: absolute;
+  top: 0;
+  left: -70px;
+  width: 30px;
+  margin: 0;
+  padding: 6px 9px;
+  border: none;
+  border-radius: 2px;
+  box-shadow: 0 0 5px #999;
+  overflow: hidden; }
+  .outside .social_media_btns .animation_wrapper {
+    width: 300px;
+    position: relative;
+    right: 270px; }
+    .outside .social_media_btns .animation_wrapper .total_count {
+      display: block;
+      width: 22px;
+      height: 14px;
+      color: white;
+      padding: 9px 4px 4px;
+      font-size: 11px;
+      text-align: center; }
+    .outside .social_media_btns .animation_wrapper .default_view {
+      float: right;
+      width: 30px;
+      height: 128px;
+      margin: 0 0 0 10px;
+      background-image: url(/assets/content_bg/application_sprite-0c99d872c88727bf30ed3816fdc5dbb9.png);
+      background-position: -337px -364px;
+      background-repeat: no-repeat;
+      cursor: pointer; }
+    .outside .social_media_btns .animation_wrapper .button_view {
+      float: right;
+      width: 108px; }
+      .outside .social_media_btns .animation_wrapper .button_view .share_title {
+        margin: 2px 3px 8px;
+        color: #8EA8B5;
+        font-size: 11px;
+        line-height: 12px; }
+
+/* GIGYA BUTTON STYLES
+--------------------------------------
+:: Styles for the width and position of the Gigya buttons..
+-------------------------------------------------------- */
+.gig-button-container {
+  margin: 0 5px 0 0 !important;
+  padding: 0 !important;
+  overflow: hidden; }
+
+/* Width of buttons when inside */
+.inside .gig-button-container-facebook {
+  position: relative;
+  top: -1px; }
+
+.inside .gig-button-container-facebook-like {
+  width: 45px !important; }
+
+.inside .gig-button-container-twitter-tweet {
+  width: 59px !important; }
+
+.inside .gig-button-container-google-plusone {
+  width: 32px !important; }
+
+.inside .gig-button-container-share {
+  width: 58px !important; }
+
+/* Allows to absolutely position buttons */
+.outside .gig-bar-container {
+  position: relative; }
+
+/* Prevent default <td> position */
+.outside .social_media_btns td {
+  display: inline; }
+
+.outside .social_media_btns td td {
+  display: table-cell; }
+
+/* Default position for all buttons when outside. */
+.outside .gig-button-container-facebook,
+.outside .gig-button-container-facebook-like,
+.outside .gig-button-container-twitter-tweet,
+.outside .gig-button-container-google-plusone,
+.outside .gig-button-container-share {
+  position: absolute;
+  top: 0;
+  left: 0; }
+
+/* Specific positions for buttons when outside when outside. */
+.outside .gig-button-container-facebook {
+  top: 0; }
+
+.outside .gig-button-container-facebook-like {
+  top: 27px; }
+
+.outside .gig-button-container-twitter-tweet {
+  top: 54px; }
+
+.outside .gig-button-container-google-plusone {
+  top: 81px; }
+
+.outside .gig-button-container-share {
+  top: 108px; }
+
+.single_photo .outside .gig-button-container-pinterest {
+  top: 0; }
+
+.single_photo .outside .gig-button-container-facebook {
+  top: 26px; }
+
+.single_photo .outside .gig-button-container-facebook-like {
+  top: 52px; }
+
+.single_photo .outside .gig-button-container-twitter-tweet {
+  top: 78px; }
+
+.single_photo .outside .gig-button-container-google-plusone {
+  top: 104px; }
+
+.single_photo .outside .gig-button-container-share {
+  top: 130px; }
+
+.single_photo .outside .gig-button-container-pinterest .gig-counter {
+  width: 33px; }
+
+/* Completely override facebook buton */
+.social_media_btns .gig-button-container-facebook .gig-button-td div {
+  height: 18px;
+  width: 57px;
+  background-image: url(/assets/content_bg/application_sprite-0c99d872c88727bf30ed3816fdc5dbb9.png);
+  background-position: -386px -428px;
+  cursor: pointer; }
+  .social_media_btns .gig-button-container-facebook .gig-button-td div * {
+    display: none; }
+  .social_media_btns .gig-button-container-facebook .gig-button-td div:hover {
+    background-position: -386px -448px; }
+
+/* Styles for Gigya Share Popup */
+.gig-simpleShare.fixed {
+  position: fixed !important;
+  top: 145px !important; }
+
+/* FLOATER COMMENT STYLES
+--------------------------------------
+:: Styles for the comment box on the left rail floater.
+-------------------------------------------------------- */
+.floater_comments {
+  display: none;
+  /* Not displayed by default */
+  position: absolute;
+  top: 144px;
+  left: -70px;
+  width: 48px;
+  padding: 4px 0;
+  color: #999;
+  font-family: 'Arial', sans-serif;
+  font-size: 7px;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #fff;
+  border-radius: 2px;
+  box-shadow: 0 0 5px #999; }
+  .floater_comments:hover {
+    cursor: pointer; }
+  .floater_comments:hover .comment_label {
+    color: #597686; }
+  .floater_comments .comment_count, .floater_comments .comment_label {
+    display: block; }
+  .floater_comments .comment_count {
+    color: #0099ff;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: none; }
+  .floater_comments .comment_label {
+    line-height: 120%; }
+  .floater_comments .tip {
+    position: absolute;
+    right: 0;
+    bottom: -17px;
+    width: 54px;
+    height: 17px;
+    background-image: url(/assets/content_bg/application_sprite-0c99d872c88727bf30ed3816fdc5dbb9.png);
+    background-position: -387px -510px; }
+
+.outside .floater_comments {
+  display: block; }
+
+/* Fix for gigya follow bar whenever there is a left rail social bar present */
+.gig-followbar-dialog-nub,
+.gig-followbar-dialog {
+  position: fixed !important;
+  top: auto !important; }
+
+.gig-followbar-dialog-nub {
+  bottom: 22px !important;
+  background-image: url("http://cdn.gigya.com/gs/i/followbar/Nub_bottom.png") !important; }
+
+.gig-followbar-dialog {
+  bottom: 34px !important; }
+.floater.fixed {
+  position: fixed;
+  top: 0; }

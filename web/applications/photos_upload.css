@@ -1,0 +1,116 @@
+/* PHOTO UPLOADS STYLES
+-----------------------------------------------------------
+:: Styles for the photos upload forms shared by different applications.
+----------------------------------------------------------- */
+#photo_app_upload {
+  position: relative;
+  border-bottom: 1px dashed #adc0c9;
+  margin-bottom: 8px;
+  padding-bottom: 8px; }
+  #photo_app_upload #photo_app_btns {
+    position: absolute;
+    bottom: 3px;
+    right: 0; }
+  #photo_app_upload #FileInput {
+    width: 178px;
+    margin: 0; }
+  #photo_app_upload #FileInputUploader {
+    width: 160px;
+    height: 33px;
+    background-image: url(/assets/photographer_applications/photographer_second_step_sprite.png);
+    background-position: -160px -66px;
+    cursor: pointer; }
+  #photo_app_upload #FileInputUploader:hover {
+    background-position: -160px -100px; }
+  #photo_app_upload #FileInputUploader.disabled {
+    background-position: 0 -66px;
+    cursor: default; }
+  #photo_app_upload .upload_btn {
+    float: right;
+    height: 16px;
+    line-height: 17px; }
+  #photo_app_upload .uploadifyQueue {
+    display: none; }
+  #photo_app_upload .upload_error {
+    clear: left;
+    color: red;
+    font-weight: bold; }
+
+#photo_app_photos {
+  padding: 11px 0 0;
+  border-bottom: 1px dashed #adc0c9;
+  margin-bottom: 8px;
+  padding-bottom: 8px; }
+  #photo_app_photos .photo_item {
+    position: relative;
+    float: left;
+    font-size: 11px;
+    margin: 0 11px 20px 0;
+    width: 100px;
+    height: 134px; }
+    #photo_app_photos .photo_item span {
+      display: block; }
+    #photo_app_photos .photo_item img {
+      width: 98px;
+      height: 98px;
+      border: 1px solid #ccc; }
+    #photo_app_photos .photo_item .photo_number {
+      display: block;
+      width: 66px;
+      height: 66px;
+      padding: 16px;
+      color: #CCC;
+      font-size: 62px;
+      line-height: 66px;
+      text-align: center;
+      background: none repeat scroll 0 0 whiteSmoke;
+      border: 1px solid #CCC; }
+      #photo_app_photos .photo_item .photo_number.cell_error {
+        border: 1px red solid; }
+    #photo_app_photos .photo_item .progress {
+      position: absolute;
+      top: 79px;
+      left: 4px;
+      width: 85px;
+      height: 9px;
+      padding: 3px;
+      background-color: #fff;
+      border: 1px solid #c5c5c5;
+      border-radius: 2px;
+      -moz-border-radius: 2px;
+      -webkit-border-radius: 2px; }
+      #photo_app_photos .photo_item .progress .progress_bar {
+        width: 0;
+        max-width: 100%;
+        height: 7px;
+        background-color: #09F;
+        border-radius: 2px;
+        -moz-border-radius: 2px;
+        -webkit-border-radius: 2px; }
+    #photo_app_photos .photo_item .delete_icon {
+      position: absolute;
+      right: -8px;
+      top: -8px;
+      width: 16px;
+      height: 16px;
+      background: url(/assets/photographer_applications/photographer_second_step_sprite-811a6ab7dda24ad3d508bdc7fcf80394.png) -156px 0 no-repeat transparent;
+      cursor: pointer; }
+    #photo_app_photos .photo_item .loading_notice {
+      position: absolute;
+      top: 55px;
+      left: 0;
+      width: 100%;
+      color: #999;
+      text-align: center; }
+    #photo_app_photos .photo_item .file_name {
+      overflow: hidden; }
+    #photo_app_photos .photo_item .loading_image {
+      position: absolute;
+      top: 36px;
+      left: 43px;
+      width: 16px;
+      height: 16px;
+      background-image: url(/assets/content_bg/loading2.gif);
+      opacity: 0.7; }
+    #photo_app_photos .photo_item .ui-widget-overlay {
+      background: white; }

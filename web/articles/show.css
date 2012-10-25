@@ -166,6 +166,8 @@
         border-top: 2px solid #adc0c9; }
         #article_page .left_column #article_list .list_item:first-child {
           border-top: none; }
+        #article_page .left_column #article_list .list_item.with_location h2, #article_page .left_column #article_list .list_item.with_location h3 {
+          width: 541px; }
       #article_page .left_column #article_list .item_number {
         position: relative;
         left: -7px;
@@ -237,9 +239,10 @@
       #article_page .left_column #article_list .desc {
         position: relative;
         height: 72px;
-        min-height: 66px;
+        min-height: 85px;
         margin: 0 0 24px;
         font-size: 12px;
+        line-height: 17px;
         overflow: hidden; }
         #article_page .left_column #article_list .desc p {
           padding: 0; }
@@ -261,6 +264,7 @@
         margin-top: -40px;
         color: #6c8898;
         text-align: right;
+        font-size: 12px;
         line-height: 14px; }
         #article_page .left_column #article_list .location .neighborhood, #article_page .left_column #article_list .location .venue {
           display: block;
@@ -268,16 +272,14 @@
           top: -2px;
           margin: 0;
           color: #597686;
-          font-size: 12px;
-          font-weight: bold;
-          line-height: 14px; }
+          font-weight: bold; }
           #article_page .left_column #article_list .location .neighborhood:hover, #article_page .left_column #article_list .location .venue:hover {
             color: #375363; }
         #article_page .left_column #article_list .location .neighborhood {
           margin: 0 0 3px; }
         #article_page .left_column #article_list .location .address {
           padding: 0 0 9px;
-          line-height: 14px; }
+          font-size: 11px; }
           #article_page .left_column #article_list .location .address .phone {
             display: block;
             margin: 4px 0 0;
@@ -889,9 +891,11 @@
     position: relative; }
   .liked_by li {
     float: left;
-    margin: 0 3px 0 0;
+    margin: 0 4px 0 0;
     padding: 0 0 2px;
     border-bottom: 2px solid; }
+    .liked_by li:hover {
+      cursor: pointer; }
   .liked_by .character {
     display: block;
     width: 25px;
@@ -969,52 +973,57 @@
     overflow: hidden; }
   .liked_by .lucas {
     border-color: #4175ab; }
-    .liked_by .lucas:hover {
-      border-color: #4175ab; }
     .liked_by .lucas .character {
       background-position: -1px -3px; }
-      .liked_by .lucas .character:hover {
-        border-color: #4175ab !important; }
     .liked_by .lucas .title {
       color: #4175ab; }
     .liked_by .lucas .dialog_img {
       background-position: 0 -209px; }
+    .liked_by .lucas:hover {
+      border-color: #4175ab; }
+      .liked_by .lucas:hover .character {
+        border-color: #4175ab !important;
+        background-position: -1px -3px !important; }
   .liked_by .adriana {
     border-color: #c675b1; }
-    .liked_by .adriana:hover {
-      border-color: #c675b1; }
     .liked_by .adriana .character {
       background-position: -31px -3px; }
-      .liked_by .adriana .character:hover {
-        border-color: #c675b1 !important; }
     .liked_by .adriana .title {
       color: #c675b1; }
     .liked_by .adriana .dialog_img {
       background-position: -32px -209px; }
+    .liked_by .adriana:hover {
+      border-color: #c675b1; }
+      .liked_by .adriana:hover .character {
+        border-color: #c675b1 !important;
+        background-position: -31px -3px !important; }
   .liked_by .jonah {
     border-color: #95c946; }
-    .liked_by .jonah:hover {
-      border-color: #95c946; }
     .liked_by .jonah .character {
       background-position: -61px -3px; }
-      .liked_by .jonah .character:hover {
-        border-color: #95c946 !important; }
     .liked_by .jonah .title {
       color: #95c946; }
     .liked_by .jonah .dialog_img {
       background-position: -64px -209px; }
+    .liked_by .jonah:hover {
+      border-color: #95c946; }
+      .liked_by .jonah:hover .character {
+        border-color: #95c946 !important;
+        background-position: -61px -3px !important; }
   .liked_by .emma {
+    margin-right: 0;
     border-color: #ffb637; }
-    .liked_by .emma:hover {
-      border-color: #ffb637; }
     .liked_by .emma .character {
       background-position: -91px -3px; }
-      .liked_by .emma .character:hover {
-        border-color: #ffb637 !important; }
     .liked_by .emma .title {
       color: #ffb637; }
     .liked_by .emma .dialog_img {
       background-position: -96px -209px; }
+    .liked_by .emma:hover {
+      border-color: #ffb637; }
+      .liked_by .emma:hover .character {
+        border-color: #ffb637 !important;
+        background-position: -91px -3px !important; }
   .liked_by .disabled {
     border-color: #dae4e9; }
     .liked_by .disabled.lucas .character {
@@ -1031,25 +1040,25 @@
     width: 28px;
     height: 28px; }
   .liked_by.liked_by_big .dialog_box {
-    bottom: 43px; }
+    bottom: 45px; }
   .liked_by.liked_by_big .point {
     bottom: 41px; }
   .liked_by.liked_by_big .lucas .character {
     background-position: 0 0; }
-    .liked_by.liked_by_big .lucas .character:hover {
-      background-position: 0 0 !important; }
+  .liked_by.liked_by_big .lucas:hover .character {
+    background-position: 0 0 !important; }
   .liked_by.liked_by_big .adriana .character {
     background-position: -30px 0; }
-    .liked_by.liked_by_big .adriana .character:hover {
-      background-position: -30px 0 !important; }
+  .liked_by.liked_by_big .adriana:hover .character {
+    background-position: -30px 0 !important; }
   .liked_by.liked_by_big .jonah .character {
     background-position: -60px 0; }
-    .liked_by.liked_by_big .jonah .character:hover {
-      background-position: -60px 0 !important; }
+  .liked_by.liked_by_big .jonah:hover .character {
+    background-position: -60px 0 !important; }
   .liked_by.liked_by_big .emma .character {
     background-position: -90px 0; }
-    .liked_by.liked_by_big .emma .character:hover {
-      background-position: -90px 0 !important; }
+  .liked_by.liked_by_big .emma:hover .character {
+    background-position: -90px 0 !important; }
   .liked_by.liked_by_big .disabled.lucas .character {
     background-position: 0 -30px; }
   .liked_by.liked_by_big .disabled.adriana .character {

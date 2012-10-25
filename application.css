@@ -546,14 +546,6 @@ button:active {
   .box_link.embed:active {
     background-position: -724px -219px; }
 
-/* FOR OUTLINES AROUND INPUTS AND DROPDOWNS
--------------------------------------------------------------------*/
-.dropdown, .Dropdown, .dropdown:focus, .Dropdown:focus {
-  outline: none; }
-
-body input:-webkit-autofill {
-  background-color: transparent !important; }
-
 /* FORM FIELD ITEMS
 -------------------------------------------------------------------
 :: Generic styles for site form fields.
@@ -565,99 +557,6 @@ input, select, textarea {
   border: 1px none;
   border-radius: 4px 4px 0 4px;
   -moz-border-radius: 4px 4px 0 4px; }
-
-.inputs img {
-  margin: 0 0 -4px 5px; }
-
-/* FORM FIELD VALIDATION */
-.inline-errors {
-  display: inline-block;
-  margin: 5px 0 0 5px;
-  padding: 0 0 1px 22px;
-  color: #666;
-  background-image: url(/assets/users/error.png);
-  background-repeat: no-repeat; }
-
-/* BEGIN CUSTOM FORM ITEMS
--------------------------------------------------------------------
-:: Custom checkboxes, radio buttons
-------------------------------------------------------------------- */
-.Checkbox {
-  float: left; }
-
-.dropdown .Checkbox {
-  float: none; }
-
-.Checkbox .Input {
-  width: 16px;
-  height: 19px;
-  margin: 0 5px 0 0;
-  display: block;
-  float: left;
-  background-image: url(/assets/content_bg/application_sprite.png);
-  background-repeat: no-repeat; }
-
-.Checkbox.unchecked .Input {
-  background-position: -87px -150px; }
-
-.Checkbox.unchecked_pressed .Input {
-  background-position: -87px -169px; }
-
-.Checkbox.checked .Input {
-  background-position: -87px -188px; }
-
-.Checkbox.checked_pressed .Input {
-  background-position: -87px -207px; }
-
-.Checkbox.checked_disabled .Input {
-  background-position: -87px -226px; }
-
-.Checkbox.unchecked_disabled .Input {
-  background-position: 0 -245px; }
-
-/* BEGIN CUSTOM RADIO BUTTONS
-------------------------------------------*/
-.RadioButton {
-  display: inline-block;
-  width: 18px;
-  height: 17px;
-  margin: 0 0 -3px;
-  background-image: url(/assets/content_bg/application_sprite.png);
-  background-repeat: no-repeat;
-  cursor: pointer;
-  /*FOR IE7*/
-  zoom: 1;
-  *display: inline; }
-
-.RadioButton.unchecked {
-  background-position: -106px -150px; }
-
-.RadioButton.unchecked:hover {
-  background-position: -106px -169px; }
-
-.RadioButton.unchecked_pressed {
-  background-position: -106px -188px; }
-
-.RadioButton.checked {
-  background-position: -106px -208px; }
-
-.RadioButton.checked:hover {
-  background-position: -106px -227px; }
-
-.RadioButton.checked_pressed {
-  background-position: -106px -246px; }
-
-/*REMOVE THESE FORM STYLES ONCE OTHER CHECKBOXES ARE IN*/
-span.checkbox, span.radio {
-  width: 16px;
-  height: 19px;
-  margin: 0 5px 0 0;
-  display: block;
-  float: left; }
-
-.checkbox {
-  background-image: url(/assets/content_bg/checkbox_sprite.png);
-  background-repeat: no-repeat; }
 
 /*BEGIN COMMON STYLING CLASSES*/
 /*-------------------------------------------------------------------*/
@@ -893,6 +792,7 @@ span.checkbox, span.radio {
   position: relative;
   width: 232px; }
   #welcome_box p {
+    height: 31px;
     padding: 0 15px 0 0;
     color: #fff;
     font-size: 12px;
@@ -2095,9 +1995,8 @@ formfield ol:before, .formfield ol:after {
     #additional_information fieldset ol .day_dropdown .choices_wrapper, #link_accounts fieldset ol .day_dropdown .choices_wrapper {
       width: 70px; }
     #additional_information fieldset ol img, #link_accounts fieldset ol img {
-      position: absolute;
-      right: 0;
-      margin: 0; }
+      top: 24px;
+      left: 286px; }
     #additional_information fieldset ol .inline-errors, #link_accounts fieldset ol .inline-errors {
       left: 0; }
     #additional_information fieldset ol .toggle, #link_accounts fieldset ol .toggle {

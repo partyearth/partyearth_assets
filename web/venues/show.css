@@ -112,9 +112,11 @@ ratings_big_wrapper .title {
     position: relative; }
   .liked_by li {
     float: left;
-    margin: 0 3px 0 0;
+    margin: 0 4px 0 0;
     padding: 0 0 2px;
     border-bottom: 2px solid; }
+    .liked_by li:hover {
+      cursor: pointer; }
   .liked_by .character {
     display: block;
     width: 25px;
@@ -192,52 +194,57 @@ ratings_big_wrapper .title {
     overflow: hidden; }
   .liked_by .lucas {
     border-color: #4175ab; }
-    .liked_by .lucas:hover {
-      border-color: #4175ab; }
     .liked_by .lucas .character {
       background-position: -1px -3px; }
-      .liked_by .lucas .character:hover {
-        border-color: #4175ab !important; }
     .liked_by .lucas .title {
       color: #4175ab; }
     .liked_by .lucas .dialog_img {
       background-position: 0 -209px; }
+    .liked_by .lucas:hover {
+      border-color: #4175ab; }
+      .liked_by .lucas:hover .character {
+        border-color: #4175ab !important;
+        background-position: -1px -3px !important; }
   .liked_by .adriana {
     border-color: #c675b1; }
-    .liked_by .adriana:hover {
-      border-color: #c675b1; }
     .liked_by .adriana .character {
       background-position: -31px -3px; }
-      .liked_by .adriana .character:hover {
-        border-color: #c675b1 !important; }
     .liked_by .adriana .title {
       color: #c675b1; }
     .liked_by .adriana .dialog_img {
       background-position: -32px -209px; }
+    .liked_by .adriana:hover {
+      border-color: #c675b1; }
+      .liked_by .adriana:hover .character {
+        border-color: #c675b1 !important;
+        background-position: -31px -3px !important; }
   .liked_by .jonah {
     border-color: #95c946; }
-    .liked_by .jonah:hover {
-      border-color: #95c946; }
     .liked_by .jonah .character {
       background-position: -61px -3px; }
-      .liked_by .jonah .character:hover {
-        border-color: #95c946 !important; }
     .liked_by .jonah .title {
       color: #95c946; }
     .liked_by .jonah .dialog_img {
       background-position: -64px -209px; }
+    .liked_by .jonah:hover {
+      border-color: #95c946; }
+      .liked_by .jonah:hover .character {
+        border-color: #95c946 !important;
+        background-position: -61px -3px !important; }
   .liked_by .emma {
+    margin-right: 0;
     border-color: #ffb637; }
-    .liked_by .emma:hover {
-      border-color: #ffb637; }
     .liked_by .emma .character {
       background-position: -91px -3px; }
-      .liked_by .emma .character:hover {
-        border-color: #ffb637 !important; }
     .liked_by .emma .title {
       color: #ffb637; }
     .liked_by .emma .dialog_img {
       background-position: -96px -209px; }
+    .liked_by .emma:hover {
+      border-color: #ffb637; }
+      .liked_by .emma:hover .character {
+        border-color: #ffb637 !important;
+        background-position: -91px -3px !important; }
   .liked_by .disabled {
     border-color: #dae4e9; }
     .liked_by .disabled.lucas .character {
@@ -254,25 +261,25 @@ ratings_big_wrapper .title {
     width: 28px;
     height: 28px; }
   .liked_by.liked_by_big .dialog_box {
-    bottom: 43px; }
+    bottom: 45px; }
   .liked_by.liked_by_big .point {
     bottom: 41px; }
   .liked_by.liked_by_big .lucas .character {
     background-position: 0 0; }
-    .liked_by.liked_by_big .lucas .character:hover {
-      background-position: 0 0 !important; }
+  .liked_by.liked_by_big .lucas:hover .character {
+    background-position: 0 0 !important; }
   .liked_by.liked_by_big .adriana .character {
     background-position: -30px 0; }
-    .liked_by.liked_by_big .adriana .character:hover {
-      background-position: -30px 0 !important; }
+  .liked_by.liked_by_big .adriana:hover .character {
+    background-position: -30px 0 !important; }
   .liked_by.liked_by_big .jonah .character {
     background-position: -60px 0; }
-    .liked_by.liked_by_big .jonah .character:hover {
-      background-position: -60px 0 !important; }
+  .liked_by.liked_by_big .jonah:hover .character {
+    background-position: -60px 0 !important; }
   .liked_by.liked_by_big .emma .character {
     background-position: -90px 0; }
-    .liked_by.liked_by_big .emma .character:hover {
-      background-position: -90px 0 !important; }
+  .liked_by.liked_by_big .emma:hover .character {
+    background-position: -90px 0 !important; }
   .liked_by.liked_by_big .disabled.lucas .character {
     background-position: 0 -30px; }
   .liked_by.liked_by_big .disabled.adriana .character {
@@ -2115,18 +2122,20 @@ ratings_big_wrapper .title {
     .gig-counter {
       display: none; }
   #object_page_info #review_summary, #object_page_info #description_summary {
-    position: relative;
     clear: left;
-    max-height: 65px;
     margin: 0 0 9px;
     padding: 0 0 9px;
-    border-bottom: 1px dashed #adc0c9;
-    overflow: hidden; }
+    border-bottom: 1px dashed #adc0c9; }
+    #object_page_info #review_summary p, #object_page_info #description_summary p {
+      position: relative;
+      max-height: 72px;
+      padding: 0;
+      overflow: hidden; }
     #object_page_info #review_summary .read_more, #object_page_info #description_summary .read_more {
       display: block;
       position: absolute;
       right: 0;
-      bottom: 2px;
+      bottom: 0;
       background-color: #fff; }
   #object_page_info dl {
     position: relative;
@@ -2499,7 +2508,7 @@ ratings_big_wrapper .title {
   float: left;
   width: 343px;
   margin: 0 0 8px;
-  padding: 0 0 10px 0;
+  padding: 0 0 8px;
   border-bottom: 1px dashed #ADC0C9; }
   #object_page_info #liked_by_venue dt {
     float: none;
@@ -2519,45 +2528,63 @@ ratings_big_wrapper .title {
   #object_page_info #liked_by_venue .being_evaluated {
     display: none;
     float: left;
-    width: 176px;
+    width: 343px;
     background-position: -491px -529px; }
   #object_page_info #liked_by_venue .no_reviews {
     float: right;
     width: 159px;
-    background-position: -669px -529px; }
+    background-position: -491px -566px; }
   #object_page_info #liked_by_venue .question_mark {
     position: absolute;
     top: -18px;
     left: 333px; }
-  #object_page_info #liked_by_venue .no_likes .being_evaluated {
+  #object_page_info #liked_by_venue.no_likes .being_evaluated {
     display: block; }
-  #object_page_info #liked_by_venue .no_likes ul, #object_page_info #liked_by_venue .no_likes .question_mark {
+  #object_page_info #liked_by_venue.no_likes dt, #object_page_info #liked_by_venue.no_likes ul, #object_page_info #liked_by_venue.no_likes .no_reviews, #object_page_info #liked_by_venue.no_likes .question_mark {
     display: none; }
 #object_page_info #user_review_summary {
+  position: relative;
   clear: left;
+  width: 343px;
   margin: 0 0 8px;
-  padding: 0 0 10px 0;
-  border-bottom: 1px dashed #ADC0C9; }
+  padding: 0 0 8px 0;
+  border-bottom: 1px dashed #adc0c9; }
   #object_page_info #user_review_summary dt {
-    position: static;
-    float: none;
+    position: absolute;
+    left: 35px;
     width: auto;
+    margin: 0;
     text-transform: none; }
     #object_page_info #user_review_summary dt span {
       color: #09f; }
   #object_page_info #user_review_summary dd {
-    float: none; }
-    #object_page_info #user_review_summary dd.user_image {
+    position: relative;
+    float: none;
+    margin: 0;
+    padding: 13px 0 0;
+    overflow: hidden; }
+    #object_page_info #user_review_summary dd img {
       display: block;
       float: left;
-      position: relative;
-      top: 3px;
-      margin: 0 8px 4px 0; }
-      #object_page_info #user_review_summary dd.user_image img {
-        display: block;
-        width: 25px;
-        height: 25px;
-        border: 1px solid #c1d0d7; }
+      margin: -13px 8px 4px 0;
+      width: 25px;
+      height: 25px;
+      border: 1px solid #c1d0d7; }
+    #object_page_info #user_review_summary dd p {
+      max-height: 54px;
+      font-size: 13px;
+      line-height: 18px; }
+    #object_page_info #user_review_summary dd .ellipsis {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      background-color: #fff; }
+      #object_page_info #user_review_summary dd .ellipsis a, #object_page_info #user_review_summary dd .ellipsis a:link, #object_page_info #user_review_summary dd .ellipsis a:visited {
+        font-size: 11px; }
+  #object_page_info #user_review_summary.no_user_image dt {
+    left: 0; }
+  #object_page_info #user_review_summary.no_user_image .user_image {
+    display: none; }
 
 /* Character Tip
 ------------------------

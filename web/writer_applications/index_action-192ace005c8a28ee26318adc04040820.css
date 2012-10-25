@@ -1,0 +1,328 @@
+/* GPTP IN THE PRESS POD
+--------------------------------------------------------------------------- */
+#gptp_in_press {
+  margin: 0 0 10px; }
+  #gptp_in_press h2 {
+    margin: 0 0 10px;
+    color: #375363;
+    font-size: 24px;
+    font-weight: normal;
+    line-height: 28px;
+    border-bottom: 1px dashed #ADC0C9; }
+  #gptp_in_press li {
+    padding: 12px 0 0;
+    border-top: 2px solid #adc0c9; }
+    #gptp_in_press li .img {
+      display: block;
+      float: left;
+      width: 48px;
+      height: 48px;
+      margin: 0 10px 0 0;
+      background-image: url(/assets/writer_applications/in_the_press_polaroids-ee5ba6b9790534fbf4ad1a3f2fffeef4.jpg);
+      border: 1px solid #9a9a9a;
+      border-radius: 4px; }
+    #gptp_in_press li .details {
+      float: left;
+      width: 145px; }
+      #gptp_in_press li .details .name_location {
+        display: block;
+        font-size: 10px;
+        color: #8ea8b5;
+        text-decoration: none; }
+        #gptp_in_press li .details .name_location .name {
+          color: #09f;
+          text-decoration: underline; }
+          #gptp_in_press li .details .name_location .name:hover {
+            color: #597686; }
+      #gptp_in_press li .details .article {
+        display: block;
+        color: #375363; }
+        #gptp_in_press li .details .article:hover {
+          color: #000; }
+    #gptp_in_press li .featured {
+      display: block;
+      clear: left;
+      color: #8ea8b5;
+      font-size: 10px;
+      text-transform: uppercase; }
+      #gptp_in_press li .featured span {
+        display: block;
+        position: relative;
+        margin: 0 0 6px;
+        background-image: url(/assets/writer_applications/sprite-c68a5c05c3fe4527f6e8fabb932e616c.png); }
+        #gptp_in_press li .featured span.maxim {
+          width: 126px;
+          height: 33px;
+          margin-top: -18px;
+          margin-bottom: -2px;
+          margin-left: 77px;
+          background-position: 0 -46px; }
+        #gptp_in_press li .featured span.thp {
+          width: 217px;
+          height: 13px;
+          background-position: -128px -46px; }
+        #gptp_in_press li .featured span.look {
+          width: 73px;
+          height: 27px;
+          margin-top: -13px;
+          margin-left: 77px;
+          background-position: -347px -46px; }
+    #gptp_in_press li:first-child {
+      border-top: none; }
+      #gptp_in_press li:first-child .img {
+        display: none; }
+      #gptp_in_press li:first-child .details {
+        float: none;
+        width: auto; }
+      #gptp_in_press li:first-child .name_location {
+        margin-bottom: -15px; }
+        #gptp_in_press li:first-child .name_location .name {
+          display: block;
+          position: relative;
+          top: -10px;
+          left: 7px;
+          width: 196px;
+          height: 208px;
+          text-indent: -9999px;
+          background-image: url(/assets/writer_applications/in_the_press_polaroids-ee5ba6b9790534fbf4ad1a3f2fffeef4.jpg);
+          transform: scale(1) rotate(-4deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
+          -moz-transform: scale(1) rotate(-4deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
+          -webkit-transform: scale(1) rotate(-4deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
+          -o-transform: scale(1) rotate(-4deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
+          -ms-transform: scale(1) rotate(-4deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
+          /* Uncomment if we want to implement for IE8 [https://snipt.net/viatropos/cross-browser-css-rotation-with-and-without-sass/]
+          filter:             progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=#{cos($deg)}, M12=-#{sin($deg)}, M21=#{sin($deg)}, M22=#{cos($deg)});
+          -ms-filter:         "progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=#{cos($deg)}, M12=-#{sin($deg)}, M21=#{sin($deg)}, M22=#{cos($deg)})"; */
+          zoom: 1; }
+        #gptp_in_press li:first-child .name_location .location {
+          visibility: hidden; }
+      #gptp_in_press li:first-child .article {
+        margin: 0 0 3px;
+        color: #09f;
+        font-size: 18px;
+        font-weight: bold; }
+    #gptp_in_press li.sykes .img {
+      background-position: 0 -210px; }
+    #gptp_in_press li.chu .img {
+      background-position: -50px -210px; }
+    #gptp_in_press li.merchants .img {
+      background-position: -100px -210px; }
+    #gptp_in_press li.hogan .img {
+      background-position: -150px -210px; }
+    #gptp_in_press li.sykes .name {
+      background-position: 0 0; }
+    #gptp_in_press li.chu .name {
+      background-position: -198px 0; }
+    #gptp_in_press li.merchants .name {
+      background-position: -396px 0; }
+    #gptp_in_press li.hogan .name {
+      background-position: -600px 0; }
+/* BEGIN NAVIGATION CSS */
+#navbar li#get_paid .left_end {
+  background-position: -269px -121px; }
+#navbar li#get_paid a:link, #navbar li#get_paid #navbar li#get_paid a:visited, #navbar li#get_paid #navbar li#get_paid a:active {
+  color: #fff; }
+#navbar li#get_paid a span {
+  background-image: url(/assets/content_bg/application_sprite-0c99d872c88727bf30ed3816fdc5dbb9.png);
+  background-position: 0 -2663px;
+  background-repeat: repeat-x; }
+#navbar li#get_paid .right_end {
+  background-position: -283px -121px; }
+
+/* BEGIN PAGE PROPERTIES */
+.get_paid_to_party_content .left_column_wrapper {
+  width: 735px; }
+.get_paid_to_party_content .left_column {
+  width: 675px;
+  margin: 0 0 0 -22px;
+  padding: 0 0 0 82px;
+  background-image: url(/assets/writer_applications/left_column_bg_repeat-a2828f421c4cfdb1374fbddfabd1a68d.png);
+  background-repeat: repeat-y; }
+
+.left_column_content {
+  position: relative;
+  min-height: 1130px; }
+
+.large_text {
+  font-size: 14px;
+  line-height: 17px; }
+
+.cursive_text {
+  position: absolute;
+  background-image: url(/assets/writer_applications/cursive_text_sprite-c6fe7665747e952ef53ca6de7b71fea5.png);
+  background-repeat: no-repeat; }
+  .cursive_text.next_partier {
+    top: 0;
+    left: 0;
+    width: 225px;
+    height: 29px;
+    margin: 14px 0 0; }
+  .cursive_text.instant_access {
+    top: 434px;
+    left: 444px;
+    width: 128px;
+    height: 44px;
+    margin: 14px 0 0;
+    background-position: 0 -29px; }
+  .cursive_text.become_an_insider {
+    top: 722px;
+    left: 189px;
+    width: 138px;
+    height: 65px;
+    margin: 14px 0 0;
+    background-position: -138px -29px; }
+  .cursive_text.skip_the_lines {
+    top: 1004px;
+    left: 470px;
+    width: 157px;
+    height: 22px;
+    margin: 14px 0 0;
+    background-position: 0 -94px; }
+
+.apply_link1 {
+  position: absolute;
+  top: 478px;
+  padding: 0 0 0 15px;
+  background-image: url(/assets/content_bg/left_thin_arrow-7c2a10234aeaeb93be4d82d1056ceb47.gif);
+  background-repeat: no-repeat;
+  background-position: 0 5px; }
+  .apply_link1 a.border_link {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 15px; }
+
+.left_column_content .headline {
+  padding: 54px 0 0; }
+.left_column_content .paragraph_1 {
+  width: 472px;
+  margin: 8px 0 0; }
+.left_column_content .paragraph_2 {
+  position: absolute;
+  top: 460px;
+  left: 0;
+  width: 430px; }
+.left_column_content .paragraph_3 {
+  position: absolute;
+  top: 509px;
+  left: 0;
+  width: 555px; }
+.left_column_content .city_list {
+  position: absolute; }
+  .left_column_content .city_list .region {
+    color: #09f;
+    font-size: 14px;
+    font-weight: bold; }
+  .left_column_content .city_list li {
+    text-transform: capitalize; }
+  .left_column_content .city_list.list1 {
+    top: 564px;
+    left: 200px; }
+  .left_column_content .city_list.list2 {
+    top: 564px;
+    left: 334px; }
+  .left_column_content .city_list.list3 {
+    top: 564px;
+    left: 482px; }
+.left_column_content .apply_btn {
+  background: url(/assets/writer_applications/get_paid_to_party_misc_sprite-1ef3673d0c0d42e5a21ab019e08d7ac0.png) -88px -317px no-repeat;
+  display: block;
+  height: 48px;
+  left: 497px;
+  position: absolute;
+  top: 738px;
+  width: 114px; }
+
+.polaroid {
+  display: block;
+  position: absolute;
+  background-image: url(/assets/writer_applications/get_paid_to_party_poloroid_bg_sprite-d5ffeaf89279afc7499bf3d447fc506e.png); }
+  .polaroid.image1 {
+    top: 164px;
+    left: -56px;
+    width: 240px;
+    height: 260px;
+    background-position: 0 0; }
+  .polaroid.image2 {
+    top: 198px;
+    left: 185px;
+    width: 230px;
+    height: 249px;
+    z-index: 1000;
+    background-position: 0 -260px; }
+    .polaroid.image2:hover {
+      z-index: 1098; }
+  .polaroid.image3 {
+    top: 169px;
+    left: 339px;
+    z-index: 1002;
+    width: 236px;
+    height: 253px;
+    background-position: 0 -509px; }
+  .polaroid.image4 {
+    top: 81px;
+    left: 444px;
+    width: 260px;
+    height: 276px;
+    background-position: 0 -762px; }
+    .polaroid.image4:hover {
+      z-index: 1098; }
+  .polaroid.image5 {
+    top: 560px;
+    left: -113px;
+    z-index: 2;
+    width: 250px;
+    height: 260px;
+    background-position: 0 -1038px; }
+  .polaroid.image6 {
+    top: 632px;
+    left: -73px;
+    z-index: 1;
+    width: 260px;
+    height: 276px;
+    background-position: 0 -1297px; }
+    .polaroid.image6:hover {
+      z-index: 1098; }
+  .polaroid.image7 {
+    top: 854px;
+    left: 214px;
+    z-index: 2;
+    width: 236px;
+    height: 257px;
+    background-position: 0 -1573px; }
+  .polaroid.image8 {
+    background-position: 0 -1830px;
+    height: 250px;
+    left: 408px;
+    top: 709px;
+    width: 230px;
+    z-index: 1; }
+    .polaroid.image8:hover {
+      z-index: 1098; }
+
+.misc_item {
+  position: absolute;
+  background-image: url(/assets/writer_applications/get_paid_to_party_misc_sprite-1ef3673d0c0d42e5a21ab019e08d7ac0.png); }
+  .misc_item.pen {
+    top: 438px;
+    left: 608px;
+    z-index: 3;
+    width: 88px;
+    height: 368px;
+    background-position: 0 -317px; }
+
+.camera {
+  position: absolute;
+  height: 317px;
+  left: -128px;
+  top: 858px;
+  width: 282px;
+  z-index: 3; }
+.floater.fixed {
+  position: fixed;
+  top: 0; }
+/*
+
+
+
+*/

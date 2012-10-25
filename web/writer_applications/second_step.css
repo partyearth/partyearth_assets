@@ -44,25 +44,21 @@ fieldset ol {
   fieldset ol ol {
     padding: 0; }
 fieldset li {
+  position: relative;
   float: left;
   width: 100%;
   text-align: left;
   margin: 0 0 14px; }
-fieldset li.note {
-  width: auto;
-  padding: 0 20px 0 152px;
-  font-size: 12px; }
-fieldset li:last-child {
-  margin-bottom: 0; }
-fieldset img {
-  display: block;
-  float: left;
-  margin: 0;
-  padding: 5px 0 0 5px; }
+  fieldset li:last-child {
+    margin-bottom: 0; }
+  fieldset li.note {
+    width: auto;
+    padding: 0 20px 0 167px;
+    font-size: 12px; }
 fieldset label {
   display: block;
   float: left;
-  width: 135px;
+  width: 150px;
   margin-right: 15px !important;
   padding: 3px 0 0;
   text-align: right;
@@ -80,10 +76,11 @@ fieldset input, fieldset select, fieldset textarea {
   -moz-box-shadow: inset 1px 1px 3px #ddd;
   -webkit-box-shadow: inset 1px 1px 3px #ddd;
   box-shadow: inset 1px 1px 3px #ddd; }
-fieldset select {
-  width: 276px; }
 fieldset input[type=checkbox], fieldset input[type=radio] {
   width: auto;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
   border: none;
   -moz-box-shadow: none;
   -webkit-box-shadow: none;
@@ -92,39 +89,64 @@ fieldset input[type=submit] {
   width: auto;
   height: auto;
   padding: 7px 30px; }
+fieldset select {
+  width: 276px; }
 fieldset textarea {
   height: 85px; }
-fieldset .radio_group, fieldset .checkbox_group, fieldset .textbox_group, fieldset .text_group {
+fieldset .checkbox_group, fieldset .textbox_group, fieldset .text_group {
   float: left;
   width: 276px;
   position: relative; }
-  fieldset .radio_group li, fieldset .checkbox_group li, fieldset .textbox_group li, fieldset .text_group li {
+  fieldset .checkbox_group li, fieldset .textbox_group li, fieldset .text_group li {
     width: auto;
     margin: 0; }
-  fieldset .radio_group label, fieldset .checkbox_group label, fieldset .textbox_group label, fieldset .text_group label {
+  fieldset .checkbox_group label, fieldset .textbox_group label, fieldset .text_group label {
     width: auto;
     font-weight: normal;
     text-align: left;
     line-height: 18px; }
-  fieldset .radio_group input, fieldset .checkbox_group input, fieldset .textbox_group input, fieldset .text_group input {
+  fieldset .checkbox_group input, fieldset .textbox_group input, fieldset .text_group input {
     display: inline-block;
     margin: 0 5px 0 0; }
-  fieldset .radio_group .choices, fieldset .checkbox_group .choices, fieldset .textbox_group .choices, fieldset .text_group .choices {
+  fieldset .checkbox_group .choices, fieldset .textbox_group .choices, fieldset .text_group .choices {
     height: auto;
     max-height: auto;
     overflow: visible; }
-    fieldset .radio_group .choices img, fieldset .checkbox_group .choices img, fieldset .textbox_group .choices img, fieldset .text_group .choices img {
-      left: 307px; }
-  fieldset .radio_group .inline-errors, fieldset .radio_group img, fieldset .checkbox_group .inline-errors, fieldset .checkbox_group img, fieldset .textbox_group .inline-errors, fieldset .textbox_group img, fieldset .text_group .inline-errors, fieldset .text_group img {
-    position: absolute;
-    top: 26px;
-    left: 0;
-    margin: 0;
-    white-space: nowrap; }
-  fieldset .radio_group img, fieldset .checkbox_group img, fieldset .textbox_group img, fieldset .text_group img {
-    top: 0;
-    right: 9px;
-    left: auto; }
+  fieldset .checkbox_group .inline-errors, fieldset .textbox_group .inline-errors, fieldset .text_group .inline-errors {
+    left: 0; }
+  fieldset .checkbox_group #user_subscribe_input, fieldset .textbox_group #user_subscribe_input, fieldset .text_group #user_subscribe_input {
+    width: 430px; }
+    fieldset .checkbox_group #user_subscribe_input label, fieldset .textbox_group #user_subscribe_input label, fieldset .text_group #user_subscribe_input label {
+      position: relative;
+      padding: 0 0 0 20px; }
+      fieldset .checkbox_group #user_subscribe_input label input, fieldset .textbox_group #user_subscribe_input label input, fieldset .text_group #user_subscribe_input label input {
+        position: absolute;
+        left: 0; }
+fieldset .radio_group legend {
+  display: block;
+  float: left;
+  padding: 3px 0 0;
+  text-align: right;
+  line-height: 18px; }
+fieldset .radio_group ol {
+  float: left;
+  width: 264px;
+  margin: 0;
+  padding: 7px 0 0; }
+  fieldset .radio_group ol li {
+    display: inline-block;
+    width: auto;
+    margin: 0 5px 0 0;
+    font-size: 13px;
+    line-height: 13px; }
+  fieldset .radio_group ol label, fieldset .radio_group ol input {
+    display: inline;
+    width: auto;
+    float: none;
+    margin: 0; }
+  fieldset .radio_group ol input {
+    display: inline-block;
+    margin: 0 2px 0 0; }
 fieldset .textbox_group, fieldset .text_group {
   padding: 0 0 0 20px;
   list-style: decimal; }
@@ -150,17 +172,24 @@ fieldset .blue_btn {
 fieldset .inline-errors {
   display: block;
   position: relative;
-  left: 152px;
+  left: 167px;
   float: left;
   clear: left;
+  width: 247px;
   margin: 5px 0 0 5px;
-  padding: 0 0 1px 22px;
+  padding: 0 0 0 22px;
   color: #666;
-  background: url(/assets/users/error.png) 0 0 no-repeat; }
+  background-image: url(/assets/users/error.png);
+  background-repeat: no-repeat; }
+fieldset .inline-success, fieldset img {
+  display: block;
+  position: absolute;
+  top: 5px;
+  left: 451px; }
 fieldset .toggle {
   display: block;
   position: relative;
-  left: 152px;
+  left: 167px;
   float: left;
   clear: left;
   margin: 4px 0 0; }
@@ -175,10 +204,10 @@ fieldset .choices {
   margin: 0 0 0 10px;
   padding: 0 0 0 10px;
   border-left: 1px solid #999; }
-.add_links a:first-child {
-  margin-left: 0;
-  padding-left: 0;
-  border-left: none; }
+  .add_links a:first-child {
+    margin-left: 0;
+    padding-left: 0;
+    border-left: none; }
 
 /* Old Buttons remove when SZ Updates Forms */
 div.actions fieldset, .store_action_btns fieldset {
@@ -564,10 +593,54 @@ div.actions fieldset, .store_action_btns fieldset {
 /*
 
 
+
 */
+/* Styles for the application login step lightbox */
+#gptp_login {
+  width: 525px;
+  height: 205px;
+  margin-top: -102.5px;
+  margin-left: -262.5px;
+  padding: 20px; }
+  #gptp_login #gptp_login_left {
+    float: left;
+    width: 175px;
+    text-align: right;
+    line-height: 36px; }
+    #gptp_login #gptp_login_left h1 {
+      float: right;
+      margin: 0 0 5px;
+      line-height: 100%; }
+    #gptp_login #gptp_login_left h2 {
+      float: right;
+      clear: both;
+      line-height: 18px; }
+  #gptp_login #social_login {
+    float: right;
+    margin: 0; }
+    #gptp_login #social_login .login_box {
+      padding: 15px 25px 10px; }
+    #gptp_login #social_login .social_icons {
+      margin: 0; }
+  #gptp_login .header {
+    margin: 0 0 5px; }
+  #gptp_login .footer {
+    clear: both;
+    text-align: right; }
+    #gptp_login .footer p {
+      margin: 0;
+      font-size: 11px;
+      line-height: 12px; }
+
+.ui-widget-overlay {
+  width: 100%;
+  height: 100%;
+  z-index: 1001; }
+
 #login_area {
   text-align: left; }
 
+/* Header application steps */
 #application_steps {
   margin: 0 0 11px;
   padding: 0 0 11px;
@@ -608,6 +681,32 @@ div.actions fieldset, .store_action_btns fieldset {
     #application_steps li.selected span {
       background-color: #09f; }
 
+/* Introduction Text */
+#intro_text p {
+  margin: 15px 0 10px;
+  font-size: 15px; }
+
+/* Styles for user date of birth dropdown */
+/* Month */
+#writer_application_applicant_dob_2i,
+#photographer_application_applicant_dob_2i {
+  width: 121px; }
+
+/* Day */
+#writer_application_applicant_dob_3i,
+#photographer_application_applicant_dob_3i {
+  width: 65px; }
+
+/* Year */
+#writer_application_applicant_dob_1i,
+#photographer_application_applicant_dob_1i {
+  width: 80px; }
+
+/* Styles to allow Experience Level radio group labels to be in 1 line */
+#photographer_application_experience_level_input ol {
+  width: 375px; }
+
+/* Application review select boxes buttons */
 .select_list_btns {
   margin: 0 0 8px; }
   .select_list_btns li {
@@ -669,14 +768,10 @@ div.actions fieldset, .store_action_btns fieldset {
 .gptp_right_rail .inner_divider.solid,
 .gptp_right_rail .app_btn {
   display: none !important; }
-/*
-
-
-*/
-#second_step_intro p {
-  margin: 15px 0 10px;
-  font-size: 15px; }
-
+/* REVIEWS SELECT STYLES
+-----------------------------------------------------------
+:: Styles for the reviews select forms shared by different applications.
+----------------------------------------------------------- */
 #sample_review_cont {
   position: relative; }
 
@@ -880,3 +975,7 @@ div.actions fieldset, .store_action_btns fieldset {
 
 #writer_application_rating_emma_input a {
   color: #ffcc05; }
+/*
+
+
+*/

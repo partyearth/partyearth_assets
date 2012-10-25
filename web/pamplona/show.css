@@ -1568,6 +1568,21 @@ td.right_side.pod_sides {
 .pamplona .map_controls #calendar_btn:hover {
   background-position: -138px -482px; }
 
+.Checkbox {
+  float: left; }
+  .Checkbox .Input {
+    display: block;
+    float: left;
+    width: 16px;
+    height: 19px;
+    margin: 0 5px 0 0;
+    background-image: url(/assets/content_bg/application_sprite.png);
+    background-repeat: no-repeat; }
+  .Checkbox.unchecked .Input {
+    background-position: -87px -150px; }
+  .Checkbox.checked .Input {
+    background-position: -87px -188px; }
+
 /*BEGIN RUNNING OF THE BULLS SECTION*/
 /*------------------------------------------*/
 .bull_run_section {

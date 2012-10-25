@@ -1,0 +1,146 @@
+#internship_sidebar_module h2 {
+  margin: 0 0 10px;
+  color: #09f;
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 15px; }
+#internship_sidebar_module h3 {
+  margin: 0 0 10px;
+  color: #375363;
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 26px; }
+/*
+
+*/
+/* INTERN APPLICATION LANDING PAGE STYLES */
+#internship_landing {
+  width: 689px;
+  margin: 0 0 0 -22px;
+  padding: 24px 0 20px 68px;
+  background-image: url(/assets/writer_applications/left_column_bg_repeat.png);
+  background-repeat: repeat-y; }
+  #internship_landing h1 {
+    margin: 0 0 10px;
+    color: #000;
+    font-size: 26px;
+    font-weight: bold;
+    line-height: 28px; }
+    #internship_landing h1 span {
+      color: #597686; }
+  #internship_landing p {
+    padding: 0;
+    font-size: 16px;
+    line-height: 22px; }
+    #internship_landing p.first {
+      margin: 0 0 90px; }
+    #internship_landing p.second {
+      margin: 0 0 5px 375px; }
+    #internship_landing p.second_half {
+      margin: 0 0 10px 375px; }
+    #internship_landing p.third {
+      clear: left;
+      margin: 0 0 20px 100px; }
+    #internship_landing p.fourth {
+      position: relative;
+      margin: 0 18px 0 0;
+      padding: 0 195px 0 0;
+      color: #09f;
+      font-size: 21px;
+      font-weight: bold;
+      text-align: right; }
+      #internship_landing p.fourth a, #internship_landing p.fourth a:link, #internship_landing p.fourth a:visited {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 12px 25px;
+        font-size: 19px;
+        line-height: 19px; }
+  #internship_landing dl {
+    float: left;
+    margin: 0 40px 10px 0; }
+    #internship_landing dl.first {
+      margin-left: 375px; }
+  #internship_landing dt {
+    margin: 0 0 5px;
+    color: #09f;
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 21px;
+    text-transform: uppercase; }
+  #internship_landing dd {
+    color: #375363;
+    font-size: 15px;
+    line-height: 22px; }
+
+.pen {
+  top: 340px;
+  right: -45px;
+  z-index: 10;
+  width: 88px;
+  height: 368px;
+  position: absolute;
+  background-image: url(/assets/writer_applications/get_paid_to_party_misc_sprite.png);
+  background-position: 0 -317px; }
+
+.camera {
+  position: absolute;
+  top: 699px;
+  left: -110px;
+  width: 331px;
+  height: 265px;
+  background-image: url(/assets/intern_applications/sprite.png);
+  background-position: 0 -251px; }
+
+.polaroid {
+  position: absolute;
+  z-index: 10;
+  height: 249px;
+  background-image: url(/assets/intern_applications/sprite.png); }
+  .polaroid.tricia {
+    top: 7px;
+    left: 521px;
+    width: 231px; }
+  .polaroid.gabriel {
+    top: 213px;
+    left: -11px;
+    z-index: 30;
+    width: 230px;
+    background-position: -233px 0; }
+  .polaroid.nisha {
+    top: 190px;
+    left: 177px;
+    z-index: 40;
+    width: 247px;
+    background-position: -465px 0; }
+  .polaroid.daniel {
+    top: 435px;
+    left: -6px;
+    width: 239px;
+    background-position: -714px 0; }
+  .polaroid.kira {
+    top: 420px;
+    left: 206px;
+    z-index: 20;
+    width: 230px;
+    background-position: -955px 0; }
+  .polaroid.madison {
+    top: 610px;
+    left: 551px;
+    width: 231px;
+    background-position: -1187px 0; }
+
+/* Intern Application Right Sidebar Styles */
+#internship_landing_sidebar .blue_btn {
+  display: block;
+  margin: 0 0 12px;
+  padding: 12px 18px;
+  height: auto;
+  font-size: 19px;
+  text-align: left;
+  text-transform: uppercase; }
+  #internship_landing_sidebar .blue_btn span {
+    display: block;
+    font-size: 12px;
+    font-weight: normal; }
