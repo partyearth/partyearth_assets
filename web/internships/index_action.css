@@ -135,12 +135,11 @@
 #internship_landing_sidebar .blue_btn {
   display: block;
   margin: 0 0 12px;
-  padding: 12px 18px;
-  height: auto;
   font-size: 19px;
   text-align: left;
-  text-transform: uppercase; }
+  line-height: 22px; }
   #internship_landing_sidebar .blue_btn span {
     display: block;
     font-size: 12px;
-    font-weight: normal; }
+    font-weight: normal;
+    line-height: 14px; }

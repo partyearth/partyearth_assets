@@ -1,0 +1,292 @@
+/* TOOLTIP STYLES
+--------------------------------------------------------------
+:: Basic Styles for the tooltip container and point.
+:: Position and border need to be adjusted for specific usage.
+-------------------------------------------------------------- */
+.dialog_box {
+  position: absolute;
+  z-index: 6000;
+  padding: 4px;
+  background-color: #889aa4;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px; }
+  .dialog_box .dialog_content_wrapper {
+    padding: 11px 7px 9px;
+    background-color: #f7f9fb;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px; }
+  .dialog_box .dialog_img {
+    display: none; }
+  .dialog_box .dialog_content h1 {
+    color: #09f;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 18px;
+    margin: 0 0 6px; }
+  .dialog_box .dialog_content p {
+    padding: 0;
+    font-size: 13px;
+    line-height: 16px !important;
+    /* To override venue styles for  #object_page_info dd p */ }
+  .dialog_box .dialog_content .title {
+    float: left;
+    text-transform: uppercase;
+    line-height: 16px; }
+  .dialog_box .close_btn, .dialog_box .close_btn:hover {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 8px;
+    height: 8px;
+    background-image: url(/assets/characters/liked_by_sprite-0e026fac55922a623299afccc5f5502b.png);
+    background-position: -172px -138px; }
+
+.dialog_point {
+  position: absolute;
+  width: 0;
+  height: 0;
+  margin: 0 0 -12px;
+  border-top: 12px solid transparent;
+  border-right: 12px solid transparent;
+  border-bottom: 12px solid transparent;
+  border-left: 12px solid transparent; }
+  .dialog_point .dialog_inner_point {
+    position: absolute;
+    z-index: 6001;
+    width: 0;
+    height: 0;
+    margin: 0 0 10px;
+    border-top: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid transparent;
+    overflow: hidden; }
+
+/* Help Button Tooltip Trigger/Container
+-------------------------------------------------------------- */
+.help_btn {
+  position: relative;
+  z-index: 3000;
+  width: 16px;
+  height: 16px;
+  background-image: url(/assets/content_bg/application_sprite-0c99d872c88727bf30ed3816fdc5dbb9.png);
+  background-position: -27px -185px;
+  /* Position of dialog box and point specific to help trigger */ }
+  .help_btn:hover {
+    background-position: -44px -185px;
+    cursor: pointer; }
+  .help_btn .dialog_box {
+    width: 260px;
+    top: -22px;
+    left: 29px; }
+  .help_btn .dialog_point {
+    top: -4px;
+    left: 18px;
+    border-right: 12px solid #889AA4;
+    border-left: none; }
+    .help_btn .dialog_point .dialog_inner_point {
+      left: 5px;
+      top: -10px;
+      border-right: 10px solid #F7F9FB;
+      border-left: none; }
+
+/* Ratings Help Tooltip */
+#ratings-help p {
+  padding: 0;
+  color: #000;
+  font-size: 11px;
+  line-height: 13px; }
+#ratings-help table {
+  margin: 5px 0 0; }
+#ratings-help td {
+  vertical-align: top; }
+#ratings-help .char-link {
+  text-decoration: none; }
+  #ratings-help .char-link:hover {
+    text-decoration: underline; }
+#ratings-help .lucas-color {
+  color: #3375C4; }
+#ratings-help .adriana-color {
+  color: #B8529E; }
+#ratings-help .jonah-color {
+  color: #73B808; }
+#ratings-help .emma-color {
+  color: #FFCC05; }
+#ratings-help .stars {
+  display: block;
+  width: 66px;
+  height: 14px;
+  margin: 1px 15px 0 0;
+  background-image: url(/assets/characters/char_page_ratings_stars-5c93adc2ed7829dc497bd0b0b19acb1c.png); }
+  #ratings-help .stars.row1 {
+    background-position: 0 -47px; }
+  #ratings-help .stars.row2 {
+    background-position: 0 -61px; }
+  #ratings-help .stars.row3 {
+    background-position: 0 -75px; }
+  #ratings-help .stars.row4 {
+    background-position: 0 -89px; }
+  #ratings-help .stars.row5 {
+    background-position: 0 -103px; }
+/*
+
+*/
+.liked_by {
+  /* Specific character styles */
+  /* Disabled styles */
+  /* Bigger version styles */ }
+  .liked_by div, .liked_by p, .liked_by span {
+    -moz-user-select: none;
+    user-select: none; }
+  .liked_by dt {
+    float: left;
+    margin-bottom: 2px;
+    color: #8ea8b5;
+    font-size: 9px;
+    line-height: 11px;
+    text-transform: uppercase; }
+  .liked_by dd {
+    float: right; }
+  .liked_by ul {
+    position: relative; }
+  .liked_by li {
+    float: left;
+    margin: 0 4px 0 0;
+    padding: 0 0 2px;
+    border-bottom: 2px solid; }
+    .liked_by li:hover {
+      cursor: pointer; }
+  .liked_by .character {
+    display: block;
+    width: 25px;
+    height: 25px;
+    background-image: url(/assets/characters/liked_by_sprite-0e026fac55922a623299afccc5f5502b.png);
+    border: 1px solid #adc0c9;
+    border-radius: 2px;
+    cursor: pointer; }
+  .liked_by ul {
+    /* Tooltip container and point positioning for liked by characters */ }
+    .liked_by ul .dialog_box {
+      right: -9px;
+      bottom: 41px; }
+      .liked_by ul .dialog_box .dialog_content_wrapper {
+        width: 190px; }
+      .liked_by ul .dialog_box .dialog_img {
+        display: block;
+        float: left;
+        width: 32px;
+        height: 87px;
+        background-image: url(/assets/characters/liked_by_sprite-0e026fac55922a623299afccc5f5502b.png); }
+      .liked_by ul .dialog_box .dialog_content {
+        float: left;
+        width: 134px;
+        margin: 7px 0 0 11px; }
+    .liked_by ul .dialog_point {
+      position: relative;
+      bottom: 39px;
+      left: 1px;
+      border-top: 12px solid #889AA4;
+      border-bottom: none; }
+      .liked_by ul .dialog_point .dialog_inner_point {
+        bottom: -5px;
+        left: -10px;
+        border-top: 10px solid #F7F9FB;
+        border-bottom: none; }
+  .liked_by .lucas {
+    border-color: #4175ab; }
+    .liked_by .lucas .character {
+      background-position: -1px -3px; }
+    .liked_by .lucas .title {
+      color: #4175ab; }
+    .liked_by .lucas .dialog_img {
+      background-position: 0 -209px; }
+    .liked_by .lucas:hover {
+      border-color: #4175ab; }
+      .liked_by .lucas:hover .character {
+        border-color: #4175ab !important;
+        background-position: -1px -3px !important; }
+  .liked_by .adriana {
+    border-color: #c675b1; }
+    .liked_by .adriana .character {
+      background-position: -31px -3px; }
+    .liked_by .adriana .title {
+      color: #c675b1; }
+    .liked_by .adriana .dialog_img {
+      background-position: -32px -209px; }
+    .liked_by .adriana:hover {
+      border-color: #c675b1; }
+      .liked_by .adriana:hover .character {
+        border-color: #c675b1 !important;
+        background-position: -31px -3px !important; }
+  .liked_by .jonah {
+    border-color: #95c946; }
+    .liked_by .jonah .character {
+      background-position: -61px -3px; }
+    .liked_by .jonah .title {
+      color: #95c946; }
+    .liked_by .jonah .dialog_img {
+      background-position: -64px -209px; }
+    .liked_by .jonah:hover {
+      border-color: #95c946; }
+      .liked_by .jonah:hover .character {
+        border-color: #95c946 !important;
+        background-position: -61px -3px !important; }
+  .liked_by .emma {
+    margin-right: 0;
+    border-color: #ffb637; }
+    .liked_by .emma .character {
+      background-position: -91px -3px; }
+    .liked_by .emma .title {
+      color: #ffb637; }
+    .liked_by .emma .dialog_img {
+      background-position: -96px -209px; }
+    .liked_by .emma:hover {
+      border-color: #ffb637; }
+      .liked_by .emma:hover .character {
+        border-color: #ffb637 !important;
+        background-position: -91px -3px !important; }
+  .liked_by .disabled {
+    border-color: #dae4e9; }
+    .liked_by .disabled.lucas .character {
+      background-position: -1px -33px; }
+    .liked_by .disabled.adriana .character {
+      background-position: -31px -33px; }
+    .liked_by .disabled.jonah .character {
+      background-position: -61px -33px; }
+    .liked_by .disabled.emma .character {
+      background-position: -91px -33px; }
+  .liked_by.liked_by_big li {
+    border-width: 3px; }
+  .liked_by.liked_by_big .character {
+    width: 28px;
+    height: 28px; }
+  .liked_by.liked_by_big ul .dialog_box {
+    bottom: 43px; }
+  .liked_by.liked_by_big ul .dialog_point {
+    bottom: 41px; }
+  .liked_by.liked_by_big .lucas .character {
+    background-position: 0 0; }
+  .liked_by.liked_by_big .lucas:hover .character {
+    background-position: 0 0 !important; }
+  .liked_by.liked_by_big .adriana .character {
+    background-position: -30px 0; }
+  .liked_by.liked_by_big .adriana:hover .character {
+    background-position: -30px 0 !important; }
+  .liked_by.liked_by_big .jonah .character {
+    background-position: -60px 0; }
+  .liked_by.liked_by_big .jonah:hover .character {
+    background-position: -60px 0 !important; }
+  .liked_by.liked_by_big .emma .character {
+    background-position: -90px 0; }
+  .liked_by.liked_by_big .emma:hover .character {
+    background-position: -90px 0 !important; }
+  .liked_by.liked_by_big .disabled.lucas .character {
+    background-position: 0 -30px; }
+  .liked_by.liked_by_big .disabled.adriana .character {
+    background-position: -30px -30px; }
+  .liked_by.liked_by_big .disabled.jonah .character {
+    background-position: -60px -30px; }
+  .liked_by.liked_by_big .disabled.emma .character {
+    background-position: -90px -30px; }

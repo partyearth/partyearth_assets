@@ -26,10 +26,18 @@
 .city_map .overlay .CloseButton:hover {
   background-position: 0 -24px; }
 
-.city_map .overlay .HelpButton {
+.city_map .overlay .help_btn {
   position: absolute;
   right: 7px;
   top: 18px; }
+.city_map .overlay .close_btn, .city_map .overlay .close_btn:hover {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 8px;
+  height: 8px;
+  background-image: url(/assets/characters/liked_by_sprite.png);
+  background-position: -172px -138px; }
 
 .city_map .overlay .overlay_arrow {
   width: 28px;
@@ -51,11 +59,10 @@
   left: 391px; }
 
 .city_map .overlay .blue_btn {
-  padding-left: 0;
-  padding-right: 0;
-  width: 38px;
-  -moz-box-shadow: 1px 0px 5px #222;
-  -webkit-box-shadow: 1px 0px 5px #222; }
+  padding: 6px 10px 5px;
+  box-shadow: 0 2px 3px #222;
+  -moz-box-shadow: 0 2px 3px #222;
+  -webkit-box-shadow: 0 2px 3px #222; }
 
 /*ENTER LOCATION*/
 /*NEIGHBORHOOD DROPDOWN OVERRIDES*/
@@ -142,9 +149,6 @@
   width: 147px;
   font-size: 11px; }
 
-.city_map .overlay #location .blue_btn {
-  margin-left: 5px; }
-
 /*VENUE TYPE*/
 .city_map .overlay .venue_type_select {
   max-height: 260px; }
@@ -167,9 +171,9 @@
   float: left; }
 
 .city_map .overlay #venue_types_wrapper #action_btns {
-  bottom: 4px;
   position: absolute;
-  right: 0;
+  right: 8px;
+  bottom: 8px;
   width: 197px; }
 
 .city_map .overlay #venue_types_wrapper .select_deselect {
@@ -180,9 +184,6 @@
 
 .city_map .overlay #venue_types_wrapper .select_deselect:hover {
   color: #fff; }
-
-.city_map .overlay #venue_types_wrapper .blue_btn {
-  margin-bottom: 4px; }
 
 /*DATE PICKER*/
 .city_map .overlay .ui-datepicker.ui-datepicker-multi {

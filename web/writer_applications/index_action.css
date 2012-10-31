@@ -117,18 +117,6 @@
       background-position: -396px 0; }
     #gptp_in_press li.hogan .name {
       background-position: -600px 0; }
-/* BEGIN NAVIGATION CSS */
-#navbar li#get_paid .left_end {
-  background-position: -269px -121px; }
-#navbar li#get_paid a:link, #navbar li#get_paid #navbar li#get_paid a:visited, #navbar li#get_paid #navbar li#get_paid a:active {
-  color: #fff; }
-#navbar li#get_paid a span {
-  background-image: url(/assets/content_bg/application_sprite.png);
-  background-position: 0 -2663px;
-  background-repeat: repeat-x; }
-#navbar li#get_paid .right_end {
-  background-position: -283px -121px; }
-
 /* BEGIN PAGE PROPERTIES */
 .get_paid_to_party_content .left_column_wrapper {
   width: 735px; }

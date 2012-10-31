@@ -78,7 +78,7 @@
 --------------------------------------
 :: Styles for the width and position of the Gigya buttons..
 -------------------------------------------------------- */
-.gig-button-container {
+.social_media_btns .gig-button-container {
   margin: 0 5px 0 0 !important;
   padding: 0 !important;
   overflow: hidden; }
@@ -232,69 +232,6 @@
 
 .gig-followbar-dialog {
   bottom: 34px !important; }
-/*
-
-
-
-
-
-
-*/
-/*BEGIN GENERAL PAGE PROPERTIES*/
-/*-------------------------------------------------------------------------*/
-.left_column {
-  width: 735px; }
-
-.photo_gallery_content .bread_crumb .separator {
-  padding: 0 7px; }
-
-.photo_gallery_content .headline {
-  margin: 6px 0 11px;
-  line-height: 24px; }
-  .photo_gallery_content .headline .grey_text {
-    color: #ccc;
-    font-size: 18px; }
-  .photo_gallery_content .headline .second_line {
-    font-size: 16px;
-    font-weight: bold;
-    color: #6c8898; }
-
-/*BEGIN PHOTO GALLERY CONTENT PROPERTIES*/
-/*-------------------------------------------------------------------------*/
-.photo_content {
-  padding: 12px 0 0 12px;
-  background-image: url(/assets/content_bg/grey_stripes_repeat.gif); }
-
-.photo_grid {
-  padding: 4px 4px 0; }
-  .photo_grid li {
-    float: left;
-    margin: 0 3px 3px 0;
-    border: 3px solid #fff; }
-    .photo_grid li.fourth {
-      margin-right: 0; }
-  .photo_grid a {
-    display: block; }
-  .photo_grid img {
-    display: block;
-    width: 165px;
-    height: 110px; }
-
-.photo_gallery_content .see_more_btn {
-  background: url(/assets/photos/photo_gallery_sprite.png) 0 0 no-repeat transparent;
-  margin: 0 auto;
-  display: block;
-  width: 202px;
-  height: 36px;
-  text-indent: -9999px; }
-
-.photo_gallery_content .see_more_btn:hover {
-  background-position: 0 -36px; }
-
-/*BEGIN RIGHT COLUMN*/
-/*------------------------------------------------*/
-.right_column {
-  width: 240px; }
 /*BEGIN NEW IN PHOTO GALLERIES STYLES*/
 /*---------------------------------------------*/
 .latest_reviews.pod_rounded {
@@ -586,3 +523,62 @@
 
 .comments_link:hover {
   color: #000; }
+/*
+
+
+
+
+
+*/
+/*BEGIN GENERAL PAGE PROPERTIES*/
+/*-------------------------------------------------------------------------*/
+.left_column {
+  width: 735px; }
+
+.photo_gallery_content .bread_crumb .separator {
+  padding: 0 7px; }
+
+.photo_gallery_content .headline {
+  margin: 6px 0 11px;
+  line-height: 24px; }
+  .photo_gallery_content .headline .grey_text {
+    color: #ccc;
+    font-size: 18px; }
+  .photo_gallery_content .headline .second_line {
+    font-size: 16px;
+    font-weight: bold;
+    color: #6c8898; }
+
+/*BEGIN PHOTO GALLERY CONTENT PROPERTIES*/
+/*-------------------------------------------------------------------------*/
+.photo_grid {
+  padding: 4px 4px 0;
+  background-image: url(/assets/content_bg/grey_stripes_repeat.gif); }
+  .photo_grid li {
+    float: left;
+    margin: 0 3px 3px 0;
+    border: 3px solid #fff; }
+    .photo_grid li.fourth {
+      margin-right: 0; }
+  .photo_grid a {
+    display: block; }
+  .photo_grid img {
+    display: block;
+    width: 165px;
+    height: 110px; }
+
+.photo_gallery_content .see_more_btn {
+  background: url(/assets/photos/photo_gallery_sprite.png) 0 0 no-repeat transparent;
+  margin: 0 auto;
+  display: block;
+  width: 202px;
+  height: 36px;
+  text-indent: -9999px; }
+
+.photo_gallery_content .see_more_btn:hover {
+  background-position: 0 -36px; }
+
+/*BEGIN RIGHT COLUMN*/
+/*------------------------------------------------*/
+.right_column {
+  width: 240px; }

@@ -2,20 +2,6 @@
 
 
 */
-/*BEGIN NAVIGATION CSS*/
-/*--------------------------------------------------*/
-#navbar li#get_paid .left_end {
-  background-position: -269px -121px; }
-
-#navbar li#get_paid a:link, #navbar li#get_paid a:visited, #navbar li#get_paid a:active {
-  color: #ffffff; }
-
-#navbar li#get_paid a span {
-  background: url(/assets/content_bg/application_sprite.png) 0 -2663px repeat-x; }
-
-#navbar li#get_paid .right_end {
-  background-position: -283px -121px; }
-
 /*BEGIN PAGE PROPERTIES*/
 /*--------------------------------------------------*/
 .get_paid_to_party_content.photographer_apply_page .left_column_wrapper {

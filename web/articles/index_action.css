@@ -67,12 +67,12 @@
       #articles_page .left_column .article_item .article_img {
         display: block;
         float: left;
+        margin: 0 14px 0 0;
         border: #9aabae; }
         #articles_page .left_column .article_item .article_img img {
           display: block;
           width: 210px;
-          height: 140px;
-          margin: 0 14px 0 0; }
+          height: 140px; }
       #articles_page .left_column .article_item .details {
         position: relative;
         float: left;
@@ -497,7 +497,7 @@
 --------------------------------------
 :: Styles for the width and position of the Gigya buttons..
 -------------------------------------------------------- */
-.gig-button-container {
+.social_media_btns .gig-button-container {
   margin: 0 5px 0 0 !important;
   padding: 0 !important;
   overflow: hidden; }

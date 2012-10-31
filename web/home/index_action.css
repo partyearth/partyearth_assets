@@ -62,11 +62,9 @@
 /*
 
 */
-/*MAIN SITE CONTAINER PROPERTIES*/
-/*-------------------------------------------------------------------*/
-/*
-Main container divs that center and structure the frame of the site.
-*/
+/* MAIN SITE CONTAINER PROPERTIES
+------------------------------------------------------------------- */
+/* Main container divs that center and structure the frame of the site. */
 #site_container {
   width: 100%;
   height: 100%;
@@ -320,11 +318,16 @@ Main container divs that center and structure the frame of the site.
           padding: 0 0 10px;
           margin: 0 0 10px;
           border-bottom: 1px dashed #6f6f6f; }
-          .footer .third_row .left_side .latest_reviews ul li .object_img,
-          .footer .third_row .left_side .fresh_articles ul li .object_img {
-            width: 116px;
-            height: 76px;
+          .footer .third_row .left_side .latest_reviews ul li .thumbnail_link,
+          .footer .third_row .left_side .fresh_articles ul li .thumbnail_link {
+            display: block;
+            float: left;
             margin: 0 18px 0 0; }
+          .footer .third_row .left_side .latest_reviews ul li .thumbnail,
+          .footer .third_row .left_side .fresh_articles ul li .thumbnail {
+            display: block;
+            width: 116px;
+            height: 76px; }
           .footer .third_row .left_side .latest_reviews ul li .venue_name a, .footer .third_row .left_side .latest_reviews ul li .venue_name a:visited, .footer .third_row .left_side .latest_reviews ul li .venue_name .fake_link,
           .footer .third_row .left_side .fresh_articles ul li .venue_name a,
           .footer .third_row .left_side .fresh_articles ul li .venue_name a:visited,
@@ -356,10 +359,11 @@ Main container divs that center and structure the frame of the site.
               .footer .third_row .left_side .fresh_articles ul li .desc .ellipses_dots .fake_link {
                 color: #0099ff;
                 text-decoration: underline; }
-              .footer .third_row .left_side .latest_reviews ul li .desc .ellipses_dots a:hover, .footer .third_row .left_side .latest_reviews ul li .desc .ellipses_dots .fake_link:hover,
-              .footer .third_row .left_side .fresh_articles ul li .desc .ellipses_dots a:hover,
-              .footer .third_row .left_side .fresh_articles ul li .desc .ellipses_dots .fake_link:hover {
-                color: #fff; }
+                .footer .third_row .left_side .latest_reviews ul li .desc .ellipses_dots a:hover, .footer .third_row .left_side .latest_reviews ul li .desc .ellipses_dots a:visited:hover, .footer .third_row .left_side .latest_reviews ul li .desc .ellipses_dots .fake_link:hover,
+                .footer .third_row .left_side .fresh_articles ul li .desc .ellipses_dots a:hover,
+                .footer .third_row .left_side .fresh_articles ul li .desc .ellipses_dots a:visited:hover,
+                .footer .third_row .left_side .fresh_articles ul li .desc .ellipses_dots .fake_link:hover {
+                  color: #fff; }
       .footer .third_row .left_side .latest_reviews ul li:last-of-type {
         border-bottom-width: 3px;
         border-bottom-style: solid; }

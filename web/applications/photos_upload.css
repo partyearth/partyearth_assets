@@ -2,6 +2,9 @@
 -----------------------------------------------------------
 :: Styles for the photos upload forms shared by different applications.
 ----------------------------------------------------------- */
+.login_box {
+  padding: 18px 10px 30px; }
+
 #photo_app_upload {
   position: relative;
   border-bottom: 1px dashed #adc0c9;
@@ -15,20 +18,19 @@
     width: 178px;
     margin: 0; }
   #photo_app_upload #FileInputUploader {
-    width: 160px;
-    height: 33px;
+    width: 182px;
+    height: 39px;
+    margin-top: -2px;
     background-image: url(/assets/photographer_applications/photographer_second_step_sprite.png);
-    background-position: -160px -66px;
+    background-position: 0 -18px;
     cursor: pointer; }
-  #photo_app_upload #FileInputUploader:hover {
-    background-position: -160px -100px; }
-  #photo_app_upload #FileInputUploader.disabled {
-    background-position: 0 -66px;
-    cursor: default; }
+    #photo_app_upload #FileInputUploader:hover {
+      background-position: 0 -59px; }
+    #photo_app_upload #FileInputUploader.disabled {
+      background-position: 0 -100px;
+      cursor: default; }
   #photo_app_upload .upload_btn {
-    float: right;
-    height: 16px;
-    line-height: 17px; }
+    float: right; }
   #photo_app_upload .uploadifyQueue {
     display: none; }
   #photo_app_upload .upload_error {
@@ -93,7 +95,7 @@
       top: -8px;
       width: 16px;
       height: 16px;
-      background: url(/assets/photographer_applications/photographer_second_step_sprite-811a6ab7dda24ad3d508bdc7fcf80394.png) -156px 0 no-repeat transparent;
+      background: url(/assets/photographer_applications/photographer_second_step_sprite.png);
       cursor: pointer; }
     #photo_app_photos .photo_item .loading_notice {
       position: absolute;

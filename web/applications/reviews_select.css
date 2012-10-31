@@ -109,7 +109,8 @@
 #app_review_submit {
   margin: 0 0 10px;
   padding: 0 0 20px;
-  border-bottom: 2px solid #acbfc8; }
+  border-bottom: 2px solid #acbfc8;
+  /* adjust padding to fit height of select fields */ }
   #app_review_submit h2 {
     margin: 0;
     color: #09f;
@@ -163,7 +164,7 @@
   #app_review_submit .performer_review_field .selected_data {
     width: 546px; }
   #app_review_submit .blue_btn {
-    height: auto; }
+    padding: 7px 15px; }
 
 .ratings_container {
   position: relative; }

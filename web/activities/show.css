@@ -924,19 +924,6 @@
 
 
 */
-/*BEGIN NAVIGATION CSS*/
-#navbar li#cities .left_end {
-  background-position: -269px -121px; }
-
-#navbar li#cities a:link, #navbar li#cities a:visited, #navbar li#cities a:active {
-  color: #ffffff; }
-
-#navbar li#cities a span {
-  background: url(/assets/content_bg/application_sprite.png) 0 -2663px repeat-x; }
-
-#navbar li#cities .right_end {
-  background-position: -283px -121px; }
-
 /*LEFT COLUMN*/
 #left_column {
   width: 735px; }

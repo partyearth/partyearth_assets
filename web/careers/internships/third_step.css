@@ -85,10 +85,6 @@ fieldset input[type=checkbox], fieldset input[type=radio] {
   -moz-box-shadow: none;
   -webkit-box-shadow: none;
   box-shadow: none; }
-fieldset input[type=submit] {
-  width: auto;
-  height: auto;
-  padding: 7px 30px; }
 fieldset select {
   width: 276px; }
 fieldset textarea {
@@ -165,10 +161,11 @@ fieldset .select_group select {
   fieldset .select_group select:last-child {
     margin: 0;
     width: 90px; }
+fieldset .multiple_text ol {
+  float: left;
+  width: 274px; }
 fieldset .required abbr {
   color: #0099ff; }
-fieldset .blue_btn {
-  line-height: 18px; }
 fieldset .inline-errors {
   display: block;
   position: relative;
@@ -230,7 +227,7 @@ div.actions fieldset, .store_action_btns fieldset {
   width: auto;
   margin: 0 0 0 10px; }
 .actions input, .actions object, .actions a, .actions button {
-  display: block;
+  display: inline-block;
   float: right;
   margin: 0 0 0 10px; }
 .actions .previous_step {
@@ -604,7 +601,7 @@ div.actions fieldset, .store_action_btns fieldset {
   padding: 20px; }
   #gptp_login #gptp_login_left {
     float: left;
-    width: 175px;
+    width: 177px;
     text-align: right;
     line-height: 36px; }
     #gptp_login #gptp_login_left h1 {
@@ -879,7 +876,8 @@ div.actions fieldset, .store_action_btns fieldset {
 #app_review_submit {
   margin: 0 0 10px;
   padding: 0 0 20px;
-  border-bottom: 2px solid #acbfc8; }
+  border-bottom: 2px solid #acbfc8;
+  /* adjust padding to fit height of select fields */ }
   #app_review_submit h2 {
     margin: 0;
     color: #09f;
@@ -933,7 +931,7 @@ div.actions fieldset, .store_action_btns fieldset {
   #app_review_submit .performer_review_field .selected_data {
     width: 546px; }
   #app_review_submit .blue_btn {
-    height: auto; }
+    padding: 7px 15px; }
 
 .ratings_container {
   position: relative; }

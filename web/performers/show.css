@@ -1012,7 +1012,7 @@
 --------------------------------------
 :: Styles for the width and position of the Gigya buttons..
 -------------------------------------------------------- */
-.gig-button-container {
+.social_media_btns .gig-button-container {
   margin: 0 5px 0 0 !important;
   padding: 0 !important;
   overflow: hidden; }
@@ -1889,6 +1889,7 @@
     .gig-counter {
       display: none; }
   #object_page_info #review_summary, #object_page_info #description_summary {
+    position: relative;
     clear: left;
     margin: 0 0 9px;
     padding: 0 0 9px;
@@ -1963,6 +1964,7 @@
         color: #597686; }
   #object_page_info #location_details {
     clear: left;
+    width: 247px;
     margin: 0 0 9px;
     padding-bottom: 9px;
     border-bottom: 1px dashed #adc0c9; }

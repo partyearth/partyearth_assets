@@ -1,18 +1,3 @@
-#navbar li.nav_link {
-  position: relative; }
-
-#navbar li.nav_link a span {
-  letter-spacing: -1px;
-  padding: 3px 1px 3px 0; }
-
-div.subnav .left_end {
-  background: url(/assets/content_bg/application_sprite.png) -324px -121px no-repeat; }
-
-div.subnav .divider {
-  background: url(/assets/content_bg/application_sprite.png) -340px -121px no-repeat; }
-
-div.subnav .right_end {
-  background: url(/assets/content_bg/application_sprite.png) -332px -121px no-repeat; }
 #floating_bar .bottom_bar .kevin_module .dropdown_wrapper .dropdown {
   margin: 0 0 9px; }
 
@@ -109,17 +94,6 @@ div.subnav .right_end {
 .blue_section_divider {
   -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=#1a76ce, endColorStr=#0098fe);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=#1a76ce, endColorStr=#0098fe); }
-#tool_tip {
-  /* FOR IE7 */
-  *left: 23px; }
-
-#tool_tip .tip_content_container .tip_left_side .tooltip_arrow {
-  top: 20px; }
-
-#tool_tip .tip_content_container .tip_left_side .tooltip_arrow {
-  /* FOR IE7 */
-  *top: 20px;
-  *left: -8px; }
 .map_controls #result_types {
   margin: 6px 0 2px; }
 
@@ -139,8 +113,6 @@ div.subnav .right_end {
 /**
  * ie7.css
  *
-
-
 
 
 

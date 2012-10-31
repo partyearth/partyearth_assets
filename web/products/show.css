@@ -1001,10 +1001,10 @@ div.ppt {
 .inner_right_col .add_to_cart .quantity .quantity_dropdown .footer_bottom {
   width: 99px; }
 
-.inner_right_col .add_to_cart .quantity .add_btn {
-  width: 175px;
-  margin: 11px 0 0;
-  display: inline; }
+.inner_right_col .add_to_cart .add_btn {
+  display: block;
+  width: 100%;
+  margin: 11px 0 0; }
 
 .inner_right_col .non_usa {
   margin: 11px 0 0; }
