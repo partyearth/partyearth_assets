@@ -284,7 +284,8 @@ button {
   box-shadow: 0 2px 3px #bcbcbc;
   -webkit-box-shadow: 0 2px 3px #bcbcbc;
   -moz-box-shadow: 0 2px 3px #bcbcbc;
-  cursor: pointer; }
+  cursor: pointer;
+  /* Buttons used inline with text */ }
   .blue_btn:hover,
   .blue_btn:link:hover,
   .blue_btn:visited:hover,
@@ -351,6 +352,18 @@ button {
       box-shadow: 0 2px 6px #a8a8a8;
       -webkit-box-shadow: 0 2px 6px #a8a8a8;
       -moz-box-shadow: 0 2px 6px #a8a8a8; }
+  .blue_btn.inline_btn,
+  .blue_btn:link.inline_btn,
+  .blue_btn:visited.inline_btn,
+  .create.inline_btn,
+  .ui-dialog .ui-dialog-buttonpane button.inline_btn,
+  button.inline_btn {
+    display: inline-block;
+    padding: 0 7px;
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 18px;
+    text-transform: none; }
 
 .text_btn {
   background: none repeat scroll 0 0 transparent;
@@ -697,7 +710,7 @@ input, select, textarea {
  ---------------------------------------*/
 #more_cities_list {
   padding: 25px 18px 12px 343px; }
-  #more_cities_list h2 {
+  #more_cities_list p {
     margin: 0 0 15px;
     padding: 0;
     color: #fff;

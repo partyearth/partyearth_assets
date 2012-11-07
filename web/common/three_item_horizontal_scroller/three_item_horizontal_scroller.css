@@ -146,6 +146,7 @@
             .three_item_carousel .scroller_wrapper .screens_container .screens_wrapper .spot_item .details .event_venue {
               height: 16px;
               font-size: 14px;
+              font-weight: bold;
               line-height: 15px;
               overflow: hidden; }
               .three_item_carousel .scroller_wrapper .screens_container .screens_wrapper .spot_item .details .event_venue .black_link {

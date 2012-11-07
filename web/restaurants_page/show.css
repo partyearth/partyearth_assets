@@ -74,7 +74,7 @@
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px; }
   .dialog_box .dialog_content_wrapper {
-    padding: 11px 7px 9px;
+    padding: 11px 14px 9px;
     background-color: #f7f9fb;
     border-radius: 3px;
     -webkit-border-radius: 3px;
@@ -234,7 +234,8 @@
       right: -9px;
       bottom: 41px; }
       .liked_by ul .dialog_box .dialog_content_wrapper {
-        width: 190px; }
+        width: 184px;
+        padding: 11px 10px 9px; }
       .liked_by ul .dialog_box .dialog_img {
         display: block;
         float: left;
@@ -861,20 +862,20 @@
 
 .missing_sports .copy_block_missing_venue_event .missing_image {
   background: url(/assets/landing_pages/missing_sports.gif) 0 0 no-repeat transparent; }
+.browse_by_neighborhood.two_line_title h3.headline {
+  height: 36px; }
 .browse_by_neighborhood .neighborhood_content {
   width: 167px;
   margin: 0 0 0 12px; }
   .browse_by_neighborhood .neighborhood_content:first-child {
     margin-left: 0; }
-  .browse_by_neighborhood .neighborhood_content .headline.sub_headline {
-    height: 21px;
+  .browse_by_neighborhood .neighborhood_content h3.headline {
+    height: 36px;
+    /* remove when merge with Artyom's widget update */
     margin: 0 0 6px;
     font-size: 17px;
     line-height: 18px;
     overflow: hidden; }
-  .browse_by_neighborhood .neighborhood_content .headline.sub_headline.two_line {
-    height: 44px;
-    margin: 0 0 1px; }
   .browse_by_neighborhood .neighborhood_content .black_link {
     text-decoration: underline; }
   .browse_by_neighborhood .neighborhood_content .venue_img {
@@ -917,13 +918,10 @@
   white-space: nowrap; }
 .browse_by_neighborhood .more_links .blue_text {
   text-decoration: underline; }
-
 .browse_by_neighborhood.one_venue .neighborhood_content ul {
   height: 34px; }
-
 .browse_by_neighborhood.two_venues .neighborhood_content ul {
   height: 76px; }
-
 .browse_by_neighborhood.three_venues .neighborhood_content ul {
   height: 123px; }
 /*BEGIN CAROUSEL*/
@@ -1074,6 +1072,7 @@
             .three_item_carousel .scroller_wrapper .screens_container .screens_wrapper .spot_item .details .event_venue {
               height: 16px;
               font-size: 14px;
+              font-weight: bold;
               line-height: 15px;
               overflow: hidden; }
               .three_item_carousel .scroller_wrapper .screens_container .screens_wrapper .spot_item .details .event_venue .black_link {

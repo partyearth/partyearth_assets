@@ -642,7 +642,7 @@
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px; }
   .dialog_box .dialog_content_wrapper {
-    padding: 11px 7px 9px;
+    padding: 11px 14px 9px;
     background-color: #f7f9fb;
     border-radius: 3px;
     -webkit-border-radius: 3px;
@@ -802,7 +802,8 @@
       right: -9px;
       bottom: 41px; }
       .liked_by ul .dialog_box .dialog_content_wrapper {
-        width: 190px; }
+        width: 184px;
+        padding: 11px 10px 9px; }
       .liked_by ul .dialog_box .dialog_img {
         display: block;
         float: left;
@@ -1068,6 +1069,7 @@
             .three_item_carousel .scroller_wrapper .screens_container .screens_wrapper .spot_item .details .event_venue {
               height: 16px;
               font-size: 14px;
+              font-weight: bold;
               line-height: 15px;
               overflow: hidden; }
               .three_item_carousel .scroller_wrapper .screens_container .screens_wrapper .spot_item .details .event_venue .black_link {

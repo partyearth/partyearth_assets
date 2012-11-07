@@ -2266,7 +2266,6 @@ dl#event_reactions {
 
 #event_tweets {
   position: relative;
-  margin: 9px 0 0;
   padding: 9px 0 0 50px;
   background-repeat: no-repeat;
   border-top: 1px dashed #adc0c9; }
@@ -2301,7 +2300,8 @@ dl#event_reactions {
       #event_tweets .controls li:hover {
         text-decoration: none; }
     #event_tweets .controls .more {
-      display: none; }
+      display: none;
+      line-height: 12px; }
     #event_tweets .controls .prev, #event_tweets .controls .next {
       position: relative;
       padding: 0;

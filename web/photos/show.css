@@ -697,7 +697,7 @@
 
 .slider_wrapper {
   width: 660px;
-  height: 440px;
+  min-height: 440px;
   margin: 0 0 11px;
   padding: 2px;
   background-color: #fff; }

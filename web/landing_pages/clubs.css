@@ -623,7 +623,7 @@ div.datepicker {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px; }
   .dialog_box .dialog_content_wrapper {
-    padding: 11px 7px 9px;
+    padding: 11px 14px 9px;
     background-color: #f7f9fb;
     border-radius: 3px;
     -webkit-border-radius: 3px;
@@ -783,7 +783,8 @@ div.datepicker {
       right: -9px;
       bottom: 41px; }
       .liked_by ul .dialog_box .dialog_content_wrapper {
-        width: 190px; }
+        width: 184px;
+        padding: 11px 10px 9px; }
       .liked_by ul .dialog_box .dialog_img {
         display: block;
         float: left;
@@ -1049,6 +1050,7 @@ div.datepicker {
             .three_item_carousel .scroller_wrapper .screens_container .screens_wrapper .spot_item .details .event_venue {
               height: 16px;
               font-size: 14px;
+              font-weight: bold;
               line-height: 15px;
               overflow: hidden; }
               .three_item_carousel .scroller_wrapper .screens_container .screens_wrapper .spot_item .details .event_venue .black_link {
@@ -1615,53 +1617,43 @@ div.datepicker {
   background-position: 0 0; }
 /* Browse by thumbnail section
 ----------------------------------- */
-.browse_elements_by_thumbnail ul {
-  overflow: hidden; }
-  .browse_elements_by_thumbnail ul .thumbnail_item {
-    width: 167px;
-    margin: 0 0 24px;
-    padding: 0 5px;
-    border-right: 1px dotted #ccc; }
-    .browse_elements_by_thumbnail ul .thumbnail_item .inner {
-      padding: 0 0 12px;
-      border-bottom: 1px dashed #ccc; }
-    .browse_elements_by_thumbnail ul .thumbnail_item h3 {
-      margin: 0 0 2px; }
-    .browse_elements_by_thumbnail ul .thumbnail_item .headline.sub_headline {
-      margin: 0 0 5px; }
-      .browse_elements_by_thumbnail ul .thumbnail_item .headline.sub_headline .black_link {
-        text-decoration: underline; }
-    .browse_elements_by_thumbnail ul .thumbnail_item .venue_type {
-      padding-bottom: 0;
-      min-height: 11px; }
-    .browse_elements_by_thumbnail ul .thumbnail_item .item_img {
+.browse_elements_by_thumbnail ul li {
+  float: left;
+  width: 167px;
+  margin: 0 0 0 6px;
+  padding: 0 0 0 6px;
+  border-left: 1px dotted #ccc; }
+  .browse_elements_by_thumbnail ul li h3 {
+    margin: 0 0 5px; }
+    .browse_elements_by_thumbnail ul li h3 .black_link {
+      text-decoration: underline; }
+  .browse_elements_by_thumbnail ul li .venue_type {
+    padding-bottom: 0;
+    min-height: 11px; }
+  .browse_elements_by_thumbnail ul li .item_img {
+    display: block;
+    width: 165px;
+    height: 110px;
+    border: 1px solid #ccc;
+    border-radius: 4px; }
+    .browse_elements_by_thumbnail ul li .item_img img {
       display: block;
       width: 165px;
-      height: 110px;
-      border: 1px solid #ccc; }
-      .browse_elements_by_thumbnail ul .thumbnail_item .item_img img {
-        display: block;
-        width: 165px;
-        height: 110px; }
-    .browse_elements_by_thumbnail ul .thumbnail_item.last {
-      margin-right: 0;
-      padding-right: 0;
-      border-right: 0; }
-    .browse_elements_by_thumbnail ul .thumbnail_item.bottom {
-      margin-bottom: 0;
-      border-bottom: none; }
-.browse_elements_by_thumbnail.venues ul .thumbnail_item {
-  margin-bottom: 10px; }
-.browse_elements_by_thumbnail.neighborhoods .thumbnail_item {
-  height: 132px; }
-  .browse_elements_by_thumbnail.neighborhoods .thumbnail_item .headline.sub_headline {
-    font-size: 17px;
-    line-height: 19px; }
-.browse_elements_by_thumbnail.neighborhoods .thumbnail_item.two_line_title {
-  height: 157px; }
-  .browse_elements_by_thumbnail.neighborhoods .thumbnail_item.two_line_title .headline.sub_headline {
-    height: 45px;
-    overflow: hidden; }
+      height: 110px; }
+  .browse_elements_by_thumbnail ul li:first-child {
+    margin-left: 0;
+    padding-left: 0;
+    border-left: 0; }
+.browse_elements_by_thumbnail ul:first-child {
+  margin: 0 0 12px;
+  padding: 0 0 12px;
+  border-bottom: 1px dotted #ccc; }
+.browse_elements_by_thumbnail.neighborhoods li h3 {
+  font-size: 17px;
+  line-height: 19px; }
+.browse_elements_by_thumbnail.neighborhoods li.two_line_title h3 {
+  height: 42px;
+  overflow: hidden; }
 /*
 
 
