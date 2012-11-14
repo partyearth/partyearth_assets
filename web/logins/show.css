@@ -339,6 +339,9 @@ div.actions fieldset, .store_action_btns fieldset {
 #login_area {
   text-align: left; }
 
+.login_box {
+  height: 175px; }
+
 p.or {
   top: 77px;
   left: 319px; }

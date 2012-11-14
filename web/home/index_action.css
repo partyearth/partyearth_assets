@@ -59,6 +59,12 @@
 .read_more.pull_down .blue_text.arrow,
 .read_more.pull_down .blue-text.arrow {
   display: none; }
+
+/* Styles for missing modules */
+.missing {
+  padding: 0 0 8px;
+  margin: 0 0 8px;
+  border-bottom: 1px solid #8ea8b5; }
 /*
 
 */
@@ -116,11 +122,11 @@
   .content .pe_city_img {
     position: absolute;
     top: 3px; }
-  .content .pe_city_img.one {
-    left: -60px;
-    top: 14px; }
-  .content .pe_city_img.two {
-    right: -60px; }
+    .content .pe_city_img.one {
+      left: -60px;
+      top: 14px; }
+    .content .pe_city_img.two {
+      right: -60px; }
   .content .tag_line,
   .content .pe_desc {
     text-align: center; }
@@ -133,9 +139,7 @@
     width: 437px;
     text-align: center;
     position: relative;
-    left: -22px;
-    /*FOR IE8 and below*/
-    font-size: 19px\9; }
+    left: -22px; }
   .content .pe_desc {
     position: relative;
     top: 0;
@@ -152,13 +156,12 @@
     .content .pe_desc a, .content .pe_desc a:visited, .content .pe_desc .fake_link {
       color: #aabdc7;
       text-decoration: underline; }
-    .content .pe_desc a:hover, .content .pe_desc .fake_link:hover {
-      color: #0099ff; }
+      .content .pe_desc a:hover, .content .pe_desc a:visited:hover, .content .pe_desc .fake_link:hover {
+        color: #09f; }
   .content .city_list {
     width: 243px;
     margin: 0 auto;
     padding: 22px 27px 1px;
-    /*border:1px solid #9db3bf;*/
     border-radius: 4px 4px 4px 4px;
     text-align: center; }
     .content .city_list .title {
@@ -179,37 +182,36 @@
     .content .city_list ul li.country.list_two {
       margin-top: 30px; }
     .content .city_list ul li {
-      background: #f4f7f8;
+      margin: 0 0 3px;
+      padding: 3px 0;
       color: #375363;
       font-size: 20px;
-      padding: 3px 0;
-      margin: 0 0 3px;
-      font-family: "Francois One", sans-serif; }
+      font-family: "Francois One", sans-serif;
+      background-color: #f4f7f8; }
       .content .city_list ul li a, .content .city_list ul li a:visited {
         color: #375363;
         text-decoration: none;
         display: block; }
-      .content .city_list ul li a:hover {
-        color: #000; }
-    .content .city_list ul li:hover {
-      background: #e4ecef; }
+        .content .city_list ul li a:hover, .content .city_list ul li a:visited:hover {
+          color: #000; }
+      .content .city_list ul li:hover {
+        background: #e4ecef; }
 
 /*FOOTER PROPERTIES*/
 /*-------------------------------------------------------------------*/
 .footer {
-  background: #313232;
-  /*position:absolute;*/
-  /*bottom:0;*/
   width: 100%;
+  padding: 10px 0 0;
   color: #acacac;
   text-align: center;
-  padding: 10px 0 0; }
+  background: #313232; }
   .footer .headline.sub_headline {
+    margin: 0 0 10px;
+    color: #09f;
     font-family: "Arimo", Arial, sans-serif !important;
     font-size: 22px;
-    font-size: 20px\9;
-    color: #0099ff;
-    margin: 0 0 10px; }
+    font-weight: bold;
+    line-height: 21px; }
   .footer .endpoints_columns {
     padding: 0 0 10px 0;
     border-bottom: 1px solid #464646; }
@@ -219,8 +221,8 @@
         font-size: 11px; }
     .footer .endpoints_columns a, .footer .endpoints_columns .fake_link {
       text-decoration: none; }
-    .footer .endpoints_columns a:hover, .footer .endpoints_columns .fake_link:hover {
-      text-decoration: underline; }
+      .footer .endpoints_columns a:hover, .footer .endpoints_columns .fake_link:hover {
+        text-decoration: underline; }
     .footer .endpoints_columns img {
       border: 1px solid #4d4e4e; }
     .footer .endpoints_columns .categories {
@@ -273,8 +275,8 @@
             color: #fff;
             height: 18px;
             overflow: hidden; }
-          .footer .endpoints_columns .categories .footer_endpoints_block .browse_by_venue ul li .venue_name:hover {
-            color: #8ea8b5; }
+            .footer .endpoints_columns .categories .footer_endpoints_block .browse_by_venue ul li .venue_name:hover {
+              color: #8ea8b5; }
           .footer .endpoints_columns .categories .footer_endpoints_block .browse_by_venue ul li .small_text {
             color: #597686; }
         .footer .endpoints_columns .categories .footer_endpoints_block .browse_by_venue.one ul li {
@@ -377,13 +379,11 @@
       .footer .third_row .left_side .fresh_articles .read_more {
         text-align: right;
         padding: 3px 0 0; }
-        .footer .third_row .left_side .fresh_articles .read_more a,
-        .footer .third_row .left_side .fresh_articles .read_more .fake_link {
+        .footer .third_row .left_side .fresh_articles .read_more a, .footer .third_row .left_side .fresh_articles .read_more .fake_link {
           color: white;
           text-decoration: underline; }
-        .footer .third_row .left_side .fresh_articles .read_more a:hover,
-        .footer .third_row .left_side .fresh_articles .read_more .fake_link:hover {
-          color: #8EA8B5; }
+          .footer .third_row .left_side .fresh_articles .read_more a:hover, .footer .third_row .left_side .fresh_articles .read_more .fake_link:hover {
+            color: #8ea8b5; }
         .footer .third_row .left_side .fresh_articles .read_more .blue_text.arrow {
           top: 1px; }
     .footer .third_row .right_side {
@@ -402,10 +402,10 @@
             .footer .third_row .right_side .featured_galleries .photos_block .object_photo img {
               width: 73px;
               height: 73px; }
-          .footer .third_row .right_side .featured_galleries .photos_block .object_photo.last {
-            margin-right: 0; }
-          .footer .third_row .right_side .featured_galleries .photos_block .object_photo.last.bottom {
-            margin: 0; }
+            .footer .third_row .right_side .featured_galleries .photos_block .object_photo.last {
+              margin-right: 0; }
+              .footer .third_row .right_side .featured_galleries .photos_block .object_photo.last.bottom {
+                margin: 0; }
       .footer .third_row .right_side .featured_content .headline.sub_headline {
         margin: 0 0 9px;
         padding: 1px 0 0 0; }
@@ -438,8 +438,8 @@
         .footer .third_row .right_side .featured_content .read_more a, .footer .third_row .right_side .featured_content .read_more a:visited, .footer .third_row .right_side .featured_content .read_more .fake_link {
           color: #fff;
           text-decoration: underline; }
-        .footer .third_row .right_side .featured_content .read_more a:hover, .footer .third_row .right_side .featured_content .read_more .fake_link:hover {
-          color: #8EA8B5; }
+          .footer .third_row .right_side .featured_content .read_more a:hover, .footer .third_row .right_side .featured_content .read_more a:visited:hover, .footer .third_row .right_side .featured_content .read_more .fake_link:hover {
+            color: #8EA8B5; }
         .footer .third_row .right_side .featured_content .read_more .blue_text.arrow {
           top: 1px; }
   .footer .static_links {
@@ -457,5 +457,5 @@
   .footer a, .footer a:visited {
     color: #597686;
     text-decoration: underline; }
-  .footer a:hover {
-    color: #fff; }
+    .footer a:hover, .footer a:visited:hover {
+      color: #fff; }

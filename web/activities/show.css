@@ -925,9 +925,6 @@
 
 */
 /*LEFT COLUMN*/
-#left_column {
-  width: 735px; }
-
 #tophalf {
   position: relative;
   width: 735px; }
@@ -1158,15 +1155,3 @@
   margin: 0 0 10px; }
 .weekly_schedule .footer_notes .asterisk {
   font-size: 15px; }
-
-/*VIDEO SECTION*/
-/*------------------------------------------------*/
-/*BOTTOM HALF DIV*/
-/*------------------------------------------------*/
-/*RIGHT COLUMN*/
-/*---------------------------------------*/
-#right_column {
-  width: 240px; }
-
-#right_column #ad_240x400 {
-  margin: 0 0 5px; }

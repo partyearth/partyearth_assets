@@ -1,0 +1,452 @@
+/*BEGIN NAVIGATION CSS*/
+/*---------------------------------------------*/
+/*GENERAL PAGE PROPERTIES*/
+/*---------------------------------------------*/
+/*LEFT COLUMN*/
+/*---------------------------------------------*/
+#left_container .az_directory_content .blue_section_divider.top {
+  margin-top: 0; }
+#left_container .az_directory_content .dictionary_index ul li {
+  padding: 0 16px 0 0; }
+  #left_container .az_directory_content .dictionary_index ul li a, #left_container .az_directory_content .dictionary_index ul li a:visited {
+    color: #8ea8b5;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold; }
+  #left_container .az_directory_content .dictionary_index ul li a:hover {
+    color: #0099ff; }
+#left_container .az_directory_content .dictionary ul.column {
+  float: left;
+  width: 211px;
+  /*height: 474px;*/
+  margin: 0 17px 0 0;
+  padding: 0 18px 0 0;
+  border-right: 1px dashed #8EA8B5; }
+  #left_container .az_directory_content .dictionary ul.column li {
+    margin: 0 0 6px 0;
+    position: relative; }
+    #left_container .az_directory_content .dictionary ul.column li .capital_letter {
+      /*position: absolute;*/
+      /*left: -29px;*/
+      background: #D2E2E9;
+      border-radius: 2px 0 0 2px;
+      /*width: 11px;*/
+      padding: 2px 2px 2px 4px;
+      height: 15px;
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 14px;
+      margin: 5px 0; }
+    #left_container .az_directory_content .dictionary ul.column li a {
+      font-size: 15px; }
+#left_container .az_directory_content .dictionary ul.column.last {
+  margin: 0;
+  padding: 0;
+  border: none; }
+#left_container .az_directory_content .inner_divider.solid.thick {
+  border-color: #dae4e9; }
+#left_container .az_directory_content .pagination {
+  background: url(/assets/search/search2_sprite-85e0eac3b3ebcfad3b9953cf94dba417.png) 0 -167px repeat-x transparent;
+  color: #8ea8b5;
+  height: 21px;
+  -moz-border-radius: 0 0 4px 4px;
+  border-radius: 0 0 4px 4px;
+  -webkit-border-radius: 0 0 4px 4px;
+  margin: 14px 0 10px;
+  padding: 6px 8px;
+  border-top: 1px solid #e4eaed;
+  border-left: 1px solid #e4eaed;
+  border-right: 1px solid #e4eaed;
+  border-bottom: 1px solid #B4BDC1;
+  font-family: Arial, sans-serif; }
+  #left_container .az_directory_content .pagination .PaginationCell.Number,
+  #left_container .az_directory_content .pagination .pagination_cell.number {
+    -moz-border-radius: 2px 2px 2px 2px;
+    border-radius: 2px 2px 2px 2px;
+    -webkit-border-radius: 2px 2px 2px 2px;
+    background: #fff;
+    border: 1px solid #ADC0C9;
+    color: #ADC0C9;
+    padding: 2px 6px;
+    margin: 0 6px 0 0;
+    line-height: 16px;
+    height: 15px; }
+  #left_container .az_directory_content .pagination .PaginationCell.Number:hover,
+  #left_container .az_directory_content .pagination .PaginationCell.Current,
+  #left_container .az_directory_content .pagination .pagination_cell.number:hover,
+  #left_container .az_directory_content .pagination .pagination_cell.current {
+    background: #0099ff;
+    border: 1px solid #0099ff;
+    color: #fff; }
+  #left_container .az_directory_content .pagination .PaginationCell.Number:hover,
+  #left_container .az_directory_content .pagination .pagination_cell.number:hover {
+    cursor: pointer; }
+  #left_container .az_directory_content .pagination .PaginationCell.Number.Current:hover,
+  #left_container .az_directory_content .pagination .pagination_cell.number.current:hover {
+    cursor: default; }
+  #left_container .az_directory_content .pagination .PaginationCell.Dots,
+  #left_container .az_directory_content .pagination .pagination_cell.dots {
+    font-size: 20px;
+    line-height: 16px;
+    margin: 0 9px 0 0;
+    position: relative;
+    display: inline-block;
+    top: -4px;
+    letter-spacing: -1px;
+    font-weight: bold;
+    height: 15px;
+    /*FOR IE7*/
+    *top: -6px; }
+  #left_container .az_directory_content .pagination .pagination_inner_container {
+    display: inline-block;
+    position: relative;
+    left: 50%; }
+  #left_container .az_directory_content .pagination .result_count {
+    position: relative;
+    left: -50%; }
+    #left_container .az_directory_content .pagination .result_count .prev_btn,
+    #left_container .az_directory_content .pagination .result_count .next_btn {
+      background: url(/assets/search/search2_sprite-85e0eac3b3ebcfad3b9953cf94dba417.png) 0 0 no-repeat transparent;
+      width: 18px;
+      height: 17px;
+      cursor: pointer;
+      position: relative;
+      top: 2px; }
+    #left_container .az_directory_content .pagination .result_count .prev_btn {
+      background-position: -144px -8px;
+      margin-right: 6px; }
+    #left_container .az_directory_content .pagination .result_count .prev_btn:hover {
+      background-position: -123px -8px; }
+    #left_container .az_directory_content .pagination .result_count .prev_btn.disabled {
+      background-position: -144px -25px;
+      cursor: default !important; }
+    #left_container .az_directory_content .pagination .result_count .next_btn {
+      background-position: -172px -8px; }
+    #left_container .az_directory_content .pagination .result_count .next_btn:hover {
+      background-position: -123px -25px; }
+    #left_container .az_directory_content .pagination .result_count .next_btn.disabled {
+      background-position: -172px -25px;
+      cursor: default !important; }
+
+/*RIGHT COLUMN*/
+/*---------------------------------------------*/
+#right_sidebar .missing_venue_event,
+#right_sidebar .ad {
+  display: none; }
+/* STYLES FOR RIGHT SIDEBAR
+-----------------------------------------------------
+:: Styles for the right sidebar and universal elements like pods.
+----------------------------------------------------- */
+#right_sidebar {
+  float: right;
+  width: 240px;
+  /* Lists used in Pods. If list needs specific styles override specific attributes in seperate stylesheet..*/
+  /* Pod list stripped down with no border/padding etc. */
+  /* Pod list with a thumbnail next to each item */
+  /* Pod footer used on some pods. Any that goes in the footer should be added here.*/
+  /* Little orange arrow mostly used on pod footer after a link. */
+  /* tabs on ibiza and pamplona pages */
+  /* Styles for Popular Entertainers/DJs */
+  /* Styles for the Get Paid To Party pods */ }
+  #right_sidebar .pod {
+    padding: 13px 14px; }
+  #right_sidebar h3, #right_sidebar .featured h4 {
+    color: #375363;
+    font-size: 24px;
+    font-weight: normal;
+    line-height: 28px;
+    margin: 0 0 8px;
+    padding: 0 0 8px;
+    border-bottom: 1px dashed #adc0c9; }
+    #right_sidebar h3 a, #right_sidebar h3 a:link, #right_sidebar h3 a:visited, #right_sidebar .featured h4 a, #right_sidebar .featured h4 a:link, #right_sidebar .featured h4 a:visited {
+      color: #375363;
+      text-decoration: underline; }
+      #right_sidebar h3 a:hover, #right_sidebar h3 a:link:hover, #right_sidebar h3 a:visited:hover, #right_sidebar .featured h4 a:hover, #right_sidebar .featured h4 a:link:hover, #right_sidebar .featured h4 a:visited:hover {
+        color: #000; }
+    #right_sidebar h3.small, #right_sidebar .featured h4.small {
+      margin: 0 0 6px;
+      padding: 0;
+      color: #09F;
+      font-size: 15px;
+      font-weight: bold;
+      line-height: 16px;
+      border-bottom: 0; }
+  #right_sidebar h4 {
+    margin: 0 0 3px;
+    line-height: 15px; }
+  #right_sidebar .desc {
+    position: relative;
+    overflow: hidden; }
+    #right_sidebar .desc a, #right_sidebar .desc a:link, #right_sidebar .desc a:visited {
+      color: #09f; }
+    #right_sidebar .desc .neighborhood {
+      color: #8ea8b5;
+      font-size: 10px;
+      line-height: 10px;
+      text-transform: uppercase; }
+  #right_sidebar .thumbnail_link {
+    display: block;
+    margin: 0 0 8px;
+    width: 210px;
+    height: 140px;
+    border: 1px solid #adc0c9;
+    border-radius: 4px;
+    overflow: hidden; }
+    #right_sidebar .thumbnail_link img {
+      display: block;
+      width: 210px;
+      height: 140px; }
+  #right_sidebar .quick_nav_links {
+    border-bottom: 1px dashed #ADC0C9;
+    padding: 0 0 5px;
+    margin: 0 0 5px; }
+  #right_sidebar .name {
+    color: #09f;
+    font-size: 10px;
+    line-height: 10px;
+    text-transform: uppercase; }
+    #right_sidebar .name .date {
+      display: block;
+      float: left;
+      margin: 0 4px 0 0;
+      padding: 0 6px 0 0;
+      border-right: 1px solid #e4ebef; }
+    #right_sidebar .name a {
+      display: inline-block;
+      width: 160px;
+      height: 10px;
+      color: #09f;
+      text-decoration: none;
+      text-transform: none;
+      overflow: hidden; }
+  #right_sidebar .changer .name {
+    height: 10px;
+    margin: 0 0 8px;
+    padding: 0 0 6px;
+    vertical-align: top;
+    border-bottom: 1px solid #dae4e9; }
+  #right_sidebar .list .list_item {
+    margin: 8px 0 0;
+    padding: 8px 0 0;
+    border-top: 1px dashed #adc0c9; }
+    #right_sidebar .list .list_item.featured {
+      margin: 0 0 10px;
+      padding: 0 0 10px;
+      border-bottom: 1px solid #8ea8b5; }
+      #right_sidebar .list .list_item.featured h4 {
+        margin: 0 0 8px;
+        padding: 0;
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 20px;
+        border: none; }
+      #right_sidebar .list .list_item.featured .venue_type {
+        margin: 0 0 6px; }
+    #right_sidebar .list .list_item p {
+      padding: 0; }
+    #right_sidebar .list .list_item .date {
+      color: #09f;
+      font-size: 9px;
+      line-height: 11px;
+      text-transform: uppercase; }
+    #right_sidebar .list .list_item .arrow {
+      color: #09f; }
+    #right_sidebar .list .list_item .venue_type {
+      margin: 0;
+      padding: 0;
+      color: #6C8898; }
+      #right_sidebar .list .list_item .venue_type a, #right_sidebar .list .list_item .venue_type a:link, #right_sidebar .list .list_item .venue_type a:visited {
+        color: #6C8898; }
+        #right_sidebar .list .list_item .venue_type a:hover, #right_sidebar .list .list_item .venue_type a:link:hover, #right_sidebar .list .list_item .venue_type a:visited:hover {
+          color: #597686;
+          text-decoration: underline; }
+    #right_sidebar .list .list_item:first-child {
+      margin-top: 0;
+      padding-top: 0;
+      border-top: none; }
+    #right_sidebar .list .list_item .name a, #right_sidebar .list .list_item .name a:link, #right_sidebar .list .list_item .name a:visited {
+      color: #09f; }
+      #right_sidebar .list .list_item .name a:hover, #right_sidebar .list .list_item .name a:link:hover, #right_sidebar .list .list_item .name a:visited:hover {
+        color: #597686;
+        text-decoration: underline; }
+  #right_sidebar .list a {
+    color: #000; }
+    #right_sidebar .list a:hover {
+      color: #597686; }
+  #right_sidebar .simple_list .list_item {
+    margin: 0 0 3px;
+    padding: 0;
+    border: none; }
+    #right_sidebar .simple_list .list_item a, #right_sidebar .simple_list .list_item a:link, #right_sidebar .simple_list .list_item a:visited {
+      color: #375363; }
+      #right_sidebar .simple_list .list_item a:hover, #right_sidebar .simple_list .list_item a:link:hover, #right_sidebar .simple_list .list_item a:visited:hover {
+        color: #000; }
+  #right_sidebar .photo_list .thumbnail_link {
+    float: left;
+    width: 75px;
+    height: 50px;
+    margin: 0 9px 0 0; }
+    #right_sidebar .photo_list .thumbnail_link img {
+      width: 75px;
+      height: 50px; }
+  #right_sidebar .photo_list .details {
+    float: left;
+    width: 120px; }
+    #right_sidebar .photo_list .details h4 {
+      line-height: 15px;
+      margin: 0 0 3px; }
+      #right_sidebar .photo_list .details h4 a {
+        color: #000; }
+        #right_sidebar .photo_list .details h4 a:hover {
+          color: #597686; }
+  #right_sidebar .pod_footer {
+    margin: 8px 0 0;
+    padding: 8px 0 0;
+    border-top: 1px solid #adc0c9; }
+    #right_sidebar .pod_footer a, #right_sidebar .pod_footer a:link, #right_sidebar .pod_footer a:visited, #right_sidebar .pod_footer .fake_link {
+      float: right;
+      color: #09f;
+      text-align: right;
+      font-size: 11px;
+      line-height: 11px;
+      text-decoration: none; }
+      #right_sidebar .pod_footer a:hover, #right_sidebar .pod_footer a:link:hover, #right_sidebar .pod_footer a:visited:hover, #right_sidebar .pod_footer .fake_link:hover {
+        color: #597686;
+        text-decoration: underline; }
+      #right_sidebar .pod_footer a span, #right_sidebar .pod_footer a:link span, #right_sidebar .pod_footer a:visited span, #right_sidebar .pod_footer .fake_link span {
+        text-decoration: underline; }
+        #right_sidebar .pod_footer a span.arrow, #right_sidebar .pod_footer a:link span.arrow, #right_sidebar .pod_footer a:visited span.arrow, #right_sidebar .pod_footer .fake_link span.arrow {
+          top: 0;
+          color: #ff9000;
+          text-decoration: none; }
+  #right_sidebar .arrow {
+    display: inline-block;
+    position: relative;
+    width: 6px;
+    font-family: "Times New Roman";
+    font-size: 17px;
+    font-weight: normal;
+    line-height: 17px;
+    text-indent: -10px;
+    overflow: hidden; }
+  #right_sidebar .tabs {
+    margin-top: 33px; }
+    #right_sidebar .tabs:first-child {
+      margin-top: 19px; }
+  #right_sidebar .popular_entertainers .list li {
+    position: relative;
+    padding: 0 0 0 10px; }
+    #right_sidebar .popular_entertainers .list li .arrow {
+      display: none;
+      position: absolute;
+      left: 0; }
+    #right_sidebar .popular_entertainers .list li.selected .arrow {
+      display: inline-block; }
+  #right_sidebar .gptp_right_rail h3 {
+    padding: 0;
+    font-weight: normal;
+    text-align: center;
+    border: none; }
+  #right_sidebar .gptp_right_rail ul li {
+    float: left;
+    margin: 0 4px 4px 0; }
+    #right_sidebar .gptp_right_rail ul li:nth-child(4n) {
+      margin-right: 0; }
+    #right_sidebar .gptp_right_rail ul li a, #right_sidebar .gptp_right_rail ul li a:link, #right_sidebar .gptp_right_rail ul li a:visited {
+      display: block;
+      width: 50px;
+      height: 50px; }
+      #right_sidebar .gptp_right_rail ul li a img, #right_sidebar .gptp_right_rail ul li a:link img, #right_sidebar .gptp_right_rail ul li a:visited img {
+        opacity: .85; }
+      #right_sidebar .gptp_right_rail ul li a:hover img, #right_sidebar .gptp_right_rail ul li a:link:hover img, #right_sidebar .gptp_right_rail ul li a:visited:hover img {
+        opacity: 100; }
+  #right_sidebar .gptp_right_rail .links {
+    font-size: 11px;
+    line-height: 11px; }
+    #right_sidebar .gptp_right_rail .links a, #right_sidebar .gptp_right_rail .links .fake_link {
+      text-decoration: underline; }
+    #right_sidebar .gptp_right_rail .links .arrow {
+      color: #ff9000; }
+    #right_sidebar .gptp_right_rail .links .learn_link {
+      float: left; }
+    #right_sidebar .gptp_right_rail .links .meet_link {
+      float: right; }
+  #right_sidebar .gptp_right_rail .buttons {
+    width: 217px;
+    margin: 8px 0 0;
+    padding: 8px 0 0;
+    border-top: 1px solid #8ea8b5; }
+    #right_sidebar .gptp_right_rail .buttons a, #right_sidebar .gptp_right_rail .buttons a:link, #right_sidebar .gptp_right_rail .buttons a:visited {
+      display: block;
+      position: relative;
+      float: left;
+      height: 46px;
+      margin-top: 2px;
+      background-image: url(/assets/common/right_colmun_sprite-b6600341c6410c89695fca7a61add8c8.png); }
+      #right_sidebar .gptp_right_rail .buttons a.writer, #right_sidebar .gptp_right_rail .buttons a:link.writer, #right_sidebar .gptp_right_rail .buttons a:visited.writer {
+        left: -2px;
+        width: 85px;
+        background-position: -1px -422px; }
+        #right_sidebar .gptp_right_rail .buttons a.writer:hover, #right_sidebar .gptp_right_rail .buttons a:link.writer:hover, #right_sidebar .gptp_right_rail .buttons a:visited.writer:hover {
+          background-position: -1px -476px; }
+      #right_sidebar .gptp_right_rail .buttons a.photographer, #right_sidebar .gptp_right_rail .buttons a:link.photographer, #right_sidebar .gptp_right_rail .buttons a:visited.photographer {
+        right: -3px;
+        width: 132px;
+        background-position: -88px -422px; }
+        #right_sidebar .gptp_right_rail .buttons a.photographer:hover, #right_sidebar .gptp_right_rail .buttons a:link.photographer:hover, #right_sidebar .gptp_right_rail .buttons a:visited.photographer:hover {
+          background-position: -88px -476px; }
+  #right_sidebar .missing_venue_event,
+  #right_sidebar .share_btn,
+  #right_sidebar .subscribe_btn,
+  #right_sidebar .follow_btns,
+  #right_sidebar .ad {
+    cursor: pointer;
+    background-image: url(/assets/common/right_colmun_sprite-b6600341c6410c89695fca7a61add8c8.png);
+    background-repeat: no-repeat; }
+  #right_sidebar #right_rail_simple_share {
+    position: absolute;
+    top: -60px;
+    left: -9px; }
+  #right_sidebar .missing_venue_event {
+    position: relative;
+    right: -1px;
+    width: 243px;
+    height: 148px;
+    background-position: -294px -233px; }
+  #right_sidebar .share_btn,
+  #right_sidebar .subscribe_btn,
+  #right_sidebar .follow_btns {
+    position: relative;
+    right: 0;
+    width: 243px;
+    height: 44px;
+    margin: 0 0 3px; }
+  #right_sidebar .share_btn {
+    background-position: -291px -52px; }
+  #right_sidebar .subscribe_btn {
+    background-position: -291px -102px; }
+  #right_sidebar .follow_btns {
+    background-position: -291px -152px;
+    cursor: default !important; }
+    #right_sidebar .follow_btns a {
+      display: block;
+      position: absolute;
+      top: 7px;
+      width: 32px;
+      height: 32px;
+      margin: 0; }
+      #right_sidebar .follow_btns a img {
+        width: 32px;
+        height: 32px; }
+    #right_sidebar .follow_btns .gig-followbar-providerButton {
+      right: 41px; }
+    #right_sidebar .follow_btns .gig-followbar-providerButton-last {
+      right: 5px; }
+  #right_sidebar .ad {
+    width: 240px;
+    height: 400px;
+    background-position: 0 0; }
+/*
+
+
+*/

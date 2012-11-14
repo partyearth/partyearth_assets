@@ -1,7 +1,5 @@
 /* BEGIN PAGE PROPERTIES */
-.get_paid_to_party_content .left_column_wrapper {
-  width: 735px; }
-.get_paid_to_party_content .left_column {
+.get_paid_to_party_content #left_container {
   width: 675px;
   margin: 0 0 0 -22px;
   padding: 0 0 0 82px;

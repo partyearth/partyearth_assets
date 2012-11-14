@@ -7,7 +7,7 @@
 .get_paid_to_party_content.photographer_apply_page .left_column_wrapper {
   width: 735px; }
 
-.get_paid_to_party_content.photographer_apply_page .left_column {
+.get_paid_to_party_content.photographer_apply_page #left_container {
   background: url(/assets/writer_applications/left_column_bg_repeat.png) 0 0 repeat-y;
   margin: 0 0 0 -22px;
   min-height: 341px;

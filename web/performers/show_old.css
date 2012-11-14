@@ -352,9 +352,6 @@
 #performer_content .accordion_content .event_venue_name {
   width: 90px;
 }  */
-/*RIGHT COLUMN*/
-.right_column {
-  width: 240px; }
-
-.right_column #ad_240x400 {
+/* RIGHT SIDEBAR */
+#right_sidebar #ad_240x400 {
   margin: 0 0 5px; }

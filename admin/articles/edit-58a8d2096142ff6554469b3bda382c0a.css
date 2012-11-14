@@ -1,0 +1,965 @@
+/*
+
+
+
+
+
+*/
+.site_location .choice #article_path_type_global,
+.site_location .choice .title {
+  vertical-align: top; }
+.site_location .choice .title {
+  display: inline-block;
+  width: 104px; }
+.site_location .choice .url_message {
+  display: inline-block;
+  width: 554px; }
+  .site_location .choice .url_message ol {
+    padding-left: 23px;
+    list-style: disc; }
+/* -------------------------------------------------------------------------------------------------
+
+It's *strongly* suggested that you don't modify this file.  Instead, load a new stylesheet after
+this one in your layouts (eg formtastic_changes.css) and override the styles to suit your needs.
+This will allow you to update formtastic.css with new releases without clobbering your own changes.
+
+This stylesheet forms part of the Formtastic Rails Plugin
+(c) 2008 Justin French
+
+--------------------------------------------------------------------------------------------------*/
+/* NORMALIZE AND RESET - obviously inspired by Yahoo's reset.css, but scoped to just form.formtastic
+--------------------------------------------------------------------------------------------------*/
+form.formtastic, form.formtastic ul, form.formtastic ol, form.formtastic li, form.formtastic fieldset, form.formtastic legend, form.formtastic input, form.formtastic textarea, form.formtastic select, form.formtastic p {
+  margin: 0;
+  padding: 0; }
+
+form.formtastic fieldset {
+  border: 0; }
+
+form.formtastic em, form.formtastic strong {
+  font-style: normal;
+  font-weight: normal; }
+
+form.formtastic ol, form.formtastic ul {
+  list-style: none; }
+
+form.formtastic abbr, form.formtastic acronym {
+  border: 0;
+  font-variant: normal; }
+
+form.formtastic input, form.formtastic textarea, form.formtastic select {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit; }
+
+form.formtastic input, form.formtastic textarea, form.formtastic select {
+  font-size: 100%; }
+
+form.formtastic legend {
+  white-space: normal;
+  color: #000; }
+
+/* SEMANTIC ERRORS
+--------------------------------------------------------------------------------------------------*/
+form.formtastic ul.errors {
+  color: #cc0000;
+  margin: 0.5em 0 1.5em 25%;
+  list-style: square; }
+
+form.formtastic ul.errors li {
+  padding: 0;
+  border: none;
+  display: list-item; }
+
+/* FIELDSETS & LISTS
+--------------------------------------------------------------------------------------------------*/
+form.formtastic fieldset.buttons {
+  padding-left: 25%; }
+
+form.formtastic fieldset.buttons li {
+  float: left;
+  padding-right: 0.5em; }
+
+/* clearfixing the fieldsets */
+form.formtastic fieldset {
+  display: inline-block; }
+
+form.formtastic fieldset:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden; }
+
+html[xmlns] form.formtastic fieldset {
+  display: block; }
+
+* html form.formtastic fieldset {
+  height: 1%; }
+
+/* INPUT LIs
+--------------------------------------------------------------------------------------------------*/
+form.formtastic fieldset > ol > li {
+  margin-bottom: 1.5em; }
+
+/* clearfixing the li's */
+form.formtastic fieldset > ol > li {
+  display: inline-block; }
+
+form.formtastic fieldset > ol > li:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden; }
+
+html[xmlns] form.formtastic fieldset > ol > li {
+  display: block; }
+
+* html form.formtastic fieldset > ol > li {
+  height: 1%; }
+
+/* LABELS
+--------------------------------------------------------------------------------------------------*/
+form.formtastic fieldset > ol > li label {
+  display: block;
+  width: 25%;
+  float: left;
+  padding-top: .2em; }
+
+form.formtastic fieldset > ol > li > li label {
+  line-height: 100%;
+  padding-top: 0; }
+
+form.formtastic fieldset > ol > li > li label input {
+  line-height: 100%;
+  vertical-align: middle;
+  margin-top: -0.1em; }
+
+/* NESTED FIELDSETS AND LEGENDS (radio, check boxes and date/time inputs use nested fieldsets)
+--------------------------------------------------------------------------------------------------*/
+form.formtastic fieldset > ol > li fieldset {
+  position: relative; }
+
+form.formtastic fieldset > ol > li fieldset legend {
+  position: absolute;
+  width: 95%;
+  padding-top: 0.1em;
+  left: 0px; }
+
+form.formtastic fieldset > ol > li fieldset legend span {
+  position: absolute; }
+
+form.formtastic fieldset > ol > li fieldset legend.label label {
+  position: absolute; }
+
+form.formtastic fieldset > ol > li fieldset ol {
+  float: left;
+  width: 74%;
+  margin: 0;
+  padding: 0 0 0 25%; }
+
+form.formtastic fieldset > ol > li fieldset ol li {
+  padding: 0;
+  border: 0; }
+
+/* INLINE HINTS
+--------------------------------------------------------------------------------------------------*/
+form.formtastic fieldset > ol > li p.inline-hints {
+  color: #666;
+  margin: 0.5em 0 0 25%; }
+
+/* INLINE ERRORS
+--------------------------------------------------------------------------------------------------*/
+form.formtastic fieldset > ol > li p.inline-errors {
+  color: #cc0000;
+  margin: 0.5em 0 0 25%; }
+
+form.formtastic fieldset > ol > li ul.errors {
+  color: #cc0000;
+  margin: 0.5em 0 0 25%;
+  list-style: square; }
+
+form.formtastic fieldset > ol > li ul.errors li {
+  padding: 0;
+  border: none;
+  display: list-item; }
+
+/* STRING & NUMERIC OVERRIDES
+--------------------------------------------------------------------------------------------------*/
+form.formtastic fieldset > ol > li.string input {
+  max-width: 74%; }
+
+form.formtastic fieldset > ol > li.password input {
+  max-width: 13em; }
+
+form.formtastic fieldset > ol > li.numeric input {
+  max-width: 74%; }
+
+/* TEXTAREA OVERRIDES
+--------------------------------------------------------------------------------------------------*/
+form.formtastic fieldset > ol > li.text textarea {
+  width: 74%; }
+
+/* HIDDEN OVERRIDES
+The dual declarations are required because of our clearfix display hack on the LIs, which is more
+specific than the more general rule below. TODO: Revist the clearing hack and this rule.
+--------------------------------------------------------------------------------------------------*/
+form.formtastic fieldset ol li.hidden,
+html[xmlns] form.formtastic fieldset ol li.hidden {
+  display: none; }
+
+/* BOOLEAN OVERRIDES
+--------------------------------------------------------------------------------------------------*/
+form.formtastic fieldset > ol > li.boolean label {
+  padding-left: 25%;
+  width: auto; }
+
+form.formtastic fieldset > ol > li.boolean label input {
+  margin: 0 0.5em 0 0.2em; }
+
+/* RADIO OVERRIDES
+--------------------------------------------------------------------------------------------------*/
+form.formtastic fieldset > ol > li.radio fieldset ol {
+  margin-bottom: -0.6em; }
+
+form.formtastic fieldset > ol > li.radio fieldset ol li {
+  margin: 0.1em 0 0.5em 0; }
+
+form.formtastic fieldset > ol > li.radio fieldset ol li label {
+  float: none;
+  width: 100%; }
+
+form.formtastic fieldset > ol > li.radio fieldset ol li label input {
+  margin-right: 0.2em; }
+
+/* CHECK BOXES (COLLECTION) OVERRIDES
+--------------------------------------------------------------------------------------------------*/
+form.formtastic fieldset > ol > li.check_boxes fieldset ol {
+  margin-bottom: -0.6em; }
+
+form.formtastic fieldset > ol > li.check_boxes fieldset ol li {
+  margin: 0.1em 0 0.5em 0; }
+
+form.formtastic fieldset > ol > li.check_boxes fieldset ol li label {
+  float: none;
+  width: 100%; }
+
+form.formtastic fieldset > ol > li.check_boxes fieldset ol li label input {
+  margin-right: 0.2em; }
+
+/* DATE & TIME OVERRIDES
+--------------------------------------------------------------------------------------------------*/
+form.formtastic fieldset > ol > li.date fieldset ol li,
+form.formtastic fieldset > ol > li.time fieldset ol li,
+form.formtastic fieldset > ol > li.datetime fieldset ol li {
+  float: left;
+  width: auto;
+  margin: 0 .3em 0 0; }
+
+form.formtastic fieldset > ol > li.date fieldset ol li label,
+form.formtastic fieldset > ol > li.time fieldset ol li label,
+form.formtastic fieldset > ol > li.datetime fieldset ol li label {
+  display: none; }
+
+form.formtastic fieldset > ol > li.date fieldset ol li label input,
+form.formtastic fieldset > ol > li.time fieldset ol li label input,
+form.formtastic fieldset > ol > li.datetime fieldset ol li label input {
+  display: inline;
+  margin: 0;
+  padding: 0; }
+/* -------------------------------------------------------------------------------------------------
+
+Load this stylesheet after formtastic.css in your layouts to override the CSS to suit your needs.
+This will allow you to update formtastic.css with new releases without clobbering your own changes.
+
+For example, to make the inline hint paragraphs a little darker in color than the standard #666:
+
+form.formtastic fieldset > ol > li p.inline-hints { color:#333; }
+
+HINT:
+The following style may be *conditionally* included for improved support on older versions of IE(<8)
+form.formtastic fieldset ol li fieldset legend { margin-left: -6px;}
+
+--------------------------------------------------------------------------------------------------*/
+form.formtastic .choices-group {
+  padding: 7px 0 0; }
+  form.formtastic .choices-group .choice {
+    float: left;
+    margin: 0 15px 0 0; }
+    form.formtastic .choices-group .choice label {
+      margin: 0 !important; }
+    form.formtastic .choices-group .choice input {
+      position: relative;
+      top: 2px;
+      margin: 0 3px 0 0; }
+/*BEGIN GENERAL PAGE PROPERTIES*/
+/*------------------------------------------------------*/
+.bread_crumb {
+  background: #1D4054;
+  color: #fff;
+  margin: 0 0 15px;
+  padding: 6px;
+  -moz-border-radius: 4px 4px 4px 4px;
+  border-radius: 4px 4px 4px 4px;
+  -webkit-border-radius: 4px 4px 4px 4px;
+  font-weight: normal;
+  text-transform: capitalize; }
+
+.bread_crumb a:link,
+.bread_crumb a:visited {
+  color: #00D4FF;
+  text-decoration: underline; }
+
+.bread_crumb a:hover {
+  color: #3FDFFF; }
+
+.blue_section_divider {
+  color: white;
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(#0098fe), to(#1a76ce));
+  background: -moz-linear-gradient(top, #1a76ce, #0098fe);
+  font-size: 23px;
+  height: auto;
+  line-height: 24px;
+  padding: 11px 16px;
+  border-radius: 4px;
+  box-shadow: 0 1px 1px #efefef;
+  margin: 8px 0 8px;
+  font-weight: bold;
+  text-shadow: 1px 1px 0px #006CBA;
+  text-transform: capitalize;
+  margin: 0; }
+
+.blue_section_divider a, .blue_section_divider a:visited {
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(#1a76ce), to(#0098fe));
+  padding: 9px 17px;
+  border-radius: 23px;
+  text-shadow: 1px 1px 0px #1C5479;
+  box-shadow: inset 0 0 7px 0 #1C5479;
+  border: 1px solid #09F;
+  color: white; }
+
+.admin_pages_content .tabs {
+  margin: 19px 0 0 -3px; }
+
+.admin_pages_content .width480.center_column {
+  margin: 0 -3px 0 0; }
+
+.admin_pages_content .width240 img {
+  width: 220px; }
+
+.admin_pages_content .width240 a img {
+  width: inherit; }
+
+.admin_pages_content .blue_btn,
+.admin_pages_content .create,
+.admin_pages_content .ui-dialog .ui-dialog-buttonpane button,
+.admin_pages_content button {
+  height: auto; }
+
+.red {
+  color: red !important; }
+
+/*BEGIN LEFT COLUMN PROPERTIES*/
+/*------------------------------------------------------*/
+.left_column {
+  width: 735px; }
+
+.admin_info .headline {
+  margin: 0 0 15px; }
+
+.admin_info .headline.sub_headline {
+  font-size: 18px; }
+
+.admin_info .headline a.blue_text {
+  color: #0099ff; }
+
+.admin_info .headline a.blue_text:hover {
+  text-decoration: underline; }
+
+.admin_info a, .admin_info a:visited {
+  -webkit-transition: color 0.5s ease-out;
+  -moz-transition: color 0.5s ease-out;
+  -o-transition: color 0.5s ease-out; }
+
+.admin_info .grey_section {
+  background-color: #ebeced;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px; }
+
+.admin_info .grey_section .headline.sub_headline {
+  background: #333;
+  color: #fff;
+  padding: 10px;
+  border-radius: 2px 2px 2px 2px;
+  text-shadow: 1px 1px 2px #000;
+  display: block;
+  box-shadow: inset 0 0 25px #000; }
+
+.admin_info .grey_section label {
+  float: none;
+  width: auto;
+  margin: 0 0 10px 0;
+  font-size: 18px;
+  font-weight: 900;
+  letter-spacing: 0;
+  line-height: 1.05em;
+  text-decoration: none;
+  word-spacing: 0; }
+
+.admin_info .grey_section .label_float {
+  float: left;
+  margin-right: 10px; }
+
+.admin_info .grey_section p {
+  font-size: 12px;
+  line-height: 16px; }
+
+.admin_info .grey_section .inner_divider.solid {
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #fff;
+  height: 0;
+  padding: 0;
+  margin: 7px 0; }
+
+/* Polymorphic Input Fields */
+.admin_info .grey_section li .polymorphic_selector p {
+  margin: 0 0 3px;
+  padding: 0; }
+.admin_info .grey_section li .polymorphic_selector #sortable {
+  padding: 4px; }
+.admin_info .grey_section li .polymorphic_fields, .admin_info .grey_section li .polymorphic_fields ul {
+  margin: 0 0 5px;
+  border: none;
+  box-shadow: none; }
+  .admin_info .grey_section li .polymorphic_fields:hover, .admin_info .grey_section li .polymorphic_fields ul:hover {
+    background-color: transparent;
+    border: none; }
+  .admin_info .grey_section li .polymorphic_fields ul, .admin_info .grey_section li .polymorphic_fields ul ul {
+    margin: 0; }
+  .admin_info .grey_section li .polymorphic_fields li, .admin_info .grey_section li .polymorphic_fields ul li {
+    float: left;
+    margin: 0 10px 0 0; }
+    .admin_info .grey_section li .polymorphic_fields li label, .admin_info .grey_section li .polymorphic_fields ul li label, .admin_info .grey_section li .polymorphic_fields li > label:first-of-type, .admin_info .grey_section li .polymorphic_fields ul li > label:first-of-type {
+      margin: 0 0 3px;
+      padding: 0;
+      font-size: 12px;
+      background-color: transparent;
+      border: none;
+      box-shadow: none; }
+
+.admin_info table {
+  width: 100%;
+  border-collapse: separate;
+  /*border-spacing:3px 3px;*/
+  font-size: 11px;
+  line-height: 14px; }
+
+.admin_info table .col_1 {
+  background: none repeat scroll 0 0 #EFEFEF;
+  font-weight: bold;
+  text-align: right;
+  width: 122px; }
+
+.admin_info table tr:hover .col_1 {
+  background: none repeat scroll 0 0 #1D4054;
+  border-bottom: 1px dashed #1D4054;
+  color: #fff; }
+
+.admin_info table td a {
+  color: #333; }
+
+.admin_info table td a:hover {
+  /*color: #000;*/
+  color: #0099ff; }
+
+.admin_info th, .admin_info tr, .admin_info td {
+  vertical-align: top; }
+
+.admin_info table caption, .admin_info table th {
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(#777777), to(#444444));
+  background: -moz-linear-gradient(top, #777777, #444444);
+  -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=#777777, endColorStr=#444444);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=#777777, endColorStr=#444444);
+  color: #E5E5E5;
+  padding: 5px 6px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 0 #555555, -1px -1px 0 #555555, 1px -1px 0 #555555, -1px 1px 0 #555555, 1px 1px 0 #555555;
+  box-shadow: 0px 0px 2px #333;
+  white-space: nowrap; }
+  .admin_info table caption a, .admin_info table th a {
+    color: #fff; }
+.admin_info table caption {
+  font-size: 16px;
+  line-height: 120%; }
+
+.admin_info tr {
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out; }
+
+.admin_info tr:hover {
+  background: #fff; }
+
+.admin_info td {
+  padding: 7px 4px 8px;
+  border-bottom: 1px dashed #ccc; }
+
+.admin_info tr:hover td {
+  border-bottom: 1px dashed #999; }
+
+.admin_info textarea {
+  width: 98%; }
+
+.admin_info input[type="checkbox"] {
+  margin: 0 10px 0 0; }
+
+.admin_info input[type="text"],
+.admin_info textarea {
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out; }
+
+.admin_info input,
+.admin_info select,
+.admin_info textarea,
+.admin_info form.formtastic input,
+.admin_info form.formtastic select,
+.admin_info form.formtastic textarea {
+  background: none repeat scroll 0 0 #F3F4F4;
+  border: 1px inset white;
+  padding: 6px;
+  box-shadow: inset 0 0 7px 0 #beccd5;
+  -webkit-box-shadow: inset 0 0 7px 0 #beccd5;
+  outline: none;
+  font-size: 12px;
+  text-shadow: 1px 1px 1px white; }
+
+.admin_info input:focus,
+.admin_info select:focus,
+.admin_info textarea:focus,
+.admin_info form.formtastic input:focus,
+.admin_info form.formtastic select:focus,
+.admin_info form.formtastic textarea:focus {
+  background: none repeat scroll 0 0 #ffffff;
+  border: 1px solid #0099ff;
+  text-shadow: none; }
+
+.admin_info input[type="submit"],
+.admin_info form.formtastic input[type="submit"],
+.admin_info input[type="button"],
+.admin_info .button,
+.admin_info .update,
+.admin_info .blue_btn {
+  font-family: Arial, Helvetica, sans-serif;
+  cursor: pointer;
+  color: white;
+  font-size: 12px;
+  padding: 5px 12px;
+  text-decoration: none;
+  -webkit-border-radius: 4px 4px 0 4px;
+  -moz-border-radius: 4px 4px 0 4px;
+  -webkit-box-shadow: 0px 1px 5px #999;
+  -moz-box-shadow: 0px 1px 5px #999;
+  text-shadow: 1px 1px 0px #006CBA;
+  box-shadow: 0px 1px 1px #444;
+  border: solid #0098fe 1px;
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(#0098fe), to(#1977ce));
+  background: -moz-linear-gradient(top, #0098fe, #1977ce);
+  -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=#0098fe, endColorStr=#1977ce);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=#0098fe, endColorStr=#1977ce);
+  display: inline-block;
+  /* FOR IE */
+  text-transform: uppercase;
+  font-weight: bold;
+  line-height: 14px;
+  white-space: normal;
+  text-align: left; }
+
+.admin_info .commit.button {
+  background: none;
+  border: none;
+  box-shadow: none;
+  padding: 0;
+  margin: 0; }
+
+.admin_info input[type="submit"]:active,
+.admin_info form.formtastic input[type="submit"]:active,
+.admin_info input[type="button"]:active,
+.admin_info .button:active,
+.admin_info .update:active
+.blue_btn:active {
+  background: #1977ce;
+  color: #c0dbed;
+  text-shadow: none;
+  -webkit-box-shadow: inset 0px 0px 6px #1333A9;
+  -moz-box-shadow: inset 0px 0px 6px #1333A9; }
+
+.admin_info .button {
+  -moz-border-radius: 4px 4px 4px 4px;
+  -webkiit-border-radius: 4px 4px 4px 4px;
+  border-radius: 4px 4px 4px 4px;
+  font-family: 'PT Sans', Arial, sans-serif;
+  font-size: 13px; }
+
+.admin_info .blue_btn,
+.admin_info .create,
+.admin_info .ui-dialog .ui-dialog-buttonpane button,
+.admin_info button {
+  border-radius: 4px 4px 0 4px; }
+
+.admin_info input[type="submit"]:hover,
+.admin_info form.formtastic input[type="submit"]:hover,
+.admin_info input[type="button"]:hover,
+.admin_info .button:hover,
+.admin_info .update:hover,
+.admin_info .blue_btn:hover {
+  /*background: none repeat scroll 0 0 #1D4054;*/
+  background: #2388F5; }
+
+.admin_info .white_btn,
+.admin_info form.formtastic input[type="submit"].white_btn,
+.admin_info input[type="submit"].white_btn,
+.admin_info input[type="button"].white_btn {
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(white), to(#cccccc));
+  background: -moz-linear-gradient(top, white, #cccccc);
+  -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=#fff, endColorStr=#CCC);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=#fff, endColorStr=#CCC);
+  color: #555;
+  text-shadow: 1px 1px 0 white;
+  border: 1px solid white;
+  text-transform: uppercase;
+  font-weight: bold;
+  line-height: 14px;
+  white-space: normal;
+  text-align: left;
+  height: 27px;
+  font-family: Arial, Helvetica, sans-serif;
+  cursor: pointer;
+  font-size: 12px;
+  padding: 5px 12px;
+  text-decoration: none;
+  -webkit-border-radius: 4px 4px 0 4px;
+  -moz-border-radius: 4px 4px 0 4px;
+  -webkit-box-shadow: 0px 1px 5px #999;
+  -moz-box-shadow: 0px 1px 5px #999;
+  box-shadow: 0px 1px 1px #444; }
+
+.admin_info .white_btn:hover,
+.admin_info form.formtastic input[type="submit"].white_btn:hover,
+.admin_info input[type="submit"].white_btn:hover,
+.admin_info input[type="button"].white_btn:hover {
+  background: #E1E1E1; }
+
+.admin_info .caution_btn.blue_btn:hover,
+.admin_info .caution_btn.white_btn:hover,
+.admin_info form.formtastic input[type="submit"].white_btn.caution_btn:hover,
+.admin_info input[type="submit"].white_btn.caution_btn:hover,
+.admin_info input[type="button"].white_btn.caution_btn:hover,
+.admin_info form.formtastic input[type="submit"].blue_btn.caution_btn:hover,
+.admin_info input[type="submit"].blue_btn.caution_btn:hover,
+.admin_info input[type="button"].blue_btn.caution_btn:hover {
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(#e82a2a), to(#c60909));
+  background: -moz-linear-gradient(top, #e82a2a, #c60909);
+  -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=#E82A2A, endColorStr=#C60909);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=#E82A2A, endColorStr=#C60909);
+  color: white;
+  border: 1px solid red;
+  text-shadow: 1px 1px 0 #AB0606; }
+
+.admin_info form.formtastic fieldset > ol > li label,
+.admin_info form.formtastic fieldset > ol > li fieldset ol {
+  /*width: 10%;*/
+  /*margin: 0 15px 0 0;*/ }
+
+.admin_info form.formtastic fieldset > ol > li.boolean label {
+  padding: 0;
+  width: auto;
+  font-size: inherit;
+  font-weight: normal;
+  background: none;
+  box-shadow: none;
+  text-shadow: none;
+  color: black;
+  border: none; }
+
+.admin_info form.formtastic fieldset > ol > li fieldset legend.label label {
+  position: static; }
+
+.admin_info form.formtastic fieldset > ol > li fieldset legend {
+  position: static;
+  width: 100%;
+  padding-top: 0;
+  left: 0px; }
+
+.admin_info form.formtastic fieldset > ol > li.radio fieldset ol li label {
+  float: none;
+  min-width: 100px;
+  width: 100%; }
+
+.admin_info form.formtastic fieldset > ol > li fieldset ol {
+  padding: 0;
+  margin: 10px 15px 0 0;
+  width: 100%; }
+
+.admin_info form.formtastic fieldset > ol > li p.inline-hints {
+  margin: 0.5em 0 0 0; }
+
+.admin_info form.formtastic abbr,
+.admin_info form.formtastic acronym {
+  color: #0099ff; }
+
+.admin_info form.formtastic fieldset > ol > li.text textarea {
+  width: 98%; }
+
+.admin_info form.formtastic fieldset.buttons {
+  padding-left: 0; }
+
+.admin_info form.formtastic p {
+  margin: 0;
+  padding: 0 0 10px; }
+
+.admin_info form.formtastic fieldset > ol > li p.inline-errors {
+  color: #C00;
+  margin: 0;
+  padding: 2px 0 10px 22px; }
+
+.admin_info form label {
+  display: block;
+  float: left;
+  margin: 0 15px 0 0;
+  padding-top: 0.2em;
+  width: 130px; }
+
+.admin_info .sortable_list input,
+.admin_info .sortable_list .ui-autocomplete-input {
+  margin: 0;
+  /*previously 5px*/ }
+
+.admin_info .sortable_list #sortable {
+  padding: 7px; }
+
+.admin_info .sortable_list #sortable li, .admin_info .sortable_list #sortable div, .admin_info .sortable_list #sortable .ui-sortable, .admin_info .sortable_list .sortable li, .admin_info .sortable_list .sortable div, .admin_info .sortable_list .sortable .ui-sortable {
+  color: #000000;
+  font-weight: normal;
+  height: auto;
+  margin: 4px; }
+
+.admin_info .sortable_list #sortable li img, .admin_info .sortable_list #sortable div img, .admin_info .sortable_list #sortable .ui-sortable img, .admin_info .sortable_list .sortable li img, .admin_info .sortable_list .sortable div img, .admin_info .sortable_list .sortable .ui-sortable img {
+  margin: 0 5px 0 0 !important;
+  padding: 0 !important; }
+
+.admin_info .sortable_list #sortable li p, .admin_info .sortable_list #sortable div p, .admin_info .sortable_list #sortable .ui-sortable p, .admin_info .sortable_list .sortable li p, .admin_info .sortable_list .sortable div p, .admin_info .sortable_list .sortable .ui-sortable p {
+  cursor: move;
+  font-size: 11px;
+  line-height: 16px;
+  padding: 0 5px;
+  background: #D5D9DC;
+  display: block;
+  border-radius: 6px;
+  border: 1px solid #CCC;
+  text-shadow: 1px 1px 1px #fff; }
+
+.admin_info .sortable_list #sortable li p:hover, .admin_info .sortable_list #sortable div p:hover, .admin_info .sortable_list #sortable .ui-sortable p:hover, .admin_info .sortable_list .sortable li p:hover, .admin_info .sortable_list .sortable div p:hover, .admin_info .sortable_list .sortable .ui-sortable p:hover {
+  background: #1d4054;
+  border-radius: 4px;
+  color: #fff;
+  text-shadow: 1px 1px 1px #27556f; }
+
+.admin_info form .submit_btn {
+  margin: 0 0 0 145px; }
+
+.admin_info.assign_multi_writers textarea {
+  height: 200px; }
+
+.admin_info.pod_rounded {
+  background: #D5D9DC;
+  border-radius: 4px;
+  padding: 13px;
+  box-shadow: 0 0 5px #999;
+  font-family: 'Arimo', Arial, sans-serif !important;
+  position: relative; }
+
+.admin_info.pod_rounded .blue_section_divider {
+  margin: 0; }
+
+.admin_info.pod_rounded .blue_section_divider a, .admin_info.pod_rounded .blue_section_divider a:visited, .admin_info.pod_rounded .blue_section_divider span {
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(#1a76ce), to(#0098fe));
+  padding: 9px 17px;
+  border-radius: 23px;
+  text-shadow: 1px 1px 0px #1C5479;
+  box-shadow: inset 0 0 7px 0 #1C5479;
+  border: 1px solid #09F;
+  color: white; }
+
+.admin_info.pod_rounded .headline {
+  margin: 0 0 15px; }
+
+.admin_info.pod_rounded .headline.sub_headline, .admin_info.pod_rounded label:first-child {
+  font-size: 15px; }
+
+.admin_info.pod_rounded .secondary_headline {
+  padding: 0 0 6px 12px;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #fff; }
+
+.admin_info.pod_rounded ul, .admin_info.pod_rounded ol {
+  text-shadow: 1px 1px 1px #fff;
+  color: #333;
+  font-size: 11px;
+  line-height: 13px; }
+
+.admin_info.pod_rounded ul li, .admin_info.pod_rounded ol li {
+  margin: 0 0 6px; }
+
+.admin_info.pod_rounded ul li li, .admin_info.pod_rounded ol li li {
+  margin: 0; }
+
+.admin_info.pod_rounded ul li p, .admin_info.pod_rounded ol li p {
+  font-size: 11px;
+  line-height: 13px; }
+
+.admin_info.pod_rounded ul li a, .admin_info.pod_rounded ul li a:visited, .admin_info.pod_rounded ol li a, .admin_info.pod_rounded ol li a:visited {
+  color: #000; }
+
+.admin_info.pod_rounded ul li a:hover, .admin_info.pod_rounded ol li a:hover {
+  color: #597686; }
+
+.admin_info.pod_rounded ul.bullet {
+  list-style: disc;
+  padding: 6px 14px 4px 24px; }
+
+.admin_info.pod_rounded ul:hover, .admin_info.pod_rounded #sortable:hover {
+  background: #fff;
+  border: 1px solid #d7d7d7;
+  box-shadow: inset 0 0 7px #e2e1e1; }
+
+.admin_info.pod_rounded ul:hover a, .admin_info.pod_rounded ul:hover a:visited, .admin_info.pod_rounded #sortable:hover a, .admin_info.pod_rounded #sortable:hover a:visited {
+  color: #0099ff; }
+
+.admin_info.pod_rounded ul:hover a:hover, .admin_info.pod_rounded #sortable:hover a:hover {
+  color: #597686; }
+
+.admin_info.pod_rounded ul:active {
+  border: 1px solid #aaa; }
+
+.admin_info.pod_rounded .grey_section {
+  background-color: #EBECED;
+  border: 1px inset white;
+  border-radius: 4px;
+  padding: 10px;
+  margin-right: 1px;
+  box-shadow: inset 1px 0px 6px #ccc; }
+
+.admin_info.pod_rounded .grey_section .headline.sub_headline,
+.admin_info.pod_rounded .grey_section li label,
+.admin_info.pod_rounded .grey_section legend > label:first-of-type {
+  background: #F0F0F0;
+  color: #333;
+  padding: 5px 10px;
+  border-radius: 0px 6px 0px 6px;
+  text-shadow: 1px 1px 1px white;
+  display: block;
+  box-shadow: 0 1px 0px #fff;
+  margin: 0;
+  border-width: 1px 0 1px 0;
+  border-style: solid;
+  border-color: #AAA;
+  border-top-color: #F8F8F8; }
+
+.admin_info.pod_rounded .grey_section li > label:first-of-type {
+  margin: 0 0 8px; }
+
+.admin_info.pod_rounded .grey_section .basic li label,
+.admin_info.pod_rounded .grey_section .basic legend > label:first-of-type {
+  display: block;
+  width: 15%;
+  float: left;
+  background: none;
+  color: black;
+  padding: 0 10px 0 0;
+  border-radius: 0;
+  text-shadow: 1px 1px 2px white;
+  display: block;
+  box-shadow: none;
+  border: none;
+  margin: 0 10px 0 0;
+  font-weight: normal;
+  font-size: 12px;
+  text-align: right; }
+
+.admin_info.pod_rounded .grey_section ol:first-of-type {
+  box-shadow: none;
+  border-radius: 0;
+  border: none; }
+
+.admin_info.pod_rounded .grey_section li ol li > label:first-of-type {
+  background: none;
+  color: #000;
+  padding: 0;
+  border: none;
+  text-shadow: none;
+  box-shadow: none;
+  font-size: 12px;
+  font-weight: normal;
+  text-shadow: 1px 1px 1px white; }
+
+.admin_info.pod_rounded .grey_section .inner_divider.solid {
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #fff;
+  height: 0;
+  padding: 0;
+  margin: 7px 0; }
+
+.admin_info.pod_rounded .alert:before {
+  content: url("/assets/users/error-a95a1be24c80db8c302dd12073baff90.png");
+  padding: 10px 0 0; }
+
+.admin_info.pod_rounded .alert {
+  padding: 4px 6px;
+  background: #f07e03;
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+  text-shadow: 1px 1px 1px #555;
+  border-radius: 8px;
+  box-shadow: 1px 1px 1px #999;
+  display: inline-block; }
+
+/*BEGIN RIGHT COLUMN PROPERTIES*/
+/*------------------------------------------------------*/
+#right_sidebar {
+  float: right;
+  position: relative;
+  width: 240px;
+  margin: 0 0 0 15px; }
+  #right_sidebar .headline.sub_headline {
+    width: auto; }
+  #right_sidebar textarea {
+    width: 94%;
+    max-height: 200px; }
+
+.admin_pages_content .floater.fixed {
+  margin: 12px 0 0 0; }
+
+.admin_options_info input[type="submit"] {
+  background: none repeat scroll 0 0 #0099FF;
+  border: none;
+  color: #FFFFFF;
+  cursor: pointer;
+  padding: 6px; }
+
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table; }
+
+.clearfix:after {
+  clear: both; }
+
+.clearfix {
+  *zoom: 1; }
+.floater.fixed {
+  position: fixed;
+  top: 0; }

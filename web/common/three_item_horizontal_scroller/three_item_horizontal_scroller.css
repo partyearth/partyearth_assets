@@ -80,85 +80,87 @@
               margin: 0 9px 0 0;
               padding: 0;
               border-bottom: none; }
-          .three_item_carousel .scroller_wrapper .screens_container .screens_wrapper .spot_item .details {
+          .three_item_carousel .scroller_wrapper .screens_container .screens_wrapper .spot_item .desc, .three_item_carousel .scroller_wrapper .screens_container .screens_wrapper .spot_item .user_review_summary {
+            position: relative;
+            font-size: 12px;
+            line-height: 16px; }
+            .three_item_carousel .scroller_wrapper .screens_container .screens_wrapper .spot_item .desc .ellipsis, .three_item_carousel .scroller_wrapper .screens_container .screens_wrapper .spot_item .user_review_summary .ellipsis {
+              position: absolute;
+              right: 0;
+              bottom: 0;
+              background-color: #fff;
+              overflow: hidden; }
+          .three_item_carousel .scroller_wrapper .screens_container .screens_wrapper .spot_item .details, .three_item_carousel .scroller_wrapper .screens_container .screens_wrapper .spot_item .user_review_summary {
             height: 82px;
             overflow: hidden; }
-            .three_item_carousel .scroller_wrapper .screens_container .screens_wrapper .spot_item .details .desc {
-              position: relative;
-              height: 82px;
-              font-size: 12px;
-              line-height: 16px; }
-              .three_item_carousel .scroller_wrapper .screens_container .screens_wrapper .spot_item .details .desc .blue_tag {
-                display: inline-block;
-                position: relative;
-                float: left;
-                height: 10px;
-                margin: 0 13px 0 0;
-                padding: 2px 3px 3px 5px;
-                color: #fff;
-                font-size: 10px;
-                line-height: 11px;
-                background-color: #09f;
-                border-radius: 2px 0 0 2px; }
-                .three_item_carousel .scroller_wrapper .screens_container .screens_wrapper .spot_item .details .desc .blue_tag a:link, .three_item_carousel .scroller_wrapper .screens_container .screens_wrapper .spot_item .details .desc .blue_tag a:visited {
-                  color: #fff;
-                  text-decoration: none; }
-                  .three_item_carousel .scroller_wrapper .screens_container .screens_wrapper .spot_item .details .desc .blue_tag a:link:hover, .three_item_carousel .scroller_wrapper .screens_container .screens_wrapper .spot_item .details .desc .blue_tag a:visited:hover {
-                    text-decoration: none; }
-                .three_item_carousel .scroller_wrapper .screens_container .screens_wrapper .spot_item .details .desc .blue_tag .point {
-                  position: absolute;
-                  right: -15px;
-                  bottom: 0;
-                  width: 1px;
-                  height: 0;
-                  border-top: 8px solid transparent;
-                  border-left: 8px solid #0099ff;
-                  border-right: 7px solid transparent;
-                  border-bottom: 7px solid transparent;
-                  overflow: hidden; }
-              .three_item_carousel .scroller_wrapper .screens_container .screens_wrapper .spot_item .details .desc .info {
-                display: block;
-                color: #000;
+          .three_item_carousel .scroller_wrapper .screens_container .screens_wrapper .spot_item .user_review_summary p.by_line {
+            margin: 0 0 2px; }
+          .three_item_carousel .scroller_wrapper .screens_container .screens_wrapper .spot_item .details .desc .blue_tag {
+            display: inline-block;
+            position: relative;
+            float: left;
+            height: 10px;
+            margin: 0 13px 0 0;
+            padding: 2px 3px 3px 5px;
+            color: #fff;
+            font-size: 10px;
+            line-height: 11px;
+            background-color: #09f;
+            border-radius: 2px 0 0 2px; }
+            .three_item_carousel .scroller_wrapper .screens_container .screens_wrapper .spot_item .details .desc .blue_tag a:link, .three_item_carousel .scroller_wrapper .screens_container .screens_wrapper .spot_item .details .desc .blue_tag a:visited {
+              color: #fff;
+              text-decoration: none; }
+              .three_item_carousel .scroller_wrapper .screens_container .screens_wrapper .spot_item .details .desc .blue_tag a:link:hover, .three_item_carousel .scroller_wrapper .screens_container .screens_wrapper .spot_item .details .desc .blue_tag a:visited:hover {
                 text-decoration: none; }
-              .three_item_carousel .scroller_wrapper .screens_container .screens_wrapper .spot_item .details .desc .ellipses_dots {
-                position: absolute;
-                right: 0;
-                bottom: 0;
-                background-color: #fff;
-                overflow: hidden; }
-              .three_item_carousel .scroller_wrapper .screens_container .screens_wrapper .spot_item .details .desc .read_more {
-                position: relative;
-                bottom: 2px;
-                font-size: 11px; }
-              .three_item_carousel .scroller_wrapper .screens_container .screens_wrapper .spot_item .details .desc.event {
-                padding-top: 8px; }
-            .three_item_carousel .scroller_wrapper .screens_container .screens_wrapper .spot_item .details p {
-              padding-bottom: 0; }
-            .three_item_carousel .scroller_wrapper .screens_container .screens_wrapper .spot_item .details .date_time {
-              height: 16px;
-              margin: 0 0 8px;
+            .three_item_carousel .scroller_wrapper .screens_container .screens_wrapper .spot_item .details .desc .blue_tag .point {
+              position: absolute;
+              right: -15px;
+              bottom: 0;
+              width: 1px;
+              height: 0;
+              border-top: 8px solid transparent;
+              border-left: 8px solid #0099ff;
+              border-right: 7px solid transparent;
+              border-bottom: 7px solid transparent;
               overflow: hidden; }
-              .three_item_carousel .scroller_wrapper .screens_container .screens_wrapper .spot_item .details .date_time .small_text {
-                font-size: 16px;
-                font-weight: bold;
-                line-height: 14px;
-                text-transform: inherit; }
-            .three_item_carousel .scroller_wrapper .screens_container .screens_wrapper .spot_item .details .event_venue {
-              height: 16px;
-              font-size: 14px;
+          .three_item_carousel .scroller_wrapper .screens_container .screens_wrapper .spot_item .details .desc .info {
+            display: block;
+            color: #000;
+            text-decoration: none; }
+          .three_item_carousel .scroller_wrapper .screens_container .screens_wrapper .spot_item .details .desc .read_more {
+            position: relative;
+            bottom: 2px;
+            font-size: 11px; }
+          .three_item_carousel .scroller_wrapper .screens_container .screens_wrapper .spot_item .details .desc.event {
+            padding-top: 8px;
+            max-height: 32px; }
+          .three_item_carousel .scroller_wrapper .screens_container .screens_wrapper .spot_item .details p {
+            padding-bottom: 0; }
+          .three_item_carousel .scroller_wrapper .screens_container .screens_wrapper .spot_item .details .date_time {
+            height: 16px;
+            margin: 0 0 8px;
+            overflow: hidden; }
+            .three_item_carousel .scroller_wrapper .screens_container .screens_wrapper .spot_item .details .date_time .small_text {
+              font-size: 16px;
               font-weight: bold;
-              line-height: 15px;
-              overflow: hidden; }
-              .three_item_carousel .scroller_wrapper .screens_container .screens_wrapper .spot_item .details .event_venue .black_link {
-                color: #375363 !important; }
-                .three_item_carousel .scroller_wrapper .screens_container .screens_wrapper .spot_item .details .event_venue .black_link:hover {
-                  color: #000 !important; }
-              .three_item_carousel .scroller_wrapper .screens_container .screens_wrapper .spot_item .details .event_venue .nourl {
-                text-decoration: none; }
-                .three_item_carousel .scroller_wrapper .screens_container .screens_wrapper .spot_item .details .event_venue .nourl:hover {
-                  color: #375363 !important;
-                  text-decoration: none !important;
-                  cursor: default; }
+              line-height: 14px;
+              text-transform: inherit; }
+          .three_item_carousel .scroller_wrapper .screens_container .screens_wrapper .spot_item .details .event_venue {
+            height: 16px;
+            font-size: 14px;
+            font-weight: bold;
+            line-height: 15px;
+            overflow: hidden; }
+            .three_item_carousel .scroller_wrapper .screens_container .screens_wrapper .spot_item .details .event_venue .black_link {
+              color: #375363 !important; }
+              .three_item_carousel .scroller_wrapper .screens_container .screens_wrapper .spot_item .details .event_venue .black_link:hover {
+                color: #000 !important; }
+            .three_item_carousel .scroller_wrapper .screens_container .screens_wrapper .spot_item .details .event_venue .nourl {
+              text-decoration: none; }
+              .three_item_carousel .scroller_wrapper .screens_container .screens_wrapper .spot_item .details .event_venue .nourl:hover {
+                color: #375363 !important;
+                text-decoration: none !important;
+                cursor: default; }
           .three_item_carousel .scroller_wrapper .screens_container .screens_wrapper .spot_item .tags a, .three_item_carousel .scroller_wrapper .screens_container .screens_wrapper .spot_item .tags a:visited, .three_item_carousel .scroller_wrapper .screens_container .screens_wrapper .spot_item .tags span {
             display: inline-block;
             float: left;

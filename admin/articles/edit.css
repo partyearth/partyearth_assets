@@ -930,10 +930,16 @@ form.formtastic .choices-group {
 
 /*BEGIN RIGHT COLUMN PROPERTIES*/
 /*------------------------------------------------------*/
-.right_column {
-  margin: 0 0 0 15px;
+#right_sidebar {
+  float: right;
   position: relative;
-  width: 240px; }
+  width: 240px;
+  margin: 0 0 0 15px; }
+  #right_sidebar .headline.sub_headline {
+    width: auto; }
+  #right_sidebar textarea {
+    width: 94%;
+    max-height: 200px; }
 
 .admin_pages_content .floater.fixed {
   margin: 12px 0 0 0; }
@@ -944,13 +950,6 @@ form.formtastic .choices-group {
   color: #FFFFFF;
   cursor: pointer;
   padding: 6px; }
-
-.right_column .headline.sub_headline {
-  width: auto; }
-
-.right_column textarea {
-  width: 94%;
-  max-height: 200px; }
 
 .clearfix:before, .clearfix:after {
   content: "";
