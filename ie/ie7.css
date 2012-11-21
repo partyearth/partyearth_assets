@@ -89,11 +89,6 @@
 #footer_content {
   *position: static;
   *margin: 10px 0 0 -3px; }
-
-/*FOR IE8*/
-.blue_section_divider {
-  -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=#1a76ce, endColorStr=#0098fe);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=#1a76ce, endColorStr=#0098fe); }
 .map_controls #result_types {
   margin: 6px 0 2px; }
 

@@ -4,13 +4,14 @@
   width: 706px;
   /* Override styles from liked_by.scss */ }
   .three_item_carousel .page_count {
-    display: inline-block;
-    padding: 2px 0 0; }
+    float: right;
+    position: relative;
+    top: 10px; }
     .three_item_carousel .page_count .dot {
       float: left;
       width: 8px;
       height: 8px;
-      margin-left: 10px;
+      margin: 0 0 0 10px;
       background-color: #16aeeb;
       border-radius: 50%;
       cursor: pointer; }
@@ -149,6 +150,7 @@
             height: 16px;
             font-size: 14px;
             font-weight: bold;
+            font-family: 'Arial', sans-serif;
             line-height: 15px;
             overflow: hidden; }
             .three_item_carousel .scroller_wrapper .screens_container .screens_wrapper .spot_item .details .event_venue .black_link {

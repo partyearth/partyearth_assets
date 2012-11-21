@@ -6,27 +6,30 @@
   line-height: 12px;
   line-height: 14px; }
 #more_links_pod ul {
-  margin-bottom: 10px;
-  padding-bottom: 10px; }
-  #more_links_pod ul.top_row {
-    border-bottom: 1px dashed #adc0c9; }
-  #more_links_pod ul.only_row, #more_links_pod ul.bottom_row {
-    margin-bottom: 0;
-    padding-bottom: 0;
-    border-bottom: none; }
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px dashed #adc0c9; }
+  #more_links_pod ul.top_row, #more_links_pod ul:first-child {
+    margin-top: 0;
+    padding-top: 0;
+    border-top: none; }
 #more_links_pod li {
   float: left;
-  width: 165px;
-  padding: 0 12px 0 0; }
-  #more_links_pod li.last {
-    padding-right: 0; }
-  #more_links_pod li img {
+  width: 167px;
+  padding: 0 0 0 12px; }
+  #more_links_pod li:first-child {
+    padding-left: 0; }
+  #more_links_pod li .thumbnail_link {
     display: block;
-    width: 167px;
+    width: 165px;
     height: 110px;
     margin: 0 0 7px;
     border: 1px solid #d2dce1;
     border-radius: 3px; }
+    #more_links_pod li .thumbnail_link img {
+      display: block;
+      width: 165px;
+      height: 110px; }
   #more_links_pod li a {
     color: #000; }
     #more_links_pod li a:hover {
@@ -519,12 +522,10 @@
 */
 /* LEFT COLUMN
 ---------------------------------------------*/
-#left_container .category_page_content .blue_section_divider.top {
-  margin: 0; }
 #left_container .category_page_content .overview_copy_block {
   font-size: 12px;
   line-height: 14px; }
-  #left_container .category_page_content .overview_copy_block .blue_section_divider {
+  #left_container .category_page_content .overview_copy_block .blue_header {
     margin-bottom: 12px; }
   #left_container .category_page_content .overview_copy_block .overview_img {
     width: 165px;
@@ -583,13 +584,14 @@
   width: 706px;
   /* Override styles from liked_by.scss */ }
   .three_item_carousel .page_count {
-    display: inline-block;
-    padding: 2px 0 0; }
+    float: right;
+    position: relative;
+    top: 10px; }
     .three_item_carousel .page_count .dot {
       float: left;
       width: 8px;
       height: 8px;
-      margin-left: 10px;
+      margin: 0 0 0 10px;
       background-color: #16aeeb;
       border-radius: 50%;
       cursor: pointer; }
@@ -728,6 +730,7 @@
             height: 16px;
             font-size: 14px;
             font-weight: bold;
+            font-family: 'Arial', sans-serif;
             line-height: 15px;
             overflow: hidden; }
             .three_item_carousel .scroller_wrapper .screens_container .screens_wrapper .spot_item .details .event_venue .black_link {
@@ -1027,10 +1030,15 @@
       margin: 0;
       padding: 0;
       border-bottom: 0; }
+      .browse_category_boxes .cell ul li {
+        margin: 6px 0 0;
+        line-height: 13px; }
+        .browse_category_boxes .cell ul li:first-child {
+          margin-top: 0; }
       .browse_category_boxes .cell ul a {
         display: inline-block;
         padding: 0 0 0 11px;
-        background-position: -114px -273px;
+        background-position: -114px -275px;
         background-repeat: no-repeat; }
         .browse_category_boxes .cell ul a.selected {
           background-image: url(/assets/content_bg/application_sprite.png); }

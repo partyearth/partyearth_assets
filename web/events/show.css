@@ -956,27 +956,30 @@
   line-height: 12px;
   line-height: 14px; }
 #more_links_pod ul {
-  margin-bottom: 10px;
-  padding-bottom: 10px; }
-  #more_links_pod ul.top_row {
-    border-bottom: 1px dashed #adc0c9; }
-  #more_links_pod ul.only_row, #more_links_pod ul.bottom_row {
-    margin-bottom: 0;
-    padding-bottom: 0;
-    border-bottom: none; }
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px dashed #adc0c9; }
+  #more_links_pod ul.top_row, #more_links_pod ul:first-child {
+    margin-top: 0;
+    padding-top: 0;
+    border-top: none; }
 #more_links_pod li {
   float: left;
-  width: 165px;
-  padding: 0 12px 0 0; }
-  #more_links_pod li.last {
-    padding-right: 0; }
-  #more_links_pod li img {
+  width: 167px;
+  padding: 0 0 0 12px; }
+  #more_links_pod li:first-child {
+    padding-left: 0; }
+  #more_links_pod li .thumbnail_link {
     display: block;
-    width: 167px;
+    width: 165px;
     height: 110px;
     margin: 0 0 7px;
     border: 1px solid #d2dce1;
     border-radius: 3px; }
+    #more_links_pod li .thumbnail_link img {
+      display: block;
+      width: 165px;
+      height: 110px; }
   #more_links_pod li a {
     color: #000; }
     #more_links_pod li a:hover {
@@ -1860,7 +1863,7 @@
   border: 1px solid #ccc;
   border-radius: 4px; }
   #map_cont .venue_map {
-    height: 54px; }
+    height: 230px; }
 
 .gal_map_overlay {
   display: none;
@@ -1889,11 +1892,12 @@
   padding: 0 20px 0 0;
   z-index: 2000;
   background: url(/assets/map/map_bubble_sprite.png) 100% -61px no-repeat transparent; }
-  .map_tooltip .bubble_text {
+  .map_tooltip .map_tooltip_content {
     height: 41px;
     padding: 10px 0 10px 20px;
     background: url(/assets/map/map_bubble_sprite.png) 0 0 no-repeat transparent; }
-  .map_tooltip .bubble_headline {
+  .map_tooltip .title {
+    display: block;
     font-size: 18px;
     font-weight: bold; }
   .map_tooltip .blue_text {
@@ -2212,9 +2216,13 @@
       color: #fff; }
   #the_scene .emma h3, #the_scene .emma p {
     color: #000; }
-  #the_scene .read_more .dateline.small-text.caps {
+  #the_scene .read_more .dateline {
+    float: left;
+    padding: 0;
+    color: #8ea8b5;
     font-size: 11px;
-    color: #8ea8b5; }
+    line-height: 16px;
+    text-transform: uppercase; }
   #the_scene .read_more .clipped {
     height: 170px; }
   #the_scene .read_more .more_toggle {
@@ -2312,6 +2320,35 @@
   height: 11px; }
 .city_events .inner_divider {
   height: 3px; }
+
+/* Stickers for venues/performer pages */
+.closed_sticker,
+.on_tour_sticker,
+.in_season_sticker {
+  display: block;
+  position: absolute;
+  left: 343px;
+  top: 45px;
+  z-index: 1000;
+  height: 97px;
+  width: 97px;
+  background-image: url(/assets/performers/performers_sprite.png); }
+
+.closed_sticker {
+  background-image: url("/assets/content_bg/pe_venue_closed.png");
+  background-position: 0 -9px; }
+
+.on_tour_sticker {
+  background-position: -200px -296px; }
+
+.on_tour_sticker:hover {
+  background-position: -200px -393px; }
+
+.in_season_sticker {
+  background-position: -297px -296px; }
+
+.in_season_sticker:hover {
+  background-position: -297px -393px; }
 /*
 
 */
@@ -2394,6 +2431,8 @@ dl#event_reactions {
 
 #event_tweets {
   position: relative;
+  min-height: 32px;
+  margin: 0 0 10px;
   padding: 9px 0 0 50px;
   background-repeat: no-repeat;
   border-top: 1px dashed #adc0c9; }

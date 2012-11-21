@@ -245,46 +245,45 @@ ratings_big_wrapper .title {
     float: right; }
   .liked_by ul {
     position: relative; }
-  .liked_by li {
+  .liked_by .character_cont {
     float: left;
     margin: 0 4px 0 0;
     padding: 0 0 2px;
-    border-bottom: 2px solid; }
-    .liked_by li:hover {
-      cursor: pointer; }
-  .liked_by .character {
-    display: block;
-    width: 25px;
-    height: 25px;
-    background-image: url(/assets/characters/liked_by_sprite.png);
-    border: 1px solid #adc0c9;
-    border-radius: 2px;
-    cursor: pointer; }
-  .liked_by ul {
+    border-bottom: 2px solid;
     /* Tooltip container and point positioning for liked by characters */ }
-    .liked_by ul .dialog_box {
+    .liked_by .character_cont:hover {
+      cursor: pointer; }
+    .liked_by .character_cont .character {
+      display: block;
+      width: 25px;
+      height: 25px;
+      background-image: url(/assets/characters/liked_by_sprite.png);
+      border: 1px solid #adc0c9;
+      border-radius: 2px;
+      cursor: pointer; }
+    .liked_by .character_cont .dialog_box {
       right: -9px;
       bottom: 41px; }
-      .liked_by ul .dialog_box .dialog_content_wrapper {
+      .liked_by .character_cont .dialog_box .dialog_content_wrapper {
         width: 184px;
         padding: 11px 10px 9px; }
-      .liked_by ul .dialog_box .dialog_img {
+      .liked_by .character_cont .dialog_box .dialog_img {
         display: block;
         float: left;
         width: 32px;
         height: 87px;
         background-image: url(/assets/characters/liked_by_sprite.png); }
-      .liked_by ul .dialog_box .dialog_content {
+      .liked_by .character_cont .dialog_box .dialog_content {
         float: left;
         width: 134px;
         margin: 7px 0 0 11px; }
-    .liked_by ul .dialog_point {
+    .liked_by .character_cont .dialog_point {
       position: relative;
       bottom: 39px;
       left: 1px;
       border-top: 12px solid #889AA4;
       border-bottom: none; }
-      .liked_by ul .dialog_point .dialog_inner_point {
+      .liked_by .character_cont .dialog_point .dialog_inner_point {
         bottom: -5px;
         left: -10px;
         border-top: 10px solid #F7F9FB;
@@ -352,15 +351,15 @@ ratings_big_wrapper .title {
       background-position: -61px -33px; }
     .liked_by .disabled.emma .character {
       background-position: -91px -33px; }
-  .liked_by.liked_by_big li {
+  .liked_by.liked_by_big .character_cont {
     border-width: 3px; }
-  .liked_by.liked_by_big .character {
-    width: 28px;
-    height: 28px; }
-  .liked_by.liked_by_big ul .dialog_box {
-    bottom: 43px; }
-  .liked_by.liked_by_big ul .dialog_point {
-    bottom: 41px; }
+    .liked_by.liked_by_big .character_cont .character {
+      width: 28px;
+      height: 28px; }
+    .liked_by.liked_by_big .character_cont .dialog_box {
+      bottom: 43px; }
+    .liked_by.liked_by_big .character_cont .dialog_point {
+      bottom: 41px; }
   .liked_by.liked_by_big .lucas .character {
     background-position: 0 0; }
   .liked_by.liked_by_big .lucas:hover .character {
@@ -1343,27 +1342,30 @@ ratings_big_wrapper .title {
   line-height: 12px;
   line-height: 14px; }
 #more_links_pod ul {
-  margin-bottom: 10px;
-  padding-bottom: 10px; }
-  #more_links_pod ul.top_row {
-    border-bottom: 1px dashed #adc0c9; }
-  #more_links_pod ul.only_row, #more_links_pod ul.bottom_row {
-    margin-bottom: 0;
-    padding-bottom: 0;
-    border-bottom: none; }
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px dashed #adc0c9; }
+  #more_links_pod ul.top_row, #more_links_pod ul:first-child {
+    margin-top: 0;
+    padding-top: 0;
+    border-top: none; }
 #more_links_pod li {
   float: left;
-  width: 165px;
-  padding: 0 12px 0 0; }
-  #more_links_pod li.last {
-    padding-right: 0; }
-  #more_links_pod li img {
+  width: 167px;
+  padding: 0 0 0 12px; }
+  #more_links_pod li:first-child {
+    padding-left: 0; }
+  #more_links_pod li .thumbnail_link {
     display: block;
-    width: 167px;
+    width: 165px;
     height: 110px;
     margin: 0 0 7px;
     border: 1px solid #d2dce1;
     border-radius: 3px; }
+    #more_links_pod li .thumbnail_link img {
+      display: block;
+      width: 165px;
+      height: 110px; }
   #more_links_pod li a {
     color: #000; }
     #more_links_pod li a:hover {
@@ -2247,7 +2249,7 @@ ratings_big_wrapper .title {
   border: 1px solid #ccc;
   border-radius: 4px; }
   #map_cont .venue_map {
-    height: 54px; }
+    height: 230px; }
 
 .gal_map_overlay {
   display: none;
@@ -2276,11 +2278,12 @@ ratings_big_wrapper .title {
   padding: 0 20px 0 0;
   z-index: 2000;
   background: url(/assets/map/map_bubble_sprite.png) 100% -61px no-repeat transparent; }
-  .map_tooltip .bubble_text {
+  .map_tooltip .map_tooltip_content {
     height: 41px;
     padding: 10px 0 10px 20px;
     background: url(/assets/map/map_bubble_sprite.png) 0 0 no-repeat transparent; }
-  .map_tooltip .bubble_headline {
+  .map_tooltip .title {
+    display: block;
     font-size: 18px;
     font-weight: bold; }
   .map_tooltip .blue_text {
@@ -2599,9 +2602,13 @@ ratings_big_wrapper .title {
       color: #fff; }
   #the_scene .emma h3, #the_scene .emma p {
     color: #000; }
-  #the_scene .read_more .dateline.small-text.caps {
+  #the_scene .read_more .dateline {
+    float: left;
+    padding: 0;
+    color: #8ea8b5;
     font-size: 11px;
-    color: #8ea8b5; }
+    line-height: 16px;
+    text-transform: uppercase; }
   #the_scene .read_more .clipped {
     height: 170px; }
   #the_scene .read_more .more_toggle {
@@ -2699,6 +2706,35 @@ ratings_big_wrapper .title {
   height: 11px; }
 .city_events .inner_divider {
   height: 3px; }
+
+/* Stickers for venues/performer pages */
+.closed_sticker,
+.on_tour_sticker,
+.in_season_sticker {
+  display: block;
+  position: absolute;
+  left: 343px;
+  top: 45px;
+  z-index: 1000;
+  height: 97px;
+  width: 97px;
+  background-image: url(/assets/performers/performers_sprite.png); }
+
+.closed_sticker {
+  background-image: url("/assets/content_bg/pe_venue_closed.png");
+  background-position: 0 -9px; }
+
+.on_tour_sticker {
+  background-position: -200px -296px; }
+
+.on_tour_sticker:hover {
+  background-position: -200px -393px; }
+
+.in_season_sticker {
+  background-position: -297px -296px; }
+
+.in_season_sticker:hover {
+  background-position: -297px -393px; }
 /*
 
 
@@ -2708,14 +2744,6 @@ ratings_big_wrapper .title {
 #object_page_info {
   /* Venue ratings tooltip trigger/content styles.
   -------------------------------------------------------------- */ }
-  #object_page_info .closed_sticker {
-    position: absolute;
-    left: 343px;
-    top: -2px;
-    z-index: 1000;
-    width: 96px;
-    height: 105px;
-    background: url("/assets/content_bg/pe_venue_closed.png") no-repeat transparent; }
   #object_page_info .ratings_big_wrapper {
     position: relative;
     width: 347px;
@@ -2830,11 +2858,11 @@ ratings_big_wrapper .title {
 :: Styles for the character tips
 ------------------------------------------- */
 .char_tip {
-  color: #FFFFFF;
-  margin-top: 27px;
+  width: 330px;
   max-height: 745px;
+  margin-top: 27px;
   padding: 0 0 0 15px;
-  width: 330px; }
+  color: #fff; }
 
 .char_link {
   display: block;
@@ -2868,97 +2896,75 @@ ratings_big_wrapper .title {
   background-image: url(/assets/content_bg/char_tip_figure_emma.png); }
 
 .char_tip_sprite {
-  background: url(/assets/content_bg/char_tip_sprite.png); }
+  background-image: url(/assets/content_bg/char_tip_sprite.png); }
 
 .char_tip .tip {
-  width: 207px;
-  position: relative; }
-
-.char_tip .tip a:link,
-.char_tip .tip a:visited,
-.char_tip .tip a:hover {
-  color: #fff; }
-
-.char_tip.emma .tip a:link,
-.char_tip.emma .tip a:visited,
-.char_tip.emma .tip a:hover {
-  color: #000;
-  text-decoration: underline; }
-
-.char_tip .tip .top {
-  width: 207px;
-  height: 13px; }
-
+  position: relative;
+  width: 207px; }
+  .char_tip .tip a:link, .char_tip .tip a:visited, .char_tip .tip a:hover {
+    color: #fff; }
+  .char_tip .tip .top {
+    width: 207px;
+    height: 13px; }
+  .char_tip .tip .bottom {
+    width: 207px;
+    height: 17px; }
+  .char_tip .tip .point {
+    position: absolute;
+    top: 42px;
+    right: -37px;
+    width: 41px;
+    height: 34px; }
+  .char_tip .tip .tip_text {
+    padding: 0 15px;
+    background-repeat: repeat-y; }
+    .char_tip .tip .tip_text .tip_text_content p:before {
+      content: open-quote; }
+    .char_tip .tip .tip_text .tip_text_content p:after {
+      content: close-quote; }
+    .char_tip .tip .tip_text .title {
+      margin: 0 0 5px;
+      font-size: 17px;
+      font-weight: bold; }
 .char_tip.lucas .tip .top {
   background-position: 0 0; }
-
+.char_tip.lucas .tip .bottom {
+  background-position: 0 -53px; }
+.char_tip.lucas .tip .point {
+  background-position: 0 -122px; }
+.char_tip.lucas .tip .tip_text {
+  background-image: url(/assets/content_bg/char_tip_lucas_bg_repeat.png); }
 .char_tip.adriana .tip .top {
   background-position: 0 -13px; }
-
+.char_tip.adriana .tip .bottom {
+  background-position: 0 -70px; }
+.char_tip.adriana .tip .point {
+  background-position: -41px -122px; }
+.char_tip.adriana .tip .tip_text {
+  background-image: url(/assets/content_bg/char_tip_adriana_bg_repeat.png); }
 .char_tip.jonah .tip .top {
   background-position: 0 -26px; }
-
+.char_tip.jonah .tip .bottom {
+  background-position: 0 -87px; }
+.char_tip.jonah .tip .point {
+  background-position: -82px -122px; }
+.char_tip.jonah .tip .tip_text {
+  background-image: url(/assets/content_bg/char_tip_jonah_bg_repeat.png); }
+.char_tip.emma .tip a:link, .char_tip.emma .tip a:visited, .char_tip.emma .tip a:hover {
+  color: #000;
+  text-decoration: underline; }
 .char_tip.emma .tip .top {
   background-position: 0 -39px; }
-
-.char_tip .tip .tip_text {
-  padding: 0 15px; }
+.char_tip.emma .tip .bottom {
+  background-position: 0 -104px; }
+.char_tip.emma .tip .point {
+  background-position: -123px -122px; }
+.char_tip.emma .tip .tip_text {
+  color: #000;
+  background-image: url(/assets/content_bg/char_tip_emma_bg_repeat.png); }
 
 #review_info .char_tip .tip .tip_text p {
   padding: 0; }
-
-.char_tip.lucas .tip .tip_text {
-  background: url(/assets/content_bg/char_tip_lucas_bg_repeat.png) repeat-y; }
-
-.char_tip.adriana .tip .tip_text {
-  background: url(/assets/content_bg/char_tip_adriana_bg_repeat.png) repeat-y; }
-
-.char_tip.jonah .tip .tip_text {
-  background: url(/assets/content_bg/char_tip_jonah_bg_repeat.png) repeat-y; }
-
-.char_tip.emma .tip .tip_text {
-  background: url(/assets/content_bg/char_tip_emma_bg_repeat.png) repeat-y;
-  color: #000; }
-
-.char_tip .tip .tip_text .title {
-  font-size: 17px;
-  font-weight: bold;
-  margin: 0 0 5px; }
-
-.char_tip .tip .bottom {
-  width: 207px;
-  height: 17px; }
-
-.char_tip.lucas .tip .bottom {
-  background-position: 0 -53px; }
-
-.char_tip.adriana .tip .bottom {
-  background-position: 0 -70px; }
-
-.char_tip.jonah .tip .bottom {
-  background-position: 0 -87px; }
-
-.char_tip.emma .tip .bottom {
-  background-position: 0 -104px; }
-
-.char_tip .tip .point {
-  height: 34px;
-  position: absolute;
-  right: -37px;
-  top: 42px;
-  width: 41px; }
-
-.char_tip.lucas .tip .point {
-  background-position: 0 -122px; }
-
-.char_tip.adriana .tip .point {
-  background-position: -41px -122px; }
-
-.char_tip.jonah .tip .point {
-  background-position: -82px -122px; }
-
-.char_tip.emma .tip .point {
-  background-position: -123px -122px; }
 
 /* USER RATINGS AND REVIEWS
 -----------------------------------------

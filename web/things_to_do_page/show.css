@@ -47,8 +47,6 @@
     font-family: "Arial"; }
     #left_container .things_to_do_content .more_link a, #left_container .things_to_do_content .more_link .fake_link {
       text-decoration: underline; }
-  #left_container .things_to_do_content .top_section_header.blue_section_divider {
-    margin: 0; }
   #left_container .things_to_do_content .two_column_list .column_block {
     width: 344px;
     float: left; }
@@ -117,13 +115,14 @@
   width: 706px;
   /* Override styles from liked_by.scss */ }
   .three_item_carousel .page_count {
-    display: inline-block;
-    padding: 2px 0 0; }
+    float: right;
+    position: relative;
+    top: 10px; }
     .three_item_carousel .page_count .dot {
       float: left;
       width: 8px;
       height: 8px;
-      margin-left: 10px;
+      margin: 0 0 0 10px;
       background-color: #16aeeb;
       border-radius: 50%;
       cursor: pointer; }
@@ -262,6 +261,7 @@
             height: 16px;
             font-size: 14px;
             font-weight: bold;
+            font-family: 'Arial', sans-serif;
             line-height: 15px;
             overflow: hidden; }
             .three_item_carousel .scroller_wrapper .screens_container .screens_wrapper .spot_item .details .event_venue .black_link {
@@ -512,46 +512,45 @@
     float: right; }
   .liked_by ul {
     position: relative; }
-  .liked_by li {
+  .liked_by .character_cont {
     float: left;
     margin: 0 4px 0 0;
     padding: 0 0 2px;
-    border-bottom: 2px solid; }
-    .liked_by li:hover {
-      cursor: pointer; }
-  .liked_by .character {
-    display: block;
-    width: 25px;
-    height: 25px;
-    background-image: url(/assets/characters/liked_by_sprite.png);
-    border: 1px solid #adc0c9;
-    border-radius: 2px;
-    cursor: pointer; }
-  .liked_by ul {
+    border-bottom: 2px solid;
     /* Tooltip container and point positioning for liked by characters */ }
-    .liked_by ul .dialog_box {
+    .liked_by .character_cont:hover {
+      cursor: pointer; }
+    .liked_by .character_cont .character {
+      display: block;
+      width: 25px;
+      height: 25px;
+      background-image: url(/assets/characters/liked_by_sprite.png);
+      border: 1px solid #adc0c9;
+      border-radius: 2px;
+      cursor: pointer; }
+    .liked_by .character_cont .dialog_box {
       right: -9px;
       bottom: 41px; }
-      .liked_by ul .dialog_box .dialog_content_wrapper {
+      .liked_by .character_cont .dialog_box .dialog_content_wrapper {
         width: 184px;
         padding: 11px 10px 9px; }
-      .liked_by ul .dialog_box .dialog_img {
+      .liked_by .character_cont .dialog_box .dialog_img {
         display: block;
         float: left;
         width: 32px;
         height: 87px;
         background-image: url(/assets/characters/liked_by_sprite.png); }
-      .liked_by ul .dialog_box .dialog_content {
+      .liked_by .character_cont .dialog_box .dialog_content {
         float: left;
         width: 134px;
         margin: 7px 0 0 11px; }
-    .liked_by ul .dialog_point {
+    .liked_by .character_cont .dialog_point {
       position: relative;
       bottom: 39px;
       left: 1px;
       border-top: 12px solid #889AA4;
       border-bottom: none; }
-      .liked_by ul .dialog_point .dialog_inner_point {
+      .liked_by .character_cont .dialog_point .dialog_inner_point {
         bottom: -5px;
         left: -10px;
         border-top: 10px solid #F7F9FB;
@@ -619,15 +618,15 @@
       background-position: -61px -33px; }
     .liked_by .disabled.emma .character {
       background-position: -91px -33px; }
-  .liked_by.liked_by_big li {
+  .liked_by.liked_by_big .character_cont {
     border-width: 3px; }
-  .liked_by.liked_by_big .character {
-    width: 28px;
-    height: 28px; }
-  .liked_by.liked_by_big ul .dialog_box {
-    bottom: 43px; }
-  .liked_by.liked_by_big ul .dialog_point {
-    bottom: 41px; }
+    .liked_by.liked_by_big .character_cont .character {
+      width: 28px;
+      height: 28px; }
+    .liked_by.liked_by_big .character_cont .dialog_box {
+      bottom: 43px; }
+    .liked_by.liked_by_big .character_cont .dialog_point {
+      bottom: 41px; }
   .liked_by.liked_by_big .lucas .character {
     background-position: 0 0; }
   .liked_by.liked_by_big .lucas:hover .character {
@@ -809,10 +808,15 @@
       margin: 0;
       padding: 0;
       border-bottom: 0; }
+      .browse_category_boxes .cell ul li {
+        margin: 6px 0 0;
+        line-height: 13px; }
+        .browse_category_boxes .cell ul li:first-child {
+          margin-top: 0; }
       .browse_category_boxes .cell ul a {
         display: inline-block;
         padding: 0 0 0 11px;
-        background-position: -114px -273px;
+        background-position: -114px -275px;
         background-repeat: no-repeat; }
         .browse_category_boxes .cell ul a.selected {
           background-image: url(/assets/content_bg/application_sprite.png); }

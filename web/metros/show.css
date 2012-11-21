@@ -197,9 +197,9 @@
   font-weight: bold; }
   .more_link a, .more_link .fake_link {
     text-decoration: underline; }
-.blue_section_divider {
+.blue_header {
   font-size: 20px;
-  line-height: 11px; }
+  line-height: 24px; }
 
 @media only screen and (max-device-width: 1280px) {
   /* For android layouts only */
@@ -209,7 +209,7 @@
   width: 716px;
   padding-bottom: 3px;
   margin-bottom: 8px; }
-  .top_section_header .blue_section_divider {
+  .top_section_header .blue_header {
     margin-top: 0;
     width: 326px; }
   .top_section_header .section {
@@ -461,14 +461,14 @@
             width: 98px;
             height: 65px; }
         .top_section_content .vertical_slider .items_collection .small_items li.item .details_wrapper .headline.sub_headline {
-          text-decoration: underline;
-          font-size: 17px;
           position: relative;
-          top: -3px;
-          line-height: 19px;
-          margin-bottom: -1px;
+          top: -2px;
           z-index: 0;
-          max-height: 38px;
+          max-height: 34px;
+          margin-bottom: 2px;
+          font-size: 16px;
+          text-decoration: underline;
+          line-height: 17px;
           overflow: hidden; }
           .top_section_content .vertical_slider .items_collection .small_items li.item .details_wrapper .headline.sub_headline a:hover {
             color: #597686; }
@@ -1232,10 +1232,15 @@ div.datepicker {
       margin: 0;
       padding: 0;
       border-bottom: 0; }
+      .browse_category_boxes .cell ul li {
+        margin: 6px 0 0;
+        line-height: 13px; }
+        .browse_category_boxes .cell ul li:first-child {
+          margin-top: 0; }
       .browse_category_boxes .cell ul a {
         display: inline-block;
         padding: 0 0 0 11px;
-        background-position: -114px -273px;
+        background-position: -114px -275px;
         background-repeat: no-repeat; }
         .browse_category_boxes .cell ul a.selected {
           background-image: url(/assets/content_bg/application_sprite.png); }

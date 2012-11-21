@@ -1023,9 +1023,7 @@ td.right_side.pod_sides {
 
 */
 .headline {
-  font-family: 'PT Sans', arial, sans-serif;
-  color: #000;
-  font-size: 32px;
+  font-size: 31px;
   font-weight: bold;
   line-height: 33px; }
   .headline a, .headline a:link, .headline a:visited {
@@ -1166,10 +1164,11 @@ td.right_side.pod_sides {
 #tophalf .ibiza_party_climate .inner_divider.dashed {
   clear: both; }
 #tophalf .ibiza_party_climate .subtitle {
-  color: #0099FF;
+  color: #09f;
+  margin-bottom: 5px;
   font-size: 17px;
   font-weight: bold;
-  margin-bottom: 5px; }
+  font-family: 'Arial', sans-serif; }
 #tophalf .ibiza_party_climate .spot_row .read_more {
   margin: 0 0 20px; }
   #tophalf .ibiza_party_climate .spot_row .read_more p {

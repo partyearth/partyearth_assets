@@ -25,15 +25,14 @@
     right: -15px;
     bottom: 0; }
 
-.small_city .top_section_header .blue_section_divider {
+.small_city .top_section_header .blue_header {
   width: 674px; }
 
 .top_section_header {
   width: 716px; }
-  .top_section_header .blue_section_divider {
+  .top_section_header .blue_header {
     margin: 0;
-    width: 325px;
-    /*width:323px;*/ }
+    width: 325px; }
   .top_section_header .section {
     color: #bbe3fe;
     background: -webkit-gradient(linear, 0 0, 0 100%, from(#1a76ce), to(#0098fe));

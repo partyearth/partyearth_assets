@@ -15,7 +15,7 @@
     border: 1px solid #adc0c9;
     border-radius: 2px;
     text-decoration: none; }
-  #seo_pagination em, #seo_pagination a:hover, #seo_pagination span:hover {
+  #seo_pagination em, #seo_pagination .current, #seo_pagination a:hover, #seo_pagination span:hover {
     color: #fff;
     background-color: #09f;
     border: 1px solid #09f;

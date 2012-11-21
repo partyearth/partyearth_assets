@@ -68,7 +68,8 @@
 .map.Loading {
   background-image: url(/assets/map/google_maps_background.jpg) !important; }
 
-.bubble_headline {
+.title {
+  display: block;
   color: #000;
   font-size: 18px;
   font-weight: bold; }
@@ -134,7 +135,7 @@
   display: none;
   z-index: 2000; }
 
-.map_tooltip .bubble_text {
+.map_tooltip .map_tooltip_content {
   background: url(/assets/map/map_bubble_sprite.png) 0 0 no-repeat transparent;
   height: 41px;
   padding: 10px 0 10px 21px; }
@@ -1169,46 +1170,45 @@ ratings_big_wrapper .title {
     float: right; }
   .liked_by ul {
     position: relative; }
-  .liked_by li {
+  .liked_by .character_cont {
     float: left;
     margin: 0 4px 0 0;
     padding: 0 0 2px;
-    border-bottom: 2px solid; }
-    .liked_by li:hover {
-      cursor: pointer; }
-  .liked_by .character {
-    display: block;
-    width: 25px;
-    height: 25px;
-    background-image: url(/assets/characters/liked_by_sprite.png);
-    border: 1px solid #adc0c9;
-    border-radius: 2px;
-    cursor: pointer; }
-  .liked_by ul {
+    border-bottom: 2px solid;
     /* Tooltip container and point positioning for liked by characters */ }
-    .liked_by ul .dialog_box {
+    .liked_by .character_cont:hover {
+      cursor: pointer; }
+    .liked_by .character_cont .character {
+      display: block;
+      width: 25px;
+      height: 25px;
+      background-image: url(/assets/characters/liked_by_sprite.png);
+      border: 1px solid #adc0c9;
+      border-radius: 2px;
+      cursor: pointer; }
+    .liked_by .character_cont .dialog_box {
       right: -9px;
       bottom: 41px; }
-      .liked_by ul .dialog_box .dialog_content_wrapper {
+      .liked_by .character_cont .dialog_box .dialog_content_wrapper {
         width: 184px;
         padding: 11px 10px 9px; }
-      .liked_by ul .dialog_box .dialog_img {
+      .liked_by .character_cont .dialog_box .dialog_img {
         display: block;
         float: left;
         width: 32px;
         height: 87px;
         background-image: url(/assets/characters/liked_by_sprite.png); }
-      .liked_by ul .dialog_box .dialog_content {
+      .liked_by .character_cont .dialog_box .dialog_content {
         float: left;
         width: 134px;
         margin: 7px 0 0 11px; }
-    .liked_by ul .dialog_point {
+    .liked_by .character_cont .dialog_point {
       position: relative;
       bottom: 39px;
       left: 1px;
       border-top: 12px solid #889AA4;
       border-bottom: none; }
-      .liked_by ul .dialog_point .dialog_inner_point {
+      .liked_by .character_cont .dialog_point .dialog_inner_point {
         bottom: -5px;
         left: -10px;
         border-top: 10px solid #F7F9FB;
@@ -1276,15 +1276,15 @@ ratings_big_wrapper .title {
       background-position: -61px -33px; }
     .liked_by .disabled.emma .character {
       background-position: -91px -33px; }
-  .liked_by.liked_by_big li {
+  .liked_by.liked_by_big .character_cont {
     border-width: 3px; }
-  .liked_by.liked_by_big .character {
-    width: 28px;
-    height: 28px; }
-  .liked_by.liked_by_big ul .dialog_box {
-    bottom: 43px; }
-  .liked_by.liked_by_big ul .dialog_point {
-    bottom: 41px; }
+    .liked_by.liked_by_big .character_cont .character {
+      width: 28px;
+      height: 28px; }
+    .liked_by.liked_by_big .character_cont .dialog_box {
+      bottom: 43px; }
+    .liked_by.liked_by_big .character_cont .dialog_point {
+      bottom: 41px; }
   .liked_by.liked_by_big .lucas .character {
     background-position: 0 0; }
   .liked_by.liked_by_big .lucas:hover .character {
@@ -1892,7 +1892,7 @@ ratings_big_wrapper .title {
             bottom: 0;
             right: 9px;
             width: 120px; }
-            #left_container .search_page_content #results_list .search_result .result_content .top_right_section .liked_by .dialog_content p {
+            #left_container .search_page_content #results_list .search_result .result_content .top_right_section .liked_by .character_cont .dialog_content p {
               text-align: left; }
           #left_container .search_page_content #results_list .search_result .result_content .top_right_section .add_to_calendar {
             position: absolute;
@@ -1916,22 +1916,27 @@ ratings_big_wrapper .title {
       min-height: 102px;
       padding: 0 9px 30px 9px; }
     #left_container .search_page_content #results_list .search_result.event .result_content .event_performers {
+      position: relative;
+      width: 451px;
+      margin: 10px 0 0;
+      padding: 7px 0 0 102px;
       color: #6C8898;
       font-size: 12px;
+      line-height: 14px;
       border-top: 1px dashed #8ea8b5;
-      margin: 10px 0 -3px 0;
-      padding: 7px 0 0 0;
-      min-height: 13px;
-      overflow: visible;
-      width: 552px;
-      line-height: 14px; }
-      #left_container .search_page_content #results_list .search_result.event .result_content .event_performers .performer_label {
+      overflow: visible; }
+      #left_container .search_page_content #results_list .search_result.event .result_content .event_performers dt {
+        position: absolute;
+        left: 0;
         margin: 0 30px 0 0;
-        font-size: 9px; }
-      #left_container .search_page_content #results_list .search_result.event .result_content .event_performers a {
-        color: #375363; }
-      #left_container .search_page_content #results_list .search_result.event .result_content .event_performers a:hover {
-        color: #597686; }
+        font-size: 9px;
+        text-transform: uppercase; }
+      #left_container .search_page_content #results_list .search_result.event .result_content .event_performers a, #left_container .search_page_content #results_list .search_result.event .result_content .event_performers a:link, #left_container .search_page_content #results_list .search_result.event .result_content .event_performers a:visited {
+        color: #375363;
+        text-decoration: none; }
+        #left_container .search_page_content #results_list .search_result.event .result_content .event_performers a:hover, #left_container .search_page_content #results_list .search_result.event .result_content .event_performers a:link:hover, #left_container .search_page_content #results_list .search_result.event .result_content .event_performers a:visited:hover {
+          color: #597686;
+          text-decoration: underline; }
     #left_container .search_page_content #results_list .search_result.performer {
       /*FOR IE7*/
       *padding-bottom: 4px !important; }

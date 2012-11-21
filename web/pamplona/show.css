@@ -441,7 +441,8 @@ td.right_side.pod_sides {
 .map.Loading {
   background-image: url(/assets/map/google_maps_background.jpg) !important; }
 
-.bubble_headline {
+.title {
+  display: block;
   color: #000;
   font-size: 18px;
   font-weight: bold; }
@@ -507,7 +508,7 @@ td.right_side.pod_sides {
   display: none;
   z-index: 2000; }
 
-.map_tooltip .bubble_text {
+.map_tooltip .map_tooltip_content {
   background: url(/assets/map/map_bubble_sprite.png) 0 0 no-repeat transparent;
   height: 41px;
   padding: 10px 0 10px 21px; }
@@ -2529,9 +2530,7 @@ td.right_side.pod_sides {
 /*BEGIN GENERAL PROPERTIES*/
 /*------------------------------------------------------------*/
 .headline {
-  font-family: 'PT Sans', arial, sans-serif;
-  color: #000;
-  font-size: 32px;
+  font-size: 31px;
   font-weight: bold;
   line-height: 33px; }
   .headline a, .headline a:link, .headline a:visited {
