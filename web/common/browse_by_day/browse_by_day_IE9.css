@@ -5,12 +5,6 @@
   .blue_tag .point {
     width: 0px; }
 
-.top_section_header .blue_header {
-  width: 327px;
-  background: #0f84e1;
-  -ms-filter: none;
-  filter: none;
-  height: 11px; }
 .top_section_header .section {
   background: #0f84e1;
   border-radius: 2px 2px 2px 2px;

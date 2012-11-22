@@ -83,17 +83,20 @@
               border-bottom: none; }
           .three_item_carousel .scroller_wrapper .screens_container .screens_wrapper .spot_item .desc, .three_item_carousel .scroller_wrapper .screens_container .screens_wrapper .spot_item .user_review_summary {
             position: relative;
+            height: 80px;
             font-size: 12px;
-            line-height: 16px; }
+            line-height: 16px;
+            overflow: hidden; }
             .three_item_carousel .scroller_wrapper .screens_container .screens_wrapper .spot_item .desc .ellipsis, .three_item_carousel .scroller_wrapper .screens_container .screens_wrapper .spot_item .user_review_summary .ellipsis {
               position: absolute;
               right: 0;
               bottom: 0;
               background-color: #fff;
               overflow: hidden; }
-          .three_item_carousel .scroller_wrapper .screens_container .screens_wrapper .spot_item .details, .three_item_carousel .scroller_wrapper .screens_container .screens_wrapper .spot_item .user_review_summary {
-            height: 82px;
-            overflow: hidden; }
+            .three_item_carousel .scroller_wrapper .screens_container .screens_wrapper .spot_item .desc .read_more, .three_item_carousel .scroller_wrapper .screens_container .screens_wrapper .spot_item .user_review_summary .read_more {
+              position: relative;
+              bottom: 2px;
+              font-size: 11px; }
           .three_item_carousel .scroller_wrapper .screens_container .screens_wrapper .spot_item .user_review_summary p.by_line {
             margin: 0 0 2px; }
           .three_item_carousel .scroller_wrapper .screens_container .screens_wrapper .spot_item .details .desc .blue_tag {
@@ -128,10 +131,6 @@
             display: block;
             color: #000;
             text-decoration: none; }
-          .three_item_carousel .scroller_wrapper .screens_container .screens_wrapper .spot_item .details .desc .read_more {
-            position: relative;
-            bottom: 2px;
-            font-size: 11px; }
           .three_item_carousel .scroller_wrapper .screens_container .screens_wrapper .spot_item .details .desc.event {
             padding-top: 8px;
             max-height: 32px; }

@@ -2452,10 +2452,12 @@ ratings_big_wrapper .title {
     color: #000; }
   #object_page_info #more_details dl {
     float: left;
-    width: 236px; }
+    width: 236px;
+    left: 25px; }
+    #object_page_info #more_details dl:first-child {
+      left: auto; }
   #object_page_info #more_details #more_details_right {
     position: relative;
-    left: 25px;
     width: 245px; }
   #object_page_info .spot_type li {
     position: relative;

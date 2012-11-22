@@ -555,6 +555,7 @@
           #left_container .search_page_content .scrolling_filters .result_sections .result_tab .title {
             display: inline-block;
             zoom: 1;
+            color: #09f;
             font-weight: normal;
             font-size: 15px;
             text-decoration: underline; }
@@ -952,6 +953,9 @@
           text-align: right;
           line-height: 14px;
           position: relative; }
+          #left_container .search_page_content #results_list .search_result .result_content .top_right_section p {
+            font-size: 11px;
+            line-height: 14px; }
           #left_container .search_page_content #results_list .search_result .result_content .top_right_section .neighborhood_link {
             color: #597686;
             display: block;
@@ -972,8 +976,6 @@
           #left_container .search_page_content #results_list .search_result .result_content .top_right_section span.result_venue {
             color: #597686 !important;
             text-decoration: none !important; }
-          #left_container .search_page_content #results_list .search_result .result_content .top_right_section .result_address {
-            line-height: 14px; }
           #left_container .search_page_content #results_list .search_result .result_content .top_right_section .liked_by {
             position: absolute;
             bottom: 0;
@@ -1108,27 +1110,27 @@
         left: -50%; }
         #left_container .search_page_content .pagination .result_count .prev_btn,
         #left_container .search_page_content .pagination .result_count .next_btn {
-          background: url(/assets/search/search2_sprite.png) 0 0 no-repeat transparent;
+          position: relative;
+          top: 2px;
           width: 18px;
           height: 17px;
-          cursor: pointer;
-          position: relative;
-          top: 2px; }
+          background-image: url(/assets/search/search2_sprite.png);
+          cursor: pointer; }
         #left_container .search_page_content .pagination .result_count .prev_btn {
-          background-position: -144px -8px;
-          margin-right: 6px; }
-        #left_container .search_page_content .pagination .result_count .prev_btn:hover {
-          background-position: -123px -8px; }
-        #left_container .search_page_content .pagination .result_count .prev_btn.disabled {
-          background-position: -144px -25px;
-          cursor: default !important; }
+          margin-right: 6px;
+          background-position: -144px -8px; }
+          #left_container .search_page_content .pagination .result_count .prev_btn:hover {
+            background-position: -123px -8px; }
+          #left_container .search_page_content .pagination .result_count .prev_btn.disabled {
+            background-position: -144px -25px;
+            cursor: default !important; }
         #left_container .search_page_content .pagination .result_count .next_btn {
           background-position: -172px -8px; }
-        #left_container .search_page_content .pagination .result_count .next_btn:hover {
-          background-position: -123px -25px; }
-        #left_container .search_page_content .pagination .result_count .next_btn.disabled {
-          background-position: -172px -25px;
-          cursor: default !important; }
+          #left_container .search_page_content .pagination .result_count .next_btn:hover {
+            background-position: -123px -25px; }
+          #left_container .search_page_content .pagination .result_count .next_btn.disabled {
+            background-position: -172px -25px;
+            cursor: default !important; }
     #left_container .search_page_content .column_wrapper.performer_content #results_list table td {
       position: relative; }
     #left_container .search_page_content .column_wrapper.performer_content #results_list td.last_performer .search_result.performer {
