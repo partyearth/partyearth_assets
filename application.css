@@ -3211,7 +3211,7 @@ If you don't know where else to place something, place it below this line.
 .venue_type, .type {
   margin: 0 0 5px;
   font-size: 9px;
-  line-height: 11px;
+  line-height: 12px;
   text-transform: uppercase;
   font-family: 'Arial', sans-serif;
   color: #6C8898; }
@@ -3463,7 +3463,7 @@ If you don't know where else to place something, place it below this line.
   margin: 0 0 8px;
   padding: 10px 16px;
   color: #fff;
-  font-size: 23px;
+  font-size: 22px;
   font-weight: bold;
   text-shadow: 0 1px 0 #8bc0ec, 0 -1px 0 #0a66a8, 0 0 8px #006cba;
   line-height: 24px;
@@ -3492,7 +3492,7 @@ If you don't know where else to place something, place it below this line.
       float: right;
       width: 375px;
       margin: 0 0 0 20px;
-      padding: 0 0 0 20px;
+      padding: 0 0 0 15px;
       font-size: 12px;
       line-height: 25px;
       font-weight: normal;

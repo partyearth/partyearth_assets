@@ -167,8 +167,8 @@
     padding: 8px 0 0;
     border-top: 1px dashed #adc0c9; }
     #right_sidebar .list .list_item.featured {
-      margin: 0 0 10px;
-      padding: 0 0 10px;
+      margin: 0 0 8px;
+      padding: 0 0 8px;
       border-bottom: 1px solid #8ea8b5; }
       #right_sidebar .list .list_item.featured h4 {
         margin: 0 0 8px;
@@ -237,8 +237,8 @@
         #right_sidebar .photo_list .details h4 a:hover {
           color: #597686; }
   #right_sidebar .pod_footer {
-    margin: 8px 0 0;
-    padding: 8px 0 0;
+    margin: 5px 0 0;
+    padding: 5px 0 0;
     border-top: 1px solid #adc0c9; }
     #right_sidebar .pod_footer a, #right_sidebar .pod_footer a:link, #right_sidebar .pod_footer a:visited, #right_sidebar .pod_footer .fake_link {
       float: right;
@@ -282,7 +282,6 @@
   #right_sidebar .gptp_right_rail h3 {
     padding: 0;
     font-weight: normal;
-    text-align: center;
     border: none; }
   #right_sidebar .gptp_right_rail ul li {
     float: left;
@@ -319,6 +318,7 @@
       float: left;
       height: 46px;
       margin-top: 2px;
+      margin-bottom: -6px;
       background-image: url(/assets/common/right_colmun_sprite.png); }
       #right_sidebar .gptp_right_rail .buttons a.writer, #right_sidebar .gptp_right_rail .buttons a:link.writer, #right_sidebar .gptp_right_rail .buttons a:visited.writer {
         left: -2px;
@@ -396,7 +396,7 @@
   #recent_articles .list .list_item .thumbnail_link {
     width: 98px;
     height: 65px;
-    margin: 0 0 11px; }
+    margin: 0 0 5px; }
     #recent_articles .list .list_item .thumbnail_link img {
       width: 98px;
       height: 65px; }
@@ -661,22 +661,22 @@
               margin: 0 9px 0 0;
               padding: 0;
               border-bottom: none; }
-          .three_item_carousel .scroller_wrapper .screens_container .screens_wrapper .spot_item .desc, .three_item_carousel .scroller_wrapper .screens_container .screens_wrapper .spot_item .user_review_summary {
+          .three_item_carousel .scroller_wrapper .screens_container .screens_wrapper .spot_item .details, .three_item_carousel .scroller_wrapper .screens_container .screens_wrapper .spot_item .user_review_summary {
             position: relative;
             height: 80px;
             font-size: 12px;
             line-height: 16px;
             overflow: hidden; }
-            .three_item_carousel .scroller_wrapper .screens_container .screens_wrapper .spot_item .desc .ellipsis, .three_item_carousel .scroller_wrapper .screens_container .screens_wrapper .spot_item .user_review_summary .ellipsis {
+            .three_item_carousel .scroller_wrapper .screens_container .screens_wrapper .spot_item .details .ellipsis, .three_item_carousel .scroller_wrapper .screens_container .screens_wrapper .spot_item .user_review_summary .ellipsis {
               position: absolute;
               right: 0;
               bottom: 0;
               background-color: #fff;
               overflow: hidden; }
-            .three_item_carousel .scroller_wrapper .screens_container .screens_wrapper .spot_item .desc .read_more, .three_item_carousel .scroller_wrapper .screens_container .screens_wrapper .spot_item .user_review_summary .read_more {
-              position: relative;
-              bottom: 2px;
-              font-size: 11px; }
+              .three_item_carousel .scroller_wrapper .screens_container .screens_wrapper .spot_item .details .ellipsis a, .three_item_carousel .scroller_wrapper .screens_container .screens_wrapper .spot_item .details .ellipsis a:link, .three_item_carousel .scroller_wrapper .screens_container .screens_wrapper .spot_item .details .ellipsis a:visited, .three_item_carousel .scroller_wrapper .screens_container .screens_wrapper .spot_item .user_review_summary .ellipsis a, .three_item_carousel .scroller_wrapper .screens_container .screens_wrapper .spot_item .user_review_summary .ellipsis a:link, .three_item_carousel .scroller_wrapper .screens_container .screens_wrapper .spot_item .user_review_summary .ellipsis a:visited {
+                position: relative;
+                bottom: 2px;
+                font-size: 11px; }
           .three_item_carousel .scroller_wrapper .screens_container .screens_wrapper .spot_item .user_review_summary p.by_line {
             margin: 0 0 2px; }
           .three_item_carousel .scroller_wrapper .screens_container .screens_wrapper .spot_item .details .desc .blue_tag {

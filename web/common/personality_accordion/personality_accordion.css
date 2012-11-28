@@ -179,9 +179,12 @@
       margin: 0 20px 0 0;
       font-family: Arial, sans-serif; }
     .pe .character_content .tags_and_more .tags .black_link {
-      margin: 0 13px 0 0;
-      text-decoration: underline;
-      font-size: 12px; }
+      margin: 0 10px 0 0;
+      color: #333;
+      font-size: 11px;
+      text-decoration: underline; }
+      .pe .character_content .tags_and_more .tags .black_link:hover {
+        color: #597686; }
   .pe .character_content .tags_and_more .fake_link.float_right {
     font-size: 11px;
     text-decoration: underline; }
