@@ -273,15 +273,6 @@
     .top_section_header .section .small_text {
       font-size: 8px; }
   .top_section_header .section.Selected {
-    /*background:#ff6600;*/
-    /*color:#fff;*/
-    /*cursor:default;*/
-    /*position:relative;*/
-    /*box-shadow: inset 0px 0px 3px 1px #ba4c01;*/
-    /*border-radius: 4px;*/
-    /*border-top: 1px inset #F86300;*/
-    /*border-bottom: 1px inset #F86300;*/
-    /*padding: 13px 18px 19px;*/
     background: url(/assets/content_bg/browse_by_today_selected_bg.gif) 0 0 repeat-x #ff6600;
     color: white;
     cursor: default;
@@ -311,8 +302,6 @@
     cursor: pointer; }
     .top_section_header .section:hover .point {
       display: none; }
-  .top_section_header .section.Selected:hover .point {
-    /*display:block;*/ }
   .top_section_header .today.section {
     padding-left: 17px;
     padding-right: 17px; }
@@ -341,8 +330,6 @@
       .top_section_header .more_dates .date_picker_block .controls .clear_link {
         display: none; }
 
-.top_section_content .venue_type {
-  padding-top: 6px; }
 .top_section_content .event_venue_name {
   color: #375363;
   font-weight: bold;
@@ -352,14 +339,19 @@
     color: #597686; }
   .top_section_content .event_venue_name.nourl:hover {
     color: #375363; }
-.top_section_content .headline.sub_headline a:hover {
-  color: #597686; }
+.top_section_content .headline.sub_headline {
+  display: block;
+  margin: 0 0 2px;
+  color: #000;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 21px; }
+  .top_section_content .headline.sub_headline:hover {
+    color: #597686; }
 .top_section_content .featured_item {
   float: left;
   width: 345px;
   margin: 0 14px 0 0; }
-  .top_section_content .featured_item .headline.sub_headline {
-    text-decoration: underline; }
   .top_section_content .featured_item p {
     padding-bottom: 0; }
   .top_section_content .featured_item .item_img {
@@ -428,11 +420,12 @@
       margin-right: 10px; }
 .top_section_content .small_items {
   float: left;
-  width: 347px; }
+  width: 347px;
+  padding: 3px 0 0; }
   .top_section_content .small_items li.item {
     position: relative;
     padding: 7px 0 10px;
-    min-height: 153px;
+    min-height: 156px;
     border-top: 1px dashed #adc0c9; }
     .top_section_content .small_items li.item:first-child {
       padding-top: 0;
@@ -440,10 +433,8 @@
     .top_section_content .small_items li.item p {
       padding-bottom: 0; }
     .top_section_content .small_items li.item .headline.sub_headline {
-      text-decoration: underline;
       font-size: 17px;
-      position: relative;
-      bottom: -2px; }
+      line-height: 18px; }
     .top_section_content .small_items li.item .small_text.caps.blue_text {
       font-size: 10px; }
     .top_section_content .small_items li.item .item_img {
@@ -1200,30 +1191,29 @@ div.datepicker {
   width: 440px !important;
   height: 242px !important;
   padding: 9px 15px 9px 75px !important; }
-  .pe .character_content .headline.sub_headline {
+  .pe .character_content .char_cont_head {
+    display: block;
+    margin: 0 0 11px;
+    padding: 5px 0 0;
     color: #375363;
-    padding: 0 0 2px;
     font-size: 16px;
     line-height: 17px;
-    margin: 5px 0 0 0;
-    /*FOR IE8 AND BELOW*/
-    font-size: 15px\9; }
-  .pe .character_content p {
-    padding-bottom: 0; }
-  .pe .character_content .suggestion {
-    font-weight: bold;
-    font-size: 17px;
-    color: #adc0c9;
-    display: block;
-    margin: 0 0 5px 0; }
+    font-weight: bold; }
+    .pe .character_content .char_cont_head .char_cont_head_desc,
+    .pe .character_content .char_cont_head .char_cont_head_sug {
+      display: block; }
+    .pe .character_content .char_cont_head .char_cont_head_desc {
+      margin: 0 0 2px; }
+    .pe .character_content .char_cont_head .char_cont_head_sug {
+      color: #adc0c9;
+      font-size: 17px; }
   .pe .character_content .venue_item_wrapper {
-    float: left;
     height: 131px;
-    overflow: hidden;
+    margin: 0 0 4px;
+    padding: 10px 0;
     border-top: 1px dashed #ADC0C9;
     border-bottom: 1px dashed #ADC0C9;
-    padding: 10px 0;
-    margin: 6px 0 4px; }
+    overflow: hidden; }
     .pe .character_content .venue_item_wrapper .venue_item {
       width: 200px;
       height: 55px;
@@ -1420,20 +1410,22 @@ div.datepicker {
   /* Styles for the Get Paid To Party pods */ }
   #right_sidebar .pod {
     padding: 13px 14px; }
-  #right_sidebar h3, #right_sidebar .featured h4 {
+  #right_sidebar h3, #right_sidebar .featured .title {
+    display: block;
     color: #375363;
     font-size: 24px;
     font-weight: normal;
     line-height: 28px;
     margin: 0 0 8px;
     padding: 0 0 8px;
-    border-bottom: 1px dashed #adc0c9; }
-    #right_sidebar h3 a, #right_sidebar h3 a:link, #right_sidebar h3 a:visited, #right_sidebar .featured h4 a, #right_sidebar .featured h4 a:link, #right_sidebar .featured h4 a:visited {
+    border-bottom: 1px dashed #adc0c9;
+    color: #375363; }
+    #right_sidebar h3 a, #right_sidebar h3 a:link, #right_sidebar h3 a:visited, #right_sidebar .featured .title a, #right_sidebar .featured .title a:link, #right_sidebar .featured .title a:visited {
       color: #375363;
       text-decoration: underline; }
-      #right_sidebar h3 a:hover, #right_sidebar h3 a:link:hover, #right_sidebar h3 a:visited:hover, #right_sidebar .featured h4 a:hover, #right_sidebar .featured h4 a:link:hover, #right_sidebar .featured h4 a:visited:hover {
+      #right_sidebar h3 a:hover, #right_sidebar h3 a:link:hover, #right_sidebar h3 a:visited:hover, #right_sidebar .featured .title a:hover, #right_sidebar .featured .title a:link:hover, #right_sidebar .featured .title a:visited:hover {
         color: #000; }
-    #right_sidebar h3.small, #right_sidebar .featured h4.small {
+    #right_sidebar h3.small, #right_sidebar .featured .title.small {
       margin: 0 0 6px;
       padding: 0;
       color: #09F;
@@ -1441,9 +1433,12 @@ div.datepicker {
       font-weight: bold;
       line-height: 16px;
       border-bottom: 0; }
-  #right_sidebar h4 {
+  #right_sidebar .title {
     margin: 0 0 3px;
-    line-height: 15px; }
+    line-height: 15px;
+    text-decoration: underline; }
+    #right_sidebar .title:hover {
+      color: #000; }
   #right_sidebar .desc {
     position: relative;
     overflow: hidden; }
@@ -1503,7 +1498,7 @@ div.datepicker {
       margin: 0 0 8px;
       padding: 0 0 8px;
       border-bottom: 1px solid #8ea8b5; }
-      #right_sidebar .list .list_item.featured h4 {
+      #right_sidebar .list .list_item.featured .title {
         margin: 0 0 8px;
         padding: 0;
         font-size: 18px;
@@ -1562,16 +1557,15 @@ div.datepicker {
   #right_sidebar .photo_list .details {
     float: left;
     width: 120px; }
-    #right_sidebar .photo_list .details h4 {
+    #right_sidebar .photo_list .details .title {
       line-height: 15px;
-      margin: 0 0 3px; }
-      #right_sidebar .photo_list .details h4 a {
-        color: #000; }
-        #right_sidebar .photo_list .details h4 a:hover {
-          color: #597686; }
+      margin: 0 0 3px;
+      color: #000; }
+      #right_sidebar .photo_list .details .title:hover {
+        color: #597686; }
   #right_sidebar .pod_footer {
     margin: 5px 0 0;
-    padding: 5px 0 0;
+    padding: 9px 0 0;
     border-top: 1px solid #adc0c9; }
     #right_sidebar .pod_footer a, #right_sidebar .pod_footer a:link, #right_sidebar .pod_footer a:visited, #right_sidebar .pod_footer .fake_link {
       float: right;
@@ -1733,7 +1727,7 @@ div.datepicker {
     #recent_articles .list .list_item .thumbnail_link img {
       width: 98px;
       height: 65px; }
-  #recent_articles .list .list_item h4 {
+  #recent_articles .list .list_item .title {
     font-size: 11px; }
   #recent_articles .list .list_item.featured {
     float: none;

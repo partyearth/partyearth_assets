@@ -1,7 +1,3 @@
-.blue_header {
-  font-size: 20px;
-  line-height: 24px; }
-
 @media only screen and (max-device-width: 1280px) {
   /* For android layouts only */
   .top_section_header .blue_section_divider {
@@ -11,8 +7,9 @@
   padding-bottom: 3px;
   margin-bottom: 8px; }
   .top_section_header .blue_header {
+    width: 326px;
     margin-top: 0;
-    width: 326px; }
+    font-size: 20px; }
   .top_section_header .section {
     color: #bbe3fe;
     background: -webkit-gradient(linear, 0 0, 0 100%, from(#1a76ce), to(#0098fe));
@@ -133,7 +130,11 @@
     border-left: 2px solid #6da5c4;
     border-radius: 2px 0 2px 2px; }
     .top_section_content .featured_item .featured_caption .headline.sub_headline {
-      margin: 0 0 6px; }
+      display: block;
+      margin: 0 0 6px;
+      font-size: 20px;
+      font-weight: bold;
+      line-height: 21px; }
       .top_section_content .featured_item .featured_caption .headline.sub_headline a, .top_section_content .featured_item .featured_caption .headline.sub_headline a:visited {
         color: #fff;
         text-decoration: none; }
@@ -262,16 +263,19 @@
             width: 98px;
             height: 65px; }
         .top_section_content .vertical_slider .items_collection .small_items li.item .details_wrapper .headline.sub_headline {
+          display: block;
           position: relative;
           top: -2px;
           z-index: 0;
           max-height: 34px;
           margin-bottom: 2px;
+          color: #000;
           font-size: 16px;
+          font-weight: bold;
           text-decoration: underline;
           line-height: 17px;
           overflow: hidden; }
-          .top_section_content .vertical_slider .items_collection .small_items li.item .details_wrapper .headline.sub_headline a:hover {
+          .top_section_content .vertical_slider .items_collection .small_items li.item .details_wrapper .headline.sub_headline:hover {
             color: #597686; }
         .top_section_content .vertical_slider .items_collection .small_items li.item .details_wrapper .date_time {
           padding: 0;

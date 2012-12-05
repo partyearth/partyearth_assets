@@ -657,20 +657,22 @@
   /* Styles for the Get Paid To Party pods */ }
   #right_sidebar .pod {
     padding: 13px 14px; }
-  #right_sidebar h3, #right_sidebar .featured h4 {
+  #right_sidebar h3, #right_sidebar .featured .title {
+    display: block;
     color: #375363;
     font-size: 24px;
     font-weight: normal;
     line-height: 28px;
     margin: 0 0 8px;
     padding: 0 0 8px;
-    border-bottom: 1px dashed #adc0c9; }
-    #right_sidebar h3 a, #right_sidebar h3 a:link, #right_sidebar h3 a:visited, #right_sidebar .featured h4 a, #right_sidebar .featured h4 a:link, #right_sidebar .featured h4 a:visited {
+    border-bottom: 1px dashed #adc0c9;
+    color: #375363; }
+    #right_sidebar h3 a, #right_sidebar h3 a:link, #right_sidebar h3 a:visited, #right_sidebar .featured .title a, #right_sidebar .featured .title a:link, #right_sidebar .featured .title a:visited {
       color: #375363;
       text-decoration: underline; }
-      #right_sidebar h3 a:hover, #right_sidebar h3 a:link:hover, #right_sidebar h3 a:visited:hover, #right_sidebar .featured h4 a:hover, #right_sidebar .featured h4 a:link:hover, #right_sidebar .featured h4 a:visited:hover {
+      #right_sidebar h3 a:hover, #right_sidebar h3 a:link:hover, #right_sidebar h3 a:visited:hover, #right_sidebar .featured .title a:hover, #right_sidebar .featured .title a:link:hover, #right_sidebar .featured .title a:visited:hover {
         color: #000; }
-    #right_sidebar h3.small, #right_sidebar .featured h4.small {
+    #right_sidebar h3.small, #right_sidebar .featured .title.small {
       margin: 0 0 6px;
       padding: 0;
       color: #09F;
@@ -678,9 +680,12 @@
       font-weight: bold;
       line-height: 16px;
       border-bottom: 0; }
-  #right_sidebar h4 {
+  #right_sidebar .title {
     margin: 0 0 3px;
-    line-height: 15px; }
+    line-height: 15px;
+    text-decoration: underline; }
+    #right_sidebar .title:hover {
+      color: #000; }
   #right_sidebar .desc {
     position: relative;
     overflow: hidden; }
@@ -740,7 +745,7 @@
       margin: 0 0 8px;
       padding: 0 0 8px;
       border-bottom: 1px solid #8ea8b5; }
-      #right_sidebar .list .list_item.featured h4 {
+      #right_sidebar .list .list_item.featured .title {
         margin: 0 0 8px;
         padding: 0;
         font-size: 18px;
@@ -799,16 +804,15 @@
   #right_sidebar .photo_list .details {
     float: left;
     width: 120px; }
-    #right_sidebar .photo_list .details h4 {
+    #right_sidebar .photo_list .details .title {
       line-height: 15px;
-      margin: 0 0 3px; }
-      #right_sidebar .photo_list .details h4 a {
-        color: #000; }
-        #right_sidebar .photo_list .details h4 a:hover {
-          color: #597686; }
+      margin: 0 0 3px;
+      color: #000; }
+      #right_sidebar .photo_list .details .title:hover {
+        color: #597686; }
   #right_sidebar .pod_footer {
     margin: 5px 0 0;
-    padding: 5px 0 0;
+    padding: 9px 0 0;
     border-top: 1px solid #adc0c9; }
     #right_sidebar .pod_footer a, #right_sidebar .pod_footer a:link, #right_sidebar .pod_footer a:visited, #right_sidebar .pod_footer .fake_link {
       float: right;
@@ -1095,18 +1099,18 @@
 #event_content #gigya_header {
   display: none; }
 
-#gigya_comments h3 {
+#comments h3 {
   margin: 0 0 10px;
   padding: 0 0 10px;
   color: #0099FF;
   font-size: 21px;
   font-weight: bold;
   border-bottom: 1px dashed #ADC0C9; }
-#gigya_comments .gig-comments-container {
+#comments .gig-comments-container {
   width: auto !important; }
-#gigya_comments .gig-comments-textarea {
+#comments .gig-comments-textarea {
   width: 694px !important; }
-#gigya_comments #Comments-postButton a {
+#comments #Comments-postButton a {
   display: inline-block;
   font-family: Arial, Helvetica, sans-serif;
   padding: 7px 30px;
@@ -1128,21 +1132,21 @@
   -moz-border-radius: 3px;
   -webkit-box-shadow: 0px 1px 5px #999;
   -moz-box-shadow: 0px 1px 5px #999; }
-#gigya_comments #Comments-postButton a:hover {
+#comments #Comments-postButton a:hover {
   background: #2388f5;
   text-shadow: 0px 0px 12px #fff;
   /*FOR IE*/
   -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=#2388f5, endColorStr=#2388f5);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=#2388f5, endColorStr=#2388f5); }
-#gigya_comments .gig-comments-commentList-header-commentsCount {
+#comments .gig-comments-commentList-header-commentsCount {
   float: left;
   padding: 0; }
-#gigya_comments .gig-comments-headerLinks {
+#comments .gig-comments-headerLinks {
   float: right;
   padding: 0; }
-#gigya_comments .gig-comments-commentBox-bottom {
+#comments .gig-comments-commentBox-bottom {
   margin-top: 10px; }
-#gigya_comments #article_comments_footer a {
+#comments #article_comments_footer a {
   float: right; }
 
 #Comments-commentBox div.gig-comments-headerText {
@@ -1319,7 +1323,7 @@
     margin: 11px 0 0;
     padding: 8px 0 0;
     border-top: 2px solid #8EA8B5; }
-    #article_page #left_container #article_list.with_numbers h2, #article_page #left_container #article_list.with_numbers h3 {
+    #article_page #left_container #article_list.with_numbers h3, #article_page #left_container #article_list.with_numbers .venue_type {
       padding: 0 0 0 25px; }
     #article_page #left_container #article_list .line_divider {
       position: absolute;
@@ -1336,7 +1340,7 @@
         border-top: none; }
       #article_page #left_container #article_list .list_item.with_location .content {
         float: left; }
-      #article_page #left_container #article_list .list_item.with_location h2, #article_page #left_container #article_list .list_item.with_location h3 {
+      #article_page #left_container #article_list .list_item.with_location h3, #article_page #left_container #article_list .list_item.with_location .venue_type {
         width: 524px; }
     #article_page #left_container #article_list .item_number {
       position: absolute;
@@ -1351,26 +1355,23 @@
       text-align: center;
       background-image: url(/assets/content_bg/left_blue_ribbon.png);
       background-repeat: no-repeat; }
-    #article_page #left_container #article_list h2 {
+    #article_page #left_container #article_list h3 {
       margin: 0 0 6px;
       font-size: 20px;
       font-weight: bold;
       line-height: 19px; }
-      #article_page #left_container #article_list h2 a, #article_page #left_container #article_list h2 a:link, #article_page #left_container #article_list h2 a:visited {
+      #article_page #left_container #article_list h3 a, #article_page #left_container #article_list h3 a:link, #article_page #left_container #article_list h3 a:visited {
         color: #000; }
-        #article_page #left_container #article_list h2 a:hover, #article_page #left_container #article_list h2 a:link:hover, #article_page #left_container #article_list h2 a:visited:hover {
+        #article_page #left_container #article_list h3 a:hover, #article_page #left_container #article_list h3 a:link:hover, #article_page #left_container #article_list h3 a:visited:hover {
           color: #597686; }
-    #article_page #left_container #article_list h3 {
+    #article_page #left_container #article_list .venue_type {
       margin: 0 0 7px;
       padding: 0;
-      color: #6c8898;
-      font-size: 9px;
-      line-height: 11px;
-      text-transform: uppercase; }
-      #article_page #left_container #article_list h3 a, #article_page #left_container #article_list h3 a:link, #article_page #left_container #article_list h3 a:visited {
+      line-height: 11px; }
+      #article_page #left_container #article_list .venue_type a, #article_page #left_container #article_list .venue_type a:link, #article_page #left_container #article_list .venue_type a:visited {
         color: #6c8898;
         text-decoration: none; }
-      #article_page #left_container #article_list h3 .date {
+      #article_page #left_container #article_list .venue_type .date {
         display: inline-block;
         color: #09f;
         margin: 0 0 0 3px; }
@@ -1435,27 +1436,40 @@
       text-align: right;
       font-size: 12px;
       line-height: 14px; }
+      #article_page #left_container #article_list .location .city {
+        display: inline-block;
+        margin: 0 0 5px;
+        padding: 2px 4px 1px;
+        color: #fff;
+        font-size: 9px;
+        line-height: 10px;
+        text-decoration: none;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        background-color: #09f; }
       #article_page #left_container #article_list .location .neighborhood, #article_page #left_container #article_list .location .venue {
         display: block;
-        position: relative;
-        top: -2px;
-        margin: 0;
+        margin: 0 0 2px;
         color: #597686;
         font-weight: bold; }
         #article_page #left_container #article_list .location .neighborhood:hover, #article_page #left_container #article_list .location .venue:hover {
           color: #375363; }
+        #article_page #left_container #article_list .location .neighborhood.nourl:hover, #article_page #left_container #article_list .location .venue.nourl:hover {
+          color: #597686; }
       #article_page #left_container #article_list .location .neighborhood {
         margin: 0 0 3px; }
+      #article_page #left_container #article_list .location .address p, #article_page #left_container #article_list .location .phone p {
+        padding: 0; }
       #article_page #left_container #article_list .location .address {
         padding: 0 0 9px;
         font-size: 11px; }
-        #article_page #left_container #article_list .location .address .phone {
-          display: block;
-          margin: 4px 0 0;
-          padding: 0;
-          color: #597686;
-          font-size: 13px;
-          font-weight: bold; }
+      #article_page #left_container #article_list .location .phone {
+        display: block;
+        margin: 4px 0 0;
+        padding: 0;
+        color: #597686;
+        font-size: 13px;
+        font-weight: bold; }
       #article_page #left_container #article_list .location .liked_by {
         height: 42px;
         text-align: left;
@@ -1537,7 +1551,6 @@
       margin-right: 0; }
   #article_page #left_container .more_link {
     margin: 5px 0 0;
-    padding: 0;
     font-family: "Arial";
     font-size: 14px;
     font-weight: bold; }
@@ -1825,7 +1838,7 @@
   padding: 15px;
   background-color: #fff;
   overflow: hidden; }
-  #last_slide h3 {
+  #last_slide h4 {
     color: #09f;
     font-size: 20px;
     font-weight: bold; }
@@ -1835,16 +1848,16 @@
       margin: 8px 0 0;
       padding: 8px 0 0;
       border-top: 1px dashed #adc0c9; }
-    #last_slide #articles h4 {
+    #last_slide #articles .title {
+      display: block;
       height: 36px;
       margin: 0 0 6px;
       font-size: 16px;
-      font-weight: bold; }
-      #last_slide #articles h4 a, #last_slide #articles h4 a:link, #last_slide #articles h4 a:visited {
-        color: #375363;
-        text-decoration: none; }
-        #last_slide #articles h4 a:hover, #last_slide #articles h4 a:link:hover, #last_slide #articles h4 a:visited:hover {
-          text-decoration: underline; }
+      font-weight: bold;
+      color: #375363;
+      text-decoration: none; }
+      #last_slide #articles .title:hover {
+        text-decoration: underline; }
     #last_slide #articles li {
       float: left;
       width: 212px; }

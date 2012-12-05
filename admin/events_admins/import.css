@@ -50,7 +50,10 @@ ul.as-selections li.as-selection-item a.as-close {
   font-size: 14px;
   font-weight: bold;
   text-shadow: 0 1px 1px #fff;
-  -webkit-transition: color .1s ease-in; }
+  -webkit-transition: color .1s ease-in;
+  -moz-transition: color .1s ease-in;
+  -o-transition: color .1s ease-in;
+  transition: color .1s ease-in; }
 
 ul.as-selections li.as-selection-item.blur {
   color: #666666;
@@ -273,7 +276,8 @@ BODY:first-of-type ul.as-list, x:-moz-any-link, x:default {
 .admin_info a, .admin_info a:visited {
   -webkit-transition: color 0.5s ease-out;
   -moz-transition: color 0.5s ease-out;
-  -o-transition: color 0.5s ease-out; }
+  -o-transition: color 0.5s ease-out;
+  transition: color 0.5s ease-out; }
 
 .admin_info .grey_section {
   background-color: #ebeced;
@@ -391,7 +395,8 @@ BODY:first-of-type ul.as-list, x:-moz-any-link, x:default {
 .admin_info tr {
   -webkit-transition: all 0.5s ease-out;
   -moz-transition: all 0.5s ease-out;
-  -o-transition: all 0.5s ease-out; }
+  -o-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out; }
 
 .admin_info tr:hover {
   background: #fff; }
@@ -413,7 +418,8 @@ BODY:first-of-type ul.as-list, x:-moz-any-link, x:default {
 .admin_info textarea {
   -webkit-transition: all 0.5s ease-out;
   -moz-transition: all 0.5s ease-out;
-  -o-transition: all 0.5s ease-out; }
+  -o-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out; }
 
 .admin_info input,
 .admin_info select,

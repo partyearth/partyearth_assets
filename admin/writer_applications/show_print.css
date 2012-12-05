@@ -361,7 +361,8 @@ form.formtastic .choices-group {
 .admin_info a, .admin_info a:visited {
   -webkit-transition: color 0.5s ease-out;
   -moz-transition: color 0.5s ease-out;
-  -o-transition: color 0.5s ease-out; }
+  -o-transition: color 0.5s ease-out;
+  transition: color 0.5s ease-out; }
 
 .admin_info .grey_section {
   background-color: #ebeced;
@@ -479,7 +480,8 @@ form.formtastic .choices-group {
 .admin_info tr {
   -webkit-transition: all 0.5s ease-out;
   -moz-transition: all 0.5s ease-out;
-  -o-transition: all 0.5s ease-out; }
+  -o-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out; }
 
 .admin_info tr:hover {
   background: #fff; }
@@ -501,7 +503,8 @@ form.formtastic .choices-group {
 .admin_info textarea {
   -webkit-transition: all 0.5s ease-out;
   -moz-transition: all 0.5s ease-out;
-  -o-transition: all 0.5s ease-out; }
+  -o-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out; }
 
 .admin_info input,
 .admin_info select,

@@ -336,9 +336,11 @@
           padding: 0 17px 0 0;
           border-right: 1px dotted #ccc; }
           .three_item_carousel .scroller_wrapper .screens_container .screens_wrapper .spot_item .headline.sub_headline {
+            display: block;
             height: 18px;
             margin: 0 0 4px;
             font-size: 16px;
+            font-weight: bold;
             line-height: 18px;
             overflow: hidden; }
             .three_item_carousel .scroller_wrapper .screens_container .screens_wrapper .spot_item .headline.sub_headline a, .three_item_carousel .scroller_wrapper .screens_container .screens_wrapper .spot_item .headline.sub_headline a:visited {
@@ -890,30 +892,29 @@
   width: 440px !important;
   height: 242px !important;
   padding: 9px 15px 9px 75px !important; }
-  .pe .character_content .headline.sub_headline {
+  .pe .character_content .char_cont_head {
+    display: block;
+    margin: 0 0 11px;
+    padding: 5px 0 0;
     color: #375363;
-    padding: 0 0 2px;
     font-size: 16px;
     line-height: 17px;
-    margin: 5px 0 0 0;
-    /*FOR IE8 AND BELOW*/
-    font-size: 15px\9; }
-  .pe .character_content p {
-    padding-bottom: 0; }
-  .pe .character_content .suggestion {
-    font-weight: bold;
-    font-size: 17px;
-    color: #adc0c9;
-    display: block;
-    margin: 0 0 5px 0; }
+    font-weight: bold; }
+    .pe .character_content .char_cont_head .char_cont_head_desc,
+    .pe .character_content .char_cont_head .char_cont_head_sug {
+      display: block; }
+    .pe .character_content .char_cont_head .char_cont_head_desc {
+      margin: 0 0 2px; }
+    .pe .character_content .char_cont_head .char_cont_head_sug {
+      color: #adc0c9;
+      font-size: 17px; }
   .pe .character_content .venue_item_wrapper {
-    float: left;
     height: 131px;
-    overflow: hidden;
+    margin: 0 0 4px;
+    padding: 10px 0;
     border-top: 1px dashed #ADC0C9;
     border-bottom: 1px dashed #ADC0C9;
-    padding: 10px 0;
-    margin: 6px 0 4px; }
+    overflow: hidden; }
     .pe .character_content .venue_item_wrapper .venue_item {
       width: 200px;
       height: 55px;
@@ -1211,20 +1212,22 @@
   /* Styles for the Get Paid To Party pods */ }
   #right_sidebar .pod {
     padding: 13px 14px; }
-  #right_sidebar h3, #right_sidebar .featured h4 {
+  #right_sidebar h3, #right_sidebar .featured .title {
+    display: block;
     color: #375363;
     font-size: 24px;
     font-weight: normal;
     line-height: 28px;
     margin: 0 0 8px;
     padding: 0 0 8px;
-    border-bottom: 1px dashed #adc0c9; }
-    #right_sidebar h3 a, #right_sidebar h3 a:link, #right_sidebar h3 a:visited, #right_sidebar .featured h4 a, #right_sidebar .featured h4 a:link, #right_sidebar .featured h4 a:visited {
+    border-bottom: 1px dashed #adc0c9;
+    color: #375363; }
+    #right_sidebar h3 a, #right_sidebar h3 a:link, #right_sidebar h3 a:visited, #right_sidebar .featured .title a, #right_sidebar .featured .title a:link, #right_sidebar .featured .title a:visited {
       color: #375363;
       text-decoration: underline; }
-      #right_sidebar h3 a:hover, #right_sidebar h3 a:link:hover, #right_sidebar h3 a:visited:hover, #right_sidebar .featured h4 a:hover, #right_sidebar .featured h4 a:link:hover, #right_sidebar .featured h4 a:visited:hover {
+      #right_sidebar h3 a:hover, #right_sidebar h3 a:link:hover, #right_sidebar h3 a:visited:hover, #right_sidebar .featured .title a:hover, #right_sidebar .featured .title a:link:hover, #right_sidebar .featured .title a:visited:hover {
         color: #000; }
-    #right_sidebar h3.small, #right_sidebar .featured h4.small {
+    #right_sidebar h3.small, #right_sidebar .featured .title.small {
       margin: 0 0 6px;
       padding: 0;
       color: #09F;
@@ -1232,9 +1235,12 @@
       font-weight: bold;
       line-height: 16px;
       border-bottom: 0; }
-  #right_sidebar h4 {
+  #right_sidebar .title {
     margin: 0 0 3px;
-    line-height: 15px; }
+    line-height: 15px;
+    text-decoration: underline; }
+    #right_sidebar .title:hover {
+      color: #000; }
   #right_sidebar .desc {
     position: relative;
     overflow: hidden; }
@@ -1294,7 +1300,7 @@
       margin: 0 0 8px;
       padding: 0 0 8px;
       border-bottom: 1px solid #8ea8b5; }
-      #right_sidebar .list .list_item.featured h4 {
+      #right_sidebar .list .list_item.featured .title {
         margin: 0 0 8px;
         padding: 0;
         font-size: 18px;
@@ -1353,16 +1359,15 @@
   #right_sidebar .photo_list .details {
     float: left;
     width: 120px; }
-    #right_sidebar .photo_list .details h4 {
+    #right_sidebar .photo_list .details .title {
       line-height: 15px;
-      margin: 0 0 3px; }
-      #right_sidebar .photo_list .details h4 a {
-        color: #000; }
-        #right_sidebar .photo_list .details h4 a:hover {
-          color: #597686; }
+      margin: 0 0 3px;
+      color: #000; }
+      #right_sidebar .photo_list .details .title:hover {
+        color: #597686; }
   #right_sidebar .pod_footer {
     margin: 5px 0 0;
-    padding: 5px 0 0;
+    padding: 9px 0 0;
     border-top: 1px solid #adc0c9; }
     #right_sidebar .pod_footer a, #right_sidebar .pod_footer a:link, #right_sidebar .pod_footer a:visited, #right_sidebar .pod_footer .fake_link {
       float: right;
@@ -1524,7 +1529,7 @@
     #recent_articles .list .list_item .thumbnail_link img {
       width: 98px;
       height: 65px; }
-  #recent_articles .list .list_item h4 {
+  #recent_articles .list .list_item .title {
     font-size: 11px; }
   #recent_articles .list .list_item.featured {
     float: none;
@@ -1643,7 +1648,7 @@
     width: 344px;
     float: left; }
     #left_container .things_to_do_content .two_column_list .column_block .headline.sub_headline {
-      margin: 0 0 7px 0;
+      margin: 0 0 7px;
       text-decoration: underline; }
     #left_container .things_to_do_content .two_column_list .column_block ul {
       float: left;

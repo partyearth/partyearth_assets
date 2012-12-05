@@ -979,9 +979,10 @@ ratings_big_wrapper .title {
   background-position: -62px -101px; }
 
 .char_rating_big .name {
-  text-align: center;
+  display: block;
   color: #777;
   font-size: 11px;
+  text-align: center;
   line-height: 16px;
   padding: 6px 0 0;
   text-transform: uppercase; }
@@ -1843,11 +1844,7 @@ ratings_big_wrapper .title {
                 padding: 0 16px 0 0;
                 line-height: 16px; }
                 #left_container .search_page_content #results_list .search_result .result_content .top_left_section .inner_content .tag_type_desc .desc .ellipsis, #left_container .search_page_content #results_list .search_result .result_content .top_left_section .inner_content .tag_type_desc .user_review_summary .ellipsis {
-                  position: absolute;
-                  bottom: 0;
-                  right: 16px;
-                  padding: 0 0 0 6px;
-                  background-color: #fff; }
+                  display: none; }
               #left_container .search_page_content #results_list .search_result .result_content .top_left_section .inner_content .tag_type_desc .desc {
                 height: 65px;
                 cursor: pointer; }

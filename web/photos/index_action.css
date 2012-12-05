@@ -249,20 +249,22 @@
   /* Styles for the Get Paid To Party pods */ }
   #right_sidebar .pod {
     padding: 13px 14px; }
-  #right_sidebar h3, #right_sidebar .featured h4 {
+  #right_sidebar h3, #right_sidebar .featured .title {
+    display: block;
     color: #375363;
     font-size: 24px;
     font-weight: normal;
     line-height: 28px;
     margin: 0 0 8px;
     padding: 0 0 8px;
-    border-bottom: 1px dashed #adc0c9; }
-    #right_sidebar h3 a, #right_sidebar h3 a:link, #right_sidebar h3 a:visited, #right_sidebar .featured h4 a, #right_sidebar .featured h4 a:link, #right_sidebar .featured h4 a:visited {
+    border-bottom: 1px dashed #adc0c9;
+    color: #375363; }
+    #right_sidebar h3 a, #right_sidebar h3 a:link, #right_sidebar h3 a:visited, #right_sidebar .featured .title a, #right_sidebar .featured .title a:link, #right_sidebar .featured .title a:visited {
       color: #375363;
       text-decoration: underline; }
-      #right_sidebar h3 a:hover, #right_sidebar h3 a:link:hover, #right_sidebar h3 a:visited:hover, #right_sidebar .featured h4 a:hover, #right_sidebar .featured h4 a:link:hover, #right_sidebar .featured h4 a:visited:hover {
+      #right_sidebar h3 a:hover, #right_sidebar h3 a:link:hover, #right_sidebar h3 a:visited:hover, #right_sidebar .featured .title a:hover, #right_sidebar .featured .title a:link:hover, #right_sidebar .featured .title a:visited:hover {
         color: #000; }
-    #right_sidebar h3.small, #right_sidebar .featured h4.small {
+    #right_sidebar h3.small, #right_sidebar .featured .title.small {
       margin: 0 0 6px;
       padding: 0;
       color: #09F;
@@ -270,9 +272,12 @@
       font-weight: bold;
       line-height: 16px;
       border-bottom: 0; }
-  #right_sidebar h4 {
+  #right_sidebar .title {
     margin: 0 0 3px;
-    line-height: 15px; }
+    line-height: 15px;
+    text-decoration: underline; }
+    #right_sidebar .title:hover {
+      color: #000; }
   #right_sidebar .desc {
     position: relative;
     overflow: hidden; }
@@ -332,7 +337,7 @@
       margin: 0 0 8px;
       padding: 0 0 8px;
       border-bottom: 1px solid #8ea8b5; }
-      #right_sidebar .list .list_item.featured h4 {
+      #right_sidebar .list .list_item.featured .title {
         margin: 0 0 8px;
         padding: 0;
         font-size: 18px;
@@ -391,16 +396,15 @@
   #right_sidebar .photo_list .details {
     float: left;
     width: 120px; }
-    #right_sidebar .photo_list .details h4 {
+    #right_sidebar .photo_list .details .title {
       line-height: 15px;
-      margin: 0 0 3px; }
-      #right_sidebar .photo_list .details h4 a {
-        color: #000; }
-        #right_sidebar .photo_list .details h4 a:hover {
-          color: #597686; }
+      margin: 0 0 3px;
+      color: #000; }
+      #right_sidebar .photo_list .details .title:hover {
+        color: #597686; }
   #right_sidebar .pod_footer {
     margin: 5px 0 0;
-    padding: 5px 0 0;
+    padding: 9px 0 0;
     border-top: 1px solid #adc0c9; }
     #right_sidebar .pod_footer a, #right_sidebar .pod_footer a:link, #right_sidebar .pod_footer a:visited, #right_sidebar .pod_footer .fake_link {
       float: right;
@@ -649,18 +653,18 @@
 #event_content #gigya_header {
   display: none; }
 
-#gigya_comments h3 {
+#comments h3 {
   margin: 0 0 10px;
   padding: 0 0 10px;
   color: #0099FF;
   font-size: 21px;
   font-weight: bold;
   border-bottom: 1px dashed #ADC0C9; }
-#gigya_comments .gig-comments-container {
+#comments .gig-comments-container {
   width: auto !important; }
-#gigya_comments .gig-comments-textarea {
+#comments .gig-comments-textarea {
   width: 694px !important; }
-#gigya_comments #Comments-postButton a {
+#comments #Comments-postButton a {
   display: inline-block;
   font-family: Arial, Helvetica, sans-serif;
   padding: 7px 30px;
@@ -682,21 +686,21 @@
   -moz-border-radius: 3px;
   -webkit-box-shadow: 0px 1px 5px #999;
   -moz-box-shadow: 0px 1px 5px #999; }
-#gigya_comments #Comments-postButton a:hover {
+#comments #Comments-postButton a:hover {
   background: #2388f5;
   text-shadow: 0px 0px 12px #fff;
   /*FOR IE*/
   -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=#2388f5, endColorStr=#2388f5);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=#2388f5, endColorStr=#2388f5); }
-#gigya_comments .gig-comments-commentList-header-commentsCount {
+#comments .gig-comments-commentList-header-commentsCount {
   float: left;
   padding: 0; }
-#gigya_comments .gig-comments-headerLinks {
+#comments .gig-comments-headerLinks {
   float: right;
   padding: 0; }
-#gigya_comments .gig-comments-commentBox-bottom {
+#comments .gig-comments-commentBox-bottom {
   margin-top: 10px; }
-#gigya_comments #article_comments_footer a {
+#comments #article_comments_footer a {
   float: right; }
 
 #Comments-commentBox div.gig-comments-headerText {

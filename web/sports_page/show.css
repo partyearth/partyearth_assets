@@ -24,7 +24,8 @@
     padding: 0 0 0 12px; }
     .custom_accordion .collapse_bar_wrapper .inner_wrapper .month_year,
     .custom_accordion .expand_bar_wrapper .inner_wrapper .month_year {
-      padding: 0; }
+      padding: 0;
+      font-weight: normal; }
       .custom_accordion .collapse_bar_wrapper .inner_wrapper .month_year .black_text,
       .custom_accordion .expand_bar_wrapper .inner_wrapper .month_year .black_text {
         font-size: 18px;
@@ -119,29 +120,25 @@
       margin: 0 0 5px;
       font-size: 16px;
       line-height: 18px;
-      font-weight: bold; }
-      .custom_accordion .accordion_content .details .details_wrapper .info.top .event_name a:link, .custom_accordion .accordion_content .details .details_wrapper .info.top .event_name a:visited {
-        color: #000;
-        text-decoration: none; }
-      .custom_accordion .accordion_content .details .details_wrapper .info.top .event_name a:hover {
+      font-weight: bold;
+      color: #000;
+      text-decoration: none; }
+      .custom_accordion .accordion_content .details .details_wrapper .info.top .event_name:hover {
         color: #597686;
         text-decoration: underline; }
     .custom_accordion .accordion_content .details .details_wrapper .info.bottom {
       font-size: 12px;
       line-height: 15px;
       color: #000;
-      /*color:#c2c2c2;*/
       margin: 14px 0 0 0; }
       .custom_accordion .accordion_content .details .details_wrapper .info.bottom a:link, .custom_accordion .accordion_content .details .details_wrapper .info.bottom a:visited, .custom_accordion .accordion_content .details .details_wrapper .info.bottom .fake_link {
         color: #000;
-        /*color:#c2c2c2;*/
         text-decoration: none; }
-      .custom_accordion .accordion_content .details .details_wrapper .info.bottom a:hover {
-        color: #597686;
-        text-decoration: underline; }
+        .custom_accordion .accordion_content .details .details_wrapper .info.bottom a:link:hover, .custom_accordion .accordion_content .details .details_wrapper .info.bottom a:visited:hover, .custom_accordion .accordion_content .details .details_wrapper .info.bottom .fake_link:hover {
+          color: #597686;
+          text-decoration: underline; }
       .custom_accordion .accordion_content .details .details_wrapper .info.bottom .time {
         color: #0099ff;
-        /*color: #959595;*/
         margin: 0 6px 0 0;
         white-space: nowrap;
         font-weight: bold; }
@@ -157,14 +154,9 @@
   .custom_accordion .accordion_content .tickets.calendar {
     vertical-align: bottom;
     padding-left: 10px;
-    width: 90px;
+    width: 95px;
     font-size: 12px;
     line-height: 16px; }
-    .custom_accordion .accordion_content .tickets.calendar .calendar_link .fake_link {
-      color: #6C8898;
-      text-decoration: underline; }
-    .custom_accordion .accordion_content .tickets.calendar .calendar_link .fake_link:hover {
-      color: #000; }
 
 /* SCHEDULE OF EVENTS
 -----------------------------------
@@ -359,12 +351,6 @@
 .featured_teams.carousel .prev_next_btns.next_btn.disabled:hover {
   background-position: -270px -3021px; }
 /* Styles for the more links pod */
-#more_links_pod h4 {
-  color: #6c8898;
-  font-size: 9px;
-  text-transform: uppercase;
-  line-height: 12px;
-  line-height: 14px; }
 #more_links_pod ul {
   margin-top: 10px;
   padding-top: 10px;
@@ -400,13 +386,16 @@
     font-size: 11px;
     text-transform: uppercase; }
   #more_links_pod li .name {
+    display: block;
     font-size: 13px;
     font-weight: normal;
-    line-height: 15px; }
-    #more_links_pod li .name a {
-      text-decoration: underline; }
-      #more_links_pod li .name a:hover {
-        color: #597686; }
+    line-height: 15px;
+    text-decoration: underline; }
+    #more_links_pod li .name:hover {
+      color: #597686; }
+  #more_links_pod li .venue_type {
+    margin: 4px 0 0;
+    line-height: 12px; }
 #more_links_pod .footer {
   margin: 8px 0 0;
   padding: 8px 0 0;
@@ -447,20 +436,22 @@
   /* Styles for the Get Paid To Party pods */ }
   #right_sidebar .pod {
     padding: 13px 14px; }
-  #right_sidebar h3, #right_sidebar .featured h4 {
+  #right_sidebar h3, #right_sidebar .featured .title {
+    display: block;
     color: #375363;
     font-size: 24px;
     font-weight: normal;
     line-height: 28px;
     margin: 0 0 8px;
     padding: 0 0 8px;
-    border-bottom: 1px dashed #adc0c9; }
-    #right_sidebar h3 a, #right_sidebar h3 a:link, #right_sidebar h3 a:visited, #right_sidebar .featured h4 a, #right_sidebar .featured h4 a:link, #right_sidebar .featured h4 a:visited {
+    border-bottom: 1px dashed #adc0c9;
+    color: #375363; }
+    #right_sidebar h3 a, #right_sidebar h3 a:link, #right_sidebar h3 a:visited, #right_sidebar .featured .title a, #right_sidebar .featured .title a:link, #right_sidebar .featured .title a:visited {
       color: #375363;
       text-decoration: underline; }
-      #right_sidebar h3 a:hover, #right_sidebar h3 a:link:hover, #right_sidebar h3 a:visited:hover, #right_sidebar .featured h4 a:hover, #right_sidebar .featured h4 a:link:hover, #right_sidebar .featured h4 a:visited:hover {
+      #right_sidebar h3 a:hover, #right_sidebar h3 a:link:hover, #right_sidebar h3 a:visited:hover, #right_sidebar .featured .title a:hover, #right_sidebar .featured .title a:link:hover, #right_sidebar .featured .title a:visited:hover {
         color: #000; }
-    #right_sidebar h3.small, #right_sidebar .featured h4.small {
+    #right_sidebar h3.small, #right_sidebar .featured .title.small {
       margin: 0 0 6px;
       padding: 0;
       color: #09F;
@@ -468,9 +459,12 @@
       font-weight: bold;
       line-height: 16px;
       border-bottom: 0; }
-  #right_sidebar h4 {
+  #right_sidebar .title {
     margin: 0 0 3px;
-    line-height: 15px; }
+    line-height: 15px;
+    text-decoration: underline; }
+    #right_sidebar .title:hover {
+      color: #000; }
   #right_sidebar .desc {
     position: relative;
     overflow: hidden; }
@@ -530,7 +524,7 @@
       margin: 0 0 8px;
       padding: 0 0 8px;
       border-bottom: 1px solid #8ea8b5; }
-      #right_sidebar .list .list_item.featured h4 {
+      #right_sidebar .list .list_item.featured .title {
         margin: 0 0 8px;
         padding: 0;
         font-size: 18px;
@@ -589,16 +583,15 @@
   #right_sidebar .photo_list .details {
     float: left;
     width: 120px; }
-    #right_sidebar .photo_list .details h4 {
+    #right_sidebar .photo_list .details .title {
       line-height: 15px;
-      margin: 0 0 3px; }
-      #right_sidebar .photo_list .details h4 a {
-        color: #000; }
-        #right_sidebar .photo_list .details h4 a:hover {
-          color: #597686; }
+      margin: 0 0 3px;
+      color: #000; }
+      #right_sidebar .photo_list .details .title:hover {
+        color: #597686; }
   #right_sidebar .pod_footer {
     margin: 5px 0 0;
-    padding: 5px 0 0;
+    padding: 9px 0 0;
     border-top: 1px solid #adc0c9; }
     #right_sidebar .pod_footer a, #right_sidebar .pod_footer a:link, #right_sidebar .pod_footer a:visited, #right_sidebar .pod_footer .fake_link {
       float: right;
@@ -760,7 +753,7 @@
     #recent_articles .list .list_item .thumbnail_link img {
       width: 98px;
       height: 65px; }
-  #recent_articles .list .list_item h4 {
+  #recent_articles .list .list_item .title {
     font-size: 11px; }
   #recent_articles .list .list_item.featured {
     float: none;

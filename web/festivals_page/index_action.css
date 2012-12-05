@@ -101,12 +101,6 @@
   #upcoming_events .list .list_item.selected .point {
     display: block; }
 /* Styles for the more links pod */
-#more_links_pod h4 {
-  color: #6c8898;
-  font-size: 9px;
-  text-transform: uppercase;
-  line-height: 12px;
-  line-height: 14px; }
 #more_links_pod ul {
   margin-top: 10px;
   padding-top: 10px;
@@ -142,13 +136,16 @@
     font-size: 11px;
     text-transform: uppercase; }
   #more_links_pod li .name {
+    display: block;
     font-size: 13px;
     font-weight: normal;
-    line-height: 15px; }
-    #more_links_pod li .name a {
-      text-decoration: underline; }
-      #more_links_pod li .name a:hover {
-        color: #597686; }
+    line-height: 15px;
+    text-decoration: underline; }
+    #more_links_pod li .name:hover {
+      color: #597686; }
+  #more_links_pod li .venue_type {
+    margin: 4px 0 0;
+    line-height: 12px; }
 #more_links_pod .footer {
   margin: 8px 0 0;
   padding: 8px 0 0;
@@ -189,20 +186,22 @@
   /* Styles for the Get Paid To Party pods */ }
   #right_sidebar .pod {
     padding: 13px 14px; }
-  #right_sidebar h3, #right_sidebar .featured h4 {
+  #right_sidebar h3, #right_sidebar .featured .title {
+    display: block;
     color: #375363;
     font-size: 24px;
     font-weight: normal;
     line-height: 28px;
     margin: 0 0 8px;
     padding: 0 0 8px;
-    border-bottom: 1px dashed #adc0c9; }
-    #right_sidebar h3 a, #right_sidebar h3 a:link, #right_sidebar h3 a:visited, #right_sidebar .featured h4 a, #right_sidebar .featured h4 a:link, #right_sidebar .featured h4 a:visited {
+    border-bottom: 1px dashed #adc0c9;
+    color: #375363; }
+    #right_sidebar h3 a, #right_sidebar h3 a:link, #right_sidebar h3 a:visited, #right_sidebar .featured .title a, #right_sidebar .featured .title a:link, #right_sidebar .featured .title a:visited {
       color: #375363;
       text-decoration: underline; }
-      #right_sidebar h3 a:hover, #right_sidebar h3 a:link:hover, #right_sidebar h3 a:visited:hover, #right_sidebar .featured h4 a:hover, #right_sidebar .featured h4 a:link:hover, #right_sidebar .featured h4 a:visited:hover {
+      #right_sidebar h3 a:hover, #right_sidebar h3 a:link:hover, #right_sidebar h3 a:visited:hover, #right_sidebar .featured .title a:hover, #right_sidebar .featured .title a:link:hover, #right_sidebar .featured .title a:visited:hover {
         color: #000; }
-    #right_sidebar h3.small, #right_sidebar .featured h4.small {
+    #right_sidebar h3.small, #right_sidebar .featured .title.small {
       margin: 0 0 6px;
       padding: 0;
       color: #09F;
@@ -210,9 +209,12 @@
       font-weight: bold;
       line-height: 16px;
       border-bottom: 0; }
-  #right_sidebar h4 {
+  #right_sidebar .title {
     margin: 0 0 3px;
-    line-height: 15px; }
+    line-height: 15px;
+    text-decoration: underline; }
+    #right_sidebar .title:hover {
+      color: #000; }
   #right_sidebar .desc {
     position: relative;
     overflow: hidden; }
@@ -272,7 +274,7 @@
       margin: 0 0 8px;
       padding: 0 0 8px;
       border-bottom: 1px solid #8ea8b5; }
-      #right_sidebar .list .list_item.featured h4 {
+      #right_sidebar .list .list_item.featured .title {
         margin: 0 0 8px;
         padding: 0;
         font-size: 18px;
@@ -331,16 +333,15 @@
   #right_sidebar .photo_list .details {
     float: left;
     width: 120px; }
-    #right_sidebar .photo_list .details h4 {
+    #right_sidebar .photo_list .details .title {
       line-height: 15px;
-      margin: 0 0 3px; }
-      #right_sidebar .photo_list .details h4 a {
-        color: #000; }
-        #right_sidebar .photo_list .details h4 a:hover {
-          color: #597686; }
+      margin: 0 0 3px;
+      color: #000; }
+      #right_sidebar .photo_list .details .title:hover {
+        color: #597686; }
   #right_sidebar .pod_footer {
     margin: 5px 0 0;
-    padding: 5px 0 0;
+    padding: 9px 0 0;
     border-top: 1px solid #adc0c9; }
     #right_sidebar .pod_footer a, #right_sidebar .pod_footer a:link, #right_sidebar .pod_footer a:visited, #right_sidebar .pod_footer .fake_link {
       float: right;
@@ -502,7 +503,7 @@
     #recent_articles .list .list_item .thumbnail_link img {
       width: 98px;
       height: 65px; }
-  #recent_articles .list .list_item h4 {
+  #recent_articles .list .list_item .title {
     font-size: 11px; }
   #recent_articles .list .list_item.featured {
     float: none;
@@ -1243,9 +1244,11 @@
           padding: 0 17px 0 0;
           border-right: 1px dotted #ccc; }
           .three_item_carousel .scroller_wrapper .screens_container .screens_wrapper .spot_item .headline.sub_headline {
+            display: block;
             height: 18px;
             margin: 0 0 4px;
             font-size: 16px;
+            font-weight: bold;
             line-height: 18px;
             overflow: hidden; }
             .three_item_carousel .scroller_wrapper .screens_container .screens_wrapper .spot_item .headline.sub_headline a, .three_item_carousel .scroller_wrapper .screens_container .screens_wrapper .spot_item .headline.sub_headline a:visited {
@@ -2137,19 +2140,7 @@ div.datepicker {
       .festivals_carousel .scroller_wrapper .screens_container .screens_wrapper .spot_item .details .desc.event.three-line {
         height: 48px; }
     .festivals_carousel .scroller_wrapper .screens_container .screens_wrapper .spot_item .add_to_calendar {
-      float: right;
-      padding: 0;
-      width: auto;
-      height: auto;
-      color: #adc0c9;
-      font-size: 12px;
-      line-height: 13px;
-      text-transform: none;
-      text-decoration: underline;
-      background-image: none;
-      cursor: pointer; }
-      .festivals_carousel .scroller_wrapper .screens_container .screens_wrapper .spot_item .add_to_calendar:hover {
-        color: #597686; }
+      float: right; }
   .festivals_carousel.two_line_title .scroller_wrapper .screens_container {
     height: 343px; }
     .festivals_carousel.two_line_title .scroller_wrapper .screens_container .screens_wrapper .spot_item .details {
@@ -2234,24 +2225,27 @@ div.datepicker {
     border-bottom: 1px dashed #adc0c9; }
     .annual_festivals_list li:last-child, .annual_festivals_list li.last {
       border-bottom: none; }
-  .annual_festivals_list h3 {
+  .annual_festivals_list .name {
+    display: block;
     margin: 0 0 1px;
     font-weight: bold;
-    font-size: 16px; }
-    .annual_festivals_list h3 a {
-      color: #000; }
-      .annual_festivals_list h3 a:hover {
-        color: #597686;
-        text-decoration: underline; }
-  .annual_festivals_list h4 {
+    font-size: 16px;
+    line-height: 21px;
+    color: #000;
+    text-decoration: none; }
+    .annual_festivals_list .name:hover {
+      color: #597686;
+      text-decoration: underline; }
+  .annual_festivals_list .venue_type {
+    display: block;
     margin: 0 0 5px;
     font-size: 10px;
     line-height: 10px;
     text-transform: uppercase; }
-    .annual_festivals_list h4 a {
+    .annual_festivals_list .venue_type a {
       color: #597686;
       text-decoration: none; }
-      .annual_festivals_list h4 a:hover {
+      .annual_festivals_list .venue_type a:hover {
         text-decoration: underline; }
   .annual_festivals_list p {
     padding: 0;
@@ -2261,8 +2255,6 @@ div.datepicker {
       color: #adc0c9; }
       .annual_festivals_list p a:hover {
         text-decoration: none; }
-    .annual_festivals_list p span {
-      color: #dadada; }
   .annual_festivals_list img {
     display: block;
     float: left;
@@ -2271,13 +2263,12 @@ div.datepicker {
     margin: 0 10px 0 0;
     border: 1px solid #ccc;
     border-radius: 3px; }
-  .annual_festivals_list .fake_link {
-    display: inline-block;
-    margin: 0 0 0 4px;
-    color: #adc0c9;
-    text-decoration: underline; }
-    .annual_festivals_list .fake_link:hover {
-      text-decoration: none; }
+  .annual_festivals_list .add_to_calendar {
+    top: -1px;
+    left: 4px;
+    margin: 0 0 0 4px; }
+    .annual_festivals_list .add_to_calendar .point {
+      display: block; }
 
 .ui-tabs-hide {
   display: none; }

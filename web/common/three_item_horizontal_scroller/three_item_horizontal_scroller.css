@@ -44,9 +44,11 @@
           padding: 0 17px 0 0;
           border-right: 1px dotted #ccc; }
           .three_item_carousel .scroller_wrapper .screens_container .screens_wrapper .spot_item .headline.sub_headline {
+            display: block;
             height: 18px;
             margin: 0 0 4px;
             font-size: 16px;
+            font-weight: bold;
             line-height: 18px;
             overflow: hidden; }
             .three_item_carousel .scroller_wrapper .screens_container .screens_wrapper .spot_item .headline.sub_headline a, .three_item_carousel .scroller_wrapper .screens_container .screens_wrapper .spot_item .headline.sub_headline a:visited {

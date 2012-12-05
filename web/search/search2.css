@@ -824,11 +824,7 @@
                 padding: 0 16px 0 0;
                 line-height: 16px; }
                 #left_container .search_page_content #results_list .search_result .result_content .top_left_section .inner_content .tag_type_desc .desc .ellipsis, #left_container .search_page_content #results_list .search_result .result_content .top_left_section .inner_content .tag_type_desc .user_review_summary .ellipsis {
-                  position: absolute;
-                  bottom: 0;
-                  right: 16px;
-                  padding: 0 0 0 6px;
-                  background-color: #fff; }
+                  display: none; }
               #left_container .search_page_content #results_list .search_result .result_content .top_left_section .inner_content .tag_type_desc .desc {
                 height: 65px;
                 cursor: pointer; }
