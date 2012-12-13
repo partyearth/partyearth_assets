@@ -22,6 +22,15 @@
         font-size: 15px;
         line-height: 15px;
         text-decoration: none; }
+      .browse_category .column.featured .name {
+        margin: 0;
+        padding: 0;
+        color: #000;
+        font-size: 13px;
+        font-weight: bold;
+        border-bottom: none; }
+        .browse_category .column.featured .name:hover {
+          color: #597686; }
   .browse_category h3 {
     margin: 0 0 7px;
     color: #000;
@@ -31,13 +40,6 @@
     .browse_category h3 a, .browse_category h3 a:link, .browse_category h3 a:visited, .browse_category h3 .fake_link {
       color: #000; }
       .browse_category h3 a:hover, .browse_category h3 a:link:hover, .browse_category h3 a:visited:hover, .browse_category h3 .fake_link:hover {
-        color: #597686; }
-  .browse_category h4 {
-    color: #000;
-    font-weight: bold; }
-    .browse_category h4 a, .browse_category h4 a:link, .browse_category h4 a:visited {
-      color: #000; }
-      .browse_category h4 a:hover, .browse_category h4 a:link:hover, .browse_category h4 a:visited:hover {
         color: #597686; }
   .browse_category p {
     padding: 0; }
@@ -330,6 +332,17 @@
       .top_section_header .more_dates .date_picker_block .controls .clear_link {
         display: none; }
 
+.date_time {
+  padding: 0;
+  margin: 3px 0 5px;
+  height: 12px;
+  font-size: 11px;
+  color: #09f;
+  line-height: 12px;
+  overflow: hidden; }
+  .date_time .small_text {
+    font-size: 10px; }
+
 .top_section_content .event_venue_name {
   color: #375363;
   font-weight: bold;
@@ -366,45 +379,42 @@
   .top_section_content .featured_item .quick_nav_links {
     float: left;
     padding: 0; }
-  .top_section_content .featured_item .blue_tag {
-    top: 2px;
-    float: left;
-    margin: 0 10px 0 -25px;
-    padding-left: 25px; }
-    .top_section_content .featured_item .blue_tag .anchor_point {
-      width: 0;
-      height: 0;
-      overflow: hidden;
-      border: 4px solid;
-      border-color: #24648f #24648f transparent transparent;
-      position: absolute;
-      top: 15px;
-      left: 0; }
-  .top_section_content .featured_item .desc {
+  .top_section_content .featured_item .details {
     position: relative;
-    height: 97px;
-    /*previously 113px*/
-    overflow: hidden;
+    left: -25px;
     width: 334px;
+    height: 97px;
+    margin: 2px 0 0;
     padding: 0 0 0 25px;
-    left: -25px; }
-    .top_section_content .featured_item .desc .info {
-      font-size: 12px;
-      line-height: 16px;
-      color: #000;
-      text-decoration: none;
-      margin: 2px 0 0;
-      display: block; }
-    .top_section_content .featured_item .desc .ellipses_dots {
-      font-size: 12px;
-      line-height: 15px;
-      background: #fff;
+    font-size: 12px;
+    line-height: 16px;
+    overflow: hidden; }
+    .top_section_content .featured_item .details .ellipsis {
+      display: inline-block;
       position: absolute;
       right: 0;
-      bottom: -1px;
-      max-width: 334px;
-      height: 15px;
+      bottom: 0;
+      background-color: #fff;
       overflow: hidden; }
+      .top_section_content .featured_item .details .ellipsis a, .top_section_content .featured_item .details .ellipsis a:link, .top_section_content .featured_item .details .ellipsis a:visited {
+        position: relative;
+        bottom: 2px;
+        font-size: 11px; }
+  .top_section_content .featured_item .location .blue_tag {
+    float: left;
+    top: 2px;
+    margin: 0 10px 0 -25px;
+    padding-left: 25px; }
+    .top_section_content .featured_item .location .blue_tag .anchor_point {
+      position: absolute;
+      top: 15px;
+      left: 0;
+      width: 0;
+      height: 0;
+      border-top: 4px solid #24648f;
+      border-right: 4px solid #24648f;
+      border-bottom: 4px solid transparent;
+      border-left: 4px solid transparent; }
   .top_section_content .featured_item .location p {
     padding-left: 65px; }
   .top_section_content .featured_item .location .event_venue_name {
@@ -425,7 +435,7 @@
   .top_section_content .small_items li.item {
     position: relative;
     padding: 7px 0 10px;
-    min-height: 156px;
+    min-height: 149px;
     border-top: 1px dashed #adc0c9; }
     .top_section_content .small_items li.item:first-child {
       padding-top: 0;
@@ -447,19 +457,17 @@
         display: block;
         width: 165px;
         height: 110px; }
-    .top_section_content .small_items li.item .desc {
+    .top_section_content .small_items li.item .details {
       position: relative;
       height: 62px;
-      margin: 0 0 5px;
+      margin: 2px 0 0;
+      font-size: 11px;
+      line-height: 14px;
       overflow: hidden; }
-      .top_section_content .small_items li.item .desc .info {
-        font-size: 11px;
-        line-height: 14px;
-        color: #000;
-        text-decoration: none;
-        margin: 2px 0 0;
-        display: block; }
-      .top_section_content .small_items li.item .desc .ellipses_dots {
+      .top_section_content .small_items li.item .details .blue_flag {
+        margin: 0 44px 4px 0; }
+      .top_section_content .small_items li.item .details .ellipsis {
+        display: inline-block;
         font-size: 11px;
         line-height: 15px;
         background: #fff;
@@ -1035,12 +1043,6 @@ div.datepicker {
 .read_more.pull_down .blue_text.arrow,
 .read_more.pull_down .blue-text.arrow {
   display: none; }
-
-/* Styles for missing modules */
-.missing {
-  padding: 0 0 8px;
-  margin: 0 0 8px;
-  border-bottom: 1px solid #8ea8b5; }
 /*
 
 */
@@ -1339,8 +1341,6 @@ div.datepicker {
   .browse_by_neighborhood .neighborhood_content:first-child {
     margin-left: 0; }
   .browse_by_neighborhood .neighborhood_content h3.headline {
-    height: 36px;
-    /* remove when merge with Artyom's widget update */
     margin: 0 0 6px;
     font-size: 17px;
     line-height: 18px;
@@ -1379,14 +1379,6 @@ div.datepicker {
     line-height: 12px; }
     .browse_by_neighborhood .neighborhood_content .see_more:hover {
       color: #000 !important; }
-.browse_by_neighborhood .more_links .label {
-  display: inline-block;
-  width: 182px;
-  zoom: 1; }
-.browse_by_neighborhood .more_links a:link, .browse_by_neighborhood .more_links .fake_link {
-  white-space: nowrap; }
-.browse_by_neighborhood .more_links .blue_text {
-  text-decoration: underline; }
 .browse_by_neighborhood.one_venue .neighborhood_content ul {
   height: 34px; }
 .browse_by_neighborhood.two_venues .neighborhood_content ul {
@@ -1398,8 +1390,6 @@ div.datepicker {
 :: Styles for the right sidebar and universal elements like pods.
 ----------------------------------------------------- */
 #right_sidebar {
-  float: right;
-  width: 240px;
   /* Lists used in Pods. If list needs specific styles override specific attributes in seperate stylesheet..*/
   /* Pod list stripped down with no border/padding etc. */
   /* Pod list with a thumbnail next to each item */
@@ -1408,8 +1398,6 @@ div.datepicker {
   /* tabs on ibiza and pamplona pages */
   /* Styles for Popular Entertainers/DJs */
   /* Styles for the Get Paid To Party pods */ }
-  #right_sidebar .pod {
-    padding: 13px 14px; }
   #right_sidebar h3, #right_sidebar .featured .title {
     display: block;
     color: #375363;
@@ -1465,6 +1453,10 @@ div.datepicker {
     border-bottom: 1px dashed #ADC0C9;
     padding: 0 0 5px;
     margin: 0 0 5px; }
+    #right_sidebar .quick_nav_links a, #right_sidebar .quick_nav_links a:link, #right_sidebar .quick_nav_links a:visited {
+      color: #09f; }
+      #right_sidebar .quick_nav_links a:hover, #right_sidebar .quick_nav_links a:link:hover, #right_sidebar .quick_nav_links a:visited:hover {
+        color: #597686; }
   #right_sidebar .name {
     color: #09f;
     font-size: 10px;
@@ -1486,7 +1478,7 @@ div.datepicker {
       overflow: hidden; }
   #right_sidebar .changer .name {
     height: 10px;
-    margin: 0 0 8px;
+    margin: 0;
     padding: 0 0 6px;
     vertical-align: top;
     border-bottom: 1px solid #dae4e9; }
@@ -1676,6 +1668,7 @@ div.datepicker {
     right: -1px;
     width: 243px;
     height: 148px;
+    margin: 0 0 12px;
     background-position: -294px -233px; }
   #right_sidebar .share_btn,
   #right_sidebar .subscribe_btn,
@@ -1684,7 +1677,7 @@ div.datepicker {
     right: 0;
     width: 243px;
     height: 44px;
-    margin: 0 0 3px; }
+    margin: 0 0 9px; }
   #right_sidebar .share_btn {
     background-position: -291px -52px; }
   #right_sidebar .subscribe_btn {
@@ -1742,11 +1735,13 @@ div.datepicker {
 /* Upcoming Events Sidebar Pod */
 #upcoming_events .list .list_item {
   position: relative; }
+  #upcoming_events .list .list_item:first-child {
+    padding-top: 8px; }
   #upcoming_events .list .list_item .point {
     display: none;
     position: absolute;
-    top: 10px;
-    left: -15px;
+    top: 18px;
+    left: -14px;
     border-top: 7px solid transparent;
     border-right: 7px solid transparent;
     border-bottom: 7px solid transparent;
@@ -1812,34 +1807,3 @@ div.datepicker {
 ---------------------------------------------*/
 #left_container .bars_clubs_content .top_section_header .blue_header {
   font-size: 19px; }
-#left_container .bars_clubs_content .more_links {
-  margin: 14px 0 16px 0; }
-  #left_container .bars_clubs_content .more_links .label {
-    display: inline-block;
-    width: 110px;
-    zoom: 1; }
-  #left_container .bars_clubs_content .more_links ul {
-    display: inline; }
-    #left_container .bars_clubs_content .more_links ul li {
-      display: inline;
-      margin: 0 10px 0 0;
-      font-size: 11px;
-      line-height: 18px; }
-      #left_container .bars_clubs_content .more_links ul li .black_link {
-        color: #0099ff !important;
-        text-decoration: underline; }
-      #left_container .bars_clubs_content .more_links ul li .black_link:hover {
-        color: #597686 !important; }
-#left_container .bars_clubs_content .browse_by_neighborhood .more_links {
-  margin-bottom: 0; }
-  #left_container .bars_clubs_content .browse_by_neighborhood .more_links .label {
-    width: 182px; }
-#left_container .more_link {
-  padding: 0;
-  margin: 5px 0;
-  color: #09f;
-  font-family: "Arial";
-  font-size: 14px;
-  font-weight: bold; }
-  #left_container .more_link a, #left_container .more_link .fake_link {
-    text-decoration: underline; }

@@ -217,12 +217,12 @@
   .admin_info .grey_section li .polymorphic_fields:hover, .admin_info .grey_section li .polymorphic_fields ul:hover {
     background-color: transparent;
     border: none; }
-  .admin_info .grey_section li .polymorphic_fields ul, .admin_info .grey_section li .polymorphic_fields ul ul {
+  .admin_info .grey_section li .polymorphic_fields ul {
     margin: 0; }
-  .admin_info .grey_section li .polymorphic_fields li, .admin_info .grey_section li .polymorphic_fields ul li {
+  .admin_info .grey_section li .polymorphic_fields li {
     float: left;
     margin: 0 10px 0 0; }
-    .admin_info .grey_section li .polymorphic_fields li label, .admin_info .grey_section li .polymorphic_fields ul li label, .admin_info .grey_section li .polymorphic_fields li > label:first-of-type, .admin_info .grey_section li .polymorphic_fields ul li > label:first-of-type {
+    .admin_info .grey_section li .polymorphic_fields li label, .admin_info .grey_section li .polymorphic_fields li > label:first-of-type {
       margin: 0 0 3px;
       padding: 0;
       font-size: 12px;
@@ -710,6 +710,10 @@
   border-radius: 8px;
   box-shadow: 1px 1px 1px #999;
   display: inline-block; }
+
+/* CKEditor Styles to override defaults or extend*/
+.cke_skin_kama {
+  clear: left; }
 
 /*BEGIN RIGHT COLUMN PROPERTIES*/
 /*------------------------------------------------------*/

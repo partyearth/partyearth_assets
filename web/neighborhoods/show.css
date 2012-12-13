@@ -358,10 +358,12 @@
           .three_item_carousel .scroller_wrapper .screens_container .screens_wrapper .spot_item .details, .three_item_carousel .scroller_wrapper .screens_container .screens_wrapper .spot_item .user_review_summary {
             position: relative;
             height: 80px;
+            padding: 0;
             font-size: 12px;
             line-height: 16px;
             overflow: hidden; }
             .three_item_carousel .scroller_wrapper .screens_container .screens_wrapper .spot_item .details .ellipsis, .three_item_carousel .scroller_wrapper .screens_container .screens_wrapper .spot_item .user_review_summary .ellipsis {
+              display: inline-block;
               position: absolute;
               right: 0;
               bottom: 0;
@@ -373,69 +375,38 @@
                 font-size: 11px; }
           .three_item_carousel .scroller_wrapper .screens_container .screens_wrapper .spot_item .user_review_summary p.by_line {
             margin: 0 0 2px; }
-          .three_item_carousel .scroller_wrapper .screens_container .screens_wrapper .spot_item .details .desc .blue_tag {
-            display: inline-block;
-            position: relative;
-            float: left;
-            height: 10px;
-            margin: 0 13px 0 0;
-            padding: 2px 3px 3px 5px;
-            color: #fff;
-            font-size: 10px;
-            line-height: 11px;
-            background-color: #09f;
-            border-radius: 2px 0 0 2px; }
-            .three_item_carousel .scroller_wrapper .screens_container .screens_wrapper .spot_item .details .desc .blue_tag a:link, .three_item_carousel .scroller_wrapper .screens_container .screens_wrapper .spot_item .details .desc .blue_tag a:visited {
-              color: #fff;
-              text-decoration: none; }
-              .three_item_carousel .scroller_wrapper .screens_container .screens_wrapper .spot_item .details .desc .blue_tag a:link:hover, .three_item_carousel .scroller_wrapper .screens_container .screens_wrapper .spot_item .details .desc .blue_tag a:visited:hover {
-                text-decoration: none; }
-            .three_item_carousel .scroller_wrapper .screens_container .screens_wrapper .spot_item .details .desc .blue_tag .point {
-              position: absolute;
-              right: -15px;
-              bottom: 0;
-              width: 1px;
-              height: 0;
-              border-top: 8px solid transparent;
-              border-left: 8px solid #0099ff;
-              border-right: 7px solid transparent;
-              border-bottom: 7px solid transparent;
-              overflow: hidden; }
-          .three_item_carousel .scroller_wrapper .screens_container .screens_wrapper .spot_item .details .desc .info {
-            display: block;
-            color: #000;
-            text-decoration: none; }
-          .three_item_carousel .scroller_wrapper .screens_container .screens_wrapper .spot_item .details .desc.event {
-            padding-top: 8px;
-            max-height: 32px; }
           .three_item_carousel .scroller_wrapper .screens_container .screens_wrapper .spot_item .details p {
             padding-bottom: 0; }
           .three_item_carousel .scroller_wrapper .screens_container .screens_wrapper .spot_item .details .date_time {
+            display: block;
             height: 16px;
-            margin: 0 0 8px;
+            color: #09f;
+            font-size: 16px;
+            font-weight: bold;
+            line-height: 16px;
+            text-transform: inherit;
             overflow: hidden; }
-            .three_item_carousel .scroller_wrapper .screens_container .screens_wrapper .spot_item .details .date_time .small_text {
-              font-size: 16px;
-              font-weight: bold;
-              line-height: 14px;
-              text-transform: inherit; }
           .three_item_carousel .scroller_wrapper .screens_container .screens_wrapper .spot_item .details .event_venue {
+            display: block;
             height: 16px;
+            color: #375363;
             font-size: 14px;
             font-weight: bold;
             font-family: 'Arial', sans-serif;
-            line-height: 15px;
+            line-height: 16px;
+            text-decoration: underline;
             overflow: hidden; }
-            .three_item_carousel .scroller_wrapper .screens_container .screens_wrapper .spot_item .details .event_venue .black_link {
-              color: #375363 !important; }
-              .three_item_carousel .scroller_wrapper .screens_container .screens_wrapper .spot_item .details .event_venue .black_link:hover {
-                color: #000 !important; }
-            .three_item_carousel .scroller_wrapper .screens_container .screens_wrapper .spot_item .details .event_venue .nourl {
+            .three_item_carousel .scroller_wrapper .screens_container .screens_wrapper .spot_item .details .event_venue:hover {
+              color: #000; }
+            .three_item_carousel .scroller_wrapper .screens_container .screens_wrapper .spot_item .details .event_venue.nourl {
               text-decoration: none; }
-              .three_item_carousel .scroller_wrapper .screens_container .screens_wrapper .spot_item .details .event_venue .nourl:hover {
-                color: #375363 !important;
-                text-decoration: none !important;
-                cursor: default; }
+              .three_item_carousel .scroller_wrapper .screens_container .screens_wrapper .spot_item .details .event_venue.nourl:hover {
+                color: #375363;
+                text-decoration: none;
+                cursor: text; }
+          .three_item_carousel .scroller_wrapper .screens_container .screens_wrapper .spot_item .details .desc {
+            display: block;
+            margin: 16px 0 0; }
           .three_item_carousel .scroller_wrapper .screens_container .screens_wrapper .spot_item .tags a, .three_item_carousel .scroller_wrapper .screens_container .screens_wrapper .spot_item .tags a:visited, .three_item_carousel .scroller_wrapper .screens_container .screens_wrapper .spot_item .tags span {
             display: inline-block;
             float: left;
@@ -485,19 +456,16 @@
         height: 38px;
         overflow: hidden;
         line-height: 18px; }
-      .three_item_carousel.two_line_title .scroller_wrapper .screens_container .screens_wrapper .spot_item .details {
-        height: 79px;
-        overflow: hidden; }
-        .three_item_carousel.two_line_title .scroller_wrapper .screens_container .screens_wrapper .spot_item .details p {
-          padding: 0; }
+      .three_item_carousel.two_line_title .scroller_wrapper .screens_container .screens_wrapper .spot_item .details p {
+        padding: 0; }
   .three_item_carousel.no_desc .scroller_wrapper .screens_container {
-    height: 259px; }
+    height: 311px; }
     .three_item_carousel.no_desc .scroller_wrapper .screens_container .screens_wrapper .spot_item {
       height: auto; }
       .three_item_carousel.no_desc .scroller_wrapper .screens_container .screens_wrapper .spot_item .details {
-        height: auto; }
+        height: 96px; }
   .three_item_carousel.no_desc.two_line_title .scroller_wrapper .screens_container {
-    height: 279px; }
+    height: 331px; }
   .three_item_carousel.event_venues .scroller_wrapper .screens_container {
     height: 419px; }
     .three_item_carousel.event_venues .scroller_wrapper .screens_container .spot_item {
@@ -818,8 +786,6 @@
 :: Styles for the right sidebar and universal elements like pods.
 ----------------------------------------------------- */
 #right_sidebar {
-  float: right;
-  width: 240px;
   /* Lists used in Pods. If list needs specific styles override specific attributes in seperate stylesheet..*/
   /* Pod list stripped down with no border/padding etc. */
   /* Pod list with a thumbnail next to each item */
@@ -828,8 +794,6 @@
   /* tabs on ibiza and pamplona pages */
   /* Styles for Popular Entertainers/DJs */
   /* Styles for the Get Paid To Party pods */ }
-  #right_sidebar .pod {
-    padding: 13px 14px; }
   #right_sidebar h3, #right_sidebar .featured .title {
     display: block;
     color: #375363;
@@ -885,6 +849,10 @@
     border-bottom: 1px dashed #ADC0C9;
     padding: 0 0 5px;
     margin: 0 0 5px; }
+    #right_sidebar .quick_nav_links a, #right_sidebar .quick_nav_links a:link, #right_sidebar .quick_nav_links a:visited {
+      color: #09f; }
+      #right_sidebar .quick_nav_links a:hover, #right_sidebar .quick_nav_links a:link:hover, #right_sidebar .quick_nav_links a:visited:hover {
+        color: #597686; }
   #right_sidebar .name {
     color: #09f;
     font-size: 10px;
@@ -906,7 +874,7 @@
       overflow: hidden; }
   #right_sidebar .changer .name {
     height: 10px;
-    margin: 0 0 8px;
+    margin: 0;
     padding: 0 0 6px;
     vertical-align: top;
     border-bottom: 1px solid #dae4e9; }
@@ -1096,6 +1064,7 @@
     right: -1px;
     width: 243px;
     height: 148px;
+    margin: 0 0 12px;
     background-position: -294px -233px; }
   #right_sidebar .share_btn,
   #right_sidebar .subscribe_btn,
@@ -1104,7 +1073,7 @@
     right: 0;
     width: 243px;
     height: 44px;
-    margin: 0 0 3px; }
+    margin: 0 0 9px; }
   #right_sidebar .share_btn {
     background-position: -291px -52px; }
   #right_sidebar .subscribe_btn {
@@ -1162,11 +1131,13 @@
 /* Upcoming Events Sidebar Pod */
 #upcoming_events .list .list_item {
   position: relative; }
+  #upcoming_events .list .list_item:first-child {
+    padding-top: 8px; }
   #upcoming_events .list .list_item .point {
     display: none;
     position: absolute;
-    top: 10px;
-    left: -15px;
+    top: 18px;
+    left: -14px;
     border-top: 7px solid transparent;
     border-right: 7px solid transparent;
     border-bottom: 7px solid transparent;
@@ -1290,6 +1261,16 @@
   .custom_accordion .collapse_bar_wrapper .inner_wrapper,
   .custom_accordion .expand_bar_wrapper .inner_wrapper {
     padding: 0 0 0 12px; }
+    .custom_accordion .collapse_bar_wrapper .inner_wrapper .headline,
+    .custom_accordion .expand_bar_wrapper .inner_wrapper .headline {
+      float: left;
+      margin: 0 3px 0 0;
+      padding: 0;
+      color: #464646;
+      font-size: 18px;
+      font-weight: normal;
+      line-height: 21px;
+      font-family: "Arimo", Arial, san-serif; }
     .custom_accordion .collapse_bar_wrapper .inner_wrapper .month_year,
     .custom_accordion .expand_bar_wrapper .inner_wrapper .month_year {
       padding: 0;
@@ -1334,7 +1315,9 @@
   .custom_accordion .accordion_content tr.grey_text .tickets.calendar div span {
     color: #999 !important; }
   .custom_accordion .accordion_content tr {
-    border-bottom: 1px dashed #ccc; }
+    border-top: 1px dashed #ccc; }
+    .custom_accordion .accordion_content tr:first-child {
+      border-top: none; }
     .custom_accordion .accordion_content tr td {
       padding: 14px 0;
       vertical-align: top; }
@@ -1371,7 +1354,7 @@
       border-bottom: 1px solid #e7e7e7; }
   .custom_accordion .accordion_content .details {
     width: 524px;
-    padding: 10px 20px 14px 0; }
+    padding: 14px 20px 14px 0; }
     .custom_accordion .accordion_content .details .details_wrapper table {
       display: inline; }
       .custom_accordion .accordion_content .details .details_wrapper table tr {
@@ -1489,15 +1472,16 @@
       line-height: 27px;
       text-decoration: underline;
       border-left: 1px solid #06aaf8; }
-      .blue_header.with_dropdown .blue_header_dropdown p .arrow {
+      .blue_header.with_dropdown .blue_header_dropdown p .drop_arrow {
         display: block;
         position: absolute;
         top: 0;
         right: 0;
         bottom: 0;
-        padding: 14px 15px 0;
-        border-left: 1px solid #06aaf8; }
-        .blue_header.with_dropdown .blue_header_dropdown p .arrow span {
+        width: 12px;
+        height: 8px;
+        padding: 14px 15px; }
+        .blue_header.with_dropdown .blue_header_dropdown p .drop_arrow span {
           display: block;
           width: 13px;
           height: 8px;
@@ -1509,8 +1493,7 @@
       right: 0;
       left: 0;
       z-index: 10;
-      margin: -10px 0 0;
-      padding: 6px 0;
+      margin: 1px 0 0;
       background-color: #0098fe;
       border-bottom-right-radius: 2px;
       border-bottom-left-radius: 2px; }
@@ -1535,7 +1518,10 @@
       .blue_header.with_dropdown .blue_header_dropdown:hover p, .blue_header.with_dropdown .blue_header_dropdown.expanded p {
         color: #8cd0ff;
         text-decoration: none; }
-    .blue_header.with_dropdown .blue_header_dropdown.expanded .arrow span {
+        .blue_header.with_dropdown .blue_header_dropdown:hover p .drop_arrow, .blue_header.with_dropdown .blue_header_dropdown.expanded p .drop_arrow {
+          padding-left: 14px;
+          border-left: 1px solid #06aaf8; }
+    .blue_header.with_dropdown .blue_header_dropdown.expanded .drop_arrow span {
       background-position: -105px 0; }
     .blue_header.with_dropdown .blue_header_dropdown.expanded ul {
       display: block; }
@@ -1569,7 +1555,8 @@
       width: 236px;
       /* Display black overlay on hover */
       /* Centers Slideshow and map */
-      /* Hides caption below photos */ }
+      /* Hides caption below photos */
+      /* -2px more for Firefox */ }
       #gal_map #slideshow_cont.collapsed:hover .overlay,
       #gal_map #map_cont.collapsed:hover .overlay {
         display: block; }
@@ -1579,7 +1566,7 @@
         margin-left: -50%; }
       #gal_map #slideshow_cont.collapsed .nivo-caption,
       #gal_map #map_cont.collapsed .nivo-caption {
-        bottom: -25px; }
+        bottom: -27px; }
   #gal_map #slideshow_cont .quick_nav_links {
     height: 24px;
     overflow: hidden; }
@@ -1667,7 +1654,6 @@
 
 /* Styles for Description and Map Legend */
 #gal_map_foot {
-  margin: 0 0 12px;
   padding: 10px 0 0;
   border-top: 2px solid #ccc; }
   #gal_map_foot * {
@@ -1779,9 +1765,12 @@
       color: #adc0c9; }
       #all_venues_header p.legend span {
         display: inline-block;
+        position: relative;
+        top: -2px;
         width: 9px;
         height: 9px;
         text-indent: -9999px;
+        vertical-align: middle;
         background-image: url(/assets/neighborhoods/sprite.png);
         background-position: -45px 0; }
 
@@ -2011,15 +2000,7 @@
   font-size: 18px;
   font-weight: bold;
   overflow: hidden; }
-#more_links_pod ul.two_line_title .title {
-  height: 36px; }
-
-.more_link {
-  padding: 0;
-  margin: 5px 0;
-  color: #09f;
-  font-family: "Arial";
-  font-size: 14px;
-  font-weight: bold; }
-  .more_link a, .more_link .fake_link {
-    text-decoration: underline; }
+#more_links_pod ul.two_line_title {
+  /* +1 for Firefox bold text decoration */ }
+  #more_links_pod ul.two_line_title .title {
+    height: 37px; }

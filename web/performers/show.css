@@ -225,6 +225,16 @@
   .custom_accordion .collapse_bar_wrapper .inner_wrapper,
   .custom_accordion .expand_bar_wrapper .inner_wrapper {
     padding: 0 0 0 12px; }
+    .custom_accordion .collapse_bar_wrapper .inner_wrapper .headline,
+    .custom_accordion .expand_bar_wrapper .inner_wrapper .headline {
+      float: left;
+      margin: 0 3px 0 0;
+      padding: 0;
+      color: #464646;
+      font-size: 18px;
+      font-weight: normal;
+      line-height: 21px;
+      font-family: "Arimo", Arial, san-serif; }
     .custom_accordion .collapse_bar_wrapper .inner_wrapper .month_year,
     .custom_accordion .expand_bar_wrapper .inner_wrapper .month_year {
       padding: 0;
@@ -269,7 +279,9 @@
   .custom_accordion .accordion_content tr.grey_text .tickets.calendar div span {
     color: #999 !important; }
   .custom_accordion .accordion_content tr {
-    border-bottom: 1px dashed #ccc; }
+    border-top: 1px dashed #ccc; }
+    .custom_accordion .accordion_content tr:first-child {
+      border-top: none; }
     .custom_accordion .accordion_content tr td {
       padding: 14px 0;
       vertical-align: top; }
@@ -306,7 +318,7 @@
       border-bottom: 1px solid #e7e7e7; }
   .custom_accordion .accordion_content .details {
     width: 524px;
-    padding: 10px 20px 14px 0; }
+    padding: 14px 20px 14px 0; }
     .custom_accordion .accordion_content .details .details_wrapper table {
       display: inline; }
       .custom_accordion .accordion_content .details .details_wrapper table tr {
@@ -394,8 +406,6 @@
 :: Styles for the right sidebar and universal elements like pods.
 ----------------------------------------------------- */
 #right_sidebar {
-  float: right;
-  width: 240px;
   /* Lists used in Pods. If list needs specific styles override specific attributes in seperate stylesheet..*/
   /* Pod list stripped down with no border/padding etc. */
   /* Pod list with a thumbnail next to each item */
@@ -404,8 +414,6 @@
   /* tabs on ibiza and pamplona pages */
   /* Styles for Popular Entertainers/DJs */
   /* Styles for the Get Paid To Party pods */ }
-  #right_sidebar .pod {
-    padding: 13px 14px; }
   #right_sidebar h3, #right_sidebar .featured .title {
     display: block;
     color: #375363;
@@ -461,6 +469,10 @@
     border-bottom: 1px dashed #ADC0C9;
     padding: 0 0 5px;
     margin: 0 0 5px; }
+    #right_sidebar .quick_nav_links a, #right_sidebar .quick_nav_links a:link, #right_sidebar .quick_nav_links a:visited {
+      color: #09f; }
+      #right_sidebar .quick_nav_links a:hover, #right_sidebar .quick_nav_links a:link:hover, #right_sidebar .quick_nav_links a:visited:hover {
+        color: #597686; }
   #right_sidebar .name {
     color: #09f;
     font-size: 10px;
@@ -482,7 +494,7 @@
       overflow: hidden; }
   #right_sidebar .changer .name {
     height: 10px;
-    margin: 0 0 8px;
+    margin: 0;
     padding: 0 0 6px;
     vertical-align: top;
     border-bottom: 1px solid #dae4e9; }
@@ -672,6 +684,7 @@
     right: -1px;
     width: 243px;
     height: 148px;
+    margin: 0 0 12px;
     background-position: -294px -233px; }
   #right_sidebar .share_btn,
   #right_sidebar .subscribe_btn,
@@ -680,7 +693,7 @@
     right: 0;
     width: 243px;
     height: 44px;
-    margin: 0 0 3px; }
+    margin: 0 0 9px; }
   #right_sidebar .share_btn {
     background-position: -291px -52px; }
   #right_sidebar .subscribe_btn {
@@ -738,11 +751,13 @@
 /* Upcoming Events Sidebar Pod */
 #upcoming_events .list .list_item {
   position: relative; }
+  #upcoming_events .list .list_item:first-child {
+    padding-top: 8px; }
   #upcoming_events .list .list_item .point {
     display: none;
     position: absolute;
-    top: 10px;
-    left: -15px;
+    top: 18px;
+    left: -14px;
     border-top: 7px solid transparent;
     border-right: 7px solid transparent;
     border-bottom: 7px solid transparent;
@@ -846,12 +861,6 @@
 .read_more.pull_down .blue_text.arrow,
 .read_more.pull_down .blue-text.arrow {
   display: none; }
-
-/* Styles for missing modules */
-.missing {
-  padding: 0 0 8px;
-  margin: 0 0 8px;
-  border-bottom: 1px solid #8ea8b5; }
 /* GIGYA COMMENTS
 ------------------------------------
 :: These styles are specifically for the comments which are powered by Gigya..
@@ -876,8 +885,14 @@
   border-bottom: 1px dashed #ADC0C9; }
 #comments .gig-comments-container {
   width: auto !important; }
-#comments .gig-comments-textarea {
+#comments .gig-comments-commentBox {
+  margin: 10px 0 10px;
+  padding: 0 0 10px;
+  border-bottom: 1px dashed #adc0c9; }
+#comments textarea.gig-comments-commentBox-textarea {
   width: 694px !important; }
+#comments textarea.gig-comments-replyBox-textarea {
+  width: 674px !important; }
 #comments #Comments-postButton a {
   display: inline-block;
   font-family: Arial, Helvetica, sans-serif;
@@ -906,6 +921,10 @@
   /*FOR IE*/
   -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=#2388f5, endColorStr=#2388f5);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=#2388f5, endColorStr=#2388f5); }
+#comments .gig-comments-commentList-header {
+  margin: 0 0 10px;
+  padding: 0 0 10px;
+  border-bottom: 1px dashed #adc0c9; }
 #comments .gig-comments-commentList-header-commentsCount {
   float: left;
   padding: 0; }
@@ -922,10 +941,10 @@
   line-height: 100%; }
 
 .comments_link {
-  color: #375363;
   display: block;
+  position: relative;
   float: right;
-  position: relative; }
+  color: #375363; }
   .comments_link span {
     display: block;
     position: absolute;
@@ -1920,7 +1939,7 @@
     padding: 0 0 0 20px;
     color: #999; }
     #gal_map_footer .marker span {
-      width: 13px;
+      width: 12px;
       height: 16px; }
   #gal_map_footer .venue span {
     background-image: url(/assets/map/venue_small.png); }
@@ -2172,11 +2191,8 @@
 :: Styles for the object page tags
 ------------------------------------------- */
 #object_page_tags {
-  clear: left;
-  padding: 8px 0 0;
   font-size: 11px;
-  line-height: 15px;
-  border-top: 1px dotted #ccc; }
+  line-height: 15px; }
   #object_page_tags dt {
     float: left;
     clear: left;
@@ -2364,7 +2380,8 @@
 #twitter_pod h3 {
   padding: 0;
   border: none; }
-#twitter_pod h4, #twitter_pod .twitter_handle {
+#twitter_pod .twitter_handle {
+  display: block;
   font-size: 18px;
   line-height: 18px; }
 #twitter_pod .account_image {
@@ -2434,3 +2451,70 @@
 
 .in_season_sticker:hover {
   background-position: -297px -393px; }
+
+#perf_link_cont p {
+  display: inline; }
+
+#perf_react {
+  margin: 9px 0 0;
+  padding: 9px 0 0;
+  border-top: 1px dashed #adc0c9;
+  /* Reaction Button Container "Like" */
+  /* Reaction Buttons */
+  /* Reaction Buttons Counter */ }
+  #perf_react td {
+    vertical-align: top; }
+  #perf_react .gig-button-container {
+    padding: 0 !important; }
+  #perf_react .gig-button-container-LikePerfomerMessage {
+    margin: 0 33px 0 0; }
+  #perf_react .gig-reaction-button {
+    width: 115px;
+    height: 41px;
+    margin: -2px 0 0 -3px;
+    background-image: url(/assets/performers/reaction-buttons.png);
+    cursor: pointer;
+    /* Reaction Buttons Hide Gigya Stuff */
+    /* Reaction Button "Like" */
+    /* Reaction Button "No Thanks" */ }
+    #perf_react .gig-reaction-button * {
+      visibility: hidden; }
+    #perf_react .gig-reaction-button#PerformerReaction-reaction0 {
+      background-position: 0 0; }
+      #perf_react .gig-reaction-button#PerformerReaction-reaction0:hover {
+        background-position: 0 -43px; }
+      #perf_react .gig-reaction-button#PerformerReaction-reaction0.gig-button-down {
+        background-position: 0 -86px; }
+    #perf_react .gig-reaction-button#PerformerReaction-reaction1 {
+      background-position: -115px 0; }
+      #perf_react .gig-reaction-button#PerformerReaction-reaction1:hover {
+        background-position: -115px -43px; }
+      #perf_react .gig-reaction-button#PerformerReaction-reaction1.gig-button-down {
+        background-position: -115px -86px; }
+  #perf_react .gig-reaction-counter {
+    width: 39px !important;
+    height: 35px !important;
+    margin: 0 0 0 4px;
+    background-image: url(/assets/performers/reaction-buttons.png) !important;
+    background-position: -230px 0; }
+    #perf_react .gig-reaction-counter .gig-reaction-counter-text {
+      color: #8ea8b5 !important;
+      font-size: 11px !important;
+      line-height: 36px !important; }
+  #perf_react #perf_react_ppl .perf_react_ppl {
+    float: left;
+    width: 155px;
+    height: 35px;
+    overflow: hidden; }
+    #perf_react #perf_react_ppl .perf_react_ppl li {
+      float: left;
+      margin: 0 0 0 5px; }
+      #perf_react #perf_react_ppl .perf_react_ppl li:first-child {
+        margin-left: 0; }
+      #perf_react #perf_react_ppl .perf_react_ppl li img {
+        display: block;
+        width: 33px;
+        height: 33px;
+        border: 1px solid #cbd7dd; }
+    #perf_react #perf_react_ppl .perf_react_ppl#perf_react_ppl_like {
+      margin-right: 33px; }

@@ -86,10 +86,12 @@
           .three_item_carousel .scroller_wrapper .screens_container .screens_wrapper .spot_item .details, .three_item_carousel .scroller_wrapper .screens_container .screens_wrapper .spot_item .user_review_summary {
             position: relative;
             height: 80px;
+            padding: 0;
             font-size: 12px;
             line-height: 16px;
             overflow: hidden; }
             .three_item_carousel .scroller_wrapper .screens_container .screens_wrapper .spot_item .details .ellipsis, .three_item_carousel .scroller_wrapper .screens_container .screens_wrapper .spot_item .user_review_summary .ellipsis {
+              display: inline-block;
               position: absolute;
               right: 0;
               bottom: 0;
@@ -101,69 +103,38 @@
                 font-size: 11px; }
           .three_item_carousel .scroller_wrapper .screens_container .screens_wrapper .spot_item .user_review_summary p.by_line {
             margin: 0 0 2px; }
-          .three_item_carousel .scroller_wrapper .screens_container .screens_wrapper .spot_item .details .desc .blue_tag {
-            display: inline-block;
-            position: relative;
-            float: left;
-            height: 10px;
-            margin: 0 13px 0 0;
-            padding: 2px 3px 3px 5px;
-            color: #fff;
-            font-size: 10px;
-            line-height: 11px;
-            background-color: #09f;
-            border-radius: 2px 0 0 2px; }
-            .three_item_carousel .scroller_wrapper .screens_container .screens_wrapper .spot_item .details .desc .blue_tag a:link, .three_item_carousel .scroller_wrapper .screens_container .screens_wrapper .spot_item .details .desc .blue_tag a:visited {
-              color: #fff;
-              text-decoration: none; }
-              .three_item_carousel .scroller_wrapper .screens_container .screens_wrapper .spot_item .details .desc .blue_tag a:link:hover, .three_item_carousel .scroller_wrapper .screens_container .screens_wrapper .spot_item .details .desc .blue_tag a:visited:hover {
-                text-decoration: none; }
-            .three_item_carousel .scroller_wrapper .screens_container .screens_wrapper .spot_item .details .desc .blue_tag .point {
-              position: absolute;
-              right: -15px;
-              bottom: 0;
-              width: 1px;
-              height: 0;
-              border-top: 8px solid transparent;
-              border-left: 8px solid #0099ff;
-              border-right: 7px solid transparent;
-              border-bottom: 7px solid transparent;
-              overflow: hidden; }
-          .three_item_carousel .scroller_wrapper .screens_container .screens_wrapper .spot_item .details .desc .info {
-            display: block;
-            color: #000;
-            text-decoration: none; }
-          .three_item_carousel .scroller_wrapper .screens_container .screens_wrapper .spot_item .details .desc.event {
-            padding-top: 8px;
-            max-height: 32px; }
           .three_item_carousel .scroller_wrapper .screens_container .screens_wrapper .spot_item .details p {
             padding-bottom: 0; }
           .three_item_carousel .scroller_wrapper .screens_container .screens_wrapper .spot_item .details .date_time {
+            display: block;
             height: 16px;
-            margin: 0 0 8px;
+            color: #09f;
+            font-size: 16px;
+            font-weight: bold;
+            line-height: 16px;
+            text-transform: inherit;
             overflow: hidden; }
-            .three_item_carousel .scroller_wrapper .screens_container .screens_wrapper .spot_item .details .date_time .small_text {
-              font-size: 16px;
-              font-weight: bold;
-              line-height: 14px;
-              text-transform: inherit; }
           .three_item_carousel .scroller_wrapper .screens_container .screens_wrapper .spot_item .details .event_venue {
+            display: block;
             height: 16px;
+            color: #375363;
             font-size: 14px;
             font-weight: bold;
             font-family: 'Arial', sans-serif;
-            line-height: 15px;
+            line-height: 16px;
+            text-decoration: underline;
             overflow: hidden; }
-            .three_item_carousel .scroller_wrapper .screens_container .screens_wrapper .spot_item .details .event_venue .black_link {
-              color: #375363 !important; }
-              .three_item_carousel .scroller_wrapper .screens_container .screens_wrapper .spot_item .details .event_venue .black_link:hover {
-                color: #000 !important; }
-            .three_item_carousel .scroller_wrapper .screens_container .screens_wrapper .spot_item .details .event_venue .nourl {
+            .three_item_carousel .scroller_wrapper .screens_container .screens_wrapper .spot_item .details .event_venue:hover {
+              color: #000; }
+            .three_item_carousel .scroller_wrapper .screens_container .screens_wrapper .spot_item .details .event_venue.nourl {
               text-decoration: none; }
-              .three_item_carousel .scroller_wrapper .screens_container .screens_wrapper .spot_item .details .event_venue .nourl:hover {
-                color: #375363 !important;
-                text-decoration: none !important;
-                cursor: default; }
+              .three_item_carousel .scroller_wrapper .screens_container .screens_wrapper .spot_item .details .event_venue.nourl:hover {
+                color: #375363;
+                text-decoration: none;
+                cursor: text; }
+          .three_item_carousel .scroller_wrapper .screens_container .screens_wrapper .spot_item .details .desc {
+            display: block;
+            margin: 16px 0 0; }
           .three_item_carousel .scroller_wrapper .screens_container .screens_wrapper .spot_item .tags a, .three_item_carousel .scroller_wrapper .screens_container .screens_wrapper .spot_item .tags a:visited, .three_item_carousel .scroller_wrapper .screens_container .screens_wrapper .spot_item .tags span {
             display: inline-block;
             float: left;
@@ -213,19 +184,16 @@
         height: 38px;
         overflow: hidden;
         line-height: 18px; }
-      .three_item_carousel.two_line_title .scroller_wrapper .screens_container .screens_wrapper .spot_item .details {
-        height: 79px;
-        overflow: hidden; }
-        .three_item_carousel.two_line_title .scroller_wrapper .screens_container .screens_wrapper .spot_item .details p {
-          padding: 0; }
+      .three_item_carousel.two_line_title .scroller_wrapper .screens_container .screens_wrapper .spot_item .details p {
+        padding: 0; }
   .three_item_carousel.no_desc .scroller_wrapper .screens_container {
-    height: 259px; }
+    height: 311px; }
     .three_item_carousel.no_desc .scroller_wrapper .screens_container .screens_wrapper .spot_item {
       height: auto; }
       .three_item_carousel.no_desc .scroller_wrapper .screens_container .screens_wrapper .spot_item .details {
-        height: auto; }
+        height: 96px; }
   .three_item_carousel.no_desc.two_line_title .scroller_wrapper .screens_container {
-    height: 279px; }
+    height: 331px; }
   .three_item_carousel.event_venues .scroller_wrapper .screens_container {
     height: 419px; }
     .three_item_carousel.event_venues .scroller_wrapper .screens_container .spot_item {

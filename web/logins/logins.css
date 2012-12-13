@@ -79,7 +79,7 @@ table.form {
   width: 155px;
   left: 310px; }
 
-@media screen and (-webkit-min-device-pixel-ratio:0) {
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
   /* FOR WEBKIT BROWSERS */
   #login_info.login .username_error .inline-errors.isolated {
     top: -41px; } }

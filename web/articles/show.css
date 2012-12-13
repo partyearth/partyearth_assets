@@ -532,8 +532,6 @@
 :: Styles for the right sidebar and universal elements like pods.
 ----------------------------------------------------- */
 #right_sidebar {
-  float: right;
-  width: 240px;
   /* Lists used in Pods. If list needs specific styles override specific attributes in seperate stylesheet..*/
   /* Pod list stripped down with no border/padding etc. */
   /* Pod list with a thumbnail next to each item */
@@ -542,8 +540,6 @@
   /* tabs on ibiza and pamplona pages */
   /* Styles for Popular Entertainers/DJs */
   /* Styles for the Get Paid To Party pods */ }
-  #right_sidebar .pod {
-    padding: 13px 14px; }
   #right_sidebar h3, #right_sidebar .featured .title {
     display: block;
     color: #375363;
@@ -599,6 +595,10 @@
     border-bottom: 1px dashed #ADC0C9;
     padding: 0 0 5px;
     margin: 0 0 5px; }
+    #right_sidebar .quick_nav_links a, #right_sidebar .quick_nav_links a:link, #right_sidebar .quick_nav_links a:visited {
+      color: #09f; }
+      #right_sidebar .quick_nav_links a:hover, #right_sidebar .quick_nav_links a:link:hover, #right_sidebar .quick_nav_links a:visited:hover {
+        color: #597686; }
   #right_sidebar .name {
     color: #09f;
     font-size: 10px;
@@ -620,7 +620,7 @@
       overflow: hidden; }
   #right_sidebar .changer .name {
     height: 10px;
-    margin: 0 0 8px;
+    margin: 0;
     padding: 0 0 6px;
     vertical-align: top;
     border-bottom: 1px solid #dae4e9; }
@@ -810,6 +810,7 @@
     right: -1px;
     width: 243px;
     height: 148px;
+    margin: 0 0 12px;
     background-position: -294px -233px; }
   #right_sidebar .share_btn,
   #right_sidebar .subscribe_btn,
@@ -818,7 +819,7 @@
     right: 0;
     width: 243px;
     height: 44px;
-    margin: 0 0 3px; }
+    margin: 0 0 9px; }
   #right_sidebar .share_btn {
     background-position: -291px -52px; }
   #right_sidebar .subscribe_btn {
@@ -924,11 +925,13 @@
 /* Upcoming Events Sidebar Pod */
 #upcoming_events .list .list_item {
   position: relative; }
+  #upcoming_events .list .list_item:first-child {
+    padding-top: 8px; }
   #upcoming_events .list .list_item .point {
     display: none;
     position: absolute;
-    top: 10px;
-    left: -15px;
+    top: 18px;
+    left: -14px;
     border-top: 7px solid transparent;
     border-right: 7px solid transparent;
     border-bottom: 7px solid transparent;
@@ -995,8 +998,14 @@
   border-bottom: 1px dashed #ADC0C9; }
 #comments .gig-comments-container {
   width: auto !important; }
-#comments .gig-comments-textarea {
+#comments .gig-comments-commentBox {
+  margin: 10px 0 10px;
+  padding: 0 0 10px;
+  border-bottom: 1px dashed #adc0c9; }
+#comments textarea.gig-comments-commentBox-textarea {
   width: 694px !important; }
+#comments textarea.gig-comments-replyBox-textarea {
+  width: 674px !important; }
 #comments #Comments-postButton a {
   display: inline-block;
   font-family: Arial, Helvetica, sans-serif;
@@ -1025,6 +1034,10 @@
   /*FOR IE*/
   -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=#2388f5, endColorStr=#2388f5);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=#2388f5, endColorStr=#2388f5); }
+#comments .gig-comments-commentList-header {
+  margin: 0 0 10px;
+  padding: 0 0 10px;
+  border-bottom: 1px dashed #adc0c9; }
 #comments .gig-comments-commentList-header-commentsCount {
   float: left;
   padding: 0; }
@@ -1041,10 +1054,10 @@
   line-height: 100%; }
 
 .comments_link {
-  color: #375363;
   display: block;
+  position: relative;
   float: right;
-  position: relative; }
+  color: #375363; }
   .comments_link span {
     display: block;
     position: absolute;
@@ -1381,7 +1394,7 @@
     clear: left;
     border-top: 1px solid #8EA8B5;
     border-bottom: 2px solid #8EA8B5;
-    padding: 8px 0 3px;
+    padding: 8px 0;
     margin: 8px 0; }
     #article_page #left_container .article_footer .footer_line {
       padding: 0; }
@@ -1403,46 +1416,38 @@
         padding: 0 0 0 46px;
         font-size: 11px;
         line-height: 12px; }
-  #article_page #left_container .related_articles {
-    border-bottom: 2px solid #8EA8B5;
-    margin: 10px 0 4px 0; }
-    #article_page #left_container .related_articles .title {
-      color: #09F;
-      font-size: 21px;
-      font-weight: bold;
-      padding: 0 0 10px;
-      margin: 0 0 10px;
-      border-bottom: 1px dashed #ADC0C9; }
-    #article_page #left_container .related_articles .related_img {
+        #article_page #left_container .article_footer .article_footer_left dd p {
+          padding: 0; }
+  #article_page #left_container .related_articles .title {
+    color: #09F;
+    font-size: 21px;
+    font-weight: bold;
+    padding: 0 0 10px;
+    margin: 0 0 10px;
+    border-bottom: 1px dashed #ADC0C9; }
+  #article_page #left_container .related_articles .related_img {
+    width: 165px;
+    height: 175px;
+    margin: 0 15px 10px 0;
+    overflow: hidden; }
+    #article_page #left_container .related_articles .related_img .object_photo {
+      display: block;
       width: 165px;
-      height: 175px;
-      margin: 0 15px 10px 0;
-      overflow: hidden; }
-      #article_page #left_container .related_articles .related_img .object_photo {
-        display: block;
+      height: 110px;
+      margin: 0 0 5px;
+      border: 1px solid #d2dce1; }
+      #article_page #left_container .related_articles .related_img .object_photo img {
         width: 165px;
-        height: 110px;
-        margin: 0 0 5px;
-        border: 1px solid #d2dce1; }
-        #article_page #left_container .related_articles .related_img .object_photo img {
-          width: 165px;
-          height: 110px; }
-      #article_page #left_container .related_articles .related_img .article_name {
-        display: block;
-        font-weight: bold;
-        text-decoration: none;
-        line-height: 16px; }
-        #article_page #left_container .related_articles .related_img .article_name:hover {
-          text-decoration: underline; }
-    #article_page #left_container .related_articles .related_img.last {
-      margin-right: 0; }
-  #article_page #left_container .more_link {
-    margin: 5px 0 0;
-    font-family: "Arial";
-    font-size: 14px;
-    font-weight: bold; }
-    #article_page #left_container .more_link a, #article_page #left_container .more_link .fake_link {
-      text-decoration: underline; }
+        height: 110px; }
+    #article_page #left_container .related_articles .related_img .article_name {
+      display: block;
+      font-weight: bold;
+      text-decoration: none;
+      line-height: 16px; }
+      #article_page #left_container .related_articles .related_img .article_name:hover {
+        text-decoration: underline; }
+  #article_page #left_container .related_articles .related_img.last {
+    margin-right: 0; }
 
 .article_footer .comments_link {
   width: 154px;

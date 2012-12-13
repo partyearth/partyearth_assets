@@ -419,8 +419,8 @@
 
 .location_popup {
   position: absolute;
-  top: 57px;
-  left: 337px;
+  top: 156px;
+  left: 330px;
   z-index: 9000;
   /*IMPORTANT: This insures that the popup displays in front of everything in default and "more" dialogue*/
   width: 278px;
@@ -476,7 +476,7 @@
     .location_popup .fake_link:hover {
       text-decoration: underline !important; }
   .location_popup .cancel_link {
-    margin: 0 0 0 158px;
+    margin: 0 0 0 150px;
     padding: 3px 0 0;
     text-decoration: underline !important; }
   .location_popup .blue_btn {
@@ -586,7 +586,7 @@
               color: #aaa;
               text-decoration: none; }
         #left_container .search_page_content .scrolling_filters .result_sections .divider {
-          margin: 0 4px; }
+          margin: 0 3px; }
       #left_container .search_page_content .scrolling_filters.fixed {
         position: fixed;
         top: -2px;
@@ -689,7 +689,9 @@
             position: relative;
             height: 18px; }
             #left_container .search_page_content .search_filters .filters .filter_set .Top .truncator_popup,
-            #left_container .search_page_content .search_filters .filters .filter_set .Top .long_label, #left_container .search_page_content .search_filters .filters .filter_set .Custom .truncator_popup, #left_container .search_page_content .search_filters .filters .filter_set .Custom .long_label, #left_container .search_page_content .search_filters .filters .filter_set .Child .truncator_popup, #left_container .search_page_content .search_filters .filters .filter_set .Child .long_label {
+            #left_container .search_page_content .search_filters .filters .filter_set .Top .long_label, #left_container .search_page_content .search_filters .filters .filter_set .Custom .truncator_popup,
+            #left_container .search_page_content .search_filters .filters .filter_set .Custom .long_label, #left_container .search_page_content .search_filters .filters .filter_set .Child .truncator_popup,
+            #left_container .search_page_content .search_filters .filters .filter_set .Child .long_label {
               display: none;
               position: absolute;
               top: -1px !important;
@@ -1173,7 +1175,7 @@
   .treeview.ui-dialog-content.ui-widget-content .Custom {
     position: relative;
     z-index: 9000;
-    width: 258px; }
+    width: 274px; }
     .treeview.ui-dialog-content.ui-widget-content .Custom .location_popup {
       /*ALL STYLES BELOW FOR IE ONLY*/
       width: 260px\9;
@@ -1188,7 +1190,9 @@
   .treeview.ui-dialog-content.ui-widget-content .Top, .treeview.ui-dialog-content.ui-widget-content .Custom, .treeview.ui-dialog-content.ui-widget-content .Child {
     position: relative; }
     .treeview.ui-dialog-content.ui-widget-content .Top .truncator_popup,
-    .treeview.ui-dialog-content.ui-widget-content .Top .long_label, .treeview.ui-dialog-content.ui-widget-content .Custom .truncator_popup, .treeview.ui-dialog-content.ui-widget-content .Custom .long_label, .treeview.ui-dialog-content.ui-widget-content .Child .truncator_popup, .treeview.ui-dialog-content.ui-widget-content .Child .long_label {
+    .treeview.ui-dialog-content.ui-widget-content .Top .long_label, .treeview.ui-dialog-content.ui-widget-content .Custom .truncator_popup,
+    .treeview.ui-dialog-content.ui-widget-content .Custom .long_label, .treeview.ui-dialog-content.ui-widget-content .Child .truncator_popup,
+    .treeview.ui-dialog-content.ui-widget-content .Child .long_label {
       display: none;
       position: absolute;
       top: 1px !important;
@@ -1228,7 +1232,7 @@
     position: relative;
     top: -2px; }
   .ui-dialog .ui-dialog-content .location_popup {
-    top: 32px;
+    top: 27px;
     left: -12px; }
 
 .CalendarDialog.ui-dialog-content {
@@ -1272,8 +1276,8 @@
     color: #597686; }
   .ui-dialog.ui-widget-content .editable_textarea,
   .ui-dialog.ui-widget-content label {
-    position: absolute;
-    top: 3px;
+    position: relative;
+    top: -1px;
     padding: 0 0 0 7px;
     text-transform: capitalize;
     font-size: 12px;
@@ -1837,6 +1841,10 @@
     .map_infowindow .map_infowindow_content .address {
       line-height: 13px;
       margin: 2px 0 0 0; }
+      .map_infowindow .map_infowindow_content .address br {
+        display: none; }
+      .map_infowindow .map_infowindow_content .address p br {
+        display: block; }
     .map_infowindow .map_infowindow_content .event_date_name {
       color: #0099ff;
       line-height: 18px; }

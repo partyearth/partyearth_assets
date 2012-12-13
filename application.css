@@ -1647,7 +1647,7 @@ ul.ui-autocomplete .ui-autocomplete-category.first_category {
   text-transform: uppercase;
   width: auto; }
 
-@media screen and (-webkit-min-device-pixel-ratio:0) {
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
   /* FOR WEBKIT BROWSERS */
   .ui-dialog .ui-state-default,
   .ui-dialog.ui-widget-content .ui-state-default,
@@ -1987,19 +1987,44 @@ h2 {
   position: relative;
   float: left;
   width: 740px; }
-  #left_container .section_footer {
-    margin: 8px 0 0;
-    padding: 8px 0 0;
-    color: #09f;
-    font-size: 14px;
-    font-weight: bold;
-    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  #left_container .section {
+    margin: 0 0 13px; }
+    #left_container .section:last-child {
+      margin-bottom: 0; }
+  #left_container .section_footer, #left_container .pod_footer {
+    clear: left;
+    margin: 13px 0 0;
+    padding: 13px 0 0;
     border-top: 1px solid #adc0c9; }
-    #left_container .section_footer p {
+    #left_container .section_footer .more_link, #left_container .pod_footer .more_link {
       float: right;
-      padding: 0; }
-    #left_container .section_footer a, #left_container .section_footer a:link, #left_container .section_footer a:visited {
-      color: #09f; }
+      padding: 0;
+      color: #09f;
+      font-size: 14px;
+      font-weight: bold;
+      font-family: 'Arial', 'Helvetica Neue', 'Helvetica', sans-serif;
+      line-height: 14px; }
+      #left_container .section_footer .more_link a, #left_container .section_footer .more_link .fake_link, #left_container .pod_footer .more_link a, #left_container .pod_footer .more_link .fake_link {
+        text-decoration: underline; }
+  #left_container .pod_footer {
+    margin-bottom: 0;
+    font-weight: normal; }
+    #left_container .pod_footer a, #left_container .pod_footer a:link, #left_container .pod_footer a:visited, #left_container .pod_footer .fake_link {
+      color: #000;
+      font-size: 11px; }
+      #left_container .pod_footer a:hover, #left_container .pod_footer a:link:hover, #left_container .pod_footer a:visited:hover, #left_container .pod_footer .fake_link:hover {
+        color: #597686; }
+
+#right_sidebar {
+  float: right;
+  width: 240px; }
+  #right_sidebar .pod {
+    padding: 13px 14px; }
+  #right_sidebar .admin_info fieldset ol, #right_sidebar .admin_info fieldset li {
+    margin: 0;
+    padding: 0; }
+  #right_sidebar .admin_info fieldset input {
+    margin: 0; }
 
 /* GENERAL TAGS
 -------------------------------------------------------------------*/
@@ -3462,20 +3487,6 @@ If you don't know where else to place something, place it below this line.
       .pod.sub_pod h4 a:hover {
         text-decoration: underline; }
 
-.section {
-  margin: 0 0 12px; }
-  .section .section_foot {
-    margin: 8px 0 0;
-    padding: 8px 0 0;
-    color: #09f;
-    font-size: 14px;
-    font-weight: bold;
-    font-family: 'Arial', sans-serif;
-    border-top: 1px solid #8ea8b5; }
-    .section .section_foot .link_w_arrow {
-      display: block;
-      float: right; }
-
 .blue_section_divider {
   color: #fff;
   background: -webkit-gradient(linear, 0 0, 0 100%, from(#1a76ce), to(#0098fe));
@@ -3683,7 +3694,7 @@ If you don't know where else to place something, place it below this line.
   display: inline-block;
   position: relative;
   height: 30px;
-  padding: 0 12px 0 44px;
+  padding: 0 18px 0 49px;
   color: #0099ff;
   font-size: 15px;
   font-weight: bold;
@@ -3893,14 +3904,22 @@ formfield ol:before, .formfield ol:after {
     .gig-followbar-dialog-twitter a:hover {
       text-decoration: none !important; }
 
-.clearfix:before, .clearfix:after {
+/* CLEARFIX CLASSES
+------------------------------------
+:: These styles will clear and floated elements.
+:: Also includes elements that should always be cleared.
+------------------------------------*/
+.clearfix:before, .clearfix:after,
+.section_footer:before, .section_footer:after {
   content: "";
   display: table; }
 
-.clearfix:after {
+.clearfix:after,
+.section_footer:after {
   clear: both; }
 
-.clearfix {
+.clearfix,
+.section_footer {
   *zoom: 1; }
 
 /* CHECKOUT AND APPLICATION LOGIN PAGES SPECIFIC STYLES

@@ -265,7 +265,6 @@
         .top_section_content .vertical_slider .items_collection .small_items li.item .details_wrapper .headline.sub_headline {
           display: block;
           position: relative;
-          top: -2px;
           z-index: 0;
           max-height: 34px;
           margin-bottom: 2px;
@@ -281,46 +280,33 @@
           padding: 0;
           margin: 3px 0;
           height: 12px;
-          line-height: 6px;
+          font-size: 11px;
+          color: #09f;
+          line-height: 12px;
           overflow: hidden; }
           .top_section_content .vertical_slider .items_collection .small_items li.item .details_wrapper .date_time .small_text {
             font-size: 10px; }
         .top_section_content .vertical_slider .items_collection .small_items li.item .details_wrapper .event_venue_name {
           color: #375363; }
-        .top_section_content .vertical_slider .items_collection .small_items li.item .details_wrapper .event_venue_name:hover {
-          color: #597686; }
+          .top_section_content .vertical_slider .items_collection .small_items li.item .details_wrapper .event_venue_name:hover {
+            color: #597686; }
         .top_section_content .vertical_slider .items_collection .small_items li.item .details_wrapper .venue_type {
-          margin-bottom: 0; }
-        .top_section_content .vertical_slider .items_collection .small_items li.item .details_wrapper .desc {
+          margin-bottom: 0;
+          padding: 0; }
+        .top_section_content .vertical_slider .items_collection .small_items li.item .details_wrapper .details {
+          display: block;
           position: relative;
-          height: 44px;
-          overflow: hidden;
+          height: 70px;
           top: -3px;
-          margin: 0 7px 0 0; }
-          .top_section_content .vertical_slider .items_collection .small_items li.item .details_wrapper .desc .blue_tag {
-            float: left;
-            display: none;
-            /*Hiding, but keeping styles in case we need to add back in.*/
-            color: #8ea8b5;
-            font-size: 9px;
-            line-height: 11px;
-            height: 10px;
-            position: relative;
-            top: 6px;
-            width: 114px; }
-            .top_section_content .vertical_slider .items_collection .small_items li.item .details_wrapper .desc .blue_tag a, .top_section_content .vertical_slider .items_collection .small_items li.item .details_wrapper .desc .blue_tag a:visited {
-              color: #8ea8b5;
-              text-decoration: none; }
-            .top_section_content .vertical_slider .items_collection .small_items li.item .details_wrapper .desc .blue_tag a:after {
-              content: ":"; }
-          .top_section_content .vertical_slider .items_collection .small_items li.item .details_wrapper .desc .info {
-            font-size: 11px;
-            line-height: 13px;
-            color: #000;
-            text-decoration: none;
-            margin: 5px 0 0;
-            display: block; }
-          .top_section_content .vertical_slider .items_collection .small_items li.item .details_wrapper .desc .ellipses_dots {
+          margin: 0 7px 0 0;
+          color: #000;
+          font-size: 11px;
+          line-height: 13px;
+          text-decoration: none;
+          margin: 5px 0 0;
+          overflow: hidden; }
+          .top_section_content .vertical_slider .items_collection .small_items li.item .details_wrapper .details .ellipsis {
+            display: inline-block;
             font-size: 11px;
             line-height: 15px;
             background: #fff;
@@ -333,9 +319,6 @@
     .top_section_content .vertical_slider .items_collection .small_items li.item:hover,
     .top_section_content .vertical_slider .items_collection .small_items li.item.selected {
       background: url(/assets/home/homepage_sprite.png) -500px -63px no-repeat transparent; }
-      .top_section_content .vertical_slider .items_collection .small_items li.item:hover .details_wrapper,
-      .top_section_content .vertical_slider .items_collection .small_items li.item.selected .details_wrapper {
-        /*border-bottom:1px dashed #adc0c9;*/ }
-        .top_section_content .vertical_slider .items_collection .small_items li.item:hover .details_wrapper .ellipses_dots,
-        .top_section_content .vertical_slider .items_collection .small_items li.item.selected .details_wrapper .ellipses_dots {
-          background: #eff2f3; }
+      .top_section_content .vertical_slider .items_collection .small_items li.item:hover .details_wrapper .ellipses_dots,
+      .top_section_content .vertical_slider .items_collection .small_items li.item.selected .details_wrapper .ellipses_dots {
+        background: #eff2f3; }

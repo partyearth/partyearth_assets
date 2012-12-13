@@ -234,7 +234,7 @@ label[for="card_month"] {
   position: relative;
   top: -9px; }
 
-@media screen and (-webkit-min-device-pixel-ratio:0) {
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
   /* FOR WEBKIT BROWSERS */
   label[for="order_billing_card_type"],
   label[for="card_month"] {
@@ -261,7 +261,7 @@ label[for="card_month"] {
   /*FOR IE7*/
   *margin-top: 0; }
 
-@media screen and (-webkit-min-device-pixel-ratio:0) {
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
   /* FOR WEBKIT BROWSERS */
   #order_shipping_state_zip_input {
     margin-top: 0; } }
@@ -276,7 +276,7 @@ label[for="card_month"] {
   *left: 0;
   *margin: 0 16px 0 0; }
 
-@media screen and (-webkit-min-device-pixel-ratio:0) {
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
   /* FOR WEBKIT BROWSERS */
   .store_content.checkout_form_page .state_dropdown {
     top: 0; } }
@@ -310,7 +310,7 @@ label[for="card_month"] {
   *left: 0;
   *top: -7px; }
 
-@media screen and (-webkit-min-device-pixel-ratio:0) {
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
   /* FOR WEBKIT BROWSERS */
   .store_content.checkout_form_page .shipping_dropdown {
     top: -14px; } }

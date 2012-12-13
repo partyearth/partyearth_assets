@@ -22,6 +22,15 @@
         font-size: 15px;
         line-height: 15px;
         text-decoration: none; }
+      .browse_category .column.featured .name {
+        margin: 0;
+        padding: 0;
+        color: #000;
+        font-size: 13px;
+        font-weight: bold;
+        border-bottom: none; }
+        .browse_category .column.featured .name:hover {
+          color: #597686; }
   .browse_category h3 {
     margin: 0 0 7px;
     color: #000;
@@ -31,13 +40,6 @@
     .browse_category h3 a, .browse_category h3 a:link, .browse_category h3 a:visited, .browse_category h3 .fake_link {
       color: #000; }
       .browse_category h3 a:hover, .browse_category h3 a:link:hover, .browse_category h3 a:visited:hover, .browse_category h3 .fake_link:hover {
-        color: #597686; }
-  .browse_category h4 {
-    color: #000;
-    font-weight: bold; }
-    .browse_category h4 a, .browse_category h4 a:link, .browse_category h4 a:visited {
-      color: #000; }
-      .browse_category h4 a:hover, .browse_category h4 a:link:hover, .browse_category h4 a:visited:hover {
         color: #597686; }
   .browse_category p {
     padding: 0; }

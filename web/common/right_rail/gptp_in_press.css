@@ -82,8 +82,8 @@
         -o-transform: scale(1) rotate(-4deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
         -ms-transform: scale(1) rotate(-4deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
         /* Uncomment if we want to implement for IE8 [https://snipt.net/viatropos/cross-browser-css-rotation-with-and-without-sass/]
-        filter:             progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=#{cos($deg)}, M12=-#{sin($deg)}, M21=#{sin($deg)}, M22=#{cos($deg)});
-        -ms-filter:         "progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=#{cos($deg)}, M12=-#{sin($deg)}, M21=#{sin($deg)}, M22=#{cos($deg)})"; */
+        filter:             progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=cos(-4deg), M12=-sin(-4deg), M21=sin(-4deg), M22=cos(-4deg));
+        -ms-filter:         "progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=cos(-4deg), M12=-sin(-4deg), M21=sin(-4deg), M22=cos(-4deg))"; */
         zoom: 1; }
       #gptp_in_press li:first-child .name_location .location {
         visibility: hidden; }

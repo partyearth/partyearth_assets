@@ -1,0 +1,268 @@
+.blue_tag {
+  display: inline-block;
+  position: relative;
+  height: 10px;
+  padding: 2px 3px 3px 5px;
+  color: #fff !important;
+  font-size: 10px;
+  line-height: 11px;
+  background-color: #0099ff;
+  border-radius: 2px 0 0 2px; }
+  .blue_tag a:link, .blue_tag a:visited {
+    color: #fff;
+    text-decoration: none; }
+  .blue_tag a:hover {
+    text-decoration: none; }
+  .blue_tag .point {
+    width: 1px;
+    height: 0;
+    overflow: hidden;
+    border-top: 8px solid transparent;
+    border-left: 8px solid #0099ff;
+    border-right: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+    position: absolute;
+    right: -15px;
+    bottom: 0; }
+
+.small_city .top_section_header .blue_header {
+  width: 674px; }
+
+.top_section_header {
+  width: 716px; }
+  .top_section_header .blue_header {
+    margin: 0;
+    width: 325px; }
+  .top_section_header .section {
+    color: #bbe3fe;
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#1a76ce), to(#0098fe));
+    background: -moz-linear-gradient(top, #1a76ce, #0098fe);
+    font-size: 14px;
+    height: 11px;
+    line-height: 7px;
+    padding: 14px 17px 19px;
+    border-radius: 2px 2px 2px 2px;
+    box-shadow: 0 1px 2px #bfbfbf;
+    margin: 0;
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    cursor: pointer;
+    border-left: 1px dotted #40b0fd; }
+    .top_section_header .section p {
+      padding-bottom: 3px; }
+    .top_section_header .section .small_text {
+      font-size: 8px; }
+  .top_section_header .section.Selected {
+    background: url(/assets/content_bg/browse_by_today_selected_bg-f1c1156edd33c283e9669743cedf3aa9.gif) 0 0 repeat-x #ff6600;
+    color: white;
+    cursor: default;
+    position: relative;
+    box-shadow: 0 1px 3px #bfbfbf;
+    border-radius: 4px;
+    border-top: 0px inset #FFB400;
+    border-bottom: 0px inset #A14100;
+    padding: 14px 17px 19px; }
+    .top_section_header .section.Selected .point {
+      display: none;
+      width: 1px;
+      height: 0;
+      overflow: hidden;
+      border-top: 10px solid #d35800;
+      border-left: 10px dotted transparent;
+      border-right: 10px dotted transparent;
+      position: absolute;
+      bottom: -7px;
+      left: 31px; }
+  .top_section_header .section.Selected:hover {
+    background: url(/assets/content_bg/browse_by_today_selected_bg-f1c1156edd33c283e9669743cedf3aa9.gif) 0 0 repeat-x #ff6600; }
+  .top_section_header .section:hover {
+    color: #fff;
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#0099ff), to(#076fd1));
+    background: -moz-linear-gradient(top, #0099ff, #076fd1);
+    cursor: pointer; }
+    .top_section_header .section:hover .point {
+      display: none; }
+  .top_section_header .today.section {
+    padding-left: 17px;
+    padding-right: 17px; }
+  .top_section_header .tomorrow.section {
+    padding-left: 13px;
+    padding-right: 14px; }
+  .top_section_header .tomorrow.section.Selected .point {
+    left: 46px; }
+  .top_section_header .more_dates {
+    position: relative;
+    float: left; }
+    .top_section_header .more_dates .date_picker_block {
+      top: 52px;
+      left: -28px;
+      width: 146px;
+      height: 225px;
+      box-shadow: 0 1px 2px #628495; }
+      .top_section_header .more_dates .date_picker_block .point {
+        left: 94px; }
+      .top_section_header .more_dates .date_picker_block .Notice {
+        font-size: 11px; }
+      .top_section_header .more_dates .date_picker_block .datepicker {
+        width: 149px !important; }
+        .top_section_header .more_dates .date_picker_block .datepicker .datepickerContainer {
+          width: 149px !important; }
+      .top_section_header .more_dates .date_picker_block .controls .clear_link {
+        display: none; }
+
+.date_time {
+  padding: 0;
+  margin: 3px 0 5px;
+  height: 12px;
+  font-size: 11px;
+  color: #09f;
+  line-height: 12px;
+  overflow: hidden; }
+  .date_time .small_text {
+    font-size: 10px; }
+
+.top_section_content .event_venue_name {
+  color: #375363;
+  font-weight: bold;
+  text-decoration: underline;
+  line-height: 16px; }
+  .top_section_content .event_venue_name:hover {
+    color: #597686; }
+  .top_section_content .event_venue_name.nourl:hover {
+    color: #375363; }
+.top_section_content .headline.sub_headline {
+  display: block;
+  margin: 0 0 2px;
+  color: #000;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 21px; }
+  .top_section_content .headline.sub_headline:hover {
+    color: #597686; }
+.top_section_content .featured_item {
+  float: left;
+  width: 345px;
+  margin: 0 14px 0 0; }
+  .top_section_content .featured_item p {
+    padding-bottom: 0; }
+  .top_section_content .featured_item .item_img {
+    display: block;
+    width: 345px;
+    height: 230px;
+    margin: 0 0 7px; }
+    .top_section_content .featured_item .item_img img {
+      display: block;
+      width: 345px;
+      height: 230px; }
+  .top_section_content .featured_item .quick_nav_links {
+    float: left;
+    padding: 0; }
+  .top_section_content .featured_item .details {
+    position: relative;
+    left: -25px;
+    width: 334px;
+    height: 97px;
+    margin: 2px 0 0;
+    padding: 0 0 0 25px;
+    font-size: 12px;
+    line-height: 16px;
+    overflow: hidden; }
+    .top_section_content .featured_item .details .ellipsis {
+      display: inline-block;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      background-color: #fff;
+      overflow: hidden; }
+      .top_section_content .featured_item .details .ellipsis a, .top_section_content .featured_item .details .ellipsis a:link, .top_section_content .featured_item .details .ellipsis a:visited {
+        position: relative;
+        bottom: 2px;
+        font-size: 11px; }
+  .top_section_content .featured_item .location .blue_tag {
+    float: left;
+    top: 2px;
+    margin: 0 10px 0 -25px;
+    padding-left: 25px; }
+    .top_section_content .featured_item .location .blue_tag .anchor_point {
+      position: absolute;
+      top: 15px;
+      left: 0;
+      width: 0;
+      height: 0;
+      border-top: 4px solid #24648f;
+      border-right: 4px solid #24648f;
+      border-bottom: 4px solid transparent;
+      border-left: 4px solid transparent; }
+  .top_section_content .featured_item .location p {
+    padding-left: 65px; }
+  .top_section_content .featured_item .location .event_venue_name {
+    line-height: 21px;
+    font-size: 15px; }
+  .top_section_content .featured_item .location .address {
+    color: #375363;
+    font-size: 12px;
+    line-height: 15px; }
+  .top_section_content .featured_item .liked_by {
+    float: left; }
+    .top_section_content .featured_item .liked_by dt {
+      margin-right: 10px; }
+.top_section_content .small_items {
+  float: left;
+  width: 347px;
+  padding: 3px 0 0; }
+  .top_section_content .small_items li.item {
+    position: relative;
+    padding: 7px 0 10px;
+    min-height: 149px;
+    border-top: 1px dashed #adc0c9; }
+    .top_section_content .small_items li.item:first-child {
+      padding-top: 0;
+      border-top: none; }
+    .top_section_content .small_items li.item p {
+      padding-bottom: 0; }
+    .top_section_content .small_items li.item .headline.sub_headline {
+      font-size: 17px;
+      line-height: 18px; }
+    .top_section_content .small_items li.item .small_text.caps.blue_text {
+      font-size: 10px; }
+    .top_section_content .small_items li.item .item_img {
+      display: block;
+      float: left;
+      width: 165px;
+      height: 110px;
+      margin: 0 7px 0 0; }
+      .top_section_content .small_items li.item .item_img img {
+        display: block;
+        width: 165px;
+        height: 110px; }
+    .top_section_content .small_items li.item .details {
+      position: relative;
+      height: 62px;
+      margin: 2px 0 0;
+      font-size: 11px;
+      line-height: 14px;
+      overflow: hidden; }
+      .top_section_content .small_items li.item .details .blue_flag {
+        margin: 0 44px 4px 0; }
+      .top_section_content .small_items li.item .details .ellipsis {
+        display: inline-block;
+        font-size: 11px;
+        line-height: 15px;
+        background: #fff;
+        position: absolute;
+        right: 0;
+        bottom: -1px;
+        max-width: 176px;
+        height: 15px;
+        overflow: hidden; }
+    .top_section_content .small_items li.item .liked_by {
+      position: absolute;
+      left: 173px;
+      bottom: 11px;
+      width: 173px; }
+    .top_section_content .small_items li.item .box_link.calendar {
+      position: absolute;
+      bottom: 8px;
+      left: 172px; }
