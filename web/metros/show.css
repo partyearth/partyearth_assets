@@ -534,10 +534,11 @@
           padding: 0;
           margin: 3px 0;
           height: 12px;
-          font-size: 11px;
+          font-size: 9px;
           color: #09f;
           line-height: 12px;
-          overflow: hidden; }
+          overflow: hidden;
+          text-transform: uppercase; }
           .top_section_content .vertical_slider .items_collection .small_items li.item .details_wrapper .date_time .small_text {
             font-size: 10px; }
         .top_section_content .vertical_slider .items_collection .small_items li.item .details_wrapper .event_venue_name {

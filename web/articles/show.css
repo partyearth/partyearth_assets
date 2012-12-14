@@ -978,17 +978,6 @@
 ------------------------------------
 :: These styles are specifically for the comments which are powered by Gigya..
 ------------------------------------*/
-#gigya_header {
-  padding: 0 0 6px;
-  border-bottom: 1px dotted #ccc; }
-  #gigya_header .large_gray_btn {
-    float: right;
-    padding: 0 12px; }
-
-#performer_content #gigya_header,
-#event_content #gigya_header {
-  display: none; }
-
 #comments h3 {
   margin: 0 0 10px;
   padding: 0 0 10px;
@@ -997,15 +986,38 @@
   font-weight: bold;
   border-bottom: 1px dashed #ADC0C9; }
 #comments .gig-comments-container {
-  width: auto !important; }
-#comments .gig-comments-commentBox {
-  margin: 10px 0 10px;
-  padding: 0 0 10px;
-  border-bottom: 1px dashed #adc0c9; }
-#comments textarea.gig-comments-commentBox-textarea {
-  width: 694px !important; }
-#comments textarea.gig-comments-replyBox-textarea {
-  width: 674px !important; }
+  width: auto !important;
+  /* Top Comment Box */
+  /* Comment List Header "0 Comment ----------- RSS | Subscribe */
+  /* List of Comments */ }
+  #comments .gig-comments-container .gig-comments-commentBox {
+    margin: 10px 0 10px;
+    padding: 0 0 10px;
+    border-bottom: 1px dashed #adc0c9;
+    /* Header Text "Post a new comment" */
+    /* Top Comment Box Textarea */ }
+    #comments .gig-comments-container .gig-comments-commentBox .gig-comments-headerText {
+      padding-top: 0;
+      line-height: 100%; }
+    #comments .gig-comments-container .gig-comments-commentBox textarea.gig-comments-commentBox-textarea {
+      width: 694px !important; }
+  #comments .gig-comments-container .gig-comments-commentList-header {
+    margin: 0 0 10px;
+    padding: 0 0 10px;
+    border-bottom: 1px dashed #adc0c9; }
+    #comments .gig-comments-container .gig-comments-commentList-header .gig-comments-commentList-header-commentsCount {
+      margin: 0;
+      padding: 0;
+      border-bottom: none; }
+    #comments .gig-comments-container .gig-comments-commentList-header .gig-comments-headerLinks {
+      padding: 0; }
+  #comments .gig-comments-container .gig-commentList {
+    /* Comment Reply Textarea */ }
+    #comments .gig-comments-container .gig-commentList textarea.gig-comments-replyBox-textarea {
+      width: 674px !important; }
+  #comments .gig-comments-container .gig-comments-commentBox-bottom {
+    margin: 10px 0 0;
+    padding: 10px 0 0; }
 #comments #Comments-postButton a {
   display: inline-block;
   font-family: Arial, Helvetica, sans-serif;
@@ -1028,31 +1040,14 @@
   -moz-border-radius: 3px;
   -webkit-box-shadow: 0px 1px 5px #999;
   -moz-box-shadow: 0px 1px 5px #999; }
-#comments #Comments-postButton a:hover {
-  background: #2388f5;
-  text-shadow: 0px 0px 12px #fff;
-  /*FOR IE*/
-  -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=#2388f5, endColorStr=#2388f5);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=#2388f5, endColorStr=#2388f5); }
-#comments .gig-comments-commentList-header {
-  margin: 0 0 10px;
-  padding: 0 0 10px;
-  border-bottom: 1px dashed #adc0c9; }
-#comments .gig-comments-commentList-header-commentsCount {
-  float: left;
-  padding: 0; }
-#comments .gig-comments-headerLinks {
-  float: right;
-  padding: 0; }
-#comments .gig-comments-commentBox-bottom {
-  margin-top: 10px; }
-#comments #article_comments_footer a {
-  float: right; }
+  #comments #Comments-postButton a:hover {
+    background: #2388f5;
+    text-shadow: 0px 0px 12px #fff;
+    /*FOR IE*/
+    -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=#2388f5, endColorStr=#2388f5);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=#2388f5, endColorStr=#2388f5); }
 
-#Comments-commentBox div.gig-comments-headerText {
-  padding-top: 0;
-  line-height: 100%; }
-
+/* Comment Link with Comment Count */
 .comments_link {
   display: block;
   position: relative;
@@ -1073,9 +1068,8 @@
     line-height: 25px;
     background-image: url(/assets/content_bg/application_sprite.png);
     background-position: -387px -483px; }
-
-.comments_link:hover {
-  color: #000; }
+  .comments_link:hover {
+    color: #000; }
 /*
 
 

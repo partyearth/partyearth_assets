@@ -1381,7 +1381,7 @@ td.right_side.pod_sides {
         .custom_accordion .accordion_content .details .details_wrapper table tr td {
           padding: 0; }
     .custom_accordion .accordion_content .details .details_wrapper .event_img {
-      margin: 4px 12px 0 0; }
+      margin: 0 12px 0 0; }
       .custom_accordion .accordion_content .details .details_wrapper .event_img img {
         display: block;
         width: 75px;
