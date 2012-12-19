@@ -1140,8 +1140,8 @@
     padding: 0 11px; }
 .weekly_schedule a:link, .weekly_schedule a:visited {
   color: #375363; }
-.weekly_schedule a:hover {
-  color: #6c8898; }
+  .weekly_schedule a:link:hover, .weekly_schedule a:visited:hover {
+    color: #6c8898; }
 .weekly_schedule .activity_event_name {
   display: block;
   line-height: 14px;

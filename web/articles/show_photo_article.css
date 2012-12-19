@@ -132,10 +132,10 @@
 /* Styles for social media Buttons when inside */
 .social_media_btns {
   position: relative;
-  margin: 9px 0;
-  padding: 0 0 8px;
+  margin: 9px 0 0;
+  padding: 9px 0 0;
   background-color: #fff;
-  border-bottom: 1px dashed #adc0c9; }
+  border-top: 1px dashed #adc0c9; }
   .social_media_btns .total_count {
     display: none; }
   .social_media_btns td {
@@ -1103,16 +1103,19 @@
   /* Top Comment Box */
   /* Comment List Header "0 Comment ----------- RSS | Subscribe */
   /* List of Comments */ }
-  #comments .gig-comments-container .gig-comments-commentBox {
+  #comments .gig-comments-container #Comments-commentBox {
     margin: 10px 0 10px;
     padding: 0 0 10px;
     border-bottom: 1px dashed #adc0c9;
     /* Header Text "Post a new comment" */
     /* Top Comment Box Textarea */ }
-    #comments .gig-comments-container .gig-comments-commentBox .gig-comments-headerText {
+    #comments .gig-comments-container #Comments-commentBox #Comments-commentBox {
+      margin: 0;
+      border: none; }
+    #comments .gig-comments-container #Comments-commentBox .gig-comments-headerText {
       padding-top: 0;
       line-height: 100%; }
-    #comments .gig-comments-container .gig-comments-commentBox textarea.gig-comments-commentBox-textarea {
+    #comments .gig-comments-container #Comments-commentBox textarea.gig-comments-commentBox-textarea {
       width: 694px !important; }
   #comments .gig-comments-container .gig-comments-commentList-header {
     margin: 0 0 10px;

@@ -466,10 +466,10 @@
 /* Styles for social media Buttons when inside */
 .social_media_btns {
   position: relative;
-  margin: 9px 0;
-  padding: 0 0 8px;
+  margin: 9px 0 0;
+  padding: 9px 0 0;
   background-color: #fff;
-  border-bottom: 1px dashed #adc0c9; }
+  border-top: 1px dashed #adc0c9; }
   .social_media_btns .total_count {
     display: none; }
   .social_media_btns td {

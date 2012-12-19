@@ -3606,9 +3606,9 @@ If you don't know where else to place something, place it below this line.
 :: Quick navigation links with a button style.
 ---------------------------------------------------------*/
 .quick_nav_btns {
-  margin: 0 0 8px;
-  padding: 0 0 10px;
-  border-bottom: 1px dashed #adc0c9; }
+  margin: 9px 0 0;
+  padding: 9px 0 0;
+  border-top: 1px dashed #adc0c9; }
   .quick_nav_btns li {
     display: inline-block;
     margin: 0 0 0 6px; }
@@ -3618,7 +3618,7 @@ If you don't know where else to place something, place it below this line.
     display: block;
     position: relative;
     height: 20px;
-    padding: 0 10px 0 25px;
+    padding: 0 14px 0 29px;
     color: #597686;
     font-size: 9px;
     font-weight: bold;
@@ -3643,6 +3643,9 @@ If you don't know where else to place something, place it below this line.
       -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=#fefefe, endColorStr=#ebebeb);
       filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=#fefefe, endColorStr=#ebebeb);
       box-shadow: 0 2px 4px #b2b2b2; }
+    .quick_nav_btns a.user_reviews, .quick_nav_btns a.user_comments {
+      width: 108px;
+      padding: 0 7px 0 30px; }
   .quick_nav_btns .icon {
     display: block;
     position: absolute;
@@ -3725,17 +3728,17 @@ If you don't know where else to place something, place it below this line.
     text-decoration: none;
     background: #fbfcfc;
     /* Old browsers */
-    background: -moz-linear-gradient(top, #fbfcfc 0%, #fbfcfc 39%, #eaeff1 52%, #e3e9ec 100%);
+    background: -moz-linear-gradient(top, #fbfcfc 0%, #fbfcfc 43%, #eaeff1 57%, #e3e9ec 100%);
     /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fbfcfc), color-stop(39%, #fbfcfc), color-stop(52%, #eaeff1), color-stop(100%, #e3e9ec));
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fbfcfc), color-stop(43%, #fbfcfc), color-stop(57%, #eaeff1), color-stop(100%, #e3e9ec));
     /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top, #fbfcfc 0%, #fbfcfc 39%, #eaeff1 52%, #e3e9ec 100%);
+    background: -webkit-linear-gradient(top, #fbfcfc 0%, #fbfcfc 43%, #eaeff1 57%, #e3e9ec 100%);
     /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top, #fbfcfc 0%, #fbfcfc 39%, #eaeff1 52%, #e3e9ec 100%);
+    background: -o-linear-gradient(top, #fbfcfc 0%, #fbfcfc 43%, #eaeff1 57%, #e3e9ec 100%);
     /* Opera 11.10+ */
-    background: -ms-linear-gradient(top, #fbfcfc 0%, #fbfcfc 39%, #eaeff1 52%, #e3e9ec 100%);
+    background: -ms-linear-gradient(top, #fbfcfc 0%, #fbfcfc 43%, #eaeff1 57%, #e3e9ec 100%);
     /* IE10+ */
-    background: linear-gradient(to bottom, #fbfcfc 0%, #fbfcfc 39%, #eaeff1 52%, #e3e9ec 100%);
+    background: linear-gradient(to bottom, #fbfcfc 0%, #fbfcfc 43%, #eaeff1 57%, #e3e9ec 100%);
     /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fbfcfc', endColorstr='#e3e9ec',GradientType=0 );
     /* IE6-9 */
@@ -4146,3 +4149,84 @@ formfield ol:before, .formfield ol:after {
     line-height: 14px; }
     .user_review_summary p.by_line span {
       color: #09f; }
+
+/* Missing venue dialog */
+.missing_dialog.ui-dialog {
+  width: 315px !important;
+  padding: 10px 15px;
+  background-color: #fff;
+  border: 1px solid #90aab6; }
+.missing_dialog .ui-dialog-titlebar,
+.missing_dialog .ui-dialog-content {
+  padding: 0;
+  background: none; }
+.missing_dialog .ui-dialog-titlebar .ui-dialog-title {
+  margin: 0 0 10px;
+  padding: 0;
+  color: #09f;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: none;
+  background: none; }
+.missing_dialog .ui-dialog-titlebar .ui-dialog-titlebar-close {
+  margin: 0;
+  top: -10px;
+  right: -15px; }
+.missing_dialog .ui-dialog-titlebar .ui-icon {
+  background-position: -147px -151px; }
+.missing_dialog .ui-dialog-content fieldset ol {
+  padding: 0; }
+  .missing_dialog .ui-dialog-content fieldset ol li {
+    position: relative;
+    margin: 0 0 8px; }
+    .missing_dialog .ui-dialog-content fieldset ol li label {
+      display: block;
+      float: none;
+      width: auto;
+      margin: 0;
+      padding: 0;
+      color: #375363;
+      font-size: 12px;
+      font-style: italic;
+      text-align: left;
+      line-height: 16px; }
+    .missing_dialog .ui-dialog-content fieldset ol li .inline-errors,
+    .missing_dialog .ui-dialog-content fieldset ol li img {
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: auto; }
+    .missing_dialog .ui-dialog-content fieldset ol li .inline-errors {
+      float: none;
+      clear: none;
+      width: auto;
+      margin: 0;
+      padding: 0;
+      color: red;
+      background: none; }
+    .missing_dialog .ui-dialog-content fieldset ol li input, .missing_dialog .ui-dialog-content fieldset ol li textarea {
+      width: 303px;
+      padding: 5px;
+      border: 1px solid #e3e1e1;
+      border-radius: 4px;
+      box-shadow: inset 1px 1px 1px #a1a1a1; }
+    .missing_dialog .ui-dialog-content fieldset ol li textarea {
+      height: 100px; }
+.missing_dialog .ui-dialog-content .footer {
+  line-height: 32px;
+  margin: 8px 0 0;
+  padding: 8px 0 0;
+  border-top: 1px dashed #adc0c9; }
+  .missing_dialog .ui-dialog-content .footer .note {
+    color: #375363;
+    font-size: 11px; }
+  .missing_dialog .ui-dialog-content .footer .fake_link {
+    float: right;
+    color: #8ea8b5;
+    font-size: 12px;
+    text-decoration: underline; }
+  .missing_dialog .ui-dialog-content .footer .blue_btn {
+    float: right;
+    margin: 0 0 0 15px; }
+.missing_dialog .ui-dialog-content .ast {
+  color: #09f; }

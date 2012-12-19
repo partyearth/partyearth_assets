@@ -243,7 +243,7 @@ fieldset .inline-errors {
 fieldset .inline-success, fieldset img {
   display: block;
   position: absolute;
-  top: 5px;
+  top: 7px;
   left: 451px; }
 fieldset .toggle {
   display: block;
