@@ -123,16 +123,11 @@
             font-weight: bold;
             font-family: 'Arial', sans-serif;
             line-height: 16px;
-            text-decoration: underline;
             overflow: hidden; }
-            .three_item_carousel .scroller_wrapper .screens_container .screens_wrapper .spot_item .details .event_venue:hover {
+          .three_item_carousel .scroller_wrapper .screens_container .screens_wrapper .spot_item .details a.event_venue {
+            text-decoration: underline; }
+            .three_item_carousel .scroller_wrapper .screens_container .screens_wrapper .spot_item .details a.event_venue:hover {
               color: #000; }
-            .three_item_carousel .scroller_wrapper .screens_container .screens_wrapper .spot_item .details .event_venue.nourl {
-              text-decoration: none; }
-              .three_item_carousel .scroller_wrapper .screens_container .screens_wrapper .spot_item .details .event_venue.nourl:hover {
-                color: #375363;
-                text-decoration: none;
-                cursor: text; }
           .three_item_carousel .scroller_wrapper .screens_container .screens_wrapper .spot_item .details .desc {
             display: block;
             margin: 16px 0 0; }

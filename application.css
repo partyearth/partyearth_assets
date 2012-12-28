@@ -2164,26 +2164,24 @@ div.fake_link:hover {
   zoom: 1;
   *display: inline; }
 
-/* BEGIN BREADCRUMB STYLES
+/* BREADCRUMBS
 -------------------------------------------------------------------
 :: Section for all user facing breadcrumbs on the site.
 ------------------------------------------------------------------- */
-.bread_crumb {
-  color: #8ea8b5;
-  font-size: 11px; }
-  .bread_crumb a, .bread_crumb a:visited, .bread_crumb .fake_link {
-    color: #8ea8b5; }
-    .bread_crumb a:hover, .bread_crumb a:visited:hover, .bread_crumb .fake_link:hover {
-      color: #6c8898; }
-  .bread_crumb .city_name, .bread_crumb .selected {
-    text-decoration: underline; }
-  .bread_crumb .arrow {
+.breadcrumbs {
+  margin: 0 0 10px; }
+  .breadcrumbs li {
     display: inline;
-    width: auto;
-    height: auto;
-    font-size: 13px;
-    text-indent: 0;
-    top: auto; }
+    color: #8ea8b5;
+    font-size: 11px; }
+    .breadcrumbs li:after {
+      content: " \00BB"; }
+    .breadcrumbs li.breadcrumbs_cur:after {
+      content: none; }
+    .breadcrumbs li a, .breadcrumbs li a:link, .breadcrumbs li a:visited {
+      color: #8EA8B5; }
+      .breadcrumbs li a:hover, .breadcrumbs li a:link:hover, .breadcrumbs li a:visited:hover {
+        color: #6c8898; }
 
 /* BEGIN GENERIC BUTTON STYLES
 -------------------------------------------------------------------
@@ -2195,7 +2193,8 @@ div.fake_link:hover {
 .blue_btn:visited,
 .create,
 .ui-dialog .ui-dialog-buttonpane button,
-button {
+button,
+.admin_info .formtastic .actions input[type=submit] {
   width: auto;
   padding: 8px 22px;
   color: #fff;
@@ -2233,7 +2232,8 @@ button {
   .blue_btn:visited:hover,
   .create:hover,
   .ui-dialog .ui-dialog-buttonpane button:hover,
-  button:hover {
+  button:hover,
+  .admin_info .formtastic .actions input[type=submit]:hover {
     text-shadow: 0 0 12px #fff;
     box-shadow: 0 2px 5px #a8a8a8;
     -webkit-box-shadow: 0 2px 5px #a8a8a8;
@@ -2243,7 +2243,8 @@ button {
   .blue_btn:visited:active,
   .create:active,
   .ui-dialog .ui-dialog-buttonpane button:active,
-  button:active {
+  button:active,
+  .admin_info .formtastic .actions input[type=submit]:active {
     color: #c0dbed;
     text-shadow: none;
     background: #1977ce;
@@ -2255,7 +2256,8 @@ button {
   .blue_btn:visited.disabled,
   .create.disabled,
   .ui-dialog .ui-dialog-buttonpane button.disabled,
-  button.disabled {
+  button.disabled,
+  .admin_info .formtastic .actions input[type=submit].disabled {
     color: #ebebeb;
     text-shadow: 0 1px 2px #6f7a84;
     filter: dropshadow(color=#6f7a84, offx=0, offy=1);
@@ -2271,7 +2273,8 @@ button {
   .blue_btn:visited.white_btn,
   .create.white_btn,
   .ui-dialog .ui-dialog-buttonpane button.white_btn,
-  button.white_btn {
+  button.white_btn,
+  .admin_info .formtastic .actions input[type=submit].white_btn {
     color: #375363;
     text-shadow: 1px 1px 1px #b8d7e9;
     filter: dropshadow(color=#b8d7e9, offx=0, offy=1);
@@ -2290,7 +2293,8 @@ button {
     .blue_btn:visited.white_btn:hover,
     .create.white_btn:hover,
     .ui-dialog .ui-dialog-buttonpane button.white_btn:hover,
-    button.white_btn:hover {
+    button.white_btn:hover,
+    .admin_info .formtastic .actions input[type=submit].white_btn:hover {
       box-shadow: 0 2px 6px #a8a8a8;
       -webkit-box-shadow: 0 2px 6px #a8a8a8;
       -moz-box-shadow: 0 2px 6px #a8a8a8; }
@@ -2299,7 +2303,8 @@ button {
   .blue_btn:visited.inline_btn,
   .create.inline_btn,
   .ui-dialog .ui-dialog-buttonpane button.inline_btn,
-  button.inline_btn {
+  button.inline_btn,
+  .admin_info .formtastic .actions input[type=submit].inline_btn {
     display: inline-block;
     padding: 0 7px;
     font-size: 13px;
@@ -3363,8 +3368,8 @@ If you don't know where else to place something, place it below this line.
       color: white; }
   .admin_info.pod_rounded .headline {
     margin: 0 0 15px; }
-  .admin_info.pod_rounded .headline.sub_headline {
-    font-size: 15px; }
+    .admin_info.pod_rounded .headline.sub_headline {
+      font-size: 15px; }
   .admin_info.pod_rounded a, .admin_info.pod_rounded a:visited {
     -webkit-transition: color 0.5s ease-out;
     -moz-transition: color 0.5s ease-out;
@@ -3386,25 +3391,25 @@ If you don't know where else to place something, place it below this line.
       margin: 0 0 6px; }
       .admin_info.pod_rounded ul li a, .admin_info.pod_rounded ul li a:visited {
         color: #000; }
-      .admin_info.pod_rounded ul li a:hover {
-        color: #597686; }
-  .admin_info.pod_rounded ul.bullet {
-    list-style: disc;
-    padding: 6px 14px 4px 24px;
-    -webkit-transition: background 0.2s ease-out;
-    -moz-transition: background 0.2s ease-out;
-    -o-transition: background 0.2s ease-out;
-    transition: background 0.2s ease-out; }
-  .admin_info.pod_rounded ul:hover {
-    background: #fff;
-    border: 1px solid #d7d7d7;
-    box-shadow: inset 0 0 7px #e2e1e1; }
-    .admin_info.pod_rounded ul:hover a, .admin_info.pod_rounded ul:hover a:visited {
-      color: #0099ff; }
-    .admin_info.pod_rounded ul:hover a:hover {
-      color: #597686; }
-  .admin_info.pod_rounded ul:active {
-    border: 1px solid #aaa; }
+        .admin_info.pod_rounded ul li a:hover, .admin_info.pod_rounded ul li a:visited:hover {
+          color: #597686; }
+    .admin_info.pod_rounded ul.bullet {
+      list-style: disc;
+      padding: 6px 14px 4px 24px;
+      -webkit-transition: background 0.2s ease-out;
+      -moz-transition: background 0.2s ease-out;
+      -o-transition: background 0.2s ease-out;
+      transition: background 0.2s ease-out; }
+    .admin_info.pod_rounded ul:hover {
+      background: #fff;
+      border: 1px solid #d7d7d7;
+      box-shadow: inset 0 0 7px #e2e1e1; }
+      .admin_info.pod_rounded ul:hover a, .admin_info.pod_rounded ul:hover a:visited {
+        color: #09f; }
+        .admin_info.pod_rounded ul:hover a:hover, .admin_info.pod_rounded ul:hover a:visited:hover {
+          color: #597686; }
+    .admin_info.pod_rounded ul:active {
+      border: 1px solid #aaa; }
   .admin_info.pod_rounded .grey_section {
     background-color: #EBECED;
     border: 1px inset white;
@@ -3446,7 +3451,7 @@ If you don't know where else to place something, place it below this line.
 
 /* Note (KG): need to set a common font for password fields, otherwise IE7 renders them wrong. */
 .password_field {
-  font-family: arial,sans-serif !important; }
+  font-family: arial, sans-serif !important; }
 
 /*FOR NEW SITE DESIGN*/
 /*---------------------------------------------*/

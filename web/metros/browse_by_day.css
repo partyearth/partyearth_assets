@@ -32,15 +32,6 @@
     .top_section_header .section .small_text {
       font-size: 8px; }
   .top_section_header .section.Selected {
-    /*background:#ff6600;*/
-    /*color:#fff;*/
-    /*cursor:default;*/
-    /*position:relative;*/
-    /*box-shadow: inset 0px 0px 3px 1px #ba4c01;*/
-    /*border-radius: 4px;*/
-    /*border-top: 1px inset #F86300;*/
-    /*border-bottom: 1px inset #F86300;*/
-    /*padding: 13px 13px 19px; */
     background: url(/assets/content_bg/browse_by_today_selected_bg.gif) 0 0 repeat-x #ff6600;
     color: white;
     cursor: default;
@@ -177,16 +168,6 @@
       text-decoration: none;
       margin: 2px 0 0;
       display: block; }
-    .top_section_content .featured_item .desc .ellipses_dots {
-      font-size: 12px;
-      line-height: 15px;
-      background: #fff;
-      position: absolute;
-      right: 0;
-      bottom: -1px;
-      max-width: 334px;
-      height: 15px;
-      overflow: hidden; }
 .top_section_content .vertical_slider {
   position: relative;
   left: 1px;
@@ -231,7 +212,7 @@
         border-bottom: 1px dashed #adc0c9;
         position: relative;
         height: 70px;
-        padding: 0 10px 15px 0; }
+        padding: 0 10px 10px 0; }
         .top_section_content .vertical_slider .items_collection .small_items li.item .details_wrapper .label {
           position: absolute;
           top: -6px;
@@ -244,10 +225,10 @@
           height: 11px;
           padding: 0 3px;
           z-index: 2; }
-        .top_section_content .vertical_slider .items_collection .small_items li.item .details_wrapper .label.venue {
-          background: #545454; }
-        .top_section_content .vertical_slider .items_collection .small_items li.item .details_wrapper .label.event {
-          background: #0099ff; }
+          .top_section_content .vertical_slider .items_collection .small_items li.item .details_wrapper .label.venue {
+            background-color: #545454; }
+          .top_section_content .vertical_slider .items_collection .small_items li.item .details_wrapper .label.event {
+            background-color: #09f; }
         .top_section_content .vertical_slider .items_collection .small_items li.item .details_wrapper p {
           padding-bottom: 0; }
         .top_section_content .vertical_slider .items_collection .small_items li.item .details_wrapper .item_img {
@@ -307,19 +288,17 @@
           margin: 5px 0 0;
           overflow: hidden; }
           .top_section_content .vertical_slider .items_collection .small_items li.item .details_wrapper .details .ellipsis {
-            display: inline-block;
-            font-size: 11px;
-            line-height: 15px;
-            background: #fff;
+            display: block;
             position: absolute;
             right: 0;
             bottom: -1px;
             max-width: 176px;
             height: 15px;
+            font-size: 11px;
+            line-height: 15px;
+            background-color: #fff;
             overflow: hidden; }
-    .top_section_content .vertical_slider .items_collection .small_items li.item:hover,
-    .top_section_content .vertical_slider .items_collection .small_items li.item.selected {
-      background: url(/assets/home/homepage_sprite.png) -500px -63px no-repeat transparent; }
-      .top_section_content .vertical_slider .items_collection .small_items li.item:hover .details_wrapper .ellipses_dots,
-      .top_section_content .vertical_slider .items_collection .small_items li.item.selected .details_wrapper .ellipses_dots {
-        background: #eff2f3; }
+      .top_section_content .vertical_slider .items_collection .small_items li.item:hover, .top_section_content .vertical_slider .items_collection .small_items li.item.selected {
+        background: url(/assets/home/homepage_sprite.png) -500px -63px no-repeat transparent; }
+        .top_section_content .vertical_slider .items_collection .small_items li.item:hover .details_wrapper .details .ellipsis, .top_section_content .vertical_slider .items_collection .small_items li.item.selected .details_wrapper .details .ellipsis {
+          background-color: #eff3f3; }

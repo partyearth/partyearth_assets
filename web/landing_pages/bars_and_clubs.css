@@ -1722,7 +1722,8 @@ div.datepicker {
       width: 98px;
       height: 65px; }
   #recent_articles .list .list_item .title {
-    font-size: 11px; }
+    font-size: 11px;
+    line-height: 13px; }
   #recent_articles .list .list_item.featured {
     float: none;
     width: auto;

@@ -142,7 +142,7 @@
       font-size: 12px;
       line-height: 15px;
       color: #000;
-      margin: 14px 0 0 0; }
+      margin: 8px 0 0 0; }
       .custom_accordion .accordion_content .details .details_wrapper .info.bottom a:link, .custom_accordion .accordion_content .details .details_wrapper .info.bottom a:visited, .custom_accordion .accordion_content .details .details_wrapper .info.bottom .fake_link {
         color: #000;
         text-decoration: none; }
@@ -767,7 +767,8 @@
       width: 98px;
       height: 65px; }
   #recent_articles .list .list_item .title {
-    font-size: 11px; }
+    font-size: 11px;
+    line-height: 13px; }
   #recent_articles .list .list_item.featured {
     float: none;
     width: auto;

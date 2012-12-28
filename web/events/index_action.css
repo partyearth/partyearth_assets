@@ -22,6 +22,14 @@
     cursor: pointer; }
   #seo_pagination em:hover {
     cursor: default; }
+  #seo_pagination .gap, #seo_pagination .gap:hover {
+    padding: 0;
+    color: #adc0c9;
+    font-weight: bold;
+    font-size: 18px;
+    background-color: transparent;
+    border: none;
+    cursor: text; }
   #seo_pagination .previous_page, #seo_pagination .next_page {
     width: 18px;
     height: 17px;

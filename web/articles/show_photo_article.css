@@ -1118,9 +1118,7 @@
     #comments .gig-comments-container #Comments-commentBox textarea.gig-comments-commentBox-textarea {
       width: 694px !important; }
   #comments .gig-comments-container .gig-comments-commentList-header {
-    margin: 0 0 10px;
-    padding: 0 0 10px;
-    border-bottom: 1px dashed #adc0c9; }
+    padding: 0 0 10px; }
     #comments .gig-comments-container .gig-comments-commentList-header .gig-comments-commentList-header-commentsCount {
       margin: 0;
       padding: 0;
@@ -1131,6 +1129,9 @@
     /* Comment Reply Textarea */ }
     #comments .gig-comments-container .gig-commentList textarea.gig-comments-replyBox-textarea {
       width: 674px !important; }
+    #comments .gig-comments-container .gig-commentList > div:first-child .gig-comments-comment {
+      padding: 10px 0 0;
+      border-top: 1px dashed #adc0c9; }
   #comments .gig-comments-container .gig-comments-commentBox-bottom {
     margin: 10px 0 0;
     padding: 10px 0 0; }
@@ -1367,13 +1368,14 @@
       background-repeat: no-repeat; }
     #article_page #left_container #article_list h3 {
       margin: 0 0 6px;
-      font-size: 20px;
+      font-size: 22px;
       font-weight: bold;
-      line-height: 19px; }
+      line-height: 22px; }
       #article_page #left_container #article_list h3 a, #article_page #left_container #article_list h3 a:link, #article_page #left_container #article_list h3 a:visited {
-        color: #000; }
+        color: #000;
+        text-decoration: underline; }
         #article_page #left_container #article_list h3 a:hover, #article_page #left_container #article_list h3 a:link:hover, #article_page #left_container #article_list h3 a:visited:hover {
-          color: #597686; }
+          color: #375363; }
     #article_page #left_container #article_list .venue_type {
       margin: 0 0 7px;
       padding: 0;

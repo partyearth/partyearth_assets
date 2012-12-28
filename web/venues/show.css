@@ -732,7 +732,7 @@ ratings_big_wrapper .title {
       font-size: 12px;
       line-height: 15px;
       color: #000;
-      margin: 14px 0 0 0; }
+      margin: 8px 0 0 0; }
       .custom_accordion .accordion_content .details .details_wrapper .info.bottom a:link, .custom_accordion .accordion_content .details .details_wrapper .info.bottom a:visited, .custom_accordion .accordion_content .details .details_wrapper .info.bottom .fake_link {
         color: #000;
         text-decoration: none; }
@@ -1124,7 +1124,8 @@ ratings_big_wrapper .title {
       width: 98px;
       height: 65px; }
   #recent_articles .list .list_item .title {
-    font-size: 11px; }
+    font-size: 11px;
+    line-height: 13px; }
   #recent_articles .list .list_item.featured {
     float: none;
     width: auto;
@@ -1279,9 +1280,7 @@ ratings_big_wrapper .title {
     #comments .gig-comments-container #Comments-commentBox textarea.gig-comments-commentBox-textarea {
       width: 694px !important; }
   #comments .gig-comments-container .gig-comments-commentList-header {
-    margin: 0 0 10px;
-    padding: 0 0 10px;
-    border-bottom: 1px dashed #adc0c9; }
+    padding: 0 0 10px; }
     #comments .gig-comments-container .gig-comments-commentList-header .gig-comments-commentList-header-commentsCount {
       margin: 0;
       padding: 0;
@@ -1292,6 +1291,9 @@ ratings_big_wrapper .title {
     /* Comment Reply Textarea */ }
     #comments .gig-comments-container .gig-commentList textarea.gig-comments-replyBox-textarea {
       width: 674px !important; }
+    #comments .gig-comments-container .gig-commentList > div:first-child .gig-comments-comment {
+      padding: 10px 0 0;
+      border-top: 1px dashed #adc0c9; }
   #comments .gig-comments-container .gig-comments-commentBox-bottom {
     margin: 10px 0 0;
     padding: 10px 0 0; }
@@ -3128,7 +3130,8 @@ ratings_big_wrapper .title {
     padding: 0 12px 0 44px; }
 #comments .gig-commentList .gig-comments-comment {
   position: relative;
-  padding: 10px 10px 10px 0; }
+  padding: 10px 10px 10px 0;
+  border-top: none; }
   #comments .gig-commentList .gig-comments-comment .gig-comments-title {
     color: #000;
     font-size: 20px;

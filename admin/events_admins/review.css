@@ -867,203 +867,234 @@ BODY:first-of-type ul.as-list, x:-moz-any-link, x:default {
 
 
 */
-#event_importer .content .as-results,
-#events_review .content .as-results {
-  position: relative; }
-  #event_importer .content .as-results .as-list,
-  #events_review .content .as-results .as-list {
-    top: 24px !important;
-    height: 472px;
-    overflow: auto; }
-#event_importer .content .event_data,
-#events_review .content .event_data {
-  box-shadow: none;
-  border: none; }
-#event_importer .content li.as-original input,
-#events_review .content li.as-original input {
-  height: auto;
-  padding: 6px;
-  font-size: inherit; }
-#event_importer .content .venue_search,
-#events_review .content .venue_search {
-  position: relative; }
-  #event_importer .content .venue_search form,
-  #events_review .content .venue_search form {
-    display: inline-block;
-    min-width: 560px;
-    padding: 10px 19px 5px;
-    background: -webkit-gradient(linear, 0 0, 0 100%, from(white), to(#cccccc));
-    background: -moz-linear-gradient(top, white, #cccccc);
-    -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=#fff, endColorStr=#CCC);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=#fff, endColorStr=#CCC);
-    border: 1px inset white;
-    border-radius: 26px;
-    box-shadow: inset 0 0 8px #999; }
-    #event_importer .content .venue_search form .label_float,
-    #events_review .content .venue_search form .label_float {
-      color: #444;
-      text-shadow: 1px 1px 0px #EFEFEF;
-      line-height: 22px; }
-    #event_importer .content .venue_search form .as-list,
-    #events_review .content .venue_search form .as-list {
-      left: 229px; }
-    #event_importer .content .venue_search form .blue_btn,
-    #events_review .content .venue_search form .blue_btn {
-      margin: 0 0 0 5px; }
-    #event_importer .content .venue_search form .blue_btn.reload_pg,
-    #events_review .content .venue_search form .blue_btn.reload_pg {
-      height: 15px;
-      margin: 0; }
-#event_importer .content .event_row,
-#events_review .content .event_row {
-  position: relative;
-  margin: 0 0 10px;
-  padding: 5px 5px 0;
-  border-top: 1px dashed #EBECED;
-  border-right: 1px solid #dadada;
-  border-bottom: 1px dashed #EBECED;
-  border-left: 1px solid #dadada;
-  background: #efefef;
-  border-radius: 4px 4px 4px 4px;
-  box-shadow: inset 0 0 14px #ccc;
-  margin: 0; }
-  #event_importer .content .event_row:hover,
-  #events_review .content .event_row:hover {
-    background: #bcc4c9;
-    border-top: 1px solid #999;
-    border-right: 1px solid #999;
-    border-bottom: 1px solid #999;
-    border-left: 1px solid #999;
-    box-shadow: inset 0 0 14px #888; }
-    #event_importer .content .event_row:hover .row_1 .accept_btn.white_btn,
-    #events_review .content .event_row:hover .row_1 .accept_btn.white_btn {
-      color: #fff;
-      text-shadow: 1px 1px 0px #006CBA;
-      background: -webkit-gradient(linear, 0 0, 0 100%, from(#0098fe), to(#1977ce));
-      background: -moz-linear-gradient(top, #0098fe, #1977ce);
-      -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=#0098fe, endColorStr=#1977ce);
-      filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=#0098fe, endColorStr=#1977ce);
-      border: solid #0098fe 1px; }
-      #event_importer .content .event_row:hover .row_1 .accept_btn.white_btn:hover,
-      #events_review .content .event_row:hover .row_1 .accept_btn.white_btn:hover {
-        background: #2388F5; }
-  #event_importer .content .event_row.disabled .disabled_overlay,
-  #events_review .content .event_row.disabled .disabled_overlay {
-    display: block; }
-  #event_importer .content .event_row .disabled_overlay,
-  #events_review .content .event_row .disabled_overlay {
-    display: none;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-color: #fff;
-    opacity: .85;
-    background-image: url(/assets/content_bg/spinner.gif);
-    background-position: center;
-    background-repeat: no-repeat; }
-#event_importer .content .event_item,
-#events_review .content .event_item {
-  float: left;
-  margin: 0 5px 4px 0; }
-#event_importer .content table td,
-#event_importer .content .item_content,
-#events_review .content table td,
-#events_review .content .item_content {
-  padding: 0;
-  border-bottom: 1px solid #fff;
-  background: #dbe4e9;
-  padding: 5px;
-  position: relative;
-  min-height: 26px;
-  border-radius: 0 0 4px 4px; }
-  #event_importer .content table td ul.as-selections li.as-selection-item,
-  #event_importer .content .item_content ul.as-selections li.as-selection-item,
-  #events_review .content table td ul.as-selections li.as-selection-item,
-  #events_review .content .item_content ul.as-selections li.as-selection-item {
-    font-size: 11px; }
-  #event_importer .content table td ul.as-selections li.as-original,
-  #event_importer .content .item_content ul.as-selections li.as-original,
-  #events_review .content table td ul.as-selections li.as-original,
-  #events_review .content .item_content ul.as-selections li.as-original {
-    margin: 0 0 6px; }
-#event_importer .content .event_item:hover .item_content,
-#event_importer .content .event_item:focus .item_content,
-#events_review .content .event_item:hover .item_content,
-#events_review .content .event_item:focus .item_content {
-  background: #999;
-  border-bottom: 1px solid #ccd7dc; }
-#event_importer .content .column_header,
-#event_importer .content .item_header,
-#events_review .content .column_header,
-#events_review .content .item_header {
-  background: -webkit-gradient(linear, 0 0, 0 100%, from(#777777), to(#444444));
-  background: -moz-linear-gradient(top, #777777, #444444);
-  -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=#777777, endColorStr=#444444);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=#777777, endColorStr=#444444);
-  color: #E5E5E5;
-  padding: 5px 6px;
-  font-weight: bold;
-  text-transform: uppercase;
-  text-shadow: 2px 2px 0 #555555, -1px -1px 0 #555555, 1px -1px 0 #555555, -1px 1px 0 #555555, 1px 1px 0 #555555;
-  box-shadow: 0px 0px 2px #333;
-  border-radius: 4px 4px 0 0; }
-#event_importer .content .event_item:hover .item_header,
-#events_review .content .event_item:hover .item_header {
-  background: #333;
-  color: #fff;
-  text-shadow: 2px 2px 0 #333333, -1px -1px 0 #333333, 1px -1px 0 #333333, -1px 1px 0 #333333, 1px 1px 0 #333333; }
-#event_importer .content ul.as-list,
-#events_review .content ul.as-list {
-  top: 29px !important;
-  text-shadow: none; }
-#event_importer .content ul.as-selections,
-#events_review .content ul.as-selections {
-  border: none;
-  box-shadow: none;
-  background: none;
-  padding: 0;
-  float: left; }
-#event_importer .content .errors,
-#events_review .content .errors {
-  display: inline-block;
-  font-size: 12px;
-  font-weight: bold;
-  color: #fff;
-  padding: 0 6px;
-  background: #c00808;
-  border-radius: 4px 4px 4px 4px;
-  text-shadow: 1px 1px 3px #790606;
-  position: absolute;
-  /*top:-26px;*/
-  top: -22px;
-  right: 3px;
-  z-index: 1; }
-#event_importer .content .admin_btns,
-#events_review .content .admin_btns {
-  padding-top: 9px;
-  background: none;
-  margin: 0 0 10px 5px; }
-  #event_importer .content .admin_btns .blue_btn, #event_importer .content .admin_btns .white_btn,
-  #events_review .content .admin_btns .blue_btn,
-  #events_review .content .admin_btns .white_btn {
-    height: auto;
-    margin: 0 10px 0 0;
-    float: left; }
-  #event_importer .content .admin_btns.bottom,
-  #events_review .content .admin_btns.bottom {
+#event_importer,
+#events_review {
+  /* Auto Suggest Styles */ }
+  #event_importer .event_list,
+  #events_review .event_list {
+    border: none;
+    box-shadow: none;
+    background: none; }
+    #event_importer .event_list label,
+    #events_review .event_list label {
+      padding: 0;
+      text-shadow: none;
+      background: none;
+      border: none;
+      border-radius: 0;
+      box-shadow: none; }
+    #event_importer .event_list input,
+    #event_importer .event_list input.textarea,
+    #event_importer .event_list textarea,
+    #events_review .event_list input,
+    #events_review .event_list input.textarea,
+    #events_review .event_list textarea {
+      width: 277px;
+      padding: 6px;
+      background-color: #fff;
+      border: 1px solid #ccc;
+      box-shadow: none;
+      border-radius: 0; }
+      #event_importer .event_list input[type='checkbox'],
+      #event_importer .event_list input.textarea[type='checkbox'],
+      #event_importer .event_list textarea[type='checkbox'],
+      #events_review .event_list input[type='checkbox'],
+      #events_review .event_list input.textarea[type='checkbox'],
+      #events_review .event_list textarea[type='checkbox'] {
+        width: auto; }
+    #event_importer .event_list input.textarea,
+    #event_importer .event_list textarea,
+    #events_review .event_list input.textarea,
+    #events_review .event_list textarea {
+      height: 134px; }
+    #event_importer .event_list .event,
+    #events_review .event_list .event {
+      position: relative;
+      margin: 0;
+      padding: 30px 5px;
+      border-top: 2px solid #8c8c8c;
+      counter-increment: index; }
+      #event_importer .event_list .event .event_count,
+      #events_review .event_list .event .event_count {
+        position: absolute;
+        top: 30px;
+        right: 936px;
+        font-size: 20px;
+        line-height: 20px;
+        font-weight: bold;
+        background-color: #e2e2e2;
+        padding: 5px;
+        border-left: 2px solid #bbb; }
+        #event_importer .event_list .event .event_count:before,
+        #events_review .event_list .event .event_count:before {
+          content: counter(index); }
+        #event_importer .event_list .event .event_count input,
+        #events_review .event_list .event .event_count input {
+          margin: 0; }
+      #event_importer .event_list .event:first-child,
+      #events_review .event_list .event:first-child {
+        padding-top: 0;
+        border-top: none; }
+        #event_importer .event_list .event:first-child .event_count,
+        #events_review .event_list .event:first-child .event_count {
+          top: 0; }
+      #event_importer .event_list .event:nth-child(even),
+      #events_review .event_list .event:nth-child(even) {
+        background-color: #bbb; }
+        #event_importer .event_list .event:nth-child(even) .event_count,
+        #events_review .event_list .event:nth-child(even) .event_count {
+          background-color: #c9c9c9; }
+        #event_importer .event_list .event:nth-child(even) .event_item,
+        #events_review .event_list .event:nth-child(even) .event_item {
+          background-color: #c9c9c9; }
+        #event_importer .event_list .event:nth-child(even) input, #event_importer .event_list .event:nth-child(even) textarea,
+        #events_review .event_list .event:nth-child(even) input,
+        #events_review .event_list .event:nth-child(even) textarea {
+          background-color: #ebeced; }
+      #event_importer .event_list .event .event_row .event_row,
+      #events_review .event_list .event .event_row .event_row {
+        float: right; }
+      #event_importer .event_list .event .event_item,
+      #events_review .event_list .event .event_item {
+        float: left;
+        width: 291px;
+        margin: 0 0 5px 5px;
+        padding: 5px 8px;
+        background-color: #e2e2e2; }
+        #event_importer .event_list .event .event_item:first-child,
+        #events_review .event_list .event .event_item:first-child {
+          margin-left: 0; }
+        #event_importer .event_list .event .event_item.event_item_2,
+        #events_review .event_list .event .event_item.event_item_2 {
+          width: 603px; }
+          #event_importer .event_list .event .event_item.event_item_2 input.textarea,
+          #event_importer .event_list .event .event_item.event_item_2 textarea,
+          #events_review .event_list .event .event_item.event_item_2 input.textarea,
+          #events_review .event_list .event .event_item.event_item_2 textarea {
+            width: 588px; }
+        #event_importer .event_list .event .event_item.event_item_3,
+        #events_review .event_list .event .event_item.event_item_3 {
+          width: 915px; }
+          #event_importer .event_list .event .event_item.event_item_3 input.textarea,
+          #event_importer .event_list .event .event_item.event_item_3 textarea,
+          #events_review .event_list .event .event_item.event_item_3 input.textarea,
+          #events_review .event_list .event .event_item.event_item_3 textarea {
+            width: 900px; }
+        #event_importer .event_list .event .event_item.event_item_main,
+        #events_review .event_list .event .event_item.event_item_main {
+          background-color: #09f; }
+          #event_importer .event_list .event .event_item.event_item_main label,
+          #events_review .event_list .event .event_item.event_item_main label {
+            color: #fff; }
+            #event_importer .event_list .event .event_item.event_item_main label input,
+            #events_review .event_list .event .event_item.event_item_main label input {
+              width: auto; }
+          #event_importer .event_list .event .event_item.event_item_main .errors,
+          #events_review .event_list .event .event_item.event_item_main .errors {
+            background-color: #fff;
+            padding: 1px 3px; }
+        #event_importer .event_list .event .event_item label,
+        #events_review .event_list .event .event_item label {
+          margin: 0 0 5px;
+          font-size: 14px;
+          font-weight: bold;
+          font-family: 'Arial', sans-serif; }
+          #event_importer .event_list .event .event_item label.checkbox_label,
+          #events_review .event_list .event .event_item label.checkbox_label {
+            position: absolute;
+            top: -18px;
+            right: 0;
+            margin: 0;
+            font-weight: normal;
+            font-size: 12px; }
+            #event_importer .event_list .event .event_item label.checkbox_label input,
+            #events_review .event_list .event .event_item label.checkbox_label input {
+              margin: 0; }
+        #event_importer .event_list .event .event_item .item_content,
+        #events_review .event_list .event .event_item .item_content {
+          position: relative; }
+      #event_importer .event_list .event.disabled .disabled_overlay,
+      #events_review .event_list .event.disabled .disabled_overlay {
+        display: block; }
+      #event_importer .event_list .event .disabled_overlay,
+      #events_review .event_list .event .disabled_overlay {
+        display: none;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: #fff;
+        opacity: .85;
+        background-image: url(/assets/content_bg/spinner.gif);
+        background-position: center;
+        background-repeat: no-repeat; }
+  #event_importer .errors,
+  #events_review .errors {
+    display: block;
+    margin: 3px 2px 0;
+    font-size: 12px;
+    color: red;
+    font-weight: bold; }
+  #event_importer .admin_btns,
+  #events_review .admin_btns {
     float: left;
-    background: -webkit-gradient(linear, 0 0, 0 100%, from(white), to(#cccccc));
-    background: -moz-linear-gradient(top, white, #cccccc);
-    -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=#fff, endColorStr=#CCC);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=#fff, endColorStr=#CCC);
-    padding: 10px 19px;
-    box-shadow: inset 0 0 8px #999;
-    border-radius: 26px;
-    border: 1px inset white; }
+    padding-top: 9px;
+    background: none;
+    margin: 0 0 10px 5px; }
+    #event_importer .admin_btns .blue_btn, #event_importer .admin_btns .white_btn,
+    #events_review .admin_btns .blue_btn,
+    #events_review .admin_btns .white_btn {
+      height: auto;
+      margin: 0 10px 0 0;
+      float: left; }
+  #event_importer .as-selections,
+  #events_review .as-selections {
+    padding: 26px 0 0;
+    background: none;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    overflow: visible; }
+    #event_importer .as-selections li,
+    #events_review .as-selections li {
+      float: none; }
+    #event_importer .as-selections .as-selection-item,
+    #events_review .as-selections .as-selection-item {
+      font-size: 11px; }
+      #event_importer .as-selections .as-selection-item:first-child,
+      #events_review .as-selections .as-selection-item:first-child {
+        margin: 3px 0 0; }
+    #event_importer .as-selections .as-original input,
+    #events_review .as-selections .as-original input {
+      position: absolute;
+      top: 0; }
+  #event_importer .as-results,
+  #events_review .as-results {
+    position: absolute;
+    top: 26px; }
+    #event_importer .as-results .as-list,
+    #events_review .as-results .as-list {
+      height: 200px;
+      overflow: auto; }
+  #event_importer .as-original input,
+  #events_review .as-original input {
+    height: auto;
+    font-size: inherit; }
 /*
 
 
 
 */
+/* Event Review Search Feature */
+#events_review .venue_search {
+  position: relative; }
+  #events_review .venue_search form .label_float {
+    color: #444;
+    text-shadow: 1px 1px 0px #EFEFEF;
+    line-height: 22px; }
+  #events_review .venue_search form .venue_search_input {
+    position: relative;
+    float: left;
+    margin: 0 10px 0 0;
+    width: 200px; }
