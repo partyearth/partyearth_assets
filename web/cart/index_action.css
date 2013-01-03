@@ -97,8 +97,9 @@
       line-height: 16px;
       border-bottom: 0; }
   #right_sidebar .title {
+    display: block;
     margin: 0 0 3px;
-    line-height: 15px;
+    line-height: 16px;
     text-decoration: underline; }
     #right_sidebar .title:hover {
       color: #000; }
@@ -153,7 +154,7 @@
       overflow: hidden; }
   #right_sidebar .changer .name {
     height: 10px;
-    margin: 0;
+    margin: 0 0 6px;
     padding: 0 0 6px;
     vertical-align: top;
     border-bottom: 1px solid #dae4e9; }
@@ -162,8 +163,8 @@
     padding: 8px 0 0;
     border-top: 1px dashed #adc0c9; }
     #right_sidebar .list .list_item.featured {
-      margin: 0 0 8px;
-      padding: 0 0 8px;
+      margin: 0 0 15px;
+      padding: 0 0 15px;
       border-bottom: 1px solid #8ea8b5; }
       #right_sidebar .list .list_item.featured .title {
         margin: 0 0 8px;
@@ -175,7 +176,8 @@
       #right_sidebar .list .list_item.featured .venue_type {
         margin: 0 0 6px; }
     #right_sidebar .list .list_item p {
-      padding: 0; }
+      padding: 0;
+      line-height: 16px; }
     #right_sidebar .list .list_item .date {
       color: #09f;
       font-size: 9px;

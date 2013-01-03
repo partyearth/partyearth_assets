@@ -24,7 +24,8 @@
     margin-left: 0; }
     #recent_articles .list .list_item.featured .thumbnail_link {
       width: 210px;
-      height: 140px; }
+      height: 140px;
+      margin: 0 0 15px; }
       #recent_articles .list .list_item.featured .thumbnail_link img {
         width: 210px;
         height: 140px; }

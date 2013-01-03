@@ -1256,14 +1256,55 @@ td.right_side.pod_sides {
     padding: 12px 22px 7px 19px; }
     .map_infowindow .map_infowindow_content.event .address {
       margin: 5px 0; }
-/*BEGIN  CUSTOM ACCORDION STYLES*/
-/*----------------------------------------*/
-.custom_accordion p {
+/* SCHEDULE OF EVENTS
+-----------------------------------
+:: Styles for the Schedule of Events.
+------------------------------------------------- */
+.soe .soe_cont {
+  position: relative;
+  padding: 0 0 42px; }
+  .soe .soe_cont .soe_cont_triggers {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 100; }
+  .soe .soe_cont .trigger.collapse {
+    display: none; }
+  .soe .soe_cont .trigger.expand {
+    display: none; }
+  .soe .soe_cont.soe_cont_collapsed {
+    height: 400px;
+    overflow: hidden; }
+    .soe .soe_cont.soe_cont_collapsed .soe_cont_triggers {
+      padding: 60px 0 1px;
+      background: linear-gradient(top, rgba(255, 255, 255, 0) 0%, white 52%, white 100%);
+      background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 0%, white 52%, white 100%);
+      /* FF3.6+ */
+      background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255, 255, 255, 0)), color-stop(52%, white), color-stop(100%, white));
+      /* Chrome,Safari4+ */
+      background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, white 52%, white 100%);
+      /* Chrome10+,Safari5.1+ */
+      background: -o-linear-gradient(top, rgba(255, 255, 255, 0) 0%, white 52%, white 100%);
+      /* Opera 11.10+ */
+      background: -ms-linear-gradient(top, rgba(255, 255, 255, 0) 0%, white 52%, white 100%);
+      /* IE10+ */
+      background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, white 52%, white 100%);
+      /* W3C */
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 );
+      /* IE6-9 */ }
+    .soe .soe_cont.soe_cont_collapsed .trigger.collapse {
+      display: none; }
+    .soe .soe_cont.soe_cont_collapsed .trigger.expand {
+      display: block; }
+  .soe .soe_cont.soe_cont_not_expandable {
+    padding-bottom: 0; }
+
+.soe_sect p {
   padding: 0; }
-.custom_accordion .collapse_bar_wrapper,
-.custom_accordion .expand_bar_wrapper {
-  border-radius: 2px;
-  box-shadow: 0px 2px 3px #d9d9d9;
+.soe_sect .soe_sect_head {
+  height: 29px;
+  padding: 11px 12px 0;
   border-width: 1px;
   border-style: solid;
   border-top-color: #EBEBEB;
@@ -1274,145 +1315,130 @@ td.right_side.pod_sides {
   background: -moz-linear-gradient(top, #fbfbfb, #f1f1f1);
   -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=#FBFBFB, endColorStr=#F1F1F1);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=#FBFBFB, endColorStr=#F1F1F1);
-  padding: 11px 12px 0 0;
-  height: 29px;
+  border-radius: 2px;
+  box-shadow: 0px 2px 3px #d9d9d9;
   cursor: pointer; }
-  .custom_accordion .collapse_bar_wrapper .inner_wrapper,
-  .custom_accordion .expand_bar_wrapper .inner_wrapper {
-    padding: 0 0 0 12px; }
-    .custom_accordion .collapse_bar_wrapper .inner_wrapper .headline,
-    .custom_accordion .expand_bar_wrapper .inner_wrapper .headline {
-      float: left;
-      margin: 0 3px 0 0;
-      padding: 0;
-      color: #464646;
-      font-size: 18px;
-      font-weight: normal;
-      line-height: 21px;
-      font-family: "Arimo", Arial, san-serif; }
-    .custom_accordion .collapse_bar_wrapper .inner_wrapper .month_year,
-    .custom_accordion .expand_bar_wrapper .inner_wrapper .month_year {
-      padding: 0;
-      font-weight: normal; }
-      .custom_accordion .collapse_bar_wrapper .inner_wrapper .month_year .black_text,
-      .custom_accordion .expand_bar_wrapper .inner_wrapper .month_year .black_text {
-        font-size: 18px;
-        margin: 0 3px 0 0;
-        color: #464646; }
-      .custom_accordion .collapse_bar_wrapper .inner_wrapper .month_year .grey_text,
-      .custom_accordion .expand_bar_wrapper .inner_wrapper .month_year .grey_text {
-        font-size: 18px; }
-    .custom_accordion .collapse_bar_wrapper .inner_wrapper .collapse_expand_text,
-    .custom_accordion .expand_bar_wrapper .inner_wrapper .collapse_expand_text {
-      font-size: 11px;
-      color: #c2c2c2;
-      text-decoration: underline; }
-.custom_accordion .collapse_bar_wrapper:hover,
-.custom_accordion .expand_bar_wrapper:hover {
-  background: #E3E3E3;
-  border-color: #DDDCDC;
-  box-shadow: 0 2px 3px #edecec; }
-  .custom_accordion .collapse_bar_wrapper:hover .collapse_expand_text,
-  .custom_accordion .expand_bar_wrapper:hover .collapse_expand_text {
-    color: #000; }
-.custom_accordion .accordion_content {
-  overflow: hidden;
-  position: relative; }
-  .custom_accordion .accordion_content tr.divider_line {
-    border: none; }
-    .custom_accordion .accordion_content tr.divider_line td {
-      padding: 0; }
-      .custom_accordion .accordion_content tr.divider_line td .inner_divider.solid.thick {
-        margin: 0 0 2px;
-        height: 7px; }
-  .custom_accordion .accordion_content tr.grey_text .event_date div p,
-  .custom_accordion .accordion_content tr.grey_text .details div table tr td div h3 a:link,
-  .custom_accordion .accordion_content tr.grey_text .details div table tr td div h3 a:visited,
-  .custom_accordion .accordion_content tr.grey_text .details div table tr td div p a:link,
-  .custom_accordion .accordion_content tr.grey_text .details div table tr td div p a:visited,
-  .custom_accordion .accordion_content tr.grey_text .details div table tr td div a:hover,
-  .custom_accordion .accordion_content tr.grey_text .tickets.calendar div span {
-    color: #999 !important; }
-  .custom_accordion .accordion_content tr {
-    border-top: 1px dashed #ccc; }
-    .custom_accordion .accordion_content tr:first-child {
-      border-top: none; }
-    .custom_accordion .accordion_content tr td {
-      padding: 14px 0;
-      vertical-align: top; }
-  .custom_accordion .accordion_content .event_date .date_block {
-    background: -webkit-gradient(linear, 0 0, 0 100%, from(#eff2f4), to(#d5dbe0));
-    background: -moz-linear-gradient(top, white, #d5dbe0);
-    -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=#eff2f4, endColorStr=#d5dbe0);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=#eff2f4, endColorStr=#d5dbe0);
-    width: 48px;
-    margin: 0 10px 0 0;
-    text-align: center;
-    border-left: 1px solid #e0e4e7;
-    border-right: 1px solid #e0e4e7;
-    border-radius: 2px 2px 2px 2px; }
-    .custom_accordion .accordion_content .event_date .date_block .month {
-      font-size: 10px;
-      text-shadow: 1px 1px 1px white;
-      line-height: 9px;
-      padding: 5px 0 2px;
-      font-weight: bold; }
-    .custom_accordion .accordion_content .event_date .date_block .date {
-      font-size: 25px;
-      padding: 0 0 5px;
-      text-shadow: 1px 1px 1px #fff;
-      border-bottom: 1px solid #b4babe; }
-    .custom_accordion .accordion_content .event_date .date_block .day {
-      background: #f5f5f5;
-      color: #333;
-      font-size: 9px;
-      line-height: 9px;
-      letter-spacing: 1px;
-      padding: 2px 0 3px;
-      border-top: 2px solid #e7e7e7;
-      border-bottom: 1px solid #e7e7e7; }
-  .custom_accordion .accordion_content .details {
-    width: 524px;
-    padding: 14px 20px 14px 0; }
-    .custom_accordion .accordion_content .details .details_wrapper table {
-      display: inline; }
-      .custom_accordion .accordion_content .details .details_wrapper table tr {
-        border: none; }
-        .custom_accordion .accordion_content .details .details_wrapper table tr td {
-          padding: 0; }
-    .custom_accordion .accordion_content .details .details_wrapper .event_img {
-      margin: 0 12px 0 0; }
-      .custom_accordion .accordion_content .details .details_wrapper .event_img img {
+  .soe_sect .soe_sect_head h3 {
+    float: left;
+    margin: 0 3px 0 0;
+    padding: 0;
+    color: #464646;
+    font-size: 18px;
+    font-weight: normal; }
+    .soe_sect .soe_sect_head h3 span {
+      color: #999;
+      font-size: 18px; }
+  .soe_sect .soe_sect_head .soe_sect_head_exp_text {
+    display: block;
+    float: right;
+    color: #c2c2c2;
+    font-size: 11px;
+    text-decoration: underline; }
+  .soe_sect .soe_sect_head:hover {
+    background: #E3E3E3;
+    border-color: #DDDCDC;
+    box-shadow: 0 2px 3px #edecec; }
+    .soe_sect .soe_sect_head:hover .soe_sect_head_exp_text {
+      color: #000; }
+.soe_sect .soe_sect_cont {
+  position: relative;
+  overflow: hidden; }
+  .soe_sect .soe_sect_cont table {
+    width: 100%; }
+    .soe_sect .soe_sect_cont table tr {
+      border-top: 1px dashed #ccc; }
+      .soe_sect .soe_sect_cont table tr:first-child {
+        border-top: none; }
+      .soe_sect .soe_sect_cont table tr td {
+        padding: 12px 0;
+        vertical-align: top; }
+  .soe_sect .soe_sect_cont .soe_event_date {
+    width: 50px;
+    padding-right: 10px; }
+    .soe_sect .soe_sect_cont .soe_event_date .date_block {
+      width: 48px;
+      text-align: center;
+      text-transform: uppercase;
+      background: -webkit-gradient(linear, 0 0, 0 100%, from(#eff2f4), to(#d5dbe0));
+      background: -moz-linear-gradient(top, white, #d5dbe0);
+      -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=#eff2f4, endColorStr=#d5dbe0);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=#eff2f4, endColorStr=#d5dbe0);
+      border-left: 1px solid #e0e4e7;
+      border-right: 1px solid #e0e4e7;
+      border-radius: 2px 2px 2px 2px; }
+      .soe_sect .soe_sect_cont .soe_event_date .date_block span {
+        display: block; }
+        .soe_sect .soe_sect_cont .soe_event_date .date_block span.month {
+          padding: 5px 0 2px;
+          color: #09f;
+          font-size: 10px;
+          font-weight: bold;
+          text-shadow: 1px 1px 1px white;
+          line-height: 9px; }
+        .soe_sect .soe_sect_cont .soe_event_date .date_block span.date {
+          padding: 0 0 5px;
+          color: #09f;
+          font-size: 25px;
+          text-shadow: 1px 1px 1px #fff;
+          border-bottom: 1px solid #b4babe; }
+        .soe_sect .soe_sect_cont .soe_event_date .date_block span.day {
+          padding: 2px 0 3px;
+          color: #333;
+          font-size: 9px;
+          line-height: 9px;
+          letter-spacing: 1px;
+          background-color: #f5f5f5;
+          border-top: 2px solid #e7e7e7;
+          border-bottom: 1px solid #e7e7e7; }
+  .soe_sect .soe_sect_cont .soe_event_img {
+    width: 77px;
+    padding-right: 15px; }
+    .soe_sect .soe_sect_cont .soe_event_img .thumbnail_link {
+      display: block;
+      width: 75px;
+      height: 50px;
+      border: 1px solid #d2dce1;
+      border-radius: 3px; }
+      .soe_sect .soe_sect_cont .soe_event_img .thumbnail_link img {
         display: block;
         width: 75px;
         height: 50px; }
-    .custom_accordion .accordion_content .details .details_wrapper .info.top .event_name {
-      margin: 0 0 5px;
-      font-size: 16px;
-      line-height: 18px;
-      font-weight: bold;
+  .soe_sect .soe_sect_cont .soe_event_dtls span {
+    display: block; }
+  .soe_sect .soe_sect_cont .soe_event_dtls .soe_event_name {
+    display: block;
+    margin: 0 0 7px;
+    color: #000;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none; }
+    .soe_sect .soe_sect_cont .soe_event_dtls .soe_event_name:hover {
+      color: #597686;
+      text-decoration: underline; }
+  .soe_sect .soe_sect_cont .soe_event_dtls .venue_type span {
+    display: inline; }
+  .soe_sect .soe_sect_cont .soe_event_dtls .soe_event_dtls_foot {
+    color: #000;
+    font-size: 12px;
+    line-height: 15px; }
+    .soe_sect .soe_sect_cont .soe_event_dtls .soe_event_dtls_foot a:link, .soe_sect .soe_sect_cont .soe_event_dtls .soe_event_dtls_foot a:visited, .soe_sect .soe_sect_cont .soe_event_dtls .soe_event_dtls_foot .fake_link {
       color: #000;
       text-decoration: none; }
-      .custom_accordion .accordion_content .details .details_wrapper .info.top .event_name:hover {
+      .soe_sect .soe_sect_cont .soe_event_dtls .soe_event_dtls_foot a:link:hover, .soe_sect .soe_sect_cont .soe_event_dtls .soe_event_dtls_foot a:visited:hover, .soe_sect .soe_sect_cont .soe_event_dtls .soe_event_dtls_foot .fake_link:hover {
         color: #597686;
         text-decoration: underline; }
-    .custom_accordion .accordion_content .details .details_wrapper .info.bottom {
-      font-size: 12px;
-      line-height: 15px;
-      color: #000;
-      margin: 8px 0 0 0; }
-      .custom_accordion .accordion_content .details .details_wrapper .info.bottom a:link, .custom_accordion .accordion_content .details .details_wrapper .info.bottom a:visited, .custom_accordion .accordion_content .details .details_wrapper .info.bottom .fake_link {
-        color: #000;
-        text-decoration: none; }
-        .custom_accordion .accordion_content .details .details_wrapper .info.bottom a:link:hover, .custom_accordion .accordion_content .details .details_wrapper .info.bottom a:visited:hover, .custom_accordion .accordion_content .details .details_wrapper .info.bottom .fake_link:hover {
-          color: #597686;
-          text-decoration: underline; }
-      .custom_accordion .accordion_content .details .details_wrapper .info.bottom .time {
-        color: #0099ff;
-        margin: 0 6px 0 0;
-        white-space: nowrap;
-        font-weight: bold; }
-      .custom_accordion .accordion_content .details .details_wrapper .info.bottom .point {
+    .soe_sect .soe_sect_cont .soe_event_dtls .soe_event_dtls_foot .soe_event_time {
+      float: left;
+      margin: 0 6px 0 0;
+      color: #09f;
+      white-space: nowrap;
+      font-weight: bold; }
+    .soe_sect .soe_sect_cont .soe_event_dtls .soe_event_dtls_foot .soe_event_dtls_foot_xtra {
+      float: left;
+      width: 390px; }
+      .soe_sect .soe_sect_cont .soe_event_dtls .soe_event_dtls_foot .soe_event_dtls_foot_xtra span {
+        display: inline; }
+      .soe_sect .soe_sect_cont .soe_event_dtls .soe_event_dtls_foot .soe_event_dtls_foot_xtra .point {
         width: 0;
         height: 0;
         border-width: 4px;
@@ -1421,41 +1447,12 @@ td.right_side.pod_sides {
         overflow: hidden;
         display: inline-block;
         margin: 0 0 0 5px; }
-  .custom_accordion .accordion_content .tickets.calendar {
-    vertical-align: bottom;
-    padding-left: 10px;
+  .soe_sect .soe_sect_cont .soe_event_xtra {
     width: 95px;
+    padding-left: 10px;
     font-size: 12px;
-    line-height: 16px; }
-
-/* SCHEDULE OF EVENTS
------------------------------------
-:: Styles for the Schedule of Events.
-------------------------------------------------- */
-#soe_info .clipped {
-  height: 400px;
-  overflow: hidden; }
-#soe_info .read_less_cont {
-  display: none; }
-#soe_info .read_more_cont {
-  position: relative;
-  z-index: 100;
-  margin: -60px 0 0;
-  padding: 60px 0 0;
-  background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 0%, white 52%, white 100%);
-  /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255, 255, 255, 0)), color-stop(52%, white), color-stop(100%, white));
-  /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, white 52%, white 100%);
-  /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(top, rgba(255, 255, 255, 0) 0%, white 52%, white 100%);
-  /* Opera 11.10+ */
-  background: -ms-linear-gradient(top, rgba(255, 255, 255, 0) 0%, white 52%, white 100%);
-  /* IE10+ */
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, white 52%, white 100%);
-  /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 );
-  /* IE6-9 */ }
+    line-height: 16px;
+    vertical-align: bottom; }
 /*FOR TOP SECTION LINK*/
 .videos_link a:link,
 .videos_link a:visited {
@@ -2218,8 +2215,9 @@ td.right_side.pod_sides {
       line-height: 16px;
       border-bottom: 0; }
   #right_sidebar .title {
+    display: block;
     margin: 0 0 3px;
-    line-height: 15px;
+    line-height: 16px;
     text-decoration: underline; }
     #right_sidebar .title:hover {
       color: #000; }
@@ -2274,7 +2272,7 @@ td.right_side.pod_sides {
       overflow: hidden; }
   #right_sidebar .changer .name {
     height: 10px;
-    margin: 0;
+    margin: 0 0 6px;
     padding: 0 0 6px;
     vertical-align: top;
     border-bottom: 1px solid #dae4e9; }
@@ -2283,8 +2281,8 @@ td.right_side.pod_sides {
     padding: 8px 0 0;
     border-top: 1px dashed #adc0c9; }
     #right_sidebar .list .list_item.featured {
-      margin: 0 0 8px;
-      padding: 0 0 8px;
+      margin: 0 0 15px;
+      padding: 0 0 15px;
       border-bottom: 1px solid #8ea8b5; }
       #right_sidebar .list .list_item.featured .title {
         margin: 0 0 8px;
@@ -2296,7 +2294,8 @@ td.right_side.pod_sides {
       #right_sidebar .list .list_item.featured .venue_type {
         margin: 0 0 6px; }
     #right_sidebar .list .list_item p {
-      padding: 0; }
+      padding: 0;
+      line-height: 16px; }
     #right_sidebar .list .list_item .date {
       color: #09f;
       font-size: 9px;
@@ -2525,7 +2524,8 @@ td.right_side.pod_sides {
     margin-left: 0; }
     #recent_articles .list .list_item.featured .thumbnail_link {
       width: 210px;
-      height: 140px; }
+      height: 140px;
+      margin: 0 0 15px; }
       #recent_articles .list .list_item.featured .thumbnail_link img {
         width: 210px;
         height: 140px; }
@@ -3016,8 +3016,6 @@ td.right_side.pod_sides {
 .bull_run_section .content_section.stages .map_legend .read_more_link {
   margin: 17px 0 0; }
 
-/*BEGIN CLOTHING AND SHOES SECTION*/
-/*------------------------------*/
 /*BEGIN BOTTOM HALF*/
 /*------------------------------------------------------------*/
 .bottom_half {
@@ -3061,20 +3059,9 @@ td.right_side.pod_sides {
   font-weight: normal;
   line-height: 25px; }
 
-/*IBIZA SCHEDULE OF EVENTS*/
-/*------------------------------------------*/
 .soe_info .headline {
   margin: 0 0 10px; }
 
 .soe_info .headline a:link,
 .soe_info .headline a:visited {
   color: #000; }
-
-/*BEGIN COLLAPSE BAR*/
-/*---------------------------------------*/
-/*BEGIN EXPAND BAR*/
-/*---------------------------------------*/
-/*BEGIN ACCORDION CONTENT*/
-/*---------------------------------------*/
-.soe_info .custom_accordion .accordion_content .details {
-  width: 588px; }
