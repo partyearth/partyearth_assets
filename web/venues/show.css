@@ -889,7 +889,7 @@ ratings_big_wrapper .title {
     border-top: 1px dashed #adc0c9; }
     #right_sidebar .list .list_item.featured {
       margin: 0 0 15px;
-      padding: 0 0 15px;
+      padding: 0 0 5px;
       border-bottom: 1px solid #8ea8b5; }
       #right_sidebar .list .list_item.featured .title {
         margin: 0 0 8px;
@@ -903,6 +903,8 @@ ratings_big_wrapper .title {
     #right_sidebar .list .list_item p {
       padding: 0;
       line-height: 16px; }
+      #right_sidebar .list .list_item p.name {
+        line-height: 10px; }
     #right_sidebar .list .list_item .date {
       color: #09f;
       font-size: 9px;
@@ -1128,7 +1130,8 @@ ratings_big_wrapper .title {
   #recent_articles .list .list_item.featured {
     float: none;
     width: auto;
-    margin-left: 0; }
+    margin-left: 0;
+    padding-bottom: 15px; }
     #recent_articles .list .list_item.featured .thumbnail_link {
       width: 210px;
       height: 140px;
@@ -2155,7 +2158,23 @@ ratings_big_wrapper .title {
         width: 33px;
         height: 33px;
         border: 1px solid #cbd7dd; }
+#overview_cont img {
+  display: block;
+  float: left;
+  margin: 0 10px 0 0;
+  width: 165px;
+  height: 110px;
+  border: 1px solid #ccc;
+  border-radius: 4px; }
+#overview_cont.no_photo #overview_desc {
+  float: none;
+  width: auto; }
+
+#overview_desc {
+  float: left;
+  width: 520px; }
 /*
+
 
 
 
@@ -2464,7 +2483,7 @@ ratings_big_wrapper .title {
   border-top: 1px dashed #adc0c9; }
   #object_page_info #more_details .info_section {
     float: left;
-    width: 236px;
+    width: 244px;
     left: 14px;
     margin-top: 0;
     padding-top: 0;
@@ -2473,7 +2492,7 @@ ratings_big_wrapper .title {
       left: auto; }
   #object_page_info #more_details #more_details_right {
     position: relative;
-    width: 245px;
+    width: 244px;
     clear: none; }
 #object_page_info h2 {
   position: absolute;
@@ -2529,7 +2548,10 @@ ratings_big_wrapper .title {
         color: #597686; }
   #object_page_info .info_content.address a.directions_link {
     display: inline-block;
-    margin: 7px 0 0; }
+    margin: 7px 0 0;
+    color: #09f; }
+    #object_page_info .info_content.address a.directions_link:hover {
+      color: #597686; }
   #object_page_info .info_content.neighborhood a {
     color: #000;
     text-decoration: underline; }
@@ -2698,22 +2720,6 @@ ratings_big_wrapper .title {
     margin: 4px 0 0; }
   #the_scene .read_more .less_toggle {
     margin: 6px 0 0; }
-
-#object_desc_cont img {
-  display: block;
-  float: left;
-  margin: 0 10px 0 0;
-  width: 165px;
-  height: 110px;
-  border: 1px solid #ccc;
-  border-radius: 4px; }
-#object_desc_cont.no_photo #object_desc {
-  float: none;
-  width: auto; }
-
-#object_desc {
-  float: left;
-  width: 520px; }
 
 /* Review Details
 ------------------------------------------------

@@ -245,147 +245,141 @@
   position: relative; }
 
 .map_controls {
-  padding: 4px 0 0 0; }
-
-.map_controls ul {
-  padding: 0;
-  margin: 0; }
-
-.map_controls ul li {
-  display: inline-block;
-  margin: 0 12px 0 0;
-  float: left; }
-
-.map_controls ul li a:link,
-.map_controls ul li a:visited {
-  color: #333;
-  text-decoration: none; }
-
-.map_controls .filter_btn {
-  background: url(/assets/cities/cities_sprite.png) no-repeat transparent;
-  margin: 0 3.2px 0 0;
-  cursor: pointer;
-  display: block;
-  font-size: 0;
-  line-height: 0;
-  text-indent: -999px;
-  /*FOR IE 7*/
-  font-size: 0;
-  display: block;
-  line-height: 0; }
-
-.map_controls #location_btn {
-  width: 136px;
-  height: 16px;
-  background-position: 0 -410px; }
-
-.map_controls #venue_type_btn {
-  width: 98px;
-  height: 16px;
-  background-position: -140px -410px; }
-
-.map_controls #calendar_btn {
-  width: 108px;
-  height: 16px;
-  background-position: -242px -410px; }
-
-.map_controls #character_btn {
-  width: 108px;
-  height: 16px;
-  margin: 0;
-  background-position: -354px -410px; }
-
-.map_controls #result_types {
-  margin: 13px 0 2px; }
-
-.map_controls ul li .map_markers {
-  background: url(/assets/content_bg/application_sprite.png) no-repeat transparent;
-  width: 13px;
-  height: 24px;
-  float: left;
-  margin: -6px 5px 0 0; }
-
-#venue_marker {
-  background-position: -67px -184px; }
-
-#hotspot_marker {
-  background-position: -67px -208px; }
-
-#event_marker {
-  background-position: -67px -232px; }
-
-#landmark_marker {
-  background-position: -67px -160px; }
+  padding: 4px 0 0; }
+  .map_controls ul {
+    padding: 0;
+    margin: 0; }
+    .map_controls ul li {
+      display: inline-block;
+      float: left;
+      margin: 0 12px 0 0; }
+      .map_controls ul li a:link, .map_controls ul li a:visited {
+        color: #333;
+        text-decoration: none; }
+  .map_controls .filter_btn {
+    display: block;
+    margin: 0 3.2px 0 0;
+    font-size: 0;
+    line-height: 0;
+    text-indent: -999px;
+    background: url(/assets/cities/cities_sprite.png) no-repeat transparent;
+    cursor: pointer; }
+  .map_controls #location_btn {
+    width: 136px;
+    height: 16px;
+    background-position: 0 -410px; }
+  .map_controls #venue_type_btn {
+    width: 98px;
+    height: 16px;
+    background-position: -140px -410px; }
+  .map_controls #calendar_btn {
+    width: 108px;
+    height: 16px;
+    background-position: -242px -410px; }
+  .map_controls #character_btn {
+    width: 108px;
+    height: 16px;
+    margin: 0;
+    background-position: -354px -410px; }
+  .map_controls #result_types {
+    margin: 13px 0 0; }
+  .map_controls ul li .map_markers {
+    float: left;
+    width: 13px;
+    height: 17px;
+    margin: 0 5px 0 0;
+    background-image: url(/assets/content_bg/application_sprite.png); }
+    .map_controls ul li .map_markers#venue_marker {
+      background-position: -67px -188px; }
+    .map_controls ul li .map_markers#hotspot_marker {
+      background-position: -67px -212px; }
+    .map_controls ul li .map_markers#event_marker {
+      background-position: -67px -236px; }
+    .map_controls ul li .map_markers#landmark_marker {
+      background-position: -67px -164px; }
+  .map_controls .Checkbox {
+    float: left; }
+    .map_controls .Checkbox .Input {
+      display: block;
+      float: left;
+      width: 16px;
+      height: 19px;
+      margin: 0 5px 0 0;
+      background-image: url(/assets/content_bg/application_sprite.png);
+      background-repeat: no-repeat; }
+    .map_controls .Checkbox.unchecked .Input {
+      background-position: -87px -150px; }
+    .map_controls .Checkbox.checked .Input {
+      background-position: -87px -188px; }
 
 #advanced_search_text {
   margin: 13px 0 0;
   width: 144px; }
+  #advanced_search_text:hover {
+    color: #597686;
+    text-decoration: underline; }
 
-#advanced_search_text:hover {
-  color: #597686;
-  text-decoration: underline; }
-
-/*NEW MAP TOOLTIPS*/
-/*------------------------------------*/
+/* NEW MAP TOOLTIPS
+------------------------------------ */
 .new_map_tooltip {
   position: absolute;
+  z-index: 1000;
+  width: 300px;
   background: #889aa4;
   border: 4px solid #889aa4;
-  border-radius: 4px 4px 4px 4px;
-  z-index: 1000;
-  width: 300px; }
+  border-radius: 4px; }
   .new_map_tooltip .tooltip_content {
+    padding: 8px 26px 8px 25px;
     background: #f7f9fb;
-    border-radius: 4px 4px 4px 4px;
-    padding: 8px 26px 8px 25px; }
+    border-radius: 4px 4px 4px 4px; }
     .new_map_tooltip .tooltip_content .point_wrapper {
-      height: 22px;
-      overflow: hidden;
       position: absolute;
       right: -12px;
       top: 9px;
-      width: 12px; }
+      width: 12px;
+      height: 22px;
+      overflow: hidden; }
       .new_map_tooltip .tooltip_content .point_wrapper .point {
+        position: absolute;
+        top: 0;
+        left: 1px;
         width: 3px;
         height: 0;
         overflow: hidden;
         border-top: 12px solid transparent;
         border-left: 12px solid #889aa4;
         border-right: 12px solid transparent;
-        border-bottom: 12px solid transparent;
-        position: absolute;
-        top: 0;
-        left: 1px; }
+        border-bottom: 12px solid transparent; }
       .new_map_tooltip .tooltip_content .point_wrapper .inner_point {
+        position: absolute;
+        top: 2px;
+        left: -2px;
         width: 1px;
         height: 0;
-        overflow: hidden;
         border-top: 10px solid transparent;
         border-left: 10px solid #f7f9fb;
         border-right: 10px solid transparent;
         border-bottom: 10px solid transparent;
-        position: absolute;
-        top: 2px;
-        left: -2px; }
+        overflow: hidden; }
     .new_map_tooltip .tooltip_content p {
       padding: 0; }
     .new_map_tooltip .tooltip_content .result_name {
+      display: block;
+      margin: 0 0 6px;
       font-size: 17px;
       font-weight: bold;
-      margin: 0 0 6px;
-      line-height: 18px;
-      display: block; }
+      line-height: 18px; }
     .new_map_tooltip .tooltip_content .result_types {
+      color: #6c8898;
+      font-family: 'Arial', sans-serif;
       font-size: 9px;
       line-height: 11px;
-      color: #6c8898;
-      font-family: "Arial", sans-serif;
       text-transform: uppercase; }
       .new_map_tooltip .tooltip_content .result_types a, .new_map_tooltip .tooltip_content .result_types a:visited {
         color: #375363; }
     .new_map_tooltip .tooltip_content .result_date {
-      margin: 0 10px 0 0;
       width: 36px;
+      margin: 0 10px 0 0;
       color: #0099ff; }
   .new_map_tooltip .tooltip_content.event .result_name {
     margin: 0; }
@@ -2399,7 +2393,7 @@ td.right_side.pod_sides {
 
 .ibiza_desc_content {
   width: 220px;
-  height: 379px;
+  height: 383px;
   overflow: hidden; }
 
 .ibiza_desc_content .headline {
@@ -2783,7 +2777,7 @@ td.right_side.pod_sides {
     border-top: 1px dashed #adc0c9; }
     #right_sidebar .list .list_item.featured {
       margin: 0 0 15px;
-      padding: 0 0 15px;
+      padding: 0 0 5px;
       border-bottom: 1px solid #8ea8b5; }
       #right_sidebar .list .list_item.featured .title {
         margin: 0 0 8px;
@@ -2797,6 +2791,8 @@ td.right_side.pod_sides {
     #right_sidebar .list .list_item p {
       padding: 0;
       line-height: 16px; }
+      #right_sidebar .list .list_item p.name {
+        line-height: 10px; }
     #right_sidebar .list .list_item .date {
       color: #09f;
       font-size: 9px;
@@ -3022,7 +3018,8 @@ td.right_side.pod_sides {
   #recent_articles .list .list_item.featured {
     float: none;
     width: auto;
-    margin-left: 0; }
+    margin-left: 0;
+    padding-bottom: 15px; }
     #recent_articles .list .list_item.featured .thumbnail_link {
       width: 210px;
       height: 140px;

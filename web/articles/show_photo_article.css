@@ -744,7 +744,7 @@
     border-top: 1px dashed #adc0c9; }
     #right_sidebar .list .list_item.featured {
       margin: 0 0 15px;
-      padding: 0 0 15px;
+      padding: 0 0 5px;
       border-bottom: 1px solid #8ea8b5; }
       #right_sidebar .list .list_item.featured .title {
         margin: 0 0 8px;
@@ -758,6 +758,8 @@
     #right_sidebar .list .list_item p {
       padding: 0;
       line-height: 16px; }
+      #right_sidebar .list .list_item p.name {
+        line-height: 10px; }
     #right_sidebar .list .list_item .date {
       color: #09f;
       font-size: 9px;
@@ -1385,6 +1387,8 @@
       #article_page #left_container #article_list .venue_type a, #article_page #left_container #article_list .venue_type a:link, #article_page #left_container #article_list .venue_type a:visited {
         color: #6c8898;
         text-decoration: none; }
+        #article_page #left_container #article_list .venue_type a:hover, #article_page #left_container #article_list .venue_type a:link:hover, #article_page #left_container #article_list .venue_type a:visited:hover {
+          text-decoration: underline; }
       #article_page #left_container #article_list .venue_type .date {
         display: inline-block;
         color: #09f;

@@ -21,7 +21,8 @@
   #recent_articles .list .list_item.featured {
     float: none;
     width: auto;
-    margin-left: 0; }
+    margin-left: 0;
+    padding-bottom: 15px; }
     #recent_articles .list .list_item.featured .thumbnail_link {
       width: 210px;
       height: 140px;
