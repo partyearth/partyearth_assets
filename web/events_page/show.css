@@ -54,15 +54,16 @@
   #right_sidebar .thumbnail_link {
     display: block;
     margin: 0 0 8px;
-    width: 210px;
-    height: 140px;
-    border: 1px solid #adc0c9;
-    border-radius: 4px;
+    width: 98px;
+    height: 65px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
     overflow: hidden; }
     #right_sidebar .thumbnail_link img {
       display: block;
-      width: 210px;
-      height: 140px; }
+      width: 98px;
+      height: 65px;
+      border-radius: 1px; }
   #right_sidebar .quick_nav_links {
     border-bottom: 1px dashed #ADC0C9;
     padding: 0 0 5px;
@@ -96,6 +97,17 @@
     padding: 0 0 6px;
     vertical-align: top;
     border-bottom: 1px solid #dae4e9; }
+  #right_sidebar .list .list_item.featured .thumbnail_link,
+  #right_sidebar .changer .thumbnail_link {
+    width: 210px;
+    height: 140px;
+    border: 1px solid #adc0c9;
+    border-radius: 4px; }
+    #right_sidebar .list .list_item.featured .thumbnail_link img,
+    #right_sidebar .changer .thumbnail_link img {
+      width: 210px;
+      height: 140px;
+      border-radius: 3px; }
   #right_sidebar .list .list_item {
     margin: 8px 0 0;
     padding: 8px 0 0;
@@ -174,7 +186,7 @@
         color: #597686; }
   #right_sidebar .pod_footer {
     margin: 5px 0 0;
-    padding: 9px 0 0;
+    padding: 5px 0 0;
     border-top: 1px solid #adc0c9; }
     #right_sidebar .pod_footer a, #right_sidebar .pod_footer a:link, #right_sidebar .pod_footer a:visited, #right_sidebar .pod_footer .fake_link {
       float: right;
@@ -282,11 +294,13 @@
     left: -9px; }
   #right_sidebar .missing_venue_event {
     position: relative;
-    right: -1px;
-    width: 243px;
-    height: 148px;
-    margin: 0 0 12px;
-    background-position: -294px -233px; }
+    left: -2px;
+    width: 246px;
+    height: 154px;
+    margin: 0 0 8px;
+    background-position: -291px -233px; }
+    #right_sidebar .missing_venue_event:hover {
+      background-position: -291px -389px; }
   #right_sidebar .share_btn,
   #right_sidebar .subscribe_btn,
   #right_sidebar .follow_btns {
@@ -331,12 +345,7 @@
   #recent_articles .list .list_item:first-child + li {
     margin-left: 0; }
   #recent_articles .list .list_item .thumbnail_link {
-    width: 98px;
-    height: 65px;
     margin: 0 0 5px; }
-    #recent_articles .list .list_item .thumbnail_link img {
-      width: 98px;
-      height: 65px; }
   #recent_articles .list .list_item .title {
     font-size: 11px;
     line-height: 13px; }
@@ -346,12 +355,7 @@
     margin-left: 0;
     padding-bottom: 15px; }
     #recent_articles .list .list_item.featured .thumbnail_link {
-      width: 210px;
-      height: 140px;
       margin: 0 0 15px; }
-      #recent_articles .list .list_item.featured .thumbnail_link img {
-        width: 210px;
-        height: 140px; }
 /*BEGIN NEW IN PHOTO GALLERIES STYLES*/
 /*---------------------------------------------*/
 #photo_pod {
@@ -370,12 +374,7 @@
     line-height: 15px;
     border-top: 1px dashed #ADC0C9; }
     #photo_pod li .thumbnail_link {
-      margin: 0 0 3px;
-      width: 98px;
-      height: 65px; }
-      #photo_pod li .thumbnail_link img {
-        width: 98px;
-        height: 65px; }
+      margin: 0 0 3px; }
     #photo_pod li a, #photo_pod li a:link, #photo_pod li a:visited {
       color: #000;
       font-size: 11px;
@@ -444,50 +443,57 @@
 
 
 */
-/*LEFT COLUMN*/
-/*---------------------------------------------*/
-#left_container .events_content .top_section_content .tags_date {
-  padding: 4px 0;
-  line-height: 11px; }
-#left_container .events_content .top_section_content .venue_type {
+.day_changer_cont .venue_type {
   display: inline-block;
   margin-right: 5px; }
-#left_container .events_content .top_section_content .featured_item .small_text.caps.blue_text {
-  font-size: 10px;
-  white-space: nowrap; }
-#left_container .events_content .top_section_content .featured_item .video_section .video_label {
-  color: #6c8898;
-  width: 43px; }
-#left_container .events_content .top_section_content .featured_item .video_section .video_item {
-  width: 89px;
-  height: 73px;
-  margin: 0 0 0 8px;
-  padding: 0; }
-  #left_container .events_content .top_section_content .featured_item .video_section .video_item .video_thumb .play_btn {
-    width: 87px;
-    height: 71px;
-    background-position: -5px -302px; }
-  #left_container .events_content .top_section_content .featured_item .video_section .video_item .video_thumb img {
-    width: 87px;
-    height: 71px; }
-  #left_container .events_content .top_section_content .featured_item .video_section .video_item .video_thumb:hover .play_btn {
-    background-position: -106px -302px; }
-#left_container .events_content .top_section_content .small_items .blue_tag {
-  margin-bottom: 5px; }
-#left_container .events_content .browse_by_interest {
-  max-height: 323px; }
+.day_changer_cont .featured_item .video_section {
+  margin: 8px 0 0;
+  padding: 8px 0 0;
+  border-top: 1px dashed #adc0c9; }
+  .day_changer_cont .featured_item .video_section .video_label {
+    display: block;
+    float: left;
+    width: 43px;
+    color: #6c8898;
+    font-size: 11px;
+    line-height: 11px;
+    text-transform: uppercase; }
+  .day_changer_cont .featured_item .video_section .video_item {
+    float: left;
+    width: 89px;
+    height: 73px;
+    margin: 0 0 0 8px;
+    padding: 0; }
+    .day_changer_cont .featured_item .video_section .video_item .video_thumb {
+      width: 87px;
+      height: 71px;
+      border: 1px solid #adc0c9;
+      border-radius: 4px;
+      overflow: hidden; }
+      .day_changer_cont .featured_item .video_section .video_item .video_thumb .play_btn {
+        width: 87px;
+        height: 71px;
+        background-position: -5px -302px; }
+      .day_changer_cont .featured_item .video_section .video_item .video_thumb img {
+        width: 87px;
+        height: 71px;
+        border-radius: 4px; }
+      .day_changer_cont .featured_item .video_section .video_item .video_thumb:hover .play_btn {
+        background-position: -106px -302px; }
+  .day_changer_cont .featured_item .video_section .video_player_sect {
+    display: none; }
 
 .popup_video .ui-dialog-titlebar {
-  padding-left: 26px;
   padding-right: 26px;
+  padding-left: 26px;
   /*FOR IE 8*/
   padding-right: 0px\9; }
   .popup_video .ui-dialog-titlebar span {
     width: 310px;
-    background: transparent;
-    text-transform: none;
     padding-left: 0;
-    font-size: 17px; }
+    font-size: 17px;
+    text-transform: none;
+    background: transparent; }
 .popup_video .ui-widget-header .ui-icon {
   background-position: -147px -151px; }
 .popup_video .video_section {
@@ -507,169 +513,155 @@
     color: #0099ff; }
     .popup_video .video_section .associated_links a:hover {
       color: #597686; }
-.blue_tag {
-  display: inline-block;
-  position: relative;
-  height: 10px;
-  padding: 2px 3px 3px 5px;
-  color: #fff !important;
-  font-size: 10px;
-  line-height: 11px;
-  background-color: #0099ff;
-  border-radius: 2px 0 0 2px; }
-  .blue_tag a:link, .blue_tag a:visited {
-    color: #fff;
-    text-decoration: none; }
-  .blue_tag a:hover {
-    text-decoration: none; }
-  .blue_tag .point {
-    width: 1px;
-    height: 0;
-    overflow: hidden;
-    border-top: 8px solid transparent;
-    border-left: 8px solid #0099ff;
-    border-right: 7px solid transparent;
-    border-bottom: 7px solid transparent;
-    position: absolute;
-    right: -15px;
-    bottom: 0; }
-
-.small_city .top_section_header .blue_header {
-  width: 674px; }
-
-.top_section_header {
-  width: 716px; }
-  .top_section_header .blue_header {
-    margin: 0;
+.day_changer_head {
+  width: 715px;
+  /* Fix for linux */
+  margin: 0 0 8px; }
+  .day_changer_head h1.blue_header,
+  .day_changer_head h2.blue_header {
     width: 325px; }
-  .top_section_header .section {
-    color: #bbe3fe;
-    background: -webkit-gradient(linear, 0 0, 0 100%, from(#1a76ce), to(#0098fe));
-    background: -moz-linear-gradient(top, #1a76ce, #0098fe);
-    font-size: 14px;
-    height: 11px;
-    line-height: 7px;
-    padding: 14px 17px 19px;
-    border-radius: 2px 2px 2px 2px;
-    box-shadow: 0 1px 2px #bfbfbf;
-    margin: 0;
+  .day_changer_head .blue_header {
     float: left;
-    font-weight: bold;
-    text-transform: uppercase;
-    text-align: center;
-    cursor: pointer;
-    border-left: 1px dotted #40b0fd; }
-    .top_section_header .section p {
-      padding-bottom: 3px; }
-    .top_section_header .section .small_text {
-      font-size: 8px; }
-  .top_section_header .section.Selected {
-    background: url(/assets/content_bg/browse_by_today_selected_bg.gif) 0 0 repeat-x #ff6600;
-    color: white;
-    cursor: default;
-    position: relative;
-    box-shadow: 0 1px 3px #bfbfbf;
-    border-radius: 4px;
-    border-top: 0px inset #FFB400;
-    border-bottom: 0px inset #A14100;
-    padding: 14px 17px 19px; }
-    .top_section_header .section.Selected .point {
-      display: none;
-      width: 1px;
-      height: 0;
-      overflow: hidden;
-      border-top: 10px solid #d35800;
-      border-left: 10px dotted transparent;
-      border-right: 10px dotted transparent;
-      position: absolute;
-      bottom: -7px;
-      left: 31px; }
-  .top_section_header .section.Selected:hover {
-    background: url(/assets/content_bg/browse_by_today_selected_bg.gif) 0 0 repeat-x #ff6600; }
-  .top_section_header .section:hover {
-    color: #fff;
-    background: -webkit-gradient(linear, 0 0, 0 100%, from(#0099ff), to(#076fd1));
-    background: -moz-linear-gradient(top, #0099ff, #076fd1);
-    cursor: pointer; }
-    .top_section_header .section:hover .point {
-      display: none; }
-  .top_section_header .today.section {
-    padding-left: 17px;
-    padding-right: 17px; }
-  .top_section_header .tomorrow.section {
-    padding-left: 13px;
-    padding-right: 14px; }
-  .top_section_header .tomorrow.section.Selected .point {
-    left: 46px; }
-  .top_section_header .more_dates {
+    margin: 0; }
+    .day_changer_head .blue_header.day_changer_heads {
+      width: auto;
+      padding: 9px 16px 10px;
+      color: #bbe3fe;
+      font-size: 14px;
+      line-height: 14px;
+      text-align: center;
+      text-transform: uppercase;
+      text-shadow: none;
+      border-left: 1px dotted #40b0fd;
+      cursor: pointer; }
+      .day_changer_head .blue_header.day_changer_heads span {
+        display: block;
+        margin: 3px 0 0;
+        font-size: 8px;
+        line-height: 8px; }
+      .day_changer_head .blue_header.day_changer_heads.Selected {
+        position: relative;
+        color: white;
+        background-color: #f60;
+        background-image: url(/assets/content_bg/browse_by_today_selected_bg.gif);
+        background-repeat: repeat-x;
+        border-top: 0px inset #FFB400;
+        border-bottom: 0px inset #A14100;
+        border-radius: 4px;
+        box-shadow: 0 1px 3px #bfbfbf;
+        cursor: default;
+        filter: none; }
+        .day_changer_head .blue_header.day_changer_heads.Selected:hover {
+          background-image: url(/assets/content_bg/browse_by_today_selected_bg.gif); }
+      .day_changer_head .blue_header.day_changer_heads:hover {
+        color: #fff;
+        background: -webkit-gradient(linear, 0 0, 0 100%, from(#0099ff), to(#076fd1));
+        background: -moz-linear-gradient(top, #0099ff, #076fd1);
+        cursor: pointer; }
+  .day_changer_head .day_changer_more {
     position: relative;
     float: left; }
-    .top_section_header .more_dates .date_picker_block {
+    .day_changer_head .day_changer_more .date_picker_block {
       top: 52px;
-      left: -28px;
+      left: -25px;
       width: 146px;
       height: 225px;
       box-shadow: 0 1px 2px #628495; }
-      .top_section_header .more_dates .date_picker_block .point {
-        left: 94px; }
-      .top_section_header .more_dates .date_picker_block .Notice {
+      .day_changer_head .day_changer_more .date_picker_block .point {
+        left: 102px; }
+      .day_changer_head .day_changer_more .date_picker_block .Notice {
         font-size: 11px; }
-      .top_section_header .more_dates .date_picker_block .datepicker {
+      .day_changer_head .day_changer_more .date_picker_block .datepicker {
         width: 149px !important; }
-        .top_section_header .more_dates .date_picker_block .datepicker .datepickerContainer {
+        .day_changer_head .day_changer_more .date_picker_block .datepicker .datepickerContainer {
           width: 149px !important; }
-      .top_section_header .more_dates .date_picker_block .controls .clear_link {
+      .day_changer_head .day_changer_more .date_picker_block .controls .clear_link {
         display: none; }
+/*
+
+*/
+.small_city .day_changer_cont .blue_header {
+  width: auto; }
 
 .date_time {
-  padding: 0;
   margin: 3px 0 5px;
+  padding: 0;
   height: 12px;
-  font-size: 9px;
   color: #09f;
+  font-size: 9px;
   line-height: 12px;
-  overflow: hidden;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  overflow: hidden; }
   .date_time .small_text {
     font-size: 10px; }
 
-.top_section_content .event_venue_name {
+.day_changer_cont.day_changer_tomor {
+  display: none; }
+.day_changer_cont li.featured_item + li {
+  padding-top: 3px;
+  border-top: none; }
+.day_changer_cont .event_venue_name {
   color: #375363;
   font-weight: bold;
-  text-decoration: underline;
-  line-height: 16px; }
-  .top_section_content .event_venue_name:hover {
+  line-height: 16px;
+  text-decoration: underline; }
+  .day_changer_cont .event_venue_name:hover {
     color: #597686; }
-  .top_section_content .event_venue_name.nourl:hover {
+  .day_changer_cont .event_venue_name.nourl:hover {
     color: #375363; }
-.top_section_content .headline.sub_headline {
+.day_changer_cont .name {
   display: block;
   margin: 0 0 2px;
   color: #000;
   font-size: 20px;
   font-weight: bold;
   line-height: 21px; }
-  .top_section_content .headline.sub_headline:hover {
+  .day_changer_cont .name:hover {
     color: #597686; }
-.top_section_content .featured_item {
+.day_changer_cont .ellipsis {
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  font-size: 11px;
+  line-height: 15px;
+  background-color: #fff;
+  overflow: hidden; }
+.day_changer_cont .featured_item {
   float: left;
   width: 345px;
   margin: 0 14px 0 0; }
-  .top_section_content .featured_item p {
+  .day_changer_cont .featured_item p {
     padding-bottom: 0; }
-  .top_section_content .featured_item .item_img {
+  .day_changer_cont .featured_item .thumbnail_link {
     display: block;
     width: 345px;
     height: 230px;
-    margin: 0 0 7px; }
-    .top_section_content .featured_item .item_img img {
+    margin: 0 0 7px;
+    border: 1px solid #adc0c9;
+    border-radius: 4px;
+    overflow: hidden; }
+    .day_changer_cont .featured_item .thumbnail_link img {
       display: block;
       width: 345px;
       height: 230px; }
-  .top_section_content .featured_item .quick_nav_links {
-    float: left;
-    padding: 0; }
-  .top_section_content .featured_item .details {
+  .day_changer_cont .featured_item .quick_nav_links,
+  .day_changer_cont .featured_item .desc,
+  .day_changer_cont .featured_item .quick_nav_add_cal {
+    margin: 0 0 8px;
+    padding: 0 0 8px;
+    border-bottom: 1px dashed #adc0c9; }
+  .day_changer_cont .featured_item .quick_nav_add_cal {
+    padding-bottom: 5px; }
+    .day_changer_cont .featured_item .quick_nav_add_cal .quick_nav_links {
+      float: left;
+      margin-bottom: 0;
+      padding-bottom: 0;
+      border-bottom: none; }
+  .day_changer_cont .featured_item .add_to_calendar {
+    float: right;
+    margin-top: -2px; }
+  .day_changer_cont .featured_item .details {
     position: relative;
     left: -25px;
     width: 334px;
@@ -679,103 +671,81 @@
     font-size: 12px;
     line-height: 16px;
     overflow: hidden; }
-    .top_section_content .featured_item .details .ellipsis {
-      display: inline-block;
+  .day_changer_cont .featured_item .location {
+    position: relative; }
+    .day_changer_cont .featured_item .location .blue_flag {
       position: absolute;
-      right: 0;
-      bottom: 0;
-      background-color: #fff;
-      overflow: hidden; }
-      .top_section_content .featured_item .details .ellipsis a, .top_section_content .featured_item .details .ellipsis a:link, .top_section_content .featured_item .details .ellipsis a:visited {
-        position: relative;
-        bottom: 2px;
-        font-size: 11px; }
-  .top_section_content .featured_item .location .blue_tag {
-    float: left;
-    top: 2px;
-    margin: 0 10px 0 -25px;
-    padding-left: 25px; }
-    .top_section_content .featured_item .location .blue_tag .anchor_point {
-      position: absolute;
-      top: 15px;
-      left: 0;
-      width: 0;
-      height: 0;
-      border-top: 4px solid #24648f;
-      border-right: 4px solid #24648f;
-      border-bottom: 4px solid transparent;
-      border-left: 4px solid transparent; }
-  .top_section_content .featured_item .location p {
-    padding-left: 65px; }
-  .top_section_content .featured_item .location .event_venue_name {
-    line-height: 21px;
-    font-size: 15px; }
-  .top_section_content .featured_item .location .address {
-    color: #375363;
-    font-size: 12px;
-    line-height: 15px; }
-  .top_section_content .featured_item .liked_by {
+      top: 4px;
+      left: -25px; }
+    .day_changer_cont .featured_item .location p {
+      padding-left: 51px; }
+    .day_changer_cont .featured_item .location .event_venue_name {
+      font-size: 15px;
+      line-height: 21px; }
+    .day_changer_cont .featured_item .location .address {
+      color: #375363;
+      font-size: 12px;
+      line-height: 15px; }
+  .day_changer_cont .featured_item .liked_by {
     float: left; }
-    .top_section_content .featured_item .liked_by dt {
+    .day_changer_cont .featured_item .liked_by dt {
       margin-right: 10px; }
-.top_section_content .small_items {
+.day_changer_cont .item {
+  position: relative;
   float: left;
   width: 347px;
-  padding: 3px 0 0; }
-  .top_section_content .small_items li.item {
-    position: relative;
-    padding: 7px 0 10px;
-    min-height: 149px;
-    border-top: 1px dashed #adc0c9; }
-    .top_section_content .small_items li.item:first-child {
-      padding-top: 0;
-      border-top: none; }
-    .top_section_content .small_items li.item p {
-      padding-bottom: 0; }
-    .top_section_content .small_items li.item .headline.sub_headline {
-      font-size: 17px;
-      line-height: 18px; }
-    .top_section_content .small_items li.item .small_text.caps.blue_text {
-      font-size: 10px; }
-    .top_section_content .small_items li.item .item_img {
+  min-height: 149px;
+  padding: 8px 0 10px;
+  border-top: 1px dashed #adc0c9; }
+  .day_changer_cont .item p {
+    padding-bottom: 0; }
+  .day_changer_cont .item .name {
+    font-size: 17px;
+    line-height: 18px; }
+  .day_changer_cont .item .small_text.caps.blue_text {
+    font-size: 10px; }
+  .day_changer_cont .item .thumbnail_link {
+    display: block;
+    float: left;
+    width: 165px;
+    height: 110px;
+    margin: 0 7px 0 0; }
+    .day_changer_cont .item .thumbnail_link img {
       display: block;
-      float: left;
       width: 165px;
-      height: 110px;
-      margin: 0 7px 0 0; }
-      .top_section_content .small_items li.item .item_img img {
-        display: block;
-        width: 165px;
-        height: 110px; }
-    .top_section_content .small_items li.item .details {
-      position: relative;
-      height: 62px;
-      margin: 2px 0 0;
-      font-size: 11px;
-      line-height: 14px;
-      overflow: hidden; }
-      .top_section_content .small_items li.item .details .blue_flag {
-        margin: 0 44px 4px 0; }
-      .top_section_content .small_items li.item .details .ellipsis {
-        display: inline-block;
-        font-size: 11px;
-        line-height: 15px;
-        background: #fff;
-        position: absolute;
-        right: 0;
-        bottom: -1px;
-        max-width: 176px;
-        height: 15px;
-        overflow: hidden; }
-    .top_section_content .small_items li.item .liked_by {
-      position: absolute;
-      left: 173px;
-      bottom: 11px;
-      width: 173px; }
-    .top_section_content .small_items li.item .box_link.calendar {
-      position: absolute;
-      bottom: 8px;
-      left: 172px; }
+      height: 110px; }
+  .day_changer_cont .item .details,
+  .day_changer_cont .item .user_review_summary {
+    position: relative;
+    height: 56px;
+    margin: 2px 0 0;
+    font-size: 11px;
+    line-height: 14px;
+    overflow: hidden; }
+    .day_changer_cont .item .details .ellipsis,
+    .day_changer_cont .item .user_review_summary .ellipsis {
+      max-width: 176px; }
+  .day_changer_cont .item .details {
+    height: 60px; }
+  .day_changer_cont .item .blue_flag, .day_changer_cont .item gray_flag {
+    margin: 0 0 4px;
+    line-height: 14px; }
+    .day_changer_cont .item .blue_flag .tip, .day_changer_cont .item gray_flag .tip {
+      border-top: 6px solid transparent; }
+  .day_changer_cont .item .add_to_calendar {
+    position: absolute;
+    top: auto;
+    bottom: 11px;
+    left: 172px; }
+  .day_changer_cont .item .liked_by {
+    position: absolute;
+    left: 173px;
+    bottom: 11px;
+    width: 173px; }
+  .day_changer_cont .item .box_link.calendar {
+    position: absolute;
+    bottom: 8px;
+    left: 172px; }
 /* Default Browse by Category Module Styles */
 .browse_category {
   margin: 0 0 9px;
@@ -913,7 +883,7 @@
       height: 50px; }
     .browse_category_boxes .cell ul {
       float: left;
-      width: 139px;
+      width: 154px;
       height: auto;
       margin: 0;
       padding: 0;
@@ -1832,11 +1802,5 @@ div.datepicker {
 
 
 */
-.top_section_content .add_to_calendar {
-  top: -2px;
-  float: right; }
-.top_section_content .small_items .add_to_calendar {
-  position: absolute;
-  top: auto;
-  bottom: 11px;
-  left: 179px; }
+.day_changer_cont .item .blue_flag {
+  margin-right: 128px; }

@@ -1359,8 +1359,10 @@ div.datepicker {
             color: #aaa; }
     #search_page .fltr_cont.fixed {
       position: fixed;
-      top: -2px;
+      top: 0;
       width: 956px; }
+      #search_page .fltr_cont.fixed .fltr_sec {
+        padding: 2px 0 0; }
       #search_page .fltr_cont.fixed .shadow {
         height: 15px;
         background: url(/assets/search/search2_sprite.png) 0 -622px repeat-x transparent;

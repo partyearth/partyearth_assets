@@ -59,11 +59,15 @@
       display: block;
       width: 165px;
       height: 165px; }
-  .featured_teams .name {
-    font-size: 15px;
-    line-height: 19px;
-    margin: 0 0 3px;
-    text-decoration: underline; }
+  .featured_teams h3 {
+    margin: 0; }
+    .featured_teams h3 a.name {
+      font-size: 15px;
+      line-height: 19px;
+      margin: 0 0 3px;
+      text-decoration: underline; }
+      .featured_teams h3 a.name:hover {
+        color: #597686; }
   .featured_teams p {
     padding: 0; }
   .featured_teams .venue_name, .featured_teams .address {
@@ -129,7 +133,7 @@
       height: 64px;
       position: absolute;
       text-indent: -9999px;
-      top: 43%;
+      top: 90px;
       width: 19px; }
       .featured_teams.carousel .prev_next_btns.disabled {
         cursor: default; }

@@ -256,11 +256,15 @@
       display: block;
       width: 165px;
       height: 165px; }
-  .featured_teams .name {
-    font-size: 15px;
-    line-height: 19px;
-    margin: 0 0 3px;
-    text-decoration: underline; }
+  .featured_teams h3 {
+    margin: 0; }
+    .featured_teams h3 a.name {
+      font-size: 15px;
+      line-height: 19px;
+      margin: 0 0 3px;
+      text-decoration: underline; }
+      .featured_teams h3 a.name:hover {
+        color: #597686; }
   .featured_teams p {
     padding: 0; }
   .featured_teams .venue_name, .featured_teams .address {
@@ -326,7 +330,7 @@
       height: 64px;
       position: absolute;
       text-indent: -9999px;
-      top: 43%;
+      top: 90px;
       width: 19px; }
       .featured_teams.carousel .prev_next_btns.disabled {
         cursor: default; }
@@ -468,15 +472,16 @@
   #right_sidebar .thumbnail_link {
     display: block;
     margin: 0 0 8px;
-    width: 210px;
-    height: 140px;
-    border: 1px solid #adc0c9;
-    border-radius: 4px;
+    width: 98px;
+    height: 65px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
     overflow: hidden; }
     #right_sidebar .thumbnail_link img {
       display: block;
-      width: 210px;
-      height: 140px; }
+      width: 98px;
+      height: 65px;
+      border-radius: 1px; }
   #right_sidebar .quick_nav_links {
     border-bottom: 1px dashed #ADC0C9;
     padding: 0 0 5px;
@@ -510,6 +515,17 @@
     padding: 0 0 6px;
     vertical-align: top;
     border-bottom: 1px solid #dae4e9; }
+  #right_sidebar .list .list_item.featured .thumbnail_link,
+  #right_sidebar .changer .thumbnail_link {
+    width: 210px;
+    height: 140px;
+    border: 1px solid #adc0c9;
+    border-radius: 4px; }
+    #right_sidebar .list .list_item.featured .thumbnail_link img,
+    #right_sidebar .changer .thumbnail_link img {
+      width: 210px;
+      height: 140px;
+      border-radius: 3px; }
   #right_sidebar .list .list_item {
     margin: 8px 0 0;
     padding: 8px 0 0;
@@ -588,7 +604,7 @@
         color: #597686; }
   #right_sidebar .pod_footer {
     margin: 5px 0 0;
-    padding: 9px 0 0;
+    padding: 5px 0 0;
     border-top: 1px solid #adc0c9; }
     #right_sidebar .pod_footer a, #right_sidebar .pod_footer a:link, #right_sidebar .pod_footer a:visited, #right_sidebar .pod_footer .fake_link {
       float: right;
@@ -696,11 +712,13 @@
     left: -9px; }
   #right_sidebar .missing_venue_event {
     position: relative;
-    right: -1px;
-    width: 243px;
-    height: 148px;
-    margin: 0 0 12px;
-    background-position: -294px -233px; }
+    left: -2px;
+    width: 246px;
+    height: 154px;
+    margin: 0 0 8px;
+    background-position: -291px -233px; }
+    #right_sidebar .missing_venue_event:hover {
+      background-position: -291px -389px; }
   #right_sidebar .share_btn,
   #right_sidebar .subscribe_btn,
   #right_sidebar .follow_btns {
@@ -745,12 +763,7 @@
   #recent_articles .list .list_item:first-child + li {
     margin-left: 0; }
   #recent_articles .list .list_item .thumbnail_link {
-    width: 98px;
-    height: 65px;
     margin: 0 0 5px; }
-    #recent_articles .list .list_item .thumbnail_link img {
-      width: 98px;
-      height: 65px; }
   #recent_articles .list .list_item .title {
     font-size: 11px;
     line-height: 13px; }
@@ -760,12 +773,7 @@
     margin-left: 0;
     padding-bottom: 15px; }
     #recent_articles .list .list_item.featured .thumbnail_link {
-      width: 210px;
-      height: 140px;
       margin: 0 0 15px; }
-      #recent_articles .list .list_item.featured .thumbnail_link img {
-        width: 210px;
-        height: 140px; }
 /*BEGIN NEW IN PHOTO GALLERIES STYLES*/
 /*---------------------------------------------*/
 #photo_pod {
@@ -784,12 +792,7 @@
     line-height: 15px;
     border-top: 1px dashed #ADC0C9; }
     #photo_pod li .thumbnail_link {
-      margin: 0 0 3px;
-      width: 98px;
-      height: 65px; }
-      #photo_pod li .thumbnail_link img {
-        width: 98px;
-        height: 65px; }
+      margin: 0 0 3px; }
     #photo_pod li a, #photo_pod li a:link, #photo_pod li a:visited {
       color: #000;
       font-size: 11px;

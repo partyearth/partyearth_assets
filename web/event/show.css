@@ -9,12 +9,7 @@
   #recent_articles .list .list_item:first-child + li {
     margin-left: 0; }
   #recent_articles .list .list_item .thumbnail_link {
-    width: 98px;
-    height: 65px;
     margin: 0 0 5px; }
-    #recent_articles .list .list_item .thumbnail_link img {
-      width: 98px;
-      height: 65px; }
   #recent_articles .list .list_item .title {
     font-size: 11px;
     line-height: 13px; }
@@ -24,12 +19,7 @@
     margin-left: 0;
     padding-bottom: 15px; }
     #recent_articles .list .list_item.featured .thumbnail_link {
-      width: 210px;
-      height: 140px;
       margin: 0 0 15px; }
-      #recent_articles .list .list_item.featured .thumbnail_link img {
-        width: 210px;
-        height: 140px; }
 /*
 
 */

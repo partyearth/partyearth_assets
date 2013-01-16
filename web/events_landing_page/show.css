@@ -54,15 +54,16 @@
   #right_sidebar .thumbnail_link {
     display: block;
     margin: 0 0 8px;
-    width: 210px;
-    height: 140px;
-    border: 1px solid #adc0c9;
-    border-radius: 4px;
+    width: 98px;
+    height: 65px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
     overflow: hidden; }
     #right_sidebar .thumbnail_link img {
       display: block;
-      width: 210px;
-      height: 140px; }
+      width: 98px;
+      height: 65px;
+      border-radius: 1px; }
   #right_sidebar .quick_nav_links {
     border-bottom: 1px dashed #ADC0C9;
     padding: 0 0 5px;
@@ -96,6 +97,17 @@
     padding: 0 0 6px;
     vertical-align: top;
     border-bottom: 1px solid #dae4e9; }
+  #right_sidebar .list .list_item.featured .thumbnail_link,
+  #right_sidebar .changer .thumbnail_link {
+    width: 210px;
+    height: 140px;
+    border: 1px solid #adc0c9;
+    border-radius: 4px; }
+    #right_sidebar .list .list_item.featured .thumbnail_link img,
+    #right_sidebar .changer .thumbnail_link img {
+      width: 210px;
+      height: 140px;
+      border-radius: 3px; }
   #right_sidebar .list .list_item {
     margin: 8px 0 0;
     padding: 8px 0 0;
@@ -174,7 +186,7 @@
         color: #597686; }
   #right_sidebar .pod_footer {
     margin: 5px 0 0;
-    padding: 9px 0 0;
+    padding: 5px 0 0;
     border-top: 1px solid #adc0c9; }
     #right_sidebar .pod_footer a, #right_sidebar .pod_footer a:link, #right_sidebar .pod_footer a:visited, #right_sidebar .pod_footer .fake_link {
       float: right;
@@ -282,11 +294,13 @@
     left: -9px; }
   #right_sidebar .missing_venue_event {
     position: relative;
-    right: -1px;
-    width: 243px;
-    height: 148px;
-    margin: 0 0 12px;
-    background-position: -294px -233px; }
+    left: -2px;
+    width: 246px;
+    height: 154px;
+    margin: 0 0 8px;
+    background-position: -291px -233px; }
+    #right_sidebar .missing_venue_event:hover {
+      background-position: -291px -389px; }
   #right_sidebar .share_btn,
   #right_sidebar .subscribe_btn,
   #right_sidebar .follow_btns {
@@ -331,12 +345,7 @@
   #recent_articles .list .list_item:first-child + li {
     margin-left: 0; }
   #recent_articles .list .list_item .thumbnail_link {
-    width: 98px;
-    height: 65px;
     margin: 0 0 5px; }
-    #recent_articles .list .list_item .thumbnail_link img {
-      width: 98px;
-      height: 65px; }
   #recent_articles .list .list_item .title {
     font-size: 11px;
     line-height: 13px; }
@@ -346,12 +355,7 @@
     margin-left: 0;
     padding-bottom: 15px; }
     #recent_articles .list .list_item.featured .thumbnail_link {
-      width: 210px;
-      height: 140px;
       margin: 0 0 15px; }
-      #recent_articles .list .list_item.featured .thumbnail_link img {
-        width: 210px;
-        height: 140px; }
 /*BEGIN NEW IN PHOTO GALLERIES STYLES*/
 /*---------------------------------------------*/
 #photo_pod {
@@ -370,12 +374,7 @@
     line-height: 15px;
     border-top: 1px dashed #ADC0C9; }
     #photo_pod li .thumbnail_link {
-      margin: 0 0 3px;
-      width: 98px;
-      height: 65px; }
-      #photo_pod li .thumbnail_link img {
-        width: 98px;
-        height: 65px; }
+      margin: 0 0 3px; }
     #photo_pod li a, #photo_pod li a:link, #photo_pod li a:visited {
       color: #000;
       font-size: 11px;
@@ -444,50 +443,57 @@
 
 
 */
-/*LEFT COLUMN*/
-/*---------------------------------------------*/
-#left_container .events_content .top_section_content .tags_date {
-  padding: 4px 0;
-  line-height: 11px; }
-#left_container .events_content .top_section_content .venue_type {
+.day_changer_cont .venue_type {
   display: inline-block;
   margin-right: 5px; }
-#left_container .events_content .top_section_content .featured_item .small_text.caps.blue_text {
-  font-size: 10px;
-  white-space: nowrap; }
-#left_container .events_content .top_section_content .featured_item .video_section .video_label {
-  color: #6c8898;
-  width: 43px; }
-#left_container .events_content .top_section_content .featured_item .video_section .video_item {
-  width: 89px;
-  height: 73px;
-  margin: 0 0 0 8px;
-  padding: 0; }
-  #left_container .events_content .top_section_content .featured_item .video_section .video_item .video_thumb .play_btn {
-    width: 87px;
-    height: 71px;
-    background-position: -5px -302px; }
-  #left_container .events_content .top_section_content .featured_item .video_section .video_item .video_thumb img {
-    width: 87px;
-    height: 71px; }
-  #left_container .events_content .top_section_content .featured_item .video_section .video_item .video_thumb:hover .play_btn {
-    background-position: -106px -302px; }
-#left_container .events_content .top_section_content .small_items .blue_tag {
-  margin-bottom: 5px; }
-#left_container .events_content .browse_by_interest {
-  max-height: 323px; }
+.day_changer_cont .featured_item .video_section {
+  margin: 8px 0 0;
+  padding: 8px 0 0;
+  border-top: 1px dashed #adc0c9; }
+  .day_changer_cont .featured_item .video_section .video_label {
+    display: block;
+    float: left;
+    width: 43px;
+    color: #6c8898;
+    font-size: 11px;
+    line-height: 11px;
+    text-transform: uppercase; }
+  .day_changer_cont .featured_item .video_section .video_item {
+    float: left;
+    width: 89px;
+    height: 73px;
+    margin: 0 0 0 8px;
+    padding: 0; }
+    .day_changer_cont .featured_item .video_section .video_item .video_thumb {
+      width: 87px;
+      height: 71px;
+      border: 1px solid #adc0c9;
+      border-radius: 4px;
+      overflow: hidden; }
+      .day_changer_cont .featured_item .video_section .video_item .video_thumb .play_btn {
+        width: 87px;
+        height: 71px;
+        background-position: -5px -302px; }
+      .day_changer_cont .featured_item .video_section .video_item .video_thumb img {
+        width: 87px;
+        height: 71px;
+        border-radius: 4px; }
+      .day_changer_cont .featured_item .video_section .video_item .video_thumb:hover .play_btn {
+        background-position: -106px -302px; }
+  .day_changer_cont .featured_item .video_section .video_player_sect {
+    display: none; }
 
 .popup_video .ui-dialog-titlebar {
-  padding-left: 26px;
   padding-right: 26px;
+  padding-left: 26px;
   /*FOR IE 8*/
   padding-right: 0px\9; }
   .popup_video .ui-dialog-titlebar span {
     width: 310px;
-    background: transparent;
-    text-transform: none;
     padding-left: 0;
-    font-size: 17px; }
+    font-size: 17px;
+    text-transform: none;
+    background: transparent; }
 .popup_video .ui-widget-header .ui-icon {
   background-position: -147px -151px; }
 .popup_video .video_section {

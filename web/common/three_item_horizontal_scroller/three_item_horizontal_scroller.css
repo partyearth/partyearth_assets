@@ -215,7 +215,7 @@
         color: #597686; }
   .carousel_3 .prev_next_btns {
     position: absolute;
-    top: 25%;
+    top: 80px;
     width: 19px;
     height: 64px;
     text-indent: -9999px;
@@ -234,6 +234,8 @@
       background-position: -171px -2957px; }
       .carousel_3 .prev_next_btns.next_btn:hover {
         background-position: -171px -3021px; }
+  .carousel_3.two_line_title .prev_next_btns {
+    top: 98px; }
   .carousel_3 .liked_by {
     margin: 8px 0 0;
     padding: 8px 0 0;

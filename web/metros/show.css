@@ -160,16 +160,6 @@
 
 
 */
-/* LEFT COLUMN
----------------------------------------------*/
-.metros_content .headline a, .metros_content .headline a:visited {
-  text-decoration: underline; }
-.metros_content .multi_category .category_section {
-  min-height: 280px;
-  height: 100%; }
-  .metros_content .multi_category .category_section ul {
-    height: 81px; }
-
 /* Activity Feed Styles */
 .acty_feed h3 {
   margin: 0 0 8px; }
@@ -255,105 +245,86 @@
   .acty_feed .acty_feed_itm.with_rating .name {
     position: relative;
     top: -1px; }
-@media only screen and (max-device-width: 1280px) {
-  /* For android layouts only */
-  .top_section_header .blue_section_divider {
-    width: 323px; } }
-.top_section_header {
-  width: 716px;
-  padding-bottom: 3px;
-  margin-bottom: 8px; }
-  .top_section_header .blue_header {
-    width: 326px;
-    margin-top: 0;
-    font-size: 20px; }
-  .top_section_header .section {
-    color: #bbe3fe;
-    background: -webkit-gradient(linear, 0 0, 0 100%, from(#1a76ce), to(#0098fe));
-    background: -moz-linear-gradient(top, #1a76ce, #0098fe);
-    font-size: 14px;
-    height: 11px;
-    line-height: 7px;
-    padding: 14px 12px 19px;
-    border-radius: 2px 2px 2px 2px;
-    box-shadow: 0 1px 2px #bfbfbf;
-    margin: 0 0 8px;
+.day_changer_head {
+  width: 715px;
+  /* Fix for linux */
+  margin: 0 0 8px; }
+  .day_changer_head h1.blue_header,
+  .day_changer_head h2.blue_header {
+    width: 325px; }
+  .day_changer_head .blue_header {
     float: left;
-    font-weight: bold;
-    text-transform: uppercase;
-    text-align: center;
-    cursor: pointer;
-    border-left: 1px dotted #40b0fd; }
-    .top_section_header .section p {
-      padding-bottom: 3px; }
-    .top_section_header .section .small_text {
-      font-size: 8px; }
-  .top_section_header .section.Selected {
-    background: url(/assets/content_bg/browse_by_today_selected_bg.gif) 0 0 repeat-x #ff6600;
-    color: white;
-    cursor: default;
-    position: relative;
-    box-shadow: 0 1px 3px #bfbfbf;
-    border-radius: 4px;
-    border-top: 0px inset #FFB400;
-    border-bottom: 0px inset #A14100;
-    padding: 13px 12px 20px; }
-    .top_section_header .section.Selected .point {
-      display: none;
-      width: 1px;
-      height: 0;
-      overflow: hidden;
-      border-top: 10px solid #d35800;
-      border-left: 10px dotted transparent;
-      border-right: 10px dotted transparent;
-      position: absolute;
-      bottom: -7px;
-      left: 36px; }
-  .top_section_header .section.Selected:hover {
-    background: url(/assets/content_bg/browse_by_today_selected_bg.gif) 0 0 repeat-x #ff6600; }
-  .top_section_header .section:hover {
-    color: #fff;
-    background: -webkit-gradient(linear, 0 0, 0 100%, from(#0099ff), to(#076fd1));
-    background: -moz-linear-gradient(top, #0099ff, #076fd1);
-    cursor: pointer; }
-  .top_section_header .today.section {
-    padding-left: 18px;
-    padding-right: 17px; }
-  .top_section_header .tomorrow.section.Selected .point {
-    left: 51px; }
-  .top_section_header .more_dates {
+    margin: 0; }
+    .day_changer_head .blue_header.day_changer_heads {
+      width: auto;
+      padding: 9px 16px 10px;
+      color: #bbe3fe;
+      font-size: 14px;
+      line-height: 14px;
+      text-align: center;
+      text-transform: uppercase;
+      text-shadow: none;
+      border-left: 1px dotted #40b0fd;
+      cursor: pointer; }
+      .day_changer_head .blue_header.day_changer_heads span {
+        display: block;
+        margin: 3px 0 0;
+        font-size: 8px;
+        line-height: 8px; }
+      .day_changer_head .blue_header.day_changer_heads.Selected {
+        position: relative;
+        color: white;
+        background-color: #f60;
+        background-image: url(/assets/content_bg/browse_by_today_selected_bg.gif);
+        background-repeat: repeat-x;
+        border-top: 0px inset #FFB400;
+        border-bottom: 0px inset #A14100;
+        border-radius: 4px;
+        box-shadow: 0 1px 3px #bfbfbf;
+        cursor: default;
+        filter: none; }
+        .day_changer_head .blue_header.day_changer_heads.Selected:hover {
+          background-image: url(/assets/content_bg/browse_by_today_selected_bg.gif); }
+      .day_changer_head .blue_header.day_changer_heads:hover {
+        color: #fff;
+        background: -webkit-gradient(linear, 0 0, 0 100%, from(#0099ff), to(#076fd1));
+        background: -moz-linear-gradient(top, #0099ff, #076fd1);
+        cursor: pointer; }
+  .day_changer_head .day_changer_more {
     position: relative;
     float: left; }
-    .top_section_header .more_dates .section {
-      padding-left: 18px;
-      padding-right: 18px; }
-    .top_section_header .more_dates .date_picker_block {
+    .day_changer_head .day_changer_more .date_picker_block {
       top: 52px;
       left: -25px;
       width: 146px;
       height: 225px;
       box-shadow: 0 1px 2px #628495; }
-      .top_section_header .more_dates .date_picker_block .point {
+      .day_changer_head .day_changer_more .date_picker_block .point {
         left: 102px; }
-      .top_section_header .more_dates .date_picker_block .Notice {
+      .day_changer_head .day_changer_more .date_picker_block .Notice {
         font-size: 11px; }
-      .top_section_header .more_dates .date_picker_block .datepicker {
+      .day_changer_head .day_changer_more .date_picker_block .datepicker {
         width: 149px !important; }
-        .top_section_header .more_dates .date_picker_block .datepicker .datepickerContainer {
+        .day_changer_head .day_changer_more .date_picker_block .datepicker .datepickerContainer {
           width: 149px !important; }
-      .top_section_header .more_dates .date_picker_block .controls .clear_link {
+      .day_changer_head .day_changer_more .date_picker_block .controls .clear_link {
         display: none; }
+/*
 
-.top_section_content .inner_divider.solid {
-  height: 2px; }
-.top_section_content .metros_slider {
-  padding: 0 0 5px; }
-.top_section_content .featured_item {
+*/
+@media only screen and (max-device-width: 1280px) {
+  /* For android layouts only */
+  .top_section_header .blue_header {
+    width: 323px; } }
+.day_changer_cont.day_changer_tomor {
+  display: none; }
+.day_changer_cont .featured_item {
   position: relative;
   float: left;
   width: 347px;
-  min-height: 311px; }
-  .top_section_content .featured_item .item_img {
+  min-height: 311px;
+  margin: 13px 1px 0 0; }
+  .day_changer_cont .featured_item .thumbnail_link {
     display: block;
     width: 345px;
     height: 230px;
@@ -362,11 +333,11 @@
     border-bottom: none;
     border-radius: 4px 4px 0 0;
     overflow: hidden; }
-    .top_section_content .featured_item .item_img img {
+    .day_changer_cont .featured_item .thumbnail_link img {
       display: block;
       width: 345px;
       height: 230px; }
-  .top_section_content .featured_item .featured_caption {
+  .day_changer_cont .featured_item .featured_caption {
     position: absolute;
     bottom: 23px;
     left: -29px;
@@ -377,22 +348,22 @@
     background-repeat: repeat-y;
     border-left: 2px solid #6da5c4;
     border-radius: 2px 0 2px 2px; }
-    .top_section_content .featured_item .featured_caption .headline.sub_headline {
+    .day_changer_cont .featured_item .featured_caption .headline.sub_headline {
       display: block;
       margin: 0 0 6px;
       font-size: 20px;
       font-weight: bold;
       line-height: 21px; }
-      .top_section_content .featured_item .featured_caption .headline.sub_headline a, .top_section_content .featured_item .featured_caption .headline.sub_headline a:visited {
+      .day_changer_cont .featured_item .featured_caption .headline.sub_headline a, .day_changer_cont .featured_item .featured_caption .headline.sub_headline a:visited {
         color: #fff;
         text-decoration: none; }
-        .top_section_content .featured_item .featured_caption .headline.sub_headline a:hover, .top_section_content .featured_item .featured_caption .headline.sub_headline a:visited:hover {
+        .day_changer_cont .featured_item .featured_caption .headline.sub_headline a:hover, .day_changer_cont .featured_item .featured_caption .headline.sub_headline a:visited:hover {
           text-decoration: underline; }
-    .top_section_content .featured_item .featured_caption .venue_type {
+    .day_changer_cont .featured_item .featured_caption .venue_type {
       margin: 0; }
-      .top_section_content .featured_item .featured_caption .venue_type .fake_link {
+      .day_changer_cont .featured_item .featured_caption .venue_type .fake_link {
         color: #adc0c9; }
-    .top_section_content .featured_item .featured_caption .anchor_point {
+    .day_changer_cont .featured_item .featured_caption .anchor_point {
       position: absolute;
       bottom: -12px;
       left: -2px;
@@ -401,163 +372,137 @@
       border: 6px solid;
       border-color: #000 #000 transparent transparent;
       overflow: hidden; }
-  .top_section_content .featured_item .quick_nav_links {
+  .day_changer_cont .featured_item .quick_nav_links {
     margin: 8px 0 0;
     padding: 0; }
-  .top_section_content .featured_item p {
+  .day_changer_cont .featured_item p {
     padding-bottom: 0; }
-  .top_section_content .featured_item .blue_tag {
-    left: -25px;
-    padding-left: 25px;
-    float: left;
-    top: 2px; }
-  .top_section_content .featured_item .desc {
+  .day_changer_cont .featured_item .desc {
     position: relative;
-    height: 113px;
-    overflow: hidden;
+    left: -25px;
     width: 334px;
+    height: 113px;
     padding: 0 0 0 25px;
-    left: -25px; }
-    .top_section_content .featured_item .desc .info {
+    overflow: hidden; }
+    .day_changer_cont .featured_item .desc .info {
+      display: block;
+      margin: 2px 0 0;
+      color: #000;
       font-size: 12px;
       line-height: 16px;
-      color: #000;
-      text-decoration: none;
-      margin: 2px 0 0;
-      display: block; }
-.top_section_content .vertical_slider {
-  position: relative;
-  left: 1px;
+      text-decoration: none; }
+.day_changer_cont .vertical_slider {
   float: left;
-  width: 356px;
-  margin: -19px 0 0; }
-  .top_section_content .vertical_slider .prev_wrapper,
-  .top_section_content .vertical_slider .next_wrapper {
-    background: url(/assets/home/homepage_sprite.png) no-repeat transparent;
+  width: 356px; }
+  .day_changer_cont .vertical_slider .prev_wrapper,
+  .day_changer_cont .vertical_slider .next_wrapper {
+    position: relative;
+    left: 24px;
     width: 331px;
     height: 14px;
-    position: relative;
-    left: 24px; }
-    .top_section_content .vertical_slider .prev_wrapper .btn,
-    .top_section_content .vertical_slider .next_wrapper .btn {
-      background: url(/assets/home/homepage_sprite.png) no-repeat transparent;
+    background: url(/assets/home/homepage_sprite.png) no-repeat transparent; }
+    .day_changer_cont .vertical_slider .prev_wrapper .btn,
+    .day_changer_cont .vertical_slider .next_wrapper .btn {
       width: 28px;
       height: 14px;
-      margin: 5px 0 0 155px;
+      margin: 0 0 0 155px;
+      background: url(/assets/home/homepage_sprite.png) no-repeat transparent;
       cursor: pointer; }
-  .top_section_content .vertical_slider .prev_wrapper {
+  .day_changer_cont .vertical_slider .prev_wrapper {
     background-position: -248px -411px; }
-    .top_section_content .vertical_slider .prev_wrapper .btn {
+    .day_changer_cont .vertical_slider .prev_wrapper .btn {
       background-position: -403px -411px; }
-    .top_section_content .vertical_slider .prev_wrapper .btn:hover {
+    .day_changer_cont .vertical_slider .prev_wrapper .btn:hover {
       background-position: -755px -411px; }
-  .top_section_content .vertical_slider .next_wrapper {
+  .day_changer_cont .vertical_slider .next_wrapper {
     background-position: -248px -431px; }
-    .top_section_content .vertical_slider .next_wrapper .btn {
+    .day_changer_cont .vertical_slider .next_wrapper .btn {
       background-position: -403px -431px; }
-    .top_section_content .vertical_slider .next_wrapper .btn:hover {
+    .day_changer_cont .vertical_slider .next_wrapper .btn:hover {
       background-position: -755px -431px; }
-  .top_section_content .vertical_slider .items_collection {
+  .day_changer_cont .vertical_slider .items_collection {
     width: 356px;
     height: 297px;
     margin: 5px 0;
     overflow: hidden; }
-    .top_section_content .vertical_slider .items_collection .small_items li.item {
-      padding: 12px 0 0 25px;
-      margin: 0 0 4px; }
-      .top_section_content .vertical_slider .items_collection .small_items li.item .details_wrapper {
-        border-bottom: 1px dashed #adc0c9;
-        position: relative;
+    .day_changer_cont .vertical_slider .items_collection .small_items li.item {
+      padding: 0 0 0 25px; }
+      .day_changer_cont .vertical_slider .items_collection .small_items li.item .details_wrapper {
         height: 70px;
-        padding: 0 10px 10px 0; }
-        .top_section_content .vertical_slider .items_collection .small_items li.item .details_wrapper .label {
-          position: absolute;
-          top: -6px;
-          left: -1px;
-          border: 1px solid #fff;
-          color: #fff;
-          font-size: 10px;
-          line-height: 10px;
-          text-transform: uppercase;
-          height: 11px;
-          padding: 0 3px;
-          z-index: 2; }
-          .top_section_content .vertical_slider .items_collection .small_items li.item .details_wrapper .label.venue {
-            background-color: #545454; }
-          .top_section_content .vertical_slider .items_collection .small_items li.item .details_wrapper .label.event {
-            background-color: #09f; }
-        .top_section_content .vertical_slider .items_collection .small_items li.item .details_wrapper p {
-          padding-bottom: 0; }
-        .top_section_content .vertical_slider .items_collection .small_items li.item .details_wrapper .item_img {
-          display: block;
-          float: left;
-          width: 98px;
-          height: 65px;
-          margin: 0 12px 0 0;
-          border: 1px solid #ccc;
-          border-radius: 2px 2px 2px 2px; }
-          .top_section_content .vertical_slider .items_collection .small_items li.item .details_wrapper .item_img img {
-            display: block;
-            width: 98px;
-            height: 65px; }
-        .top_section_content .vertical_slider .items_collection .small_items li.item .details_wrapper .headline.sub_headline {
-          display: block;
-          position: relative;
-          z-index: 0;
-          max-height: 34px;
-          margin-bottom: 2px;
-          color: #000;
-          font-size: 16px;
-          font-weight: bold;
-          text-decoration: underline;
-          line-height: 17px;
-          overflow: hidden; }
-          .top_section_content .vertical_slider .items_collection .small_items li.item .details_wrapper .headline.sub_headline:hover {
-            color: #597686; }
-        .top_section_content .vertical_slider .items_collection .small_items li.item .details_wrapper .date_time {
-          padding: 0;
-          margin: 3px 0;
-          height: 12px;
-          font-size: 9px;
-          color: #09f;
-          line-height: 12px;
-          overflow: hidden;
-          text-transform: uppercase; }
-          .top_section_content .vertical_slider .items_collection .small_items li.item .details_wrapper .date_time .small_text {
-            font-size: 10px; }
-        .top_section_content .vertical_slider .items_collection .small_items li.item .details_wrapper .event_venue_name {
-          color: #375363; }
-          .top_section_content .vertical_slider .items_collection .small_items li.item .details_wrapper .event_venue_name:hover {
-            color: #597686; }
-        .top_section_content .vertical_slider .items_collection .small_items li.item .details_wrapper .venue_type {
-          margin-bottom: 0;
-          padding: 0; }
-        .top_section_content .vertical_slider .items_collection .small_items li.item .details_wrapper .details {
-          display: block;
+        padding: 13px 10px 14px 0;
+        color: #000;
+        font-size: 11px;
+        line-height: 13px;
+        overflow: hidden;
+        border-bottom: 1px dashed #adc0c9; }
+        .day_changer_cont .vertical_slider .items_collection .small_items li.item .details_wrapper .details {
           position: relative;
           height: 70px;
-          top: -3px;
-          margin: 0 7px 0 0;
-          color: #000;
-          font-size: 11px;
-          line-height: 13px;
-          text-decoration: none;
-          margin: 5px 0 0;
           overflow: hidden; }
-          .top_section_content .vertical_slider .items_collection .small_items li.item .details_wrapper .details .ellipsis {
-            display: block;
-            position: absolute;
-            right: 0;
-            bottom: -1px;
-            max-width: 176px;
-            height: 15px;
-            font-size: 11px;
-            line-height: 15px;
-            background-color: #fff;
-            overflow: hidden; }
-      .top_section_content .vertical_slider .items_collection .small_items li.item:hover, .top_section_content .vertical_slider .items_collection .small_items li.item.selected {
-        background: url(/assets/home/homepage_sprite.png) -500px -63px no-repeat transparent; }
-        .top_section_content .vertical_slider .items_collection .small_items li.item:hover .details_wrapper .details .ellipsis, .top_section_content .vertical_slider .items_collection .small_items li.item.selected .details_wrapper .details .ellipsis {
+      .day_changer_cont .vertical_slider .items_collection .small_items li.item .thumbnail_link {
+        display: block;
+        float: left;
+        width: 98px;
+        height: 65px;
+        margin: 0 12px 0 0;
+        border: 1px solid #ccc;
+        border-radius: 2px 2px 2px 2px; }
+        .day_changer_cont .vertical_slider .items_collection .small_items li.item .thumbnail_link img {
+          display: block;
+          width: 98px;
+          height: 65px; }
+      .day_changer_cont .vertical_slider .items_collection .small_items li.item .desc {
+        padding: 0; }
+      .day_changer_cont .vertical_slider .items_collection .small_items li.item .ellipsis {
+        display: block;
+        position: absolute;
+        right: 0;
+        bottom: -1px;
+        max-width: 176px;
+        height: 15px;
+        font-size: 11px;
+        line-height: 15px;
+        background-color: #fff;
+        overflow: hidden; }
+      .day_changer_cont .vertical_slider .items_collection .small_items li.item .name {
+        display: block;
+        position: relative;
+        z-index: 0;
+        max-height: 34px;
+        margin-bottom: 2px;
+        color: #000;
+        font-size: 16px;
+        font-weight: bold;
+        text-decoration: underline;
+        line-height: 17px;
+        overflow: hidden; }
+        .day_changer_cont .vertical_slider .items_collection .small_items li.item .name:hover {
+          color: #597686; }
+      .day_changer_cont .vertical_slider .items_collection .small_items li.item .date_time {
+        display: block;
+        margin: 3px 0;
+        height: 12px;
+        color: #09f;
+        font-size: 9px;
+        line-height: 12px;
+        text-transform: uppercase;
+        overflow: hidden; }
+        .day_changer_cont .vertical_slider .items_collection .small_items li.item .date_time .small_text {
+          font-size: 10px; }
+      .day_changer_cont .vertical_slider .items_collection .small_items li.item .event_venue_name {
+        display: block;
+        color: #375363; }
+        .day_changer_cont .vertical_slider .items_collection .small_items li.item .event_venue_name:hover {
+          color: #597686; }
+      .day_changer_cont .vertical_slider .items_collection .small_items li.item .venue_type {
+        margin-bottom: 0;
+        padding: 0; }
+      .day_changer_cont .vertical_slider .items_collection .small_items li.item .featured_html {
+        display: none; }
+      .day_changer_cont .vertical_slider .items_collection .small_items li.item:hover, .day_changer_cont .vertical_slider .items_collection .small_items li.item.selected {
+        background-image: url(/assets/home/homepage_sprite.png);
+        background-position: -500px -63px; }
+        .day_changer_cont .vertical_slider .items_collection .small_items li.item:hover .ellipsis, .day_changer_cont .vertical_slider .items_collection .small_items li.item.selected .ellipsis {
           background-color: #eff3f3; }
 /*BROWSE BY NEIGHBORHOOD STYLES*/
 /*------------------------------------------*/
@@ -1248,7 +1193,7 @@ div.datepicker {
       height: 50px; }
     .browse_category_boxes .cell ul {
       float: left;
-      width: 139px;
+      width: 154px;
       height: auto;
       margin: 0;
       padding: 0;
@@ -1480,15 +1425,16 @@ div.datepicker {
   #right_sidebar .thumbnail_link {
     display: block;
     margin: 0 0 8px;
-    width: 210px;
-    height: 140px;
-    border: 1px solid #adc0c9;
-    border-radius: 4px;
+    width: 98px;
+    height: 65px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
     overflow: hidden; }
     #right_sidebar .thumbnail_link img {
       display: block;
-      width: 210px;
-      height: 140px; }
+      width: 98px;
+      height: 65px;
+      border-radius: 1px; }
   #right_sidebar .quick_nav_links {
     border-bottom: 1px dashed #ADC0C9;
     padding: 0 0 5px;
@@ -1522,6 +1468,17 @@ div.datepicker {
     padding: 0 0 6px;
     vertical-align: top;
     border-bottom: 1px solid #dae4e9; }
+  #right_sidebar .list .list_item.featured .thumbnail_link,
+  #right_sidebar .changer .thumbnail_link {
+    width: 210px;
+    height: 140px;
+    border: 1px solid #adc0c9;
+    border-radius: 4px; }
+    #right_sidebar .list .list_item.featured .thumbnail_link img,
+    #right_sidebar .changer .thumbnail_link img {
+      width: 210px;
+      height: 140px;
+      border-radius: 3px; }
   #right_sidebar .list .list_item {
     margin: 8px 0 0;
     padding: 8px 0 0;
@@ -1600,7 +1557,7 @@ div.datepicker {
         color: #597686; }
   #right_sidebar .pod_footer {
     margin: 5px 0 0;
-    padding: 9px 0 0;
+    padding: 5px 0 0;
     border-top: 1px solid #adc0c9; }
     #right_sidebar .pod_footer a, #right_sidebar .pod_footer a:link, #right_sidebar .pod_footer a:visited, #right_sidebar .pod_footer .fake_link {
       float: right;
@@ -1708,11 +1665,13 @@ div.datepicker {
     left: -9px; }
   #right_sidebar .missing_venue_event {
     position: relative;
-    right: -1px;
-    width: 243px;
-    height: 148px;
-    margin: 0 0 12px;
-    background-position: -294px -233px; }
+    left: -2px;
+    width: 246px;
+    height: 154px;
+    margin: 0 0 8px;
+    background-position: -291px -233px; }
+    #right_sidebar .missing_venue_event:hover {
+      background-position: -291px -389px; }
   #right_sidebar .share_btn,
   #right_sidebar .subscribe_btn,
   #right_sidebar .follow_btns {
@@ -1757,12 +1716,7 @@ div.datepicker {
   #recent_articles .list .list_item:first-child + li {
     margin-left: 0; }
   #recent_articles .list .list_item .thumbnail_link {
-    width: 98px;
-    height: 65px;
     margin: 0 0 5px; }
-    #recent_articles .list .list_item .thumbnail_link img {
-      width: 98px;
-      height: 65px; }
   #recent_articles .list .list_item .title {
     font-size: 11px;
     line-height: 13px; }
@@ -1772,12 +1726,7 @@ div.datepicker {
     margin-left: 0;
     padding-bottom: 15px; }
     #recent_articles .list .list_item.featured .thumbnail_link {
-      width: 210px;
-      height: 140px;
       margin: 0 0 15px; }
-      #recent_articles .list .list_item.featured .thumbnail_link img {
-        width: 210px;
-        height: 140px; }
 /* Latest Reviews Sidebar Pod */
 #latest_reviews .list .list_item:first-child + .list_item {
   margin-top: 0;

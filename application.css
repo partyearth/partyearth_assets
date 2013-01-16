@@ -34,20 +34,16 @@ abbr, acronym {
   border: 0; }
 /* FOOTER STYLES */
 #footer {
-  position: absolute;
-  bottom: 0;
-  height: 451px;
-  width: 100%;
   margin: 12px 0 0;
-  background: #313232; }
+  padding: 10px 0;
+  color: #adc0c9;
+  background-color: #313232; }
 
 #footer_content {
-  color: #adc0c9;
-  height: 415px;
-  margin: 0 auto;
-  padding: 11px 20px 25px;
+  z-index: 0;
   width: 956px;
-  z-index: 0; }
+  margin: 0 auto;
+  padding: 0 20px 15px; }
   #footer_content a, #footer_content a:visited, #footer_content .fake_link {
     color: #adc0c9;
     text-decoration: underline; }
@@ -1973,15 +1969,7 @@ h2 {
 #wrapper {
   position: relative;
   width: 990px;
-  margin: 0 auto;
-  background: url(/assets/content_bg/wrapper_bg_repeat.png);
-  background-position: 0 -1px;
-  background-repeat: repeat-x;
-  padding-bottom: 460px; }
-
-/*FOR PAMPLONA FOOTER SPACE*/
-#container_bg_bottom.short_footer #wrapper {
-  padding-bottom: 260px; }
+  margin: 0 auto; }
 
 #left_container {
   position: relative;
@@ -3465,6 +3453,7 @@ If you don't know where else to place something, place it below this line.
   /* Same styles as .pod but with a gray background */
   /* Used for pods on the left container side detached from main content pod. */ }
   .pod h3 {
+    margin: 0 0 6px;
     color: #000;
     font-size: 17px;
     font-weight: bold;
@@ -3472,8 +3461,7 @@ If you don't know where else to place something, place it below this line.
     text-decoration: none;
     word-spacing: 0; }
     .pod h3 a, .pod h3 a:link, .pod h3 a:visited {
-      color: #000;
-      text-decoration: none; }
+      color: #000; }
     .pod h3.sub_headline {
       font-size: 20px;
       line-height: 21px; }
@@ -3611,7 +3599,7 @@ If you don't know where else to place something, place it below this line.
 :: Quick navigation links with a button style.
 ---------------------------------------------------------*/
 .quick_nav_btns {
-  margin: 9px 0 0;
+  margin: 0;
   padding: 9px 0 0;
   border-top: 1px dashed #adc0c9; }
   .quick_nav_btns li {
