@@ -1,0 +1,113 @@
+/*GENERAL STYLES*/
+body {
+  background: none;
+  font-family: 'PT Sans',arial,sans-serif;
+  font-size: 12px;
+  margin: 0; }
+
+body:after {
+  content: "PartyEarth.com"; }
+
+img {
+  border: none; }
+
+#wrapper .headline,
+#wrapper a.headline:link,
+#wrapper a.headline:visited {
+  display: none;
+  font-family: 'PT Sans',arial,sans-serif; }
+
+#site_container {
+  background: none; }
+
+#container_bg_bottom {
+  background: none;
+  padding: 10px 0; }
+
+.preload,
+#welcome_box,
+#navigation,
+#masthead_search,
+#expandable_bar_ad,
+#right_sidebar #ad_240x400,
+#footer,
+.floating_bar_wrapper,
+.ConvertToTabbedPod.tabs .ui-tabs .ui-tabs-nav li.ui-tabs-selected a,
+.ConvertToTabbedPod.tabs .ui-tabs .ui-tabs-nav li.ui-state-disabled a,
+.ConvertToTabbedPod.tabs .ui-tabs .ui-tabs-nav li.ui-state-processing a,
+.print_link,
+.tell_us_more_section {
+  display: none !important; }
+
+.ConvertToTabbedPod .tab .ui-tabs-selected.ui-state-default .left_end,
+.ConvertToTabbedPod.tabs .ui-tabs .ui-tabs-nav li.ui-tabs-selected a,
+.ConvertToTabbedPod.tabs .ui-tabs .ui-tabs-nav li.ui-state-disabled a,
+.ConvertToTabbedPod.tabs .ui-tabs .ui-tabs-nav li.ui-state-processing a,
+.ConvertToTabbedPod .tab .ui-tabs-selected.ui-state-default .right_end,
+.ConvertToTabbedPod .header_row .mid_section,
+.ConvertToTabbedPod .header_row .right_corner,
+.ConvertToTabbedPod .left_side,
+.ConvertToTabbedPod .right_side,
+.ConvertToTabbedPod .footer_row .left_corner,
+.ConvertToTabbedPod .footer_row .mid_section,
+.ConvertToTabbedPod .footer_row .right_corner {
+  background: none !important; }
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+ul li {
+  color: #000;
+  margin: 0;
+  padding: 0; }
+
+ul li a {
+  color: #000; }
+
+.section_divider {
+  height: 11px; }
+
+.section_divider.dashed_line {
+  border-top: 1px dashed #DEDCDC;
+  height: 1px;
+  margin: 12px 0; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/*FORMATTING STYLES ADDED BACK IN*/
+#store_info table td {
+  vertical-align: top; }
+
+#store_info .product_img {
+  padding: 0 15px 0 0;
+  width: 69px; }
+
+#store_info .product_img img {
+  height: 121px;
+  width: 69px; }
+
+.right_align_text {
+  text-align: right; }
+
+#store_info .success_product_table {
+  font-size: 11px;
+  line-height: 11px;
+  width: 270px !important; }
+
+#store_info .success_product_table td {
+  padding-top: 3px; }
+
+#store_info .success_product_table .gray_row.blue_text td {
+  border-top: 1px dashed black;
+  padding: 5px 0 1px; }
+
+/*DISPLAY VISA AND MASTERCARD TEXT*/
+#store_info .visa_logo:after {
+  content: "Visa: "; }
+
+#store_info .mastercard_logo:after {
+  content: "MasterCard: "; }

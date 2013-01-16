@@ -1,0 +1,88 @@
+/*BEGIN PAGE PROPERTIES*/
+#login_info {
+  min-height: 360px; }
+
+#login_info label abbr {
+  color: #0099FF;
+  font-size: 20px;
+  margin: 0 0 0 4px;
+  position: relative;
+  top: 2px; }
+
+#login_info h1 .grey_text {
+  color: #ccc; }
+
+#login_info .body_text.blue_link {
+  border-bottom: 2px solid #FFFFFF !important;
+  height: 10px !important;
+  margin-bottom: 0;
+  padding: 4px 0 0;
+  text-decoration: underline !important; }
+
+#login_info .body_text.blue_link:hover {
+  border-bottom: 2px solid #0099ff !important; }
+
+table.form {
+  margin: 0 0 0 101px; }
+
+.inputs img {
+  margin: 0 0 -4px 5px; }
+
+#login_info label {
+  color: #000;
+  float: right;
+  margin: 0 25px 0 0; }
+
+#login_info .remember_me {
+  display: inline-block;
+  float: none;
+  margin: 0 0 6px; }
+
+#update_password .form label {
+  margin: -20px 25px 0 0; }
+
+#login_info .text_field {
+  background: url(/assets/content_bg/login_sprite.png) 0 0 no-repeat;
+  width: 292px;
+  height: 17px;
+  padding: 4px 8px 8px;
+  margin: 0 0 12px; }
+
+#login_info .go_btn {
+  left: 390px;
+  position: absolute; }
+
+#login_info.login .go_btn {
+  top: 166px;
+  left: 473px; }
+
+#login_info.login .go_btn.gpp_go_btn {
+  top: 194px; }
+
+#login_info.forgot_password .inline-errors {
+  margin: 0 0 10px; }
+
+#login_info.reset_password .inline-errors {
+  margin: 4px 0 0 5px; }
+
+#login_info.reset_password .go_btn {
+  left: 410px; }
+
+#login_info.login .username_error {
+  position: relative; }
+
+#login_info.login .username_error .inline-errors.isolated {
+  position: absolute;
+  top: -29px;
+  *top: -43px;
+  /*FOR IE7*/
+  width: 155px;
+  left: 310px; }
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  /* FOR WEBKIT BROWSERS */
+  #login_info.login .username_error .inline-errors.isolated {
+    top: -41px; } }
+#login_info .general_errors .inline-errors {
+  width: 282px;
+  margin-left: 126px; }

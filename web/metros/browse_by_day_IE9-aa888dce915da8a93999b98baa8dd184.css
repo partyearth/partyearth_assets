@@ -1,0 +1,27 @@
+.top_section_header .section {
+  height: 10px;
+  font-size: 12px;
+  background: #0f84e1;
+  border-radius: 2px 2px 2px 2px; }
+  .top_section_header .section .small_text {
+    font-size: 8px; }
+  .top_section_header .section:hover {
+    background: #177ad4; }
+  .top_section_header .section.Selected {
+    height: 9px;
+    line-height: 8px;
+    background: url(/assets/content_bg/browse_by_today_selected_bg-f1c1156edd33c283e9669743cedf3aa9.gif) 0 0 repeat-x #ff6600;
+    border-top: none;
+    border-bottom: 1px inset #ff6600;
+    border-radius: 2px 2px 2px 2px;
+    box-shadow: 0 1px 2px #bfbfbf; }
+    .top_section_header .section.Selected:hover {
+      background: url(/assets/content_bg/browse_by_today_selected_bg-f1c1156edd33c283e9669743cedf3aa9.gif) 0 0 repeat-x #ff6600; }
+  .top_section_header .section.today {
+    padding-left: 20px;
+    padding-right: 19px; }
+.top_section_header .more_dates .section {
+  padding-left: 24px;
+  padding-right: 24px; }
+.top_section_header .more_dates .date_picker_block {
+  left: -10px; }

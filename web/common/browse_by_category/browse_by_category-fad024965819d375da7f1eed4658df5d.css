@@ -1,0 +1,197 @@
+/* Default Browse by Category Module Styles */
+.browse_category {
+  margin: 0 0 9px;
+  padding: 0 0 9px;
+  border-bottom: 1px dashed #adc0c9; }
+  .browse_category .column {
+    float: left;
+    width: 168px;
+    margin: 0 0 0 5px;
+    padding: 0 0 0 5px;
+    border-left: 1px dotted #d8d8d8; }
+    .browse_category .column:first-child {
+      margin-left: 0;
+      padding-left: 0;
+      border-left: none; }
+    .browse_category .column.featured {
+      padding: 5px 6px 10px;
+      background-color: #f0f3f5;
+      border-left: none; }
+      .browse_category .column.featured h3 {
+        color: #09f;
+        font-size: 15px;
+        line-height: 15px;
+        text-decoration: none; }
+      .browse_category .column.featured .name {
+        margin: 0;
+        padding: 0;
+        color: #000;
+        font-size: 13px;
+        font-weight: bold;
+        border-bottom: none; }
+        .browse_category .column.featured .name:hover {
+          color: #597686; }
+  .browse_category h3 {
+    margin: 0 0 7px;
+    color: #000;
+    font-size: 17px;
+    text-decoration: underline;
+    line-height: 21px; }
+    .browse_category h3 a, .browse_category h3 a:link, .browse_category h3 a:visited, .browse_category h3 .fake_link {
+      color: #000; }
+      .browse_category h3 a:hover, .browse_category h3 a:link:hover, .browse_category h3 a:visited:hover, .browse_category h3 .fake_link:hover {
+        color: #597686; }
+  .browse_category p {
+    padding: 0; }
+    .browse_category p.desc {
+      position: relative;
+      height: 97px;
+      font-size: 11px;
+      line-height: 14px;
+      overflow: hidden; }
+      .browse_category p.desc a {
+        position: absolute;
+        right: 0;
+        bottom: 0; }
+  .browse_category .thumbnail_link {
+    display: block;
+    width: 165px;
+    height: 110px;
+    margin: 0 0 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    overflow: hidden; }
+  .browse_category .thumbnail {
+    display: block;
+    width: 165px;
+    height: 110px; }
+  .browse_category .name {
+    display: block;
+    margin: 0 0 5px;
+    padding: 0 0 5px;
+    color: #597686;
+    font-size: 10px;
+    border-bottom: 1px solid #dae4e9; }
+  .browse_category ul {
+    height: 105px;
+    /* Default height for 5 items */
+    margin: 0 0 8px;
+    padding: 0 0 8px;
+    border-bottom: 1px dashed #adc0c9; }
+    .browse_category ul li {
+      line-height: 21px; }
+    .browse_category ul .arrow {
+      display: inline-block;
+      position: relative;
+      top: -1px;
+      color: #09f;
+      font-family: 'Times New Roman';
+      font-size: 17px;
+      line-height: 17px;
+      height: 13px;
+      width: 6px;
+      text-indent: -10px;
+      overflow: hidden; }
+    .browse_category ul a, .browse_category ul a:link, .browse_category ul a:visited, .browse_category ul .fake_link {
+      color: #375363;
+      text-decoration: underline;
+      text-shadow: 0 0 0.08em #dadada; }
+      .browse_category ul a:hover, .browse_category ul a:link:hover, .browse_category ul a:visited:hover, .browse_category ul .fake_link:hover {
+        color: #000; }
+    .browse_category ul.four_items {
+      height: 84px; }
+  .browse_category .more {
+    display: block;
+    padding: 0;
+    color: #aaa;
+    font-size: 11px;
+    line-height: 11px; }
+    .browse_category .more:hover {
+      color: #000; }
+
+/* Alternative layout with rows/boxes */
+.browse_category_boxes {
+  padding-bottom: 0; }
+  .browse_category_boxes .row {
+    margin: 0 0 8px; }
+    .browse_category_boxes .row:first-child .cell {
+      padding-top: 0;
+      border-top: none; }
+  .browse_category_boxes .cell {
+    float: left;
+    width: 220px;
+    margin: 0 0 0 22px;
+    padding: 8px 0 3px;
+    border-top: 1px dashed #adc0c9; }
+    .browse_category_boxes .cell:first-child {
+      margin-left: 0; }
+    .browse_category_boxes .cell .thumbnail_link {
+      float: left;
+      width: 75px;
+      height: 50px;
+      margin: 0 4px 0 0; }
+    .browse_category_boxes .cell .thumbnail {
+      width: 75px;
+      height: 50px; }
+    .browse_category_boxes .cell ul {
+      float: left;
+      width: 139px;
+      height: auto;
+      margin: 0;
+      padding: 0;
+      border-bottom: 0; }
+      .browse_category_boxes .cell ul li {
+        margin: 6px 0 0;
+        line-height: 13px; }
+        .browse_category_boxes .cell ul li:first-child {
+          margin-top: 0; }
+      .browse_category_boxes .cell ul a {
+        display: inline-block;
+        padding: 0 0 0 11px;
+        background-position: -114px -275px;
+        background-repeat: no-repeat; }
+        .browse_category_boxes .cell ul a.selected {
+          background-image: url(/assets/content_bg/application_sprite-c08e7db1866016ee73bdf3e888b0efc9.png); }
+    .browse_category_boxes .cell .more {
+      float: left;
+      clear: left;
+      margin: 8px 0 0; }
+      .browse_category_boxes .cell .more a, .browse_category_boxes .cell .more span {
+        color: #aaa;
+        text-decoration: underline; }
+        .browse_category_boxes .cell .more a:hover, .browse_category_boxes .cell .more span:hover {
+          color: #000; }
+
+/* Alternative layout with rows/boxes and embedded interest pod */
+.browse_category_interest .rows {
+  float: left; }
+.browse_category_interest .row {
+  width: 495px; }
+.browse_category_interest .cell {
+  width: 235px; }
+.browse_category_interest .interest_embed {
+  float: right;
+  width: 174px;
+  margin: 0 0 8px;
+  padding: 10px 15px;
+  background-color: #ffffe5; }
+  .browse_category_interest .interest_embed h3 {
+    margin: 0 0 8px;
+    padding: 0 0 8px;
+    color: #375363;
+    font-size: 20px;
+    text-decoration: none;
+    border-bottom: 1px dashed #adc0c9; }
+  .browse_category_interest .interest_embed ul {
+    width: auto;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    border-bottom: 0; }
+    .browse_category_interest .interest_embed ul li {
+      line-height: 24px; }
+    .browse_category_interest .interest_embed ul .category {
+      text-shadow: 0 0 0.08em #dadada;
+      text-decoration: underline; }
+      .browse_category_interest .interest_embed ul .category:hover {
+        color: #597686; }

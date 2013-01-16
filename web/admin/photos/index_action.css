@@ -1,0 +1,185 @@
+/*DROPDOWN OVERRIDES*/
+/*-------------------------------------------------*/
+#admin_content .TitleContainer {
+  background: none;
+  padding: 0; }
+
+#admin_content .Title {
+  background: none;
+  height: auto; }
+
+/*-------------------------------------------------*/
+/*BEGIN GENERAL STYLES*/
+#admin_content {
+  background-color: #fff;
+  padding: 0 1px 20px;
+  text-align: center; }
+  #admin_content #fileInput {
+    width: 124px !important;
+    height: 34px !important;
+    margin: 0 auto;
+    text-align: left; }
+
+#admin_content div {
+  text-align: center;
+  margin: 6px 0;
+  -moz-border-radius: 4px;
+  border-radius: 4px; }
+
+#admin_content form {
+  padding: 10px 0 0;
+  text-align: center; }
+
+#admin_content input[type="checkbox"] {
+  cursor: default;
+  /*for ie to show arrow*/ }
+
+#admin_content textarea {
+  background: none repeat scroll 0 0 #EFEFEF;
+  border: 1px solid #CCCCCC;
+  width: 400px;
+  height: 150px;
+  margin: 15px 0;
+  padding: 10px;
+  font-size: 12px;
+  box-shadow: inset 0 0 7px 0 #beccd5;
+  -webkit-box-shadow: inset 0 0 7px 0 #beccd5; }
+
+#admin_content textarea:focus {
+  background: none repeat scroll 0 0 #fff;
+  border: 1px solid #0099ff; }
+
+.fake_link {
+  text-decoration: underline; }
+
+h1 {
+  font-size: 30px;
+  background-color: #33628C;
+  color: #fff;
+  padding: 5px 0;
+  margin: 0 0 20px; }
+  h1 a, h1 a:visited {
+    background: #fff;
+    padding: 0 14px;
+    border-radius: 16px;
+    line-height: 33px; }
+
+h1, p {
+  text-align: center; }
+
+#admin_content .big_n_bold {
+  font-size: 20px;
+  font-weight: bold; }
+
+#admin_content input.button,
+#admin_content input[type="button"],
+#admin_content input[type="submit"],
+#admin_content .Title {
+  -moz-border-radius: 4px 4px 4px 4px;
+  background-color: #33628C;
+  border: 1px solid #2E7FC7;
+  color: #FFFFFF;
+  cursor: pointer;
+  margin: 0 auto;
+  padding: 2px;
+  width: 85px; }
+
+#admin_content input.button:hover,
+#admin_content input[type="button"]:hover,
+#admin_content input[type="submit"]:hover,
+#admin_content .Title:hover {
+  background-color: #2B71AF; }
+
+#admin_content textarea {
+  outline: none; }
+
+#admin_content .Dropdown .dropdown {
+  background-color: #FFFFFF;
+  border-bottom: 1px solid #999999;
+  border-top: 1px solid #999999;
+  padding: 5px; }
+
+#admin_content .Choice {
+  background-color: #999999;
+  border-bottom: 2px solid #333333;
+  color: #FFFFFF;
+  cursor: pointer;
+  margin: 0 auto;
+  padding: 2px;
+  width: 68px; }
+
+#admin_content .Choice:hover {
+  background-color: #33628C; }
+
+#admin_content #sortable {
+  list-style-type: none;
+  margin: 0;
+  padding: 0; }
+
+#admin_content #sortable li {
+  -moz-border-radius: 4px 4px 4px 4px;
+  border-radius: 4px 4px 4px 4px;
+  background-color: #EBECED;
+  border: 1px solid #CCCCCC;
+  float: left;
+  margin: 0 2.3px 4.5px;
+  overflow: hidden;
+  padding: 2px 1px;
+  text-align: center;
+  width: 189px; }
+
+#admin_content #sortable li:hover {
+  border: 1px solid #74A8CF;
+  background-color: #333;
+  cursor: move;
+  color: #fff; }
+
+#admin_content #sortable li:hover a:link,
+#admin_content #sortable li:hover a:visited,
+#admin_content #sortable li:hover .fake_link {
+  color: #b9d8f4; }
+
+#admin_content #sortable li:hover a:hover,
+#admin_content #sortable li:hover .fake_link:hover {
+  color: #0dc0ed; }
+
+#admin_content li.ui-state-default img {
+  height: 120px; }
+
+#admin_content .AjaxFlag {
+  margin: 2px 0; }
+
+#admin_content .AjaxFlag input[type="text"] {
+  background-color: #FFFFFF;
+  border: 1px solid #CFCFCF;
+  padding: 3px; }
+
+#admin_content .PhotoStatusSelect {
+  margin: 0 0 0 2px; }
+
+#admin_content .PhotoQualityStatusSelect {
+  margin: 0 2px 0 0; }
+
+/*SPECIFICALLY FOR THE SHOW PHOTO PAGE*/
+#admin_content #photoview {
+  margin: 6px 0 0 6px; }
+
+#admin_content #photoview img {
+  width: 460px; }
+
+#admin_content #photoview_properties {
+  background-color: #EBECED;
+  border: 1px solid #CCCCCC;
+  margin: 6px 6px 6px 0;
+  padding: 6px;
+  width: 456px; }
+
+#admin_content #photoview_properties .AjaxFlag textarea.sm_textarea {
+  height: 50px;
+  margin: 0;
+  vertical-align: middle;
+  width: 220px; }
+
+#admin_content #photoview_properties .AjaxFlag textarea.md_textarea {
+  height: 100px;
+  margin: 0 0 15px; }

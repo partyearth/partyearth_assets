@@ -1,0 +1,11 @@
+/*BEGIN NAVIGATION CSS*/
+/*---------------------------------------------*/
+#masthead .search_nav .main_nav .venues.link a, #masthead .search_nav .main_nav .venues.link a:visited {
+  color: #09f; }
+
+/*LEFT COLUMN*/
+/*---------------------------------------------*/
+#left_container .venues_content .browse_by_interest {
+  min-height: 323px; }
+  #left_container .venues_content .browse_by_interest ul .interest_item {
+    line-height: 120%; }
