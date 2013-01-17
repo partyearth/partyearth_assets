@@ -1770,7 +1770,13 @@ div.datepicker {
 .browse_elements_by_thumbnail.neighborhoods li.two_line_title h3 {
   height: 42px;
   overflow: hidden; }
+/* Remove when adding address and add to calendar to events spot item */
+.carousel_3 .carousel_3_box {
+  height: 387px; }
+  .carousel_3 .carousel_3_box .spot_item {
+    height: 387px; }
 /*
+
 
 
 
