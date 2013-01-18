@@ -1157,12 +1157,11 @@
 .carousel_3 {
   /* START CAROUSEL BOX AND SPOT ITEM HEIGHTS ------ */
   /* Default height of the box and spot item which is a venue spot item */
-  /* $boxHeight: 387px; /* Add when adding address and add to calendar to events spot item */
-  /* Remove when adding address and add to calendar to events spot item */
+  /* Add when adding address and add to calendar to events spot item */
+  /* $boxHeight: 344px; /* Remove when adding address and add to calendar to events spot item */
   /* If we have 2 line titles increase the height by the line height of the '.name' (18px) element. */
   /* If at least 1 spot item address field goes to 3 lines increase height by line height of 'address' element. */
   /* If it is a list of event venues increase the height by 17 */
-  /* This is for Events only */
   /* END CAROUSEL BOX AND SPOT ITEM HEIGHTS ------ */
   /* Override styles from liked_by.scss */ }
   .carousel_3 .page_count {
@@ -1191,50 +1190,38 @@
     position: relative; }
   .carousel_3 .carousel_3_box {
     position: relative;
-    height: 344px;
+    height: 387px;
     overflow: hidden; }
     .carousel_3 .carousel_3_box .spot_item {
-      height: 344px; }
+      height: 387px; }
   .carousel_3.two_line_title .carousel_3_box {
-    height: 362px; }
+    height: 405px; }
   .carousel_3.two_line_title .spot_item {
-    height: 362px; }
+    height: 405px; }
     .carousel_3.two_line_title .spot_item .name {
       height: 36px; }
   .carousel_3.address_3_lines {
     /* If it is for Events and it has 2 line titles increase again by the height of the '.name' (18px) element. */ }
     .carousel_3.address_3_lines .carousel_3_box {
-      height: 356px; }
+      height: 399px; }
     .carousel_3.address_3_lines .spot_item {
-      height: 356px; }
+      height: 399px; }
       .carousel_3.address_3_lines .spot_item address {
         height: 36px; }
     .carousel_3.address_3_lines.two_line_title .carousel_3_box {
-      height: 374px; }
+      height: 417px; }
     .carousel_3.address_3_lines.two_line_title .spot_item {
-      height: 374px; }
+      height: 417px; }
   .carousel_3.event_venues {
     /* If it is for Events and it has 2 line titles increase again by the height of the '.name' (18px) element. */ }
     .carousel_3.event_venues .carousel_3_box {
-      height: 361px; }
+      height: 404px; }
     .carousel_3.event_venues .spot_item {
-      height: 361px; }
+      height: 404px; }
     .carousel_3.event_venues.two_line_title .carousel_3_box {
-      height: 379px; }
+      height: 422px; }
     .carousel_3.event_venues.two_line_title .spot_item {
-      height: 379px; }
-  .carousel_3.no_desc {
-    /* If it is for Events and it has 2 line titles increase again by the height of the '.name' (18px) element. */ }
-    .carousel_3.no_desc .carousel_3_box {
-      height: 312px; }
-    .carousel_3.no_desc .spot_item {
-      height: 312px; }
-      .carousel_3.no_desc .spot_item .details {
-        height: 96px; }
-    .carousel_3.no_desc.two_line_title .carousel_3_box {
-      height: 287px; }
-    .carousel_3.no_desc.two_line_title .spot_item {
-      height: 287px; }
+      height: 422px; }
   .carousel_3 .carousel_3_sldr {
     position: absolute;
     top: 0;
@@ -1632,7 +1619,13 @@ div.datepicker {
 ---------------------------------------------------------*/
 .datepickerHidden {
   display: none; }
+/* Remove when adding address and add to calendar to events spot item */
+.carousel_3 .carousel_3_box {
+  height: 296px; }
+  .carousel_3 .carousel_3_box .spot_item {
+    height: 296px; }
 /*
+
 
 
 

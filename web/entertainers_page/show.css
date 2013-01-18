@@ -919,3 +919,6 @@
   margin-top: 0;
   padding-top: 0;
   border-top: 0; }
+
+.browse_category_boxes .cell ul {
+  width: 139px; }

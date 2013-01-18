@@ -1543,7 +1543,7 @@ div.datepicker {
       z-index: 3001;
       width: 72px;
       height: 72px;
-      margin-left: 36px; }
+      margin-left: -36px; }
     #search_page #search_results.loading {
       overflow: hidden; }
   #search_page #search_results_left {

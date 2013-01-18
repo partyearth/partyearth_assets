@@ -584,7 +584,7 @@ td.right_side.pod_sides {
     display: block; }
   .soe_sect .soe_sect_cont .soe_event_dtls .soe_event_name {
     display: block;
-    margin: 0 0 7px;
+    margin: 0 0 6px;
     color: #000;
     font-size: 16px;
     font-weight: bold;
@@ -594,6 +594,8 @@ td.right_side.pod_sides {
       text-decoration: underline; }
   .soe_sect .soe_sect_cont .soe_event_dtls .venue_type span {
     display: inline; }
+    .soe_sect .soe_sect_cont .soe_event_dtls .venue_type span.fake_link:hover {
+      text-decoration: underline; }
   .soe_sect .soe_sect_cont .soe_event_dtls .soe_event_dtls_foot {
     color: #000;
     font-size: 12px;
