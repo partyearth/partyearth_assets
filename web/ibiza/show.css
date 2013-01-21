@@ -2397,34 +2397,26 @@ td.right_side.pod_sides {
   width: 220px;
   height: 383px;
   overflow: hidden; }
-
-.ibiza_desc_content .headline {
-  *line-height: 33px;
-  /*FOR IE7*/ }
-
-.ibiza_desc_content p {
-  margin: 0;
-  padding: 0; }
-
-.ibiza_desc_content .desc_info {
-  height: 89px;
-  overflow: hidden;
-  position: relative; }
-
-.ibiza_desc_content .schedule_link {
-  background-position: 134px -2904px; }
+  .ibiza_desc_content p {
+    margin: 0;
+    padding: 0; }
+  .ibiza_desc_content .desc_info {
+    position: relative;
+    height: 89px;
+    overflow: hidden; }
+  .ibiza_desc_content .schedule_link {
+    background-position: 134px -2904px; }
 
 /* BEGIN VIDEO, PHOTOS, and MAP SECTION
 ------------------------------------------ */
 .vid_gal_map {
   margin: 0 0 0 15px;
   width: 480px; }
-
-.vid_gal_map #videos_info,
-.vid_gal_map #gal_info,
-.vid_gal_map #map_info {
-  height: 360px;
-  width: 460px; }
+  .vid_gal_map #videos_info,
+  .vid_gal_map #gal_info,
+  .vid_gal_map #map_info {
+    width: 460px;
+    height: 360px; }
 
 /* FOR VIDEOS
 ------------------------------- */
@@ -2529,43 +2521,34 @@ td.right_side.pod_sides {
 ------------------------------------------------------------ */
 .soe_info .headline {
   margin: 0 0 5px; }
-
 .soe_info .venue_info {
   width: 372px; }
 
 .venue_details {
   width: 320px; }
-
-.venue_details.venue {
-  width: 343px; }
-
-.venue_details p {
-  padding: 0;
-  line-height: 16px; }
-
-.venue_details .venue_photo {
-  float: left;
-  width: 82px;
-  height: 79px;
-  margin: 0 15px 10px 0; }
-
-.venue_details .venue_photo img {
-  width: 82px;
-  height: 79px; }
-
-.venue_details.venue .venue_desc {
-  margin: 0 0 10px; }
-
-.venue_details.venue .venue_desc p {
-  height: 65px;
-  overflow: hidden; }
-
-.venue_details .venue_desc .read_more_txt_link_right {
-  background-position: 60px -2904px; }
-
-.venue_details .small_text {
-  font-size: 11px;
-  line-height: 13px; }
+  .venue_details.venue {
+    width: 343px; }
+  .venue_details p {
+    padding: 0;
+    line-height: 16px; }
+  .venue_details .venue_photo {
+    float: left;
+    width: 82px;
+    height: 79px;
+    margin: 0 15px 10px 0; }
+    .venue_details .venue_photo img {
+      width: 82px;
+      height: 79px; }
+  .venue_details.venue .venue_desc {
+    margin: 0 0 10px; }
+    .venue_details.venue .venue_desc p {
+      height: 65px;
+      overflow: hidden; }
+    .venue_details.venue .venue_desc .read_more_txt_link_right {
+      background-position: 60px -2904px; }
+  .venue_details .small_text {
+    font-size: 11px;
+    line-height: 13px; }
 
 .asterisk.blue_text {
   font-size: 20px;
@@ -2577,83 +2560,62 @@ td.right_side.pod_sides {
   width: 342px; }
 
 .schedule_nav .logo {
-  background: url(/assets/ibiza/ibiza_sprite.png) -200px -370px no-repeat transparent;
-  cursor: pointer;
   float: left;
+  width: 68px;
   height: 65px;
   margin: 0 23px 0 0;
-  width: 68px; }
-
-.schedule_nav .logo.last {
-  margin-right: 0; }
-
-.schedule_nav .logo.spot1 {
-  background-position: -200px -435px; }
-
-.schedule_nav .logo.spot1:hover,
-.schedule_nav .logo.spot1.selected {
-  background-position: -200px -370px; }
-
-.schedule_nav .logo.spot2 {
-  background-position: -268px -435px; }
-
-.schedule_nav .logo.spot2:hover,
-.schedule_nav .logo.spot2.selected {
-  background-position: -268px -370px; }
-
-.schedule_nav .logo.spot3 {
-  background-position: -336px -435px; }
-
-.schedule_nav .logo.spot3:hover,
-.schedule_nav .logo.spot3.selected {
-  background-position: -336px -370px; }
-
-.schedule_nav .logo.spot4 {
-  background-position: -404px -435px; }
-
-.schedule_nav .logo.spot4:hover,
-.schedule_nav .logo.spot4.selected {
-  background-position: -404px -370px; }
-
-.schedule_nav .logo.spot5 {
-  background-position: -200px -565px; }
-
-.schedule_nav .logo.spot5:hover,
-.schedule_nav .logo.spot5.selected {
-  background-position: -200px -500px; }
-
-.schedule_nav .logo.spot6 {
-  background-position: -268px -565px; }
-
-.schedule_nav .logo.spot6:hover,
-.schedule_nav .logo.spot6.selected {
-  background-position: -268px -500px; }
-
-.schedule_nav .logo.spot7 {
-  background-position: -336px -565px; }
-
-.schedule_nav .logo.spot7:hover,
-.schedule_nav .logo.spot7.selected {
-  background-position: -336px -500px; }
-
-.schedule_nav .logo.spot8 {
-  background-position: -404px -565px; }
-
-.schedule_nav .logo.spot8:hover,
-.schedule_nav .logo.spot8.selected {
-  background-position: -404px -500px; }
+  background: url(/assets/ibiza/ibiza_sprite.png) -200px -370px no-repeat transparent;
+  cursor: pointer; }
+  .schedule_nav .logo.last {
+    margin-right: 0; }
+  .schedule_nav .logo.spot1 {
+    background-position: -200px -435px; }
+  .schedule_nav .logo.spot1:hover, .schedule_nav .logo.spot1.selected {
+    background-position: -200px -370px; }
+  .schedule_nav .logo.spot2 {
+    background-position: -268px -435px; }
+  .schedule_nav .logo.spot2:hover, .schedule_nav .logo.spot2.selected {
+    background-position: -268px -370px; }
+  .schedule_nav .logo.spot3 {
+    background-position: -336px -435px; }
+  .schedule_nav .logo.spot3:hover, .schedule_nav .logo.spot3.selected {
+    background-position: -336px -370px; }
+  .schedule_nav .logo.spot4 {
+    background-position: -404px -435px; }
+  .schedule_nav .logo.spot4:hover, .schedule_nav .logo.spot4.selected {
+    background-position: -404px -370px; }
+  .schedule_nav .logo.spot5 {
+    background-position: -200px -565px; }
+  .schedule_nav .logo.spot5:hover, .schedule_nav .logo.spot5.selected {
+    background-position: -200px -500px; }
+  .schedule_nav .logo.spot6 {
+    background-position: -268px -565px; }
+  .schedule_nav .logo.spot6:hover, .schedule_nav .logo.spot6.selected {
+    background-position: -268px -500px; }
+  .schedule_nav .logo.spot7 {
+    background-position: -336px -565px; }
+  .schedule_nav .logo.spot7:hover, .schedule_nav .logo.spot7.selected {
+    background-position: -336px -500px; }
+  .schedule_nav .logo.spot8 {
+    background-position: -404px -565px; }
+  .schedule_nav .logo.spot8:hover, .schedule_nav .logo.spot8.selected {
+    background-position: -404px -500px; }
 
 .schedule_nav .all_events {
   font-size: 10px;
   cursor: pointer; }
+  .schedule_nav .all_events:hover .blue_link {
+    color: #597686; }
 
-.schedule_nav .all_events .blue_link {
-  /*FOR IE7*/
-  *position: relative;
-  *top: 2px; }
-
-.schedule_nav .all_events:hover .blue_link {
-  color: #597686; }
+/* Accordion Schedule Override */
+.soe_sect .soe_sect_cont .soe_event_xtra {
+  position: relative;
+  vertical-align: top;
+  text-align: right; }
+  .soe_sect .soe_sect_cont .soe_event_xtra .add_to_calendar {
+    position: absolute;
+    right: 0;
+    bottom: 12px; }
 
 /* RIGHT SIDEBAR
 ------------------------------------------*/
@@ -2714,7 +2676,7 @@ td.right_side.pod_sides {
   #right_sidebar .title {
     display: block;
     margin: 0 0 3px;
-    line-height: 16px;
+    line-height: 15px;
     text-decoration: underline; }
     #right_sidebar .title:hover {
       color: #000; }
@@ -2817,7 +2779,8 @@ td.right_side.pod_sides {
     #right_sidebar .list .list_item .venue_type {
       margin: 0;
       padding: 0;
-      color: #6C8898; }
+      color: #6C8898;
+      line-height: 11px; }
       #right_sidebar .list .list_item .venue_type a, #right_sidebar .list .list_item .venue_type a:link, #right_sidebar .list .list_item .venue_type a:visited {
         color: #6C8898; }
         #right_sidebar .list .list_item .venue_type a:hover, #right_sidebar .list .list_item .venue_type a:link:hover, #right_sidebar .list .list_item .venue_type a:visited:hover {

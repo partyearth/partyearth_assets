@@ -1,0 +1,422 @@
+/* STYLES FOR RIGHT SIDEBAR
+-----------------------------------------------------
+:: Styles for the right sidebar and universal elements like pods.
+----------------------------------------------------- */
+#right_sidebar {
+  /* Lists used in Pods. If list needs specific styles override specific attributes in seperate stylesheet..*/
+  /* Pod list stripped down with no border/padding etc. */
+  /* Pod list with a thumbnail next to each item */
+  /* Pod footer used on some pods. Any that goes in the footer should be added here.*/
+  /* Little orange arrow mostly used on pod footer after a link. */
+  /* tabs on ibiza and pamplona pages */
+  /* Styles for Popular Entertainers/DJs */
+  /* Styles for the Get Paid To Party pods */ }
+  #right_sidebar h3, #right_sidebar .featured .title {
+    display: block;
+    color: #375363;
+    font-size: 24px;
+    font-weight: normal;
+    line-height: 28px;
+    margin: 0 0 8px;
+    padding: 0 0 8px;
+    border-bottom: 1px dashed #adc0c9;
+    color: #375363; }
+    #right_sidebar h3 a, #right_sidebar h3 a:link, #right_sidebar h3 a:visited, #right_sidebar .featured .title a, #right_sidebar .featured .title a:link, #right_sidebar .featured .title a:visited {
+      color: #375363;
+      text-decoration: underline; }
+      #right_sidebar h3 a:hover, #right_sidebar h3 a:link:hover, #right_sidebar h3 a:visited:hover, #right_sidebar .featured .title a:hover, #right_sidebar .featured .title a:link:hover, #right_sidebar .featured .title a:visited:hover {
+        color: #000; }
+    #right_sidebar h3.small, #right_sidebar .featured .title.small {
+      margin: 0 0 6px;
+      padding: 0;
+      color: #09F;
+      font-size: 15px;
+      font-weight: bold;
+      line-height: 16px;
+      border-bottom: 0; }
+  #right_sidebar .title {
+    display: block;
+    margin: 0 0 3px;
+    line-height: 15px;
+    text-decoration: underline; }
+    #right_sidebar .title:hover {
+      color: #000; }
+  #right_sidebar .desc {
+    position: relative;
+    overflow: hidden; }
+    #right_sidebar .desc a, #right_sidebar .desc a:link, #right_sidebar .desc a:visited {
+      color: #09f; }
+    #right_sidebar .desc .neighborhood {
+      color: #8ea8b5;
+      font-size: 10px;
+      line-height: 10px;
+      text-transform: uppercase; }
+  #right_sidebar .thumbnail_link {
+    display: block;
+    margin: 0 0 8px;
+    width: 98px;
+    height: 65px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    overflow: hidden; }
+    #right_sidebar .thumbnail_link img {
+      display: block;
+      width: 98px;
+      height: 65px;
+      border-radius: 1px; }
+  #right_sidebar .quick_nav_links {
+    border-bottom: 1px dashed #ADC0C9;
+    padding: 0 0 5px;
+    margin: 0 0 5px; }
+    #right_sidebar .quick_nav_links a, #right_sidebar .quick_nav_links a:link, #right_sidebar .quick_nav_links a:visited {
+      color: #09f; }
+      #right_sidebar .quick_nav_links a:hover, #right_sidebar .quick_nav_links a:link:hover, #right_sidebar .quick_nav_links a:visited:hover {
+        color: #597686; }
+  #right_sidebar .name {
+    color: #09f;
+    font-size: 10px;
+    line-height: 10px;
+    text-transform: uppercase; }
+    #right_sidebar .name .date {
+      display: block;
+      float: left;
+      margin: 0 4px 0 0;
+      padding: 0 6px 0 0;
+      border-right: 1px solid #e4ebef; }
+    #right_sidebar .name a {
+      display: inline-block;
+      width: 160px;
+      height: 10px;
+      color: #09f;
+      text-decoration: none;
+      text-transform: none;
+      overflow: hidden; }
+  #right_sidebar .changer .name {
+    height: 10px;
+    margin: 0 0 6px;
+    padding: 0 0 6px;
+    vertical-align: top;
+    border-bottom: 1px solid #dae4e9; }
+  #right_sidebar .list .list_item.featured .thumbnail_link,
+  #right_sidebar .changer .thumbnail_link {
+    width: 210px;
+    height: 140px;
+    border: 1px solid #adc0c9;
+    border-radius: 4px; }
+    #right_sidebar .list .list_item.featured .thumbnail_link img,
+    #right_sidebar .changer .thumbnail_link img {
+      width: 210px;
+      height: 140px;
+      border-radius: 3px; }
+  #right_sidebar .list .list_item {
+    margin: 8px 0 0;
+    padding: 8px 0 0;
+    border-top: 1px dashed #adc0c9; }
+    #right_sidebar .list .list_item.featured {
+      margin: 0 0 15px;
+      padding: 0 0 5px;
+      border-bottom: 1px solid #8ea8b5; }
+      #right_sidebar .list .list_item.featured .title {
+        margin: 0 0 8px;
+        padding: 0;
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 20px;
+        border: none; }
+      #right_sidebar .list .list_item.featured .venue_type {
+        margin: 0 0 6px; }
+    #right_sidebar .list .list_item p {
+      padding: 0;
+      line-height: 16px; }
+      #right_sidebar .list .list_item p.name {
+        line-height: 10px; }
+    #right_sidebar .list .list_item .date {
+      color: #09f;
+      font-size: 9px;
+      line-height: 11px;
+      text-transform: uppercase; }
+    #right_sidebar .list .list_item .arrow {
+      color: #09f; }
+    #right_sidebar .list .list_item .venue_type {
+      margin: 0;
+      padding: 0;
+      color: #6C8898;
+      line-height: 11px; }
+      #right_sidebar .list .list_item .venue_type a, #right_sidebar .list .list_item .venue_type a:link, #right_sidebar .list .list_item .venue_type a:visited {
+        color: #6C8898; }
+        #right_sidebar .list .list_item .venue_type a:hover, #right_sidebar .list .list_item .venue_type a:link:hover, #right_sidebar .list .list_item .venue_type a:visited:hover {
+          color: #597686;
+          text-decoration: underline; }
+    #right_sidebar .list .list_item:first-child {
+      margin-top: 0;
+      padding-top: 0;
+      border-top: none; }
+    #right_sidebar .list .list_item .name a, #right_sidebar .list .list_item .name a:link, #right_sidebar .list .list_item .name a:visited {
+      color: #09f; }
+      #right_sidebar .list .list_item .name a:hover, #right_sidebar .list .list_item .name a:link:hover, #right_sidebar .list .list_item .name a:visited:hover {
+        color: #597686;
+        text-decoration: underline; }
+  #right_sidebar .list a {
+    color: #000; }
+    #right_sidebar .list a:hover {
+      color: #597686; }
+  #right_sidebar .simple_list .list_item {
+    margin: 0 0 3px;
+    padding: 0;
+    border: none; }
+    #right_sidebar .simple_list .list_item a, #right_sidebar .simple_list .list_item a:link, #right_sidebar .simple_list .list_item a:visited {
+      color: #375363; }
+      #right_sidebar .simple_list .list_item a:hover, #right_sidebar .simple_list .list_item a:link:hover, #right_sidebar .simple_list .list_item a:visited:hover {
+        color: #000; }
+  #right_sidebar .photo_list .thumbnail_link {
+    float: left;
+    width: 75px;
+    height: 50px;
+    margin: 0 9px 0 0; }
+    #right_sidebar .photo_list .thumbnail_link img {
+      width: 75px;
+      height: 50px; }
+  #right_sidebar .photo_list .details {
+    float: left;
+    width: 120px; }
+    #right_sidebar .photo_list .details .title {
+      line-height: 15px;
+      margin: 0 0 3px;
+      color: #000; }
+      #right_sidebar .photo_list .details .title:hover {
+        color: #597686; }
+  #right_sidebar .pod_footer {
+    margin: 5px 0 0;
+    padding: 5px 0 0;
+    border-top: 1px solid #adc0c9; }
+    #right_sidebar .pod_footer a, #right_sidebar .pod_footer a:link, #right_sidebar .pod_footer a:visited, #right_sidebar .pod_footer .fake_link {
+      float: right;
+      color: #09f;
+      text-align: right;
+      font-size: 11px;
+      line-height: 11px;
+      text-decoration: none; }
+      #right_sidebar .pod_footer a:hover, #right_sidebar .pod_footer a:link:hover, #right_sidebar .pod_footer a:visited:hover, #right_sidebar .pod_footer .fake_link:hover {
+        color: #597686;
+        text-decoration: underline; }
+      #right_sidebar .pod_footer a span, #right_sidebar .pod_footer a:link span, #right_sidebar .pod_footer a:visited span, #right_sidebar .pod_footer .fake_link span {
+        text-decoration: underline; }
+        #right_sidebar .pod_footer a span.arrow, #right_sidebar .pod_footer a:link span.arrow, #right_sidebar .pod_footer a:visited span.arrow, #right_sidebar .pod_footer .fake_link span.arrow {
+          top: 0;
+          color: #ff9000;
+          text-decoration: none; }
+  #right_sidebar .arrow {
+    display: inline-block;
+    position: relative;
+    width: 6px;
+    font-family: "Times New Roman";
+    font-size: 17px;
+    font-weight: normal;
+    line-height: 17px;
+    text-indent: -10px;
+    overflow: hidden; }
+  #right_sidebar .tabs {
+    margin-top: 33px; }
+    #right_sidebar .tabs:first-child {
+      margin-top: 19px; }
+  #right_sidebar .popular_entertainers .list li {
+    position: relative;
+    padding: 0 0 0 10px; }
+    #right_sidebar .popular_entertainers .list li .arrow {
+      display: none;
+      position: absolute;
+      left: 0; }
+    #right_sidebar .popular_entertainers .list li.selected .arrow {
+      display: inline-block; }
+  #right_sidebar .gptp_right_rail h3 {
+    padding: 0;
+    font-weight: normal;
+    border: none; }
+  #right_sidebar .gptp_right_rail ul li {
+    float: left;
+    margin: 0 4px 4px 0; }
+    #right_sidebar .gptp_right_rail ul li:nth-child(4n) {
+      margin-right: 0; }
+    #right_sidebar .gptp_right_rail ul li a, #right_sidebar .gptp_right_rail ul li a:link, #right_sidebar .gptp_right_rail ul li a:visited {
+      display: block;
+      width: 50px;
+      height: 50px; }
+      #right_sidebar .gptp_right_rail ul li a img, #right_sidebar .gptp_right_rail ul li a:link img, #right_sidebar .gptp_right_rail ul li a:visited img {
+        opacity: .85; }
+      #right_sidebar .gptp_right_rail ul li a:hover img, #right_sidebar .gptp_right_rail ul li a:link:hover img, #right_sidebar .gptp_right_rail ul li a:visited:hover img {
+        opacity: 100; }
+  #right_sidebar .gptp_right_rail .links {
+    font-size: 11px;
+    line-height: 11px; }
+    #right_sidebar .gptp_right_rail .links a, #right_sidebar .gptp_right_rail .links .fake_link {
+      text-decoration: underline; }
+    #right_sidebar .gptp_right_rail .links .arrow {
+      color: #ff9000; }
+    #right_sidebar .gptp_right_rail .links .learn_link {
+      float: left; }
+    #right_sidebar .gptp_right_rail .links .meet_link {
+      float: right; }
+  #right_sidebar .gptp_right_rail .buttons {
+    width: 217px;
+    margin: 8px 0 0;
+    padding: 8px 0 0;
+    border-top: 1px solid #8ea8b5; }
+    #right_sidebar .gptp_right_rail .buttons a, #right_sidebar .gptp_right_rail .buttons a:link, #right_sidebar .gptp_right_rail .buttons a:visited {
+      display: block;
+      position: relative;
+      float: left;
+      height: 46px;
+      margin-top: 2px;
+      margin-bottom: -6px;
+      background-image: url(/assets/common/right_colmun_sprite-8c284fa3afb4f1900ae39e89897c28a0.png); }
+      #right_sidebar .gptp_right_rail .buttons a.writer, #right_sidebar .gptp_right_rail .buttons a:link.writer, #right_sidebar .gptp_right_rail .buttons a:visited.writer {
+        left: -2px;
+        width: 85px;
+        background-position: -1px -422px; }
+        #right_sidebar .gptp_right_rail .buttons a.writer:hover, #right_sidebar .gptp_right_rail .buttons a:link.writer:hover, #right_sidebar .gptp_right_rail .buttons a:visited.writer:hover {
+          background-position: -1px -476px; }
+      #right_sidebar .gptp_right_rail .buttons a.photographer, #right_sidebar .gptp_right_rail .buttons a:link.photographer, #right_sidebar .gptp_right_rail .buttons a:visited.photographer {
+        right: -3px;
+        width: 132px;
+        background-position: -88px -422px; }
+        #right_sidebar .gptp_right_rail .buttons a.photographer:hover, #right_sidebar .gptp_right_rail .buttons a:link.photographer:hover, #right_sidebar .gptp_right_rail .buttons a:visited.photographer:hover {
+          background-position: -88px -476px; }
+  #right_sidebar .missing_venue_event,
+  #right_sidebar .share_btn,
+  #right_sidebar .subscribe_btn,
+  #right_sidebar .follow_btns,
+  #right_sidebar .ad {
+    cursor: pointer;
+    background-image: url(/assets/common/right_colmun_sprite-8c284fa3afb4f1900ae39e89897c28a0.png);
+    background-repeat: no-repeat; }
+  #right_sidebar #right_rail_simple_share {
+    position: absolute;
+    top: -60px;
+    left: -9px; }
+  #right_sidebar .missing_venue_event {
+    position: relative;
+    left: -2px;
+    width: 246px;
+    height: 154px;
+    margin: 0 0 8px;
+    background-position: -291px -233px; }
+    #right_sidebar .missing_venue_event:hover {
+      background-position: -291px -389px; }
+  #right_sidebar .share_btn,
+  #right_sidebar .subscribe_btn,
+  #right_sidebar .follow_btns {
+    position: relative;
+    right: 0;
+    width: 243px;
+    height: 44px;
+    margin: 0 0 9px; }
+  #right_sidebar .share_btn {
+    background-position: -291px -52px; }
+  #right_sidebar .subscribe_btn {
+    background-position: -291px -102px; }
+  #right_sidebar .follow_btns {
+    background-position: -291px -152px;
+    cursor: default !important; }
+    #right_sidebar .follow_btns a {
+      display: block;
+      position: absolute;
+      top: 7px;
+      width: 32px;
+      height: 32px;
+      margin: 0; }
+      #right_sidebar .follow_btns a img {
+        width: 32px;
+        height: 32px; }
+    #right_sidebar .follow_btns .gig-followbar-providerButton {
+      right: 41px; }
+    #right_sidebar .follow_btns .gig-followbar-providerButton-last {
+      right: 5px; }
+  #right_sidebar .ad {
+    width: 240px;
+    height: 400px;
+    background-position: 0 0; }
+/* Recent Articles Sidebar Pod */
+#recent_articles .list .list_item {
+  float: left;
+  width: 100px;
+  margin: 0 0 0 12px;
+  padding: 0;
+  line-height: 15px;
+  border-top: none; }
+  #recent_articles .list .list_item:first-child + li {
+    margin-left: 0; }
+  #recent_articles .list .list_item .thumbnail_link {
+    margin: 0 0 5px; }
+  #recent_articles .list .list_item .title {
+    font-size: 11px;
+    line-height: 13px; }
+  #recent_articles .list .list_item.featured {
+    float: none;
+    width: auto;
+    margin-left: 0;
+    padding-bottom: 15px; }
+    #recent_articles .list .list_item.featured .thumbnail_link {
+      margin: 0 0 15px; }
+/*
+
+
+*/
+/* LEFT COLUMN
+---------------------------------------------*/
+#left_container .neighborhoods_content .top_section_header .blue_header {
+  margin: 0 0 12px; }
+#left_container .neighborhoods_content .neighborhood_list .neighborhood_item {
+  float: left;
+  width: 167px;
+  margin: 0 0 0 12px; }
+  #left_container .neighborhoods_content .neighborhood_list .neighborhood_item:first-child {
+    margin-left: 0; }
+  #left_container .neighborhoods_content .neighborhood_list .neighborhood_item .headline.sub_headline {
+    height: 19px;
+    margin: 0 0 3px;
+    font-size: 16px;
+    line-height: 18px;
+    text-decoration: underline;
+    overflow: hidden; }
+  #left_container .neighborhoods_content .neighborhood_list .neighborhood_item .thumbnail_link {
+    display: block;
+    width: 165px;
+    height: 110px;
+    margin: 0 0 5px;
+    border: 1px solid #adc0c9;
+    border-radius: 4px;
+    overflow: hidden; }
+    #left_container .neighborhoods_content .neighborhood_list .neighborhood_item .thumbnail_link img {
+      display: block;
+      width: 165px;
+      height: 110px; }
+  #left_container .neighborhoods_content .neighborhood_list .neighborhood_item .desc {
+    position: relative;
+    width: 159px;
+    height: 64px;
+    padding: 0;
+    font-size: 12px;
+    line-height: 16px;
+    overflow: hidden; }
+    #left_container .neighborhoods_content .neighborhood_list .neighborhood_item .desc .ellipsis {
+      display: inline-block;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      background-color: #fff;
+      overflow: hidden; }
+      #left_container .neighborhoods_content .neighborhood_list .neighborhood_item .desc .ellipsis a, #left_container .neighborhoods_content .neighborhood_list .neighborhood_item .desc .ellipsis a:link, #left_container .neighborhoods_content .neighborhood_list .neighborhood_item .desc .ellipsis a:visited {
+        position: relative;
+        bottom: 2px;
+        font-size: 11px; }
+#left_container .neighborhoods_content .neighborhood_list.two_line_title .neighborhood_item .headline.sub_headline {
+  height: 38px; }
+
+/* RIGHT COLUMN
+---------------------------------------------*/
+#right_sidebar .ad_top .ad_240x200 {
+  display: block; }
+#right_sidebar .missing_venue_event,
+#right_sidebar .ad_240x200,
+#right_sidebar .ad {
+  display: none; }

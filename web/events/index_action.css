@@ -97,7 +97,7 @@
   #right_sidebar .title {
     display: block;
     margin: 0 0 3px;
-    line-height: 16px;
+    line-height: 15px;
     text-decoration: underline; }
     #right_sidebar .title:hover {
       color: #000; }
@@ -200,7 +200,8 @@
     #right_sidebar .list .list_item .venue_type {
       margin: 0;
       padding: 0;
-      color: #6C8898; }
+      color: #6C8898;
+      line-height: 11px; }
       #right_sidebar .list .list_item .venue_type a, #right_sidebar .list .list_item .venue_type a:link, #right_sidebar .list .list_item .venue_type a:visited {
         color: #6C8898; }
         #right_sidebar .list .list_item .venue_type a:hover, #right_sidebar .list .list_item .venue_type a:link:hover, #right_sidebar .list .list_item .venue_type a:visited:hover {

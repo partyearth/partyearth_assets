@@ -918,12 +918,9 @@
 .carousel_3 {
   /* START CAROUSEL BOX AND SPOT ITEM HEIGHTS ------ */
   /* Default height of the box and spot item which is a venue spot item */
-  /* Add when adding address and add to calendar to events spot item */
-  /* $boxHeight: 344px; /* Remove when adding address and add to calendar to events spot item */
   /* If we have 2 line titles increase the height by the line height of the '.name' (18px) element. */
   /* If at least 1 spot item address field goes to 3 lines increase height by line height of 'address' element. */
   /* If it is a list of event venues increase the height by 17 */
-  /* END CAROUSEL BOX AND SPOT ITEM HEIGHTS ------ */
   /* Override styles from liked_by.scss */ }
   .carousel_3 .page_count {
     float: right;
@@ -1215,7 +1212,7 @@
   #right_sidebar .title {
     display: block;
     margin: 0 0 3px;
-    line-height: 16px;
+    line-height: 15px;
     text-decoration: underline; }
     #right_sidebar .title:hover {
       color: #000; }
@@ -1318,7 +1315,8 @@
     #right_sidebar .list .list_item .venue_type {
       margin: 0;
       padding: 0;
-      color: #6C8898; }
+      color: #6C8898;
+      line-height: 11px; }
       #right_sidebar .list .list_item .venue_type a, #right_sidebar .list .list_item .venue_type a:link, #right_sidebar .list .list_item .venue_type a:visited {
         color: #6C8898; }
         #right_sidebar .list .list_item .venue_type a:hover, #right_sidebar .list .list_item .venue_type a:link:hover, #right_sidebar .list .list_item .venue_type a:visited:hover {
