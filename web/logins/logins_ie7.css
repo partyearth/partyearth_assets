@@ -1,0 +1,14 @@
+#login_info label {
+  margin: -10px 25px 0 0;
+  line-height: 28px; }
+
+#login_info.reset_password label {
+  line-height: 80px;
+  margin: -30px 25px 0 0; }
+
+#login_info.reset_password .inline-errors {
+  position: absolute; }
+
+#login_info.reset_password .inputs img {
+  position: relative;
+  top: -22px; }

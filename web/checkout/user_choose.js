@@ -1,0 +1,1 @@
+$(document).ready(function(){pe.validate_on_blur($("#name"),pe.validation.ensure_not_blank);pe.validate_on_blur($("#password"),pe.validation.ensure_not_blank);pe.validate_before_submit($("form"));$("#name").focus();pe.init_page_framework()});

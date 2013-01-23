@@ -1,0 +1,260 @@
+.day_changer_head {
+  width: 715px;
+  /* Fix for linux */
+  margin: 0 0 8px; }
+  .day_changer_head h1.blue_header,
+  .day_changer_head h2.blue_header {
+    width: 345px;
+    font-size: 20px; }
+  .day_changer_head .blue_header {
+    float: left;
+    margin: 0; }
+    .day_changer_head .blue_header.day_changer_heads {
+      width: auto;
+      padding: 9px 12px 10px;
+      color: #bbe3fe;
+      font-size: 14px;
+      line-height: 14px;
+      text-align: center;
+      text-transform: uppercase;
+      text-shadow: none;
+      border-left: 1px dotted #40b0fd;
+      cursor: pointer; }
+      .day_changer_head .blue_header.day_changer_heads span {
+        display: block;
+        margin: 3px 0 0;
+        font-size: 8px;
+        line-height: 8px; }
+      .day_changer_head .blue_header.day_changer_heads.Selected {
+        position: relative;
+        color: white;
+        background-color: #f60;
+        background-image: url(/assets/content_bg/browse_by_today_selected_bg.gif);
+        background-repeat: repeat-x;
+        border-top: 0px inset #FFB400;
+        border-bottom: 0px inset #A14100;
+        border-radius: 4px;
+        box-shadow: 0 1px 3px #bfbfbf;
+        cursor: default;
+        filter: none; }
+        .day_changer_head .blue_header.day_changer_heads.Selected:hover {
+          background-image: url(/assets/content_bg/browse_by_today_selected_bg.gif); }
+      .day_changer_head .blue_header.day_changer_heads:hover {
+        color: #fff;
+        background: -webkit-gradient(linear, 0 0, 0 100%, from(#0099ff), to(#076fd1));
+        background: -moz-linear-gradient(top, #0099ff, #076fd1);
+        cursor: pointer; }
+  .day_changer_head .day_changer_more {
+    position: relative;
+    float: left; }
+    .day_changer_head .day_changer_more .date_picker_block {
+      top: 52px;
+      left: -25px;
+      width: 146px;
+      height: 225px;
+      box-shadow: 0 1px 2px #628495; }
+      .day_changer_head .day_changer_more .date_picker_block .point {
+        left: 102px; }
+      .day_changer_head .day_changer_more .date_picker_block .Notice {
+        font-size: 11px; }
+      .day_changer_head .day_changer_more .date_picker_block .datepicker {
+        width: 149px !important; }
+        .day_changer_head .day_changer_more .date_picker_block .datepicker .datepickerContainer {
+          width: 149px !important; }
+      .day_changer_head .day_changer_more .date_picker_block .controls .clear_link {
+        display: none; }
+/*
+
+*/
+@media only screen and (max-device-width: 1280px) {
+  /* For android layouts only */
+  .top_section_header .blue_header {
+    width: 323px; } }
+.day_changer_cont.day_changer_tomor {
+  display: none; }
+.day_changer_cont .featured_item {
+  position: relative;
+  float: left;
+  width: 347px;
+  min-height: 311px;
+  margin: 13px 1px 0 0; }
+  .day_changer_cont .featured_item .thumbnail_link {
+    display: block;
+    width: 345px;
+    height: 230px;
+    padding-bottom: 57px;
+    border: 1px solid #ccc;
+    border-bottom: none;
+    border-radius: 4px 4px 0 0;
+    overflow: hidden; }
+    .day_changer_cont .featured_item .thumbnail_link img {
+      display: block;
+      width: 345px;
+      height: 230px; }
+  .day_changer_cont .featured_item .featured_caption {
+    position: absolute;
+    bottom: 23px;
+    left: -29px;
+    width: 335px;
+    padding: 10px 10px 10px 29px;
+    background-color: #375363;
+    background: url(/assets/home/featured_item_bg_repeat.png);
+    background-repeat: repeat-y;
+    border-left: 2px solid #6da5c4;
+    border-radius: 2px 0 2px 2px; }
+    .day_changer_cont .featured_item .featured_caption .headline.sub_headline {
+      display: block;
+      margin: 0 0 6px;
+      font-size: 20px;
+      font-weight: bold;
+      line-height: 21px; }
+      .day_changer_cont .featured_item .featured_caption .headline.sub_headline a, .day_changer_cont .featured_item .featured_caption .headline.sub_headline a:visited {
+        color: #fff;
+        text-decoration: none; }
+        .day_changer_cont .featured_item .featured_caption .headline.sub_headline a:hover, .day_changer_cont .featured_item .featured_caption .headline.sub_headline a:visited:hover {
+          text-decoration: underline; }
+    .day_changer_cont .featured_item .featured_caption .venue_type {
+      margin: 0; }
+      .day_changer_cont .featured_item .featured_caption .venue_type .fake_link {
+        color: #adc0c9; }
+    .day_changer_cont .featured_item .featured_caption .anchor_point {
+      position: absolute;
+      bottom: -12px;
+      left: -2px;
+      width: 0;
+      height: 0;
+      border: 6px solid;
+      border-color: #000 #000 transparent transparent;
+      overflow: hidden; }
+  .day_changer_cont .featured_item .quick_nav_links {
+    margin: 8px 0 0;
+    padding: 0; }
+  .day_changer_cont .featured_item p {
+    padding-bottom: 0; }
+  .day_changer_cont .featured_item .desc {
+    position: relative;
+    left: -25px;
+    width: 334px;
+    height: 113px;
+    padding: 0 0 0 25px;
+    overflow: hidden; }
+    .day_changer_cont .featured_item .desc .info {
+      display: block;
+      margin: 2px 0 0;
+      color: #000;
+      font-size: 12px;
+      line-height: 16px;
+      text-decoration: none; }
+.day_changer_cont .vertical_slider {
+  float: left;
+  width: 356px; }
+  .day_changer_cont .vertical_slider .prev_wrapper,
+  .day_changer_cont .vertical_slider .next_wrapper {
+    position: relative;
+    left: 24px;
+    width: 331px;
+    height: 14px;
+    background: url(/assets/home/homepage_sprite.png) no-repeat transparent; }
+    .day_changer_cont .vertical_slider .prev_wrapper .btn,
+    .day_changer_cont .vertical_slider .next_wrapper .btn {
+      width: 28px;
+      height: 14px;
+      margin: 0 0 0 155px;
+      background: url(/assets/home/homepage_sprite.png) no-repeat transparent;
+      cursor: pointer; }
+  .day_changer_cont .vertical_slider .prev_wrapper {
+    background-position: -248px -411px; }
+    .day_changer_cont .vertical_slider .prev_wrapper .btn {
+      background-position: -403px -411px; }
+    .day_changer_cont .vertical_slider .prev_wrapper .btn:hover {
+      background-position: -755px -411px; }
+  .day_changer_cont .vertical_slider .next_wrapper {
+    background-position: -248px -431px; }
+    .day_changer_cont .vertical_slider .next_wrapper .btn {
+      background-position: -403px -431px; }
+    .day_changer_cont .vertical_slider .next_wrapper .btn:hover {
+      background-position: -755px -431px; }
+  .day_changer_cont .vertical_slider .items_collection {
+    width: 356px;
+    height: 297px;
+    margin: 5px 0;
+    overflow: hidden; }
+    .day_changer_cont .vertical_slider .items_collection .small_items li.item {
+      padding: 0 0 0 25px; }
+      .day_changer_cont .vertical_slider .items_collection .small_items li.item .details_wrapper {
+        height: 70px;
+        padding: 13px 10px 14px 0;
+        color: #000;
+        font-size: 11px;
+        line-height: 13px;
+        overflow: hidden;
+        border-bottom: 1px dashed #adc0c9; }
+        .day_changer_cont .vertical_slider .items_collection .small_items li.item .details_wrapper .details {
+          position: relative;
+          height: 70px;
+          overflow: hidden; }
+      .day_changer_cont .vertical_slider .items_collection .small_items li.item .thumbnail_link {
+        display: block;
+        float: left;
+        width: 98px;
+        height: 65px;
+        margin: 0 12px 0 0;
+        border: 1px solid #ccc;
+        border-radius: 2px 2px 2px 2px; }
+        .day_changer_cont .vertical_slider .items_collection .small_items li.item .thumbnail_link img {
+          display: block;
+          width: 98px;
+          height: 65px; }
+      .day_changer_cont .vertical_slider .items_collection .small_items li.item .desc {
+        padding: 0; }
+      .day_changer_cont .vertical_slider .items_collection .small_items li.item .ellipsis {
+        display: block;
+        position: absolute;
+        right: 0;
+        bottom: -1px;
+        max-width: 176px;
+        height: 15px;
+        font-size: 11px;
+        line-height: 15px;
+        background-color: #fff;
+        overflow: hidden; }
+      .day_changer_cont .vertical_slider .items_collection .small_items li.item .name {
+        display: block;
+        position: relative;
+        z-index: 0;
+        max-height: 34px;
+        margin-bottom: 2px;
+        color: #000;
+        font-size: 16px;
+        font-weight: bold;
+        text-decoration: underline;
+        line-height: 17px;
+        overflow: hidden; }
+        .day_changer_cont .vertical_slider .items_collection .small_items li.item .name:hover {
+          color: #597686; }
+      .day_changer_cont .vertical_slider .items_collection .small_items li.item .date_time {
+        display: block;
+        margin: 3px 0;
+        height: 12px;
+        color: #09f;
+        font-size: 9px;
+        line-height: 12px;
+        text-transform: uppercase;
+        overflow: hidden; }
+        .day_changer_cont .vertical_slider .items_collection .small_items li.item .date_time .small_text {
+          font-size: 10px; }
+      .day_changer_cont .vertical_slider .items_collection .small_items li.item .event_venue_name {
+        display: block;
+        color: #375363; }
+        .day_changer_cont .vertical_slider .items_collection .small_items li.item .event_venue_name:hover {
+          color: #597686; }
+      .day_changer_cont .vertical_slider .items_collection .small_items li.item .venue_type {
+        margin-bottom: 0;
+        padding: 0; }
+      .day_changer_cont .vertical_slider .items_collection .small_items li.item .featured_html {
+        display: none; }
+      .day_changer_cont .vertical_slider .items_collection .small_items li.item:hover, .day_changer_cont .vertical_slider .items_collection .small_items li.item.selected {
+        background-image: url(/assets/home/homepage_sprite.png);
+        background-position: -500px -63px; }
+        .day_changer_cont .vertical_slider .items_collection .small_items li.item:hover .ellipsis, .day_changer_cont .vertical_slider .items_collection .small_items li.item.selected .ellipsis {
+          background-color: #eff3f3; }

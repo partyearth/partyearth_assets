@@ -1,0 +1,93 @@
+.party_climate_desc {
+  position: relative; }
+  .party_climate_desc .clipped {
+    height: 75px; }
+    .party_climate_desc .clipped p {
+      padding-bottom: 0; }
+    .party_climate_desc .clipped .desc {
+      width: 340px; }
+    .party_climate_desc .clipped .thumbnails {
+      width: 345px;
+      margin: 4px 0 0 0; }
+      .party_climate_desc .clipped .thumbnails img {
+        display: block;
+        float: left;
+        width: 75px;
+        height: 50px;
+        margin: 0 0 0 11px; }
+  .party_climate_desc .clipped.long_desc .desc {
+    overflow: hidden; }
+  .party_climate_desc .long_desc .photo {
+    width: 345px; }
+    .party_climate_desc .long_desc .photo img {
+      display: block;
+      width: 345px;
+      height: 230px;
+      margin: 0 0 8px; }
+    .party_climate_desc .long_desc .photo .gallery_link {
+      font-size: 9px;
+      text-transform: uppercase;
+      height: 16px; }
+      .party_climate_desc .long_desc .photo .gallery_link .icon {
+        background: url(/assets/content_bg/application_sprite-c08e7db1866016ee73bdf3e888b0efc9.png) -123px -235px no-repeat transparent;
+        display: inline-block;
+        width: 21px;
+        height: 16px;
+        zoom: 1; }
+      .party_climate_desc .long_desc .photo .gallery_link a {
+        position: relative;
+        top: -5px; }
+    .party_climate_desc .long_desc .photo .gallery_link:hover .icon {
+      background-position: -123px -255px; }
+    .party_climate_desc .long_desc .photo .gallery_link:hover a {
+      color: #597686; }
+  .party_climate_desc .long_desc .desc {
+    overflow: auto;
+    height: 274px;
+    width: 341px;
+    padding: 0 10px 0 0; }
+  .party_climate_desc .long_desc .inner_divider.dashed {
+    height: 12px; }
+  .party_climate_desc .long_desc .hide_text {
+    font-size: 11px; }
+    .party_climate_desc .long_desc .hide_text .blue_text {
+      font-size: 13px;
+      height: auto;
+      text-indent: 0; }
+  .party_climate_desc .more_toggle {
+    position: absolute;
+    background: #fff;
+    bottom: 3px;
+    left: 263px;
+    padding: 0;
+    border: none; }
+
+.jspContainer .jspVerticalBar {
+  top: -5px; }
+  .jspContainer .jspVerticalBar .jspArrow {
+    border-width: 6px;
+    background: none;
+    border-style: solid;
+    display: block;
+    overflow: hidden;
+    left: 1px;
+    position: relative;
+    height: 0px;
+    width: 0px; }
+  .jspContainer .jspVerticalBar .jspArrowUp.jspDisabled {
+    border-color: transparent transparent #ccc transparent; }
+  .jspContainer .jspVerticalBar .jspArrowUp {
+    border-color: transparent transparent #999 transparent; }
+  .jspContainer .jspVerticalBar .jspArrowDown {
+    border-color: #999 transparent transparent transparent; }
+  .jspContainer .jspVerticalBar .jspArrowDown.jspDisabled {
+    border-color: #ccc transparent transparent transparent; }
+  .jspContainer .jspVerticalBar .jspTrack {
+    background: #e5e5e5;
+    width: 5px;
+    left: 5px;
+    padding: 4px 0; }
+    .jspContainer .jspVerticalBar .jspTrack .jspDrag {
+      background: #999;
+      left: -1px;
+      width: 7px; }

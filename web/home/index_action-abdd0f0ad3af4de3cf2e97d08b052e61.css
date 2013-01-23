@@ -1,0 +1,348 @@
+/* STYLES FOR THE MAIN CONTENT
+-------------------------------------------------------------------*/
+#home_wrapper {
+  width: 828px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 0 0 2px 2px; }
+
+#home_content {
+  position: relative;
+  min-height: 897px;
+  margin: 0 0 15px;
+  padding: 15px 200px 0;
+  box-shadow: 0 2px 5px #666; }
+
+h1 {
+  padding: 1px 10px 2px;
+  color: #dae4e9;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 1.5em;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  word-spacing: 3px;
+  background-color: #2f4756;
+  box-shadow: 0 2px 14px #999; }
+
+h2 {
+  position: relative;
+  margin: 12px 0;
+  color: #8ea8b5;
+  font-size: 20px;
+  font-weight: bold;
+  font-style: italic; }
+
+/* Styles for the polaroid images. */
+.polaroids {
+  position: absolute;
+  top: 3px; }
+  .polaroids.polaroids1 {
+    top: 14px;
+    left: -60px; }
+  .polaroids.polaroids2 {
+    right: -60px; }
+
+/* Styles for the expanding and collapsing About. */
+#about {
+  position: relative;
+  margin: 0 0 30px;
+  color: #aabdc7;
+  font-size: 11px;
+  line-height: 12px;
+  /* when collapsed. */ }
+  #about a, #about a:link, #about a:visited, #about .fake_link, #about .read_more_link, #about .read_less_link {
+    color: #aabdc7;
+    text-decoration: underline;
+    cursor: pointer; }
+    #about a:hover, #about a:link:hover, #about a:visited:hover, #about .fake_link:hover, #about .read_more_link:hover, #about .read_less_link:hover {
+      color: #09f; }
+  #about .read_more_link, #about .read_less_link {
+    color: #09f; }
+    #about .read_more_link:hover, #about .read_less_link:hover {
+      color: #597686; }
+  #about .arrow {
+    top: 1px;
+    height: auto;
+    line-height: 12px; }
+    #about .arrow.left_arrow {
+      text-indent: -1px; }
+  #about .clipped .last,
+  #about .clipped .read_less_link {
+    display: none; }
+
+/* Styles for the list of cities. */
+#city_list {
+  padding: 0 95px;
+  border-radius: 4px; }
+  #city_list h3 {
+    margin: 0 0 12px;
+    color: #09f;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 30px; }
+  #city_list ul.list_two {
+    margin-top: 30px; }
+  #city_list li {
+    margin: 0 0 3px;
+    padding: 3px 0;
+    color: #375363;
+    font-size: 20px;
+    font-family: "Francois One", sans-serif;
+    background-color: #f4f7f8; }
+    #city_list li a, #city_list li a:link, #city_list li a:visited {
+      display: block;
+      color: #375363;
+      text-decoration: none; }
+      #city_list li a:hover, #city_list li a:link:hover, #city_list li a:visited:hover {
+        color: #000; }
+    #city_list li:hover {
+      background-color: #e4ecef; }
+    #city_list li.country {
+      margin: 0 0 5px;
+      padding: 5px 0;
+      font-size: 22px;
+      font-weight: bold;
+      font-family: "Arimo", Arial, sans-serif;
+      text-transform: uppercase;
+      text-shadow: 1px 1px 1px #fff;
+      letter-spacing: 2px;
+      background-color: #dae4e9; }
+
+/* FOOTER PROPERTIES
+-------------------------------------------------------------------*/
+#footer {
+  color: #acacac;
+  text-align: left;
+  border-bottom: 1px solid #464646; }
+  #footer h3 {
+    margin: 0 0 10px;
+    color: #09f;
+    font-family: "Arimo", Arial, sans-serif !important;
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 21px; }
+  #footer h4 {
+    height: 16px;
+    color: #fff;
+    line-height: 16px;
+    overflow: hidden; }
+    #footer h4 a, #footer h4 a:link, #footer h4 a:visited {
+      color: #fff; }
+      #footer h4 a:hover, #footer h4 a:link:hover, #footer h4 a:visited:hover {
+        color: #8ea8b5; }
+  #footer h5 {
+    color: #09f;
+    font-size: 10px;
+    line-height: 11px;
+    text-transform: uppercase; }
+    #footer h5 a, #footer h5 a:link, #footer h5 a:visited, #footer h5 .fake_link {
+      color: #597686;
+      text-transform: none; }
+      #footer h5 a:hover, #footer h5 a:link:hover, #footer h5 a:visited:hover, #footer h5 .fake_link:hover {
+        color: #fff; }
+  #footer p {
+    padding: 0;
+    font-size: 11px;
+    line-height: 13px; }
+  #footer a, #footer a:link, #footer a:visited .fake_link {
+    text-decoration: none; }
+    #footer a:hover, #footer a:link:hover, #footer a:visited .fake_link:hover {
+      text-decoration: underline; }
+  #footer .thumbnail_link {
+    display: block;
+    margin: 0 0 8px;
+    width: 165px;
+    height: 110px;
+    border: 1px solid #4d4e4e; }
+    #footer .thumbnail_link img {
+      display: block;
+      width: 165px;
+      height: 110px; }
+  #footer .desc {
+    position: relative;
+    overflow: hidden; }
+    #footer .desc .ellipsis {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      background-color: #313232;
+      overflow: hidden; }
+      #footer .desc .ellipsis a, #footer .desc .ellipsis a:link, #footer .desc .ellipsis a:visited {
+        color: #597686; }
+        #footer .desc .ellipsis a:hover, #footer .desc .ellipsis a:link:hover, #footer .desc .ellipsis a:visited:hover {
+          color: #fff; }
+  #footer .read_more {
+    margin: 10px 0 0;
+    padding: 10px 0 0;
+    font-size: 10px;
+    line-height: 12px;
+    text-align: right;
+    border-top: 1px dashed #6f6f6f; }
+    #footer .read_more a, #footer .read_more a:link, #footer .read_more a:visited {
+      color: #fff;
+      text-decoration: underline; }
+      #footer .read_more a:hover, #footer .read_more a:link:hover, #footer .read_more a:visited:hover {
+        color: #8ea8b5; }
+  #footer .arrow {
+    position: relative;
+    top: 2px;
+    color: #09f;
+    height: auto;
+    font-size: 17px;
+    line-height: 12px;
+    text-indent: -10px; }
+
+#footer_wrapper {
+  width: 755px;
+  margin: 0 auto; }
+
+#footer_main .section {
+  margin: 0 0 10px;
+  padding: 0 0 10px;
+  border-bottom: 3px solid #636464; }
+#footer_main .column {
+  float: left;
+  width: 167px;
+  min-height: 309px;
+  margin: 0 0 0 14px;
+  padding: 0 0 0 14px;
+  border-left: 1px dotted #6F797E; }
+  #footer_main .column:first-child {
+    margin-left: 0;
+    padding-left: 0;
+    border-left: none; }
+  #footer_main .column .desc {
+    height: 78px;
+    margin: 0 0 17px; }
+    #footer_main .column .desc .ellipsis {
+      font-size: 10px;
+      line-height: 13px; }
+  #footer_main .column ul.list {
+    margin: 0 0 17px; }
+    #footer_main .column ul.list li {
+      margin: 16px 0 0; }
+      #footer_main .column ul.list li:first-child {
+        margin-top: 0; }
+    #footer_main .column ul.list.single_item {
+      margin-bottom: 8px; }
+    #footer_main .column ul.list.small_list {
+      margin-bottom: 0; }
+      #footer_main .column ul.list.small_list li {
+        position: relative;
+        margin: 0 0 4px;
+        padding: 0 0 0 10px;
+        font-size: 11px;
+        line-height: 12px; }
+        #footer_main .column ul.list.small_list li a, #footer_main .column ul.list.small_list li a:link, #footer_main .column ul.list.small_list li a:visited {
+          color: #fff; }
+        #footer_main .column ul.list.small_list li .arrow {
+          position: absolute;
+          top: 0;
+          left: 0; }
+
+#footer_sub {
+  padding: 0 22px; }
+  #footer_sub h4 {
+    margin: 0 0 17px; }
+    #footer_sub h4 a, #footer_sub h4 a:link, #footer_sub h4 a:visited {
+      color: #fff;
+      font-size: 16px;
+      font-weight: bold; }
+  #footer_sub h5 {
+    margin: 0 0 6px; }
+  #footer_sub p {
+    font-size: 13px;
+    line-height: 15px; }
+  #footer_sub .thumbnail_link {
+    float: left;
+    width: 116px;
+    height: 76px;
+    margin: 0 18px 0 0; }
+    #footer_sub .thumbnail_link img {
+      width: 116px;
+      height: 76px; }
+  #footer_sub .desc {
+    height: 45px; }
+    #footer_sub .desc .ellipsis {
+      height: 15px; }
+      #footer_sub .desc .ellipsis a, #footer_sub .desc .ellipsis a:link, #footer_sub .desc .ellipsis a:visited {
+        color: #09f;
+        text-decoration: underline; }
+        #footer_sub .desc .ellipsis a:hover, #footer_sub .desc .ellipsis a:link:hover, #footer_sub .desc .ellipsis a:visited:hover {
+          color: #fff; }
+  #footer_sub ul.list {
+    margin: 0 0 10px;
+    padding: 0 0 10px;
+    border-bottoM: 3px solid #636464; }
+    #footer_sub ul.list li {
+      margin: 10px 0 0;
+      padding: 10px 0 0;
+      border-top: 1px dashed #6f6f6f; }
+      #footer_sub ul.list li h4 {
+        margin-bottom: 0; }
+      #footer_sub ul.list li:first-child {
+        margin-top: 0;
+        padding-top: 0;
+        border-top: none; }
+    #footer_sub ul.list.photos_block {
+      padding: 20px 0; }
+      #footer_sub ul.list.photos_block .thumbnail_link {
+        width: 73px;
+        height: 73px;
+        margin: 0; }
+        #footer_sub ul.list.photos_block .thumbnail_link img {
+          width: 73px;
+          height: 73px; }
+      #footer_sub ul.list.photos_block li {
+        float: left;
+        margin: 0 13px 7px 0;
+        padding: 0;
+        border-top: none; }
+        #footer_sub ul.list.photos_block li.third {
+          margin-right: 0; }
+          #footer_sub ul.list.photos_block li.third.bottom {
+            margin: 0; }
+
+#footer_sub_left,
+#footer_sub_right {
+  float: left; }
+  #footer_sub_left h3,
+  #footer_sub_right h3 {
+    font-size: 21px; }
+
+#footer_sub_left {
+  width: 460px; }
+  #footer_sub_left .section {
+    margin: 0 13px 0 0;
+    padding: 0 13px 0 0;
+    border-right: 1px dotted #6f6f6f;
+    border-bottom: none; }
+
+#footer_sub_right {
+  width: 251px; }
+
+#footer_links {
+  margin: 0 auto;
+  padding: 13px 0;
+  font-size: 11px;
+  text-align: center;
+  line-height: 11px;
+  background-color: #1a1a1a;
+  border-bottom: none; }
+  #footer_links ul, #footer_links li {
+    display: inline-block; }
+  #footer_links li {
+    margin: 0 0 0 7px;
+    padding: 0 0 0 7px;
+    border-left: 1px solid #acacac; }
+    #footer_links li:first-child {
+      margin-left: 0;
+      padding-left: 0;
+      border-left: none; }
+    #footer_links li a, #footer_links li a:link, #footer_links li a:visited {
+      color: #597686;
+      text-decoration: underline; }
+      #footer_links li a:hover, #footer_links li a:link:hover, #footer_links li a:visited:hover {
+        color: #fff; }

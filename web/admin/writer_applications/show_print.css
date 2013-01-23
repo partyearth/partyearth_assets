@@ -1,0 +1,39 @@
+#personal {
+  border: 1px solid black;
+  border-collapse: collapse;
+  text-align: left;
+  width: 100%; }
+
+#show_wrapper {
+  width: 95%; }
+
+#show_info {
+  float: left;
+  width: 95%; }
+
+#writer_applications_image {
+  visibility: hidden; }
+
+th {
+  background-color: #CCC;
+  text-align: center; }
+
+td, tr {
+  border: 1px solid black;
+  border-collapse: collapse; }
+
+.col_1 {
+  font-weight: bold;
+  width: 25%; }
+
+.col_2 {
+  width: 73%; }
+
+#menu_options_top {
+  visibility: hidden; }
+
+#menu_options_top {
+  visibility: hidden; }
+
+.clear {
+  clear: both; }
