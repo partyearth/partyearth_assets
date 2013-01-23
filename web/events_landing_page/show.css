@@ -37,7 +37,7 @@
   #right_sidebar .title {
     display: block;
     margin: 0 0 3px;
-    line-height: 16px;
+    line-height: 15px;
     text-decoration: underline; }
     #right_sidebar .title:hover {
       color: #000; }
@@ -52,15 +52,12 @@
       line-height: 10px;
       text-transform: uppercase; }
   #right_sidebar .thumbnail_link {
-    display: block;
     margin: 0 0 8px;
     width: 98px;
     height: 65px;
     border: 1px solid #ccc;
-    border-radius: 2px;
-    overflow: hidden; }
+    border-radius: 2px; }
     #right_sidebar .thumbnail_link img {
-      display: block;
       width: 98px;
       height: 65px;
       border-radius: 1px; }
@@ -140,7 +137,8 @@
     #right_sidebar .list .list_item .venue_type {
       margin: 0;
       padding: 0;
-      color: #6C8898; }
+      color: #6C8898;
+      line-height: 11px; }
       #right_sidebar .list .list_item .venue_type a, #right_sidebar .list .list_item .venue_type a:link, #right_sidebar .list .list_item .venue_type a:visited {
         color: #6C8898; }
         #right_sidebar .list .list_item .venue_type a:hover, #right_sidebar .list .list_item .venue_type a:link:hover, #right_sidebar .list .list_item .venue_type a:visited:hover {
@@ -319,17 +317,14 @@
     #right_sidebar .follow_btns a {
       display: block;
       position: absolute;
-      top: 7px;
-      width: 32px;
-      height: 32px;
+      top: 9px;
+      width: 28px;
+      height: 28px;
       margin: 0; }
-      #right_sidebar .follow_btns a img {
-        width: 32px;
-        height: 32px; }
     #right_sidebar .follow_btns .gig-followbar-providerButton {
-      right: 41px; }
+      right: 44px; }
     #right_sidebar .follow_btns .gig-followbar-providerButton-last {
-      right: 5px; }
+      right: 11px; }
   #right_sidebar .ad {
     width: 240px;
     height: 400px;
@@ -464,21 +459,17 @@
     height: 73px;
     margin: 0 0 0 8px;
     padding: 0; }
-    .day_changer_cont .featured_item .video_section .video_item .video_thumb {
+    .day_changer_cont .featured_item .video_section .video_item .thumbnail_link {
       width: 87px;
-      height: 71px;
-      border: 1px solid #adc0c9;
-      border-radius: 4px;
-      overflow: hidden; }
-      .day_changer_cont .featured_item .video_section .video_item .video_thumb .play_btn {
+      height: 71px; }
+      .day_changer_cont .featured_item .video_section .video_item .thumbnail_link .play_btn {
         width: 87px;
         height: 71px;
         background-position: -5px -302px; }
-      .day_changer_cont .featured_item .video_section .video_item .video_thumb img {
+      .day_changer_cont .featured_item .video_section .video_item .thumbnail_link img {
         width: 87px;
-        height: 71px;
-        border-radius: 4px; }
-      .day_changer_cont .featured_item .video_section .video_item .video_thumb:hover .play_btn {
+        height: 71px; }
+      .day_changer_cont .featured_item .video_section .video_item .thumbnail_link:hover .play_btn {
         background-position: -106px -302px; }
   .day_changer_cont .featured_item .video_section .video_player_sect {
     display: none; }

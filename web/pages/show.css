@@ -127,7 +127,7 @@ strong {
   #right_sidebar .title {
     display: block;
     margin: 0 0 3px;
-    line-height: 16px;
+    line-height: 15px;
     text-decoration: underline; }
     #right_sidebar .title:hover {
       color: #000; }
@@ -142,15 +142,12 @@ strong {
       line-height: 10px;
       text-transform: uppercase; }
   #right_sidebar .thumbnail_link {
-    display: block;
     margin: 0 0 8px;
     width: 98px;
     height: 65px;
     border: 1px solid #ccc;
-    border-radius: 2px;
-    overflow: hidden; }
+    border-radius: 2px; }
     #right_sidebar .thumbnail_link img {
-      display: block;
       width: 98px;
       height: 65px;
       border-radius: 1px; }
@@ -230,7 +227,8 @@ strong {
     #right_sidebar .list .list_item .venue_type {
       margin: 0;
       padding: 0;
-      color: #6C8898; }
+      color: #6C8898;
+      line-height: 11px; }
       #right_sidebar .list .list_item .venue_type a, #right_sidebar .list .list_item .venue_type a:link, #right_sidebar .list .list_item .venue_type a:visited {
         color: #6C8898; }
         #right_sidebar .list .list_item .venue_type a:hover, #right_sidebar .list .list_item .venue_type a:link:hover, #right_sidebar .list .list_item .venue_type a:visited:hover {
@@ -409,17 +407,14 @@ strong {
     #right_sidebar .follow_btns a {
       display: block;
       position: absolute;
-      top: 7px;
-      width: 32px;
-      height: 32px;
+      top: 9px;
+      width: 28px;
+      height: 28px;
       margin: 0; }
-      #right_sidebar .follow_btns a img {
-        width: 32px;
-        height: 32px; }
     #right_sidebar .follow_btns .gig-followbar-providerButton {
-      right: 41px; }
+      right: 44px; }
     #right_sidebar .follow_btns .gig-followbar-providerButton-last {
-      right: 5px; }
+      right: 11px; }
   #right_sidebar .ad {
     width: 240px;
     height: 400px;

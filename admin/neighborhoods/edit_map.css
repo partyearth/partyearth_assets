@@ -1004,61 +1004,6 @@ form.formtastic .choices-group {
   font-size: 12px;
   padding: 0 4px; }
 
-/*.map_tooltip {
-  position: absolute;
-  background-color: white;
-  border: 1px solid #b2b2b2;
-  padding:10px 20px;
-  display: none;
-  z-index: 2000;
-  -moz-border-radius:22px 22px 22px 22px;
-  border-radius:22px 22px 22px 22px;
-  -webkit-border-radius:22px 22px 22px 22px;
-}*/
-.map_tooltip {
-  background: url(/assets/map/map_bubble_sprite.png) 100% -61px no-repeat transparent;
-  position: absolute;
-  padding: 0 21px 0 0;
-  height: 61px;
-  display: none;
-  z-index: 2000; }
-
-.map_tooltip .map_tooltip_content {
-  background: url(/assets/map/map_bubble_sprite.png) 0 0 no-repeat transparent;
-  height: 41px;
-  padding: 10px 0 10px 21px; }
-
-.map_tooltip .blue_text {
-  margin-top: 6px;
-  text-decoration: none; }
-
-.map_popup {
-  font-size: 11px;
-  height: 125px !important;
-  overflow: hidden;
-  width: 250px !important; }
-
-.map_popup a:link.name, .map_popup a:visited.name, .map_popup a:hover.name {
-  font-size: 20px !important; }
-
-.map_popup .popup_image {
-  margin: 7px 12px 0 0; }
-
-.map_popup .popup_image img {
-  height: 60px;
-  width: 72px; }
-
-#search_page .map_popup .popup_image img {
-  width: 90px;
-  height: 90px; }
-
-#city_home_content .map_popup .popup_image img {
-  width: 75px;
-  height: 55px; }
-
-.map_popup .ratings_chart {
-  margin: 7px 0; }
-
 .city_map {
   position: relative; }
 

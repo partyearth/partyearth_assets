@@ -49,14 +49,10 @@
   /* BEGIN CAROUSEL
   ------------------------------------------*/ }
   .featured_teams .thumbnail_link {
-    display: block;
     width: 165px;
     height: 165px;
-    margin: 3px 0;
-    border: 1px solid #adc0c9;
-    border-radius: 4px; }
+    margin: 3px 0; }
     .featured_teams .thumbnail_link img {
-      display: block;
       width: 165px;
       height: 165px; }
   .featured_teams h3 {

@@ -108,18 +108,13 @@
     .browse_by_thumbnail .list .list_item .name:hover {
       color: #597686; }
   .browse_by_thumbnail .list .list_item .thumbnail_link {
-    display: block;
     position: absolute;
     bottom: 10px;
     width: 100px;
-    height: 100px;
-    border: 1px solid #adc0c9;
-    border-radius: 4px; }
+    height: 100px; }
     .browse_by_thumbnail .list .list_item .thumbnail_link img {
-      display: block;
       width: 100px;
-      height: 100px;
-      border-radius: 3px; }
+      height: 100px; }
   .browse_by_thumbnail .list .list_item.third {
     padding-right: 0; }
   .browse_by_thumbnail .list .list_item.last_row {
@@ -243,9 +238,9 @@
     padding: 0 0 0 5px;
     border-left: 1px dotted #d8d8d8; }
     .browse_category .column:first-child {
-      margin-left: 0;
-      padding-left: 0;
-      border-left: none; }
+      margin-left: 0 !important;
+      padding-left: 0 !important;
+      border-left: none !important; }
     .browse_category .column.featured {
       padding: 5px 6px 10px;
       background-color: #f0f3f5;
@@ -269,11 +264,14 @@
     color: #000;
     font-size: 17px;
     text-decoration: underline;
-    line-height: 21px; }
-    .browse_category h3 a, .browse_category h3 a:link, .browse_category h3 a:visited, .browse_category h3 .fake_link {
+    line-height: 18px;
+    overflow: hidden; }
+    .browse_category h3 a, .browse_category h3 .fake_link {
       color: #000; }
-      .browse_category h3 a:hover, .browse_category h3 a:link:hover, .browse_category h3 a:visited:hover, .browse_category h3 .fake_link:hover {
+      .browse_category h3 a:hover, .browse_category h3 .fake_link:hover {
         color: #597686; }
+  .browse_category.two_line_title h3 {
+    height: 36px; }
   .browse_category p {
     padding: 0; }
     .browse_category p.desc {
@@ -287,15 +285,11 @@
         right: 0;
         bottom: 0; }
   .browse_category .thumbnail_link {
-    display: block;
     width: 165px;
     height: 110px;
-    margin: 0 0 5px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    overflow: hidden; }
+    margin: 0 0 5px; }
+  .browse_category .thumbnail_link img,
   .browse_category .thumbnail {
-    display: block;
     width: 165px;
     height: 110px; }
   .browse_category .name {
@@ -325,12 +319,17 @@
       width: 6px;
       text-indent: -10px;
       overflow: hidden; }
-    .browse_category ul a, .browse_category ul a:link, .browse_category ul a:visited, .browse_category ul .fake_link {
+    .browse_category ul a, .browse_category ul .fake_link {
+      display: inline-block;
       color: #375363;
       text-decoration: underline;
+      line-height: 14px;
       text-shadow: 0 0 0.08em #dadada; }
-      .browse_category ul a:hover, .browse_category ul a:link:hover, .browse_category ul a:visited:hover, .browse_category ul .fake_link:hover {
+      .browse_category ul a:hover, .browse_category ul .fake_link:hover {
         color: #000; }
+    .browse_category ul .venue_type a,
+    .browse_category ul .venue_type span {
+      line-height: 12px; }
     .browse_category ul.four_items {
       height: 84px; }
   .browse_category .more {
@@ -338,7 +337,8 @@
     padding: 0;
     color: #aaa;
     font-size: 11px;
-    line-height: 11px; }
+    line-height: 11px;
+    text-decoration: underline; }
     .browse_category .more:hover {
       color: #000; }
 
@@ -363,6 +363,7 @@
       width: 75px;
       height: 50px;
       margin: 0 4px 0 0; }
+    .browse_category_boxes .cell .thumbnail_link img,
     .browse_category_boxes .cell .thumbnail {
       width: 75px;
       height: 50px; }
@@ -389,11 +390,6 @@
       float: left;
       clear: left;
       margin: 8px 0 0; }
-      .browse_category_boxes .cell .more a, .browse_category_boxes .cell .more span {
-        color: #aaa;
-        text-decoration: underline; }
-        .browse_category_boxes .cell .more a:hover, .browse_category_boxes .cell .more span:hover {
-          color: #000; }
 
 /* Alternative layout with rows/boxes and embedded interest pod */
 .browse_category_interest .rows {
@@ -428,6 +424,51 @@
       text-decoration: underline; }
       .browse_category_interest .interest_embed ul .category:hover {
         color: #597686; }
+
+/* Alternative layout for neighborhood list */
+.browse_category_dash_list {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: 0;
+  /* Height of 1 <li> */
+  /* One Venue */
+  /* Two Venues */
+  /* Three Venues */ }
+  .browse_category_dash_list .column {
+    border-left: none; }
+  .browse_category_dash_list ul {
+    height: auto;
+    overflow: hidden; }
+    .browse_category_dash_list ul li {
+      margin: 7px 0 0;
+      padding: 7px 0 0;
+      border-top: 1px dashed #adc0c9; }
+      .browse_category_dash_list ul li:first-child {
+        margin-top: 0;
+        padding-top: 0;
+        border-top: none; }
+    .browse_category_dash_list ul a {
+      color: #000; }
+      .browse_category_dash_list ul a:hover {
+        color: #597686; }
+    .browse_category_dash_list ul .venue_type {
+      margin: 0; }
+      .browse_category_dash_list ul .venue_type a {
+        color: #6c8898;
+        text-decoration: none; }
+        .browse_category_dash_list ul .venue_type a:hover {
+          text-decoration: underline; }
+    .browse_category_dash_list ul .date {
+      display: block;
+      color: #09f;
+      font-size: 10px;
+      line-height: 11px; }
+  .browse_category_dash_list.one_venue ul {
+    height: 34px; }
+  .browse_category_dash_list.two_venues ul {
+    height: 84px; }
+  .browse_category_dash_list.three_venues ul {
+    height: 133px; }
 /* For section under Browse by Personality pod */
 #browse_interest h3 {
   float: left;
@@ -585,7 +626,7 @@
   #right_sidebar .title {
     display: block;
     margin: 0 0 3px;
-    line-height: 16px;
+    line-height: 15px;
     text-decoration: underline; }
     #right_sidebar .title:hover {
       color: #000; }
@@ -600,15 +641,12 @@
       line-height: 10px;
       text-transform: uppercase; }
   #right_sidebar .thumbnail_link {
-    display: block;
     margin: 0 0 8px;
     width: 98px;
     height: 65px;
     border: 1px solid #ccc;
-    border-radius: 2px;
-    overflow: hidden; }
+    border-radius: 2px; }
     #right_sidebar .thumbnail_link img {
-      display: block;
       width: 98px;
       height: 65px;
       border-radius: 1px; }
@@ -688,7 +726,8 @@
     #right_sidebar .list .list_item .venue_type {
       margin: 0;
       padding: 0;
-      color: #6C8898; }
+      color: #6C8898;
+      line-height: 11px; }
       #right_sidebar .list .list_item .venue_type a, #right_sidebar .list .list_item .venue_type a:link, #right_sidebar .list .list_item .venue_type a:visited {
         color: #6C8898; }
         #right_sidebar .list .list_item .venue_type a:hover, #right_sidebar .list .list_item .venue_type a:link:hover, #right_sidebar .list .list_item .venue_type a:visited:hover {
@@ -867,17 +906,14 @@
     #right_sidebar .follow_btns a {
       display: block;
       position: absolute;
-      top: 7px;
-      width: 32px;
-      height: 32px;
+      top: 9px;
+      width: 28px;
+      height: 28px;
       margin: 0; }
-      #right_sidebar .follow_btns a img {
-        width: 32px;
-        height: 32px; }
     #right_sidebar .follow_btns .gig-followbar-providerButton {
-      right: 41px; }
+      right: 44px; }
     #right_sidebar .follow_btns .gig-followbar-providerButton-last {
-      right: 5px; }
+      right: 11px; }
   #right_sidebar .ad {
     width: 240px;
     height: 400px;
@@ -919,3 +955,6 @@
   margin-top: 0;
   padding-top: 0;
   border-top: 0; }
+
+.browse_category_boxes .cell ul {
+  width: 139px; }

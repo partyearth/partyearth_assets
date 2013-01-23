@@ -3253,7 +3253,7 @@ If you don't know where else to place something, place it below this line.
 .venue_type, .type {
   margin: 0 0 5px;
   font-size: 9px;
-  line-height: 12px;
+  line-height: 11px;
   text-transform: uppercase;
   font-family: 'Arial', sans-serif;
   color: #6C8898; }
@@ -3814,11 +3814,17 @@ h3.large_gray_btn_full {
   height: 58px;
   background-image: url(/assets/content_bg/app_sprite_2.png); }
 
-/* Different containers for the Photo Article Flag */
-.article_img,
-.object_photo,
-.thumbnail_link {
-  position: relative; }
+.thumbnail_link,
+.thumbnail {
+  display: block;
+  position: relative;
+  border: 1px solid #adc0c9;
+  border-radius: 4px;
+  overflow: hidden; }
+  .thumbnail_link img,
+  .thumbnail img {
+    display: block;
+    border-radius: 3px; }
 
 .no_select, .no_select * {
   user-select: none;

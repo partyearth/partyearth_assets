@@ -184,38 +184,29 @@
   /* Not displayed by default */
   position: absolute;
   top: 144px;
-  left: -70px;
-  width: 48px;
-  padding: 4px 0;
-  color: #999;
-  font-family: 'Arial', sans-serif;
-  font-size: 7px;
-  text-align: center;
-  text-transform: uppercase;
-  background-color: #fff;
-  border-radius: 2px;
-  box-shadow: 0 0 5px #999; }
+  left: -72px;
+  width: 52px;
+  height: 56px;
+  background-image: url(/assets/object_pages/sprite.png);
+  background-position: 0 -63px; }
   .floater_comments:hover {
+    background-position: -54px -63px;
     cursor: pointer; }
-  .floater_comments:hover .comment_label {
-    color: #597686; }
-  .floater_comments .comment_count, .floater_comments .comment_label {
-    display: block; }
+  .floater_comments.single_comment {
+    background-position: -108px -63px; }
+    .floater_comments.single_comment:hover {
+      background-position: -162px -63px; }
   .floater_comments .comment_count {
+    display: block;
+    margin: 7px 0 0;
     color: #0099ff;
     font-size: 16px;
     font-weight: bold;
+    line-height: 16px;
+    text-align: center;
     text-transform: none; }
   .floater_comments .comment_label {
-    line-height: 120%; }
-  .floater_comments .tip {
-    position: absolute;
-    right: 0;
-    bottom: -17px;
-    width: 54px;
-    height: 17px;
-    background-image: url(/assets/content_bg/application_sprite.png);
-    background-position: -387px -510px; }
+    visibility: hidden; }
 
 .outside .floater_comments {
   display: block; }

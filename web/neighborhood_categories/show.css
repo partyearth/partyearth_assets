@@ -14,14 +14,10 @@
   #more_links_pod li:first-child {
     padding-left: 0; }
   #more_links_pod li .thumbnail_link {
-    display: block;
     width: 165px;
     height: 110px;
-    margin: 0 0 7px;
-    border: 1px solid #d2dce1;
-    border-radius: 3px; }
+    margin: 0 0 7px; }
     #more_links_pod li .thumbnail_link img {
-      display: block;
       width: 165px;
       height: 110px; }
   #more_links_pod li a {
@@ -72,13 +68,9 @@
 .carousel_3 {
   /* START CAROUSEL BOX AND SPOT ITEM HEIGHTS ------ */
   /* Default height of the box and spot item which is a venue spot item */
-  /* $boxHeight: 387px; /* Add when adding address and add to calendar to events spot item */
-  /* Remove when adding address and add to calendar to events spot item */
   /* If we have 2 line titles increase the height by the line height of the '.name' (18px) element. */
   /* If at least 1 spot item address field goes to 3 lines increase height by line height of 'address' element. */
   /* If it is a list of event venues increase the height by 17 */
-  /* This is for Events only */
-  /* END CAROUSEL BOX AND SPOT ITEM HEIGHTS ------ */
   /* Override styles from liked_by.scss */ }
   .carousel_3 .page_count {
     float: right;
@@ -106,50 +98,38 @@
     position: relative; }
   .carousel_3 .carousel_3_box {
     position: relative;
-    height: 344px;
+    height: 387px;
     overflow: hidden; }
     .carousel_3 .carousel_3_box .spot_item {
-      height: 344px; }
+      height: 387px; }
   .carousel_3.two_line_title .carousel_3_box {
-    height: 362px; }
+    height: 405px; }
   .carousel_3.two_line_title .spot_item {
-    height: 362px; }
+    height: 405px; }
     .carousel_3.two_line_title .spot_item .name {
       height: 36px; }
   .carousel_3.address_3_lines {
     /* If it is for Events and it has 2 line titles increase again by the height of the '.name' (18px) element. */ }
     .carousel_3.address_3_lines .carousel_3_box {
-      height: 356px; }
+      height: 399px; }
     .carousel_3.address_3_lines .spot_item {
-      height: 356px; }
+      height: 399px; }
       .carousel_3.address_3_lines .spot_item address {
         height: 36px; }
     .carousel_3.address_3_lines.two_line_title .carousel_3_box {
-      height: 374px; }
+      height: 417px; }
     .carousel_3.address_3_lines.two_line_title .spot_item {
-      height: 374px; }
+      height: 417px; }
   .carousel_3.event_venues {
     /* If it is for Events and it has 2 line titles increase again by the height of the '.name' (18px) element. */ }
     .carousel_3.event_venues .carousel_3_box {
-      height: 361px; }
+      height: 404px; }
     .carousel_3.event_venues .spot_item {
-      height: 361px; }
+      height: 404px; }
     .carousel_3.event_venues.two_line_title .carousel_3_box {
-      height: 379px; }
+      height: 422px; }
     .carousel_3.event_venues.two_line_title .spot_item {
-      height: 379px; }
-  .carousel_3.no_desc {
-    /* If it is for Events and it has 2 line titles increase again by the height of the '.name' (18px) element. */ }
-    .carousel_3.no_desc .carousel_3_box {
-      height: 312px; }
-    .carousel_3.no_desc .spot_item {
-      height: 312px; }
-      .carousel_3.no_desc .spot_item .details {
-        height: 96px; }
-    .carousel_3.no_desc.two_line_title .carousel_3_box {
-      height: 287px; }
-    .carousel_3.no_desc.two_line_title .spot_item {
-      height: 287px; }
+      height: 422px; }
   .carousel_3 .carousel_3_sldr {
     position: absolute;
     top: 0;
@@ -184,14 +164,9 @@
       .carousel_3 .spot_item .venue_type .icon_types {
         margin: 0 5px 0 0; }
     .carousel_3 .spot_item .thumbnail_link {
-      display: block;
       width: 210px;
-      height: 140px;
-      border: 1px solid #CCC;
-      border-radius: 4px;
-      overflow: hidden; }
+      height: 140px; }
       .carousel_3 .spot_item .thumbnail_link img {
-        display: block;
         width: 210px;
         height: 140px; }
     .carousel_3 .spot_item .quick_nav_links {
@@ -674,7 +649,7 @@
   #right_sidebar .title {
     display: block;
     margin: 0 0 3px;
-    line-height: 16px;
+    line-height: 15px;
     text-decoration: underline; }
     #right_sidebar .title:hover {
       color: #000; }
@@ -689,15 +664,12 @@
       line-height: 10px;
       text-transform: uppercase; }
   #right_sidebar .thumbnail_link {
-    display: block;
     margin: 0 0 8px;
     width: 98px;
     height: 65px;
     border: 1px solid #ccc;
-    border-radius: 2px;
-    overflow: hidden; }
+    border-radius: 2px; }
     #right_sidebar .thumbnail_link img {
-      display: block;
       width: 98px;
       height: 65px;
       border-radius: 1px; }
@@ -777,7 +749,8 @@
     #right_sidebar .list .list_item .venue_type {
       margin: 0;
       padding: 0;
-      color: #6C8898; }
+      color: #6C8898;
+      line-height: 11px; }
       #right_sidebar .list .list_item .venue_type a, #right_sidebar .list .list_item .venue_type a:link, #right_sidebar .list .list_item .venue_type a:visited {
         color: #6C8898; }
         #right_sidebar .list .list_item .venue_type a:hover, #right_sidebar .list .list_item .venue_type a:link:hover, #right_sidebar .list .list_item .venue_type a:visited:hover {
@@ -956,17 +929,14 @@
     #right_sidebar .follow_btns a {
       display: block;
       position: absolute;
-      top: 7px;
-      width: 32px;
-      height: 32px;
+      top: 9px;
+      width: 28px;
+      height: 28px;
       margin: 0; }
-      #right_sidebar .follow_btns a img {
-        width: 32px;
-        height: 32px; }
     #right_sidebar .follow_btns .gig-followbar-providerButton {
-      right: 41px; }
+      right: 44px; }
     #right_sidebar .follow_btns .gig-followbar-providerButton-last {
-      right: 5px; }
+      right: 11px; }
   #right_sidebar .ad {
     width: 240px;
     height: 400px;
@@ -1086,16 +1056,12 @@
     padding: 0 0 10px;
     border-bottom: 1px dashed #adc0c9; }
     .map_tooltip .main .thumbnail_link, .map_popup .main .thumbnail_link {
-      display: block;
+      box-sizing: content-box;
       float: left;
-      width: 102px;
-      height: 102px;
-      margin: 0 10px 0 0;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      overflow: hidden; }
+      width: 100px;
+      height: 100px;
+      margin: 0 10px 0 0; }
       .map_tooltip .main .thumbnail_link img, .map_popup .main .thumbnail_link img {
-        display: block;
         width: 100px;
         height: 100px; }
     .map_tooltip .main .details, .map_popup .main .details {
@@ -1327,19 +1293,11 @@
       counter-increment: index; }
       .page_slider .page_slider_pagination .page_number:before {
         content: counter(index); }
-/* Remove when adding address and add to calendar to events spot item */
-.carousel_3 .carousel_3_box {
-  height: 387px; }
-  .carousel_3 .carousel_3_box .spot_item {
-    height: 387px; }
-#overview_cont img {
-  display: block;
+#overview_cont .thumbnail {
   float: left;
   margin: 0 10px 0 0;
   width: 165px;
-  height: 110px;
-  border: 1px solid #ccc;
-  border-radius: 4px; }
+  height: 110px; }
 #overview_cont.no_photo #overview_desc {
   float: none;
   width: auto; }
@@ -1347,6 +1305,106 @@
 #overview_desc {
   float: left;
   width: 520px; }
+.two_item_layout {
+  width: 706px; }
+  .two_item_layout .spot_item {
+    float: left;
+    width: 345px;
+    margin: 0 7px 0 0;
+    padding: 0 7px 0 0;
+    border-right: 1px dotted #ccc; }
+    .two_item_layout .spot_item .headline.sub_headline {
+      height: 24px;
+      font-size: 20px;
+      overflow: hidden; }
+      .two_item_layout .spot_item .headline.sub_headline a, .two_item_layout .spot_item .headline.sub_headline a:visited {
+        text-decoration: underline; }
+    .two_item_layout .spot_item .venue_type {
+      margin: 2px 0 6px;
+      padding: 0;
+      line-height: 15px;
+      height: 12px;
+      overflow: hidden; }
+      .two_item_layout .spot_item .venue_type .icon_types {
+        margin: 0 5px 0 0; }
+    .two_item_layout .spot_item .thumbnail_link {
+      width: 345px;
+      height: 230px; }
+      .two_item_layout .spot_item .thumbnail_link img {
+        width: 345px;
+        height: 230px; }
+    .two_item_layout .spot_item .quick_nav_links {
+      margin: 4px 0 8px;
+      border-bottom: 1px solid #dae4e9; }
+    .two_item_layout .spot_item .desc, .two_item_layout .spot_item .user_review_summary, .two_item_layout .spot_item .details {
+      display: block;
+      position: relative;
+      width: 337px;
+      height: 80px;
+      padding: 0;
+      color: #000;
+      font-size: 12px;
+      line-height: 16px;
+      text-decoration: none;
+      overflow: hidden; }
+      .two_item_layout .spot_item .desc .by_line, .two_item_layout .spot_item .user_review_summary .by_line, .two_item_layout .spot_item .details .by_line {
+        margin: 0 0 2px; }
+      .two_item_layout .spot_item .desc .ellipsis, .two_item_layout .spot_item .user_review_summary .ellipsis, .two_item_layout .spot_item .details .ellipsis {
+        position: absolute;
+        right: 0;
+        bottom: -1px;
+        max-width: 334px;
+        height: 15px;
+        font-size: 12px;
+        line-height: 15px;
+        background: #fff;
+        overflow: hidden; }
+        .two_item_layout .spot_item .desc .ellipsis a, .two_item_layout .spot_item .desc .ellipsis a:visited, .two_item_layout .spot_item .user_review_summary .ellipsis a, .two_item_layout .spot_item .user_review_summary .ellipsis a:visited, .two_item_layout .spot_item .details .ellipsis a, .two_item_layout .spot_item .details .ellipsis a:visited {
+          font-size: 11px; }
+    .two_item_layout .spot_item .details p {
+      padding-bottom: 0; }
+    .two_item_layout .spot_item .details .date_time {
+      height: 15px;
+      overflow: hidden; }
+      .two_item_layout .spot_item .details .date_time .small_text {
+        font-size: 16px;
+        line-height: 14px;
+        font-weight: bold;
+        text-transform: inherit; }
+    .two_item_layout .spot_item .details .event_venue {
+      font-size: 15px;
+      margin: 8px 0 0;
+      height: 18px;
+      overflow: hidden; }
+      .two_item_layout .spot_item .details .event_venue .black_link {
+        color: #375363 !important; }
+        .two_item_layout .spot_item .details .event_venue .black_link:hover {
+          color: #000 !important; }
+    .two_item_layout .spot_item address {
+      position: relative;
+      height: 24px;
+      margin: 8px 0 0;
+      padding: 8px 0 0 25px;
+      color: #6c8898;
+      font-size: 10px;
+      line-height: 12px;
+      font-family: 'Arial', sans-serif;
+      border-top: 1px dashed #adc0c9;
+      overflow: hidden; }
+      .two_item_layout .spot_item address p {
+        padding: 0; }
+      .two_item_layout .spot_item address .icon {
+        position: absolute;
+        left: 0;
+        top: 10px;
+        width: 17px;
+        height: 21px;
+        background-image: url(/assets/content_bg/app_sprite_2.png);
+        background-position: -74px 0; }
+    .two_item_layout .spot_item.second {
+      margin: 0;
+      padding: 0;
+      border: none; }
 /*
 
 
