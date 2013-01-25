@@ -484,10 +484,10 @@ td.right_side.pod_sides {
   padding: 11px 12px 0;
   border-width: 1px;
   border-style: solid;
-  border-top-color: #EBEBEB;
+  border-top-color: #ebebeb;
   border-bottom-color: white;
-  border-left-color: #F3F3F3;
-  border-right-color: #F3F3F3;
+  border-left-color: #f3f3f3;
+  border-right-color: #f3f3f3;
   background: -webkit-gradient(linear, 0 0, 0 100%, from(#fbfbfb), to(#f1f1f1));
   background: -moz-linear-gradient(top, #fbfbfb, #f1f1f1);
   -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=#FBFBFB, endColorStr=#F1F1F1);
@@ -571,20 +571,16 @@ td.right_side.pod_sides {
     width: 77px;
     padding-right: 15px; }
     .soe_sect .soe_sect_cont .soe_event_img .thumbnail_link {
-      display: block;
       width: 75px;
-      height: 50px;
-      border: 1px solid #d2dce1;
-      border-radius: 3px; }
+      height: 50px; }
       .soe_sect .soe_sect_cont .soe_event_img .thumbnail_link img {
-        display: block;
         width: 75px;
         height: 50px; }
   .soe_sect .soe_sect_cont .soe_event_dtls span {
     display: block; }
   .soe_sect .soe_sect_cont .soe_event_dtls .soe_event_name {
     display: block;
-    margin: 0 0 6px;
+    margin: 0 0 5px;
     color: #000;
     font-size: 16px;
     font-weight: bold;
@@ -690,61 +686,6 @@ td.right_side.pod_sides {
   font-family: Arial,sans-serif;
   font-size: 12px;
   padding: 0 4px; }
-
-/*.map_tooltip {
-  position: absolute;
-  background-color: white;
-  border: 1px solid #b2b2b2;
-  padding:10px 20px;
-  display: none;
-  z-index: 2000;
-  -moz-border-radius:22px 22px 22px 22px;
-  border-radius:22px 22px 22px 22px;
-  -webkit-border-radius:22px 22px 22px 22px;
-}*/
-.map_tooltip {
-  background: url(/assets/map/map_bubble_sprite.png) 100% -61px no-repeat transparent;
-  position: absolute;
-  padding: 0 21px 0 0;
-  height: 61px;
-  display: none;
-  z-index: 2000; }
-
-.map_tooltip .map_tooltip_content {
-  background: url(/assets/map/map_bubble_sprite.png) 0 0 no-repeat transparent;
-  height: 41px;
-  padding: 10px 0 10px 21px; }
-
-.map_tooltip .blue_text {
-  margin-top: 6px;
-  text-decoration: none; }
-
-.map_popup {
-  font-size: 11px;
-  height: 125px !important;
-  overflow: hidden;
-  width: 250px !important; }
-
-.map_popup a:link.name, .map_popup a:visited.name, .map_popup a:hover.name {
-  font-size: 20px !important; }
-
-.map_popup .popup_image {
-  margin: 7px 12px 0 0; }
-
-.map_popup .popup_image img {
-  height: 60px;
-  width: 72px; }
-
-#search_page .map_popup .popup_image img {
-  width: 90px;
-  height: 90px; }
-
-#city_home_content .map_popup .popup_image img {
-  width: 75px;
-  height: 55px; }
-
-.map_popup .ratings_chart {
-  margin: 7px 0; }
 
 .city_map {
   position: relative; }
@@ -945,15 +886,12 @@ td.right_side.pod_sides {
       line-height: 10px;
       text-transform: uppercase; }
   #right_sidebar .thumbnail_link {
-    display: block;
     margin: 0 0 8px;
     width: 98px;
     height: 65px;
     border: 1px solid #ccc;
-    border-radius: 2px;
-    overflow: hidden; }
+    border-radius: 2px; }
     #right_sidebar .thumbnail_link img {
-      display: block;
       width: 98px;
       height: 65px;
       border-radius: 1px; }
@@ -1007,7 +945,7 @@ td.right_side.pod_sides {
     border-top: 1px dashed #adc0c9; }
     #right_sidebar .list .list_item.featured {
       margin: 0 0 15px;
-      padding: 0 0 5px;
+      padding: 0 0 15px;
       border-bottom: 1px solid #8ea8b5; }
       #right_sidebar .list .list_item.featured .title {
         margin: 0 0 8px;
@@ -1090,8 +1028,7 @@ td.right_side.pod_sides {
       line-height: 11px;
       text-decoration: none; }
       #right_sidebar .pod_footer a:hover, #right_sidebar .pod_footer a:link:hover, #right_sidebar .pod_footer a:visited:hover, #right_sidebar .pod_footer .fake_link:hover {
-        color: #597686;
-        text-decoration: underline; }
+        color: #597686; }
       #right_sidebar .pod_footer a span, #right_sidebar .pod_footer a:link span, #right_sidebar .pod_footer a:visited span, #right_sidebar .pod_footer .fake_link span {
         text-decoration: underline; }
         #right_sidebar .pod_footer a span.arrow, #right_sidebar .pod_footer a:link span.arrow, #right_sidebar .pod_footer a:visited span.arrow, #right_sidebar .pod_footer .fake_link span.arrow {
@@ -1213,17 +1150,14 @@ td.right_side.pod_sides {
     #right_sidebar .follow_btns a {
       display: block;
       position: absolute;
-      top: 7px;
-      width: 32px;
-      height: 32px;
+      top: 9px;
+      width: 28px;
+      height: 28px;
       margin: 0; }
-      #right_sidebar .follow_btns a img {
-        width: 32px;
-        height: 32px; }
     #right_sidebar .follow_btns .gig-followbar-providerButton {
-      right: 41px; }
+      right: 44px; }
     #right_sidebar .follow_btns .gig-followbar-providerButton-last {
-      right: 5px; }
+      right: 11px; }
   #right_sidebar .ad {
     width: 240px;
     height: 400px;

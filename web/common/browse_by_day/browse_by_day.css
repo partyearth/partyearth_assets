@@ -7,10 +7,11 @@
     width: 345px; }
   .day_changer_head .blue_header {
     float: left;
-    margin: 0; }
+    margin: 0;
+    font-size: 20px; }
     .day_changer_head .blue_header.day_changer_heads {
       width: auto;
-      padding: 9px 12px 10px;
+      padding: 9px 0 10px;
       color: #bbe3fe;
       font-size: 14px;
       line-height: 14px;
@@ -23,7 +24,8 @@
         display: block;
         margin: 3px 0 0;
         font-size: 8px;
-        line-height: 8px; }
+        line-height: 8px;
+        font-family: 'Arial', sans-serif; }
       .day_changer_head .blue_header.day_changer_heads.Selected {
         position: relative;
         color: white;
@@ -43,6 +45,12 @@
         background: -webkit-gradient(linear, 0 0, 0 100%, from(#0099ff), to(#076fd1));
         background: -moz-linear-gradient(top, #0099ff, #076fd1);
         cursor: pointer; }
+      .day_changer_head .blue_header.day_changer_heads.today {
+        width: 72px; }
+      .day_changer_head .blue_header.day_changer_heads.tomorrow {
+        width: 114px; }
+      .day_changer_head .blue_header.day_changer_heads.choose {
+        width: 140px; }
   .day_changer_head .day_changer_more {
     position: relative;
     float: left; }
@@ -119,15 +127,10 @@
   .day_changer_cont .featured_item p {
     padding-bottom: 0; }
   .day_changer_cont .featured_item .thumbnail_link {
-    display: block;
     width: 345px;
     height: 230px;
-    margin: 0 0 7px;
-    border: 1px solid #adc0c9;
-    border-radius: 4px;
-    overflow: hidden; }
+    margin: 0 0 7px; }
     .day_changer_cont .featured_item .thumbnail_link img {
-      display: block;
       width: 345px;
       height: 230px; }
   .day_changer_cont .featured_item .quick_nav_links,
@@ -190,13 +193,11 @@
   .day_changer_cont .item .small_text.caps.blue_text {
     font-size: 10px; }
   .day_changer_cont .item .thumbnail_link {
-    display: block;
     float: left;
     width: 165px;
     height: 110px;
     margin: 0 7px 0 0; }
     .day_changer_cont .item .thumbnail_link img {
-      display: block;
       width: 165px;
       height: 110px; }
   .day_changer_cont .item .details,

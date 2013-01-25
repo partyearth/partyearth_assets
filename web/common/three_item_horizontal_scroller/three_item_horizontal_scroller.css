@@ -6,6 +6,7 @@
   /* If we have 2 line titles increase the height by the line height of the '.name' (18px) element. */
   /* If at least 1 spot item address field goes to 3 lines increase height by line height of 'address' element. */
   /* If it is a list of event venues increase the height by 17 */
+  /* If only event spot items decrease the height by 14 */
   /* Override styles from liked_by.scss */ }
   .carousel_3 .page_count {
     float: right;
@@ -58,13 +59,23 @@
   .carousel_3.event_venues {
     /* If it is for Events and it has 2 line titles increase again by the height of the '.name' (18px) element. */ }
     .carousel_3.event_venues .carousel_3_box {
-      height: 404px; }
+      height: 418px; }
     .carousel_3.event_venues .spot_item {
-      height: 404px; }
+      height: 418px; }
     .carousel_3.event_venues.two_line_title .carousel_3_box {
-      height: 422px; }
+      height: 436px; }
     .carousel_3.event_venues.two_line_title .spot_item {
-      height: 422px; }
+      height: 436px; }
+  .carousel_3.carousel_events {
+    /* If it is for Events and it has 2 line titles increase again by the height of the '.name' (18px) element. */ }
+    .carousel_3.carousel_events .carousel_3_box {
+      height: 373px; }
+    .carousel_3.carousel_events .spot_item {
+      height: 373px; }
+    .carousel_3.carousel_events.two_line_title .carousel_3_box {
+      height: 391px; }
+    .carousel_3.carousel_events.two_line_title .spot_item {
+      height: 391px; }
   .carousel_3 .carousel_3_sldr {
     position: absolute;
     top: 0;
@@ -99,14 +110,9 @@
       .carousel_3 .spot_item .venue_type .icon_types {
         margin: 0 5px 0 0; }
     .carousel_3 .spot_item .thumbnail_link {
-      display: block;
       width: 210px;
-      height: 140px;
-      border: 1px solid #CCC;
-      border-radius: 4px;
-      overflow: hidden; }
+      height: 140px; }
       .carousel_3 .spot_item .thumbnail_link img {
-        display: block;
         width: 210px;
         height: 140px; }
     .carousel_3 .spot_item .quick_nav_links {
@@ -152,10 +158,11 @@
       display: block;
       height: 16px;
       color: #375363;
-      font-size: 14px;
+      font-size: 13px;
       font-weight: bold;
       font-family: 'Arial', sans-serif;
       line-height: 16px;
+      text-shadow: 0 0 1px #ccc;
       overflow: hidden; }
     .carousel_3 .spot_item .details a.event_venue {
       text-decoration: underline; }

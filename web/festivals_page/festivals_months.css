@@ -1,0 +1,41 @@
+/* Styles for Annual Festivals Pod */
+#annual_festivals_months {
+  padding: 0 0 4px;
+  border-bottom: 1px solid #adc0c9; }
+  #annual_festivals_months li {
+    float: left;
+    margin: 0 26px 0 0;
+    padding: 2px 7px;
+    color: #c2c2c2;
+    font-size: 10px;
+    line-height: 12px;
+    text-transform: uppercase; }
+    #annual_festivals_months li a {
+      color: #000;
+      display: block; }
+      #annual_festivals_months li a:hover {
+        text-decoration: none; }
+    #annual_festivals_months li:last-child, #annual_festivals_months li.last {
+      margin-right: 0; }
+    #annual_festivals_months li.ui-tabs-selected {
+      background: #0099ff;
+      /* Old browsers */
+      background: -moz-linear-gradient(top, #0099ff 0%, #1a76cd 100%);
+      /* FF3.6+ */
+      background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #0099ff), color-stop(100%, #1a76cd));
+      /* Chrome,Safari4+ */
+      background: -webkit-linear-gradient(top, #0099ff 0%, #1a76cd 100%);
+      /* Chrome10+,Safari5.1+ */
+      background: -o-linear-gradient(top, #0099ff 0%, #1a76cd 100%);
+      /* Opera 11.10+ */
+      background: -ms-linear-gradient(top, #0099ff 0%, #1a76cd 100%);
+      /* IE10+ */
+      background: linear-gradient(to bottom, #0099ff 0%, #1a76cd 100%);
+      /* W3C */
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0099ff', endColorstr='#1a76cd',GradientType=0 );
+      /* IE6-9 */ }
+      #annual_festivals_months li.ui-tabs-selected a {
+        color: #fff;
+        text-decoration: none; }
+        #annual_festivals_months li.ui-tabs-selected a:hover {
+          cursor: default; }

@@ -155,16 +155,15 @@
           height: 50px; }
       .pe .character_content .venue_item_wrapper .venue_item .venue_name {
         position: relative;
-        margin: 0 0 1px;
+        margin: 0 0 3px;
         padding: 0;
-        line-height: 13px;
+        line-height: 15px;
         text-shadow: 0 0 0.08em #dadada; }
         .pe .character_content .venue_item_wrapper .venue_item .venue_name a, .pe .character_content .venue_item_wrapper .venue_item .venue_name a:visited {
           color: #000; }
           .pe .character_content .venue_item_wrapper .venue_item .venue_name a:hover, .pe .character_content .venue_item_wrapper .venue_item .venue_name a:visited:hover {
             color: #597686; }
       .pe .character_content .venue_item_wrapper .venue_item .venue_type {
-        margin: 4px 0 0;
         padding: 0 0 0 87px; }
   .pe .character_content .tags_and_more .tags {
     max-width: 300px;

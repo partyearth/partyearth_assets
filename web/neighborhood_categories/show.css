@@ -14,14 +14,10 @@
   #more_links_pod li:first-child {
     padding-left: 0; }
   #more_links_pod li .thumbnail_link {
-    display: block;
     width: 165px;
     height: 110px;
-    margin: 0 0 7px;
-    border: 1px solid #d2dce1;
-    border-radius: 3px; }
+    margin: 0 0 7px; }
     #more_links_pod li .thumbnail_link img {
-      display: block;
       width: 165px;
       height: 110px; }
   #more_links_pod li a {
@@ -67,6 +63,37 @@
     text-indent: -10px;
     line-height: 17px;
     overflow: hidden; }
+/* Related Pages */
+#related_pages ul {
+  float: left;
+  width: 176px; }
+  #related_pages ul li {
+    margin: 0 0 3px;
+    font-size: 13px; }
+    #related_pages ul li a, #related_pages ul li a:link, #related_pages ul li a:visited {
+      color: #375363;
+      text-shadow: 0 0 0.08em #DADADA; }
+      #related_pages ul li a:hover, #related_pages ul li a:link:hover, #related_pages ul li a:visited:hover {
+        color: black; }
+#related_pages .related_pages_section {
+  margin: 8px 0 0;
+  padding: 8px 0 0;
+  border-top: 1px dashed #adc0c9; }
+  #related_pages .related_pages_section:first-child {
+    margin-top: 0;
+    padding-top: 0;
+    border-top: none; }
+  #related_pages .related_pages_section h5 {
+    float: left;
+    width: 165px;
+    margin: 0 20px 0 0;
+    color: #000;
+    font-weight: bold; }
+  #related_pages .related_pages_section ul {
+    width: 520px; }
+    #related_pages .related_pages_section ul li {
+      float: left;
+      width: 173px; }
 /*BEGIN CAROUSEL*/
 /*------------------------------------------*/
 .carousel_3 {
@@ -75,6 +102,7 @@
   /* If we have 2 line titles increase the height by the line height of the '.name' (18px) element. */
   /* If at least 1 spot item address field goes to 3 lines increase height by line height of 'address' element. */
   /* If it is a list of event venues increase the height by 17 */
+  /* If only event spot items decrease the height by 14 */
   /* Override styles from liked_by.scss */ }
   .carousel_3 .page_count {
     float: right;
@@ -127,13 +155,23 @@
   .carousel_3.event_venues {
     /* If it is for Events and it has 2 line titles increase again by the height of the '.name' (18px) element. */ }
     .carousel_3.event_venues .carousel_3_box {
-      height: 404px; }
+      height: 418px; }
     .carousel_3.event_venues .spot_item {
-      height: 404px; }
+      height: 418px; }
     .carousel_3.event_venues.two_line_title .carousel_3_box {
-      height: 422px; }
+      height: 436px; }
     .carousel_3.event_venues.two_line_title .spot_item {
-      height: 422px; }
+      height: 436px; }
+  .carousel_3.carousel_events {
+    /* If it is for Events and it has 2 line titles increase again by the height of the '.name' (18px) element. */ }
+    .carousel_3.carousel_events .carousel_3_box {
+      height: 373px; }
+    .carousel_3.carousel_events .spot_item {
+      height: 373px; }
+    .carousel_3.carousel_events.two_line_title .carousel_3_box {
+      height: 391px; }
+    .carousel_3.carousel_events.two_line_title .spot_item {
+      height: 391px; }
   .carousel_3 .carousel_3_sldr {
     position: absolute;
     top: 0;
@@ -168,14 +206,9 @@
       .carousel_3 .spot_item .venue_type .icon_types {
         margin: 0 5px 0 0; }
     .carousel_3 .spot_item .thumbnail_link {
-      display: block;
       width: 210px;
-      height: 140px;
-      border: 1px solid #CCC;
-      border-radius: 4px;
-      overflow: hidden; }
+      height: 140px; }
       .carousel_3 .spot_item .thumbnail_link img {
-        display: block;
         width: 210px;
         height: 140px; }
     .carousel_3 .spot_item .quick_nav_links {
@@ -221,10 +254,11 @@
       display: block;
       height: 16px;
       color: #375363;
-      font-size: 14px;
+      font-size: 13px;
       font-weight: bold;
       font-family: 'Arial', sans-serif;
       line-height: 16px;
+      text-shadow: 0 0 1px #ccc;
       overflow: hidden; }
     .carousel_3 .spot_item .details a.event_venue {
       text-decoration: underline; }
@@ -619,6 +653,40 @@
     background-position: -60px -30px; }
   .liked_by.liked_by_big .disabled.emma .character {
     background-position: -90px -30px; }
+/* For section under Browse by Personality pod */
+#browse_interest h3 {
+  float: left;
+  width: 136px;
+  margin: 0 30px 0 0;
+  padding: 0;
+  color: #09f;
+  font-size: 26px;
+  font-weight: normal;
+  text-align: right;
+  line-height: 29px; }
+#browse_interest ul {
+  padding: 3px 0 0; }
+  #browse_interest ul li {
+    float: left;
+    width: 135px;
+    line-height: 21px; }
+    #browse_interest ul li a, #browse_interest ul li .fake_link {
+      color: #375363;
+      text-decoration: underline;
+      text-shadow: 0 0 0.08em #dadada; }
+      #browse_interest ul li a:hover, #browse_interest ul li .fake_link:hover {
+        color: #000; }
+#browse_interest.onerow h3 {
+  float: left;
+  margin: 0 20px 0 0; }
+#browse_interest.onerow ul {
+  width: auto;
+  padding: 0; }
+  #browse_interest.onerow ul li {
+    width: auto;
+    margin: 0 0 0 30px; }
+    #browse_interest.onerow ul li:first-child {
+      margin-left: 0; }
 /* STYLES FOR RIGHT SIDEBAR
 -----------------------------------------------------
 :: Styles for the right sidebar and universal elements like pods.
@@ -673,15 +741,12 @@
       line-height: 10px;
       text-transform: uppercase; }
   #right_sidebar .thumbnail_link {
-    display: block;
     margin: 0 0 8px;
     width: 98px;
     height: 65px;
     border: 1px solid #ccc;
-    border-radius: 2px;
-    overflow: hidden; }
+    border-radius: 2px; }
     #right_sidebar .thumbnail_link img {
-      display: block;
       width: 98px;
       height: 65px;
       border-radius: 1px; }
@@ -735,7 +800,7 @@
     border-top: 1px dashed #adc0c9; }
     #right_sidebar .list .list_item.featured {
       margin: 0 0 15px;
-      padding: 0 0 5px;
+      padding: 0 0 15px;
       border-bottom: 1px solid #8ea8b5; }
       #right_sidebar .list .list_item.featured .title {
         margin: 0 0 8px;
@@ -818,8 +883,7 @@
       line-height: 11px;
       text-decoration: none; }
       #right_sidebar .pod_footer a:hover, #right_sidebar .pod_footer a:link:hover, #right_sidebar .pod_footer a:visited:hover, #right_sidebar .pod_footer .fake_link:hover {
-        color: #597686;
-        text-decoration: underline; }
+        color: #597686; }
       #right_sidebar .pod_footer a span, #right_sidebar .pod_footer a:link span, #right_sidebar .pod_footer a:visited span, #right_sidebar .pod_footer .fake_link span {
         text-decoration: underline; }
         #right_sidebar .pod_footer a span.arrow, #right_sidebar .pod_footer a:link span.arrow, #right_sidebar .pod_footer a:visited span.arrow, #right_sidebar .pod_footer .fake_link span.arrow {
@@ -941,17 +1005,14 @@
     #right_sidebar .follow_btns a {
       display: block;
       position: absolute;
-      top: 7px;
-      width: 32px;
-      height: 32px;
+      top: 9px;
+      width: 28px;
+      height: 28px;
       margin: 0; }
-      #right_sidebar .follow_btns a img {
-        width: 32px;
-        height: 32px; }
     #right_sidebar .follow_btns .gig-followbar-providerButton {
-      right: 41px; }
+      right: 44px; }
     #right_sidebar .follow_btns .gig-followbar-providerButton-last {
-      right: 5px; }
+      right: 11px; }
   #right_sidebar .ad {
     width: 240px;
     height: 400px;
@@ -974,8 +1035,7 @@
   #recent_articles .list .list_item.featured {
     float: none;
     width: auto;
-    margin-left: 0;
-    padding-bottom: 15px; }
+    margin-left: 0; }
     #recent_articles .list .list_item.featured .thumbnail_link {
       margin: 0 0 15px; }
 /* Upcoming Events Sidebar Pod */
@@ -1071,16 +1131,12 @@
     padding: 0 0 10px;
     border-bottom: 1px dashed #adc0c9; }
     .map_tooltip .main .thumbnail_link, .map_popup .main .thumbnail_link {
-      display: block;
+      box-sizing: content-box;
       float: left;
-      width: 102px;
-      height: 102px;
-      margin: 0 10px 0 0;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      overflow: hidden; }
+      width: 100px;
+      height: 100px;
+      margin: 0 10px 0 0; }
       .map_tooltip .main .thumbnail_link img, .map_popup .main .thumbnail_link img {
-        display: block;
         width: 100px;
         height: 100px; }
     .map_tooltip .main .details, .map_popup .main .details {
@@ -1105,6 +1161,31 @@
         border-top: 1px dashed #adc0c9; }
         .map_tooltip .main .details .liked_by dd, .map_popup .main .details .liked_by dd {
           float: left; }
+        .map_tooltip .main .details .liked_by .character_cont, .map_popup .main .details .liked_by .character_cont {
+          cursor: default !important;
+          /* Force Disabled styles */ }
+          .map_tooltip .main .details .liked_by .character_cont .character, .map_popup .main .details .liked_by .character_cont .character {
+            cursor: default !important; }
+          .map_tooltip .main .details .liked_by .character_cont.lucas .character, .map_popup .main .details .liked_by .character_cont.lucas .character {
+            border-color: #4175ab !important; }
+          .map_tooltip .main .details .liked_by .character_cont.adriana .character, .map_popup .main .details .liked_by .character_cont.adriana .character {
+            border-color: #c675b1 !important; }
+          .map_tooltip .main .details .liked_by .character_cont.jonah .character, .map_popup .main .details .liked_by .character_cont.jonah .character {
+            border-color: #95c946 !important; }
+          .map_tooltip .main .details .liked_by .character_cont.emma .character, .map_popup .main .details .liked_by .character_cont.emma .character {
+            border-color: #ffb637 !important; }
+          .map_tooltip .main .details .liked_by .character_cont.disabled, .map_popup .main .details .liked_by .character_cont.disabled {
+            border-color: #dae4e9 !important; }
+            .map_tooltip .main .details .liked_by .character_cont.disabled .character, .map_popup .main .details .liked_by .character_cont.disabled .character {
+              border-color: #adc0c9 !important; }
+            .map_tooltip .main .details .liked_by .character_cont.disabled.lucas .character, .map_popup .main .details .liked_by .character_cont.disabled.lucas .character {
+              background-position: -1px -33px !important; }
+            .map_tooltip .main .details .liked_by .character_cont.disabled.adriana .character, .map_popup .main .details .liked_by .character_cont.disabled.adriana .character {
+              background-position: -31px -33px !important; }
+            .map_tooltip .main .details .liked_by .character_cont.disabled.jonah .character, .map_popup .main .details .liked_by .character_cont.disabled.jonah .character {
+              background-position: -61px -33px !important; }
+            .map_tooltip .main .details .liked_by .character_cont.disabled.emma .character, .map_popup .main .details .liked_by .character_cont.disabled.emma .character {
+              background-position: -91px -33px !important; }
   .map_tooltip .event_list, .map_popup .event_list {
     padding: 0 0 5px;
     border-bottom: 1px dashed #adc0c9; }
@@ -1312,14 +1393,11 @@
       counter-increment: index; }
       .page_slider .page_slider_pagination .page_number:before {
         content: counter(index); }
-#overview_cont img {
-  display: block;
+#overview_cont .thumbnail {
   float: left;
   margin: 0 10px 0 0;
   width: 165px;
-  height: 110px;
-  border: 1px solid #ccc;
-  border-radius: 4px; }
+  height: 110px; }
 #overview_cont.no_photo #overview_desc {
   float: none;
   width: auto; }
@@ -1327,7 +1405,120 @@
 #overview_desc {
   float: left;
   width: 520px; }
+.two_item_layout .spot_item {
+  float: left;
+  width: 345px;
+  margin: 0 0 0 7px;
+  padding: 0 0 0 7px;
+  border-left: 1px dotted #ccc; }
+  .two_item_layout .spot_item:first-child {
+    margin-left: 0;
+    padding-left: 0;
+    border-left: none; }
+  .two_item_layout .spot_item h3 {
+    font-size: 20px;
+    overflow: hidden; }
+  .two_item_layout .spot_item .venue_type {
+    height: 15px;
+    margin: 2px 0 3px;
+    padding: 0;
+    line-height: 15px;
+    overflow: hidden; }
+    .two_item_layout .spot_item .venue_type .icon_types {
+      margin: 0 5px 0 0; }
+  .two_item_layout .spot_item .thumbnail_link {
+    width: 345px;
+    height: 230px; }
+    .two_item_layout .spot_item .thumbnail_link img {
+      width: 345px;
+      height: 230px; }
+  .two_item_layout .spot_item .quick_nav_links {
+    margin: 4px 0 8px;
+    border-bottom: 1px solid #dae4e9; }
+  .two_item_layout .spot_item .desc, .two_item_layout .spot_item .user_review_summary, .two_item_layout .spot_item .details {
+    display: block;
+    position: relative;
+    width: 337px;
+    height: 80px;
+    padding: 0;
+    color: #000;
+    font-size: 12px;
+    line-height: 16px;
+    text-decoration: none;
+    overflow: hidden; }
+    .two_item_layout .spot_item .desc .by_line, .two_item_layout .spot_item .user_review_summary .by_line, .two_item_layout .spot_item .details .by_line {
+      margin: 0 0 2px; }
+    .two_item_layout .spot_item .desc .ellipsis, .two_item_layout .spot_item .user_review_summary .ellipsis, .two_item_layout .spot_item .details .ellipsis {
+      position: absolute;
+      right: 0;
+      bottom: -1px;
+      max-width: 334px;
+      height: 15px;
+      font-size: 12px;
+      line-height: 15px;
+      background: #fff;
+      overflow: hidden; }
+      .two_item_layout .spot_item .desc .ellipsis a, .two_item_layout .spot_item .desc .ellipsis a:visited, .two_item_layout .spot_item .user_review_summary .ellipsis a, .two_item_layout .spot_item .user_review_summary .ellipsis a:visited, .two_item_layout .spot_item .details .ellipsis a, .two_item_layout .spot_item .details .ellipsis a:visited {
+        font-size: 11px; }
+  .two_item_layout .spot_item .details p {
+    padding-bottom: 0; }
+  .two_item_layout .spot_item .details .date_time {
+    height: 15px;
+    overflow: hidden; }
+    .two_item_layout .spot_item .details .date_time .small_text {
+      font-size: 16px;
+      line-height: 14px;
+      font-weight: bold;
+      text-transform: inherit; }
+  .two_item_layout .spot_item .details .event_venue {
+    font-size: 15px;
+    margin: 8px 0 0;
+    height: 18px;
+    overflow: hidden; }
+    .two_item_layout .spot_item .details .event_venue .black_link {
+      color: #375363 !important; }
+      .two_item_layout .spot_item .details .event_venue .black_link:hover {
+        color: #000 !important; }
+  .two_item_layout .spot_item .spot_item_foot {
+    margin: 8px 0 0;
+    padding: 8px 0 0;
+    border-top: 1px dashed #adc0c9; }
+    .two_item_layout .spot_item .spot_item_foot .heading {
+      display: block;
+      margin: 0 0 2px;
+      color: #8ea8b5;
+      font-size: 9px;
+      line-height: 11px;
+      text-transform: uppercase; }
+  .two_item_layout .spot_item address {
+    float: left;
+    position: relative;
+    height: 37px;
+    color: #6c8898;
+    font-size: 10px;
+    line-height: 12px;
+    font-family: 'Arial', sans-serif;
+    overflow: hidden; }
+    .two_item_layout .spot_item address p {
+      padding: 0;
+      float: left;
+      width: 180px; }
+    .two_item_layout .spot_item address .icon {
+      display: block;
+      float: left;
+      margin: 0 8px 0 0;
+      width: 17px;
+      height: 21px;
+      background-image: url(/assets/content_bg/app_sprite_2.png);
+      background-position: -74px 0; }
+  .two_item_layout .spot_item .liked_by {
+    float: right; }
+    .two_item_layout .spot_item .liked_by dt {
+      float: none; }
 /*
+
+
+
 
 
 
@@ -1388,17 +1579,17 @@
   #more_links_pod ul.two_line_title .title {
     height: 37px; }
 
-/* Related Pages */
-/* TODO (VH): move to external */
-#related_pages ul {
-  float: left;
-  width: 176px;
-  padding: 3px 0 0; }
-  #related_pages ul li {
-    margin: 0 0 3px;
-    font-size: 13px; }
-    #related_pages ul li a, #related_pages ul li a:link, #related_pages ul li a:visited {
-      color: #375363;
-      text-shadow: 0 0 0.08em #DADADA; }
-      #related_pages ul li a:hover, #related_pages ul li a:link:hover, #related_pages ul li a:visited:hover {
-        color: black; }
+#browse_interest {
+  /* TODO (VH): Create inner_pod styles and replace this. */
+  padding-top: 13px;
+  border-top: 1px solid #adc0c9; }
+  #browse_interest h3 {
+    float: none;
+    width: auto;
+    margin: 0 0 6px;
+    padding: 0;
+    color: #000;
+    font-size: 17px;
+    font-weight: bold;
+    text-align: left;
+    line-height: 21px; }

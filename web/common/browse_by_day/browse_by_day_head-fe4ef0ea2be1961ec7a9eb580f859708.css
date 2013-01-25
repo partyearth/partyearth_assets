@@ -1,0 +1,72 @@
+.day_changer_head {
+  width: 715px;
+  /* Fix for linux */
+  margin: 0 0 8px; }
+  .day_changer_head h1.blue_header,
+  .day_changer_head h2.blue_header {
+    width: 345px; }
+  .day_changer_head .blue_header {
+    float: left;
+    margin: 0;
+    font-size: 20px; }
+    .day_changer_head .blue_header.day_changer_heads {
+      width: auto;
+      padding: 9px 0 10px;
+      color: #bbe3fe;
+      font-size: 14px;
+      line-height: 14px;
+      text-align: center;
+      text-transform: uppercase;
+      text-shadow: none;
+      border-left: 1px dotted #40b0fd;
+      cursor: pointer; }
+      .day_changer_head .blue_header.day_changer_heads span {
+        display: block;
+        margin: 3px 0 0;
+        font-size: 8px;
+        line-height: 8px;
+        font-family: 'Arial', sans-serif; }
+      .day_changer_head .blue_header.day_changer_heads.Selected {
+        position: relative;
+        color: white;
+        background-color: #f60;
+        background-image: url(/assets/content_bg/browse_by_today_selected_bg-f1c1156edd33c283e9669743cedf3aa9.gif);
+        background-repeat: repeat-x;
+        border-top: 0px inset #FFB400;
+        border-bottom: 0px inset #A14100;
+        border-radius: 4px;
+        box-shadow: 0 1px 3px #bfbfbf;
+        cursor: default;
+        filter: none; }
+        .day_changer_head .blue_header.day_changer_heads.Selected:hover {
+          background-image: url(/assets/content_bg/browse_by_today_selected_bg-f1c1156edd33c283e9669743cedf3aa9.gif); }
+      .day_changer_head .blue_header.day_changer_heads:hover {
+        color: #fff;
+        background: -webkit-gradient(linear, 0 0, 0 100%, from(#0099ff), to(#076fd1));
+        background: -moz-linear-gradient(top, #0099ff, #076fd1);
+        cursor: pointer; }
+      .day_changer_head .blue_header.day_changer_heads.today {
+        width: 72px; }
+      .day_changer_head .blue_header.day_changer_heads.tomorrow {
+        width: 114px; }
+      .day_changer_head .blue_header.day_changer_heads.choose {
+        width: 140px; }
+  .day_changer_head .day_changer_more {
+    position: relative;
+    float: left; }
+    .day_changer_head .day_changer_more .date_picker_block {
+      top: 52px;
+      left: -25px;
+      width: 146px;
+      height: 225px;
+      box-shadow: 0 1px 2px #628495; }
+      .day_changer_head .day_changer_more .date_picker_block .point {
+        left: 102px; }
+      .day_changer_head .day_changer_more .date_picker_block .Notice {
+        font-size: 11px; }
+      .day_changer_head .day_changer_more .date_picker_block .datepicker {
+        width: 149px !important; }
+        .day_changer_head .day_changer_more .date_picker_block .datepicker .datepickerContainer {
+          width: 149px !important; }
+      .day_changer_head .day_changer_more .date_picker_block .controls .clear_link {
+        display: none; }

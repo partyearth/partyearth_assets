@@ -1979,6 +1979,10 @@ h2 {
     margin: 0 0 13px; }
     #left_container .section:last-child {
       margin-bottom: 0; }
+  #left_container .sub_section {
+    margin: 7px 0 0;
+    padding: 7px 0 0;
+    border-top: 1px solid #adc0c9; }
   #left_container .section_footer, #left_container .pod_footer {
     clear: left;
     margin: 7px 0 0;
@@ -2443,12 +2447,12 @@ button,
   margin: 0 3px 0 0\9; }
 
 .map_marker_icon {
-  background: url(/assets/content_bg/application_sprite.png) 0 -515px no-repeat transparent;
+  display: block;
+  float: left;
   width: 17px;
   height: 15px;
-  display: inline-block;
-  position: relative;
-  top: 3px; }
+  margin: 0 3px 0 0;
+  background: url(/assets/content_bg/application_sprite.png) 0 -515px no-repeat transparent; }
 
 /* BEGIN BOX LINKS
 -------------------------------------------------------------------
@@ -3253,7 +3257,7 @@ If you don't know where else to place something, place it below this line.
 .venue_type, .type {
   margin: 0 0 5px;
   font-size: 9px;
-  line-height: 12px;
+  line-height: 11px;
   text-transform: uppercase;
   font-family: 'Arial', sans-serif;
   color: #6C8898; }
@@ -3460,8 +3464,10 @@ If you don't know where else to place something, place it below this line.
     line-height: 21px;
     text-decoration: none;
     word-spacing: 0; }
-    .pod h3 a, .pod h3 a:link, .pod h3 a:visited {
+    .pod h3 a {
       color: #000; }
+      .pod h3 a:hover {
+        color: #597686; }
     .pod h3.sub_headline {
       font-size: 20px;
       line-height: 21px; }
@@ -3814,13 +3820,21 @@ h3.large_gray_btn_full {
   height: 58px;
   background-image: url(/assets/content_bg/app_sprite_2.png); }
 
-/* Different containers for the Photo Article Flag */
-.article_img,
-.object_photo,
-.thumbnail_link {
-  position: relative; }
+.thumbnail_link,
+.thumbnail {
+  display: block;
+  position: relative;
+  border: 1px solid #adc0c9;
+  border-radius: 4px;
+  overflow: hidden; }
+  .thumbnail_link img,
+  .thumbnail img {
+    display: block;
+    border-radius: 3px; }
 
-.no_select, .no_select * {
+/* class and items for no select */
+.no_select, .no_select *,
+#seo_pagination, #seo_pagiation * {
   user-select: none;
   -webkit-user-select: none;
   -webkit-touch-callout: none;
@@ -3828,6 +3842,7 @@ h3.large_gray_btn_full {
   -khtml-user-select: none;
   -ms-user-select: none; }
 
+/* class and items for clearfix */
 .clearfix:before, .clearfix:after,
 formfield ol:before, .formfield ol:after {
   content: "";

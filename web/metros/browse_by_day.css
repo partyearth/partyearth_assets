@@ -7,10 +7,11 @@
     width: 345px; }
   .day_changer_head .blue_header {
     float: left;
-    margin: 0; }
+    margin: 0;
+    font-size: 20px; }
     .day_changer_head .blue_header.day_changer_heads {
       width: auto;
-      padding: 9px 12px 10px;
+      padding: 9px 0 10px;
       color: #bbe3fe;
       font-size: 14px;
       line-height: 14px;
@@ -23,7 +24,8 @@
         display: block;
         margin: 3px 0 0;
         font-size: 8px;
-        line-height: 8px; }
+        line-height: 8px;
+        font-family: 'Arial', sans-serif; }
       .day_changer_head .blue_header.day_changer_heads.Selected {
         position: relative;
         color: white;
@@ -43,6 +45,12 @@
         background: -webkit-gradient(linear, 0 0, 0 100%, from(#0099ff), to(#076fd1));
         background: -moz-linear-gradient(top, #0099ff, #076fd1);
         cursor: pointer; }
+      .day_changer_head .blue_header.day_changer_heads.today {
+        width: 72px; }
+      .day_changer_head .blue_header.day_changer_heads.tomorrow {
+        width: 114px; }
+      .day_changer_head .blue_header.day_changer_heads.choose {
+        width: 140px; }
   .day_changer_head .day_changer_more {
     position: relative;
     float: left; }
@@ -78,16 +86,12 @@
   min-height: 311px;
   margin: 13px 1px 0 0; }
   .day_changer_cont .featured_item .thumbnail_link {
-    display: block;
     width: 345px;
     height: 230px;
     padding-bottom: 57px;
-    border: 1px solid #ccc;
     border-bottom: none;
-    border-radius: 4px 4px 0 0;
-    overflow: hidden; }
+    border-radius: 4px 4px 0 0; }
     .day_changer_cont .featured_item .thumbnail_link img {
-      display: block;
       width: 345px;
       height: 230px; }
   .day_changer_cont .featured_item .featured_caption {
@@ -193,17 +197,16 @@
           height: 70px;
           overflow: hidden; }
       .day_changer_cont .vertical_slider .items_collection .small_items li.item .thumbnail_link {
-        display: block;
         float: left;
         width: 98px;
         height: 65px;
         margin: 0 12px 0 0;
         border: 1px solid #ccc;
-        border-radius: 2px 2px 2px 2px; }
+        border-radius: 2px; }
         .day_changer_cont .vertical_slider .items_collection .small_items li.item .thumbnail_link img {
-          display: block;
           width: 98px;
-          height: 65px; }
+          height: 65px;
+          border-radius: 1px; }
       .day_changer_cont .vertical_slider .items_collection .small_items li.item .desc {
         padding: 0; }
       .day_changer_cont .vertical_slider .items_collection .small_items li.item .ellipsis {
