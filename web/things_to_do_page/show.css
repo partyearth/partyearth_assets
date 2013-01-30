@@ -298,6 +298,7 @@
   /* If we have 2 line titles increase the height by the line height of the '.name' (18px) element. */
   /* If at least 1 spot item address field goes to 3 lines increase height by line height of 'address' element. */
   /* If it is a list of event venues increase the height by 17 */
+  /* If only event spot items decrease the height by 14 */
   /* Override styles from liked_by.scss */ }
   .carousel_3 .page_count {
     float: right;
@@ -350,13 +351,23 @@
   .carousel_3.event_venues {
     /* If it is for Events and it has 2 line titles increase again by the height of the '.name' (18px) element. */ }
     .carousel_3.event_venues .carousel_3_box {
-      height: 404px; }
+      height: 418px; }
     .carousel_3.event_venues .spot_item {
-      height: 404px; }
+      height: 418px; }
     .carousel_3.event_venues.two_line_title .carousel_3_box {
-      height: 422px; }
+      height: 436px; }
     .carousel_3.event_venues.two_line_title .spot_item {
-      height: 422px; }
+      height: 436px; }
+  .carousel_3.carousel_events {
+    /* If it is for Events and it has 2 line titles increase again by the height of the '.name' (18px) element. */ }
+    .carousel_3.carousel_events .carousel_3_box {
+      height: 373px; }
+    .carousel_3.carousel_events .spot_item {
+      height: 373px; }
+    .carousel_3.carousel_events.two_line_title .carousel_3_box {
+      height: 391px; }
+    .carousel_3.carousel_events.two_line_title .spot_item {
+      height: 391px; }
   .carousel_3 .carousel_3_sldr {
     position: absolute;
     top: 0;
@@ -372,7 +383,6 @@
     border-right: 1px dotted #ccc; }
     .carousel_3 .spot_item .name {
       display: block;
-      height: 18px;
       margin: 0 0 4px;
       color: #000;
       font-size: 16px;
@@ -439,10 +449,11 @@
       display: block;
       height: 16px;
       color: #375363;
-      font-size: 14px;
+      font-size: 13px;
       font-weight: bold;
       font-family: 'Arial', sans-serif;
       line-height: 16px;
+      text-shadow: 0 0 1px #ccc;
       overflow: hidden; }
     .carousel_3 .spot_item .details a.event_venue {
       text-decoration: underline; }
@@ -507,17 +518,16 @@
         background-position: -171px -3021px; }
   .carousel_3.two_line_title .prev_next_btns {
     top: 98px; }
-  .carousel_3 .liked_by {
+  .carousel_3 .spot_item_foot {
     margin: 8px 0 0;
     padding: 8px 0 0;
     border-top: 1px dashed #adc0c9; }
-    .carousel_3 .liked_by dt {
-      float: left;
-      margin: 0 10px 0 0; }
-    .carousel_3 .liked_by .character_cont .dialog_box {
-      right: 0; }
-    .carousel_3 .liked_by .character_cont.emma .dialog_point {
-      left: -1px; }
+  .carousel_3 .liked_by dt {
+    margin: 0 10px 0 0; }
+  .carousel_3 .liked_by .character_cont .dialog_box {
+    right: 0; }
+  .carousel_3 .liked_by .character_cont.emma .dialog_point {
+    left: -1px; }
   .carousel_3.event_venues .spot_item .event_list {
     height: 150px;
     margin: 0 0 8px;
@@ -604,10 +614,6 @@
     text-decoration: underline;
     line-height: 18px;
     overflow: hidden; }
-    .browse_category h3 a, .browse_category h3 .fake_link {
-      color: #000; }
-      .browse_category h3 a:hover, .browse_category h3 .fake_link:hover {
-        color: #597686; }
   .browse_category.two_line_title h3 {
     height: 36px; }
   .browse_category p {
@@ -802,11 +808,11 @@
       font-size: 10px;
       line-height: 11px; }
   .browse_category_dash_list.one_venue ul {
-    height: 34px; }
+    height: 32px; }
   .browse_category_dash_list.two_venues ul {
-    height: 84px; }
+    height: 80px; }
   .browse_category_dash_list.three_venues ul {
-    height: 133px; }
+    height: 128px; }
 /* For section under Browse by Personality pod */
 #browse_interest h3 {
   float: left;
@@ -819,17 +825,31 @@
   text-align: right;
   line-height: 29px; }
 #browse_interest ul {
-  float: left;
-  width: 135px;
   padding: 3px 0 0; }
   #browse_interest ul li {
+    float: left;
+    width: 135px;
     line-height: 21px; }
-    #browse_interest ul li .fake_link {
+    #browse_interest ul li a, #browse_interest ul li .fake_link {
       color: #375363;
       text-decoration: underline;
       text-shadow: 0 0 0.08em #dadada; }
-      #browse_interest ul li .fake_link:hover {
+      #browse_interest ul li a:hover, #browse_interest ul li .fake_link:hover {
         color: #000; }
+#browse_interest.onerow h3 {
+  float: left;
+  width: 285px;
+  margin: 0 20px 0 0; }
+#browse_interest.onerow ul {
+  float: left;
+  width: 400px;
+  padding: 0; }
+  #browse_interest.onerow ul li {
+    width: auto;
+    margin: 0 0 0 30px;
+    line-height: 18px; }
+    #browse_interest.onerow ul li:first-child {
+      margin-left: 0; }
 /*************************************************
 *
 *	project:  	liteAccordion - horizontal accordion plugin for jQuery
@@ -987,16 +1007,15 @@
           height: 50px; }
       .pe .character_content .venue_item_wrapper .venue_item .venue_name {
         position: relative;
-        margin: 0 0 1px;
+        margin: 0 0 3px;
         padding: 0;
-        line-height: 13px;
+        line-height: 15px;
         text-shadow: 0 0 0.08em #dadada; }
         .pe .character_content .venue_item_wrapper .venue_item .venue_name a, .pe .character_content .venue_item_wrapper .venue_item .venue_name a:visited {
           color: #000; }
           .pe .character_content .venue_item_wrapper .venue_item .venue_name a:hover, .pe .character_content .venue_item_wrapper .venue_item .venue_name a:visited:hover {
             color: #597686; }
       .pe .character_content .venue_item_wrapper .venue_item .venue_type {
-        margin: 4px 0 0;
         padding: 0 0 0 87px; }
   .pe .character_content .tags_and_more .tags {
     max-width: 300px;
@@ -1266,7 +1285,7 @@
     #right_sidebar .name a {
       display: inline-block;
       width: 160px;
-      height: 10px;
+      height: 11px;
       color: #09f;
       text-decoration: none;
       text-transform: none;
@@ -1294,7 +1313,7 @@
     border-top: 1px dashed #adc0c9; }
     #right_sidebar .list .list_item.featured {
       margin: 0 0 15px;
-      padding: 0 0 5px;
+      padding: 0 0 15px;
       border-bottom: 1px solid #8ea8b5; }
       #right_sidebar .list .list_item.featured .title {
         margin: 0 0 8px;
@@ -1377,8 +1396,7 @@
       line-height: 11px;
       text-decoration: none; }
       #right_sidebar .pod_footer a:hover, #right_sidebar .pod_footer a:link:hover, #right_sidebar .pod_footer a:visited:hover, #right_sidebar .pod_footer .fake_link:hover {
-        color: #597686;
-        text-decoration: underline; }
+        color: #597686; }
       #right_sidebar .pod_footer a span, #right_sidebar .pod_footer a:link span, #right_sidebar .pod_footer a:visited span, #right_sidebar .pod_footer .fake_link span {
         text-decoration: underline; }
         #right_sidebar .pod_footer a span.arrow, #right_sidebar .pod_footer a:link span.arrow, #right_sidebar .pod_footer a:visited span.arrow, #right_sidebar .pod_footer .fake_link span.arrow {
@@ -1530,8 +1548,7 @@
   #recent_articles .list .list_item.featured {
     float: none;
     width: auto;
-    margin-left: 0;
-    padding-bottom: 15px; }
+    margin-left: 0; }
     #recent_articles .list .list_item.featured .thumbnail_link {
       margin: 0 0 15px; }
 /* Upcoming Events Sidebar Pod */

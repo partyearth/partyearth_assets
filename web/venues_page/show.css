@@ -1,3 +1,22 @@
+#pop_neigh li {
+  float: left;
+  width: 102px;
+  margin: 0 0 0 18px; }
+  #pop_neigh li:first-child {
+    margin-left: 0; }
+  #pop_neigh li .name {
+    display: block;
+    color: #000;
+    margin: 0 0 6px;
+    overflow: hidden; }
+    #pop_neigh li .name:hover {
+      color: #09f; }
+  #pop_neigh li .thumbnail_link,
+  #pop_neigh li .thumbnail_link img {
+    width: 100px;
+    height: 100px; }
+#pop_neigh.two_line_title li .name {
+  height: 36px; }
 /* Styles for the more links pod */
 #more_links_pod ul {
   margin-top: 10px;
@@ -63,6 +82,37 @@
     text-indent: -10px;
     line-height: 17px;
     overflow: hidden; }
+/* Related Pages */
+#related_pages ul {
+  float: left;
+  width: 176px; }
+  #related_pages ul li {
+    margin: 0 0 3px;
+    font-size: 13px; }
+    #related_pages ul li a, #related_pages ul li a:link, #related_pages ul li a:visited {
+      color: #375363;
+      text-shadow: 0 0 0.08em #DADADA; }
+      #related_pages ul li a:hover, #related_pages ul li a:link:hover, #related_pages ul li a:visited:hover {
+        color: black; }
+#related_pages .related_pages_section {
+  margin: 8px 0 0;
+  padding: 8px 0 0;
+  border-top: 1px dashed #adc0c9; }
+  #related_pages .related_pages_section:first-child {
+    margin-top: 0;
+    padding-top: 0;
+    border-top: none; }
+  #related_pages .related_pages_section h5 {
+    float: left;
+    width: 165px;
+    margin: 0 20px 0 0;
+    color: #000;
+    font-weight: bold; }
+  #related_pages .related_pages_section ul {
+    width: 520px; }
+    #related_pages .related_pages_section ul li {
+      float: left;
+      width: 173px; }
 /* STYLES FOR RIGHT SIDEBAR
 -----------------------------------------------------
 :: Styles for the right sidebar and universal elements like pods.
@@ -148,7 +198,7 @@
     #right_sidebar .name a {
       display: inline-block;
       width: 160px;
-      height: 10px;
+      height: 11px;
       color: #09f;
       text-decoration: none;
       text-transform: none;
@@ -176,7 +226,7 @@
     border-top: 1px dashed #adc0c9; }
     #right_sidebar .list .list_item.featured {
       margin: 0 0 15px;
-      padding: 0 0 5px;
+      padding: 0 0 15px;
       border-bottom: 1px solid #8ea8b5; }
       #right_sidebar .list .list_item.featured .title {
         margin: 0 0 8px;
@@ -259,8 +309,7 @@
       line-height: 11px;
       text-decoration: none; }
       #right_sidebar .pod_footer a:hover, #right_sidebar .pod_footer a:link:hover, #right_sidebar .pod_footer a:visited:hover, #right_sidebar .pod_footer .fake_link:hover {
-        color: #597686;
-        text-decoration: underline; }
+        color: #597686; }
       #right_sidebar .pod_footer a span, #right_sidebar .pod_footer a:link span, #right_sidebar .pod_footer a:visited span, #right_sidebar .pod_footer .fake_link span {
         text-decoration: underline; }
         #right_sidebar .pod_footer a span.arrow, #right_sidebar .pod_footer a:link span.arrow, #right_sidebar .pod_footer a:visited span.arrow, #right_sidebar .pod_footer .fake_link span.arrow {
@@ -412,8 +461,7 @@
   #recent_articles .list .list_item.featured {
     float: none;
     width: auto;
-    margin-left: 0;
-    padding-bottom: 15px; }
+    margin-left: 0; }
     #recent_articles .list .list_item.featured .thumbnail_link {
       margin: 0 0 15px; }
 /*BEGIN NEW IN PHOTO GALLERIES STYLES*/
@@ -512,6 +560,7 @@
 
 
 
+
 */
 /* LEFT COLUMN
 ---------------------------------------------*/
@@ -530,18 +579,6 @@
       height: 110px; }
   #left_container .category_page_content .overview_copy_block .read_more {
     width: 527px; }
-#left_container #related_pages ul {
-  float: left;
-  width: 176px;
-  padding: 3px 0 0; }
-  #left_container #related_pages ul li {
-    margin: 0 0 3px;
-    font-size: 13px; }
-    #left_container #related_pages ul li a, #left_container #related_pages ul li a:link, #left_container #related_pages ul li a:visited {
-      color: #375363;
-      text-shadow: 0 0 0.08em #DADADA; }
-      #left_container #related_pages ul li a:hover, #left_container #related_pages ul li a:link:hover, #left_container #related_pages ul li a:visited:hover {
-        color: black; }
 
 .read_more.pull_down .more_toggle {
   margin-top: -18px !important; }
@@ -656,106 +693,116 @@
     .one_item_layout .spot_item .desc_address .event_venue .directions_link {
       display: inline-block;
       margin-top: 5px; }
-.two_item_layout {
-  width: 706px; }
-  .two_item_layout .spot_item {
-    float: left;
+.two_item_layout .spot_item {
+  float: left;
+  width: 345px;
+  margin: 0 0 0 7px;
+  padding: 0 0 0 7px;
+  border-left: 1px dotted #ccc; }
+  .two_item_layout .spot_item:first-child {
+    margin-left: 0;
+    padding-left: 0;
+    border-left: none; }
+  .two_item_layout .spot_item h3 {
+    font-size: 20px;
+    overflow: hidden; }
+  .two_item_layout .spot_item .venue_type {
+    height: 15px;
+    margin: 2px 0 3px;
+    padding: 0;
+    line-height: 15px;
+    overflow: hidden; }
+    .two_item_layout .spot_item .venue_type .icon_types {
+      margin: 0 5px 0 0; }
+  .two_item_layout .spot_item .thumbnail_link {
     width: 345px;
-    margin: 0 7px 0 0;
-    padding: 0 7px 0 0;
-    border-right: 1px dotted #ccc; }
-    .two_item_layout .spot_item .headline.sub_headline {
-      height: 24px;
-      font-size: 20px;
-      overflow: hidden; }
-      .two_item_layout .spot_item .headline.sub_headline a, .two_item_layout .spot_item .headline.sub_headline a:visited {
-        text-decoration: underline; }
-    .two_item_layout .spot_item .venue_type {
-      margin: 2px 0 6px;
-      padding: 0;
-      line-height: 15px;
-      height: 12px;
-      overflow: hidden; }
-      .two_item_layout .spot_item .venue_type .icon_types {
-        margin: 0 5px 0 0; }
-    .two_item_layout .spot_item .thumbnail_link {
+    height: 230px; }
+    .two_item_layout .spot_item .thumbnail_link img {
       width: 345px;
       height: 230px; }
-      .two_item_layout .spot_item .thumbnail_link img {
-        width: 345px;
-        height: 230px; }
-    .two_item_layout .spot_item .quick_nav_links {
-      margin: 4px 0 8px;
-      border-bottom: 1px solid #dae4e9; }
-    .two_item_layout .spot_item .desc, .two_item_layout .spot_item .user_review_summary, .two_item_layout .spot_item .details {
-      display: block;
-      position: relative;
-      width: 337px;
-      height: 80px;
-      padding: 0;
-      color: #000;
-      font-size: 12px;
-      line-height: 16px;
-      text-decoration: none;
-      overflow: hidden; }
-      .two_item_layout .spot_item .desc .by_line, .two_item_layout .spot_item .user_review_summary .by_line, .two_item_layout .spot_item .details .by_line {
-        margin: 0 0 2px; }
-      .two_item_layout .spot_item .desc .ellipsis, .two_item_layout .spot_item .user_review_summary .ellipsis, .two_item_layout .spot_item .details .ellipsis {
-        position: absolute;
-        right: 0;
-        bottom: -1px;
-        max-width: 334px;
-        height: 15px;
-        font-size: 12px;
-        line-height: 15px;
-        background: #fff;
-        overflow: hidden; }
-        .two_item_layout .spot_item .desc .ellipsis a, .two_item_layout .spot_item .desc .ellipsis a:visited, .two_item_layout .spot_item .user_review_summary .ellipsis a, .two_item_layout .spot_item .user_review_summary .ellipsis a:visited, .two_item_layout .spot_item .details .ellipsis a, .two_item_layout .spot_item .details .ellipsis a:visited {
-          font-size: 11px; }
-    .two_item_layout .spot_item .details p {
-      padding-bottom: 0; }
-    .two_item_layout .spot_item .details .date_time {
+  .two_item_layout .spot_item .quick_nav_links {
+    margin: 4px 0 8px;
+    border-bottom: 1px solid #dae4e9; }
+  .two_item_layout .spot_item .desc, .two_item_layout .spot_item .user_review_summary, .two_item_layout .spot_item .details {
+    display: block;
+    position: relative;
+    width: 337px;
+    height: 80px;
+    padding: 0;
+    color: #000;
+    font-size: 12px;
+    line-height: 16px;
+    text-decoration: none;
+    overflow: hidden; }
+    .two_item_layout .spot_item .desc .by_line, .two_item_layout .spot_item .user_review_summary .by_line, .two_item_layout .spot_item .details .by_line {
+      margin: 0 0 2px; }
+    .two_item_layout .spot_item .desc .ellipsis, .two_item_layout .spot_item .user_review_summary .ellipsis, .two_item_layout .spot_item .details .ellipsis {
+      position: absolute;
+      right: 0;
+      bottom: -1px;
+      max-width: 334px;
       height: 15px;
+      font-size: 12px;
+      line-height: 15px;
+      background: #fff;
       overflow: hidden; }
-      .two_item_layout .spot_item .details .date_time .small_text {
-        font-size: 16px;
-        line-height: 14px;
-        font-weight: bold;
-        text-transform: inherit; }
-    .two_item_layout .spot_item .details .event_venue {
-      font-size: 15px;
-      margin: 8px 0 0;
-      height: 18px;
-      overflow: hidden; }
-      .two_item_layout .spot_item .details .event_venue .black_link {
-        color: #375363 !important; }
-        .two_item_layout .spot_item .details .event_venue .black_link:hover {
-          color: #000 !important; }
-    .two_item_layout .spot_item address {
-      position: relative;
-      height: 24px;
-      margin: 8px 0 0;
-      padding: 8px 0 0 25px;
-      color: #6c8898;
-      font-size: 10px;
-      line-height: 12px;
-      font-family: 'Arial', sans-serif;
-      border-top: 1px dashed #adc0c9;
-      overflow: hidden; }
-      .two_item_layout .spot_item address p {
-        padding: 0; }
-      .two_item_layout .spot_item address .icon {
-        position: absolute;
-        left: 0;
-        top: 10px;
-        width: 17px;
-        height: 21px;
-        background-image: url(/assets/content_bg/app_sprite_2.png);
-        background-position: -74px 0; }
-    .two_item_layout .spot_item.second {
-      margin: 0;
+      .two_item_layout .spot_item .desc .ellipsis a, .two_item_layout .spot_item .desc .ellipsis a:visited, .two_item_layout .spot_item .user_review_summary .ellipsis a, .two_item_layout .spot_item .user_review_summary .ellipsis a:visited, .two_item_layout .spot_item .details .ellipsis a, .two_item_layout .spot_item .details .ellipsis a:visited {
+        font-size: 11px; }
+  .two_item_layout .spot_item .details p {
+    padding-bottom: 0; }
+  .two_item_layout .spot_item .details .date_time {
+    height: 15px;
+    overflow: hidden; }
+    .two_item_layout .spot_item .details .date_time .small_text {
+      font-size: 16px;
+      line-height: 14px;
+      font-weight: bold;
+      text-transform: inherit; }
+  .two_item_layout .spot_item .details .event_venue {
+    font-size: 15px;
+    margin: 8px 0 0;
+    height: 18px;
+    overflow: hidden; }
+    .two_item_layout .spot_item .details .event_venue .black_link {
+      color: #375363 !important; }
+      .two_item_layout .spot_item .details .event_venue .black_link:hover {
+        color: #000 !important; }
+  .two_item_layout .spot_item .spot_item_foot {
+    margin: 8px 0 0;
+    padding: 8px 0 0;
+    border-top: 1px dashed #adc0c9; }
+    .two_item_layout .spot_item .spot_item_foot .heading {
+      display: block;
+      margin: 0 0 2px;
+      color: #8ea8b5;
+      font-size: 9px;
+      line-height: 11px;
+      text-transform: uppercase; }
+  .two_item_layout .spot_item address {
+    float: left;
+    position: relative;
+    height: 37px;
+    color: #6c8898;
+    font-size: 10px;
+    line-height: 12px;
+    font-family: 'Arial', sans-serif;
+    overflow: hidden; }
+    .two_item_layout .spot_item address p {
       padding: 0;
-      border: none; }
+      float: left;
+      width: 180px; }
+    .two_item_layout .spot_item address .icon {
+      display: block;
+      float: left;
+      margin: 0 8px 0 0;
+      width: 17px;
+      height: 21px;
+      background-image: url(/assets/content_bg/app_sprite_2.png);
+      background-position: -74px 0; }
+  .two_item_layout .spot_item .liked_by {
+    float: right; }
+    .two_item_layout .spot_item .liked_by dt {
+      float: none; }
 /* TOOLTIP STYLES
 --------------------------------------------------------------
 :: Basic Styles for the tooltip container and point.
@@ -1056,6 +1103,7 @@
   /* If we have 2 line titles increase the height by the line height of the '.name' (18px) element. */
   /* If at least 1 spot item address field goes to 3 lines increase height by line height of 'address' element. */
   /* If it is a list of event venues increase the height by 17 */
+  /* If only event spot items decrease the height by 14 */
   /* Override styles from liked_by.scss */ }
   .carousel_3 .page_count {
     float: right;
@@ -1108,13 +1156,23 @@
   .carousel_3.event_venues {
     /* If it is for Events and it has 2 line titles increase again by the height of the '.name' (18px) element. */ }
     .carousel_3.event_venues .carousel_3_box {
-      height: 404px; }
+      height: 418px; }
     .carousel_3.event_venues .spot_item {
-      height: 404px; }
+      height: 418px; }
     .carousel_3.event_venues.two_line_title .carousel_3_box {
-      height: 422px; }
+      height: 436px; }
     .carousel_3.event_venues.two_line_title .spot_item {
-      height: 422px; }
+      height: 436px; }
+  .carousel_3.carousel_events {
+    /* If it is for Events and it has 2 line titles increase again by the height of the '.name' (18px) element. */ }
+    .carousel_3.carousel_events .carousel_3_box {
+      height: 373px; }
+    .carousel_3.carousel_events .spot_item {
+      height: 373px; }
+    .carousel_3.carousel_events.two_line_title .carousel_3_box {
+      height: 391px; }
+    .carousel_3.carousel_events.two_line_title .spot_item {
+      height: 391px; }
   .carousel_3 .carousel_3_sldr {
     position: absolute;
     top: 0;
@@ -1130,7 +1188,6 @@
     border-right: 1px dotted #ccc; }
     .carousel_3 .spot_item .name {
       display: block;
-      height: 18px;
       margin: 0 0 4px;
       color: #000;
       font-size: 16px;
@@ -1197,10 +1254,11 @@
       display: block;
       height: 16px;
       color: #375363;
-      font-size: 14px;
+      font-size: 13px;
       font-weight: bold;
       font-family: 'Arial', sans-serif;
       line-height: 16px;
+      text-shadow: 0 0 1px #ccc;
       overflow: hidden; }
     .carousel_3 .spot_item .details a.event_venue {
       text-decoration: underline; }
@@ -1265,17 +1323,16 @@
         background-position: -171px -3021px; }
   .carousel_3.two_line_title .prev_next_btns {
     top: 98px; }
-  .carousel_3 .liked_by {
+  .carousel_3 .spot_item_foot {
     margin: 8px 0 0;
     padding: 8px 0 0;
     border-top: 1px dashed #adc0c9; }
-    .carousel_3 .liked_by dt {
-      float: left;
-      margin: 0 10px 0 0; }
-    .carousel_3 .liked_by .character_cont .dialog_box {
-      right: 0; }
-    .carousel_3 .liked_by .character_cont.emma .dialog_point {
-      left: -1px; }
+  .carousel_3 .liked_by dt {
+    margin: 0 10px 0 0; }
+  .carousel_3 .liked_by .character_cont .dialog_box {
+    right: 0; }
+  .carousel_3 .liked_by .character_cont.emma .dialog_point {
+    left: -1px; }
   .carousel_3.event_venues .spot_item .event_list {
     height: 150px;
     margin: 0 0 8px;
@@ -1343,10 +1400,6 @@
     text-decoration: underline;
     line-height: 18px;
     overflow: hidden; }
-    .browse_category h3 a, .browse_category h3 .fake_link {
-      color: #000; }
-      .browse_category h3 a:hover, .browse_category h3 .fake_link:hover {
-        color: #597686; }
   .browse_category.two_line_title h3 {
     height: 36px; }
   .browse_category p {
@@ -1541,11 +1594,11 @@
       font-size: 10px;
       line-height: 11px; }
   .browse_category_dash_list.one_venue ul {
-    height: 34px; }
+    height: 32px; }
   .browse_category_dash_list.two_venues ul {
-    height: 84px; }
+    height: 80px; }
   .browse_category_dash_list.three_venues ul {
-    height: 133px; }
+    height: 128px; }
 /*BEGIN CUSTOM STYLES*/
 /*---------------------------------------------------------*/
 .Datepicker {
@@ -1792,6 +1845,7 @@ div.datepicker {
   height: 42px;
   overflow: hidden; }
 /*
+
 
 
 

@@ -180,6 +180,8 @@ fieldset .checkbox_group, fieldset .textbox_group, fieldset .text_group {
       fieldset .checkbox_group #user_subscribe_input label input, fieldset .textbox_group #user_subscribe_input label input, fieldset .text_group #user_subscribe_input label input {
         position: absolute;
         left: 0; }
+  fieldset .checkbox_group img, fieldset .textbox_group img, fieldset .text_group img {
+    left: 286px; }
 fieldset .radio_group legend {
   display: block;
   float: left;

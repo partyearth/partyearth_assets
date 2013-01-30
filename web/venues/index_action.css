@@ -131,7 +131,8 @@
 ----------------------------------------- */
 #seo_pagination {
   padding: 5px;
-  text-align: center; }
+  text-align: center;
+  line-height: 30px; }
   #seo_pagination em, #seo_pagination a, #seo_pagination span {
     display: inline-block;
     height: 15px;
@@ -140,6 +141,7 @@
     color: #adc0c9;
     font-style: normal;
     line-height: 16px;
+    vertical-align: middle;
     background-color: #fff;
     border: 1px solid #adc0c9;
     border-radius: 2px;

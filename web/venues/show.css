@@ -479,10 +479,10 @@ ratings_big_wrapper .title {
   padding: 11px 12px 0;
   border-width: 1px;
   border-style: solid;
-  border-top-color: #EBEBEB;
+  border-top-color: #ebebeb;
   border-bottom-color: white;
-  border-left-color: #F3F3F3;
-  border-right-color: #F3F3F3;
+  border-left-color: #f3f3f3;
+  border-right-color: #f3f3f3;
   background: -webkit-gradient(linear, 0 0, 0 100%, from(#fbfbfb), to(#f1f1f1));
   background: -moz-linear-gradient(top, #fbfbfb, #f1f1f1);
   -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=#FBFBFB, endColorStr=#F1F1F1);
@@ -708,7 +708,7 @@ ratings_big_wrapper .title {
     #right_sidebar .name a {
       display: inline-block;
       width: 160px;
-      height: 10px;
+      height: 11px;
       color: #09f;
       text-decoration: none;
       text-transform: none;
@@ -736,7 +736,7 @@ ratings_big_wrapper .title {
     border-top: 1px dashed #adc0c9; }
     #right_sidebar .list .list_item.featured {
       margin: 0 0 15px;
-      padding: 0 0 5px;
+      padding: 0 0 15px;
       border-bottom: 1px solid #8ea8b5; }
       #right_sidebar .list .list_item.featured .title {
         margin: 0 0 8px;
@@ -819,8 +819,7 @@ ratings_big_wrapper .title {
       line-height: 11px;
       text-decoration: none; }
       #right_sidebar .pod_footer a:hover, #right_sidebar .pod_footer a:link:hover, #right_sidebar .pod_footer a:visited:hover, #right_sidebar .pod_footer .fake_link:hover {
-        color: #597686;
-        text-decoration: underline; }
+        color: #597686; }
       #right_sidebar .pod_footer a span, #right_sidebar .pod_footer a:link span, #right_sidebar .pod_footer a:visited span, #right_sidebar .pod_footer .fake_link span {
         text-decoration: underline; }
         #right_sidebar .pod_footer a span.arrow, #right_sidebar .pod_footer a:link span.arrow, #right_sidebar .pod_footer a:visited span.arrow, #right_sidebar .pod_footer .fake_link span.arrow {
@@ -972,8 +971,7 @@ ratings_big_wrapper .title {
   #recent_articles .list .list_item.featured {
     float: none;
     width: auto;
-    margin-left: 0;
-    padding-bottom: 15px; }
+    margin-left: 0; }
     #recent_articles .list .list_item.featured .thumbnail_link {
       margin: 0 0 15px; }
 /* Upcoming Events Sidebar Pod */
@@ -2434,13 +2432,11 @@ ratings_big_wrapper .title {
   margin: 9px 0 0;
   padding: 9px 0 0 100px;
   border-top: 1px dashed #adc0c9; }
-  #object_page_info .info_section a, #object_page_info .info_section .fake_link, #object_page_info .info_section .nourl {
+  #object_page_info .info_section a, #object_page_info .info_section .fake_link {
     color: #000;
     text-decoration: underline; }
-    #object_page_info .info_section a:hover, #object_page_info .info_section .fake_link:hover, #object_page_info .info_section .nourl:hover {
+    #object_page_info .info_section a:hover, #object_page_info .info_section .fake_link:hover {
       color: #597686; }
-  #object_page_info .info_section .nourl:hover {
-    color: #000; }
 #object_page_info #more_details {
   margin: 9px 0 0;
   padding: 9px 0 0;
@@ -2543,8 +2539,8 @@ ratings_big_wrapper .title {
 
 #top_half_footer {
   clear: both;
-  margin: 9px 0;
-  padding: 9px 0 0;
+  margin: 8px 0;
+  padding: 8px 0 0;
   border-top: 1px dashed #adc0c9; }
   #top_half_footer .large_gray_btn {
     float: left;
@@ -2836,18 +2832,21 @@ ratings_big_wrapper .title {
     .map_tooltip .main .details, .map_popup .main .details {
       float: left;
       width: 140px;
-      padding: 0 0 48px; }
+      padding: 0 0 50px; }
       .map_tooltip .main .details address, .map_popup .main .details address {
         line-height: 13px; }
-        .map_tooltip .main .details address span, .map_popup .main .details address span {
-          display: block; }
         .map_tooltip .main .details address .neighborhood, .map_popup .main .details address .neighborhood {
           display: block;
           margin: 0 0 3px;
           color: #375363;
           font-size: 11px; }
-          .map_tooltip .main .details address .neighborhood:hover, .map_popup .main .details address .neighborhood:hover {
-            color: #000; }
+        .map_tooltip .main .details address a.neighborhood:hover, .map_popup .main .details address a.neighborhood:hover {
+          color: #000; }
+        .map_tooltip .main .details address .address, .map_popup .main .details address .address {
+          display: block;
+          margin: 0 0 5px; }
+        .map_tooltip .main .details address p, .map_popup .main .details address p {
+          padding: 0; }
       .map_tooltip .main .details .liked_by, .map_popup .main .details .liked_by {
         position: absolute;
         bottom: 10px;
@@ -2855,6 +2854,31 @@ ratings_big_wrapper .title {
         border-top: 1px dashed #adc0c9; }
         .map_tooltip .main .details .liked_by dd, .map_popup .main .details .liked_by dd {
           float: left; }
+        .map_tooltip .main .details .liked_by .character_cont, .map_popup .main .details .liked_by .character_cont {
+          cursor: default !important;
+          /* Force Disabled styles */ }
+          .map_tooltip .main .details .liked_by .character_cont .character, .map_popup .main .details .liked_by .character_cont .character {
+            cursor: default !important; }
+          .map_tooltip .main .details .liked_by .character_cont.lucas .character, .map_popup .main .details .liked_by .character_cont.lucas .character {
+            border-color: #4175ab !important; }
+          .map_tooltip .main .details .liked_by .character_cont.adriana .character, .map_popup .main .details .liked_by .character_cont.adriana .character {
+            border-color: #c675b1 !important; }
+          .map_tooltip .main .details .liked_by .character_cont.jonah .character, .map_popup .main .details .liked_by .character_cont.jonah .character {
+            border-color: #95c946 !important; }
+          .map_tooltip .main .details .liked_by .character_cont.emma .character, .map_popup .main .details .liked_by .character_cont.emma .character {
+            border-color: #ffb637 !important; }
+          .map_tooltip .main .details .liked_by .character_cont.disabled, .map_popup .main .details .liked_by .character_cont.disabled {
+            border-color: #dae4e9 !important; }
+            .map_tooltip .main .details .liked_by .character_cont.disabled .character, .map_popup .main .details .liked_by .character_cont.disabled .character {
+              border-color: #adc0c9 !important; }
+            .map_tooltip .main .details .liked_by .character_cont.disabled.lucas .character, .map_popup .main .details .liked_by .character_cont.disabled.lucas .character {
+              background-position: -1px -33px !important; }
+            .map_tooltip .main .details .liked_by .character_cont.disabled.adriana .character, .map_popup .main .details .liked_by .character_cont.disabled.adriana .character {
+              background-position: -31px -33px !important; }
+            .map_tooltip .main .details .liked_by .character_cont.disabled.jonah .character, .map_popup .main .details .liked_by .character_cont.disabled.jonah .character {
+              background-position: -61px -33px !important; }
+            .map_tooltip .main .details .liked_by .character_cont.disabled.emma .character, .map_popup .main .details .liked_by .character_cont.disabled.emma .character {
+              background-position: -91px -33px !important; }
   .map_tooltip .event_list, .map_popup .event_list {
     padding: 0 0 5px;
     border-bottom: 1px dashed #adc0c9; }
@@ -3036,7 +3060,7 @@ ratings_big_wrapper .title {
 #first_to_review {
   float: right;
   margin: 0 0 0 20px;
-  padding: 5px 0 0;
+  padding: 7px 0 0;
   font-size: 11px;
   text-align: right;
   line-height: 12px; }
@@ -3048,7 +3072,7 @@ ratings_big_wrapper .title {
     float: right;
     width: 33px;
     height: 33px;
-    margin: -5px 0 0 5px;
+    margin: -6px 0 0 5px;
     border: 1px solid #cbd7dd; }
 
 /* Character Tip

@@ -83,7 +83,7 @@
     #right_sidebar .name a {
       display: inline-block;
       width: 160px;
-      height: 10px;
+      height: 11px;
       color: #09f;
       text-decoration: none;
       text-transform: none;
@@ -111,7 +111,7 @@
     border-top: 1px dashed #adc0c9; }
     #right_sidebar .list .list_item.featured {
       margin: 0 0 15px;
-      padding: 0 0 5px;
+      padding: 0 0 15px;
       border-bottom: 1px solid #8ea8b5; }
       #right_sidebar .list .list_item.featured .title {
         margin: 0 0 8px;
@@ -194,8 +194,7 @@
       line-height: 11px;
       text-decoration: none; }
       #right_sidebar .pod_footer a:hover, #right_sidebar .pod_footer a:link:hover, #right_sidebar .pod_footer a:visited:hover, #right_sidebar .pod_footer .fake_link:hover {
-        color: #597686;
-        text-decoration: underline; }
+        color: #597686; }
       #right_sidebar .pod_footer a span, #right_sidebar .pod_footer a:link span, #right_sidebar .pod_footer a:visited span, #right_sidebar .pod_footer .fake_link span {
         text-decoration: underline; }
         #right_sidebar .pod_footer a span.arrow, #right_sidebar .pod_footer a:link span.arrow, #right_sidebar .pod_footer a:visited span.arrow, #right_sidebar .pod_footer .fake_link span.arrow {
@@ -347,8 +346,7 @@
   #recent_articles .list .list_item.featured {
     float: none;
     width: auto;
-    margin-left: 0;
-    padding-bottom: 15px; }
+    margin-left: 0; }
     #recent_articles .list .list_item.featured .thumbnail_link {
       margin: 0 0 15px; }
 /* Upcoming Events Sidebar Pod */
@@ -407,7 +405,8 @@
 ----------------------------------------- */
 #seo_pagination {
   padding: 5px;
-  text-align: center; }
+  text-align: center;
+  line-height: 30px; }
   #seo_pagination em, #seo_pagination a, #seo_pagination span {
     display: inline-block;
     height: 15px;
@@ -416,6 +415,7 @@
     color: #adc0c9;
     font-style: normal;
     line-height: 16px;
+    vertical-align: middle;
     background-color: #fff;
     border: 1px solid #adc0c9;
     border-radius: 2px;

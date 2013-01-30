@@ -1,0 +1,471 @@
+/* STYLES FOR RIGHT SIDEBAR
+-----------------------------------------------------
+:: Styles for the right sidebar and universal elements like pods.
+----------------------------------------------------- */
+#right_sidebar {
+  /* Lists used in Pods. If list needs specific styles override specific attributes in seperate stylesheet..*/
+  /* Pod list stripped down with no border/padding etc. */
+  /* Pod list with a thumbnail next to each item */
+  /* Pod footer used on some pods. Any that goes in the footer should be added here.*/
+  /* Little orange arrow mostly used on pod footer after a link. */
+  /* tabs on ibiza and pamplona pages */
+  /* Styles for Popular Entertainers/DJs */
+  /* Styles for the Get Paid To Party pods */ }
+  #right_sidebar h3, #right_sidebar .featured .title {
+    display: block;
+    color: #375363;
+    font-size: 24px;
+    font-weight: normal;
+    line-height: 28px;
+    margin: 0 0 8px;
+    padding: 0 0 8px;
+    border-bottom: 1px dashed #adc0c9;
+    color: #375363; }
+    #right_sidebar h3 a, #right_sidebar h3 a:link, #right_sidebar h3 a:visited, #right_sidebar .featured .title a, #right_sidebar .featured .title a:link, #right_sidebar .featured .title a:visited {
+      color: #375363;
+      text-decoration: underline; }
+      #right_sidebar h3 a:hover, #right_sidebar h3 a:link:hover, #right_sidebar h3 a:visited:hover, #right_sidebar .featured .title a:hover, #right_sidebar .featured .title a:link:hover, #right_sidebar .featured .title a:visited:hover {
+        color: #000; }
+    #right_sidebar h3.small, #right_sidebar .featured .title.small {
+      margin: 0 0 6px;
+      padding: 0;
+      color: #09F;
+      font-size: 15px;
+      font-weight: bold;
+      line-height: 16px;
+      border-bottom: 0; }
+  #right_sidebar .title {
+    display: block;
+    margin: 0 0 3px;
+    line-height: 15px;
+    text-decoration: underline; }
+    #right_sidebar .title:hover {
+      color: #000; }
+  #right_sidebar .desc {
+    position: relative;
+    overflow: hidden; }
+    #right_sidebar .desc a, #right_sidebar .desc a:link, #right_sidebar .desc a:visited {
+      color: #09f; }
+    #right_sidebar .desc .neighborhood {
+      color: #8ea8b5;
+      font-size: 10px;
+      line-height: 10px;
+      text-transform: uppercase; }
+  #right_sidebar .thumbnail_link {
+    margin: 0 0 8px;
+    width: 98px;
+    height: 65px;
+    border: 1px solid #ccc;
+    border-radius: 2px; }
+    #right_sidebar .thumbnail_link img {
+      width: 98px;
+      height: 65px;
+      border-radius: 1px; }
+  #right_sidebar .quick_nav_links {
+    border-bottom: 1px dashed #ADC0C9;
+    padding: 0 0 5px;
+    margin: 0 0 5px; }
+    #right_sidebar .quick_nav_links a, #right_sidebar .quick_nav_links a:link, #right_sidebar .quick_nav_links a:visited {
+      color: #09f; }
+      #right_sidebar .quick_nav_links a:hover, #right_sidebar .quick_nav_links a:link:hover, #right_sidebar .quick_nav_links a:visited:hover {
+        color: #597686; }
+  #right_sidebar .name {
+    color: #09f;
+    font-size: 10px;
+    line-height: 10px;
+    text-transform: uppercase; }
+    #right_sidebar .name .date {
+      display: block;
+      float: left;
+      margin: 0 4px 0 0;
+      padding: 0 6px 0 0;
+      border-right: 1px solid #e4ebef; }
+    #right_sidebar .name a {
+      display: inline-block;
+      width: 160px;
+      height: 11px;
+      color: #09f;
+      text-decoration: none;
+      text-transform: none;
+      overflow: hidden; }
+  #right_sidebar .changer .name {
+    height: 10px;
+    margin: 0 0 6px;
+    padding: 0 0 6px;
+    vertical-align: top;
+    border-bottom: 1px solid #dae4e9; }
+  #right_sidebar .list .list_item.featured .thumbnail_link,
+  #right_sidebar .changer .thumbnail_link {
+    width: 210px;
+    height: 140px;
+    border: 1px solid #adc0c9;
+    border-radius: 4px; }
+    #right_sidebar .list .list_item.featured .thumbnail_link img,
+    #right_sidebar .changer .thumbnail_link img {
+      width: 210px;
+      height: 140px;
+      border-radius: 3px; }
+  #right_sidebar .list .list_item {
+    margin: 8px 0 0;
+    padding: 8px 0 0;
+    border-top: 1px dashed #adc0c9; }
+    #right_sidebar .list .list_item.featured {
+      margin: 0 0 15px;
+      padding: 0 0 15px;
+      border-bottom: 1px solid #8ea8b5; }
+      #right_sidebar .list .list_item.featured .title {
+        margin: 0 0 8px;
+        padding: 0;
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 20px;
+        border: none; }
+      #right_sidebar .list .list_item.featured .venue_type {
+        margin: 0 0 6px; }
+    #right_sidebar .list .list_item p {
+      padding: 0;
+      line-height: 16px; }
+      #right_sidebar .list .list_item p.name {
+        line-height: 10px; }
+    #right_sidebar .list .list_item .date {
+      color: #09f;
+      font-size: 9px;
+      line-height: 11px;
+      text-transform: uppercase; }
+    #right_sidebar .list .list_item .arrow {
+      color: #09f; }
+    #right_sidebar .list .list_item .venue_type {
+      margin: 0;
+      padding: 0;
+      color: #6C8898;
+      line-height: 11px; }
+      #right_sidebar .list .list_item .venue_type a, #right_sidebar .list .list_item .venue_type a:link, #right_sidebar .list .list_item .venue_type a:visited {
+        color: #6C8898; }
+        #right_sidebar .list .list_item .venue_type a:hover, #right_sidebar .list .list_item .venue_type a:link:hover, #right_sidebar .list .list_item .venue_type a:visited:hover {
+          color: #597686;
+          text-decoration: underline; }
+    #right_sidebar .list .list_item:first-child {
+      margin-top: 0;
+      padding-top: 0;
+      border-top: none; }
+    #right_sidebar .list .list_item .name a, #right_sidebar .list .list_item .name a:link, #right_sidebar .list .list_item .name a:visited {
+      color: #09f; }
+      #right_sidebar .list .list_item .name a:hover, #right_sidebar .list .list_item .name a:link:hover, #right_sidebar .list .list_item .name a:visited:hover {
+        color: #597686;
+        text-decoration: underline; }
+  #right_sidebar .list a {
+    color: #000; }
+    #right_sidebar .list a:hover {
+      color: #597686; }
+  #right_sidebar .simple_list .list_item {
+    margin: 0 0 3px;
+    padding: 0;
+    border: none; }
+    #right_sidebar .simple_list .list_item a, #right_sidebar .simple_list .list_item a:link, #right_sidebar .simple_list .list_item a:visited {
+      color: #375363; }
+      #right_sidebar .simple_list .list_item a:hover, #right_sidebar .simple_list .list_item a:link:hover, #right_sidebar .simple_list .list_item a:visited:hover {
+        color: #000; }
+  #right_sidebar .photo_list .thumbnail_link {
+    float: left;
+    width: 75px;
+    height: 50px;
+    margin: 0 9px 0 0; }
+    #right_sidebar .photo_list .thumbnail_link img {
+      width: 75px;
+      height: 50px; }
+  #right_sidebar .photo_list .details {
+    float: left;
+    width: 120px; }
+    #right_sidebar .photo_list .details .title {
+      line-height: 15px;
+      margin: 0 0 3px;
+      color: #000; }
+      #right_sidebar .photo_list .details .title:hover {
+        color: #597686; }
+  #right_sidebar .pod_footer {
+    margin: 5px 0 0;
+    padding: 5px 0 0;
+    border-top: 1px solid #adc0c9; }
+    #right_sidebar .pod_footer a, #right_sidebar .pod_footer a:link, #right_sidebar .pod_footer a:visited, #right_sidebar .pod_footer .fake_link {
+      float: right;
+      color: #09f;
+      text-align: right;
+      font-size: 11px;
+      line-height: 11px;
+      text-decoration: none; }
+      #right_sidebar .pod_footer a:hover, #right_sidebar .pod_footer a:link:hover, #right_sidebar .pod_footer a:visited:hover, #right_sidebar .pod_footer .fake_link:hover {
+        color: #597686; }
+      #right_sidebar .pod_footer a span, #right_sidebar .pod_footer a:link span, #right_sidebar .pod_footer a:visited span, #right_sidebar .pod_footer .fake_link span {
+        text-decoration: underline; }
+        #right_sidebar .pod_footer a span.arrow, #right_sidebar .pod_footer a:link span.arrow, #right_sidebar .pod_footer a:visited span.arrow, #right_sidebar .pod_footer .fake_link span.arrow {
+          top: 0;
+          color: #ff9000;
+          text-decoration: none; }
+  #right_sidebar .arrow {
+    display: inline-block;
+    position: relative;
+    width: 6px;
+    font-family: "Times New Roman";
+    font-size: 17px;
+    font-weight: normal;
+    line-height: 17px;
+    text-indent: -10px;
+    overflow: hidden; }
+  #right_sidebar .tabs {
+    margin-top: 33px; }
+    #right_sidebar .tabs:first-child {
+      margin-top: 19px; }
+  #right_sidebar .popular_entertainers .list li {
+    position: relative;
+    padding: 0 0 0 10px; }
+    #right_sidebar .popular_entertainers .list li .arrow {
+      display: none;
+      position: absolute;
+      left: 0; }
+    #right_sidebar .popular_entertainers .list li.selected .arrow {
+      display: inline-block; }
+  #right_sidebar .gptp_right_rail h3 {
+    padding: 0;
+    font-weight: normal;
+    border: none; }
+  #right_sidebar .gptp_right_rail ul li {
+    float: left;
+    margin: 0 4px 4px 0; }
+    #right_sidebar .gptp_right_rail ul li:nth-child(4n) {
+      margin-right: 0; }
+    #right_sidebar .gptp_right_rail ul li a, #right_sidebar .gptp_right_rail ul li a:link, #right_sidebar .gptp_right_rail ul li a:visited {
+      display: block;
+      width: 50px;
+      height: 50px; }
+      #right_sidebar .gptp_right_rail ul li a img, #right_sidebar .gptp_right_rail ul li a:link img, #right_sidebar .gptp_right_rail ul li a:visited img {
+        opacity: .85; }
+      #right_sidebar .gptp_right_rail ul li a:hover img, #right_sidebar .gptp_right_rail ul li a:link:hover img, #right_sidebar .gptp_right_rail ul li a:visited:hover img {
+        opacity: 100; }
+  #right_sidebar .gptp_right_rail .links {
+    font-size: 11px;
+    line-height: 11px; }
+    #right_sidebar .gptp_right_rail .links a, #right_sidebar .gptp_right_rail .links .fake_link {
+      text-decoration: underline; }
+    #right_sidebar .gptp_right_rail .links .arrow {
+      color: #ff9000; }
+    #right_sidebar .gptp_right_rail .links .learn_link {
+      float: left; }
+    #right_sidebar .gptp_right_rail .links .meet_link {
+      float: right; }
+  #right_sidebar .gptp_right_rail .buttons {
+    width: 217px;
+    margin: 8px 0 0;
+    padding: 8px 0 0;
+    border-top: 1px solid #8ea8b5; }
+    #right_sidebar .gptp_right_rail .buttons a, #right_sidebar .gptp_right_rail .buttons a:link, #right_sidebar .gptp_right_rail .buttons a:visited {
+      display: block;
+      position: relative;
+      float: left;
+      height: 46px;
+      margin-top: 2px;
+      margin-bottom: -6px;
+      background-image: url(/assets/common/right_colmun_sprite-58d00c3397faf0afa866cef18d4a9ba4.png); }
+      #right_sidebar .gptp_right_rail .buttons a.writer, #right_sidebar .gptp_right_rail .buttons a:link.writer, #right_sidebar .gptp_right_rail .buttons a:visited.writer {
+        left: -2px;
+        width: 85px;
+        background-position: -1px -422px; }
+        #right_sidebar .gptp_right_rail .buttons a.writer:hover, #right_sidebar .gptp_right_rail .buttons a:link.writer:hover, #right_sidebar .gptp_right_rail .buttons a:visited.writer:hover {
+          background-position: -1px -476px; }
+      #right_sidebar .gptp_right_rail .buttons a.photographer, #right_sidebar .gptp_right_rail .buttons a:link.photographer, #right_sidebar .gptp_right_rail .buttons a:visited.photographer {
+        right: -3px;
+        width: 132px;
+        background-position: -88px -422px; }
+        #right_sidebar .gptp_right_rail .buttons a.photographer:hover, #right_sidebar .gptp_right_rail .buttons a:link.photographer:hover, #right_sidebar .gptp_right_rail .buttons a:visited.photographer:hover {
+          background-position: -88px -476px; }
+  #right_sidebar .missing_venue_event,
+  #right_sidebar .share_btn,
+  #right_sidebar .subscribe_btn,
+  #right_sidebar .follow_btns,
+  #right_sidebar .ad {
+    cursor: pointer;
+    background-image: url(/assets/common/right_colmun_sprite-58d00c3397faf0afa866cef18d4a9ba4.png);
+    background-repeat: no-repeat; }
+  #right_sidebar #right_rail_simple_share {
+    position: absolute;
+    top: -60px;
+    left: -9px; }
+  #right_sidebar .missing_venue_event {
+    position: relative;
+    left: -2px;
+    width: 246px;
+    height: 154px;
+    margin: 0 0 8px;
+    background-position: -291px -233px; }
+    #right_sidebar .missing_venue_event:hover {
+      background-position: -291px -389px; }
+  #right_sidebar .share_btn,
+  #right_sidebar .subscribe_btn,
+  #right_sidebar .follow_btns {
+    position: relative;
+    right: 0;
+    width: 243px;
+    height: 44px;
+    margin: 0 0 9px; }
+  #right_sidebar .share_btn {
+    background-position: -291px -52px; }
+  #right_sidebar .subscribe_btn {
+    background-position: -291px -102px; }
+  #right_sidebar .follow_btns {
+    background-position: -291px -152px;
+    cursor: default !important; }
+    #right_sidebar .follow_btns a {
+      display: block;
+      position: absolute;
+      top: 9px;
+      width: 28px;
+      height: 28px;
+      margin: 0; }
+    #right_sidebar .follow_btns .gig-followbar-providerButton {
+      right: 44px; }
+    #right_sidebar .follow_btns .gig-followbar-providerButton-last {
+      right: 11px; }
+  #right_sidebar .ad {
+    width: 240px;
+    height: 400px;
+    background-position: 0 0; }
+/*
+
+*/
+#left_container h1 {
+  float: left;
+  font-size: 22px;
+  font-weight: bold; }
+  #left_container h1 span {
+    color: #ccc;
+    font-size: 24px; }
+
+/*STEP BLOCKS*/
+.store_content .step_block {
+  margin: 0 118px 0 0; }
+  .store_content .step_block h2 {
+    padding: 0 0 3px;
+    color: #ccc;
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 36px;
+    text-decoration: none; }
+  .store_content .step_block h3 {
+    color: #ccc; }
+  .store_content .step_block.selected h2, .store_content .step_block.selected h3 {
+    color: #09f; }
+
+.store_content .section_divider.dashed_line {
+  margin: 12px 0;
+  height: 1px !important; }
+
+#store_info .strike_text {
+  text-decoration: line-through; }
+
+#store_info .red_text {
+  color: #cc0000; }
+
+#store_info .store_action_btns {
+  bottom: 13px;
+  position: absolute;
+  right: 17px; }
+
+#store_info .store_action_btns .read_more_txt_link_left {
+  margin: 6px 0 0; }
+
+#store_info .store_action_btns fieldset {
+  float: left; }
+
+#store_info .large_text {
+  font-size: 14px; }
+
+.store_action_btns a,
+.store_action_btns input {
+  float: left;
+  margin: 0 0 0 20px; }
+
+.store_action_btns a.blue_btn {
+  color: #fff; }
+
+#store_info .dashed_line {
+  height: 1px;
+  border-top: 1px dashed #dedcdc; }
+
+#store_info .no_padd .dashed_line {
+  margin: 8px 0 0; }
+
+.store_content .no_padd {
+  padding: 0 !important; }
+
+.right_align_text {
+  text-align: right; }
+
+.center_align_text {
+  text-align: center; }
+
+.left_align_text {
+  text-align: left; }
+
+.store_content .shipping_message {
+  margin: 0 0 6px;
+  color: #999; }
+
+/*FOR CREDIT CARD LOGOS*/
+.store_content .visa_logo,
+.store_content .mastercard_logo {
+  background-image: url(/assets/store/store_btns_sprite-c97e8c12bb92fc1ebe0c246ee5fd7382.png);
+  display: inline-block;
+  vertical-align: top;
+  /*FOR IE7*/
+  *display: inline;
+  zoom: 1; }
+
+.store_content .visa_logo {
+  background-position: 0 -280px;
+  width: 34px;
+  height: 12px; }
+
+.store_content .mastercard_logo {
+  background-position: -34px -280px;
+  width: 27px;
+  height: 16px; }
+
+/*BEGIN LEFT COLUMN*/
+#store_info {
+  min-height: 360px;
+  position: relative; }
+
+/*FOR PRODUCT TABLE*/
+#store_info .product_img {
+  padding: 0 15px 0 0;
+  width: 69px; }
+
+#store_info .product_img img {
+  width: 69px;
+  height: 121px; }
+
+.store_content .product_table {
+  width: 100%;
+  font-size: 14px; }
+
+#store_info .product_table .column_title {
+  background: none repeat scroll 0 0 #E6E6E6;
+  border-right: 4px solid #FFFFFF;
+  color: #000000;
+  height: 20px;
+  padding: 1px 10px; }
+
+.store_content .product_table td {
+  border-right: 4px solid #FFFFFF;
+  padding: 6px 10px 0;
+  vertical-align: top; }
+
+#store_info .product_table .first_td {
+  padding-bottom: 6px;
+  padding-left: 0; }
+
+#store_info .gray_row {
+  background: none repeat scroll 0 0 #E6E6E6; }
+
+#store_info .product_table .gray_row,
+#store_info .product_table .gray_row td {
+  border-right: 0; }

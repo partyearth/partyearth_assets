@@ -38,10 +38,6 @@
     text-decoration: underline;
     line-height: 18px;
     overflow: hidden; }
-    .browse_category h3 a, .browse_category h3 .fake_link {
-      color: #000; }
-      .browse_category h3 a:hover, .browse_category h3 .fake_link:hover {
-        color: #597686; }
   .browse_category.two_line_title h3 {
     height: 36px; }
   .browse_category p {
@@ -236,8 +232,8 @@
       font-size: 10px;
       line-height: 11px; }
   .browse_category_dash_list.one_venue ul {
-    height: 34px; }
+    height: 32px; }
   .browse_category_dash_list.two_venues ul {
-    height: 84px; }
+    height: 80px; }
   .browse_category_dash_list.three_venues ul {
-    height: 133px; }
+    height: 128px; }

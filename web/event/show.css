@@ -16,8 +16,7 @@
   #recent_articles .list .list_item.featured {
     float: none;
     width: auto;
-    margin-left: 0;
-    padding-bottom: 15px; }
+    margin-left: 0; }
     #recent_articles .list .list_item.featured .thumbnail_link {
       margin: 0 0 15px; }
 /*

@@ -603,7 +603,7 @@
     #right_sidebar .name a {
       display: inline-block;
       width: 160px;
-      height: 10px;
+      height: 11px;
       color: #09f;
       text-decoration: none;
       text-transform: none;
@@ -631,7 +631,7 @@
     border-top: 1px dashed #adc0c9; }
     #right_sidebar .list .list_item.featured {
       margin: 0 0 15px;
-      padding: 0 0 5px;
+      padding: 0 0 15px;
       border-bottom: 1px solid #8ea8b5; }
       #right_sidebar .list .list_item.featured .title {
         margin: 0 0 8px;
@@ -714,8 +714,7 @@
       line-height: 11px;
       text-decoration: none; }
       #right_sidebar .pod_footer a:hover, #right_sidebar .pod_footer a:link:hover, #right_sidebar .pod_footer a:visited:hover, #right_sidebar .pod_footer .fake_link:hover {
-        color: #597686;
-        text-decoration: underline; }
+        color: #597686; }
       #right_sidebar .pod_footer a span, #right_sidebar .pod_footer a:link span, #right_sidebar .pod_footer a:visited span, #right_sidebar .pod_footer .fake_link span {
         text-decoration: underline; }
         #right_sidebar .pod_footer a span.arrow, #right_sidebar .pod_footer a:link span.arrow, #right_sidebar .pod_footer a:visited span.arrow, #right_sidebar .pod_footer .fake_link span.arrow {
@@ -1252,11 +1251,6 @@
       font-size: 22px;
       font-weight: bold;
       line-height: 22px; }
-      #article_page #left_container #article_list h3 a, #article_page #left_container #article_list h3 a:link, #article_page #left_container #article_list h3 a:visited {
-        color: #000;
-        text-decoration: underline; }
-        #article_page #left_container #article_list h3 a:hover, #article_page #left_container #article_list h3 a:link:hover, #article_page #left_container #article_list h3 a:visited:hover {
-          color: #375363; }
     #article_page #left_container #article_list .venue_type {
       margin: 0 0 7px;
       padding: 0;
@@ -1424,6 +1418,7 @@
   #article_page #left_container .related_articles .related_img {
     float: left;
     width: 165px;
+    height: 165px;
     margin: 0 15px 10px 0; }
     #article_page #left_container .related_articles .related_img .thumbnail_link {
       width: 165px;

@@ -83,7 +83,7 @@
     #right_sidebar .name a {
       display: inline-block;
       width: 160px;
-      height: 10px;
+      height: 11px;
       color: #09f;
       text-decoration: none;
       text-transform: none;
@@ -111,7 +111,7 @@
     border-top: 1px dashed #adc0c9; }
     #right_sidebar .list .list_item.featured {
       margin: 0 0 15px;
-      padding: 0 0 5px;
+      padding: 0 0 15px;
       border-bottom: 1px solid #8ea8b5; }
       #right_sidebar .list .list_item.featured .title {
         margin: 0 0 8px;
@@ -194,8 +194,7 @@
       line-height: 11px;
       text-decoration: none; }
       #right_sidebar .pod_footer a:hover, #right_sidebar .pod_footer a:link:hover, #right_sidebar .pod_footer a:visited:hover, #right_sidebar .pod_footer .fake_link:hover {
-        color: #597686;
-        text-decoration: underline; }
+        color: #597686; }
       #right_sidebar .pod_footer a span, #right_sidebar .pod_footer a:link span, #right_sidebar .pod_footer a:visited span, #right_sidebar .pod_footer .fake_link span {
         text-decoration: underline; }
         #right_sidebar .pod_footer a span.arrow, #right_sidebar .pod_footer a:link span.arrow, #right_sidebar .pod_footer a:visited span.arrow, #right_sidebar .pod_footer .fake_link span.arrow {
@@ -347,8 +346,7 @@
   #recent_articles .list .list_item.featured {
     float: none;
     width: auto;
-    margin-left: 0;
-    padding-bottom: 15px; }
+    margin-left: 0; }
     #recent_articles .list .list_item.featured .thumbnail_link {
       margin: 0 0 15px; }
 /*BEGIN NEW IN PHOTO GALLERIES STYLES*/
@@ -778,10 +776,6 @@
     text-decoration: underline;
     line-height: 18px;
     overflow: hidden; }
-    .browse_category h3 a, .browse_category h3 .fake_link {
-      color: #000; }
-      .browse_category h3 a:hover, .browse_category h3 .fake_link:hover {
-        color: #597686; }
   .browse_category.two_line_title h3 {
     height: 36px; }
   .browse_category p {
@@ -976,11 +970,11 @@
       font-size: 10px;
       line-height: 11px; }
   .browse_category_dash_list.one_venue ul {
-    height: 34px; }
+    height: 32px; }
   .browse_category_dash_list.two_venues ul {
-    height: 84px; }
+    height: 80px; }
   .browse_category_dash_list.three_venues ul {
-    height: 133px; }
+    height: 128px; }
 /* Default More Links List Styles */
 .more_links_list {
   line-height: 14px; }
@@ -1216,17 +1210,31 @@ div.datepicker {
   text-align: right;
   line-height: 29px; }
 #browse_interest ul {
-  float: left;
-  width: 135px;
   padding: 3px 0 0; }
   #browse_interest ul li {
+    float: left;
+    width: 135px;
     line-height: 21px; }
-    #browse_interest ul li .fake_link {
+    #browse_interest ul li a, #browse_interest ul li .fake_link {
       color: #375363;
       text-decoration: underline;
       text-shadow: 0 0 0.08em #dadada; }
-      #browse_interest ul li .fake_link:hover {
+      #browse_interest ul li a:hover, #browse_interest ul li .fake_link:hover {
         color: #000; }
+#browse_interest.onerow h3 {
+  float: left;
+  width: 285px;
+  margin: 0 20px 0 0; }
+#browse_interest.onerow ul {
+  float: left;
+  width: 400px;
+  padding: 0; }
+  #browse_interest.onerow ul li {
+    width: auto;
+    margin: 0 0 0 30px;
+    line-height: 18px; }
+    #browse_interest.onerow ul li:first-child {
+      margin-left: 0; }
 /*FOR TOP SECTION LINK*/
 .videos_link a:link,
 .videos_link a:visited {
@@ -1679,6 +1687,25 @@ div.datepicker {
 
 .video_section.horizontal_width480 .prev_next_btns .next_btn:hover {
   background-position: -66px -188px; }
+#pop_neigh li {
+  float: left;
+  width: 102px;
+  margin: 0 0 0 18px; }
+  #pop_neigh li:first-child {
+    margin-left: 0; }
+  #pop_neigh li .name {
+    display: block;
+    color: #000;
+    margin: 0 0 6px;
+    overflow: hidden; }
+    #pop_neigh li .name:hover {
+      color: #09f; }
+  #pop_neigh li .thumbnail_link,
+  #pop_neigh li .thumbnail_link img {
+    width: 100px;
+    height: 100px; }
+#pop_neigh.two_line_title li .name {
+  height: 36px; }
 /*BEGIN READ MORE/READ LESS CSS*/
 /*-----------------------------------*/
 .read_more .clipped {
@@ -1775,6 +1802,7 @@ div.datepicker {
 .missing_sports .copy_block_missing_venue_event .missing_image {
   background: url(/assets/landing_pages/missing_sports.gif) 0 0 no-repeat transparent; }
 /*
+
 
 
 

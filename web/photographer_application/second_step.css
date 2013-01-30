@@ -118,6 +118,8 @@ fieldset .checkbox_group, fieldset .textbox_group, fieldset .text_group {
       fieldset .checkbox_group #user_subscribe_input label input, fieldset .textbox_group #user_subscribe_input label input, fieldset .text_group #user_subscribe_input label input {
         position: absolute;
         left: 0; }
+  fieldset .checkbox_group img, fieldset .textbox_group img, fieldset .text_group img {
+    left: 286px; }
 fieldset .radio_group legend {
   display: block;
   float: left;
@@ -414,7 +416,7 @@ div.actions fieldset, .store_action_btns fieldset {
     #right_sidebar .name a {
       display: inline-block;
       width: 160px;
-      height: 10px;
+      height: 11px;
       color: #09f;
       text-decoration: none;
       text-transform: none;
@@ -442,7 +444,7 @@ div.actions fieldset, .store_action_btns fieldset {
     border-top: 1px dashed #adc0c9; }
     #right_sidebar .list .list_item.featured {
       margin: 0 0 15px;
-      padding: 0 0 5px;
+      padding: 0 0 15px;
       border-bottom: 1px solid #8ea8b5; }
       #right_sidebar .list .list_item.featured .title {
         margin: 0 0 8px;
@@ -525,8 +527,7 @@ div.actions fieldset, .store_action_btns fieldset {
       line-height: 11px;
       text-decoration: none; }
       #right_sidebar .pod_footer a:hover, #right_sidebar .pod_footer a:link:hover, #right_sidebar .pod_footer a:visited:hover, #right_sidebar .pod_footer .fake_link:hover {
-        color: #597686;
-        text-decoration: underline; }
+        color: #597686; }
       #right_sidebar .pod_footer a span, #right_sidebar .pod_footer a:link span, #right_sidebar .pod_footer a:visited span, #right_sidebar .pod_footer .fake_link span {
         text-decoration: underline; }
         #right_sidebar .pod_footer a span.arrow, #right_sidebar .pod_footer a:link span.arrow, #right_sidebar .pod_footer a:visited span.arrow, #right_sidebar .pod_footer .fake_link span.arrow {

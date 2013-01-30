@@ -60,10 +60,7 @@
     .featured_teams h3 a.name {
       font-size: 15px;
       line-height: 19px;
-      margin: 0 0 3px;
-      text-decoration: underline; }
-      .featured_teams h3 a.name:hover {
-        color: #597686; }
+      margin: 0 0 3px; }
   .featured_teams p {
     padding: 0; }
   .featured_teams .venue_name, .featured_teams .address {

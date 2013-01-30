@@ -1977,8 +1977,10 @@ h2 {
   width: 740px; }
   #left_container .section {
     margin: 0 0 13px; }
-    #left_container .section:last-child {
-      margin-bottom: 0; }
+  #left_container .sub_section {
+    margin: 13px 0 0;
+    padding: 13px 0 6px;
+    border-top: 1px solid #adc0c9; }
   #left_container .section_footer, #left_container .pod_footer {
     clear: left;
     margin: 7px 0 0;
@@ -2443,12 +2445,12 @@ button,
   margin: 0 3px 0 0\9; }
 
 .map_marker_icon {
-  background: url(/assets/content_bg/application_sprite.png) 0 -515px no-repeat transparent;
+  display: block;
+  float: left;
   width: 17px;
   height: 15px;
-  display: inline-block;
-  position: relative;
-  top: 3px; }
+  margin: 0 3px 0 0;
+  background: url(/assets/content_bg/application_sprite.png) 0 -515px no-repeat transparent; }
 
 /* BEGIN BOX LINKS
 -------------------------------------------------------------------
@@ -3460,8 +3462,10 @@ If you don't know where else to place something, place it below this line.
     line-height: 21px;
     text-decoration: none;
     word-spacing: 0; }
-    .pod h3 a, .pod h3 a:link, .pod h3 a:visited {
+    .pod h3 a, .pod h3 .fake_link {
       color: #000; }
+      .pod h3 a:hover, .pod h3 .fake_link:hover {
+        color: #597686; }
     .pod h3.sub_headline {
       font-size: 20px;
       line-height: 21px; }
@@ -3826,7 +3830,9 @@ h3.large_gray_btn_full {
     display: block;
     border-radius: 3px; }
 
-.no_select, .no_select * {
+/* class and items for no select */
+.no_select, .no_select *,
+#seo_pagination, #seo_pagiation * {
   user-select: none;
   -webkit-user-select: none;
   -webkit-touch-callout: none;
@@ -3834,6 +3840,7 @@ h3.large_gray_btn_full {
   -khtml-user-select: none;
   -ms-user-select: none; }
 
+/* class and items for clearfix */
 .clearfix:before, .clearfix:after,
 formfield ol:before, .formfield ol:after {
   content: "";

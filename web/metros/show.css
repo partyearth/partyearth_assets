@@ -539,8 +539,9 @@
       bottom: 0;
       background-color: #fff; }
   .browse_by_neighborhood .featured_item .see_all_link {
-    margin: 12px 0 0;
-    padding: 5px 0 0;
+    margin: 4px 0 0;
+    padding: 6px 0 0;
+    line-height: 15px;
     border-top: 1px dashed #adc0c9; }
 .browse_by_neighborhood .small_item {
   float: left;
@@ -748,16 +749,15 @@
           height: 50px; }
       .pe .character_content .venue_item_wrapper .venue_item .venue_name {
         position: relative;
-        margin: 0 0 1px;
+        margin: 0 0 3px;
         padding: 0;
-        line-height: 13px;
+        line-height: 15px;
         text-shadow: 0 0 0.08em #dadada; }
         .pe .character_content .venue_item_wrapper .venue_item .venue_name a, .pe .character_content .venue_item_wrapper .venue_item .venue_name a:visited {
           color: #000; }
           .pe .character_content .venue_item_wrapper .venue_item .venue_name a:hover, .pe .character_content .venue_item_wrapper .venue_item .venue_name a:visited:hover {
             color: #597686; }
       .pe .character_content .venue_item_wrapper .venue_item .venue_type {
-        margin: 4px 0 0;
         padding: 0 0 0 87px; }
   .pe .character_content .tags_and_more .tags {
     max-width: 300px;
@@ -1091,10 +1091,6 @@ div.datepicker {
     text-decoration: underline;
     line-height: 18px;
     overflow: hidden; }
-    .browse_category h3 a, .browse_category h3 .fake_link {
-      color: #000; }
-      .browse_category h3 a:hover, .browse_category h3 .fake_link:hover {
-        color: #597686; }
   .browse_category.two_line_title h3 {
     height: 36px; }
   .browse_category p {
@@ -1289,11 +1285,11 @@ div.datepicker {
       font-size: 10px;
       line-height: 11px; }
   .browse_category_dash_list.one_venue ul {
-    height: 34px; }
+    height: 32px; }
   .browse_category_dash_list.two_venues ul {
-    height: 84px; }
+    height: 80px; }
   .browse_category_dash_list.three_venues ul {
-    height: 133px; }
+    height: 128px; }
 /* For section under Browse by Personality pod */
 #browse_interest h3 {
   float: left;
@@ -1306,17 +1302,31 @@ div.datepicker {
   text-align: right;
   line-height: 29px; }
 #browse_interest ul {
-  float: left;
-  width: 135px;
   padding: 3px 0 0; }
   #browse_interest ul li {
+    float: left;
+    width: 135px;
     line-height: 21px; }
-    #browse_interest ul li .fake_link {
+    #browse_interest ul li a, #browse_interest ul li .fake_link {
       color: #375363;
       text-decoration: underline;
       text-shadow: 0 0 0.08em #dadada; }
-      #browse_interest ul li .fake_link:hover {
+      #browse_interest ul li a:hover, #browse_interest ul li .fake_link:hover {
         color: #000; }
+#browse_interest.onerow h3 {
+  float: left;
+  width: 285px;
+  margin: 0 20px 0 0; }
+#browse_interest.onerow ul {
+  float: left;
+  width: 400px;
+  padding: 0; }
+  #browse_interest.onerow ul li {
+    width: auto;
+    margin: 0 0 0 30px;
+    line-height: 18px; }
+    #browse_interest.onerow ul li:first-child {
+      margin-left: 0; }
 .party_climate_desc {
   position: relative; }
   .party_climate_desc .clipped {
@@ -1495,7 +1505,7 @@ div.datepicker {
     #right_sidebar .name a {
       display: inline-block;
       width: 160px;
-      height: 10px;
+      height: 11px;
       color: #09f;
       text-decoration: none;
       text-transform: none;
@@ -1523,7 +1533,7 @@ div.datepicker {
     border-top: 1px dashed #adc0c9; }
     #right_sidebar .list .list_item.featured {
       margin: 0 0 15px;
-      padding: 0 0 5px;
+      padding: 0 0 15px;
       border-bottom: 1px solid #8ea8b5; }
       #right_sidebar .list .list_item.featured .title {
         margin: 0 0 8px;
@@ -1606,8 +1616,7 @@ div.datepicker {
       line-height: 11px;
       text-decoration: none; }
       #right_sidebar .pod_footer a:hover, #right_sidebar .pod_footer a:link:hover, #right_sidebar .pod_footer a:visited:hover, #right_sidebar .pod_footer .fake_link:hover {
-        color: #597686;
-        text-decoration: underline; }
+        color: #597686; }
       #right_sidebar .pod_footer a span, #right_sidebar .pod_footer a:link span, #right_sidebar .pod_footer a:visited span, #right_sidebar .pod_footer .fake_link span {
         text-decoration: underline; }
         #right_sidebar .pod_footer a span.arrow, #right_sidebar .pod_footer a:link span.arrow, #right_sidebar .pod_footer a:visited span.arrow, #right_sidebar .pod_footer .fake_link span.arrow {
@@ -1759,8 +1768,7 @@ div.datepicker {
   #recent_articles .list .list_item.featured {
     float: none;
     width: auto;
-    margin-left: 0;
-    padding-bottom: 15px; }
+    margin-left: 0; }
     #recent_articles .list .list_item.featured .thumbnail_link {
       margin: 0 0 15px; }
 /* Latest Reviews Sidebar Pod */
