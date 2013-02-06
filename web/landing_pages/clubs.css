@@ -1088,8 +1088,108 @@ div.datepicker {
     text-decoration: underline; }
     .more_links_list a:hover, .more_links_list span:hover {
       color: #597686; }
-/*BEGIN CAROUSEL*/
-/*------------------------------------------*/
+.spot_item {
+  float: left;
+  border-left: 1px dotted #ccc; }
+  .spot_item .name {
+    display: block;
+    margin: 0 0 4px;
+    color: #000;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 18px;
+    overflow: hidden; }
+    .spot_item .name:hover {
+      color: #597686; }
+    .spot_item .name span {
+      text-decoration: underline; }
+  .spot_item .venue_type {
+    height: 12px;
+    padding: 0;
+    overflow: hidden; }
+    .spot_item .venue_type .icon_types {
+      margin: 0 5px 0 0; }
+  .spot_item .thumbnail_link {
+    width: 345px;
+    height: 230px; }
+    .spot_item .thumbnail_link img {
+      width: 345px;
+      height: 230px; }
+  .spot_item .details, .spot_item .user_review_summary {
+    position: relative;
+    height: 80px;
+    padding: 0;
+    font-size: 12px;
+    line-height: 16px;
+    overflow: hidden; }
+    .spot_item .details .by_line, .spot_item .user_review_summary .by_line {
+      margin: 0 0 2px; }
+    .spot_item .details .ellipsis, .spot_item .user_review_summary .ellipsis {
+      display: block;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      background-color: #fff;
+      overflow: hidden; }
+      .spot_item .details .ellipsis a, .spot_item .user_review_summary .ellipsis a {
+        position: relative;
+        bottom: 2px;
+        font-size: 11px; }
+  .spot_item .details p {
+    padding-bottom: 0; }
+  .spot_item .date_time {
+    display: block;
+    height: 16px;
+    color: #09f;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 16px;
+    overflow: hidden; }
+  .spot_item .event_venue {
+    display: block;
+    height: 16px;
+    color: #375363;
+    font-size: 13px;
+    font-weight: bold;
+    font-family: 'Arial', sans-serif;
+    line-height: 16px;
+    text-shadow: 0 0 1px #ccc;
+    overflow: hidden; }
+  .spot_item a.event_venue {
+    text-decoration: underline; }
+    .spot_item a.event_venue:hover {
+      color: #000; }
+  .spot_item .desc {
+    display: block;
+    margin: 16px 0 0; }
+  .spot_item address {
+    position: relative;
+    height: 24px;
+    margin: 8px 0 0;
+    padding: 8px 0 0 25px;
+    color: #6c8898;
+    font-size: 10px;
+    line-height: 12px;
+    font-family: 'Arial', sans-serif;
+    border-top: 1px dashed #adc0c9;
+    overflow: hidden; }
+    .spot_item address p {
+      padding: 0; }
+    .spot_item address .icon {
+      position: absolute;
+      left: 0;
+      top: 10px;
+      width: 17px;
+      height: 21px;
+      background-image: url(/assets/content_bg/app_sprite_2.png);
+      background-position: -74px 0; }
+  .spot_item .spot_item_foot {
+    margin: 8px 0 0;
+    padding: 8px 0 0;
+    border-top: 1px dashed #adc0c9; }
+/*
+
+*/
 .carousel_3 {
   /* START CAROUSEL BOX AND SPOT ITEM HEIGHTS ------ */
   /* Default height of the box and spot item which is a venue spot item */
@@ -1172,127 +1272,25 @@ div.datepicker {
     left: 0;
     width: 8000px; }
   .carousel_3 .carousel_3_sect {
-    float: left; }
-  .carousel_3 .spot_item {
     float: left;
+    margin: 0 37px 0 0; }
+  .carousel_3 .spot_item {
     width: 212px;
-    margin: 0 17px 0 0;
-    padding: 0 17px 0 0;
-    border-right: 1px dotted #ccc; }
-    .carousel_3 .spot_item .name {
-      display: block;
-      margin: 0 0 4px;
-      color: #000;
-      font-size: 16px;
-      font-weight: bold;
-      line-height: 18px;
-      text-decoration: underline;
-      overflow: hidden; }
-      .carousel_3 .spot_item .name:hover {
-        color: #597686; }
-      .carousel_3 .spot_item .name span {
-        text-decoration: underline; }
-    .carousel_3 .spot_item .venue_type {
-      height: 12px;
-      padding: 0;
-      overflow: hidden; }
-      .carousel_3 .spot_item .venue_type .icon_types {
-        margin: 0 5px 0 0; }
-    .carousel_3 .spot_item .thumbnail_link {
+    margin: 0 0 0 17px;
+    padding: 0 0 0 17px; }
+    .carousel_3 .spot_item:first-child {
+      margin-left: 0;
+      padding-left: 0;
+      border-left: none; }
+    .carousel_3 .spot_item .thumbnail_link,
+    .carousel_3 .spot_item .thumbnail_link img {
       width: 210px;
       height: 140px; }
-      .carousel_3 .spot_item .thumbnail_link img {
-        width: 210px;
-        height: 140px; }
     .carousel_3 .spot_item .quick_nav_links {
-      height: 14px;
       margin: 0 0 10px;
-      border-bottom: 1px solid #dae4e9;
-      /* NOTE (VH) remove later when styles are fixed for all l<li> in three_item_horizontal_scroller*/ }
+      border-bottom: 1px solid #dae4e9; }
       .carousel_3 .spot_item .quick_nav_links li {
-        margin: 0 9px 0 0; }
-    .carousel_3 .spot_item .details, .carousel_3 .spot_item .user_review_summary {
-      position: relative;
-      height: 80px;
-      padding: 0;
-      font-size: 12px;
-      line-height: 16px;
-      overflow: hidden; }
-      .carousel_3 .spot_item .details .ellipsis, .carousel_3 .spot_item .user_review_summary .ellipsis {
-        display: inline-block;
-        position: absolute;
-        right: 0;
-        bottom: 0;
-        background-color: #fff;
-        overflow: hidden; }
-        .carousel_3 .spot_item .details .ellipsis a, .carousel_3 .spot_item .details .ellipsis a:link, .carousel_3 .spot_item .details .ellipsis a:visited, .carousel_3 .spot_item .user_review_summary .ellipsis a, .carousel_3 .spot_item .user_review_summary .ellipsis a:link, .carousel_3 .spot_item .user_review_summary .ellipsis a:visited {
-          position: relative;
-          bottom: 2px;
-          font-size: 11px; }
-    .carousel_3 .spot_item .user_review_summary p.by_line {
-      margin: 0 0 2px; }
-    .carousel_3 .spot_item .details p {
-      padding-bottom: 0; }
-    .carousel_3 .spot_item .details .date_time {
-      display: block;
-      height: 16px;
-      margin: 0;
-      color: #09f;
-      font-size: 16px;
-      font-weight: bold;
-      line-height: 16px;
-      text-transform: inherit;
-      overflow: hidden; }
-    .carousel_3 .spot_item .details .event_venue {
-      display: block;
-      height: 16px;
-      color: #375363;
-      font-size: 13px;
-      font-weight: bold;
-      font-family: 'Arial', sans-serif;
-      line-height: 16px;
-      text-shadow: 0 0 1px #ccc;
-      overflow: hidden; }
-    .carousel_3 .spot_item .details a.event_venue {
-      text-decoration: underline; }
-      .carousel_3 .spot_item .details a.event_venue:hover {
-        color: #000; }
-    .carousel_3 .spot_item .details .desc {
-      display: block;
-      margin: 16px 0 0; }
-    .carousel_3 .spot_item address {
-      position: relative;
-      height: 24px;
-      margin: 8px 0 0;
-      padding: 8px 0 0 25px;
-      color: #6c8898;
-      font-size: 10px;
-      line-height: 12px;
-      font-family: 'Arial', sans-serif;
-      border-top: 1px dashed #adc0c9;
-      overflow: hidden; }
-      .carousel_3 .spot_item address p {
-        padding: 0; }
-      .carousel_3 .spot_item address .icon {
-        position: absolute;
-        left: 0;
-        top: 10px;
-        width: 17px;
-        height: 21px;
-        background-image: url(/assets/content_bg/app_sprite_2.png);
-        background-position: -74px 0; }
-    .carousel_3 .spot_item .tags a, .carousel_3 .spot_item .tags a:visited, .carousel_3 .spot_item .tags span {
-      display: inline-block;
-      float: left;
-      margin: 0 6px 0 0;
-      color: #000;
-      font-size: 11px;
-      line-height: 14px;
-      text-decoration: underline;
-      text-transform: lowercase;
-      cursor: pointer; }
-      .carousel_3 .spot_item .tags a:hover, .carousel_3 .spot_item .tags a:visited:hover, .carousel_3 .spot_item .tags span:hover {
-        color: #597686; }
+        margin-right: 9px; }
   .carousel_3 .prev_next_btns {
     position: absolute;
     top: 80px;
@@ -1316,10 +1314,6 @@ div.datepicker {
         background-position: -171px -3021px; }
   .carousel_3.two_line_title .prev_next_btns {
     top: 98px; }
-  .carousel_3 .spot_item_foot {
-    margin: 8px 0 0;
-    padding: 8px 0 0;
-    border-top: 1px dashed #adc0c9; }
   .carousel_3 .liked_by dt {
     margin: 0 10px 0 0; }
   .carousel_3 .liked_by .character_cont .dialog_box {
@@ -1394,19 +1388,22 @@ div.datepicker {
     line-height: 18px;
     overflow: hidden; }
   .browse_category.two_line_title h3 {
-    height: 36px; }
+    height: 37px; }
   .browse_category p {
     padding: 0; }
     .browse_category p.desc {
       position: relative;
-      height: 97px;
+      height: 98px;
       font-size: 11px;
       line-height: 14px;
       overflow: hidden; }
-      .browse_category p.desc a {
+      .browse_category p.desc .ellipsis {
+        display: block;
         position: absolute;
         right: 0;
-        bottom: 0; }
+        bottom: 0;
+        padding: 0 0 0 10px;
+        background-color: #f0f3f5; }
   .browse_category .thumbnail_link {
     width: 165px;
     height: 110px;
@@ -1509,10 +1506,11 @@ div.datepicker {
         background-repeat: no-repeat; }
         .browse_category_boxes .cell ul a.selected {
           background-image: url(/assets/content_bg/application_sprite.png); }
-    .browse_category_boxes .cell .more {
+    .browse_category_boxes .cell .fake_link {
       float: left;
       clear: left;
-      margin: 8px 0 0; }
+      margin: 8px 0 0;
+      text-decoration: underline; }
 
 /* Alternative layout with rows/boxes and embedded interest pod */
 .browse_category_interest .rows {

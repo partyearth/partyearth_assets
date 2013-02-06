@@ -1,1240 +1,3 @@
-/* STYLES FOR RIGHT SIDEBAR
------------------------------------------------------
-:: Styles for the right sidebar and universal elements like pods.
------------------------------------------------------ */
-#right_sidebar {
-  /* Lists used in Pods. If list needs specific styles override specific attributes in seperate stylesheet..*/
-  /* Pod list stripped down with no border/padding etc. */
-  /* Pod list with a thumbnail next to each item */
-  /* Pod footer used on some pods. Any that goes in the footer should be added here.*/
-  /* Little orange arrow mostly used on pod footer after a link. */
-  /* tabs on ibiza and pamplona pages */
-  /* Styles for Popular Entertainers/DJs */
-  /* Styles for the Get Paid To Party pods */ }
-  #right_sidebar h3, #right_sidebar .featured .title {
-    display: block;
-    color: #375363;
-    font-size: 24px;
-    font-weight: normal;
-    line-height: 28px;
-    margin: 0 0 8px;
-    padding: 0 0 8px;
-    border-bottom: 1px dashed #adc0c9;
-    color: #375363; }
-    #right_sidebar h3 a, #right_sidebar h3 a:link, #right_sidebar h3 a:visited, #right_sidebar .featured .title a, #right_sidebar .featured .title a:link, #right_sidebar .featured .title a:visited {
-      color: #375363;
-      text-decoration: underline; }
-      #right_sidebar h3 a:hover, #right_sidebar h3 a:link:hover, #right_sidebar h3 a:visited:hover, #right_sidebar .featured .title a:hover, #right_sidebar .featured .title a:link:hover, #right_sidebar .featured .title a:visited:hover {
-        color: #000; }
-    #right_sidebar h3.small, #right_sidebar .featured .title.small {
-      margin: 0 0 6px;
-      padding: 0;
-      color: #09F;
-      font-size: 15px;
-      font-weight: bold;
-      line-height: 16px;
-      border-bottom: 0; }
-  #right_sidebar .title {
-    display: block;
-    margin: 0 0 3px;
-    line-height: 15px;
-    text-decoration: underline; }
-    #right_sidebar .title:hover {
-      color: #000; }
-  #right_sidebar .desc {
-    position: relative;
-    overflow: hidden; }
-    #right_sidebar .desc a, #right_sidebar .desc a:link, #right_sidebar .desc a:visited {
-      color: #09f; }
-    #right_sidebar .desc .neighborhood {
-      color: #8ea8b5;
-      font-size: 10px;
-      line-height: 10px;
-      text-transform: uppercase; }
-  #right_sidebar .thumbnail_link {
-    margin: 0 0 8px;
-    width: 98px;
-    height: 65px;
-    border: 1px solid #ccc;
-    border-radius: 2px; }
-    #right_sidebar .thumbnail_link img {
-      width: 98px;
-      height: 65px;
-      border-radius: 1px; }
-  #right_sidebar .quick_nav_links {
-    border-bottom: 1px dashed #ADC0C9;
-    padding: 0 0 5px;
-    margin: 0 0 5px; }
-    #right_sidebar .quick_nav_links a, #right_sidebar .quick_nav_links a:link, #right_sidebar .quick_nav_links a:visited {
-      color: #09f; }
-      #right_sidebar .quick_nav_links a:hover, #right_sidebar .quick_nav_links a:link:hover, #right_sidebar .quick_nav_links a:visited:hover {
-        color: #597686; }
-  #right_sidebar .name {
-    color: #09f;
-    font-size: 10px;
-    line-height: 10px;
-    text-transform: uppercase; }
-    #right_sidebar .name .date {
-      display: block;
-      float: left;
-      margin: 0 4px 0 0;
-      padding: 0 6px 0 0;
-      border-right: 1px solid #e4ebef; }
-    #right_sidebar .name a {
-      display: inline-block;
-      width: 160px;
-      height: 11px;
-      color: #09f;
-      text-decoration: none;
-      text-transform: none;
-      overflow: hidden; }
-  #right_sidebar .changer .name {
-    height: 10px;
-    margin: 0 0 6px;
-    padding: 0 0 6px;
-    vertical-align: top;
-    border-bottom: 1px solid #dae4e9; }
-  #right_sidebar .list .list_item.featured .thumbnail_link,
-  #right_sidebar .changer .thumbnail_link {
-    width: 210px;
-    height: 140px;
-    border: 1px solid #adc0c9;
-    border-radius: 4px; }
-    #right_sidebar .list .list_item.featured .thumbnail_link img,
-    #right_sidebar .changer .thumbnail_link img {
-      width: 210px;
-      height: 140px;
-      border-radius: 3px; }
-  #right_sidebar .list .list_item {
-    margin: 8px 0 0;
-    padding: 8px 0 0;
-    border-top: 1px dashed #adc0c9; }
-    #right_sidebar .list .list_item.featured {
-      margin: 0 0 15px;
-      padding: 0 0 15px;
-      border-bottom: 1px solid #8ea8b5; }
-      #right_sidebar .list .list_item.featured .title {
-        margin: 0 0 8px;
-        padding: 0;
-        font-size: 18px;
-        font-weight: bold;
-        line-height: 20px;
-        border: none; }
-      #right_sidebar .list .list_item.featured .venue_type {
-        margin: 0 0 6px; }
-    #right_sidebar .list .list_item p {
-      padding: 0;
-      line-height: 16px; }
-      #right_sidebar .list .list_item p.name {
-        line-height: 10px; }
-    #right_sidebar .list .list_item .date {
-      color: #09f;
-      font-size: 9px;
-      line-height: 11px;
-      text-transform: uppercase; }
-    #right_sidebar .list .list_item .arrow {
-      color: #09f; }
-    #right_sidebar .list .list_item .venue_type {
-      margin: 0;
-      padding: 0;
-      color: #6C8898;
-      line-height: 11px; }
-      #right_sidebar .list .list_item .venue_type a, #right_sidebar .list .list_item .venue_type a:link, #right_sidebar .list .list_item .venue_type a:visited {
-        color: #6C8898; }
-        #right_sidebar .list .list_item .venue_type a:hover, #right_sidebar .list .list_item .venue_type a:link:hover, #right_sidebar .list .list_item .venue_type a:visited:hover {
-          color: #597686;
-          text-decoration: underline; }
-    #right_sidebar .list .list_item:first-child {
-      margin-top: 0;
-      padding-top: 0;
-      border-top: none; }
-    #right_sidebar .list .list_item .name a, #right_sidebar .list .list_item .name a:link, #right_sidebar .list .list_item .name a:visited {
-      color: #09f; }
-      #right_sidebar .list .list_item .name a:hover, #right_sidebar .list .list_item .name a:link:hover, #right_sidebar .list .list_item .name a:visited:hover {
-        color: #597686;
-        text-decoration: underline; }
-  #right_sidebar .list a {
-    color: #000; }
-    #right_sidebar .list a:hover {
-      color: #597686; }
-  #right_sidebar .simple_list .list_item {
-    margin: 0 0 3px;
-    padding: 0;
-    border: none; }
-    #right_sidebar .simple_list .list_item a, #right_sidebar .simple_list .list_item a:link, #right_sidebar .simple_list .list_item a:visited {
-      color: #375363; }
-      #right_sidebar .simple_list .list_item a:hover, #right_sidebar .simple_list .list_item a:link:hover, #right_sidebar .simple_list .list_item a:visited:hover {
-        color: #000; }
-  #right_sidebar .photo_list .thumbnail_link {
-    float: left;
-    width: 75px;
-    height: 50px;
-    margin: 0 9px 0 0; }
-    #right_sidebar .photo_list .thumbnail_link img {
-      width: 75px;
-      height: 50px; }
-  #right_sidebar .photo_list .details {
-    float: left;
-    width: 120px; }
-    #right_sidebar .photo_list .details .title {
-      line-height: 15px;
-      margin: 0 0 3px;
-      color: #000; }
-      #right_sidebar .photo_list .details .title:hover {
-        color: #597686; }
-  #right_sidebar .pod_footer {
-    margin: 5px 0 0;
-    padding: 5px 0 0;
-    border-top: 1px solid #adc0c9; }
-    #right_sidebar .pod_footer a, #right_sidebar .pod_footer a:link, #right_sidebar .pod_footer a:visited, #right_sidebar .pod_footer .fake_link {
-      float: right;
-      color: #09f;
-      text-align: right;
-      font-size: 11px;
-      line-height: 11px;
-      text-decoration: none; }
-      #right_sidebar .pod_footer a:hover, #right_sidebar .pod_footer a:link:hover, #right_sidebar .pod_footer a:visited:hover, #right_sidebar .pod_footer .fake_link:hover {
-        color: #597686; }
-      #right_sidebar .pod_footer a span, #right_sidebar .pod_footer a:link span, #right_sidebar .pod_footer a:visited span, #right_sidebar .pod_footer .fake_link span {
-        text-decoration: underline; }
-        #right_sidebar .pod_footer a span.arrow, #right_sidebar .pod_footer a:link span.arrow, #right_sidebar .pod_footer a:visited span.arrow, #right_sidebar .pod_footer .fake_link span.arrow {
-          top: 0;
-          color: #ff9000;
-          text-decoration: none; }
-  #right_sidebar .arrow {
-    display: inline-block;
-    position: relative;
-    width: 6px;
-    font-family: "Times New Roman";
-    font-size: 17px;
-    font-weight: normal;
-    line-height: 17px;
-    text-indent: -10px;
-    overflow: hidden; }
-  #right_sidebar .tabs {
-    margin-top: 33px; }
-    #right_sidebar .tabs:first-child {
-      margin-top: 19px; }
-  #right_sidebar .popular_entertainers .list li {
-    position: relative;
-    padding: 0 0 0 10px; }
-    #right_sidebar .popular_entertainers .list li .arrow {
-      display: none;
-      position: absolute;
-      left: 0; }
-    #right_sidebar .popular_entertainers .list li.selected .arrow {
-      display: inline-block; }
-  #right_sidebar .gptp_right_rail h3 {
-    padding: 0;
-    font-weight: normal;
-    border: none; }
-  #right_sidebar .gptp_right_rail ul li {
-    float: left;
-    margin: 0 4px 4px 0; }
-    #right_sidebar .gptp_right_rail ul li:nth-child(4n) {
-      margin-right: 0; }
-    #right_sidebar .gptp_right_rail ul li a, #right_sidebar .gptp_right_rail ul li a:link, #right_sidebar .gptp_right_rail ul li a:visited {
-      display: block;
-      width: 50px;
-      height: 50px; }
-      #right_sidebar .gptp_right_rail ul li a img, #right_sidebar .gptp_right_rail ul li a:link img, #right_sidebar .gptp_right_rail ul li a:visited img {
-        opacity: .85; }
-      #right_sidebar .gptp_right_rail ul li a:hover img, #right_sidebar .gptp_right_rail ul li a:link:hover img, #right_sidebar .gptp_right_rail ul li a:visited:hover img {
-        opacity: 100; }
-  #right_sidebar .gptp_right_rail .links {
-    font-size: 11px;
-    line-height: 11px; }
-    #right_sidebar .gptp_right_rail .links a, #right_sidebar .gptp_right_rail .links .fake_link {
-      text-decoration: underline; }
-    #right_sidebar .gptp_right_rail .links .arrow {
-      color: #ff9000; }
-    #right_sidebar .gptp_right_rail .links .learn_link {
-      float: left; }
-    #right_sidebar .gptp_right_rail .links .meet_link {
-      float: right; }
-  #right_sidebar .gptp_right_rail .buttons {
-    width: 217px;
-    margin: 8px 0 0;
-    padding: 8px 0 0;
-    border-top: 1px solid #8ea8b5; }
-    #right_sidebar .gptp_right_rail .buttons a, #right_sidebar .gptp_right_rail .buttons a:link, #right_sidebar .gptp_right_rail .buttons a:visited {
-      display: block;
-      position: relative;
-      float: left;
-      height: 46px;
-      margin-top: 2px;
-      margin-bottom: -6px;
-      background-image: url(/assets/common/right_colmun_sprite.png); }
-      #right_sidebar .gptp_right_rail .buttons a.writer, #right_sidebar .gptp_right_rail .buttons a:link.writer, #right_sidebar .gptp_right_rail .buttons a:visited.writer {
-        left: -2px;
-        width: 85px;
-        background-position: -1px -422px; }
-        #right_sidebar .gptp_right_rail .buttons a.writer:hover, #right_sidebar .gptp_right_rail .buttons a:link.writer:hover, #right_sidebar .gptp_right_rail .buttons a:visited.writer:hover {
-          background-position: -1px -476px; }
-      #right_sidebar .gptp_right_rail .buttons a.photographer, #right_sidebar .gptp_right_rail .buttons a:link.photographer, #right_sidebar .gptp_right_rail .buttons a:visited.photographer {
-        right: -3px;
-        width: 132px;
-        background-position: -88px -422px; }
-        #right_sidebar .gptp_right_rail .buttons a.photographer:hover, #right_sidebar .gptp_right_rail .buttons a:link.photographer:hover, #right_sidebar .gptp_right_rail .buttons a:visited.photographer:hover {
-          background-position: -88px -476px; }
-  #right_sidebar .missing_venue_event,
-  #right_sidebar .share_btn,
-  #right_sidebar .subscribe_btn,
-  #right_sidebar .follow_btns,
-  #right_sidebar .ad {
-    cursor: pointer;
-    background-image: url(/assets/common/right_colmun_sprite.png);
-    background-repeat: no-repeat; }
-  #right_sidebar #right_rail_simple_share {
-    position: absolute;
-    top: -60px;
-    left: -9px; }
-  #right_sidebar .missing_venue_event {
-    position: relative;
-    left: -2px;
-    width: 246px;
-    height: 154px;
-    margin: 0 0 8px;
-    background-position: -291px -233px; }
-    #right_sidebar .missing_venue_event:hover {
-      background-position: -291px -389px; }
-  #right_sidebar .share_btn,
-  #right_sidebar .subscribe_btn,
-  #right_sidebar .follow_btns {
-    position: relative;
-    right: 0;
-    width: 243px;
-    height: 44px;
-    margin: 0 0 9px; }
-  #right_sidebar .share_btn {
-    background-position: -291px -52px; }
-  #right_sidebar .subscribe_btn {
-    background-position: -291px -102px; }
-  #right_sidebar .follow_btns {
-    background-position: -291px -152px;
-    cursor: default !important; }
-    #right_sidebar .follow_btns a {
-      display: block;
-      position: absolute;
-      top: 9px;
-      width: 28px;
-      height: 28px;
-      margin: 0; }
-    #right_sidebar .follow_btns .gig-followbar-providerButton {
-      right: 44px; }
-    #right_sidebar .follow_btns .gig-followbar-providerButton-last {
-      right: 11px; }
-  #right_sidebar .ad {
-    width: 240px;
-    height: 400px;
-    background-position: 0 0; }
-/* Recent Articles Sidebar Pod */
-#recent_articles .list .list_item {
-  float: left;
-  width: 100px;
-  margin: 0 0 0 12px;
-  padding: 0;
-  line-height: 15px;
-  border-top: none; }
-  #recent_articles .list .list_item:first-child + li {
-    margin-left: 0; }
-  #recent_articles .list .list_item .thumbnail_link {
-    margin: 0 0 5px; }
-  #recent_articles .list .list_item .title {
-    font-size: 11px;
-    line-height: 13px; }
-  #recent_articles .list .list_item.featured {
-    float: none;
-    width: auto;
-    margin-left: 0; }
-    #recent_articles .list .list_item.featured .thumbnail_link {
-      margin: 0 0 15px; }
-/*BEGIN NEW IN PHOTO GALLERIES STYLES*/
-/*---------------------------------------------*/
-#photo_pod {
-  margin: 0 0 12px;
-  padding: 13px 15px; }
-  #photo_pod h3 {
-    margin: 0 0 7px;
-    font-size: 15px; }
-  #photo_pod ul {
-    list-style: none; }
-  #photo_pod li {
-    float: left;
-    width: 100px;
-    margin: 0 10px 8px 0;
-    padding: 11px 0 0;
-    line-height: 15px;
-    border-top: 1px dashed #ADC0C9; }
-    #photo_pod li .thumbnail_link {
-      margin: 0 0 3px; }
-    #photo_pod li a, #photo_pod li a:link, #photo_pod li a:visited {
-      color: #000;
-      font-size: 11px;
-      line-height: 11px; }
-      #photo_pod li a:hover, #photo_pod li a:link:hover, #photo_pod li a:visited:hover {
-        color: #597686; }
-    #photo_pod li.last {
-      margin-right: 0; }
-    #photo_pod li.bottom {
-      margin-bottom: 0; }
-/* Upcoming Events Sidebar Pod */
-#upcoming_events .list .list_item {
-  position: relative; }
-  #upcoming_events .list .list_item:first-child {
-    padding-top: 8px; }
-  #upcoming_events .list .list_item .point {
-    display: none;
-    position: absolute;
-    top: 18px;
-    left: -14px;
-    border-top: 7px solid transparent;
-    border-right: 7px solid transparent;
-    border-bottom: 7px solid transparent;
-    border-left: 7px solid #09f; }
-  #upcoming_events .list .list_item .date {
-    float: left;
-    width: 28px;
-    margin: 0 10px 0 0;
-    color: #09f;
-    font-family: Arial, sans-serif;
-    text-align: center;
-    text-shadow: 1px 1px 1px #fff;
-    line-height: 18px;
-    background: -webkit-gradient(linear, 0 0, 0 100%, from(#eff2f4), to(#d5dbe0));
-    background: -moz-linear-gradient(top, #eff2f4, #d5dbe0);
-    -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=#eff2f4, endColorStr=#d5dbe0);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=#eff2f4, endColorStr=#d5dbe0);
-    border-right: 1px solid #E0E4E7;
-    border-left: 1px solid #E0E4E7;
-    border-radius: 2px 2px 2px 2px; }
-    #upcoming_events .list .list_item .date .month {
-      padding: 5px 0 2px;
-      font-size: 8px;
-      font-weight: bold;
-      line-height: 4px;
-      text-transform: uppercase; }
-    #upcoming_events .list .list_item .date .day {
-      padding: 0 0 5px;
-      font-size: 18px;
-      border-bottom: 1px solid #B4BABE; }
-  #upcoming_events .list .list_item .name_and_type {
-    float: left;
-    width: 168px; }
-    #upcoming_events .list .list_item .name_and_type .black_link {
-      display: block;
-      line-height: 14px;
-      margin: 0 0 3px; }
-    #upcoming_events .list .list_item .name_and_type .venue_type {
-      padding: 0;
-      margin: 0; }
-  #upcoming_events .list .list_item.selected .point {
-    display: block; }
-/*
-
-
-
-
-*/
-.day_changer_cont .venue_type {
-  display: inline-block;
-  margin-right: 5px; }
-.day_changer_cont .featured_item .video_section {
-  margin: 8px 0 0;
-  padding: 8px 0 0;
-  border-top: 1px dashed #adc0c9; }
-  .day_changer_cont .featured_item .video_section .video_label {
-    display: block;
-    float: left;
-    width: 43px;
-    color: #6c8898;
-    font-size: 11px;
-    line-height: 11px;
-    text-transform: uppercase; }
-  .day_changer_cont .featured_item .video_section .video_item {
-    float: left;
-    width: 89px;
-    height: 73px;
-    margin: 0 0 0 8px;
-    padding: 0; }
-    .day_changer_cont .featured_item .video_section .video_item .thumbnail_link {
-      width: 87px;
-      height: 71px; }
-      .day_changer_cont .featured_item .video_section .video_item .thumbnail_link .play_btn {
-        width: 87px;
-        height: 71px;
-        background-position: -5px -302px; }
-      .day_changer_cont .featured_item .video_section .video_item .thumbnail_link img {
-        width: 87px;
-        height: 71px; }
-      .day_changer_cont .featured_item .video_section .video_item .thumbnail_link:hover .play_btn {
-        background-position: -106px -302px; }
-  .day_changer_cont .featured_item .video_section .video_player_sect {
-    display: none; }
-
-.popup_video .ui-dialog-titlebar {
-  padding-right: 26px;
-  padding-left: 26px;
-  /*FOR IE 8*/
-  padding-right: 0px\9; }
-  .popup_video .ui-dialog-titlebar span {
-    width: 310px;
-    padding-left: 0;
-    font-size: 17px;
-    text-transform: none;
-    background: transparent; }
-.popup_video .ui-widget-header .ui-icon {
-  background-position: -147px -151px; }
-.popup_video .video_section {
-  width: 334px !important;
-  padding: 3px 26px 0; }
-  .popup_video .video_section .views {
-    color: #375363; }
-  .popup_video .video_section .video_player {
-    margin-bottom: 4px; }
-    .popup_video .video_section .video_player .controls .progress_bar {
-      width: 90px !important; }
-    .popup_video .video_section .video_player .controls .scrubber .ui-slider-handle {
-      border: none; }
-    .popup_video .video_section .video_player iframe {
-      width: 333px !important; }
-  .popup_video .video_section .associated_links a {
-    color: #0099ff; }
-    .popup_video .video_section .associated_links a:hover {
-      color: #597686; }
-.day_changer_head {
-  width: 715px;
-  /* Fix for linux */
-  margin: 0 0 8px; }
-  .day_changer_head h1.blue_header,
-  .day_changer_head h2.blue_header {
-    width: 345px; }
-  .day_changer_head .blue_header {
-    float: left;
-    margin: 0;
-    font-size: 20px; }
-    .day_changer_head .blue_header.day_changer_heads {
-      width: auto;
-      padding: 9px 0 10px;
-      color: #bbe3fe;
-      font-size: 14px;
-      line-height: 14px;
-      text-align: center;
-      text-transform: uppercase;
-      text-shadow: none;
-      border-left: 1px dotted #40b0fd;
-      cursor: pointer; }
-      .day_changer_head .blue_header.day_changer_heads span {
-        display: block;
-        margin: 3px 0 0;
-        font-size: 8px;
-        line-height: 8px;
-        font-family: 'Arial', sans-serif; }
-      .day_changer_head .blue_header.day_changer_heads.Selected {
-        position: relative;
-        color: white;
-        background-color: #f60;
-        background-image: url(/assets/content_bg/browse_by_today_selected_bg.gif);
-        background-repeat: repeat-x;
-        border-top: 0px inset #FFB400;
-        border-bottom: 0px inset #A14100;
-        border-radius: 4px;
-        box-shadow: 0 1px 3px #bfbfbf;
-        cursor: default;
-        filter: none; }
-        .day_changer_head .blue_header.day_changer_heads.Selected:hover {
-          background-image: url(/assets/content_bg/browse_by_today_selected_bg.gif); }
-      .day_changer_head .blue_header.day_changer_heads:hover {
-        color: #fff;
-        background: -webkit-gradient(linear, 0 0, 0 100%, from(#0099ff), to(#076fd1));
-        background: -moz-linear-gradient(top, #0099ff, #076fd1);
-        cursor: pointer; }
-      .day_changer_head .blue_header.day_changer_heads.today {
-        width: 72px; }
-      .day_changer_head .blue_header.day_changer_heads.tomorrow {
-        width: 114px; }
-      .day_changer_head .blue_header.day_changer_heads.choose {
-        width: 140px; }
-  .day_changer_head .day_changer_more {
-    position: relative;
-    float: left; }
-    .day_changer_head .day_changer_more .date_picker_block {
-      top: 52px;
-      left: -25px;
-      width: 146px;
-      height: 225px;
-      box-shadow: 0 1px 2px #628495; }
-      .day_changer_head .day_changer_more .date_picker_block .point {
-        left: 102px; }
-      .day_changer_head .day_changer_more .date_picker_block .Notice {
-        font-size: 11px; }
-      .day_changer_head .day_changer_more .date_picker_block .datepicker {
-        width: 149px !important; }
-        .day_changer_head .day_changer_more .date_picker_block .datepicker .datepickerContainer {
-          width: 149px !important; }
-      .day_changer_head .day_changer_more .date_picker_block .controls .clear_link {
-        display: none; }
-/*
-
-*/
-.small_city .day_changer_cont .blue_header {
-  width: auto; }
-
-.date_time {
-  margin: 3px 0 5px;
-  padding: 0;
-  height: 12px;
-  color: #09f;
-  font-size: 9px;
-  line-height: 12px;
-  text-transform: uppercase;
-  overflow: hidden; }
-  .date_time .small_text {
-    font-size: 10px; }
-
-.day_changer_cont.day_changer_tomor {
-  display: none; }
-.day_changer_cont li.featured_item + li {
-  padding-top: 3px;
-  border-top: none; }
-.day_changer_cont .event_venue_name {
-  color: #375363;
-  font-weight: bold;
-  line-height: 16px;
-  text-decoration: underline; }
-  .day_changer_cont .event_venue_name:hover {
-    color: #597686; }
-  .day_changer_cont .event_venue_name.nourl:hover {
-    color: #375363; }
-.day_changer_cont .name {
-  display: block;
-  margin: 0 0 2px;
-  color: #000;
-  font-size: 20px;
-  font-weight: bold;
-  line-height: 21px; }
-  .day_changer_cont .name:hover {
-    color: #597686; }
-.day_changer_cont .ellipsis {
-  display: inline-block;
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  font-size: 11px;
-  line-height: 15px;
-  background-color: #fff;
-  overflow: hidden; }
-.day_changer_cont .featured_item {
-  float: left;
-  width: 345px;
-  margin: 0 14px 0 0; }
-  .day_changer_cont .featured_item p {
-    padding-bottom: 0; }
-  .day_changer_cont .featured_item .thumbnail_link {
-    width: 345px;
-    height: 230px;
-    margin: 0 0 7px; }
-    .day_changer_cont .featured_item .thumbnail_link img {
-      width: 345px;
-      height: 230px; }
-  .day_changer_cont .featured_item .quick_nav_links,
-  .day_changer_cont .featured_item .desc,
-  .day_changer_cont .featured_item .quick_nav_add_cal {
-    margin: 0 0 8px;
-    padding: 0 0 8px;
-    border-bottom: 1px dashed #adc0c9; }
-  .day_changer_cont .featured_item .quick_nav_add_cal {
-    padding-bottom: 5px; }
-    .day_changer_cont .featured_item .quick_nav_add_cal .quick_nav_links {
-      float: left;
-      margin-bottom: 0;
-      padding-bottom: 0;
-      border-bottom: none; }
-  .day_changer_cont .featured_item .add_to_calendar {
-    float: right;
-    margin-top: -2px; }
-  .day_changer_cont .featured_item .details {
-    position: relative;
-    left: -25px;
-    width: 334px;
-    height: 97px;
-    margin: 2px 0 0;
-    padding: 0 0 0 25px;
-    font-size: 12px;
-    line-height: 16px;
-    overflow: hidden; }
-  .day_changer_cont .featured_item .location {
-    position: relative; }
-    .day_changer_cont .featured_item .location .blue_flag {
-      position: absolute;
-      top: 4px;
-      left: -25px; }
-    .day_changer_cont .featured_item .location p {
-      padding-left: 51px; }
-    .day_changer_cont .featured_item .location .event_venue_name {
-      font-size: 15px;
-      line-height: 21px; }
-    .day_changer_cont .featured_item .location .address {
-      color: #375363;
-      font-size: 12px;
-      line-height: 15px; }
-  .day_changer_cont .featured_item .liked_by {
-    float: left; }
-    .day_changer_cont .featured_item .liked_by dt {
-      margin-right: 10px; }
-.day_changer_cont .item {
-  position: relative;
-  float: left;
-  width: 347px;
-  min-height: 149px;
-  padding: 8px 0 10px;
-  border-top: 1px dashed #adc0c9; }
-  .day_changer_cont .item p {
-    padding-bottom: 0; }
-  .day_changer_cont .item .name {
-    font-size: 17px;
-    line-height: 18px; }
-  .day_changer_cont .item .small_text.caps.blue_text {
-    font-size: 10px; }
-  .day_changer_cont .item .thumbnail_link {
-    float: left;
-    width: 165px;
-    height: 110px;
-    margin: 0 7px 0 0; }
-    .day_changer_cont .item .thumbnail_link img {
-      width: 165px;
-      height: 110px; }
-  .day_changer_cont .item .details,
-  .day_changer_cont .item .user_review_summary {
-    position: relative;
-    height: 56px;
-    margin: 2px 0 0;
-    font-size: 11px;
-    line-height: 14px;
-    overflow: hidden; }
-    .day_changer_cont .item .details .ellipsis,
-    .day_changer_cont .item .user_review_summary .ellipsis {
-      max-width: 176px; }
-  .day_changer_cont .item .details {
-    height: 60px; }
-  .day_changer_cont .item .blue_flag, .day_changer_cont .item gray_flag {
-    margin: 0 0 4px;
-    line-height: 14px; }
-    .day_changer_cont .item .blue_flag .tip, .day_changer_cont .item gray_flag .tip {
-      border-top: 6px solid transparent; }
-  .day_changer_cont .item .add_to_calendar {
-    position: absolute;
-    top: auto;
-    bottom: 11px;
-    left: 172px; }
-  .day_changer_cont .item .liked_by {
-    position: absolute;
-    left: 173px;
-    bottom: 11px;
-    width: 173px; }
-  .day_changer_cont .item .box_link.calendar {
-    position: absolute;
-    bottom: 8px;
-    left: 172px; }
-/* Default Browse by Category Module Styles */
-.browse_category {
-  margin: 0 0 9px;
-  padding: 0 0 9px;
-  border-bottom: 1px dashed #adc0c9; }
-  .browse_category .column {
-    float: left;
-    width: 168px;
-    margin: 0 0 0 5px;
-    padding: 0 0 0 5px;
-    border-left: 1px dotted #d8d8d8; }
-    .browse_category .column:first-child {
-      margin-left: 0 !important;
-      padding-left: 0 !important;
-      border-left: none !important; }
-    .browse_category .column.featured {
-      padding: 5px 6px 10px;
-      background-color: #f0f3f5;
-      border-left: none; }
-      .browse_category .column.featured h3 {
-        color: #09f;
-        font-size: 15px;
-        line-height: 15px;
-        text-decoration: none; }
-      .browse_category .column.featured .name {
-        margin: 0;
-        padding: 0;
-        color: #000;
-        font-size: 13px;
-        font-weight: bold;
-        border-bottom: none; }
-        .browse_category .column.featured .name:hover {
-          color: #597686; }
-  .browse_category h3 {
-    margin: 0 0 7px;
-    color: #000;
-    font-size: 17px;
-    text-decoration: underline;
-    line-height: 18px;
-    overflow: hidden; }
-  .browse_category.two_line_title h3 {
-    height: 36px; }
-  .browse_category p {
-    padding: 0; }
-    .browse_category p.desc {
-      position: relative;
-      height: 97px;
-      font-size: 11px;
-      line-height: 14px;
-      overflow: hidden; }
-      .browse_category p.desc a {
-        position: absolute;
-        right: 0;
-        bottom: 0; }
-  .browse_category .thumbnail_link {
-    width: 165px;
-    height: 110px;
-    margin: 0 0 5px; }
-  .browse_category .thumbnail_link img,
-  .browse_category .thumbnail {
-    width: 165px;
-    height: 110px; }
-  .browse_category .name {
-    display: block;
-    margin: 0 0 5px;
-    padding: 0 0 5px;
-    color: #597686;
-    font-size: 10px;
-    border-bottom: 1px solid #dae4e9; }
-  .browse_category ul {
-    height: 105px;
-    /* Default height for 5 items */
-    margin: 0 0 8px;
-    padding: 0 0 8px;
-    border-bottom: 1px dashed #adc0c9; }
-    .browse_category ul li {
-      line-height: 21px; }
-    .browse_category ul .arrow {
-      display: inline-block;
-      position: relative;
-      top: -1px;
-      color: #09f;
-      font-family: 'Times New Roman';
-      font-size: 17px;
-      line-height: 17px;
-      height: 13px;
-      width: 6px;
-      text-indent: -10px;
-      overflow: hidden; }
-    .browse_category ul a, .browse_category ul .fake_link {
-      display: inline-block;
-      color: #375363;
-      text-decoration: underline;
-      line-height: 14px;
-      text-shadow: 0 0 0.08em #dadada; }
-      .browse_category ul a:hover, .browse_category ul .fake_link:hover {
-        color: #000; }
-    .browse_category ul .venue_type a,
-    .browse_category ul .venue_type span {
-      line-height: 12px; }
-    .browse_category ul.four_items {
-      height: 84px; }
-  .browse_category .more {
-    display: block;
-    padding: 0;
-    color: #aaa;
-    font-size: 11px;
-    line-height: 11px;
-    text-decoration: underline; }
-    .browse_category .more:hover {
-      color: #000; }
-
-/* Alternative layout with rows/boxes */
-.browse_category_boxes {
-  padding-bottom: 0; }
-  .browse_category_boxes .row {
-    margin: 0 0 8px; }
-    .browse_category_boxes .row:first-child .cell {
-      padding-top: 0;
-      border-top: none; }
-  .browse_category_boxes .cell {
-    float: left;
-    width: 220px;
-    margin: 0 0 0 22px;
-    padding: 8px 0 3px;
-    border-top: 1px dashed #adc0c9; }
-    .browse_category_boxes .cell:first-child {
-      margin-left: 0; }
-    .browse_category_boxes .cell .thumbnail_link {
-      float: left;
-      width: 75px;
-      height: 50px;
-      margin: 0 4px 0 0; }
-    .browse_category_boxes .cell .thumbnail_link img,
-    .browse_category_boxes .cell .thumbnail {
-      width: 75px;
-      height: 50px; }
-    .browse_category_boxes .cell ul {
-      float: left;
-      width: 154px;
-      height: auto;
-      margin: 0;
-      padding: 0;
-      border-bottom: 0; }
-      .browse_category_boxes .cell ul li {
-        margin: 6px 0 0;
-        line-height: 13px; }
-        .browse_category_boxes .cell ul li:first-child {
-          margin-top: 0; }
-      .browse_category_boxes .cell ul a {
-        display: inline-block;
-        padding: 0 0 0 11px;
-        background-position: -114px -275px;
-        background-repeat: no-repeat; }
-        .browse_category_boxes .cell ul a.selected {
-          background-image: url(/assets/content_bg/application_sprite.png); }
-    .browse_category_boxes .cell .more {
-      float: left;
-      clear: left;
-      margin: 8px 0 0; }
-
-/* Alternative layout with rows/boxes and embedded interest pod */
-.browse_category_interest .rows {
-  float: left; }
-.browse_category_interest .row {
-  width: 495px; }
-.browse_category_interest .cell {
-  width: 235px; }
-.browse_category_interest .interest_embed {
-  float: right;
-  width: 174px;
-  margin: 0 0 8px;
-  padding: 10px 15px;
-  background-color: #ffffe5; }
-  .browse_category_interest .interest_embed h3 {
-    margin: 0 0 8px;
-    padding: 0 0 8px;
-    color: #375363;
-    font-size: 20px;
-    text-decoration: none;
-    border-bottom: 1px dashed #adc0c9; }
-  .browse_category_interest .interest_embed ul {
-    width: auto;
-    height: auto;
-    padding: 0;
-    margin: 0;
-    border-bottom: 0; }
-    .browse_category_interest .interest_embed ul li {
-      line-height: 24px; }
-    .browse_category_interest .interest_embed ul .category {
-      text-shadow: 0 0 0.08em #dadada;
-      text-decoration: underline; }
-      .browse_category_interest .interest_embed ul .category:hover {
-        color: #597686; }
-
-/* Alternative layout for neighborhood list */
-.browse_category_dash_list {
-  margin-bottom: 0;
-  padding-bottom: 0;
-  border-bottom: 0;
-  /* Height of 1 <li> */
-  /* One Venue */
-  /* Two Venues */
-  /* Three Venues */ }
-  .browse_category_dash_list .column {
-    border-left: none; }
-  .browse_category_dash_list ul {
-    height: auto;
-    overflow: hidden; }
-    .browse_category_dash_list ul li {
-      margin: 7px 0 0;
-      padding: 7px 0 0;
-      border-top: 1px dashed #adc0c9; }
-      .browse_category_dash_list ul li:first-child {
-        margin-top: 0;
-        padding-top: 0;
-        border-top: none; }
-    .browse_category_dash_list ul a {
-      color: #000; }
-      .browse_category_dash_list ul a:hover {
-        color: #597686; }
-    .browse_category_dash_list ul .venue_type {
-      margin: 0; }
-      .browse_category_dash_list ul .venue_type a {
-        color: #6c8898;
-        text-decoration: none; }
-        .browse_category_dash_list ul .venue_type a:hover {
-          text-decoration: underline; }
-    .browse_category_dash_list ul .date {
-      display: block;
-      color: #09f;
-      font-size: 10px;
-      line-height: 11px; }
-  .browse_category_dash_list.one_venue ul {
-    height: 32px; }
-  .browse_category_dash_list.two_venues ul {
-    height: 80px; }
-  .browse_category_dash_list.three_venues ul {
-    height: 128px; }
-/* Default More Links List Styles */
-.more_links_list {
-  line-height: 14px; }
-  .more_links_list dt {
-    display: block;
-    float: left;
-    width: 114px; }
-  .more_links_list dd {
-    float: left;
-    width: 590px; }
-  .more_links_list li {
-    float: left;
-    margin: 0 10px 0 0;
-    font-size: 11px; }
-  .more_links_list a, .more_links_list span {
-    color: #09f;
-    text-decoration: underline; }
-    .more_links_list a:hover, .more_links_list span:hover {
-      color: #597686; }
-/*BEGIN CUSTOM STYLES*/
-/*---------------------------------------------------------*/
-.Datepicker {
-  height: 171px;
-  margin: 0 0 7px;
-  padding: 0 0 4px;
-  border-bottom: 1px dashed #82cafb; }
-
-div.datepicker {
-  display: none;
-  z-index: 1000; }
-
-.date_picker_block {
-  position: absolute;
-  color: #fff;
-  width: 327px;
-  height: 225px;
-  padding: 10px 15px;
-  background: -webkit-gradient(linear, 0 0, 0 100%, from(#1977ce), to(#0098fe));
-  background: -moz-linear-gradient(top, #1977ce, #0098fe);
-  -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=#1977ce, endColorStr=#0098fe);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=#1977ce, endColorStr=#0098fe);
-  border-radius: 2px; }
-  .date_picker_block .point {
-    position: absolute;
-    top: -14px;
-    left: 71px;
-    width: 1px;
-    height: 0;
-    border-color: transparent transparent #1977ce;
-    border-style: solid;
-    border-width: 7px;
-    overflow: hidden; }
-  .date_picker_block .fake_link {
-    color: #eee;
-    outline: none; }
-    .date_picker_block .fake_link:hover {
-      color: #88c5eb; }
-  .date_picker_block .datepicker {
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 330px !important;
-    height: 147px !important;
-    font-family: 'Arial', 'Helvetica', sans-serif;
-    font-size: 12px;
-    cursor: default; }
-    .date_picker_block .datepicker .datepickerBorderT,
-    .date_picker_block .datepicker .datepickerBorderB,
-    .date_picker_block .datepicker .datepickerBorderL,
-    .date_picker_block .datepicker .datepickerBorderR,
-    .date_picker_block .datepicker .datepickerBorderTL,
-    .date_picker_block .datepicker .datepickerBorderTR,
-    .date_picker_block .datepicker .datepickerBorderBL,
-    .date_picker_block .datepicker .datepickerBorderBR {
-      display: none; }
-    .date_picker_block .datepicker th {
-      text-align: center;
-      color: #5cbdff;
-      font-weight: normal;
-      /*FOR USE ON ADMIN PAGES*/
-      padding: 0;
-      background: none; }
-    .date_picker_block .datepicker table {
-      border-collapse: collapse;
-      /*FOR USE ON ADMIN PAGES*/ }
-      .date_picker_block .datepicker table tr, .date_picker_block .datepicker table th, .date_picker_block .datepicker table td {
-        vertical-align: middle; }
-        .date_picker_block .datepicker table tr:hover, .date_picker_block .datepicker table th:hover, .date_picker_block .datepicker table td:hover {
-          background: none; }
-      .date_picker_block .datepicker table td {
-        margin: 0;
-        padding: 0;
-        text-align: center;
-        /*FOR USE ON ADMIN PAGES*/
-        border: none; }
-      .date_picker_block .datepicker table tbody th {
-        text-align: center; }
-      .date_picker_block .datepicker table tbody a {
-        display: block; }
-    .date_picker_block .datepicker a {
-      color: #eee;
-      text-decoration: none;
-      outline: none; }
-      .date_picker_block .datepicker a:hover {
-        color: #88c5eb; }
-    .date_picker_block .datepicker .datepickerContainer {
-      width: 327px !important;
-      height: 147px !important;
-      margin: 7px 0 0;
-      border-top: 1px solid #5cbdff; }
-      .date_picker_block .datepicker .datepickerContainer .datepickerDoW {
-        font-size: 11px;
-        border-top: 1px solid #5cbdff;
-        border-bottom: 1px solid #5cbdff; }
-      .date_picker_block .datepicker .datepickerContainer .datepickerSpace div {
-        width: 31px; }
-      .date_picker_block .datepicker .datepickerContainer .datepickerGoNext a,
-      .date_picker_block .datepicker .datepickerContainer .datepickerGoPrev a,
-      .date_picker_block .datepicker .datepickerContainer .datepickerMonth a {
-        text-align: center;
-        line-height: 20px; }
-      .date_picker_block .datepicker .datepickerContainer .datepickerViewDays .datepickerGoNext a,
-      .date_picker_block .datepicker .datepickerContainer .datepickerViewDays .datepickerGoPrev a {
-        width: 14px;
-        height: 14px;
-        background-image: url(/assets/search/search2_sprite.png);
-        background-repeat: no-repeat; }
-      .date_picker_block .datepicker .datepickerContainer .datepickerGoNext a {
-        float: right;
-        text-indent: -9999px;
-        background-position: -252px -123px; }
-        .date_picker_block .datepicker .datepickerContainer .datepickerGoNext a:hover {
-          background-position: -252px -138px; }
-      .date_picker_block .datepicker .datepickerContainer .datepickerGoPrev a {
-        float: left;
-        text-indent: -9999px;
-        background-position: -233px -123px; }
-        .date_picker_block .datepicker .datepickerContainer .datepickerGoPrev a:hover {
-          background-position: -233px -138px; }
-      .date_picker_block .datepicker .datepickerContainer .datepickerDays a {
-        width: 17px;
-        height: 16px;
-        padding-right: 2px;
-        line-height: 16px; }
-      .date_picker_block .datepicker .datepickerContainer .datepickerYears a,
-      .date_picker_block .datepicker .datepickerContainer .datepickerMonths a {
-        width: 36px;
-        height: 36px;
-        text-align: center;
-        line-height: 36px; }
-      .date_picker_block .datepicker .datepickerContainer .datepickerYears td.datepickerSelected,
-      .date_picker_block .datepicker .datepickerContainer .datepickerMonths td.datepickerSelected {
-        background: #17384d; }
-      .date_picker_block .datepicker .datepickerContainer td.datepickerNotInMonth a {
-        color: #666; }
-        .date_picker_block .datepicker .datepickerContainer td.datepickerNotInMonth a:hover {
-          color: #999; }
-      .date_picker_block .datepicker .datepickerContainer td.datepickerNotInMonth .datepickerSelected {
-        background: #17384d; }
-      .date_picker_block .datepicker .datepickerContainer tbody.datepickerDays a {
-        margin: 4px 2px 0 0; }
-      .date_picker_block .datepicker .datepickerContainer tbody.datepickerDays td.datepickerSelected a {
-        display: block;
-        background: #ff9900; }
-        .date_picker_block .datepicker .datepickerContainer tbody.datepickerDays td.datepickerSelected a:hover {
-          color: #9b610a; }
-      .date_picker_block .datepicker .datepickerContainer tbody.datepickerDays td.datepickerNotInMonth,
-      .date_picker_block .datepicker .datepickerContainer tbody.datepickerDays th.datepickerWeek {
-        visibility: hidden; }
-      .date_picker_block .datepicker .datepickerContainer tbody.datepickerDays td.datepickerNotInMonth.datepickerSelected {
-        background: #17384d; }
-      .date_picker_block .datepicker .datepickerContainer .datepickerMonth {
-        text-transform: uppercase;
-        padding: 3px 0; }
-      .date_picker_block .datepicker .datepickerContainer table.datepickerViewDays tbody.datepickerMonths,
-      .date_picker_block .datepicker .datepickerContainer table.datepickerViewDays tbody.datepickerYears {
-        display: none; }
-      .date_picker_block .datepicker .datepickerContainer table.datepickerViewMonths tbody.datepickerDays,
-      .date_picker_block .datepicker .datepickerContainer table.datepickerViewMonths tbody.datepickerYears,
-      .date_picker_block .datepicker .datepickerContainer table.datepickerViewMonths tr.datepickerDoW {
-        display: none; }
-      .date_picker_block .datepicker .datepickerContainer table.datepickerViewYears tbody.datepickerDays,
-      .date_picker_block .datepicker .datepickerContainer table.datepickerViewYears tbody.datepickerMonths,
-      .date_picker_block .datepicker .datepickerContainer table.datepickerViewYears tr.datepickerDoW {
-        display: none; }
-      .date_picker_block .datepicker .datepickerContainer td.datepickerDisabled a,
-      .date_picker_block .datepicker .datepickerContainer td.datepickerDisabled.datepickerNotInMonth a {
-        color: #333; }
-      .date_picker_block .datepicker .datepickerContainer td.datepickerDisabled a:hover {
-        color: #333; }
-      .date_picker_block .datepicker .datepickerContainer td.datepickerSpecial a {
-        background: #700; }
-      .date_picker_block .datepicker .datepickerContainer td.datepickerSpecial.datepickerSelected a {
-        background: #a00; }
-  .date_picker_block .controls {
-    /* update to orange version of blue btn  (also used in search location popup) */ }
-    .date_picker_block .controls .fake_link {
-      text-decoration: underline; }
-    .date_picker_block .controls .clear_link,
-    .date_picker_block .controls .cancel_link {
-      margin: 2px 0 0; }
-    .date_picker_block .controls .apply_btn.blue_btn {
-      margin: 0 0 0 15px;
-      padding: 3px 23px;
-      font-size: 11px;
-      text-shadow: 0 1px 1px #f2af55;
-      background: #ff8900;
-      background: -moz-linear-gradient(top, #ff8900 0%, #c95200 100%);
-      background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ff8900), color-stop(100%, #c95200));
-      background: -webkit-linear-gradient(top, #ff8900 0%, #c95200 100%);
-      background: -o-linear-gradient(top, #ff8900 0%, #c95200 100%);
-      background: -ms-linear-gradient(top, #ff8900 0%, #c95200 100%);
-      background: linear-gradient(to bottom, #ff8900 0%, #c95200 100%);
-      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff8900', endColorstr='#c95200',GradientType=0 );
-      box-shadow: 0 1px 5px #4d6775;
-      -webkit-box-shadow: 0 1px 5px #4d6775;
-      -moz-box-shadow: 0 1px 5px #4d6775;
-      border: none; }
-
-/* BEGIN DEFAULT STYLES
----------------------------------------------------------*/
-.datepickerHidden {
-  display: none; }
-/* For section under Browse by Personality pod */
-#browse_interest h3 {
-  float: left;
-  width: 136px;
-  margin: 0 30px 0 0;
-  padding: 0;
-  color: #09f;
-  font-size: 26px;
-  font-weight: normal;
-  text-align: right;
-  line-height: 29px; }
-#browse_interest ul {
-  padding: 3px 0 0; }
-  #browse_interest ul li {
-    float: left;
-    width: 135px;
-    line-height: 21px; }
-    #browse_interest ul li a, #browse_interest ul li .fake_link {
-      color: #375363;
-      text-decoration: underline;
-      text-shadow: 0 0 0.08em #dadada; }
-      #browse_interest ul li a:hover, #browse_interest ul li .fake_link:hover {
-        color: #000; }
-#browse_interest.onerow h3 {
-  float: left;
-  width: 285px;
-  margin: 0 20px 0 0; }
-#browse_interest.onerow ul {
-  float: left;
-  width: 400px;
-  padding: 0; }
-  #browse_interest.onerow ul li {
-    width: auto;
-    margin: 0 0 0 30px;
-    line-height: 18px; }
-    #browse_interest.onerow ul li:first-child {
-      margin-left: 0; }
 /*FOR TOP SECTION LINK*/
 .videos_link a:link,
 .videos_link a:visited {
@@ -1687,6 +450,743 @@ div.datepicker {
 
 .video_section.horizontal_width480 .prev_next_btns .next_btn:hover {
   background-position: -66px -188px; }
+.day_changer_head {
+  width: 715px;
+  /* Fix for linux */
+  margin: 0 0 8px; }
+  .day_changer_head h1.blue_header,
+  .day_changer_head h2.blue_header {
+    width: 345px; }
+  .day_changer_head .blue_header {
+    float: left;
+    margin: 0;
+    font-size: 20px; }
+    .day_changer_head .blue_header.day_changer_heads {
+      width: auto;
+      padding: 9px 0 10px;
+      color: #bbe3fe;
+      font-size: 14px;
+      line-height: 14px;
+      text-align: center;
+      text-transform: uppercase;
+      text-shadow: none;
+      border-left: 1px dotted #40b0fd;
+      cursor: pointer; }
+      .day_changer_head .blue_header.day_changer_heads span {
+        display: block;
+        margin: 3px 0 0;
+        font-size: 8px;
+        line-height: 8px;
+        font-family: 'Arial', sans-serif; }
+      .day_changer_head .blue_header.day_changer_heads.Selected {
+        position: relative;
+        color: white;
+        background-color: #f60;
+        background-image: url(/assets/content_bg/browse_by_today_selected_bg.gif);
+        background-repeat: repeat-x;
+        border-top: 0px inset #FFB400;
+        border-bottom: 0px inset #A14100;
+        border-radius: 4px;
+        box-shadow: 0 1px 3px #bfbfbf;
+        cursor: default;
+        filter: none; }
+        .day_changer_head .blue_header.day_changer_heads.Selected:hover {
+          background-image: url(/assets/content_bg/browse_by_today_selected_bg.gif); }
+      .day_changer_head .blue_header.day_changer_heads:hover {
+        color: #fff;
+        background: -webkit-gradient(linear, 0 0, 0 100%, from(#0099ff), to(#076fd1));
+        background: -moz-linear-gradient(top, #0099ff, #076fd1);
+        cursor: pointer; }
+      .day_changer_head .blue_header.day_changer_heads.today {
+        width: 72px; }
+      .day_changer_head .blue_header.day_changer_heads.tomorrow {
+        width: 114px; }
+      .day_changer_head .blue_header.day_changer_heads.choose {
+        width: 140px; }
+  .day_changer_head .day_changer_more {
+    position: relative;
+    float: left; }
+    .day_changer_head .day_changer_more .date_picker_block {
+      top: 52px;
+      left: -25px;
+      width: 146px;
+      height: 225px;
+      box-shadow: 0 1px 2px #628495; }
+      .day_changer_head .day_changer_more .date_picker_block .point {
+        left: 102px; }
+      .day_changer_head .day_changer_more .date_picker_block .Notice {
+        font-size: 11px; }
+      .day_changer_head .day_changer_more .date_picker_block .datepicker {
+        width: 149px !important; }
+        .day_changer_head .day_changer_more .date_picker_block .datepicker .datepickerContainer {
+          width: 149px !important; }
+      .day_changer_head .day_changer_more .date_picker_block .controls .clear_link {
+        display: none; }
+/*
+
+*/
+.small_city .day_changer_cont .blue_header {
+  width: auto; }
+
+.date_time {
+  margin: 3px 0 5px;
+  padding: 0;
+  height: 12px;
+  color: #09f;
+  font-size: 9px;
+  line-height: 12px;
+  text-transform: uppercase;
+  overflow: hidden; }
+  .date_time .small_text {
+    font-size: 10px; }
+
+.day_changer_cont.day_changer_tomor {
+  display: none; }
+.day_changer_cont li.featured_item + li {
+  padding-top: 3px;
+  border-top: none; }
+.day_changer_cont .event_venue_name {
+  color: #375363;
+  font-weight: bold;
+  line-height: 16px;
+  text-decoration: underline; }
+  .day_changer_cont .event_venue_name:hover {
+    color: #597686; }
+  .day_changer_cont .event_venue_name.nourl:hover {
+    color: #375363; }
+.day_changer_cont .name {
+  display: block;
+  margin: 0 0 2px;
+  color: #000;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 21px; }
+  .day_changer_cont .name:hover {
+    color: #597686; }
+.day_changer_cont .ellipsis {
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  font-size: 11px;
+  line-height: 15px;
+  background-color: #fff;
+  overflow: hidden; }
+.day_changer_cont .featured_item {
+  float: left;
+  width: 345px;
+  margin: 0 14px 0 0; }
+  .day_changer_cont .featured_item p {
+    padding-bottom: 0; }
+  .day_changer_cont .featured_item .thumbnail_link {
+    width: 345px;
+    height: 230px;
+    margin: 0 0 7px; }
+    .day_changer_cont .featured_item .thumbnail_link img {
+      width: 345px;
+      height: 230px; }
+  .day_changer_cont .featured_item .quick_nav_links,
+  .day_changer_cont .featured_item .desc,
+  .day_changer_cont .featured_item .quick_nav_add_cal {
+    margin: 0 0 8px;
+    padding: 0 0 8px;
+    border-bottom: 1px dashed #adc0c9; }
+  .day_changer_cont .featured_item .quick_nav_add_cal {
+    padding-bottom: 5px; }
+    .day_changer_cont .featured_item .quick_nav_add_cal .quick_nav_links {
+      float: left;
+      margin-bottom: 0;
+      padding-bottom: 0;
+      border-bottom: none; }
+  .day_changer_cont .featured_item .add_to_calendar {
+    float: right;
+    margin-top: -2px; }
+  .day_changer_cont .featured_item .details {
+    position: relative;
+    left: -25px;
+    width: 334px;
+    height: 97px;
+    margin: 2px 0 0;
+    padding: 0 0 0 25px;
+    font-size: 12px;
+    line-height: 16px;
+    overflow: hidden; }
+  .day_changer_cont .featured_item .location {
+    position: relative; }
+    .day_changer_cont .featured_item .location .blue_flag {
+      position: absolute;
+      top: 4px;
+      left: -25px; }
+    .day_changer_cont .featured_item .location p {
+      padding-left: 51px; }
+    .day_changer_cont .featured_item .location .event_venue_name {
+      font-size: 15px;
+      line-height: 21px; }
+    .day_changer_cont .featured_item .location .address {
+      color: #375363;
+      font-size: 12px;
+      line-height: 15px; }
+  .day_changer_cont .featured_item .liked_by {
+    float: left; }
+    .day_changer_cont .featured_item .liked_by dt {
+      margin-right: 10px; }
+.day_changer_cont .item {
+  position: relative;
+  float: left;
+  width: 347px;
+  min-height: 149px;
+  padding: 8px 0 10px;
+  border-top: 1px dashed #adc0c9; }
+  .day_changer_cont .item p {
+    padding-bottom: 0; }
+  .day_changer_cont .item .name {
+    font-size: 17px;
+    line-height: 18px; }
+  .day_changer_cont .item .small_text.caps.blue_text {
+    font-size: 10px; }
+  .day_changer_cont .item .thumbnail_link {
+    float: left;
+    width: 165px;
+    height: 110px;
+    margin: 0 7px 0 0; }
+    .day_changer_cont .item .thumbnail_link img {
+      width: 165px;
+      height: 110px; }
+  .day_changer_cont .item .details,
+  .day_changer_cont .item .user_review_summary {
+    position: relative;
+    height: 56px;
+    margin: 2px 0 0;
+    font-size: 11px;
+    line-height: 14px;
+    overflow: hidden; }
+    .day_changer_cont .item .details .ellipsis,
+    .day_changer_cont .item .user_review_summary .ellipsis {
+      max-width: 176px; }
+  .day_changer_cont .item .details {
+    height: 60px; }
+  .day_changer_cont .item .blue_flag, .day_changer_cont .item gray_flag {
+    margin: 0 0 4px;
+    line-height: 14px; }
+    .day_changer_cont .item .blue_flag .tip, .day_changer_cont .item gray_flag .tip {
+      border-top: 6px solid transparent; }
+  .day_changer_cont .item .add_to_calendar {
+    position: absolute;
+    top: auto;
+    bottom: 11px;
+    left: 172px; }
+  .day_changer_cont .item .liked_by {
+    position: absolute;
+    left: 173px;
+    bottom: 11px;
+    width: 173px; }
+  .day_changer_cont .item .box_link.calendar {
+    position: absolute;
+    bottom: 8px;
+    left: 172px; }
+/* Default Browse by Category Module Styles */
+.browse_category {
+  margin: 0 0 9px;
+  padding: 0 0 9px;
+  border-bottom: 1px dashed #adc0c9; }
+  .browse_category .column {
+    float: left;
+    width: 168px;
+    margin: 0 0 0 5px;
+    padding: 0 0 0 5px;
+    border-left: 1px dotted #d8d8d8; }
+    .browse_category .column:first-child {
+      margin-left: 0 !important;
+      padding-left: 0 !important;
+      border-left: none !important; }
+    .browse_category .column.featured {
+      padding: 5px 6px 10px;
+      background-color: #f0f3f5;
+      border-left: none; }
+      .browse_category .column.featured h3 {
+        color: #09f;
+        font-size: 15px;
+        line-height: 15px;
+        text-decoration: none; }
+      .browse_category .column.featured .name {
+        margin: 0;
+        padding: 0;
+        color: #000;
+        font-size: 13px;
+        font-weight: bold;
+        border-bottom: none; }
+        .browse_category .column.featured .name:hover {
+          color: #597686; }
+  .browse_category h3 {
+    margin: 0 0 7px;
+    color: #000;
+    font-size: 17px;
+    text-decoration: underline;
+    line-height: 18px;
+    overflow: hidden; }
+  .browse_category.two_line_title h3 {
+    height: 37px; }
+  .browse_category p {
+    padding: 0; }
+    .browse_category p.desc {
+      position: relative;
+      height: 98px;
+      font-size: 11px;
+      line-height: 14px;
+      overflow: hidden; }
+      .browse_category p.desc .ellipsis {
+        display: block;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        padding: 0 0 0 10px;
+        background-color: #f0f3f5; }
+  .browse_category .thumbnail_link {
+    width: 165px;
+    height: 110px;
+    margin: 0 0 5px; }
+  .browse_category .thumbnail_link img,
+  .browse_category .thumbnail {
+    width: 165px;
+    height: 110px; }
+  .browse_category .name {
+    display: block;
+    margin: 0 0 5px;
+    padding: 0 0 5px;
+    color: #597686;
+    font-size: 10px;
+    border-bottom: 1px solid #dae4e9; }
+  .browse_category ul {
+    height: 105px;
+    /* Default height for 5 items */
+    margin: 0 0 8px;
+    padding: 0 0 8px;
+    border-bottom: 1px dashed #adc0c9; }
+    .browse_category ul li {
+      line-height: 21px; }
+    .browse_category ul .arrow {
+      display: inline-block;
+      position: relative;
+      top: -1px;
+      color: #09f;
+      font-family: 'Times New Roman';
+      font-size: 17px;
+      line-height: 17px;
+      height: 13px;
+      width: 6px;
+      text-indent: -10px;
+      overflow: hidden; }
+    .browse_category ul a, .browse_category ul .fake_link {
+      display: inline-block;
+      color: #375363;
+      text-decoration: underline;
+      line-height: 14px;
+      text-shadow: 0 0 0.08em #dadada; }
+      .browse_category ul a:hover, .browse_category ul .fake_link:hover {
+        color: #000; }
+    .browse_category ul .venue_type a,
+    .browse_category ul .venue_type span {
+      line-height: 12px; }
+    .browse_category ul.four_items {
+      height: 84px; }
+  .browse_category .more {
+    display: block;
+    padding: 0;
+    color: #aaa;
+    font-size: 11px;
+    line-height: 11px;
+    text-decoration: underline; }
+    .browse_category .more:hover {
+      color: #000; }
+
+/* Alternative layout with rows/boxes */
+.browse_category_boxes {
+  padding-bottom: 0; }
+  .browse_category_boxes .row {
+    margin: 0 0 8px; }
+    .browse_category_boxes .row:first-child .cell {
+      padding-top: 0;
+      border-top: none; }
+  .browse_category_boxes .cell {
+    float: left;
+    width: 220px;
+    margin: 0 0 0 22px;
+    padding: 8px 0 3px;
+    border-top: 1px dashed #adc0c9; }
+    .browse_category_boxes .cell:first-child {
+      margin-left: 0; }
+    .browse_category_boxes .cell .thumbnail_link {
+      float: left;
+      width: 75px;
+      height: 50px;
+      margin: 0 4px 0 0; }
+    .browse_category_boxes .cell .thumbnail_link img,
+    .browse_category_boxes .cell .thumbnail {
+      width: 75px;
+      height: 50px; }
+    .browse_category_boxes .cell ul {
+      float: left;
+      width: 154px;
+      height: auto;
+      margin: 0;
+      padding: 0;
+      border-bottom: 0; }
+      .browse_category_boxes .cell ul li {
+        margin: 6px 0 0;
+        line-height: 13px; }
+        .browse_category_boxes .cell ul li:first-child {
+          margin-top: 0; }
+      .browse_category_boxes .cell ul a {
+        display: inline-block;
+        padding: 0 0 0 11px;
+        background-position: -114px -275px;
+        background-repeat: no-repeat; }
+        .browse_category_boxes .cell ul a.selected {
+          background-image: url(/assets/content_bg/application_sprite.png); }
+    .browse_category_boxes .cell .fake_link {
+      float: left;
+      clear: left;
+      margin: 8px 0 0;
+      text-decoration: underline; }
+
+/* Alternative layout with rows/boxes and embedded interest pod */
+.browse_category_interest .rows {
+  float: left; }
+.browse_category_interest .row {
+  width: 495px; }
+.browse_category_interest .cell {
+  width: 235px; }
+.browse_category_interest .interest_embed {
+  float: right;
+  width: 174px;
+  margin: 0 0 8px;
+  padding: 10px 15px;
+  background-color: #ffffe5; }
+  .browse_category_interest .interest_embed h3 {
+    margin: 0 0 8px;
+    padding: 0 0 8px;
+    color: #375363;
+    font-size: 20px;
+    text-decoration: none;
+    border-bottom: 1px dashed #adc0c9; }
+  .browse_category_interest .interest_embed ul {
+    width: auto;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    border-bottom: 0; }
+    .browse_category_interest .interest_embed ul li {
+      line-height: 24px; }
+    .browse_category_interest .interest_embed ul .category {
+      text-shadow: 0 0 0.08em #dadada;
+      text-decoration: underline; }
+      .browse_category_interest .interest_embed ul .category:hover {
+        color: #597686; }
+
+/* Alternative layout for neighborhood list */
+.browse_category_dash_list {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: 0;
+  /* Height of 1 <li> */
+  /* One Venue */
+  /* Two Venues */
+  /* Three Venues */ }
+  .browse_category_dash_list .column {
+    border-left: none; }
+  .browse_category_dash_list ul {
+    height: auto;
+    overflow: hidden; }
+    .browse_category_dash_list ul li {
+      margin: 7px 0 0;
+      padding: 7px 0 0;
+      border-top: 1px dashed #adc0c9; }
+      .browse_category_dash_list ul li:first-child {
+        margin-top: 0;
+        padding-top: 0;
+        border-top: none; }
+    .browse_category_dash_list ul a {
+      color: #000; }
+      .browse_category_dash_list ul a:hover {
+        color: #597686; }
+    .browse_category_dash_list ul .venue_type {
+      margin: 0; }
+      .browse_category_dash_list ul .venue_type a {
+        color: #6c8898;
+        text-decoration: none; }
+        .browse_category_dash_list ul .venue_type a:hover {
+          text-decoration: underline; }
+    .browse_category_dash_list ul .date {
+      display: block;
+      color: #09f;
+      font-size: 10px;
+      line-height: 11px; }
+  .browse_category_dash_list.one_venue ul {
+    height: 32px; }
+  .browse_category_dash_list.two_venues ul {
+    height: 80px; }
+  .browse_category_dash_list.three_venues ul {
+    height: 128px; }
+/* Default More Links List Styles */
+.more_links_list {
+  line-height: 14px; }
+  .more_links_list dt {
+    display: block;
+    float: left;
+    width: 114px; }
+  .more_links_list dd {
+    float: left;
+    width: 590px; }
+  .more_links_list li {
+    float: left;
+    margin: 0 10px 0 0;
+    font-size: 11px; }
+  .more_links_list a, .more_links_list span {
+    color: #09f;
+    text-decoration: underline; }
+    .more_links_list a:hover, .more_links_list span:hover {
+      color: #597686; }
+/*BEGIN CUSTOM STYLES*/
+/*---------------------------------------------------------*/
+.Datepicker {
+  height: 171px;
+  margin: 0 0 7px;
+  padding: 0 0 4px;
+  border-bottom: 1px dashed #82cafb; }
+
+div.datepicker {
+  display: none;
+  z-index: 1000; }
+
+.date_picker_block {
+  position: absolute;
+  color: #fff;
+  width: 327px;
+  height: 225px;
+  padding: 10px 15px;
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(#1977ce), to(#0098fe));
+  background: -moz-linear-gradient(top, #1977ce, #0098fe);
+  -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=#1977ce, endColorStr=#0098fe);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=#1977ce, endColorStr=#0098fe);
+  border-radius: 2px; }
+  .date_picker_block .point {
+    position: absolute;
+    top: -14px;
+    left: 71px;
+    width: 1px;
+    height: 0;
+    border-color: transparent transparent #1977ce;
+    border-style: solid;
+    border-width: 7px;
+    overflow: hidden; }
+  .date_picker_block .fake_link {
+    color: #eee;
+    outline: none; }
+    .date_picker_block .fake_link:hover {
+      color: #88c5eb; }
+  .date_picker_block .datepicker {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 330px !important;
+    height: 147px !important;
+    font-family: 'Arial', 'Helvetica', sans-serif;
+    font-size: 12px;
+    cursor: default; }
+    .date_picker_block .datepicker .datepickerBorderT,
+    .date_picker_block .datepicker .datepickerBorderB,
+    .date_picker_block .datepicker .datepickerBorderL,
+    .date_picker_block .datepicker .datepickerBorderR,
+    .date_picker_block .datepicker .datepickerBorderTL,
+    .date_picker_block .datepicker .datepickerBorderTR,
+    .date_picker_block .datepicker .datepickerBorderBL,
+    .date_picker_block .datepicker .datepickerBorderBR {
+      display: none; }
+    .date_picker_block .datepicker th {
+      text-align: center;
+      color: #5cbdff;
+      font-weight: normal;
+      /*FOR USE ON ADMIN PAGES*/
+      padding: 0;
+      background: none; }
+    .date_picker_block .datepicker table {
+      border-collapse: collapse;
+      /*FOR USE ON ADMIN PAGES*/ }
+      .date_picker_block .datepicker table tr, .date_picker_block .datepicker table th, .date_picker_block .datepicker table td {
+        vertical-align: middle; }
+        .date_picker_block .datepicker table tr:hover, .date_picker_block .datepicker table th:hover, .date_picker_block .datepicker table td:hover {
+          background: none; }
+      .date_picker_block .datepicker table td {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        /*FOR USE ON ADMIN PAGES*/
+        border: none; }
+      .date_picker_block .datepicker table tbody th {
+        text-align: center; }
+      .date_picker_block .datepicker table tbody a {
+        display: block; }
+    .date_picker_block .datepicker a {
+      color: #eee;
+      text-decoration: none;
+      outline: none; }
+      .date_picker_block .datepicker a:hover {
+        color: #88c5eb; }
+    .date_picker_block .datepicker .datepickerContainer {
+      width: 327px !important;
+      height: 147px !important;
+      margin: 7px 0 0;
+      border-top: 1px solid #5cbdff; }
+      .date_picker_block .datepicker .datepickerContainer .datepickerDoW {
+        font-size: 11px;
+        border-top: 1px solid #5cbdff;
+        border-bottom: 1px solid #5cbdff; }
+      .date_picker_block .datepicker .datepickerContainer .datepickerSpace div {
+        width: 31px; }
+      .date_picker_block .datepicker .datepickerContainer .datepickerGoNext a,
+      .date_picker_block .datepicker .datepickerContainer .datepickerGoPrev a,
+      .date_picker_block .datepicker .datepickerContainer .datepickerMonth a {
+        text-align: center;
+        line-height: 20px; }
+      .date_picker_block .datepicker .datepickerContainer .datepickerViewDays .datepickerGoNext a,
+      .date_picker_block .datepicker .datepickerContainer .datepickerViewDays .datepickerGoPrev a {
+        width: 14px;
+        height: 14px;
+        background-image: url(/assets/search/search2_sprite.png);
+        background-repeat: no-repeat; }
+      .date_picker_block .datepicker .datepickerContainer .datepickerGoNext a {
+        float: right;
+        text-indent: -9999px;
+        background-position: -252px -123px; }
+        .date_picker_block .datepicker .datepickerContainer .datepickerGoNext a:hover {
+          background-position: -252px -138px; }
+      .date_picker_block .datepicker .datepickerContainer .datepickerGoPrev a {
+        float: left;
+        text-indent: -9999px;
+        background-position: -233px -123px; }
+        .date_picker_block .datepicker .datepickerContainer .datepickerGoPrev a:hover {
+          background-position: -233px -138px; }
+      .date_picker_block .datepicker .datepickerContainer .datepickerDays a {
+        width: 17px;
+        height: 16px;
+        padding-right: 2px;
+        line-height: 16px; }
+      .date_picker_block .datepicker .datepickerContainer .datepickerYears a,
+      .date_picker_block .datepicker .datepickerContainer .datepickerMonths a {
+        width: 36px;
+        height: 36px;
+        text-align: center;
+        line-height: 36px; }
+      .date_picker_block .datepicker .datepickerContainer .datepickerYears td.datepickerSelected,
+      .date_picker_block .datepicker .datepickerContainer .datepickerMonths td.datepickerSelected {
+        background: #17384d; }
+      .date_picker_block .datepicker .datepickerContainer td.datepickerNotInMonth a {
+        color: #666; }
+        .date_picker_block .datepicker .datepickerContainer td.datepickerNotInMonth a:hover {
+          color: #999; }
+      .date_picker_block .datepicker .datepickerContainer td.datepickerNotInMonth .datepickerSelected {
+        background: #17384d; }
+      .date_picker_block .datepicker .datepickerContainer tbody.datepickerDays a {
+        margin: 4px 2px 0 0; }
+      .date_picker_block .datepicker .datepickerContainer tbody.datepickerDays td.datepickerSelected a {
+        display: block;
+        background: #ff9900; }
+        .date_picker_block .datepicker .datepickerContainer tbody.datepickerDays td.datepickerSelected a:hover {
+          color: #9b610a; }
+      .date_picker_block .datepicker .datepickerContainer tbody.datepickerDays td.datepickerNotInMonth,
+      .date_picker_block .datepicker .datepickerContainer tbody.datepickerDays th.datepickerWeek {
+        visibility: hidden; }
+      .date_picker_block .datepicker .datepickerContainer tbody.datepickerDays td.datepickerNotInMonth.datepickerSelected {
+        background: #17384d; }
+      .date_picker_block .datepicker .datepickerContainer .datepickerMonth {
+        text-transform: uppercase;
+        padding: 3px 0; }
+      .date_picker_block .datepicker .datepickerContainer table.datepickerViewDays tbody.datepickerMonths,
+      .date_picker_block .datepicker .datepickerContainer table.datepickerViewDays tbody.datepickerYears {
+        display: none; }
+      .date_picker_block .datepicker .datepickerContainer table.datepickerViewMonths tbody.datepickerDays,
+      .date_picker_block .datepicker .datepickerContainer table.datepickerViewMonths tbody.datepickerYears,
+      .date_picker_block .datepicker .datepickerContainer table.datepickerViewMonths tr.datepickerDoW {
+        display: none; }
+      .date_picker_block .datepicker .datepickerContainer table.datepickerViewYears tbody.datepickerDays,
+      .date_picker_block .datepicker .datepickerContainer table.datepickerViewYears tbody.datepickerMonths,
+      .date_picker_block .datepicker .datepickerContainer table.datepickerViewYears tr.datepickerDoW {
+        display: none; }
+      .date_picker_block .datepicker .datepickerContainer td.datepickerDisabled a,
+      .date_picker_block .datepicker .datepickerContainer td.datepickerDisabled.datepickerNotInMonth a {
+        color: #333; }
+      .date_picker_block .datepicker .datepickerContainer td.datepickerDisabled a:hover {
+        color: #333; }
+      .date_picker_block .datepicker .datepickerContainer td.datepickerSpecial a {
+        background: #700; }
+      .date_picker_block .datepicker .datepickerContainer td.datepickerSpecial.datepickerSelected a {
+        background: #a00; }
+  .date_picker_block .controls {
+    /* update to orange version of blue btn  (also used in search location popup) */ }
+    .date_picker_block .controls .fake_link {
+      text-decoration: underline; }
+    .date_picker_block .controls .clear_link,
+    .date_picker_block .controls .cancel_link {
+      margin: 2px 0 0; }
+    .date_picker_block .controls .apply_btn.blue_btn {
+      margin: 0 0 0 15px;
+      padding: 3px 23px;
+      font-size: 11px;
+      text-shadow: 0 1px 1px #f2af55;
+      background: #ff8900;
+      background: -moz-linear-gradient(top, #ff8900 0%, #c95200 100%);
+      background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ff8900), color-stop(100%, #c95200));
+      background: -webkit-linear-gradient(top, #ff8900 0%, #c95200 100%);
+      background: -o-linear-gradient(top, #ff8900 0%, #c95200 100%);
+      background: -ms-linear-gradient(top, #ff8900 0%, #c95200 100%);
+      background: linear-gradient(to bottom, #ff8900 0%, #c95200 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff8900', endColorstr='#c95200',GradientType=0 );
+      box-shadow: 0 1px 5px #4d6775;
+      -webkit-box-shadow: 0 1px 5px #4d6775;
+      -moz-box-shadow: 0 1px 5px #4d6775;
+      border: none; }
+
+/* BEGIN DEFAULT STYLES
+---------------------------------------------------------*/
+.datepickerHidden {
+  display: none; }
+/* For section under Browse by Personality pod */
+#browse_interest h3 {
+  float: left;
+  width: 136px;
+  margin: 0 30px 0 0;
+  padding: 0;
+  color: #09f;
+  font-size: 26px;
+  font-weight: normal;
+  text-align: right;
+  line-height: 29px; }
+#browse_interest ul {
+  padding: 3px 0 0; }
+  #browse_interest ul li {
+    float: left;
+    width: 135px;
+    line-height: 21px; }
+    #browse_interest ul li a, #browse_interest ul li .fake_link {
+      color: #375363;
+      text-decoration: underline;
+      text-shadow: 0 0 0.08em #dadada; }
+      #browse_interest ul li a:hover, #browse_interest ul li .fake_link:hover {
+        color: #000; }
+#browse_interest.onerow h3 {
+  float: left;
+  width: 285px;
+  margin: 0 20px 0 0; }
+#browse_interest.onerow ul {
+  float: left;
+  width: 400px;
+  padding: 0; }
+  #browse_interest.onerow ul li {
+    width: auto;
+    margin: 0 0 0 30px;
+    line-height: 18px; }
+    #browse_interest.onerow ul li:first-child {
+      margin-left: 0; }
 #pop_neigh li {
   float: left;
   width: 102px;
@@ -1801,7 +1301,442 @@ div.datepicker {
 
 .missing_sports .copy_block_missing_venue_event .missing_image {
   background: url(/assets/landing_pages/missing_sports.gif) 0 0 no-repeat transparent; }
+/* STYLES FOR RIGHT SIDEBAR
+-----------------------------------------------------
+:: Styles for the right sidebar and universal elements like pods.
+----------------------------------------------------- */
+#right_sidebar {
+  /* Lists used in Pods. If list needs specific styles override specific attributes in seperate stylesheet..*/
+  /* Pod list stripped down with no border/padding etc. */
+  /* Pod list with a thumbnail next to each item */
+  /* Pod footer used on some pods. Any that goes in the footer should be added here.*/
+  /* Little orange arrow mostly used on pod footer after a link. */
+  /* tabs on ibiza and pamplona pages */
+  /* Styles for Popular Entertainers/DJs */
+  /* Styles for the Get Paid To Party pods */ }
+  #right_sidebar h3, #right_sidebar .featured .title {
+    display: block;
+    color: #375363;
+    font-size: 24px;
+    font-weight: normal;
+    line-height: 28px;
+    margin: 0 0 8px;
+    padding: 0 0 8px;
+    border-bottom: 1px dashed #adc0c9;
+    color: #375363; }
+    #right_sidebar h3 a, #right_sidebar h3 a:link, #right_sidebar h3 a:visited, #right_sidebar .featured .title a, #right_sidebar .featured .title a:link, #right_sidebar .featured .title a:visited {
+      color: #375363;
+      text-decoration: underline; }
+      #right_sidebar h3 a:hover, #right_sidebar h3 a:link:hover, #right_sidebar h3 a:visited:hover, #right_sidebar .featured .title a:hover, #right_sidebar .featured .title a:link:hover, #right_sidebar .featured .title a:visited:hover {
+        color: #000; }
+    #right_sidebar h3.small, #right_sidebar .featured .title.small {
+      margin: 0 0 6px;
+      padding: 0;
+      color: #09F;
+      font-size: 15px;
+      font-weight: bold;
+      line-height: 16px;
+      border-bottom: 0; }
+  #right_sidebar .title {
+    display: block;
+    margin: 0 0 3px;
+    line-height: 15px;
+    text-decoration: underline; }
+    #right_sidebar .title:hover {
+      color: #000; }
+  #right_sidebar .desc {
+    position: relative;
+    overflow: hidden; }
+    #right_sidebar .desc a, #right_sidebar .desc a:link, #right_sidebar .desc a:visited {
+      color: #09f; }
+    #right_sidebar .desc .neighborhood {
+      color: #8ea8b5;
+      font-size: 10px;
+      line-height: 10px;
+      text-transform: uppercase; }
+  #right_sidebar .thumbnail_link {
+    margin: 0 0 8px;
+    width: 98px;
+    height: 65px;
+    border: 1px solid #ccc;
+    border-radius: 2px; }
+    #right_sidebar .thumbnail_link img {
+      width: 98px;
+      height: 65px;
+      border-radius: 1px; }
+  #right_sidebar .quick_nav_links {
+    border-bottom: 1px dashed #ADC0C9;
+    padding: 0 0 5px;
+    margin: 0 0 5px; }
+    #right_sidebar .quick_nav_links a, #right_sidebar .quick_nav_links a:link, #right_sidebar .quick_nav_links a:visited {
+      color: #09f; }
+      #right_sidebar .quick_nav_links a:hover, #right_sidebar .quick_nav_links a:link:hover, #right_sidebar .quick_nav_links a:visited:hover {
+        color: #597686; }
+  #right_sidebar .name {
+    color: #09f;
+    font-size: 10px;
+    line-height: 10px;
+    text-transform: uppercase; }
+    #right_sidebar .name .date {
+      display: block;
+      float: left;
+      margin: 0 4px 0 0;
+      padding: 0 6px 0 0;
+      border-right: 1px solid #e4ebef; }
+    #right_sidebar .name a {
+      display: inline-block;
+      width: 160px;
+      height: 11px;
+      color: #09f;
+      text-decoration: none;
+      text-transform: none;
+      overflow: hidden; }
+  #right_sidebar .changer .name {
+    height: 10px;
+    margin: 0 0 6px;
+    padding: 0 0 6px;
+    vertical-align: top;
+    border-bottom: 1px solid #dae4e9; }
+  #right_sidebar .list .list_item.featured .thumbnail_link,
+  #right_sidebar .changer .thumbnail_link {
+    width: 210px;
+    height: 140px;
+    border: 1px solid #adc0c9;
+    border-radius: 4px; }
+    #right_sidebar .list .list_item.featured .thumbnail_link img,
+    #right_sidebar .changer .thumbnail_link img {
+      width: 210px;
+      height: 140px;
+      border-radius: 3px; }
+  #right_sidebar .list .list_item {
+    margin: 8px 0 0;
+    padding: 8px 0 0;
+    border-top: 1px dashed #adc0c9; }
+    #right_sidebar .list .list_item.featured {
+      margin: 0 0 15px;
+      padding: 0 0 15px;
+      border-bottom: 1px solid #8ea8b5; }
+      #right_sidebar .list .list_item.featured .title {
+        margin: 0 0 8px;
+        padding: 0;
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 20px;
+        border: none; }
+      #right_sidebar .list .list_item.featured .venue_type {
+        margin: 0 0 6px; }
+    #right_sidebar .list .list_item p {
+      padding: 0;
+      line-height: 16px; }
+      #right_sidebar .list .list_item p.name {
+        line-height: 10px; }
+    #right_sidebar .list .list_item .date {
+      color: #09f;
+      font-size: 9px;
+      line-height: 11px;
+      text-transform: uppercase; }
+    #right_sidebar .list .list_item .arrow {
+      color: #09f; }
+    #right_sidebar .list .list_item .venue_type {
+      margin: 0;
+      padding: 0;
+      color: #6C8898;
+      line-height: 11px; }
+      #right_sidebar .list .list_item .venue_type a, #right_sidebar .list .list_item .venue_type a:link, #right_sidebar .list .list_item .venue_type a:visited {
+        color: #6C8898; }
+        #right_sidebar .list .list_item .venue_type a:hover, #right_sidebar .list .list_item .venue_type a:link:hover, #right_sidebar .list .list_item .venue_type a:visited:hover {
+          color: #597686;
+          text-decoration: underline; }
+    #right_sidebar .list .list_item:first-child {
+      margin-top: 0;
+      padding-top: 0;
+      border-top: none; }
+    #right_sidebar .list .list_item .name a, #right_sidebar .list .list_item .name a:link, #right_sidebar .list .list_item .name a:visited {
+      color: #09f; }
+      #right_sidebar .list .list_item .name a:hover, #right_sidebar .list .list_item .name a:link:hover, #right_sidebar .list .list_item .name a:visited:hover {
+        color: #597686;
+        text-decoration: underline; }
+  #right_sidebar .list a {
+    color: #000; }
+    #right_sidebar .list a:hover {
+      color: #597686; }
+  #right_sidebar .simple_list .list_item {
+    margin: 0 0 3px;
+    padding: 0;
+    border: none; }
+    #right_sidebar .simple_list .list_item a, #right_sidebar .simple_list .list_item a:link, #right_sidebar .simple_list .list_item a:visited {
+      color: #375363; }
+      #right_sidebar .simple_list .list_item a:hover, #right_sidebar .simple_list .list_item a:link:hover, #right_sidebar .simple_list .list_item a:visited:hover {
+        color: #000; }
+  #right_sidebar .photo_list .thumbnail_link {
+    float: left;
+    width: 75px;
+    height: 50px;
+    margin: 0 9px 0 0; }
+    #right_sidebar .photo_list .thumbnail_link img {
+      width: 75px;
+      height: 50px; }
+  #right_sidebar .photo_list .details {
+    float: left;
+    width: 120px; }
+    #right_sidebar .photo_list .details .title {
+      line-height: 15px;
+      margin: 0 0 3px;
+      color: #000; }
+      #right_sidebar .photo_list .details .title:hover {
+        color: #597686; }
+  #right_sidebar .pod_footer {
+    margin: 5px 0 0;
+    padding: 5px 0 0;
+    border-top: 1px solid #adc0c9; }
+    #right_sidebar .pod_footer a, #right_sidebar .pod_footer a:link, #right_sidebar .pod_footer a:visited, #right_sidebar .pod_footer .fake_link {
+      float: right;
+      color: #09f;
+      text-align: right;
+      font-size: 11px;
+      line-height: 11px;
+      text-decoration: none; }
+      #right_sidebar .pod_footer a:hover, #right_sidebar .pod_footer a:link:hover, #right_sidebar .pod_footer a:visited:hover, #right_sidebar .pod_footer .fake_link:hover {
+        color: #597686; }
+      #right_sidebar .pod_footer a span, #right_sidebar .pod_footer a:link span, #right_sidebar .pod_footer a:visited span, #right_sidebar .pod_footer .fake_link span {
+        text-decoration: underline; }
+        #right_sidebar .pod_footer a span.arrow, #right_sidebar .pod_footer a:link span.arrow, #right_sidebar .pod_footer a:visited span.arrow, #right_sidebar .pod_footer .fake_link span.arrow {
+          top: 0;
+          color: #ff9000;
+          text-decoration: none; }
+  #right_sidebar .arrow {
+    display: inline-block;
+    position: relative;
+    width: 6px;
+    font-family: "Times New Roman";
+    font-size: 17px;
+    font-weight: normal;
+    line-height: 17px;
+    text-indent: -10px;
+    overflow: hidden; }
+  #right_sidebar .tabs {
+    margin-top: 33px; }
+    #right_sidebar .tabs:first-child {
+      margin-top: 19px; }
+  #right_sidebar .popular_entertainers .list li {
+    position: relative;
+    padding: 0 0 0 10px; }
+    #right_sidebar .popular_entertainers .list li .arrow {
+      display: none;
+      position: absolute;
+      left: 0; }
+    #right_sidebar .popular_entertainers .list li.selected .arrow {
+      display: inline-block; }
+  #right_sidebar .gptp_right_rail h3 {
+    padding: 0;
+    font-weight: normal;
+    border: none; }
+  #right_sidebar .gptp_right_rail ul li {
+    float: left;
+    margin: 0 4px 4px 0; }
+    #right_sidebar .gptp_right_rail ul li:nth-child(4n) {
+      margin-right: 0; }
+    #right_sidebar .gptp_right_rail ul li a, #right_sidebar .gptp_right_rail ul li a:link, #right_sidebar .gptp_right_rail ul li a:visited {
+      display: block;
+      width: 50px;
+      height: 50px; }
+      #right_sidebar .gptp_right_rail ul li a img, #right_sidebar .gptp_right_rail ul li a:link img, #right_sidebar .gptp_right_rail ul li a:visited img {
+        opacity: .85; }
+      #right_sidebar .gptp_right_rail ul li a:hover img, #right_sidebar .gptp_right_rail ul li a:link:hover img, #right_sidebar .gptp_right_rail ul li a:visited:hover img {
+        opacity: 100; }
+  #right_sidebar .gptp_right_rail .links {
+    font-size: 11px;
+    line-height: 11px; }
+    #right_sidebar .gptp_right_rail .links a, #right_sidebar .gptp_right_rail .links .fake_link {
+      text-decoration: underline; }
+    #right_sidebar .gptp_right_rail .links .arrow {
+      color: #ff9000; }
+    #right_sidebar .gptp_right_rail .links .learn_link {
+      float: left; }
+    #right_sidebar .gptp_right_rail .links .meet_link {
+      float: right; }
+  #right_sidebar .gptp_right_rail .buttons {
+    width: 217px;
+    margin: 8px 0 0;
+    padding: 8px 0 0;
+    border-top: 1px solid #8ea8b5; }
+    #right_sidebar .gptp_right_rail .buttons a, #right_sidebar .gptp_right_rail .buttons a:link, #right_sidebar .gptp_right_rail .buttons a:visited {
+      display: block;
+      position: relative;
+      float: left;
+      height: 46px;
+      margin-top: 2px;
+      margin-bottom: -6px;
+      background-image: url(/assets/common/right_colmun_sprite.png); }
+      #right_sidebar .gptp_right_rail .buttons a.writer, #right_sidebar .gptp_right_rail .buttons a:link.writer, #right_sidebar .gptp_right_rail .buttons a:visited.writer {
+        left: -2px;
+        width: 85px;
+        background-position: -1px -422px; }
+        #right_sidebar .gptp_right_rail .buttons a.writer:hover, #right_sidebar .gptp_right_rail .buttons a:link.writer:hover, #right_sidebar .gptp_right_rail .buttons a:visited.writer:hover {
+          background-position: -1px -476px; }
+      #right_sidebar .gptp_right_rail .buttons a.photographer, #right_sidebar .gptp_right_rail .buttons a:link.photographer, #right_sidebar .gptp_right_rail .buttons a:visited.photographer {
+        right: -3px;
+        width: 132px;
+        background-position: -88px -422px; }
+        #right_sidebar .gptp_right_rail .buttons a.photographer:hover, #right_sidebar .gptp_right_rail .buttons a:link.photographer:hover, #right_sidebar .gptp_right_rail .buttons a:visited.photographer:hover {
+          background-position: -88px -476px; }
+  #right_sidebar .missing_venue_event,
+  #right_sidebar .share_btn,
+  #right_sidebar .subscribe_btn,
+  #right_sidebar .follow_btns,
+  #right_sidebar .ad {
+    cursor: pointer;
+    background-image: url(/assets/common/right_colmun_sprite.png);
+    background-repeat: no-repeat; }
+  #right_sidebar #right_rail_simple_share {
+    position: absolute;
+    top: -60px;
+    left: -9px; }
+  #right_sidebar .missing_venue_event {
+    position: relative;
+    left: -2px;
+    width: 246px;
+    height: 154px;
+    margin: 0 0 8px;
+    background-position: -291px -233px; }
+    #right_sidebar .missing_venue_event:hover {
+      background-position: -291px -389px; }
+  #right_sidebar .share_btn,
+  #right_sidebar .subscribe_btn,
+  #right_sidebar .follow_btns {
+    position: relative;
+    right: 0;
+    width: 243px;
+    height: 44px;
+    margin: 0 0 9px; }
+  #right_sidebar .share_btn {
+    background-position: -291px -52px; }
+  #right_sidebar .subscribe_btn {
+    background-position: -291px -102px; }
+  #right_sidebar .follow_btns {
+    background-position: -291px -152px;
+    cursor: default !important; }
+    #right_sidebar .follow_btns a {
+      display: block;
+      position: absolute;
+      top: 9px;
+      width: 28px;
+      height: 28px;
+      margin: 0; }
+    #right_sidebar .follow_btns .gig-followbar-providerButton {
+      right: 44px; }
+    #right_sidebar .follow_btns .gig-followbar-providerButton-last {
+      right: 11px; }
+  #right_sidebar .ad {
+    width: 240px;
+    height: 400px;
+    background-position: 0 0; }
+/* Recent Articles Sidebar Pod */
+#recent_articles .list .list_item {
+  float: left;
+  width: 100px;
+  margin: 0 0 0 12px;
+  padding: 0;
+  line-height: 15px;
+  border-top: none; }
+  #recent_articles .list .list_item:first-child + li {
+    margin-left: 0; }
+  #recent_articles .list .list_item .thumbnail_link {
+    margin: 0 0 5px; }
+  #recent_articles .list .list_item .title {
+    font-size: 11px;
+    line-height: 13px; }
+  #recent_articles .list .list_item.featured {
+    float: none;
+    width: auto;
+    margin-left: 0; }
+    #recent_articles .list .list_item.featured .thumbnail_link {
+      margin: 0 0 15px; }
+/*BEGIN NEW IN PHOTO GALLERIES STYLES*/
+/*---------------------------------------------*/
+#photo_pod {
+  margin: 0 0 12px;
+  padding: 13px 15px; }
+  #photo_pod h3 {
+    margin: 0 0 7px;
+    font-size: 15px; }
+  #photo_pod ul {
+    list-style: none; }
+  #photo_pod li {
+    float: left;
+    width: 100px;
+    margin: 0 10px 8px 0;
+    padding: 11px 0 0;
+    line-height: 15px;
+    border-top: 1px dashed #ADC0C9; }
+    #photo_pod li .thumbnail_link {
+      margin: 0 0 3px; }
+    #photo_pod li a, #photo_pod li a:link, #photo_pod li a:visited {
+      color: #000;
+      font-size: 11px;
+      line-height: 11px; }
+      #photo_pod li a:hover, #photo_pod li a:link:hover, #photo_pod li a:visited:hover {
+        color: #597686; }
+    #photo_pod li.last {
+      margin-right: 0; }
+    #photo_pod li.bottom {
+      margin-bottom: 0; }
+/* Upcoming Events Sidebar Pod */
+#upcoming_events .list .list_item {
+  position: relative; }
+  #upcoming_events .list .list_item:first-child {
+    padding-top: 8px; }
+  #upcoming_events .list .list_item .point {
+    display: none;
+    position: absolute;
+    top: 18px;
+    left: -14px;
+    border-top: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+    border-left: 7px solid #09f; }
+  #upcoming_events .list .list_item .date {
+    float: left;
+    width: 28px;
+    margin: 0 10px 0 0;
+    color: #09f;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    text-shadow: 1px 1px 1px #fff;
+    line-height: 18px;
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#eff2f4), to(#d5dbe0));
+    background: -moz-linear-gradient(top, #eff2f4, #d5dbe0);
+    -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=#eff2f4, endColorStr=#d5dbe0);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=#eff2f4, endColorStr=#d5dbe0);
+    border-right: 1px solid #E0E4E7;
+    border-left: 1px solid #E0E4E7;
+    border-radius: 2px 2px 2px 2px; }
+    #upcoming_events .list .list_item .date .month {
+      padding: 5px 0 2px;
+      font-size: 8px;
+      font-weight: bold;
+      line-height: 4px;
+      text-transform: uppercase; }
+    #upcoming_events .list .list_item .date .day {
+      padding: 0 0 5px;
+      font-size: 18px;
+      border-bottom: 1px solid #B4BABE; }
+  #upcoming_events .list .list_item .name_and_type {
+    float: left;
+    width: 168px; }
+    #upcoming_events .list .list_item .name_and_type .black_link {
+      display: block;
+      line-height: 14px;
+      margin: 0 0 3px; }
+    #upcoming_events .list .list_item .name_and_type .venue_type {
+      padding: 0;
+      margin: 0; }
+  #upcoming_events .list .list_item.selected .point {
+    display: block; }
 /*
+
+
+
 
 
 
@@ -1815,3 +1750,67 @@ div.datepicker {
 */
 .day_changer_cont .item .blue_flag {
   margin-right: 125px; }
+.day_changer_cont .venue_type {
+  display: inline-block;
+  margin-right: 5px; }
+.day_changer_cont .featured_item .video_section {
+  margin: 8px 0 0;
+  padding: 8px 0 0;
+  border-top: 1px dashed #adc0c9; }
+  .day_changer_cont .featured_item .video_section .video_label {
+    display: block;
+    float: left;
+    width: 43px;
+    color: #6c8898;
+    font-size: 11px;
+    line-height: 11px;
+    text-transform: uppercase; }
+  .day_changer_cont .featured_item .video_section .video_item {
+    float: left;
+    width: 89px;
+    height: 73px;
+    margin: 0 0 0 8px;
+    padding: 0; }
+    .day_changer_cont .featured_item .video_section .video_item .thumbnail_link {
+      width: 87px;
+      height: 71px; }
+      .day_changer_cont .featured_item .video_section .video_item .thumbnail_link .play_btn {
+        width: 87px;
+        height: 71px;
+        background-position: -5px -302px; }
+      .day_changer_cont .featured_item .video_section .video_item .thumbnail_link img {
+        width: 87px;
+        height: 71px; }
+      .day_changer_cont .featured_item .video_section .video_item .thumbnail_link:hover .play_btn {
+        background-position: -106px -302px; }
+  .day_changer_cont .featured_item .video_section .video_player_sect {
+    display: none; }
+
+.popup_video .ui-dialog-titlebar {
+  padding-right: 26px;
+  padding-left: 26px; }
+  .popup_video .ui-dialog-titlebar span {
+    width: 310px;
+    padding-left: 0;
+    font-size: 17px;
+    text-transform: none;
+    background: transparent; }
+.popup_video .ui-widget-header .ui-icon {
+  background-position: -147px -151px; }
+.popup_video .video_section {
+  width: 334px !important;
+  padding: 3px 26px 0; }
+  .popup_video .video_section .views {
+    color: #375363; }
+  .popup_video .video_section .video_player {
+    margin-bottom: 4px; }
+    .popup_video .video_section .video_player .controls .progress_bar {
+      width: 90px !important; }
+    .popup_video .video_section .video_player .controls .scrubber .ui-slider-handle {
+      border: none; }
+    .popup_video .video_section .video_player iframe {
+      width: 333px !important; }
+  .popup_video .video_section .associated_links a {
+    color: #09f; }
+    .popup_video .video_section .associated_links a:hover {
+      color: #597686; }

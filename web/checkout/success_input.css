@@ -1,65 +1,3 @@
-.TitleContainer {
-  background: url(/assets/content_bg/dropdown_extra_sprite.png) no-repeat scroll 100% -116px transparent;
-  padding: 0 29px 0 0; }
-
-.TitleContainer:hover {
-  background: url(/assets/content_bg/dropdown_extra_sprite.png) no-repeat scroll 100% -145px transparent; }
-
-.TitleContainer.Opened {
-  background-position: 100% -58px; }
-
-.TitleContainer.Opened:hover {
-  background-position: 100% -87px; }
-
-.TitleContainer .Title {
-  background: url(/assets/content_bg/dropdown_extra_sprite.png) no-repeat scroll 0 0 transparent;
-  height: 19px;
-  line-height: 20px;
-  overflow: hidden;
-  padding: 4px 10px; }
-
-.TitleContainer.Opened .Title {
-  background-position: 0 -29px; }
-
-.TitleContainer .Title.select .unselected {
-  color: #999; }
-
-.dropdown_wrapper {
-  cursor: pointer;
-  display: inline-block;
-  /*FOR IE7*/
-  *display: inline;
-  zoom: 1; }
-  .dropdown_wrapper .dropdown {
-    position: absolute;
-    z-index: 3001; }
-  .dropdown_wrapper .choices_wrapper {
-    padding: 0 2px 0 0;
-    background: url(/assets/content_bg/dropdown_extra_sprite.png) no-repeat scroll 100% -1456px transparent; }
-  .dropdown_wrapper .Choices.choices {
-    background: url(/assets/content_bg/dropdown_extra_sprite.png) no-repeat scroll 0 -232px transparent; }
-  .dropdown_wrapper .Choice.choice {
-    margin: 0 0 0 1px;
-    padding: 0 10px; }
-  .dropdown_wrapper .Choice.choice:hover {
-    color: #fff;
-    background: #0099ff; }
-  .dropdown_wrapper .footer_bottom {
-    height: 11px;
-    padding: 0 11px 0 0;
-    background: url(/assets/content_bg/dropdown_extra_sprite.png) no-repeat scroll 100% -2654px transparent; }
-  .dropdown_wrapper .footer_bottom .footer_right {
-    height: 11px;
-    background: url(/assets/content_bg/dropdown_extra_sprite.png) no-repeat scroll 0 -1443px transparent; }
-
-.month_dropdown .choices_wrapper {
-  width: 83px; }
-
-.day_dropdown .choices_wrapper {
-  width: 70px; }
-
-.year_dropdown .choices_wrapper {
-  width: 73px; }
 /* STYLES FOR RIGHT SIDEBAR
 -----------------------------------------------------
 :: Styles for the right sidebar and universal elements like pods.
@@ -531,28 +469,7 @@
 #store_info .product_table .gray_row,
 #store_info .product_table .gray_row td {
   border-right: 0; }
-.input_wrapper {
-  background: url(/assets/content_bg/input_sprite.png) 100% -29px no-repeat;
-  padding: 0 6px 0 0;
-  display: inline-block;
-  /*FOR IE7*/
-  *display: inline;
-  zoom: 1;
-  z-index: 0; }
-
-.input_wrapper .input_inner_wrapper {
-  background: url(/assets/content_bg/input_sprite.png) 0 0 no-repeat;
-  min-height: 21px;
-  padding: 4px 2px 4px 8px; }
-
-.input_wrapper .input_inner_wrapper input {
-  background: none;
-  width: 100%;
-  font-family: 'PT Sans',arial,sans-serif; }
 /*
-
-
-
 
 */
 /*HIDE BOTTOM BAR*/

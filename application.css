@@ -1977,13 +1977,15 @@ h2 {
   width: 740px; }
   #left_container .section {
     margin: 0 0 13px; }
+    #left_container .section:last-of-type {
+      margin-bottom: 0; }
   #left_container .sub_section {
     margin: 13px 0 0;
     padding: 13px 0 6px;
     border-top: 1px solid #adc0c9; }
   #left_container .section_footer, #left_container .pod_footer {
     clear: left;
-    margin: 7px 0 0;
+    margin: 13px 0 0;
     padding: 13px 0 0;
     border-top: 1px solid #adc0c9; }
     #left_container .section_footer .more_link, #left_container .pod_footer .more_link {
@@ -3463,7 +3465,9 @@ If you don't know where else to place something, place it below this line.
     text-decoration: none;
     word-spacing: 0; }
     .pod h3 a, .pod h3 .fake_link {
-      color: #000; }
+      color: #000;
+      text-decoration: underline;
+      /* Remove when not using .fake_link */ }
       .pod h3 a:hover, .pod h3 .fake_link:hover {
         color: #597686; }
     .pod h3.sub_headline {

@@ -310,7 +310,7 @@ div.actions fieldset, .store_action_btns fieldset {
 /* General form classes */
 .login_box {
   margin: 0 0 10px;
-  padding: 18px 10px 30px 25px;
+  padding: 18px 10px 18px 25px;
   border-radius: 2px;
   background-color: #f0f0f0;
   background-image: url(/assets/content_bg/login_box.png); }
@@ -398,4 +398,4 @@ div.actions fieldset, .store_action_btns fieldset {
 
 */
 p.or {
-  top: 183px; }
+  top: 170px; }

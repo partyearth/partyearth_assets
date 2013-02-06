@@ -1,136 +1,3 @@
-/*BEGIN NAVIGATION CSS*/
-/*---------------------------------------------*/
-/*GENERAL PAGE PROPERTIES*/
-/*---------------------------------------------*/
-/*LEFT COLUMN*/
-/*---------------------------------------------*/
-#left_container .az_directory_content .dictionary_index ul li {
-  padding: 0 16px 0 0; }
-  #left_container .az_directory_content .dictionary_index ul li a, #left_container .az_directory_content .dictionary_index ul li a:visited {
-    color: #8ea8b5;
-    text-decoration: none;
-    font-size: 14px;
-    font-weight: bold; }
-  #left_container .az_directory_content .dictionary_index ul li a:hover {
-    color: #0099ff; }
-#left_container .az_directory_content .dictionary ul.column {
-  float: left;
-  width: 211px;
-  /*height: 474px;*/
-  margin: 0 17px 0 0;
-  padding: 0 18px 0 0;
-  border-right: 1px dashed #8EA8B5; }
-  #left_container .az_directory_content .dictionary ul.column li {
-    margin: 0 0 6px 0;
-    position: relative; }
-    #left_container .az_directory_content .dictionary ul.column li .capital_letter {
-      /*position: absolute;*/
-      /*left: -29px;*/
-      background: #D2E2E9;
-      border-radius: 2px 0 0 2px;
-      /*width: 11px;*/
-      padding: 2px 2px 2px 4px;
-      height: 15px;
-      font-weight: bold;
-      font-size: 14px;
-      line-height: 14px;
-      margin: 5px 0; }
-    #left_container .az_directory_content .dictionary ul.column li a {
-      font-size: 15px; }
-#left_container .az_directory_content .dictionary ul.column.last {
-  margin: 0;
-  padding: 0;
-  border: none; }
-#left_container .az_directory_content .inner_divider.solid.thick {
-  border-color: #dae4e9; }
-#left_container .az_directory_content .pagination {
-  background: url(/assets/search/search2_sprite.png) 0 -167px repeat-x transparent;
-  color: #8ea8b5;
-  height: 21px;
-  -moz-border-radius: 0 0 4px 4px;
-  border-radius: 0 0 4px 4px;
-  -webkit-border-radius: 0 0 4px 4px;
-  margin: 14px 0 10px;
-  padding: 6px 8px;
-  border-top: 1px solid #e4eaed;
-  border-left: 1px solid #e4eaed;
-  border-right: 1px solid #e4eaed;
-  border-bottom: 1px solid #B4BDC1;
-  font-family: Arial, sans-serif; }
-  #left_container .az_directory_content .pagination .PaginationCell.Number,
-  #left_container .az_directory_content .pagination .pagination_cell.number {
-    -moz-border-radius: 2px 2px 2px 2px;
-    border-radius: 2px 2px 2px 2px;
-    -webkit-border-radius: 2px 2px 2px 2px;
-    background: #fff;
-    border: 1px solid #ADC0C9;
-    color: #ADC0C9;
-    padding: 2px 6px;
-    margin: 0 6px 0 0;
-    line-height: 16px;
-    height: 15px; }
-  #left_container .az_directory_content .pagination .PaginationCell.Number:hover,
-  #left_container .az_directory_content .pagination .PaginationCell.Current,
-  #left_container .az_directory_content .pagination .pagination_cell.number:hover,
-  #left_container .az_directory_content .pagination .pagination_cell.current {
-    background: #0099ff;
-    border: 1px solid #0099ff;
-    color: #fff; }
-  #left_container .az_directory_content .pagination .PaginationCell.Number:hover,
-  #left_container .az_directory_content .pagination .pagination_cell.number:hover {
-    cursor: pointer; }
-  #left_container .az_directory_content .pagination .PaginationCell.Number.Current:hover,
-  #left_container .az_directory_content .pagination .pagination_cell.number.current:hover {
-    cursor: default; }
-  #left_container .az_directory_content .pagination .PaginationCell.Dots,
-  #left_container .az_directory_content .pagination .pagination_cell.dots {
-    font-size: 20px;
-    line-height: 16px;
-    margin: 0 9px 0 0;
-    position: relative;
-    display: inline-block;
-    top: -4px;
-    letter-spacing: -1px;
-    font-weight: bold;
-    height: 15px;
-    /*FOR IE7*/
-    *top: -6px; }
-  #left_container .az_directory_content .pagination .pagination_inner_container {
-    display: inline-block;
-    position: relative;
-    left: 50%; }
-  #left_container .az_directory_content .pagination .result_count {
-    position: relative;
-    left: -50%; }
-    #left_container .az_directory_content .pagination .result_count .prev_btn,
-    #left_container .az_directory_content .pagination .result_count .next_btn {
-      background: url(/assets/search/search2_sprite.png) 0 0 no-repeat transparent;
-      width: 18px;
-      height: 17px;
-      cursor: pointer;
-      position: relative;
-      top: 2px; }
-    #left_container .az_directory_content .pagination .result_count .prev_btn {
-      background-position: -144px -8px;
-      margin-right: 6px; }
-    #left_container .az_directory_content .pagination .result_count .prev_btn:hover {
-      background-position: -123px -8px; }
-    #left_container .az_directory_content .pagination .result_count .prev_btn.disabled {
-      background-position: -144px -25px;
-      cursor: default !important; }
-    #left_container .az_directory_content .pagination .result_count .next_btn {
-      background-position: -172px -8px; }
-    #left_container .az_directory_content .pagination .result_count .next_btn:hover {
-      background-position: -123px -25px; }
-    #left_container .az_directory_content .pagination .result_count .next_btn.disabled {
-      background-position: -172px -25px;
-      cursor: default !important; }
-
-/*RIGHT COLUMN*/
-/*---------------------------------------------*/
-#right_sidebar .missing_venue_event,
-#right_sidebar .ad {
-  display: none; }
 /* STYLES FOR RIGHT SIDEBAR
 -----------------------------------------------------
 :: Styles for the right sidebar and universal elements like pods.
@@ -461,7 +328,115 @@
     width: 240px;
     height: 400px;
     background-position: 0 0; }
+/* Styles for SEO Pagination
+----------------------------------------- */
+#seo_pagination {
+  padding: 5px;
+  text-align: center;
+  line-height: 30px; }
+  #seo_pagination em, #seo_pagination a, #seo_pagination span {
+    display: inline-block;
+    height: 15px;
+    margin: 0 6px 0 0;
+    padding: 2px 6px;
+    color: #adc0c9;
+    font-style: normal;
+    line-height: 16px;
+    vertical-align: middle;
+    background-color: #fff;
+    border: 1px solid #adc0c9;
+    border-radius: 2px;
+    text-decoration: none; }
+  #seo_pagination em, #seo_pagination .current, #seo_pagination a:hover, #seo_pagination span:hover {
+    color: #fff;
+    background-color: #09f;
+    border: 1px solid #09f;
+    cursor: pointer; }
+  #seo_pagination em:hover {
+    cursor: default; }
+  #seo_pagination .gap, #seo_pagination .gap:hover {
+    padding: 0;
+    color: #adc0c9;
+    font-weight: bold;
+    font-size: 18px;
+    background-color: transparent;
+    border: none;
+    cursor: text; }
+  #seo_pagination .previous_page, #seo_pagination .next_page {
+    width: 18px;
+    height: 17px;
+    text-indent: -9999px;
+    background-image: url(/assets/search/search2_sprite.png);
+    overflow: hidden;
+    /* override previous a, a:hover styles */
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    border-radius: 0; }
+    #seo_pagination .previous_page:hover, #seo_pagination .next_page:hover {
+      background-color: transparent;
+      border: none; }
+    #seo_pagination .previous_page.disabled, #seo_pagination .next_page.disabled {
+      cursor: default; }
+  #seo_pagination .previous_page {
+    background-position: -144px -8px; }
+  #seo_pagination .previous_page:hover {
+    background-position: -123px -8px; }
+  #seo_pagination .previous_page.disabled {
+    background-position: -144px -25px; }
+  #seo_pagination .next_page {
+    background-position: -172px -8px; }
+  #seo_pagination .next_page:hover {
+    background-position: -123px -25px; }
+  #seo_pagination .next_page.disabled {
+    background-position: -172px -25px; }
 /*
 
 
 */
+.capital_letters {
+  padding: 0 0 8px;
+  margin: 0 0 8px;
+  border-bottom: 2px solid #dae4e9; }
+  .capital_letters li {
+    padding: 0 16px 0 0; }
+  .capital_letters a {
+    color: #8ea8b5;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none; }
+    .capital_letters a:hover {
+      color: #09f; }
+
+.dictionary .column {
+  float: left;
+  width: 211px;
+  margin: 0 0 0 17px;
+  padding: 0 0 0 18px;
+  border-left: 1px dashed #8ea8b5; }
+  .dictionary .column:first-child {
+    margin-left: 0;
+    padding-left: 0;
+    border-left: none; }
+  .dictionary .column li {
+    margin: 0 0 7px;
+    position: relative;
+    font-size: 15px; }
+    .dictionary .column li.capital_letter {
+      height: 15px;
+      margin: 5px 0;
+      padding: 2px 2px 2px 4px;
+      font-size: 14px;
+      font-weight: bold;
+      line-height: 14px;
+      background-color: #d2e2e9;
+      border-radius: 2px 0 0 2px; }
+    .dictionary .column li a {
+      color: #000; }
+      .dictionary .column li a:hover {
+        color: #597686; }
+
+/* RIGHT COLUMN
+--------------------------------------------- */
+#right_sidebar .missing_venue_event, #right_sidebar .ad {
+  display: none; }

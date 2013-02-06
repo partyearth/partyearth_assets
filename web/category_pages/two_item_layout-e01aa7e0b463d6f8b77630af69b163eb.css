@@ -1,0 +1,144 @@
+.spot_item {
+  float: left;
+  border-left: 1px dotted #ccc; }
+  .spot_item .name {
+    display: block;
+    margin: 0 0 4px;
+    color: #000;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 18px;
+    overflow: hidden; }
+    .spot_item .name:hover {
+      color: #597686; }
+    .spot_item .name span {
+      text-decoration: underline; }
+  .spot_item .venue_type {
+    height: 12px;
+    padding: 0;
+    overflow: hidden; }
+    .spot_item .venue_type .icon_types {
+      margin: 0 5px 0 0; }
+  .spot_item .thumbnail_link {
+    width: 345px;
+    height: 230px; }
+    .spot_item .thumbnail_link img {
+      width: 345px;
+      height: 230px; }
+  .spot_item .details, .spot_item .user_review_summary {
+    position: relative;
+    height: 80px;
+    padding: 0;
+    font-size: 12px;
+    line-height: 16px;
+    overflow: hidden; }
+    .spot_item .details .by_line, .spot_item .user_review_summary .by_line {
+      margin: 0 0 2px; }
+    .spot_item .details .ellipsis, .spot_item .user_review_summary .ellipsis {
+      display: block;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      background-color: #fff;
+      overflow: hidden; }
+      .spot_item .details .ellipsis a, .spot_item .user_review_summary .ellipsis a {
+        position: relative;
+        bottom: 2px;
+        font-size: 11px; }
+  .spot_item .details p {
+    padding-bottom: 0; }
+  .spot_item .date_time {
+    display: block;
+    height: 16px;
+    color: #09f;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 16px;
+    overflow: hidden; }
+  .spot_item .event_venue {
+    display: block;
+    height: 16px;
+    color: #375363;
+    font-size: 13px;
+    font-weight: bold;
+    font-family: 'Arial', sans-serif;
+    line-height: 16px;
+    text-shadow: 0 0 1px #ccc;
+    overflow: hidden; }
+  .spot_item a.event_venue {
+    text-decoration: underline; }
+    .spot_item a.event_venue:hover {
+      color: #000; }
+  .spot_item .desc {
+    display: block;
+    margin: 16px 0 0; }
+  .spot_item address {
+    position: relative;
+    height: 24px;
+    margin: 8px 0 0;
+    padding: 8px 0 0 25px;
+    color: #6c8898;
+    font-size: 10px;
+    line-height: 12px;
+    font-family: 'Arial', sans-serif;
+    border-top: 1px dashed #adc0c9;
+    overflow: hidden; }
+    .spot_item address p {
+      padding: 0; }
+    .spot_item address .icon {
+      position: absolute;
+      left: 0;
+      top: 10px;
+      width: 17px;
+      height: 21px;
+      background-image: url(/assets/content_bg/app_sprite_2-3417b44f351ef19503fad784cd1fd90f.png);
+      background-position: -74px 0; }
+  .spot_item .spot_item_foot {
+    margin: 8px 0 0;
+    padding: 8px 0 0;
+    border-top: 1px dashed #adc0c9; }
+/*
+
+*/
+.two_itm_lyt .spot_item {
+  width: 345px;
+  margin: 0 0 0 7px;
+  padding: 0 0 0 7px;
+  border-left: 1px dotted #ccc; }
+  .two_itm_lyt .spot_item:first-child {
+    margin-left: 0;
+    padding-left: 0;
+    border-left: none; }
+  .two_itm_lyt .spot_item .name {
+    font-size: 20px;
+    line-height: 22px; }
+  .two_itm_lyt .spot_item .quick_nav_links {
+    margin: 4px 0 8px;
+    border-bottom: 1px solid #dae4e9; }
+  .two_itm_lyt .spot_item address {
+    float: left;
+    height: 37px;
+    margin: 0;
+    padding: 0;
+    border-top: none; }
+    .two_itm_lyt .spot_item address p {
+      float: left;
+      width: 180px; }
+    .two_itm_lyt .spot_item address .heading {
+      display: block;
+      margin: 0 0 2px;
+      color: #8ea8b5;
+      font-size: 9px;
+      line-height: 11px;
+      text-transform: uppercase; }
+    .two_itm_lyt .spot_item address .icon {
+      position: relative;
+      left: auto;
+      top: auto;
+      display: block;
+      float: left;
+      margin: 0 8px 0 0; }
+  .two_itm_lyt .spot_item .liked_by {
+    float: right; }
+    .two_itm_lyt .spot_item .liked_by dt {
+      float: none; }

@@ -1092,19 +1092,22 @@ div.datepicker {
     line-height: 18px;
     overflow: hidden; }
   .browse_category.two_line_title h3 {
-    height: 36px; }
+    height: 37px; }
   .browse_category p {
     padding: 0; }
     .browse_category p.desc {
       position: relative;
-      height: 97px;
+      height: 98px;
       font-size: 11px;
       line-height: 14px;
       overflow: hidden; }
-      .browse_category p.desc a {
+      .browse_category p.desc .ellipsis {
+        display: block;
         position: absolute;
         right: 0;
-        bottom: 0; }
+        bottom: 0;
+        padding: 0 0 0 10px;
+        background-color: #f0f3f5; }
   .browse_category .thumbnail_link {
     width: 165px;
     height: 110px;
@@ -1207,10 +1210,11 @@ div.datepicker {
         background-repeat: no-repeat; }
         .browse_category_boxes .cell ul a.selected {
           background-image: url(/assets/content_bg/application_sprite.png); }
-    .browse_category_boxes .cell .more {
+    .browse_category_boxes .cell .fake_link {
       float: left;
       clear: left;
-      margin: 8px 0 0; }
+      margin: 8px 0 0;
+      text-decoration: underline; }
 
 /* Alternative layout with rows/boxes and embedded interest pod */
 .browse_category_interest .rows {
