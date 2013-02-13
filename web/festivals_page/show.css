@@ -6,8 +6,9 @@
     margin-left: 0; }
   #pop_neigh li .name {
     display: block;
-    color: #000;
     margin: 0 0 6px;
+    color: #000;
+    line-height: 15px;
     overflow: hidden; }
     #pop_neigh li .name:hover {
       color: #09f; }
@@ -16,7 +17,7 @@
     width: 100px;
     height: 100px; }
 #pop_neigh.two_line_title li .name {
-  height: 36px; }
+  height: 30px; }
 /* STYLES FOR RIGHT SIDEBAR
 -----------------------------------------------------
 :: Styles for the right sidebar and universal elements like pods.
@@ -70,6 +71,11 @@
       font-size: 10px;
       line-height: 10px;
       text-transform: uppercase; }
+    #right_sidebar .desc .ellipsis {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      background-color: #fff; }
   #right_sidebar .thumbnail_link {
     margin: 0 0 8px;
     width: 98px;

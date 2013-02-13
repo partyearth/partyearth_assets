@@ -552,8 +552,9 @@
   text-decoration: underline; }
   .day_changer_cont .event_venue_name:hover {
     color: #597686; }
-  .day_changer_cont .event_venue_name.nourl:hover {
-    color: #375363; }
+  .day_changer_cont .event_venue_name.nourl {
+    color: #375363;
+    text-decoration: none; }
 .day_changer_cont .name {
   display: block;
   margin: 0 0 2px;
@@ -794,7 +795,7 @@
     padding: 0;
     color: #aaa;
     font-size: 11px;
-    line-height: 11px;
+    line-height: 13px;
     text-decoration: underline; }
     .browse_category .more:hover {
       color: #000; }
@@ -843,11 +844,8 @@
         background-repeat: no-repeat; }
         .browse_category_boxes .cell ul a.selected {
           background-image: url(/assets/content_bg/application_sprite.png); }
-    .browse_category_boxes .cell .fake_link {
-      float: left;
-      clear: left;
-      margin: 8px 0 0;
-      text-decoration: underline; }
+    .browse_category_boxes .cell .more, .browse_category_boxes .cell .fake_link {
+      margin: 8px 0 0; }
 
 /* Alternative layout with rows/boxes and embedded interest pod */
 .browse_category_interest .rows {
@@ -1195,8 +1193,9 @@ div.datepicker {
     margin-left: 0; }
   #pop_neigh li .name {
     display: block;
-    color: #000;
     margin: 0 0 6px;
+    color: #000;
+    line-height: 15px;
     overflow: hidden; }
     #pop_neigh li .name:hover {
       color: #09f; }
@@ -1205,7 +1204,7 @@ div.datepicker {
     width: 100px;
     height: 100px; }
 #pop_neigh.two_line_title li .name {
-  height: 36px; }
+  height: 30px; }
 /*BEGIN READ MORE/READ LESS CSS*/
 /*-----------------------------------*/
 .read_more .clipped {
@@ -1354,6 +1353,11 @@ div.datepicker {
       font-size: 10px;
       line-height: 10px;
       text-transform: uppercase; }
+    #right_sidebar .desc .ellipsis {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      background-color: #fff; }
   #right_sidebar .thumbnail_link {
     margin: 0 0 8px;
     width: 98px;

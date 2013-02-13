@@ -735,6 +735,11 @@
       font-size: 10px;
       line-height: 10px;
       text-transform: uppercase; }
+    #right_sidebar .desc .ellipsis {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      background-color: #fff; }
   #right_sidebar .thumbnail_link {
     margin: 0 0 8px;
     width: 98px;
@@ -1448,6 +1453,9 @@
     float: right; }
     .two_itm_lyt .spot_item .liked_by dt {
       float: none; }
+.two_itm_lyt.two_line_title .spot_item .name {
+  height: 44px;
+  overflow: hidden; }
 /*
 
 
@@ -1511,10 +1519,6 @@
   /* +1 for Firefox bold text decoration */ }
   #more_links_pod ul.two_line_title .title {
     height: 37px; }
-
-/* Special styles to override app styles */
-#neigh_cat_special .sub_section {
-  margin-bottom: 13px; }
 
 #browse_interest h3 {
   float: none;

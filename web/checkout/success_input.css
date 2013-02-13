@@ -51,6 +51,11 @@
       font-size: 10px;
       line-height: 10px;
       text-transform: uppercase; }
+    #right_sidebar .desc .ellipsis {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      background-color: #fff; }
   #right_sidebar .thumbnail_link {
     margin: 0 0 8px;
     width: 98px;
@@ -331,11 +336,10 @@
 /*
 
 */
-#left_container h1 {
-  float: left;
+h1 {
   font-size: 22px;
   font-weight: bold; }
-  #left_container h1 span {
+  h1 span {
     color: #ccc;
     font-size: 24px; }
 
@@ -472,27 +476,15 @@
 /*
 
 */
-/*HIDE BOTTOM BAR*/
-/*--------------------------------*/
-#container_bg_bottom {
-  padding: 0 !important; }
-
+/* HIDE BOTTOM BAR
+-------------------------------- */
 .floating_bar_wrapper {
   display: none !important; }
 
-#footer_content {
-  height: 316px !important;
-  padding-bottom: 0 !important; }
-
-#footer_content .pod #guide_img {
-  bottom: -84px !important;
-  height: 178px !important; }
-
-/*--------------------------------*/
 .store_content.checkout_success_page .confirm_table td {
   vertical-align: top; }
 
-/*FOR PRODUCT TABLE*/
+/* FOR PRODUCT TABLE */
 .store_content.checkout_success_page .success_product_table {
   font-size: 11px;
   line-height: 11px; }
@@ -510,15 +502,15 @@
   padding: 5px 8px 1px 0; }
 
 .store_content.checkout_success_page .success_product_table .shipping_message {
-  font-size: 13px;
-  padding: 5px 0 0; }
+  padding: 5px 0 0;
+  font-size: 13px; }
 
 .store_content.checkout_success_page .print_link {
-  background: url(/assets/content_bg/left_thin_arrow.gif) no-repeat scroll 2px 7px transparent;
+  display: inline-block;
   padding: 0 0 0 15px;
-  display: inline-block; }
+  background: url(/assets/content_bg/left_thin_arrow.gif) no-repeat scroll 2px 7px transparent; }
 
-/*FOR TELL US MORE SECTION*/
+/* FOR TELL US MORE SECTION */
 .store_content.checkout_success_page .tell_us_more_section h3 {
   font-size: 15px; }
 
@@ -528,12 +520,9 @@
 .store_content.checkout_success_page .tell_us_more_section .inputs label,
 .store_content.checkout_success_page .tell_us_more_section li label {
   display: inline-block;
-  width: 118px;
-  /*FOR IE*/
-  zoom: 1;
-  *display: inline; }
+  width: 118px; }
 
-/*DROPDOWNS*/
+/* DROPDOWNS */
 .store_content.checkout_success_page .tell_us_more_section .dob_dropdown .dropdown_wrapper {
   float: none;
   margin: 0 10px 0 0; }
@@ -542,8 +531,8 @@
   height: 110px;
   overflow: auto; }
 
-/*MONTH DROPDOWN*/
-/*----------------------------------------*/
+/* MONTH DROPDOWN
+----------------------------------------*/
 .store_content.checkout_success_page .tell_us_more_section .dob_dropdown .month_dropdown {
   width: 117px; }
 
@@ -553,8 +542,8 @@
 .store_content.checkout_success_page .tell_us_more_section .dob_dropdown .month_dropdown .footer_bottom {
   width: 106px; }
 
-/*DAY DROPDOWN*/
-/*----------------------------------------*/
+/* DAY DROPDOWN
+----------------------------------------*/
 .store_content.checkout_success_page .tell_us_more_section .dob_dropdown .day_dropdown {
   width: 87px; }
 
@@ -564,8 +553,8 @@
 .store_content.checkout_success_page .tell_us_more_section .dob_dropdown .day_dropdown .footer_bottom {
   width: 76px; }
 
-/*YEAR DROPDOWN*/
-/*----------------------------------------*/
+/*YEAR DROPDOWN
+----------------------------------------*/
 .store_content.checkout_success_page .tell_us_more_section .dob_dropdown .year_dropdown {
   width: 119px; }
 
@@ -575,20 +564,13 @@
 .store_content.checkout_success_page .tell_us_more_section .dob_dropdown .year_dropdown .footer_bottom {
   width: 108px; }
 
-/*----------------------------------------*/
 .store_content.checkout_success_page .tell_us_more_section .choose_gender ol {
-  display: inline-block;
-  /*FOR IE*/
-  zoom: 1;
-  *display: inline; }
+  display: inline-block; }
 
 .store_content.checkout_success_page .tell_us_more_section .choose_gender ol li {
   display: inline-block;
   width: 70px;
-  margin: 0;
-  /*FOR IE*/
-  zoom: 1;
-  *display: inline; }
+  margin: 0; }
 
 .store_content.checkout_success_page .tell_us_more_section .choose_gender ol li label {
   width: auto; }
@@ -612,3 +594,6 @@
 .store_content.checkout_success_page .tell_us_more_section .submit_btn {
   width: 94px;
   margin: 0 0 0 373px; }
+
+#footer, #footer_content {
+  padding-bottom: 0; }

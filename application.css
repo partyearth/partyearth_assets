@@ -34,6 +34,10 @@ abbr, acronym {
   border: 0; }
 /* FOOTER STYLES */
 #footer {
+  float: left;
+  /* to fix footer background not extending full width */
+  min-width: 100%;
+  /* to fix footer background not extending full width */
   margin: 12px 0 0;
   padding: 10px 0;
   color: #adc0c9;

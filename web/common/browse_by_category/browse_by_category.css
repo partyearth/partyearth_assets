@@ -108,7 +108,7 @@
     padding: 0;
     color: #aaa;
     font-size: 11px;
-    line-height: 11px;
+    line-height: 13px;
     text-decoration: underline; }
     .browse_category .more:hover {
       color: #000; }
@@ -157,11 +157,8 @@
         background-repeat: no-repeat; }
         .browse_category_boxes .cell ul a.selected {
           background-image: url(/assets/content_bg/application_sprite.png); }
-    .browse_category_boxes .cell .fake_link {
-      float: left;
-      clear: left;
-      margin: 8px 0 0;
-      text-decoration: underline; }
+    .browse_category_boxes .cell .more, .browse_category_boxes .cell .fake_link {
+      margin: 8px 0 0; }
 
 /* Alternative layout with rows/boxes and embedded interest pod */
 .browse_category_interest .rows {

@@ -135,21 +135,9 @@
 */
 /*HIDE BOTTOM BAR*/
 /*--------------------------------*/
-#container_bg_bottom {
-  padding: 0 !important; }
-
 .floating_bar_wrapper {
   display: none !important; }
 
-#footer_content {
-  height: 316px !important;
-  padding-bottom: 0 !important; }
-
-#footer_content .pod #guide_img {
-  bottom: -84px !important;
-  height: 178px !important; }
-
-/*--------------------------------*/
 .store_content.checkout_form_page .shipping_checkmark {
   padding: 0 0 0 85px; }
 

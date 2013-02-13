@@ -958,4 +958,5 @@ form.formtastic .choices-group {
   margin-right: 5px; }
 
 #venue_outside_city_label_input {
-  margin: -5px 0 0; }
+  display: inline-block;
+  margin-top: -5px; }

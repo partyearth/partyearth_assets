@@ -6,8 +6,9 @@
     margin-left: 0; }
   #pop_neigh li .name {
     display: block;
-    color: #000;
     margin: 0 0 6px;
+    color: #000;
+    line-height: 15px;
     overflow: hidden; }
     #pop_neigh li .name:hover {
       color: #09f; }
@@ -16,7 +17,7 @@
     width: 100px;
     height: 100px; }
 #pop_neigh.two_line_title li .name {
-  height: 36px; }
+  height: 30px; }
 /* Styles for the more links pod */
 #more_links_pod ul {
   margin-top: 10px;
@@ -166,6 +167,11 @@
       font-size: 10px;
       line-height: 10px;
       text-transform: uppercase; }
+    #right_sidebar .desc .ellipsis {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      background-color: #fff; }
   #right_sidebar .thumbnail_link {
     margin: 0 0 8px;
     width: 98px;
@@ -794,6 +800,9 @@
     float: right; }
     .two_itm_lyt .spot_item .liked_by dt {
       float: none; }
+.two_itm_lyt.two_line_title .spot_item .name {
+  height: 44px;
+  overflow: hidden; }
 /* TOOLTIP STYLES
 --------------------------------------------------------------
 :: Basic Styles for the tooltip container and point.

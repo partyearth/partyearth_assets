@@ -142,3 +142,6 @@
     float: right; }
     .two_itm_lyt .spot_item .liked_by dt {
       float: none; }
+.two_itm_lyt.two_line_title .spot_item .name {
+  height: 44px;
+  overflow: hidden; }
