@@ -6,8 +6,9 @@
     margin-left: 0; }
   #pop_neigh li .name {
     display: block;
-    color: #000;
     margin: 0 0 6px;
+    color: #000;
+    line-height: 15px;
     overflow: hidden; }
     #pop_neigh li .name:hover {
       color: #09f; }
@@ -16,7 +17,7 @@
     width: 100px;
     height: 100px; }
 #pop_neigh.two_line_title li .name {
-  height: 36px; }
+  height: 30px; }
 /* Styles for the more links pod */
 #more_links_pod ul {
   margin-top: 10px;
@@ -166,6 +167,11 @@
       font-size: 10px;
       line-height: 10px;
       text-transform: uppercase; }
+    #right_sidebar .desc .ellipsis {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      background-color: #fff; }
   #right_sidebar .thumbnail_link {
     margin: 0 0 8px;
     width: 98px;
@@ -198,7 +204,7 @@
     #right_sidebar .name a {
       display: inline-block;
       width: 160px;
-      height: 10px;
+      height: 11px;
       color: #09f;
       text-decoration: none;
       text-transform: none;
@@ -592,217 +598,211 @@
 #right_sidebar .missing_venue_event,
 #right_sidebar .ad {
   display: none; }
-.one_item_layout {
-  width: 706px; }
-  .one_item_layout .spot_item {
-    /*Common properties between the two layouts*/
-    /*------------------------------------------*/
-    /*Specific properties for the two layouts*/
-    /*------------------------------------------*/ }
-    .one_item_layout .spot_item .headline.sub_headline {
-      height: 24px;
-      font-size: 20px;
-      overflow: hidden; }
-      .one_item_layout .spot_item .headline.sub_headline a, .one_item_layout .spot_item .headline.sub_headline a:visited {
-        text-decoration: underline; }
-    .one_item_layout .spot_item .venue_type {
-      margin: 2px 0 6px;
-      padding: 0;
-      line-height: 15px;
-      height: 12px;
-      overflow: hidden; }
-      .one_item_layout .spot_item .venue_type .icon_types {
-        margin: 0 5px 0 0; }
-    .one_item_layout .spot_item .headline_photo_links,
-    .one_item_layout .spot_item .photo_links {
-      width: 345px;
-      margin: 0 20px 0 0; }
-      .one_item_layout .spot_item .headline_photo_links .item_img, .one_item_layout .spot_item .headline_photo_links .item_img img,
-      .one_item_layout .spot_item .headline_photo_links .photo_links .item_img img,
-      .one_item_layout .spot_item .photo_links .item_img .headline_photo_links img,
-      .one_item_layout .spot_item .photo_links .item_img,
-      .one_item_layout .spot_item .photo_links .headline_photo_links .item_img img,
-      .one_item_layout .spot_item .headline_photo_links .item_img .photo_links img,
-      .one_item_layout .spot_item .photo_links .item_img img {
-        display: block;
-        width: 345px;
-        height: 230px; }
-    .one_item_layout .spot_item .desc_liked_by,
-    .one_item_layout .spot_item .desc_address {
-      width: 340px; }
-    .one_item_layout .spot_item .desc_liked_by {
-      position: relative;
-      float: left;
-      margin: 45px 0 0;
-      width: 337px;
-      height: 270px; }
-      .one_item_layout .spot_item .desc_liked_by .details {
-        display: block;
-        position: relative;
-        padding: 0;
-        color: #000;
-        font-size: 12px;
-        text-decoration: none;
-        line-height: 16px;
-        overflow: hidden; }
-        .one_item_layout .spot_item .desc_liked_by .details .ellipsis {
-          position: absolute;
-          right: 0;
-          bottom: -1px;
-          max-width: 334px;
-          height: 15px;
-          font-size: 12px;
-          line-height: 15px;
-          background: #fff;
-          overflow: hidden; }
-      .one_item_layout .spot_item .desc_liked_by .inner_divider.dashed {
-        clear: none; }
-      .one_item_layout .spot_item .desc_liked_by .liked_by {
-        position: absolute;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        margin: 8px 0 0;
-        padding: 8px 0 0;
-        border-top: 1px dashed #adc0c9; }
-        .one_item_layout .spot_item .desc_liked_by .liked_by dt {
-          margin-right: 10px; }
-    .one_item_layout .spot_item .desc_address p {
-      padding: 0; }
-    .one_item_layout .spot_item .desc_address .venue_type {
-      margin-bottom: 0; }
-    .one_item_layout .spot_item .desc_address .date_time {
-      height: 15px;
-      margin: 0 0 4px;
-      padding: 2px 0 0;
-      overflow: hidden; }
-      .one_item_layout .spot_item .desc_address .date_time .small_text {
-        font-size: 16px;
-        font-weight: bold;
-        line-height: 14px;
-        text-transform: inherit; }
-    .one_item_layout .spot_item .desc_address .event_venue .black_link {
-      display: block;
-      height: 18px;
-      margin: 0 0 3px;
-      color: #375363 !important;
-      font-size: 15px;
-      overflow: hidden; }
-    .one_item_layout .spot_item .desc_address .event_venue .black_link:hover {
-      color: #000 !important; }
-    .one_item_layout .spot_item .desc_address .event_venue .directions_link {
-      display: inline-block;
-      margin-top: 5px; }
-.two_item_layout .spot_item {
+.spot_item {
   float: left;
-  width: 345px;
-  margin: 0 0 0 7px;
-  padding: 0 0 0 7px;
   border-left: 1px dotted #ccc; }
-  .two_item_layout .spot_item:first-child {
-    margin-left: 0;
-    padding-left: 0;
-    border-left: none; }
-  .two_item_layout .spot_item h3 {
-    font-size: 20px;
+  .spot_item .name {
+    display: block;
+    margin: 0 0 4px;
+    color: #000;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 18px;
     overflow: hidden; }
-  .two_item_layout .spot_item .venue_type {
-    height: 15px;
-    margin: 2px 0 3px;
+    .spot_item .name:hover {
+      color: #597686; }
+    .spot_item .name span {
+      text-decoration: underline; }
+  .spot_item .venue_type {
+    height: 12px;
     padding: 0;
-    line-height: 15px;
     overflow: hidden; }
-    .two_item_layout .spot_item .venue_type .icon_types {
+    .spot_item .venue_type .icon_types {
       margin: 0 5px 0 0; }
-  .two_item_layout .spot_item .thumbnail_link {
+  .spot_item .thumbnail_link {
     width: 345px;
     height: 230px; }
-    .two_item_layout .spot_item .thumbnail_link img {
+    .spot_item .thumbnail_link img {
       width: 345px;
       height: 230px; }
-  .two_item_layout .spot_item .quick_nav_links {
-    margin: 4px 0 8px;
-    border-bottom: 1px solid #dae4e9; }
-  .two_item_layout .spot_item .desc, .two_item_layout .spot_item .user_review_summary, .two_item_layout .spot_item .details {
-    display: block;
+  .spot_item .details, .spot_item .user_review_summary {
     position: relative;
-    width: 337px;
     height: 80px;
     padding: 0;
-    color: #000;
     font-size: 12px;
     line-height: 16px;
-    text-decoration: none;
     overflow: hidden; }
-    .two_item_layout .spot_item .desc .by_line, .two_item_layout .spot_item .user_review_summary .by_line, .two_item_layout .spot_item .details .by_line {
+    .spot_item .details .by_line, .spot_item .user_review_summary .by_line {
       margin: 0 0 2px; }
-    .two_item_layout .spot_item .desc .ellipsis, .two_item_layout .spot_item .user_review_summary .ellipsis, .two_item_layout .spot_item .details .ellipsis {
+    .spot_item .details .ellipsis, .spot_item .user_review_summary .ellipsis {
+      display: block;
       position: absolute;
       right: 0;
-      bottom: -1px;
-      max-width: 334px;
-      height: 15px;
-      font-size: 12px;
-      line-height: 15px;
-      background: #fff;
+      bottom: 0;
+      background-color: #fff;
       overflow: hidden; }
-      .two_item_layout .spot_item .desc .ellipsis a, .two_item_layout .spot_item .desc .ellipsis a:visited, .two_item_layout .spot_item .user_review_summary .ellipsis a, .two_item_layout .spot_item .user_review_summary .ellipsis a:visited, .two_item_layout .spot_item .details .ellipsis a, .two_item_layout .spot_item .details .ellipsis a:visited {
+      .spot_item .details .ellipsis a, .spot_item .user_review_summary .ellipsis a {
+        position: relative;
+        bottom: 2px;
         font-size: 11px; }
-  .two_item_layout .spot_item .details p {
+  .spot_item .details p {
     padding-bottom: 0; }
-  .two_item_layout .spot_item .details .date_time {
-    height: 15px;
+  .spot_item .date_time {
+    display: block;
+    height: 16px;
+    color: #09f;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 16px;
     overflow: hidden; }
-    .two_item_layout .spot_item .details .date_time .small_text {
-      font-size: 16px;
-      line-height: 14px;
-      font-weight: bold;
-      text-transform: inherit; }
-  .two_item_layout .spot_item .details .event_venue {
-    font-size: 15px;
+  .spot_item .event_venue {
+    display: block;
+    height: 16px;
+    color: #375363;
+    font-size: 13px;
+    font-weight: bold;
+    font-family: 'Arial', sans-serif;
+    line-height: 16px;
+    text-shadow: 0 0 1px #ccc;
+    overflow: hidden; }
+  .spot_item a.event_venue {
+    text-decoration: underline; }
+    .spot_item a.event_venue:hover {
+      color: #000; }
+  .spot_item .desc {
+    display: block;
+    margin: 16px 0 0; }
+  .spot_item address {
+    position: relative;
+    height: 24px;
     margin: 8px 0 0;
-    height: 18px;
+    padding: 8px 0 0 25px;
+    color: #6c8898;
+    font-size: 10px;
+    line-height: 12px;
+    font-family: 'Arial', sans-serif;
+    border-top: 1px dashed #adc0c9;
     overflow: hidden; }
-    .two_item_layout .spot_item .details .event_venue .black_link {
-      color: #375363 !important; }
-      .two_item_layout .spot_item .details .event_venue .black_link:hover {
-        color: #000 !important; }
-  .two_item_layout .spot_item .spot_item_foot {
+    .spot_item address p {
+      padding: 0; }
+    .spot_item address .icon {
+      position: absolute;
+      left: 0;
+      top: 10px;
+      width: 17px;
+      height: 21px;
+      background-image: url(/assets/content_bg/app_sprite_2.png);
+      background-position: -74px 0; }
+  .spot_item .spot_item_foot {
     margin: 8px 0 0;
     padding: 8px 0 0;
     border-top: 1px dashed #adc0c9; }
-    .two_item_layout .spot_item .spot_item_foot .heading {
+/*
+
+*/
+.one_itm_lyt .spot_item {
+  float: none;
+  border-left: none; }
+  .one_itm_lyt .spot_item .name {
+    height: 20px;
+    font-size: 20px;
+    line-height: 20px; }
+  .one_itm_lyt .spot_item .photo_quick_nav {
+    float: left;
+    width: 345px;
+    margin: 0 20px 0 0; }
+  .one_itm_lyt .spot_item .desc_liked_by {
+    position: relative;
+    float: left;
+    width: 340px;
+    height: 232px; }
+  .one_itm_lyt .spot_item .details {
+    height: 176px; }
+  .one_itm_lyt .spot_item .spot_item_foot {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: 8px 0 0;
+    padding: 8px 0 0;
+    border-top: 1px dashed #adc0c9; }
+    .one_itm_lyt .spot_item .spot_item_foot dt {
+      margin-right: 10px; }
+  .one_itm_lyt .spot_item address {
+    float: left;
+    height: 37px;
+    margin: 0;
+    padding: 0;
+    border-top: none; }
+    .one_itm_lyt .spot_item address p {
+      float: left;
+      width: 180px; }
+    .one_itm_lyt .spot_item address .heading {
       display: block;
       margin: 0 0 2px;
       color: #8ea8b5;
       font-size: 9px;
       line-height: 11px;
       text-transform: uppercase; }
-  .two_item_layout .spot_item address {
-    float: left;
-    position: relative;
-    height: 37px;
-    color: #6c8898;
-    font-size: 10px;
-    line-height: 12px;
-    font-family: 'Arial', sans-serif;
-    overflow: hidden; }
-    .two_item_layout .spot_item address p {
-      padding: 0;
-      float: left;
-      width: 180px; }
-    .two_item_layout .spot_item address .icon {
+    .one_itm_lyt .spot_item address .icon {
+      position: relative;
+      left: auto;
+      top: auto;
       display: block;
       float: left;
-      margin: 0 8px 0 0;
-      width: 17px;
-      height: 21px;
-      background-image: url(/assets/content_bg/app_sprite_2.png);
-      background-position: -74px 0; }
-  .two_item_layout .spot_item .liked_by {
+      margin: 0 8px 0 0; }
+  .one_itm_lyt .spot_item .liked_by {
     float: right; }
-    .two_item_layout .spot_item .liked_by dt {
+    .one_itm_lyt .spot_item .liked_by dt {
       float: none; }
+/*
+
+*/
+.two_itm_lyt .spot_item {
+  width: 345px;
+  margin: 0 0 0 7px;
+  padding: 0 0 0 7px;
+  border-left: 1px dotted #ccc; }
+  .two_itm_lyt .spot_item:first-child {
+    margin-left: 0;
+    padding-left: 0;
+    border-left: none; }
+  .two_itm_lyt .spot_item .name {
+    font-size: 20px;
+    line-height: 22px; }
+  .two_itm_lyt .spot_item .quick_nav_links {
+    margin: 4px 0 8px;
+    border-bottom: 1px solid #dae4e9; }
+  .two_itm_lyt .spot_item address {
+    float: left;
+    height: 37px;
+    margin: 0;
+    padding: 0;
+    border-top: none; }
+    .two_itm_lyt .spot_item address p {
+      float: left;
+      width: 180px; }
+    .two_itm_lyt .spot_item address .heading {
+      display: block;
+      margin: 0 0 2px;
+      color: #8ea8b5;
+      font-size: 9px;
+      line-height: 11px;
+      text-transform: uppercase; }
+    .two_itm_lyt .spot_item address .icon {
+      position: relative;
+      left: auto;
+      top: auto;
+      display: block;
+      float: left;
+      margin: 0 8px 0 0; }
+  .two_itm_lyt .spot_item .liked_by {
+    float: right; }
+    .two_itm_lyt .spot_item .liked_by dt {
+      float: none; }
+.two_itm_lyt.two_line_title .spot_item .name {
+  height: 44px;
+  overflow: hidden; }
 /* TOOLTIP STYLES
 --------------------------------------------------------------
 :: Basic Styles for the tooltip container and point.
@@ -1095,8 +1095,9 @@
     background-position: -60px -30px; }
   .liked_by.liked_by_big .disabled.emma .character {
     background-position: -90px -30px; }
-/*BEGIN CAROUSEL*/
-/*------------------------------------------*/
+/*
+
+*/
 .carousel_3 {
   /* START CAROUSEL BOX AND SPOT ITEM HEIGHTS ------ */
   /* Default height of the box and spot item which is a venue spot item */
@@ -1179,128 +1180,25 @@
     left: 0;
     width: 8000px; }
   .carousel_3 .carousel_3_sect {
-    float: left; }
-  .carousel_3 .spot_item {
     float: left;
+    margin: 0 37px 0 0; }
+  .carousel_3 .spot_item {
     width: 212px;
-    margin: 0 17px 0 0;
-    padding: 0 17px 0 0;
-    border-right: 1px dotted #ccc; }
-    .carousel_3 .spot_item .name {
-      display: block;
-      height: 18px;
-      margin: 0 0 4px;
-      color: #000;
-      font-size: 16px;
-      font-weight: bold;
-      line-height: 18px;
-      text-decoration: underline;
-      overflow: hidden; }
-      .carousel_3 .spot_item .name:hover {
-        color: #597686; }
-      .carousel_3 .spot_item .name span {
-        text-decoration: underline; }
-    .carousel_3 .spot_item .venue_type {
-      height: 12px;
-      padding: 0;
-      overflow: hidden; }
-      .carousel_3 .spot_item .venue_type .icon_types {
-        margin: 0 5px 0 0; }
-    .carousel_3 .spot_item .thumbnail_link {
+    margin: 0 0 0 17px;
+    padding: 0 0 0 17px; }
+    .carousel_3 .spot_item:first-child {
+      margin-left: 0;
+      padding-left: 0;
+      border-left: none; }
+    .carousel_3 .spot_item .thumbnail_link,
+    .carousel_3 .spot_item .thumbnail_link img {
       width: 210px;
       height: 140px; }
-      .carousel_3 .spot_item .thumbnail_link img {
-        width: 210px;
-        height: 140px; }
     .carousel_3 .spot_item .quick_nav_links {
-      height: 14px;
       margin: 0 0 10px;
-      border-bottom: 1px solid #dae4e9;
-      /* NOTE (VH) remove later when styles are fixed for all l<li> in three_item_horizontal_scroller*/ }
+      border-bottom: 1px solid #dae4e9; }
       .carousel_3 .spot_item .quick_nav_links li {
-        margin: 0 9px 0 0; }
-    .carousel_3 .spot_item .details, .carousel_3 .spot_item .user_review_summary {
-      position: relative;
-      height: 80px;
-      padding: 0;
-      font-size: 12px;
-      line-height: 16px;
-      overflow: hidden; }
-      .carousel_3 .spot_item .details .ellipsis, .carousel_3 .spot_item .user_review_summary .ellipsis {
-        display: inline-block;
-        position: absolute;
-        right: 0;
-        bottom: 0;
-        background-color: #fff;
-        overflow: hidden; }
-        .carousel_3 .spot_item .details .ellipsis a, .carousel_3 .spot_item .details .ellipsis a:link, .carousel_3 .spot_item .details .ellipsis a:visited, .carousel_3 .spot_item .user_review_summary .ellipsis a, .carousel_3 .spot_item .user_review_summary .ellipsis a:link, .carousel_3 .spot_item .user_review_summary .ellipsis a:visited {
-          position: relative;
-          bottom: 2px;
-          font-size: 11px; }
-    .carousel_3 .spot_item .user_review_summary p.by_line {
-      margin: 0 0 2px; }
-    .carousel_3 .spot_item .details p {
-      padding-bottom: 0; }
-    .carousel_3 .spot_item .details .date_time {
-      display: block;
-      height: 16px;
-      margin: 0;
-      color: #09f;
-      font-size: 16px;
-      font-weight: bold;
-      line-height: 16px;
-      text-transform: inherit;
-      overflow: hidden; }
-    .carousel_3 .spot_item .details .event_venue {
-      display: block;
-      height: 16px;
-      color: #375363;
-      font-size: 13px;
-      font-weight: bold;
-      font-family: 'Arial', sans-serif;
-      line-height: 16px;
-      text-shadow: 0 0 1px #ccc;
-      overflow: hidden; }
-    .carousel_3 .spot_item .details a.event_venue {
-      text-decoration: underline; }
-      .carousel_3 .spot_item .details a.event_venue:hover {
-        color: #000; }
-    .carousel_3 .spot_item .details .desc {
-      display: block;
-      margin: 16px 0 0; }
-    .carousel_3 .spot_item address {
-      position: relative;
-      height: 24px;
-      margin: 8px 0 0;
-      padding: 8px 0 0 25px;
-      color: #6c8898;
-      font-size: 10px;
-      line-height: 12px;
-      font-family: 'Arial', sans-serif;
-      border-top: 1px dashed #adc0c9;
-      overflow: hidden; }
-      .carousel_3 .spot_item address p {
-        padding: 0; }
-      .carousel_3 .spot_item address .icon {
-        position: absolute;
-        left: 0;
-        top: 10px;
-        width: 17px;
-        height: 21px;
-        background-image: url(/assets/content_bg/app_sprite_2.png);
-        background-position: -74px 0; }
-    .carousel_3 .spot_item .tags a, .carousel_3 .spot_item .tags a:visited, .carousel_3 .spot_item .tags span {
-      display: inline-block;
-      float: left;
-      margin: 0 6px 0 0;
-      color: #000;
-      font-size: 11px;
-      line-height: 14px;
-      text-decoration: underline;
-      text-transform: lowercase;
-      cursor: pointer; }
-      .carousel_3 .spot_item .tags a:hover, .carousel_3 .spot_item .tags a:visited:hover, .carousel_3 .spot_item .tags span:hover {
-        color: #597686; }
+        margin-right: 9px; }
   .carousel_3 .prev_next_btns {
     position: absolute;
     top: 80px;
@@ -1324,17 +1222,12 @@
         background-position: -171px -3021px; }
   .carousel_3.two_line_title .prev_next_btns {
     top: 98px; }
-  .carousel_3 .liked_by {
-    margin: 8px 0 0;
-    padding: 8px 0 0;
-    border-top: 1px dashed #adc0c9; }
-    .carousel_3 .liked_by dt {
-      float: left;
-      margin: 0 10px 0 0; }
-    .carousel_3 .liked_by .character_cont .dialog_box {
-      right: 0; }
-    .carousel_3 .liked_by .character_cont.emma .dialog_point {
-      left: -1px; }
+  .carousel_3 .liked_by dt {
+    margin: 0 10px 0 0; }
+  .carousel_3 .liked_by .character_cont .dialog_box {
+    right: 0; }
+  .carousel_3 .liked_by .character_cont.emma .dialog_point {
+    left: -1px; }
   .carousel_3.event_venues .spot_item .event_list {
     height: 150px;
     margin: 0 0 8px;
@@ -1403,19 +1296,22 @@
     line-height: 18px;
     overflow: hidden; }
   .browse_category.two_line_title h3 {
-    height: 36px; }
+    height: 37px; }
   .browse_category p {
     padding: 0; }
     .browse_category p.desc {
       position: relative;
-      height: 97px;
+      height: 98px;
       font-size: 11px;
       line-height: 14px;
       overflow: hidden; }
-      .browse_category p.desc a {
+      .browse_category p.desc .ellipsis {
+        display: block;
         position: absolute;
         right: 0;
-        bottom: 0; }
+        bottom: 0;
+        padding: 0 0 0 10px;
+        background-color: #f0f3f5; }
   .browse_category .thumbnail_link {
     width: 165px;
     height: 110px;
@@ -1469,7 +1365,7 @@
     padding: 0;
     color: #aaa;
     font-size: 11px;
-    line-height: 11px;
+    line-height: 13px;
     text-decoration: underline; }
     .browse_category .more:hover {
       color: #000; }
@@ -1518,9 +1414,7 @@
         background-repeat: no-repeat; }
         .browse_category_boxes .cell ul a.selected {
           background-image: url(/assets/content_bg/application_sprite.png); }
-    .browse_category_boxes .cell .more {
-      float: left;
-      clear: left;
+    .browse_category_boxes .cell .more, .browse_category_boxes .cell .fake_link {
       margin: 8px 0 0; }
 
 /* Alternative layout with rows/boxes and embedded interest pod */

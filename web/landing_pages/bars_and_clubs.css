@@ -39,19 +39,22 @@
     line-height: 18px;
     overflow: hidden; }
   .browse_category.two_line_title h3 {
-    height: 36px; }
+    height: 37px; }
   .browse_category p {
     padding: 0; }
     .browse_category p.desc {
       position: relative;
-      height: 97px;
+      height: 98px;
       font-size: 11px;
       line-height: 14px;
       overflow: hidden; }
-      .browse_category p.desc a {
+      .browse_category p.desc .ellipsis {
+        display: block;
         position: absolute;
         right: 0;
-        bottom: 0; }
+        bottom: 0;
+        padding: 0 0 0 10px;
+        background-color: #f0f3f5; }
   .browse_category .thumbnail_link {
     width: 165px;
     height: 110px;
@@ -105,7 +108,7 @@
     padding: 0;
     color: #aaa;
     font-size: 11px;
-    line-height: 11px;
+    line-height: 13px;
     text-decoration: underline; }
     .browse_category .more:hover {
       color: #000; }
@@ -154,9 +157,7 @@
         background-repeat: no-repeat; }
         .browse_category_boxes .cell ul a.selected {
           background-image: url(/assets/content_bg/application_sprite.png); }
-    .browse_category_boxes .cell .more {
-      float: left;
-      clear: left;
+    .browse_category_boxes .cell .more, .browse_category_boxes .cell .fake_link {
       margin: 8px 0 0; }
 
 /* Alternative layout with rows/boxes and embedded interest pod */
@@ -262,13 +263,16 @@
         color: #000; }
 #browse_interest.onerow h3 {
   float: left;
+  width: 285px;
   margin: 0 20px 0 0; }
 #browse_interest.onerow ul {
-  width: auto;
+  float: left;
+  width: 400px;
   padding: 0; }
   #browse_interest.onerow ul li {
     width: auto;
-    margin: 0 0 0 30px; }
+    margin: 0 0 0 30px;
+    line-height: 18px; }
     #browse_interest.onerow ul li:first-child {
       margin-left: 0; }
 .day_changer_head {
@@ -373,8 +377,9 @@
   text-decoration: underline; }
   .day_changer_cont .event_venue_name:hover {
     color: #597686; }
-  .day_changer_cont .event_venue_name.nourl:hover {
-    color: #375363; }
+  .day_changer_cont .event_venue_name.nourl {
+    color: #375363;
+    text-decoration: none; }
 .day_changer_cont .name {
   display: block;
   margin: 0 0 2px;
@@ -1404,6 +1409,11 @@ div.datepicker {
       font-size: 10px;
       line-height: 10px;
       text-transform: uppercase; }
+    #right_sidebar .desc .ellipsis {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      background-color: #fff; }
   #right_sidebar .thumbnail_link {
     margin: 0 0 8px;
     width: 98px;
@@ -1436,7 +1446,7 @@ div.datepicker {
     #right_sidebar .name a {
       display: inline-block;
       width: 160px;
-      height: 10px;
+      height: 11px;
       color: #09f;
       text-decoration: none;
       text-transform: none;

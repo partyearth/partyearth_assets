@@ -532,386 +532,6 @@
   #advanced_search_text:hover {
     color: #597686;
     text-decoration: underline; }
-
-/* NEW MAP TOOLTIPS
------------------------------------- */
-.new_map_tooltip {
-  position: absolute;
-  z-index: 1000;
-  width: 300px;
-  background: #889aa4;
-  border: 4px solid #889aa4;
-  border-radius: 4px; }
-  .new_map_tooltip .tooltip_content {
-    padding: 8px 26px 8px 25px;
-    background: #f7f9fb;
-    border-radius: 4px 4px 4px 4px; }
-    .new_map_tooltip .tooltip_content .point_wrapper {
-      position: absolute;
-      right: -12px;
-      top: 9px;
-      width: 12px;
-      height: 22px;
-      overflow: hidden; }
-      .new_map_tooltip .tooltip_content .point_wrapper .point {
-        position: absolute;
-        top: 0;
-        left: 1px;
-        width: 3px;
-        height: 0;
-        overflow: hidden;
-        border-top: 12px solid transparent;
-        border-left: 12px solid #889aa4;
-        border-right: 12px solid transparent;
-        border-bottom: 12px solid transparent; }
-      .new_map_tooltip .tooltip_content .point_wrapper .inner_point {
-        position: absolute;
-        top: 2px;
-        left: -2px;
-        width: 1px;
-        height: 0;
-        border-top: 10px solid transparent;
-        border-left: 10px solid #f7f9fb;
-        border-right: 10px solid transparent;
-        border-bottom: 10px solid transparent;
-        overflow: hidden; }
-    .new_map_tooltip .tooltip_content p {
-      padding: 0; }
-    .new_map_tooltip .tooltip_content .result_name {
-      display: block;
-      margin: 0 0 6px;
-      font-size: 17px;
-      font-weight: bold;
-      line-height: 18px; }
-    .new_map_tooltip .tooltip_content .result_types {
-      color: #6c8898;
-      font-family: 'Arial', sans-serif;
-      font-size: 9px;
-      line-height: 11px;
-      text-transform: uppercase; }
-      .new_map_tooltip .tooltip_content .result_types a, .new_map_tooltip .tooltip_content .result_types a:visited {
-        color: #375363; }
-    .new_map_tooltip .tooltip_content .result_date {
-      width: 36px;
-      margin: 0 10px 0 0;
-      color: #0099ff; }
-  .new_map_tooltip .tooltip_content.event .result_name {
-    margin: 0; }
-  .new_map_tooltip .tooltip_content.event .result_types {
-    font-size: 11px;
-    text-transform: none; }
-/*VENUE POPUPS*/
-.Map div div div div div div.clear,
-.Map div div div div div div div.clear {
-  height: 0 !important; }
-
-.Map div div div div div div {
-  /*overflow:hidden !important;*/
-  /*width:auto !important;*/
-  /*height:auto !important;*/ }
-
-.Map div div div div div div div {
-  overflow: hidden !important;
-  /*width:auto !important;*/
-  /*height:auto !important;*/ }
-
-.Map div div div div div div div div {
-  overflow: hidden !important;
-  /*width:auto !important;*/
-  /*height:auto !important;*/ }
-
-.venue_popup,
-.event_popup,
-.user_location_popup,
-.landmark_popup {
-  left: 0;
-  overflow: hidden;
-  position: relative;
-  top: -4px; }
-
-.landmark_popup {
-  font-size: 11px;
-  line-height: 12px;
-  padding: 0 0 35px 0; }
-
-.venue_popup .venue_name,
-.event_popup .event_name,
-.user_location_popup .location_title {
-  font-size: 24px;
-  line-height: 26px; }
-
-.venue_popup .venue_name a,
-.event_popup .event_name a,
-.user_location_popup .location_title a {
-  height: 28px;
-  overflow: hidden;
-  display: block; }
-
-.landmark_title {
-  color: #000;
-  font-size: 13px;
-  font-weight: bold;
-  height: 20px;
-  line-height: 20px; }
-
-.runners .landmark_title {
-  color: #cc0000; }
-
-.spectators .landmark_title {
-  color: #399e01; }
-
-.landmark_popup .controls {
-  border-top: 1px dashed #CCCCCC;
-  bottom: 2px;
-  *bottom: 0;
-  font-size: 13px;
-  padding: 5px 0 0;
-  position: absolute;
-  width: 100%;
-  cursor: pointer; }
-
-.landmark_popup .controls .prev_next_btns {
-  background: url(/assets/content_bg/application_sprite.png) -30px -203px no-repeat transparent;
-  width: 16px;
-  height: 16px;
-  position: relative;
-  top: 3px;
-  *top: 0; }
-
-.landmark_popup .controls .prev_next_btns.prev {
-  background-position: -30px -203px;
-  margin: 0 3px 0 0;
-  *margin: 0 6px 0 0; }
-
-.landmark_popup .controls .prev_next_btns.prev:hover,
-.landmark_popup .controls .previous:hover .prev_next_btns.prev {
-  background-position: -30px -219px; }
-
-.landmark_popup .controls .next .blue_link {
-  *margin: 0 6px 0 0; }
-
-.landmark_popup .controls .prev_next_btns.next {
-  background-position: -46px -203px;
-  margin: 0 0 0 3px; }
-
-.landmark_popup .controls .prev_next_btns.next:hover,
-.landmark_popup .controls .next:hover .prev_next_btns.next {
-  background-position: -46px -219px; }
-
-.landmark_popup .controls .previous:hover .blue_link,
-.landmark_popup .controls .next:hover .blue_link,
-.landmark_popup .controls .blue_link:hover {
-  color: #597686 !important;
-  text-decoration: underline; }
-
-.venue_popup.landmark .desc {
-  line-height: 16px;
-  padding: 4px 0 0; }
-
-.user_location_popup .address {
-  width: 218px !important;
-  margin: 5px 0 0; }
-
-.venue_popup .venue_name a {
-  color: #4D4D4D; }
-
-.venue_popup .map_venue_img,
-.event_popup .map_event_img,
-.landmark_popup .map_landmark_img {
-  -moz-border-radius: 4px 4px 4px 4px;
-  border-radius: 4px 4px 4px 4px;
-  -webkit-border-radius: 4px 4px 4px 4px;
-  background: #ccc;
-  width: 90px !important;
-  height: 90px !important;
-  margin: 7px 12px 0 0;
-  overflow: hidden; }
-
-.venue_popup .map_venue_img .rounded_corner,
-.event_popup .map_event_img .rounded_corner {
-  height: 4px !important;
-  width: 4px !important; }
-
-.venue_popup .map_venue_img img,
-.event_popup .map_event_img img {
-  width: 90px;
-  height: 90px; }
-
-.venue_popup .type,
-.bubble_type {
-  color: #666666;
-  height: 18px !important;
-  margin: 2px 0 0;
-  overflow: hidden; }
-
-.venue_popup .neighborhood {
-  height: 17px !important;
-  margin: 0 0 2px;
-  overflow: hidden; }
-
-.venue_popup #char_rating.ratings_small_wrapper {
-  height: 47px !important;
-  margin: 9px 10px 0 0;
-  width: 52px !important; }
-
-.venue_popup #char_rating .char_rating_small {
-  height: 11px !important;
-  width: 52px !important; }
-
-.venue_popup #char_rating .char_rating_small .small_stars {
-  height: 11px !important;
-  width: 52px !important; }
-
-.venue_popup #char_rating .char_rating_small .small_stars .star {
-  height: 11px !important;
-  width: 11px !important; }
-
-.venue_popup .address {
-  margin: 9px 0 0;
-  max-height: 53px !important;
-  line-height: 14px; }
-
-.venue_popup .hotspot_text_wrapper .hotspot_text {
-  display: inline-block;
-  margin: 6px 0 0;
-  width: 308px; }
-
-.event_popup .events_list {
-  overflow: visible !important; }
-
-.event_popup .events_list .start_date {
-  display: inline-block;
-  width: 50px; }
-
-.event_popup .events_list .blue_link {
-  margin-top: 6px; }
-
-.event_popup .read_more_txt_link_right {
-  background-position: 0 -2903px;
-  bottom: 3px;
-  left: 102px;
-  margin: 8px 0 3px;
-  padding: 0 0 0 15px;
-  position: absolute; }
-
-/*NEW INFO WINDOWS*/
-.map_infowindow {
-  position: absolute;
-  background: #889aa4;
-  border: 4px solid #889aa4;
-  border-radius: 4px 4px 4px 4px; }
-  .map_infowindow .thumbnail_link {
-    float: left;
-    margin: 0 15px 0 0; }
-  .map_infowindow .map_infowindow_content {
-    background: #f7f9fb;
-    border-radius: 4px 4px 4px 4px;
-    padding: 15px 26px 15px 25px;
-    min-width: 253px;
-    max-width: 374px; }
-    .map_infowindow .map_infowindow_content .close_btn {
-      background: url(/assets/search/search2_sprite.png) -172px -138px no-repeat transparent;
-      width: 8px;
-      height: 8px;
-      position: absolute;
-      top: 12px;
-      right: 12px; }
-    .map_infowindow .map_infowindow_content .point {
-      width: 3px;
-      height: 0;
-      overflow: hidden;
-      border-top: 12px solid transparent;
-      border-left: 12px solid #889aa4;
-      border-right: 12px solid transparent;
-      border-bottom: 12px solid transparent;
-      position: absolute;
-      top: 41px;
-      right: -31px; }
-    .map_infowindow .map_infowindow_content .inner_point {
-      width: 1px;
-      height: 0;
-      overflow: hidden;
-      border-top: 10px solid transparent;
-      border-left: 10px solid #f7f9fb;
-      border-right: 10px solid transparent;
-      border-bottom: 10px solid transparent;
-      position: absolute;
-      top: 43px;
-      right: -21px; }
-    .map_infowindow .map_infowindow_content p {
-      padding: 0; }
-      .map_infowindow .map_infowindow_content p.type {
-        margin: 0 0 5px;
-        line-height: 13px; }
-    .map_infowindow .map_infowindow_content .inner_divider.dashed {
-      border-color: #cc4d9; }
-    .map_infowindow .map_infowindow_content .inner_divider.solid {
-      border-color: #adc0c9; }
-    .map_infowindow .map_infowindow_content .venue_name {
-      font-size: 17px;
-      font-weight: bold;
-      margin: 0 0 6px;
-      line-height: 18px; }
-    .map_infowindow .map_infowindow_content .venue_name:hover {
-      color: #000 !important; }
-    .map_infowindow .map_infowindow_content .neighborhood_label {
-      color: #8ea8b5; }
-    .map_infowindow .map_infowindow_content .neighborhood_link {
-      font-size: 12px;
-      line-height: 13px;
-      color: #597686;
-      margin: 0 0 7px;
-      display: inline-block;
-      zoom: 1; }
-    .map_infowindow .map_infowindow_content .neighborhood_link:hover {
-      color: #375363; }
-    .map_infowindow .map_infowindow_content .nourl:hover {
-      color: #597686; }
-    .map_infowindow .map_infowindow_content .result_image {
-      margin: 0 15px 0 0; }
-    .map_infowindow .map_infowindow_content .result_tag {
-      color: #fff;
-      font-size: 10px;
-      padding: 0 4px;
-      line-height: 10px;
-      height: 11px;
-      margin: 0 7px 0 0;
-      letter-spacing: 1px;
-      font-family: "Verdana", sans-serif; }
-    .map_infowindow .map_infowindow_content .result_tag.venue {
-      background: #545454; }
-    .map_infowindow .map_infowindow_content .result_tag.event {
-      background: #0099ff; }
-    .map_infowindow .map_infowindow_content .result_types {
-      font-size: 9px;
-      line-height: 11px;
-      color: #6c8898;
-      font-family: "Arial", sans-serif;
-      text-transform: uppercase; }
-    .map_infowindow .map_infowindow_content .address {
-      line-height: 13px;
-      margin: 2px 0 0 0; }
-      .map_infowindow .map_infowindow_content .address br {
-        display: none; }
-      .map_infowindow .map_infowindow_content .address p br {
-        display: block; }
-    .map_infowindow .map_infowindow_content .event_date_name {
-      color: #0099ff;
-      line-height: 18px; }
-      .map_infowindow .map_infowindow_content .event_date_name .event_date {
-        margin: 0 10px 0 0;
-        width: 36px; }
-      .map_infowindow .map_infowindow_content .event_date_name a:link, .map_infowindow .map_infowindow_content .event_date_name a:visited {
-        color: #375363; }
-      .map_infowindow .map_infowindow_content .event_date_name a:hover {
-        color: #597686; }
-    .map_infowindow .map_infowindow_content .see_all {
-      color: #0099ff;
-      font-weight: bold; }
-  .map_infowindow .map_infowindow_content.event {
-    padding: 12px 22px 7px 19px; }
-    .map_infowindow .map_infowindow_content.event .address {
-      margin: 5px 0; }
 /*BEGIN CUSTOM STYLES*/
 /*---------------------------------------------------------*/
 .Datepicker {
@@ -1116,6 +736,178 @@ div.datepicker {
 ---------------------------------------------------------*/
 .datepickerHidden {
   display: none; }
+/* Map Tooltip / Popup */
+.map_tooltip, .map_popup {
+  display: none;
+  position: absolute;
+  z-index: 6000;
+  width: 300px;
+  padding: 4px;
+  background-color: #889aa4;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px; }
+  .map_tooltip .map_tooltip_content, .map_tooltip .map_popup_content, .map_popup .map_tooltip_content, .map_popup .map_popup_content {
+    padding: 11px 14px 9px;
+    background-color: #f7f9fb;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px; }
+  .map_tooltip .title, .map_popup .title {
+    display: block;
+    margin: 0 0 8px;
+    color: #000;
+    font-size: 19px;
+    font-weight: bold;
+    line-height: 21px; }
+    .map_tooltip .title:hover, .map_popup .title:hover {
+      color: #597686; }
+  .map_tooltip .venue_type, .map_popup .venue_type {
+    display: block;
+    margin: 0 0 5px; }
+  .map_tooltip .main, .map_popup .main {
+    position: relative;
+    min-height: 102px;
+    margin: 0 0 5px;
+    padding: 0 0 10px;
+    border-bottom: 1px dashed #adc0c9; }
+    .map_tooltip .main .thumbnail_link, .map_popup .main .thumbnail_link {
+      box-sizing: content-box;
+      float: left;
+      width: 100px;
+      height: 100px;
+      margin: 0 10px 0 0; }
+      .map_tooltip .main .thumbnail_link img, .map_popup .main .thumbnail_link img {
+        width: 100px;
+        height: 100px; }
+    .map_tooltip .main .details, .map_popup .main .details {
+      float: left;
+      width: 140px;
+      padding: 0 0 50px; }
+      .map_tooltip .main .details address, .map_popup .main .details address {
+        line-height: 13px; }
+        .map_tooltip .main .details address .neighborhood, .map_popup .main .details address .neighborhood {
+          display: block;
+          margin: 0 0 3px;
+          color: #375363;
+          font-size: 11px; }
+        .map_tooltip .main .details address a.neighborhood:hover, .map_popup .main .details address a.neighborhood:hover {
+          color: #000; }
+        .map_tooltip .main .details address .address, .map_popup .main .details address .address {
+          display: block;
+          margin: 0 0 5px; }
+        .map_tooltip .main .details address p, .map_popup .main .details address p {
+          padding: 0; }
+      .map_tooltip .main .details .liked_by, .map_popup .main .details .liked_by {
+        position: absolute;
+        bottom: 10px;
+        padding: 5px 0 0;
+        border-top: 1px dashed #adc0c9; }
+        .map_tooltip .main .details .liked_by dd, .map_popup .main .details .liked_by dd {
+          float: left; }
+        .map_tooltip .main .details .liked_by .character_cont, .map_popup .main .details .liked_by .character_cont {
+          cursor: default !important;
+          /* Force Disabled styles */ }
+          .map_tooltip .main .details .liked_by .character_cont .character, .map_popup .main .details .liked_by .character_cont .character {
+            cursor: default !important; }
+          .map_tooltip .main .details .liked_by .character_cont.lucas .character, .map_popup .main .details .liked_by .character_cont.lucas .character {
+            border-color: #4175ab !important; }
+          .map_tooltip .main .details .liked_by .character_cont.adriana .character, .map_popup .main .details .liked_by .character_cont.adriana .character {
+            border-color: #c675b1 !important; }
+          .map_tooltip .main .details .liked_by .character_cont.jonah .character, .map_popup .main .details .liked_by .character_cont.jonah .character {
+            border-color: #95c946 !important; }
+          .map_tooltip .main .details .liked_by .character_cont.emma .character, .map_popup .main .details .liked_by .character_cont.emma .character {
+            border-color: #ffb637 !important; }
+          .map_tooltip .main .details .liked_by .character_cont.disabled, .map_popup .main .details .liked_by .character_cont.disabled {
+            border-color: #dae4e9 !important; }
+            .map_tooltip .main .details .liked_by .character_cont.disabled .character, .map_popup .main .details .liked_by .character_cont.disabled .character {
+              border-color: #adc0c9 !important; }
+            .map_tooltip .main .details .liked_by .character_cont.disabled.lucas .character, .map_popup .main .details .liked_by .character_cont.disabled.lucas .character {
+              background-position: -1px -33px !important; }
+            .map_tooltip .main .details .liked_by .character_cont.disabled.adriana .character, .map_popup .main .details .liked_by .character_cont.disabled.adriana .character {
+              background-position: -31px -33px !important; }
+            .map_tooltip .main .details .liked_by .character_cont.disabled.jonah .character, .map_popup .main .details .liked_by .character_cont.disabled.jonah .character {
+              background-position: -61px -33px !important; }
+            .map_tooltip .main .details .liked_by .character_cont.disabled.emma .character, .map_popup .main .details .liked_by .character_cont.disabled.emma .character {
+              background-position: -91px -33px !important; }
+  .map_tooltip .event_list, .map_popup .event_list {
+    padding: 0 0 5px;
+    border-bottom: 1px dashed #adc0c9; }
+    .map_tooltip .event_list li, .map_popup .event_list li {
+      position: relative;
+      margin: 5px 0 0;
+      padding: 0 0 0 47px;
+      font-size: 11px;
+      line-height: 13px; }
+      .map_tooltip .event_list li:first-child, .map_popup .event_list li:first-child {
+        margin-top: 0; }
+      .map_tooltip .event_list li .event_date, .map_popup .event_list li .event_date {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        color: #09f; }
+      .map_tooltip .event_list li a, .map_tooltip .event_list li a:link, .map_tooltip .event_list li a:visited, .map_popup .event_list li a, .map_popup .event_list li a:link, .map_popup .event_list li a:visited {
+        color: #000; }
+        .map_tooltip .event_list li a:hover, .map_tooltip .event_list li a:link:hover, .map_tooltip .event_list li a:visited:hover, .map_popup .event_list li a:hover, .map_popup .event_list li a:link:hover, .map_popup .event_list li a:visited:hover {
+          color: #597686; }
+  .map_tooltip .quick_nav_links li, .map_popup .quick_nav_links li {
+    margin: 0 0 0 10px; }
+    .map_tooltip .quick_nav_links li:first-child, .map_popup .quick_nav_links li:first-child {
+      margin-left: 0; }
+  .map_tooltip .map_popup_close, .map_popup .map_popup_close {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 8px;
+    height: 8px;
+    background-image: url(/assets/characters/liked_by_sprite.png);
+    background-position: -172px -138px;
+    cursor: pointer; }
+  .map_tooltip .map_tooltip_tip, .map_tooltip .map_popup_tip, .map_popup .map_tooltip_tip, .map_popup .map_popup_tip {
+    position: absolute;
+    top: 20px;
+    right: -9px;
+    border-top: 12px solid transparent;
+    border-right: none;
+    border-bottom: 12px solid transparent;
+    border-left: 12px solid #889aa4; }
+    .map_tooltip .map_tooltip_tip .map_tooltip_tip_inner, .map_tooltip .map_tooltip_tip .map_popup_tip_inner, .map_tooltip .map_popup_tip .map_tooltip_tip_inner, .map_tooltip .map_popup_tip .map_popup_tip_inner, .map_popup .map_tooltip_tip .map_tooltip_tip_inner, .map_popup .map_tooltip_tip .map_popup_tip_inner, .map_popup .map_popup_tip .map_tooltip_tip_inner, .map_popup .map_popup_tip .map_popup_tip_inner {
+      position: absolute;
+      top: -8px;
+      left: -13px;
+      border-top: 8px solid transparent;
+      border-right: none;
+      border-bottom: 8px solid transparent;
+      border-left: 8px solid #f7f9fb; }
+
+.map_tooltip {
+  z-index: 200; }
+  .map_tooltip .venue_type {
+    margin-bottom: 0; }
+  .map_tooltip .event_list {
+    padding: 5px 0 0;
+    border-top: 1px dashed #adc0c9;
+    border-bottom: none; }
+
+.map_popup {
+  z-index: 100; }
+
+/* Styles for when tooltip/popup is on the right side */
+.map_tooltip_right .map_tooltip_tip, .map_tooltip_right .map_popup_tip, .map_popup_right .map_tooltip_tip, .map_popup_right .map_popup_tip {
+  right: auto;
+  left: -9px;
+  border-top: 12px solid transparent;
+  border-right: 12px solid #889aa4;
+  border-bottom: 12px solid transparent;
+  border-left: none; }
+  .map_tooltip_right .map_tooltip_tip .map_tooltip_tip_inner, .map_tooltip_right .map_tooltip_tip .map_popup_tip_inner, .map_tooltip_right .map_popup_tip .map_tooltip_tip_inner, .map_tooltip_right .map_popup_tip .map_popup_tip_inner, .map_popup_right .map_tooltip_tip .map_tooltip_tip_inner, .map_popup_right .map_tooltip_tip .map_popup_tip_inner, .map_popup_right .map_popup_tip .map_tooltip_tip_inner, .map_popup_right .map_popup_tip .map_popup_tip_inner {
+    right: -13px;
+    left: auto;
+    border-top: 8px solid transparent;
+    border-right: 8px solid #f7f9fb;
+    border-bottom: 8px solid transparent;
+    border-left: none; }
 /*
 
 

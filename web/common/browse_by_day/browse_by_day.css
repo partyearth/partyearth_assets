@@ -100,8 +100,9 @@
   text-decoration: underline; }
   .day_changer_cont .event_venue_name:hover {
     color: #597686; }
-  .day_changer_cont .event_venue_name.nourl:hover {
-    color: #375363; }
+  .day_changer_cont .event_venue_name.nourl {
+    color: #375363;
+    text-decoration: none; }
 .day_changer_cont .name {
   display: block;
   margin: 0 0 2px;

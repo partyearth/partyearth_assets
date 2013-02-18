@@ -45,18 +45,21 @@
     .map_tooltip .main .details, .map_popup .main .details {
       float: left;
       width: 140px;
-      padding: 0 0 48px; }
+      padding: 0 0 50px; }
       .map_tooltip .main .details address, .map_popup .main .details address {
         line-height: 13px; }
-        .map_tooltip .main .details address span, .map_popup .main .details address span {
-          display: block; }
         .map_tooltip .main .details address .neighborhood, .map_popup .main .details address .neighborhood {
           display: block;
           margin: 0 0 3px;
           color: #375363;
           font-size: 11px; }
-          .map_tooltip .main .details address .neighborhood:hover, .map_popup .main .details address .neighborhood:hover {
-            color: #000; }
+        .map_tooltip .main .details address a.neighborhood:hover, .map_popup .main .details address a.neighborhood:hover {
+          color: #000; }
+        .map_tooltip .main .details address .address, .map_popup .main .details address .address {
+          display: block;
+          margin: 0 0 5px; }
+        .map_tooltip .main .details address p, .map_popup .main .details address p {
+          padding: 0; }
       .map_tooltip .main .details .liked_by, .map_popup .main .details .liked_by {
         position: absolute;
         bottom: 10px;
@@ -522,9 +525,9 @@
     font-size: 16px;
     font-weight: bold;
     text-decoration: none; }
-    .soe_sect .soe_sect_cont .soe_event_dtls .soe_event_name:hover {
-      color: #597686;
-      text-decoration: underline; }
+  .soe_sect .soe_sect_cont .soe_event_dtls a.soe_event_name:hover {
+    color: #597686;
+    text-decoration: underline; }
   .soe_sect .soe_sect_cont .soe_event_dtls .venue_type span {
     display: inline; }
     .soe_sect .soe_sect_cont .soe_event_dtls .venue_type span.fake_link:hover {
@@ -618,6 +621,11 @@
       font-size: 10px;
       line-height: 10px;
       text-transform: uppercase; }
+    #right_sidebar .desc .ellipsis {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      background-color: #fff; }
   #right_sidebar .thumbnail_link {
     margin: 0 0 8px;
     width: 98px;
@@ -650,7 +658,7 @@
     #right_sidebar .name a {
       display: inline-block;
       width: 160px;
-      height: 10px;
+      height: 11px;
       color: #09f;
       text-decoration: none;
       text-transform: none;
@@ -2743,6 +2751,7 @@
     color: #000; }
   #the_scene .read_more .dateline {
     float: left;
+    margin: 0 3px 0 0;
     padding: 0;
     color: #8ea8b5;
     font-size: 11px;

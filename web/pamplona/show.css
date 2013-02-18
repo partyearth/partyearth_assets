@@ -566,74 +566,6 @@ td.right_side.pod_sides {
   #advanced_search_text:hover {
     color: #597686;
     text-decoration: underline; }
-
-/* NEW MAP TOOLTIPS
------------------------------------- */
-.new_map_tooltip {
-  position: absolute;
-  z-index: 1000;
-  width: 300px;
-  background: #889aa4;
-  border: 4px solid #889aa4;
-  border-radius: 4px; }
-  .new_map_tooltip .tooltip_content {
-    padding: 8px 26px 8px 25px;
-    background: #f7f9fb;
-    border-radius: 4px 4px 4px 4px; }
-    .new_map_tooltip .tooltip_content .point_wrapper {
-      position: absolute;
-      right: -12px;
-      top: 9px;
-      width: 12px;
-      height: 22px;
-      overflow: hidden; }
-      .new_map_tooltip .tooltip_content .point_wrapper .point {
-        position: absolute;
-        top: 0;
-        left: 1px;
-        width: 3px;
-        height: 0;
-        overflow: hidden;
-        border-top: 12px solid transparent;
-        border-left: 12px solid #889aa4;
-        border-right: 12px solid transparent;
-        border-bottom: 12px solid transparent; }
-      .new_map_tooltip .tooltip_content .point_wrapper .inner_point {
-        position: absolute;
-        top: 2px;
-        left: -2px;
-        width: 1px;
-        height: 0;
-        border-top: 10px solid transparent;
-        border-left: 10px solid #f7f9fb;
-        border-right: 10px solid transparent;
-        border-bottom: 10px solid transparent;
-        overflow: hidden; }
-    .new_map_tooltip .tooltip_content p {
-      padding: 0; }
-    .new_map_tooltip .tooltip_content .result_name {
-      display: block;
-      margin: 0 0 6px;
-      font-size: 17px;
-      font-weight: bold;
-      line-height: 18px; }
-    .new_map_tooltip .tooltip_content .result_types {
-      color: #6c8898;
-      font-family: 'Arial', sans-serif;
-      font-size: 9px;
-      line-height: 11px;
-      text-transform: uppercase; }
-      .new_map_tooltip .tooltip_content .result_types a, .new_map_tooltip .tooltip_content .result_types a:visited {
-        color: #375363; }
-    .new_map_tooltip .tooltip_content .result_date {
-      width: 36px;
-      margin: 0 10px 0 0;
-      color: #0099ff; }
-  .new_map_tooltip .tooltip_content.event .result_name {
-    margin: 0; }
-  .new_map_tooltip .tooltip_content.event .result_types {
-    font-size: 11px;
-    text-transform: none; }
 /*
  * jQuery Nivo Slider v2.1
  * http://nivo.dev7studios.com
@@ -883,318 +815,6 @@ td.right_side.pod_sides {
 
 .ui-accordion .ui-accordion-content-active {
   display: block; }
-/*VENUE POPUPS*/
-.Map div div div div div div.clear,
-.Map div div div div div div div.clear {
-  height: 0 !important; }
-
-.Map div div div div div div {
-  /*overflow:hidden !important;*/
-  /*width:auto !important;*/
-  /*height:auto !important;*/ }
-
-.Map div div div div div div div {
-  overflow: hidden !important;
-  /*width:auto !important;*/
-  /*height:auto !important;*/ }
-
-.Map div div div div div div div div {
-  overflow: hidden !important;
-  /*width:auto !important;*/
-  /*height:auto !important;*/ }
-
-.venue_popup,
-.event_popup,
-.user_location_popup,
-.landmark_popup {
-  left: 0;
-  overflow: hidden;
-  position: relative;
-  top: -4px; }
-
-.landmark_popup {
-  font-size: 11px;
-  line-height: 12px;
-  padding: 0 0 35px 0; }
-
-.venue_popup .venue_name,
-.event_popup .event_name,
-.user_location_popup .location_title {
-  font-size: 24px;
-  line-height: 26px; }
-
-.venue_popup .venue_name a,
-.event_popup .event_name a,
-.user_location_popup .location_title a {
-  height: 28px;
-  overflow: hidden;
-  display: block; }
-
-.landmark_title {
-  color: #000;
-  font-size: 13px;
-  font-weight: bold;
-  height: 20px;
-  line-height: 20px; }
-
-.runners .landmark_title {
-  color: #cc0000; }
-
-.spectators .landmark_title {
-  color: #399e01; }
-
-.landmark_popup .controls {
-  border-top: 1px dashed #CCCCCC;
-  bottom: 2px;
-  *bottom: 0;
-  font-size: 13px;
-  padding: 5px 0 0;
-  position: absolute;
-  width: 100%;
-  cursor: pointer; }
-
-.landmark_popup .controls .prev_next_btns {
-  background: url(/assets/content_bg/application_sprite.png) -30px -203px no-repeat transparent;
-  width: 16px;
-  height: 16px;
-  position: relative;
-  top: 3px;
-  *top: 0; }
-
-.landmark_popup .controls .prev_next_btns.prev {
-  background-position: -30px -203px;
-  margin: 0 3px 0 0;
-  *margin: 0 6px 0 0; }
-
-.landmark_popup .controls .prev_next_btns.prev:hover,
-.landmark_popup .controls .previous:hover .prev_next_btns.prev {
-  background-position: -30px -219px; }
-
-.landmark_popup .controls .next .blue_link {
-  *margin: 0 6px 0 0; }
-
-.landmark_popup .controls .prev_next_btns.next {
-  background-position: -46px -203px;
-  margin: 0 0 0 3px; }
-
-.landmark_popup .controls .prev_next_btns.next:hover,
-.landmark_popup .controls .next:hover .prev_next_btns.next {
-  background-position: -46px -219px; }
-
-.landmark_popup .controls .previous:hover .blue_link,
-.landmark_popup .controls .next:hover .blue_link,
-.landmark_popup .controls .blue_link:hover {
-  color: #597686 !important;
-  text-decoration: underline; }
-
-.venue_popup.landmark .desc {
-  line-height: 16px;
-  padding: 4px 0 0; }
-
-.user_location_popup .address {
-  width: 218px !important;
-  margin: 5px 0 0; }
-
-.venue_popup .venue_name a {
-  color: #4D4D4D; }
-
-.venue_popup .map_venue_img,
-.event_popup .map_event_img,
-.landmark_popup .map_landmark_img {
-  -moz-border-radius: 4px 4px 4px 4px;
-  border-radius: 4px 4px 4px 4px;
-  -webkit-border-radius: 4px 4px 4px 4px;
-  background: #ccc;
-  width: 90px !important;
-  height: 90px !important;
-  margin: 7px 12px 0 0;
-  overflow: hidden; }
-
-.venue_popup .map_venue_img .rounded_corner,
-.event_popup .map_event_img .rounded_corner {
-  height: 4px !important;
-  width: 4px !important; }
-
-.venue_popup .map_venue_img img,
-.event_popup .map_event_img img {
-  width: 90px;
-  height: 90px; }
-
-.venue_popup .type,
-.bubble_type {
-  color: #666666;
-  height: 18px !important;
-  margin: 2px 0 0;
-  overflow: hidden; }
-
-.venue_popup .neighborhood {
-  height: 17px !important;
-  margin: 0 0 2px;
-  overflow: hidden; }
-
-.venue_popup #char_rating.ratings_small_wrapper {
-  height: 47px !important;
-  margin: 9px 10px 0 0;
-  width: 52px !important; }
-
-.venue_popup #char_rating .char_rating_small {
-  height: 11px !important;
-  width: 52px !important; }
-
-.venue_popup #char_rating .char_rating_small .small_stars {
-  height: 11px !important;
-  width: 52px !important; }
-
-.venue_popup #char_rating .char_rating_small .small_stars .star {
-  height: 11px !important;
-  width: 11px !important; }
-
-.venue_popup .address {
-  margin: 9px 0 0;
-  max-height: 53px !important;
-  line-height: 14px; }
-
-.venue_popup .hotspot_text_wrapper .hotspot_text {
-  display: inline-block;
-  margin: 6px 0 0;
-  width: 308px; }
-
-.event_popup .events_list {
-  overflow: visible !important; }
-
-.event_popup .events_list .start_date {
-  display: inline-block;
-  width: 50px; }
-
-.event_popup .events_list .blue_link {
-  margin-top: 6px; }
-
-.event_popup .read_more_txt_link_right {
-  background-position: 0 -2903px;
-  bottom: 3px;
-  left: 102px;
-  margin: 8px 0 3px;
-  padding: 0 0 0 15px;
-  position: absolute; }
-
-/*NEW INFO WINDOWS*/
-.map_infowindow {
-  position: absolute;
-  background: #889aa4;
-  border: 4px solid #889aa4;
-  border-radius: 4px 4px 4px 4px; }
-  .map_infowindow .thumbnail_link {
-    float: left;
-    margin: 0 15px 0 0; }
-  .map_infowindow .map_infowindow_content {
-    background: #f7f9fb;
-    border-radius: 4px 4px 4px 4px;
-    padding: 15px 26px 15px 25px;
-    min-width: 253px;
-    max-width: 374px; }
-    .map_infowindow .map_infowindow_content .close_btn {
-      background: url(/assets/search/search2_sprite.png) -172px -138px no-repeat transparent;
-      width: 8px;
-      height: 8px;
-      position: absolute;
-      top: 12px;
-      right: 12px; }
-    .map_infowindow .map_infowindow_content .point {
-      width: 3px;
-      height: 0;
-      overflow: hidden;
-      border-top: 12px solid transparent;
-      border-left: 12px solid #889aa4;
-      border-right: 12px solid transparent;
-      border-bottom: 12px solid transparent;
-      position: absolute;
-      top: 41px;
-      right: -31px; }
-    .map_infowindow .map_infowindow_content .inner_point {
-      width: 1px;
-      height: 0;
-      overflow: hidden;
-      border-top: 10px solid transparent;
-      border-left: 10px solid #f7f9fb;
-      border-right: 10px solid transparent;
-      border-bottom: 10px solid transparent;
-      position: absolute;
-      top: 43px;
-      right: -21px; }
-    .map_infowindow .map_infowindow_content p {
-      padding: 0; }
-      .map_infowindow .map_infowindow_content p.type {
-        margin: 0 0 5px;
-        line-height: 13px; }
-    .map_infowindow .map_infowindow_content .inner_divider.dashed {
-      border-color: #cc4d9; }
-    .map_infowindow .map_infowindow_content .inner_divider.solid {
-      border-color: #adc0c9; }
-    .map_infowindow .map_infowindow_content .venue_name {
-      font-size: 17px;
-      font-weight: bold;
-      margin: 0 0 6px;
-      line-height: 18px; }
-    .map_infowindow .map_infowindow_content .venue_name:hover {
-      color: #000 !important; }
-    .map_infowindow .map_infowindow_content .neighborhood_label {
-      color: #8ea8b5; }
-    .map_infowindow .map_infowindow_content .neighborhood_link {
-      font-size: 12px;
-      line-height: 13px;
-      color: #597686;
-      margin: 0 0 7px;
-      display: inline-block;
-      zoom: 1; }
-    .map_infowindow .map_infowindow_content .neighborhood_link:hover {
-      color: #375363; }
-    .map_infowindow .map_infowindow_content .nourl:hover {
-      color: #597686; }
-    .map_infowindow .map_infowindow_content .result_image {
-      margin: 0 15px 0 0; }
-    .map_infowindow .map_infowindow_content .result_tag {
-      color: #fff;
-      font-size: 10px;
-      padding: 0 4px;
-      line-height: 10px;
-      height: 11px;
-      margin: 0 7px 0 0;
-      letter-spacing: 1px;
-      font-family: "Verdana", sans-serif; }
-    .map_infowindow .map_infowindow_content .result_tag.venue {
-      background: #545454; }
-    .map_infowindow .map_infowindow_content .result_tag.event {
-      background: #0099ff; }
-    .map_infowindow .map_infowindow_content .result_types {
-      font-size: 9px;
-      line-height: 11px;
-      color: #6c8898;
-      font-family: "Arial", sans-serif;
-      text-transform: uppercase; }
-    .map_infowindow .map_infowindow_content .address {
-      line-height: 13px;
-      margin: 2px 0 0 0; }
-      .map_infowindow .map_infowindow_content .address br {
-        display: none; }
-      .map_infowindow .map_infowindow_content .address p br {
-        display: block; }
-    .map_infowindow .map_infowindow_content .event_date_name {
-      color: #0099ff;
-      line-height: 18px; }
-      .map_infowindow .map_infowindow_content .event_date_name .event_date {
-        margin: 0 10px 0 0;
-        width: 36px; }
-      .map_infowindow .map_infowindow_content .event_date_name a:link, .map_infowindow .map_infowindow_content .event_date_name a:visited {
-        color: #375363; }
-      .map_infowindow .map_infowindow_content .event_date_name a:hover {
-        color: #597686; }
-    .map_infowindow .map_infowindow_content .see_all {
-      color: #0099ff;
-      font-weight: bold; }
-  .map_infowindow .map_infowindow_content.event {
-    padding: 12px 22px 7px 19px; }
-    .map_infowindow .map_infowindow_content.event .address {
-      margin: 5px 0; }
 /* SCHEDULE OF EVENTS
 -----------------------------------
 :: Styles for the Schedule of Events.
@@ -1347,9 +967,9 @@ td.right_side.pod_sides {
     font-size: 16px;
     font-weight: bold;
     text-decoration: none; }
-    .soe_sect .soe_sect_cont .soe_event_dtls .soe_event_name:hover {
-      color: #597686;
-      text-decoration: underline; }
+  .soe_sect .soe_sect_cont .soe_event_dtls a.soe_event_name:hover {
+    color: #597686;
+    text-decoration: underline; }
   .soe_sect .soe_sect_cont .soe_event_dtls .venue_type span {
     display: inline; }
     .soe_sect .soe_sect_cont .soe_event_dtls .venue_type span.fake_link:hover {
@@ -2164,6 +1784,11 @@ td.right_side.pod_sides {
       font-size: 10px;
       line-height: 10px;
       text-transform: uppercase; }
+    #right_sidebar .desc .ellipsis {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      background-color: #fff; }
   #right_sidebar .thumbnail_link {
     margin: 0 0 8px;
     width: 98px;
@@ -2196,7 +1821,7 @@ td.right_side.pod_sides {
     #right_sidebar .name a {
       display: inline-block;
       width: 160px;
-      height: 10px;
+      height: 11px;
       color: #09f;
       text-decoration: none;
       text-transform: none;
@@ -2509,18 +2134,21 @@ td.right_side.pod_sides {
     .map_tooltip .main .details, .map_popup .main .details {
       float: left;
       width: 140px;
-      padding: 0 0 48px; }
+      padding: 0 0 50px; }
       .map_tooltip .main .details address, .map_popup .main .details address {
         line-height: 13px; }
-        .map_tooltip .main .details address span, .map_popup .main .details address span {
-          display: block; }
         .map_tooltip .main .details address .neighborhood, .map_popup .main .details address .neighborhood {
           display: block;
           margin: 0 0 3px;
           color: #375363;
           font-size: 11px; }
-          .map_tooltip .main .details address .neighborhood:hover, .map_popup .main .details address .neighborhood:hover {
-            color: #000; }
+        .map_tooltip .main .details address a.neighborhood:hover, .map_popup .main .details address a.neighborhood:hover {
+          color: #000; }
+        .map_tooltip .main .details address .address, .map_popup .main .details address .address {
+          display: block;
+          margin: 0 0 5px; }
+        .map_tooltip .main .details address p, .map_popup .main .details address p {
+          padding: 0; }
       .map_tooltip .main .details .liked_by, .map_popup .main .details .liked_by {
         position: absolute;
         bottom: 10px;
@@ -2642,11 +2270,7 @@ td.right_side.pod_sides {
 
 
 
-
 */
-.map_tooltip_tip, .map_popup_tip {
-  display: none !important; }
-
 /*BEGIN GENERAL PROPERTIES*/
 /*------------------------------------------------------------*/
 .headline {

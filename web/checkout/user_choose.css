@@ -248,7 +248,7 @@ div.actions fieldset, .store_action_btns fieldset {
 /* General form classes */
 .login_box {
   margin: 0 0 10px;
-  padding: 18px 10px 30px 25px;
+  padding: 18px 10px 18px 25px;
   border-radius: 2px;
   background-color: #f0f0f0;
   background-image: url(/assets/content_bg/login_box.png); }
@@ -342,10 +342,10 @@ div.actions fieldset, .store_action_btns fieldset {
   text-align: left; }
 
 .login_box {
-  height: 175px; }
+  min-height: 206px; }
 
 p.or {
-  top: 77px;
+  top: 85px;
   left: 319px; }
 
 /* Styles are similar to application.scss Update in separate file when have time.*/
@@ -358,11 +358,11 @@ fieldset ol {
     float: none;
     width: auto;
     margin: 0;
-    text-align: left;
     color: #000;
     font-size: 11px;
     font-weight: bold;
-    line-height: 15px; }
+    line-height: 16px;
+    text-align: left; }
   fieldset ol input[type=radio], fieldset ol input[type=checkbox] {
     margin: 0 5px 0 0; }
   fieldset ol img {

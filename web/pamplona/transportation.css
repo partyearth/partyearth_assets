@@ -585,9 +585,9 @@ td.right_side.pod_sides {
     font-size: 16px;
     font-weight: bold;
     text-decoration: none; }
-    .soe_sect .soe_sect_cont .soe_event_dtls .soe_event_name:hover {
-      color: #597686;
-      text-decoration: underline; }
+  .soe_sect .soe_sect_cont .soe_event_dtls a.soe_event_name:hover {
+    color: #597686;
+    text-decoration: underline; }
   .soe_sect .soe_sect_cont .soe_event_dtls .venue_type span {
     display: inline; }
     .soe_sect .soe_sect_cont .soe_event_dtls .venue_type span.fake_link:hover {
@@ -764,74 +764,6 @@ td.right_side.pod_sides {
   #advanced_search_text:hover {
     color: #597686;
     text-decoration: underline; }
-
-/* NEW MAP TOOLTIPS
------------------------------------- */
-.new_map_tooltip {
-  position: absolute;
-  z-index: 1000;
-  width: 300px;
-  background: #889aa4;
-  border: 4px solid #889aa4;
-  border-radius: 4px; }
-  .new_map_tooltip .tooltip_content {
-    padding: 8px 26px 8px 25px;
-    background: #f7f9fb;
-    border-radius: 4px 4px 4px 4px; }
-    .new_map_tooltip .tooltip_content .point_wrapper {
-      position: absolute;
-      right: -12px;
-      top: 9px;
-      width: 12px;
-      height: 22px;
-      overflow: hidden; }
-      .new_map_tooltip .tooltip_content .point_wrapper .point {
-        position: absolute;
-        top: 0;
-        left: 1px;
-        width: 3px;
-        height: 0;
-        overflow: hidden;
-        border-top: 12px solid transparent;
-        border-left: 12px solid #889aa4;
-        border-right: 12px solid transparent;
-        border-bottom: 12px solid transparent; }
-      .new_map_tooltip .tooltip_content .point_wrapper .inner_point {
-        position: absolute;
-        top: 2px;
-        left: -2px;
-        width: 1px;
-        height: 0;
-        border-top: 10px solid transparent;
-        border-left: 10px solid #f7f9fb;
-        border-right: 10px solid transparent;
-        border-bottom: 10px solid transparent;
-        overflow: hidden; }
-    .new_map_tooltip .tooltip_content p {
-      padding: 0; }
-    .new_map_tooltip .tooltip_content .result_name {
-      display: block;
-      margin: 0 0 6px;
-      font-size: 17px;
-      font-weight: bold;
-      line-height: 18px; }
-    .new_map_tooltip .tooltip_content .result_types {
-      color: #6c8898;
-      font-family: 'Arial', sans-serif;
-      font-size: 9px;
-      line-height: 11px;
-      text-transform: uppercase; }
-      .new_map_tooltip .tooltip_content .result_types a, .new_map_tooltip .tooltip_content .result_types a:visited {
-        color: #375363; }
-    .new_map_tooltip .tooltip_content .result_date {
-      width: 36px;
-      margin: 0 10px 0 0;
-      color: #0099ff; }
-  .new_map_tooltip .tooltip_content.event .result_name {
-    margin: 0; }
-  .new_map_tooltip .tooltip_content.event .result_types {
-    font-size: 11px;
-    text-transform: none; }
 /* STYLES FOR RIGHT SIDEBAR
 -----------------------------------------------------
 :: Styles for the right sidebar and universal elements like pods.
@@ -885,6 +817,11 @@ td.right_side.pod_sides {
       font-size: 10px;
       line-height: 10px;
       text-transform: uppercase; }
+    #right_sidebar .desc .ellipsis {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      background-color: #fff; }
   #right_sidebar .thumbnail_link {
     margin: 0 0 8px;
     width: 98px;
@@ -917,7 +854,7 @@ td.right_side.pod_sides {
     #right_sidebar .name a {
       display: inline-block;
       width: 160px;
-      height: 10px;
+      height: 11px;
       color: #09f;
       text-decoration: none;
       text-transform: none;
