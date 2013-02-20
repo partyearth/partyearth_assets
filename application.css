@@ -2016,6 +2016,8 @@ h2 {
   width: 240px; }
   #right_sidebar .pod {
     padding: 13px 14px; }
+  #right_sidebar .ad {
+    margin: 0 0 12px; }
   #right_sidebar .admin_info fieldset ol, #right_sidebar .admin_info fieldset li {
     margin: 0;
     padding: 0; }
@@ -2440,15 +2442,6 @@ button,
   height: 12px;
   margin-top: 6px;
   width: 10px; }
-
-.calendar_icon2 {
-  /*Currently for ibiza page*/
-  background: url(/assets/content_bg/application_sprite.png) -14px -333px no-repeat transparent;
-  bottom: -4px;
-  height: 14px;
-  position: relative;
-  width: 16px;
-  margin: 0 3px 0 0\9; }
 
 .map_marker_icon {
   display: block;
@@ -3104,7 +3097,7 @@ input, select, textarea {
       display: none; }
   .red_links #masthead #masthead_search {
     background-image: url(/assets/pamplona/pamplona_subpage_sprite.png);
-    background-position: 0 -1282px; }
+    background-position: 0 -1281px; }
   .red_links #masthead #main_nav li a, .red_links #masthead #main_nav li a:visited, .red_links #masthead #main_nav li .fake_link {
     color: #cc0000; }
     .red_links #masthead #main_nav li a:hover, .red_links #masthead #main_nav li a:visited:hover, .red_links #masthead #main_nav li .fake_link:hover {
@@ -3120,11 +3113,9 @@ input, select, textarea {
     .red_links #masthead #main_nav li.current_city ul li:hover a, .red_links #masthead #main_nav li.current_city ul li:hover a:visited, .red_links #masthead #main_nav li.current_city ul li:hover .fake_link {
       color: #fff;
       text-decoration: none; }
-  .red_links a:link, .red_links a:visited, .red_links .fake_link {
-    color: #cc0000; }
-    .red_links a:link:hover, .red_links a:visited:hover, .red_links .fake_link:hover {
-      color: #cc0000;
-      text-decoration: underline; }
+  .red_links a, .red_links .fake_link {
+    color: #cc0000;
+    text-decoration: underline; }
   .red_links .border_link:hover {
     color: #cc0000 !important; }
   .red_links .tab_text:hover {
@@ -3336,6 +3327,7 @@ If you don't know where else to place something, place it below this line.
   line-height: 13px; }
 
 .admin_info.pod_rounded {
+  clear: both;
   background: #D5D9DC;
   border-radius: 4px;
   padding: 13px; }
@@ -3457,7 +3449,7 @@ If you don't know where else to place something, place it below this line.
   padding: 13px 17px;
   background-color: #fff;
   border-radius: 2px;
-  box-shadow: 0 0 5px #999;
+  box-shadow: 0 0 6px #666;
   /* Same styles as .pod but with a gray background */
   /* Used for pods on the left container side detached from main content pod. */ }
   .pod h3 {
@@ -3830,13 +3822,13 @@ h3.large_gray_btn_full {
 .thumbnail {
   display: block;
   position: relative;
-  border: 1px solid #adc0c9;
-  border-radius: 4px;
+  border: 1px solid #ccc;
+  border-radius: 2px;
   overflow: hidden; }
   .thumbnail_link img,
   .thumbnail img {
     display: block;
-    border-radius: 3px; }
+    border-radius: 1px; }
 
 /* class and items for no select */
 .no_select, .no_select *,

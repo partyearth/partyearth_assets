@@ -194,12 +194,11 @@
     line-height: 11px;
     background-image: url(/assets/cities/sprite.png);
     border-radius: 5px; }
-    .acty_feed .acty_feed_itm .acty_feed_comm .thumb {
+    .acty_feed .acty_feed_itm .acty_feed_comm .thumbnail {
       float: left;
       margin: 0 8px 0 0;
       width: 33px;
-      height: 33px;
-      border: 1px solid #dee5e9; }
+      height: 33px; }
     .acty_feed .acty_feed_itm .acty_feed_comm .rating {
       position: relative;
       width: 44px;
@@ -337,7 +336,7 @@
     height: 230px;
     padding-bottom: 57px;
     border-bottom: none;
-    border-radius: 4px 4px 0 0; }
+    border-radius: 2px 2px 0 0; }
     .day_changer_cont .featured_item .thumbnail_link img {
       width: 345px;
       height: 230px; }
@@ -447,13 +446,10 @@
         float: left;
         width: 98px;
         height: 65px;
-        margin: 0 12px 0 0;
-        border: 1px solid #ccc;
-        border-radius: 2px; }
+        margin: 0 12px 0 0; }
         .day_changer_cont .vertical_slider .items_collection .small_items li.item .thumbnail_link img {
           width: 98px;
-          height: 65px;
-          border-radius: 1px; }
+          height: 65px; }
       .day_changer_cont .vertical_slider .items_collection .small_items li.item .desc {
         padding: 0; }
       .day_changer_cont .vertical_slider .items_collection .small_items li.item .ellipsis {
@@ -563,13 +559,10 @@
   .browse_by_neighborhood .small_item .thumbnail_link {
     width: 100px;
     height: 100px;
-    border: 2px solid #fff;
-    border-radius: 0; }
+    border: 1px solid #ccc; }
     .browse_by_neighborhood .small_item .thumbnail_link img {
       width: 100px;
-      height: 100px;
-      border: 1px solid #ccc;
-      border-radius: 0; }
+      height: 100px; }
   .browse_by_neighborhood .small_item .point, .browse_by_neighborhood .small_item .inner_point {
     display: none;
     position: absolute;
@@ -589,9 +582,7 @@
   .browse_by_neighborhood .small_item.Selected .point, .browse_by_neighborhood .small_item.Selected .inner_point {
     display: block; }
   .browse_by_neighborhood .small_item.Selected .thumbnail_link {
-    border: 2px solid #09f; }
-    .browse_by_neighborhood .small_item.Selected .thumbnail_link img {
-      border: none; }
+    border: 1px solid #09f; }
 /*************************************************
 *
 *	project:  	liteAccordion - horizontal accordion plugin for jQuery
@@ -738,27 +729,28 @@
       padding: 0 0 10px;
       margin: 0 20px 10px 0;
       border-bottom: 1px dashed #adc0c9; }
-      .pe .character_content .venue_item_wrapper .venue_item .venue_img {
-        display: block;
+      .pe .character_content .venue_item_wrapper .venue_item .thumbnail_link {
+        float: left;
         width: 75px;
         height: 50px;
         margin: 0 12px 0 0; }
-        .pe .character_content .venue_item_wrapper .venue_item .venue_img img {
-          display: block;
+        .pe .character_content .venue_item_wrapper .venue_item .thumbnail_link img {
           width: 75px;
           height: 50px; }
       .pe .character_content .venue_item_wrapper .venue_item .venue_name {
         position: relative;
-        margin: 0 0 3px;
+        max-height: 30px;
+        margin: 0 0 3px 87px;
         padding: 0;
         line-height: 15px;
-        text-shadow: 0 0 0.08em #dadada; }
+        text-shadow: 0 0 0.08em #dadada;
+        overflow: hidden; }
         .pe .character_content .venue_item_wrapper .venue_item .venue_name a, .pe .character_content .venue_item_wrapper .venue_item .venue_name a:visited {
           color: #000; }
           .pe .character_content .venue_item_wrapper .venue_item .venue_name a:hover, .pe .character_content .venue_item_wrapper .venue_item .venue_name a:visited:hover {
             color: #597686; }
       .pe .character_content .venue_item_wrapper .venue_item .venue_type {
-        padding: 0 0 0 87px; }
+        margin: 0 0 0 87px; }
   .pe .character_content .tags_and_more .tags {
     max-width: 300px;
     height: 20px;
@@ -1339,12 +1331,11 @@ div.datepicker {
     .party_climate_desc .clipped .thumbnails {
       width: 345px;
       margin: 4px 0 0 0; }
-      .party_climate_desc .clipped .thumbnails img {
-        display: block;
+      .party_climate_desc .clipped .thumbnails .thumbnail {
         float: left;
         width: 75px;
         height: 50px;
-        margin: 0 0 0 11px; }
+        margin: 0 0 0 9px; }
   .party_climate_desc .clipped.long_desc .desc {
     overflow: hidden; }
   .party_climate_desc .long_desc .photo {
@@ -1431,7 +1422,6 @@ div.datepicker {
   /* Pod list with a thumbnail next to each item */
   /* Pod footer used on some pods. Any that goes in the footer should be added here.*/
   /* Little orange arrow mostly used on pod footer after a link. */
-  /* tabs on ibiza and pamplona pages */
   /* Styles for Popular Entertainers/DJs */
   /* Styles for the Get Paid To Party pods */ }
   #right_sidebar h3, #right_sidebar .featured .title {
@@ -1482,13 +1472,10 @@ div.datepicker {
   #right_sidebar .thumbnail_link {
     margin: 0 0 8px;
     width: 98px;
-    height: 65px;
-    border: 1px solid #ccc;
-    border-radius: 2px; }
+    height: 65px; }
     #right_sidebar .thumbnail_link img {
       width: 98px;
-      height: 65px;
-      border-radius: 1px; }
+      height: 65px; }
   #right_sidebar .quick_nav_links {
     border-bottom: 1px dashed #ADC0C9;
     padding: 0 0 5px;
@@ -1525,14 +1512,11 @@ div.datepicker {
   #right_sidebar .list .list_item.featured .thumbnail_link,
   #right_sidebar .changer .thumbnail_link {
     width: 210px;
-    height: 140px;
-    border: 1px solid #adc0c9;
-    border-radius: 4px; }
+    height: 140px; }
     #right_sidebar .list .list_item.featured .thumbnail_link img,
     #right_sidebar .changer .thumbnail_link img {
       width: 210px;
-      height: 140px;
-      border-radius: 3px; }
+      height: 140px; }
   #right_sidebar .list .list_item {
     margin: 8px 0 0;
     padding: 8px 0 0;
@@ -1639,10 +1623,6 @@ div.datepicker {
     line-height: 17px;
     text-indent: -10px;
     overflow: hidden; }
-  #right_sidebar .tabs {
-    margin-top: 33px; }
-    #right_sidebar .tabs:first-child {
-      margin-top: 19px; }
   #right_sidebar .popular_entertainers .list li {
     position: relative;
     padding: 0 0 0 10px; }

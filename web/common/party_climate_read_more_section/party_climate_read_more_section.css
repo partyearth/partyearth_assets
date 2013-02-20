@@ -9,12 +9,11 @@
     .party_climate_desc .clipped .thumbnails {
       width: 345px;
       margin: 4px 0 0 0; }
-      .party_climate_desc .clipped .thumbnails img {
-        display: block;
+      .party_climate_desc .clipped .thumbnails .thumbnail {
         float: left;
         width: 75px;
         height: 50px;
-        margin: 0 0 0 11px; }
+        margin: 0 0 0 9px; }
   .party_climate_desc .clipped.long_desc .desc {
     overflow: hidden; }
   .party_climate_desc .long_desc .photo {

@@ -1247,27 +1247,28 @@ div.datepicker {
       padding: 0 0 10px;
       margin: 0 20px 10px 0;
       border-bottom: 1px dashed #adc0c9; }
-      .pe .character_content .venue_item_wrapper .venue_item .venue_img {
-        display: block;
+      .pe .character_content .venue_item_wrapper .venue_item .thumbnail_link {
+        float: left;
         width: 75px;
         height: 50px;
         margin: 0 12px 0 0; }
-        .pe .character_content .venue_item_wrapper .venue_item .venue_img img {
-          display: block;
+        .pe .character_content .venue_item_wrapper .venue_item .thumbnail_link img {
           width: 75px;
           height: 50px; }
       .pe .character_content .venue_item_wrapper .venue_item .venue_name {
         position: relative;
-        margin: 0 0 3px;
+        max-height: 30px;
+        margin: 0 0 3px 87px;
         padding: 0;
         line-height: 15px;
-        text-shadow: 0 0 0.08em #dadada; }
+        text-shadow: 0 0 0.08em #dadada;
+        overflow: hidden; }
         .pe .character_content .venue_item_wrapper .venue_item .venue_name a, .pe .character_content .venue_item_wrapper .venue_item .venue_name a:visited {
           color: #000; }
           .pe .character_content .venue_item_wrapper .venue_item .venue_name a:hover, .pe .character_content .venue_item_wrapper .venue_item .venue_name a:visited:hover {
             color: #597686; }
       .pe .character_content .venue_item_wrapper .venue_item .venue_type {
-        padding: 0 0 0 87px; }
+        margin: 0 0 0 87px; }
   .pe .character_content .tags_and_more .tags {
     max-width: 300px;
     height: 20px;
@@ -1366,7 +1367,6 @@ div.datepicker {
   /* Pod list with a thumbnail next to each item */
   /* Pod footer used on some pods. Any that goes in the footer should be added here.*/
   /* Little orange arrow mostly used on pod footer after a link. */
-  /* tabs on ibiza and pamplona pages */
   /* Styles for Popular Entertainers/DJs */
   /* Styles for the Get Paid To Party pods */ }
   #right_sidebar h3, #right_sidebar .featured .title {
@@ -1417,13 +1417,10 @@ div.datepicker {
   #right_sidebar .thumbnail_link {
     margin: 0 0 8px;
     width: 98px;
-    height: 65px;
-    border: 1px solid #ccc;
-    border-radius: 2px; }
+    height: 65px; }
     #right_sidebar .thumbnail_link img {
       width: 98px;
-      height: 65px;
-      border-radius: 1px; }
+      height: 65px; }
   #right_sidebar .quick_nav_links {
     border-bottom: 1px dashed #ADC0C9;
     padding: 0 0 5px;
@@ -1460,14 +1457,11 @@ div.datepicker {
   #right_sidebar .list .list_item.featured .thumbnail_link,
   #right_sidebar .changer .thumbnail_link {
     width: 210px;
-    height: 140px;
-    border: 1px solid #adc0c9;
-    border-radius: 4px; }
+    height: 140px; }
     #right_sidebar .list .list_item.featured .thumbnail_link img,
     #right_sidebar .changer .thumbnail_link img {
       width: 210px;
-      height: 140px;
-      border-radius: 3px; }
+      height: 140px; }
   #right_sidebar .list .list_item {
     margin: 8px 0 0;
     padding: 8px 0 0;
@@ -1574,10 +1568,6 @@ div.datepicker {
     line-height: 17px;
     text-indent: -10px;
     overflow: hidden; }
-  #right_sidebar .tabs {
-    margin-top: 33px; }
-    #right_sidebar .tabs:first-child {
-      margin-top: 19px; }
   #right_sidebar .popular_entertainers .list li {
     position: relative;
     padding: 0 0 0 10px; }

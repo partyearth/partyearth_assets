@@ -802,13 +802,16 @@
     background: url(/assets/content_bg/dropdown_extra_sprite.png) no-repeat scroll 0 -1443px transparent; }
 
 .month_dropdown .choices_wrapper {
-  width: 83px; }
+  width: 93px; }
 
 .day_dropdown .choices_wrapper {
   width: 70px; }
 
 .year_dropdown .choices_wrapper {
   width: 73px; }
+
+.month_dropdown .Title {
+  width: 46px; }
 /*
 
 
