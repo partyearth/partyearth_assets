@@ -1118,6 +1118,7 @@
       height: 140px; }
     .carousel_3 .spot_item .quick_nav_links {
       margin: 0 0 10px;
+      min-height: 14px;
       border-bottom: 1px solid #dae4e9; }
       .carousel_3 .spot_item .quick_nav_links li {
         margin-right: 9px; }

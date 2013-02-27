@@ -344,8 +344,8 @@ label[for="card_month"] {
 
 /*CREDIT CARD MONTH DROPDOWN*/
 #order_card_expiration_input {
-  z-index: 1000;
-  /*for ie7*/ }
+  position: relative;
+  z-index: 3001; }
 
 #order_card_expiration_input ul {
   position: relative;
@@ -357,6 +357,8 @@ label[for="card_month"] {
 .store_content.checkout_form_page .month_dropdown {
   width: 145px;
   margin: 0 12px 0 0; }
+  .store_content.checkout_form_page .month_dropdown .Title {
+    width: 106px; }
 
 .store_content.checkout_form_page .month_dropdown .Choices.choices {
   width: 143px; }
@@ -383,7 +385,8 @@ label[for="card_month"] {
   #cc_security_tip .help_btn {
     top: 5px; }
   #cc_security_tip .dialog_box {
-    width: 514px; }
+    width: 514px;
+    top: -13px; }
   #cc_security_tip .divider {
     height: 6px; }
   #cc_security_tip .security-code-help {

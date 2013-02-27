@@ -977,12 +977,6 @@ ul.ui-autocomplete .ui-autocomplete-category.first_category {
   left: 86px;
   top: 50px; }
 
-#floating_bar .bottom_bar .popup label {
-  display: inline-block;
-  margin: 0 10px 0 0;
-  text-align: right;
-  width: 83px; }
-
 #floating_bar .bottom_bar .popup input[type="text"] {
   font-size: 12px;
   width: 238px;
@@ -1902,12 +1896,11 @@ ul.ui-autocomplete .ui-autocomplete-category.first_category {
 /** Stylesheets for in-field labels. */
 .InfieldLabel {
   position: relative; }
-
-.InfieldLabel label {
-  color: #999;
-  left: 10px;
-  position: absolute;
-  top: 4px; }
+  .InfieldLabel label {
+    position: absolute;
+    left: 4px;
+    top: 8px;
+    color: #999; }
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.

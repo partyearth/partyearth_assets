@@ -961,20 +961,30 @@ div.actions fieldset, .store_action_btns fieldset {
     bottom: 3px;
     right: 0; }
   #photo_app_upload #FileInput {
-    width: 178px;
-    margin: 0; }
-  #photo_app_upload #FileInputUploader {
-    width: 182px;
-    height: 39px;
+    display: inline-block;
+    float: right;
+    width: 182px !important;
+    height: 39px !important;
     margin-top: -2px;
     background-image: url(/assets/photographer_applications/photographer_second_step_sprite.png);
     background-position: 0 -18px;
     cursor: pointer; }
-    #photo_app_upload #FileInputUploader:hover {
+    #photo_app_upload #FileInput:hover {
       background-position: 0 -59px; }
-    #photo_app_upload #FileInputUploader.disabled {
+    #photo_app_upload #FileInput.disabled {
       background-position: 0 -100px;
       cursor: default; }
+    #photo_app_upload #FileInput object {
+      display: block;
+      width: 163px;
+      margin: 0; }
+    #photo_app_upload #FileInput .uploadify-button {
+      width: 163px !important; }
+    #photo_app_upload #FileInput .uploadify-button-text {
+      display: block;
+      text-indent: -9999px; }
+  #photo_app_upload .uploadify-queue {
+    display: none; }
   #photo_app_upload .upload_btn {
     float: right; }
   #photo_app_upload .uploadifyQueue {
