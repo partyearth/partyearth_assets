@@ -1,0 +1,47 @@
+/* Base Reaction Styles */
+.obj_react {
+  float: left;
+  /* Base Reaction Button Styles*/
+  /* Base Reaction People Display */ }
+  .obj_react td {
+    vertical-align: top; }
+  .obj_react .gig-button-container {
+    padding: 0 !important; }
+  .obj_react .obj_react_btn {
+    float: left;
+    margin: 0 10px 0 0;
+    /* Reaction Buttons Counter */ }
+    .obj_react .obj_react_btn .gig-reaction-button {
+      width: 115px;
+      height: 41px;
+      margin: -2px 0 0 -3px;
+      background-image: url(/assets/performers/reaction-buttons-feda5ee63de8e88782db098790c6b1c0.png);
+      cursor: pointer;
+      /* Reaction Buttons Hide Gigya Stuff */ }
+      .obj_react .obj_react_btn .gig-reaction-button * {
+        visibility: hidden; }
+    .obj_react .obj_react_btn .gig-reaction-counter {
+      width: 39px !important;
+      height: 35px !important;
+      margin: 0 0 0 2px;
+      background-image: url(/assets/performers/reaction-buttons-feda5ee63de8e88782db098790c6b1c0.png) !important;
+      background-position: -230px 0; }
+      .obj_react .obj_react_btn .gig-reaction-counter .gig-reaction-counter-text {
+        color: #8ea8b5 !important;
+        font-size: 15px !important;
+        line-height: 36px !important; }
+  .obj_react .obj_react_ppl {
+    float: left;
+    width: 195px;
+    height: 35px;
+    overflow: hidden; }
+    .obj_react .obj_react_ppl li {
+      float: left;
+      margin: 0 0 0 5px; }
+      .obj_react .obj_react_ppl li:first-child {
+        margin-left: 0; }
+      .obj_react .obj_react_ppl li img {
+        display: block;
+        width: 33px;
+        height: 33px;
+        border: 1px solid #cbd7dd; }
