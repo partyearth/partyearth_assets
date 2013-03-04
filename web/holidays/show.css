@@ -2873,3 +2873,18 @@
 
 
 */
+.overview_copy_block {
+  font-size: 12px;
+  line-height: 14px; }
+  .overview_copy_block .blue_header {
+    margin-bottom: 12px; }
+  .overview_copy_block .thumbnail_link, .overview_copy_block .thumbnail {
+    float: left;
+    width: 165px;
+    height: 110px;
+    margin: 0 12px 0 0; }
+    .overview_copy_block .thumbnail_link img, .overview_copy_block .thumbnail img {
+      width: 165px;
+      height: 110px; }
+  .overview_copy_block .read_more {
+    width: 527px; }
