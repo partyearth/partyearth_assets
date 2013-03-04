@@ -53,13 +53,16 @@
     background: url(/assets/content_bg/dropdown_extra_sprite.png) no-repeat scroll 0 -1443px transparent; }
 
 .month_dropdown .choices_wrapper {
-  width: 83px; }
+  width: 93px; }
 
 .day_dropdown .choices_wrapper {
   width: 70px; }
 
 .year_dropdown .choices_wrapper {
   width: 73px; }
+
+.month_dropdown .Title {
+  width: 46px; }
 /* STYLES FOR RIGHT SIDEBAR
 -----------------------------------------------------
 :: Styles for the right sidebar and universal elements like pods.
@@ -68,9 +71,9 @@
   /* Lists used in Pods. If list needs specific styles override specific attributes in seperate stylesheet..*/
   /* Pod list stripped down with no border/padding etc. */
   /* Pod list with a thumbnail next to each item */
+  /* Arrow Select list - List with arrows that appear only when hovered*/
   /* Pod footer used on some pods. Any that goes in the footer should be added here.*/
   /* Little orange arrow mostly used on pod footer after a link. */
-  /* tabs on ibiza and pamplona pages */
   /* Styles for Popular Entertainers/DJs */
   /* Styles for the Get Paid To Party pods */ }
   #right_sidebar h3, #right_sidebar .featured .title {
@@ -121,13 +124,10 @@
   #right_sidebar .thumbnail_link {
     margin: 0 0 8px;
     width: 98px;
-    height: 65px;
-    border: 1px solid #ccc;
-    border-radius: 2px; }
+    height: 65px; }
     #right_sidebar .thumbnail_link img {
       width: 98px;
-      height: 65px;
-      border-radius: 1px; }
+      height: 65px; }
   #right_sidebar .quick_nav_links {
     border-bottom: 1px dashed #ADC0C9;
     padding: 0 0 5px;
@@ -164,14 +164,11 @@
   #right_sidebar .list .list_item.featured .thumbnail_link,
   #right_sidebar .changer .thumbnail_link {
     width: 210px;
-    height: 140px;
-    border: 1px solid #adc0c9;
-    border-radius: 4px; }
+    height: 140px; }
     #right_sidebar .list .list_item.featured .thumbnail_link img,
     #right_sidebar .changer .thumbnail_link img {
       width: 210px;
-      height: 140px;
-      border-radius: 3px; }
+      height: 140px; }
   #right_sidebar .list .list_item {
     margin: 8px 0 0;
     padding: 8px 0 0;
@@ -249,6 +246,17 @@
       color: #000; }
       #right_sidebar .photo_list .details .title:hover {
         color: #597686; }
+  #right_sidebar .arrow_select .list_item {
+    position: relative;
+    padding: 0 0 0 12px;
+    border: none; }
+    #right_sidebar .arrow_select .list_item .arrow {
+      display: none;
+      position: absolute;
+      top: 0;
+      left: 0; }
+    #right_sidebar .arrow_select .list_item.selected .arrow {
+      display: block; }
   #right_sidebar .pod_footer {
     margin: 5px 0 0;
     padding: 5px 0 0;
@@ -278,10 +286,6 @@
     line-height: 17px;
     text-indent: -10px;
     overflow: hidden; }
-  #right_sidebar .tabs {
-    margin-top: 33px; }
-    #right_sidebar .tabs:first-child {
-      margin-top: 19px; }
   #right_sidebar .popular_entertainers .list li {
     position: relative;
     padding: 0 0 0 10px; }
@@ -881,8 +885,8 @@ label[for="card_month"] {
 
 /*CREDIT CARD MONTH DROPDOWN*/
 #order_card_expiration_input {
-  z-index: 1000;
-  /*for ie7*/ }
+  position: relative;
+  z-index: 3001; }
 
 #order_card_expiration_input ul {
   position: relative;
@@ -894,6 +898,8 @@ label[for="card_month"] {
 .store_content.checkout_form_page .month_dropdown {
   width: 145px;
   margin: 0 12px 0 0; }
+  .store_content.checkout_form_page .month_dropdown .Title {
+    width: 106px; }
 
 .store_content.checkout_form_page .month_dropdown .Choices.choices {
   width: 143px; }
@@ -920,7 +926,8 @@ label[for="card_month"] {
   #cc_security_tip .help_btn {
     top: 5px; }
   #cc_security_tip .dialog_box {
-    width: 514px; }
+    width: 514px;
+    top: -13px; }
   #cc_security_tip .divider {
     height: 6px; }
   #cc_security_tip .security-code-help {

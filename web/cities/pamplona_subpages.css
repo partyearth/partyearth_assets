@@ -6,9 +6,9 @@
   /* Lists used in Pods. If list needs specific styles override specific attributes in seperate stylesheet..*/
   /* Pod list stripped down with no border/padding etc. */
   /* Pod list with a thumbnail next to each item */
+  /* Arrow Select list - List with arrows that appear only when hovered*/
   /* Pod footer used on some pods. Any that goes in the footer should be added here.*/
   /* Little orange arrow mostly used on pod footer after a link. */
-  /* tabs on ibiza and pamplona pages */
   /* Styles for Popular Entertainers/DJs */
   /* Styles for the Get Paid To Party pods */ }
   #right_sidebar h3, #right_sidebar .featured .title {
@@ -59,13 +59,10 @@
   #right_sidebar .thumbnail_link {
     margin: 0 0 8px;
     width: 98px;
-    height: 65px;
-    border: 1px solid #ccc;
-    border-radius: 2px; }
+    height: 65px; }
     #right_sidebar .thumbnail_link img {
       width: 98px;
-      height: 65px;
-      border-radius: 1px; }
+      height: 65px; }
   #right_sidebar .quick_nav_links {
     border-bottom: 1px dashed #ADC0C9;
     padding: 0 0 5px;
@@ -102,14 +99,11 @@
   #right_sidebar .list .list_item.featured .thumbnail_link,
   #right_sidebar .changer .thumbnail_link {
     width: 210px;
-    height: 140px;
-    border: 1px solid #adc0c9;
-    border-radius: 4px; }
+    height: 140px; }
     #right_sidebar .list .list_item.featured .thumbnail_link img,
     #right_sidebar .changer .thumbnail_link img {
       width: 210px;
-      height: 140px;
-      border-radius: 3px; }
+      height: 140px; }
   #right_sidebar .list .list_item {
     margin: 8px 0 0;
     padding: 8px 0 0;
@@ -187,6 +181,17 @@
       color: #000; }
       #right_sidebar .photo_list .details .title:hover {
         color: #597686; }
+  #right_sidebar .arrow_select .list_item {
+    position: relative;
+    padding: 0 0 0 12px;
+    border: none; }
+    #right_sidebar .arrow_select .list_item .arrow {
+      display: none;
+      position: absolute;
+      top: 0;
+      left: 0; }
+    #right_sidebar .arrow_select .list_item.selected .arrow {
+      display: block; }
   #right_sidebar .pod_footer {
     margin: 5px 0 0;
     padding: 5px 0 0;
@@ -216,10 +221,6 @@
     line-height: 17px;
     text-indent: -10px;
     overflow: hidden; }
-  #right_sidebar .tabs {
-    margin-top: 33px; }
-    #right_sidebar .tabs:first-child {
-      margin-top: 19px; }
   #right_sidebar .popular_entertainers .list li {
     position: relative;
     padding: 0 0 0 10px; }
@@ -336,8 +337,7 @@
 /*
 
 */
-/* BEGIN MASTHEAD CSS
-------------------------------------------------------------*/
+/* BEGIN MASTHEAD CSS ------------------------------------------------------------*/
 #masthead .logo_city #site_logo {
   width: 244px;
   height: 51px;
@@ -357,8 +357,7 @@
 #masthead .main_nav .link a.selected:visited {
   border-bottom: 2px solid; }
 
-/* BEGIN NAVIGATION CSS
-------------------------------------------------------------*/
+/* BEGIN NAVIGATION CSS ------------------------------------------------------------*/
 #masthead .middle_line .main_nav .link a,
 #masthead .middle_line .main_nav .link a:visited,
 .red_links a:link,
@@ -375,22 +374,22 @@
 .red_links .border_link:hover {
   color: #cc0000 !important; }
 
-/*To prevent the tab labels from turning red on hover*/
+/* To prevent the tab labels from turning red on hover */
 .red_links .tab_text:hover {
   color: #212121; }
 
-/*BEGIN GENERAL PROPERTIES*/
-/*------------------------------------------------------------*/
-.headline {
+/* BEGIN GENERAL PROPERTIES* -----------------------------------------------------------*/
+h1 {
+  margin: 0 0 8px;
   color: #000;
   font-family: 'PT Sans', arial, sans-serif;
   font-size: 32px;
   font-weight: bold;
   line-height: 33px; }
-  .headline a, .headline a:link, .headline a:visited {
+  h1 a, h1 a:link, h1 a:visited {
     color: #000;
     text-decoration: none; }
-    .headline a:hover, .headline a:link:hover, .headline a:visited:hover {
+    h1 a:hover, h1 a:link:hover, h1 a:visited:hover {
       text-decoration: underline; }
 
 .read_more_arrow {
@@ -400,6 +399,7 @@
   background-repeat: no-repeat; }
 
 .red_text_arrow {
+  display: inline-block;
   width: 14px;
   height: 11px;
   margin: 0 5px 0 0;
@@ -407,42 +407,61 @@
   background-position: 0 -1092px;
   background-repeat: no-repeat; }
 
-.headline.header {
-  padding: 6px 10px 8px;
-  font-size: 22px;
-  line-height: 18px;
-  background-color: #d2e2e9; }
+.sub_page_head {
+  margin: 0 0 8px;
+  padding: 0 0 8px;
+  border-bottom: 1px dashed #adc0c9; }
+  .sub_page_head .gplus_btn {
+    float: left; }
 
-/* BEGIN LEFT COLUMN
-------------------------------------------*/
 .info_text {
+  float: left;
   width: 461px; }
 
-.transportation_links {
-  width: 220px; }
-  .transportation_links .inner_divider.dashed {
-    clear: left;
-    width: 220px;
-    height: 2px;
-    margin: 10px 0;
-    border-bottom: 1px dashed #ccc;
-    border-top: 1px dashed #ccc; }
-  .transportation_links .headline {
-    margin: 0 0 10px;
-    font-size: 14px;
-    font-family: PT Sans, arial, sans-serif !important;
-    line-height: 10px; }
+.photo_credit {
+  margin: 0 0 8px;
+  padding: 0 0 8px;
+  border-bottom: 1px dashed #adc0c9; }
+  .photo_credit img {
+    display: block;
+    width: 461px;
+    height: 345px;
+    margin: 0 0 8px; }
+  .photo_credit span {
+    display: block;
+    color: #999;
+    font-size: 11px;
+    text-align: right;
+    line-height: 11px; }
 
 .quick_nav {
+  float: right;
   width: 220px; }
   .quick_nav .floater.fixed {
     top: 6px;
     width: 220px; }
-  .quick_nav .headline.header {
-    margin: 0 0 5px; }
+  .quick_nav h3 {
+    margin: 0 0 5px;
+    padding: 6px 10px 8px;
+    font-size: 22px;
+    line-height: 18px;
+    background-color: #d2e2e9; }
 
-/*BEGIN ACCORDION CONTENT SECTIONS*/
-/*------------------------------------*/
+.transportation_links {
+  float: right;
+  width: 220px;
+  margin: 0 0 8px; }
+  .transportation_links h3 {
+    margin: 0 0 10px;
+    color: #cc0000;
+    font-size: 14px;
+    font-family: PT Sans, arial, sans-serif !important;
+    line-height: 10px; }
+
+/* BEGIN ACCORDION CONTENT SECTIONS ------------------------------------ */
+.red_text, .green_text {
+  font-weight: bold; }
+
 .red_text {
   color: #cc0000; }
 
@@ -450,9 +469,10 @@
   color: green; }
 
 .circle {
+  float: left;
   width: 40px;
   height: 36px;
-  background: url(/assets/pamplona/pamplona_subpage_sprite.png);
+  background-image: url(/assets/pamplona/pamplona_subpage_sprite.png);
   background-position: -232px -527px; }
   .circle.two {
     background-position: -272px -527px; }
@@ -461,15 +481,16 @@
   .circle.four {
     background-position: -352px -527px; }
 
-.tip_sections p {
-  padding: 0 0 5px;
-  color: #666;
-  font-size: 12px;
-  line-height: 14px; }
-  .tip_sections p .bold_text {
-    font-size: 13px; }
-  .tip_sections p .right_tip {
-    padding: 0 0 0 18px; }
+.tip_sections {
+  margin: 8px 0 0;
+  padding: 8px 0 0;
+  border-top: 1px dashed #ccc; }
+  .tip_sections p {
+    color: #666;
+    font-size: 12px;
+    line-height: 14px; }
+    .tip_sections p .bold_text {
+      font-size: 13px; }
 
 .pre_run_schedule .bold_text {
   width: 93px; }
@@ -487,22 +508,25 @@
     text-decoration: underline; }
 
 /* Accordions */
-.accordion_content_text p {
+.soe_sect p {
   padding: 5px 10px; }
 
-/* BEGIN RIGHT COLUMN
-------------------------------------------*/
-#right_sidebar #ad_240x400 {
-  margin: 0; }
-
-.festival_highlights .fest_map {
+/* BEGIN RIGHT COLUMN ------------------------------------------ */
+#fest_hi #fest_hi_map {
   width: 220px;
   height: 209px;
   margin: 0 0 11px; }
-
-.red_links .festival_highlights_content .fest_link {
+#fest_hi li {
+  margin: 8px 0 0;
+  padding: 8px 0 0;
+  border-top: 1px dashed #adc0c9; }
+  #fest_hi li:first-child {
+    margin-top: 0;
+    padding-top: 0;
+    border-top: none; }
+#fest_hi a {
   color: #000;
   text-decoration: none; }
-  .red_links .festival_highlights_content .fest_link:hover, .red_links .festival_highlights_content .fest_link.highlighted {
+  #fest_hi a:hover {
     color: #cc0000;
     text-decoration: underline; }

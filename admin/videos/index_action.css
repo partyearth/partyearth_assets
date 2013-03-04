@@ -711,6 +711,18 @@
   box-shadow: 1px 1px 1px #999;
   display: inline-block; }
 
+.input {
+  position: relative; }
+  .input .inline-success {
+    position: absolute;
+    top: 9px;
+    right: 7px; }
+
+.break {
+  white-space: pre-wrap;
+  word-break: break-all;
+  white-space: normal; }
+
 /* CKEditor Styles to override defaults or extend*/
 .cke_skin_kama {
   clear: left; }
@@ -802,13 +814,16 @@
     background: url(/assets/content_bg/dropdown_extra_sprite.png) no-repeat scroll 0 -1443px transparent; }
 
 .month_dropdown .choices_wrapper {
-  width: 83px; }
+  width: 93px; }
 
 .day_dropdown .choices_wrapper {
   width: 70px; }
 
 .year_dropdown .choices_wrapper {
   width: 73px; }
+
+.month_dropdown .Title {
+  width: 46px; }
 /*
 
 
