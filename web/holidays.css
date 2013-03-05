@@ -720,16 +720,18 @@
   margin: 0 20px 0 0; }
 #hday_upc .hday_det {
   float: left;
-  width: 518px; }
+  width: 474px; }
 #hday_upc .hday_name {
   display: block;
-  margin: 0 0 15px;
+  margin: 0 0 13px;
   font-size: 24px;
-  font-weight: bold; }
+  font-weight: bold;
+  line-height: 24px; }
 #hday_upc .hday_desc {
   float: left;
-  width: 393px;
+  width: 349px;
   padding: 0 10px 0 0;
+  line-height: 16px;
   border-right: 1px dotted #ccc; }
   #hday_upc .hday_desc .blue_flag {
     position: absolute;
@@ -738,6 +740,13 @@
 #hday_upc .hday_count {
   float: right;
   width: 99px; }
+  #hday_upc .hday_count .days_left {
+    display: block;
+    margin: 0 0 5px;
+    color: #6c8898;
+    font-size: 9px;
+    line-height: 11px;
+    text-transform: uppercase; }
   #hday_upc .hday_count .num_cont {
     display: block;
     margin: 0 0 8px; }
@@ -776,7 +785,7 @@
     #hday_upc .hday_count .num_cont.is_today .num {
       background-position: 0 -36px; }
   #hday_upc .hday_count .add_to_calendar {
-    padding: 3px 7px; }
+    padding: 3px 9px; }
 #hday_upc .quick_nav_links {
   margin: 8px 0 0;
   padding: 8px 0 0;

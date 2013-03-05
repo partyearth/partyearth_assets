@@ -244,6 +244,80 @@
   .acty_feed .acty_feed_itm.with_rating .name {
     position: relative;
     top: -1px; }
+
+/* Holiday Alert */
+#right_sidebar .hday_alert .label {
+  display: block;
+  margin: 0 0 5px;
+  padding: 3px 10px;
+  color: #fff;
+  font-size: 11px;
+  font-weight: bold;
+  line-height: 11px;
+  text-transform: uppercase;
+  background-color: #c9e50d; }
+#right_sidebar .hday_alert h3 {
+  display: inline-block;
+  margin: 0 0 5px;
+  padding: 0;
+  border-bottom: 1px solid #375363; }
+#right_sidebar .hday_alert .date {
+  display: block;
+  margin: 0 0 5px;
+  color: #09f;
+  font-weight: bold;
+  font-size: 15px; }
+#right_sidebar .hday_alert .thumbnail_link,
+#right_sidebar .hday_alert .thumbnail_link img {
+  width: 210px;
+  height: 140px; }
+#right_sidebar .hday_alert .hday_count {
+  float: right; }
+  #right_sidebar .hday_alert .hday_count .days_left {
+    display: block;
+    float: left;
+    margin: 0 5px 0 0;
+    color: #8ea8b5;
+    font-size: 9px;
+    line-height: 11px;
+    text-transform: uppercase; }
+  #right_sidebar .hday_alert .hday_count .num_cont {
+    display: block;
+    float: left; }
+    #right_sidebar .hday_alert .hday_count .num_cont .num {
+      display: block;
+      float: left;
+      width: 19px;
+      height: 22px;
+      margin: 0 2px 0 0;
+      font-size: 20px;
+      font-weight: bold;
+      line-height: 30px;
+      text-align: center;
+      text-indent: -9999px;
+      background-image: url(/assets/holidays/sprite.png); }
+      #right_sidebar .hday_alert .hday_count .num_cont .num.num0 {
+        background-position: -33px -36px; }
+      #right_sidebar .hday_alert .hday_count .num_cont .num.num1 {
+        background-position: -54px -36px; }
+      #right_sidebar .hday_alert .hday_count .num_cont .num.num2 {
+        background-position: -75px -36px; }
+      #right_sidebar .hday_alert .hday_count .num_cont .num.num3 {
+        background-position: -96px -36px; }
+      #right_sidebar .hday_alert .hday_count .num_cont .num.num4 {
+        background-position: -117px -36px; }
+      #right_sidebar .hday_alert .hday_count .num_cont .num.num5 {
+        background-position: -138px -36px; }
+      #right_sidebar .hday_alert .hday_count .num_cont .num.num6 {
+        background-position: -159px -36px; }
+      #right_sidebar .hday_alert .hday_count .num_cont .num.num7 {
+        background-position: -180px -36px; }
+      #right_sidebar .hday_alert .hday_count .num_cont .num.num8 {
+        background-position: -201px -36px; }
+      #right_sidebar .hday_alert .hday_count .num_cont .num.num9 {
+        background-position: -222px -36px; }
+    #right_sidebar .hday_alert .hday_count .num_cont.is_today .num {
+      background-position: -243px -36px; }
 .day_changer_head {
   width: 715px;
   /* Fix for linux */
