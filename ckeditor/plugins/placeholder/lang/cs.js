@@ -1,0 +1,1 @@
+CKEDITOR.plugins.setLang("placeholder","cs",{placeholder:{title:"Vlastnosti vyhrazen\u00e9ho prostoru",toolbar:"Vytvo\u0159it vyhrazen\u00fd prostor",text:"Vyhrazen\u00fd text",edit:"Upravit vyhrazen\u00fd prostor",textMissing:"Vyhrazen\u00fd prostor mus\u00ed obsahovat text."}});

@@ -1,0 +1,195 @@
+/* Styles for paginated slider */
+#all_venues_header,
+#all_venues_footer {
+  margin: 0 0 7px;
+  padding: 0 0 0 20px;
+  font-size: 11px;
+  border-bottom: 1px solid #adc0c9; }
+  #all_venues_header p,
+  #all_venues_footer p {
+    padding: 0; }
+    #all_venues_header p.az,
+    #all_venues_footer p.az {
+      position: relative;
+      float: left;
+      padding-bottom: 9px;
+      color: #09f; }
+      #all_venues_header p.az span,
+      #all_venues_footer p.az span {
+        position: absolute;
+        bottom: 0;
+        left: 4px;
+        border-top: 9px solid transparent;
+        border-right: 9px solid transparent;
+        border-bottom: 9px solid #adc0c9;
+        border-left: 9px solid transparent; }
+        #all_venues_header p.az span span,
+        #all_venues_footer p.az span span {
+          bottom: -10px;
+          left: -8px;
+          border-top: 8px solid transparent;
+          border-right: 8px solid transparent;
+          border-bottom: 8px solid #fff;
+          border-left: 8px solid transparent; }
+    #all_venues_header p.legend,
+    #all_venues_footer p.legend {
+      float: right;
+      color: #adc0c9; }
+      #all_venues_header p.legend span,
+      #all_venues_footer p.legend span {
+        display: inline-block;
+        position: relative;
+        top: -2px;
+        width: 9px;
+        height: 9px;
+        text-indent: -9999px;
+        vertical-align: middle;
+        background-image: url(/assets/neighborhoods/sprite.png);
+        background-position: -45px 0; }
+
+#all_venues_footer {
+  font-size: 11px;
+  border-bottom: none; }
+  #all_venues_footer p.az {
+    float: left; }
+
+#all_venues_slider ul {
+  float: left;
+  width: 220px;
+  margin: 0 0 0 22px; }
+  #all_venues_slider ul:first-child {
+    margin-left: 0; }
+  #all_venues_slider ul li {
+    position: relative;
+    margin: 7px 0 0;
+    padding: 7px 0 0 15px;
+    border-top: 1px dashed #ccc; }
+    #all_venues_slider ul li:first-child {
+      margin-top: 0;
+      padding-top: 0;
+      border-top: none; }
+      #all_venues_slider ul li:first-child .star {
+        top: 4px; }
+    #all_venues_slider ul li .star {
+      display: block;
+      position: absolute;
+      top: 11px;
+      left: 0;
+      width: 9px;
+      height: 9px;
+      text-indent: -9999px;
+      background-image: url(/assets/neighborhoods/sprite.png);
+      background-position: -45px 0; }
+    #all_venues_slider ul li .name {
+      display: block;
+      height: 18px;
+      color: #000;
+      font-size: 14px;
+      overflow: hidden; }
+      #all_venues_slider ul li .name:hover {
+        color: #597686; }
+    #all_venues_slider ul li .venue_type {
+      margin: 0;
+      padding: 0; }
+
+.page_slider {
+  position: relative;
+  height: 550px;
+  overflow: hidden; }
+  .page_slider .page_slide {
+    position: absolute;
+    top: 0;
+    left: 706px;
+    z-index: 10;
+    width: 100%;
+    height: 500px;
+    background-color: #fff; }
+    .page_slider .page_slide.current, .page_slider .page_slide.move_left, .page_slider .page_slide.move_right {
+      -webkit-transition: left .5s ease;
+      -moz-transition: left .5s ease;
+      -o-transition: left .5s ease;
+      transition: left .5s ease; }
+    .page_slider .page_slide.current {
+      left: 0;
+      z-index: 20; }
+    .page_slider .page_slide.move_left, .page_slider .page_slide.located_left {
+      left: -706px;
+      z-index: 10; }
+    .page_slider .page_slide.move_right, .page_slider .page_slide.located_right {
+      left: 706px;
+      z-index: 10; }
+  .page_slider .page_slider_pagination {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0; }
+    .page_slider .page_slider_pagination .page_number {
+      counter-increment: index; }
+      .page_slider .page_slider_pagination .page_number:before {
+        content: counter(index); }
+/* Styles for SEO Pagination
+----------------------------------------- */
+#seo_pagination {
+  padding: 5px;
+  text-align: center;
+  line-height: 30px; }
+  #seo_pagination em, #seo_pagination a, #seo_pagination span {
+    display: inline-block;
+    height: 15px;
+    margin: 0 6px 0 0;
+    padding: 2px 6px;
+    color: #adc0c9;
+    font-style: normal;
+    line-height: 16px;
+    vertical-align: middle;
+    background-color: #fff;
+    border: 1px solid #adc0c9;
+    border-radius: 2px;
+    text-decoration: none; }
+  #seo_pagination em, #seo_pagination .current, #seo_pagination a:hover, #seo_pagination span:hover {
+    color: #fff;
+    background-color: #09f;
+    border: 1px solid #09f;
+    cursor: pointer; }
+  #seo_pagination em:hover {
+    cursor: default; }
+  #seo_pagination .gap, #seo_pagination .gap:hover {
+    padding: 0;
+    color: #adc0c9;
+    font-weight: bold;
+    font-size: 18px;
+    background-color: transparent;
+    border: none;
+    cursor: text; }
+  #seo_pagination .previous_page, #seo_pagination .next_page {
+    width: 18px;
+    height: 17px;
+    text-indent: -9999px;
+    background-image: url(/assets/search/search2_sprite.png);
+    overflow: hidden;
+    /* override previous a, a:hover styles */
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    border-radius: 0; }
+    #seo_pagination .previous_page:hover, #seo_pagination .next_page:hover {
+      background-color: transparent;
+      border: none; }
+    #seo_pagination .previous_page.disabled, #seo_pagination .next_page.disabled {
+      cursor: default; }
+  #seo_pagination .previous_page {
+    background-position: -144px -8px; }
+  #seo_pagination .previous_page:hover {
+    background-position: -123px -8px; }
+  #seo_pagination .previous_page.disabled {
+    background-position: -144px -25px; }
+  #seo_pagination .next_page {
+    background-position: -172px -8px; }
+  #seo_pagination .next_page:hover {
+    background-position: -123px -25px; }
+  #seo_pagination .next_page.disabled {
+    background-position: -172px -25px; }
+/*
+
+
+*/

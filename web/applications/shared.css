@@ -1,0 +1,958 @@
+/* NEW LOGIN FORM STYLES
+------------------------------------
+:: Forms were updated from table to table-less structure so new styles had to be introduced.
+:: We should update all forms on the site and then consider moving following CSS styles to general form stylesheet.
+:: I'm currently using ID's to restrict the styles to only the new forms. But when we update all forms this would most likely change.
+------------------------------------*/
+#login_area {
+  position: relative;
+  text-align: center; }
+
+h1 {
+  margin: 0 0 10px;
+  color: #09f;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 27px; }
+  h1 span {
+    color: #d9d9d9;
+    font-size: 20px; }
+
+h2, p {
+  margin: 0 0 10px;
+  padding: 0;
+  color: #637e8d;
+  font-size: 15px; }
+
+p {
+  font-size: 12px; }
+
+p.or {
+  position: absolute;
+  top: 176px;
+  left: 332px;
+  z-index: 100;
+  width: 64px;
+  height: 64px;
+  margin: 0;
+  text-indent: -9999px;
+  background-image: url(/assets/content_bg/application_sprite.png);
+  background-position: -515px -419px; }
+
+fieldset ol {
+  padding: 0 0 0 75px; }
+  fieldset ol ol {
+    padding: 0; }
+fieldset li {
+  position: relative;
+  float: left;
+  width: 100%;
+  text-align: left;
+  margin: 0 0 14px; }
+  fieldset li:last-child {
+    margin-bottom: 0; }
+  fieldset li.note {
+    width: auto;
+    padding: 0 20px 0 167px;
+    font-size: 12px; }
+fieldset label {
+  display: block;
+  float: left;
+  width: 150px;
+  margin-right: 15px !important;
+  padding: 3px 0 0;
+  text-align: right;
+  line-height: 18px; }
+fieldset input, fieldset select, fieldset textarea {
+  float: left;
+  width: 264px;
+  margin: 0;
+  padding: 5px;
+  font-size: 13px;
+  line-height: 13px;
+  background-color: #fff;
+  border: 1px solid #c4c3c3;
+  border-radius: 3px;
+  -moz-box-shadow: inset 1px 1px 3px #ddd;
+  -webkit-box-shadow: inset 1px 1px 3px #ddd;
+  box-shadow: inset 1px 1px 3px #ddd; }
+fieldset input[type=checkbox], fieldset input[type=radio] {
+  width: auto;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none; }
+fieldset select {
+  width: 276px; }
+fieldset textarea {
+  height: 85px; }
+fieldset .checkbox_group, fieldset .textbox_group, fieldset .text_group {
+  float: left;
+  width: 276px;
+  position: relative; }
+  fieldset .checkbox_group li, fieldset .textbox_group li, fieldset .text_group li {
+    width: auto;
+    margin: 0; }
+  fieldset .checkbox_group label, fieldset .textbox_group label, fieldset .text_group label {
+    width: auto;
+    font-weight: normal;
+    text-align: left;
+    line-height: 18px; }
+  fieldset .checkbox_group input, fieldset .textbox_group input, fieldset .text_group input {
+    display: inline-block;
+    margin: 0 5px 0 0; }
+  fieldset .checkbox_group .choices, fieldset .textbox_group .choices, fieldset .text_group .choices {
+    height: auto;
+    max-height: auto;
+    overflow: visible; }
+  fieldset .checkbox_group .inline-errors, fieldset .textbox_group .inline-errors, fieldset .text_group .inline-errors {
+    left: 0; }
+  fieldset .checkbox_group #user_subscribe_input, fieldset .textbox_group #user_subscribe_input, fieldset .text_group #user_subscribe_input {
+    width: 430px; }
+    fieldset .checkbox_group #user_subscribe_input label, fieldset .textbox_group #user_subscribe_input label, fieldset .text_group #user_subscribe_input label {
+      position: relative;
+      padding: 0 0 0 20px; }
+      fieldset .checkbox_group #user_subscribe_input label input, fieldset .textbox_group #user_subscribe_input label input, fieldset .text_group #user_subscribe_input label input {
+        position: absolute;
+        left: 0; }
+  fieldset .checkbox_group img, fieldset .textbox_group img, fieldset .text_group img {
+    left: 286px; }
+fieldset .radio_group legend {
+  display: block;
+  float: left;
+  padding: 3px 0 0;
+  text-align: right;
+  line-height: 18px; }
+fieldset .radio_group ol {
+  float: left;
+  width: 264px;
+  margin: 0;
+  padding: 7px 0 0; }
+  fieldset .radio_group ol li {
+    display: inline-block;
+    width: auto;
+    margin: 0 5px 0 0;
+    font-size: 13px;
+    line-height: 13px; }
+  fieldset .radio_group ol label, fieldset .radio_group ol input {
+    display: inline;
+    width: auto;
+    float: none;
+    margin: 0; }
+  fieldset .radio_group ol input {
+    display: inline-block;
+    margin: 0 2px 0 0; }
+fieldset .textbox_group, fieldset .text_group {
+  padding: 0 0 0 20px;
+  list-style: decimal; }
+  fieldset .textbox_group li, fieldset .text_group li {
+    float: none; }
+  fieldset .textbox_group input, fieldset .text_group input {
+    display: inline-block;
+    float: none;
+    margin: 0 0 5px; }
+fieldset .text_group {
+  list-style: none; }
+fieldset .select_group select {
+  float: left;
+  width: 88px;
+  margin-right: 5px; }
+  fieldset .select_group select:last-child {
+    margin: 0;
+    width: 90px; }
+fieldset .multiple_text ol {
+  float: left;
+  width: 274px; }
+fieldset .required abbr {
+  color: #0099ff; }
+fieldset .inline-errors {
+  display: block;
+  position: relative;
+  left: 167px;
+  float: left;
+  clear: left;
+  width: 247px;
+  margin: 5px 0 0 5px;
+  padding: 0 0 0 22px;
+  color: #666;
+  background-image: url(/assets/users/error.png);
+  background-repeat: no-repeat; }
+fieldset .inline-success, fieldset img {
+  display: block;
+  position: absolute;
+  top: 7px;
+  left: 451px; }
+fieldset .toggle {
+  display: block;
+  position: relative;
+  left: 167px;
+  float: left;
+  clear: left;
+  margin: 4px 0 0; }
+fieldset .choices {
+  max-height: 130px;
+  overflow: auto; }
+
+/* Additional form links (e.g. Forgot Password?)
+ ------------------------------------*/
+.add_links a {
+  display: inline-block;
+  margin: 0 0 0 10px;
+  padding: 0 0 0 10px;
+  border-left: 1px solid #999; }
+  .add_links a:first-child {
+    margin-left: 0;
+    padding-left: 0;
+    border-left: none; }
+
+/* Old Buttons remove when SZ Updates Forms */
+div.actions fieldset, .store_action_btns fieldset {
+  float: right; }
+  div.actions fieldset li, .store_action_btns fieldset li {
+    float: right; }
+  div.actions fieldset input, .store_action_btns fieldset input {
+    margin-left: 10px; }
+
+.actions p {
+  float: left;
+  width: 335px;
+  margin: 0; }
+  .actions p a {
+    display: inline;
+    margin: 0;
+    float: none; }
+.actions li {
+  float: right;
+  width: auto;
+  margin: 0 0 0 10px; }
+.actions input, .actions object, .actions a, .actions button {
+  display: inline-block;
+  float: right;
+  margin: 0 0 0 10px; }
+.actions .previous_step {
+  float: left;
+  padding: 0 0 0 15px;
+  color: #09f;
+  line-height: 28px;
+  text-decoration: underline;
+  background-color: transparent;
+  background-image: url(/assets/content_bg/application_sprite.png);
+  background-position: -171px -2900px;
+  cursor: pointer; }
+  .actions .previous_step:hover {
+    color: #597686; }
+
+/* General form classes */
+.login_box {
+  margin: 0 0 10px;
+  padding: 18px 10px 18px 25px;
+  border-radius: 2px;
+  background-color: #f0f0f0;
+  background-image: url(/assets/content_bg/login_box.png); }
+
+/* SOCIAL LOGIN STYLES
+------------------------------------
+:: Styles for the social login icons.
+------------------------------------*/
+#social_login {
+  margin: 0 0 40px; }
+  #social_login p {
+    margin: 0 0 7px;
+    font-size: 15px; }
+    #social_login p.other_account {
+      font-size: 13px; }
+  #social_login .social_icons {
+    margin: 0 0 12px; }
+    #social_login .social_icons li {
+      display: inline-block;
+      margin: 0 4px 0 0; }
+  #social_login .social_icon {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    font-size: 12px;
+    line-height: 24px;
+    box-shadow: 0 1px 3px #696969;
+    border-radius: 5px;
+    text-indent: -9999px;
+    background-image: url(/assets/content_bg/social_login_sprite.png); }
+    #social_login .social_icon:hover {
+      box-shadow: 0 2px 3px #1c1c1c; }
+    #social_login .social_icon.facebook, #social_login .social_icon.facebook_big {
+      width: 138px;
+      padding: 0 0 0 30px;
+      color: #fff;
+      text-decoration: none;
+      text-indent: 0;
+      font-weight: bold; }
+      #social_login .social_icon.facebook:hover, #social_login .social_icon.facebook_big:hover {
+        text-shadow: 0 0 1px #769cd6; }
+    #social_login .social_icon.facebook_big {
+      width: 224px;
+      height: 50px;
+      padding: 0 0 0 60px;
+      font-size: 18px;
+      font-weight: normal;
+      text-align: left;
+      line-height: 52px;
+      border-radius: 8px; }
+  #social_login .facebook_big {
+    background-position: 0 0; }
+  #social_login .facebook {
+    background-position: 0 -52px; }
+  #social_login .twitter {
+    background-position: -170px -52px; }
+  #social_login .google {
+    background-position: -196px -52px; }
+  #social_login .foursquare {
+    background-position: -222px -52px; }
+  #social_login .messenger {
+    background-position: -248px -52px; }
+  #social_login .aol {
+    background-position: -274px -52px; }
+  #social_login .yahoo {
+    background-position: -300px -52px; }
+  #social_login .facebook_big:hover {
+    background-position: -286px 0; }
+  #social_login .facebook:hover {
+    background-position: 0 -78px; }
+  #social_login .twitter:hover {
+    background-position: -170px -78px; }
+  #social_login .google:hover {
+    background-position: -196px -78px; }
+  #social_login .foursquare:hover {
+    background-position: -222px -78px; }
+  #social_login .messenger:hover {
+    background-position: -248px -78px; }
+  #social_login .aol:hover {
+    background-position: -274px -78px; }
+  #social_login .yahoo:hover:hover {
+    background-position: -300px -78px; }
+/* STYLES FOR RIGHT SIDEBAR
+-----------------------------------------------------
+:: Styles for the right sidebar and universal elements like pods.
+----------------------------------------------------- */
+#right_sidebar {
+  /* Lists used in Pods. If list needs specific styles override specific attributes in seperate stylesheet..*/
+  /* Pod list stripped down with no border/padding etc. */
+  /* Pod list with a thumbnail next to each item */
+  /* Arrow Select list - List with arrows that appear only when hovered*/
+  /* Pod footer used on some pods. Any that goes in the footer should be added here.*/
+  /* Little orange arrow mostly used on pod footer after a link. */
+  /* Styles for Popular Entertainers/DJs */
+  /* Styles for the Get Paid To Party pods */ }
+  #right_sidebar h3, #right_sidebar .featured .title {
+    display: block;
+    color: #375363;
+    font-size: 24px;
+    font-weight: normal;
+    line-height: 28px;
+    margin: 0 0 8px;
+    padding: 0 0 8px;
+    border-bottom: 1px dashed #adc0c9;
+    color: #375363; }
+    #right_sidebar h3 a, #right_sidebar h3 a:link, #right_sidebar h3 a:visited, #right_sidebar .featured .title a, #right_sidebar .featured .title a:link, #right_sidebar .featured .title a:visited {
+      color: #375363;
+      text-decoration: underline; }
+      #right_sidebar h3 a:hover, #right_sidebar h3 a:link:hover, #right_sidebar h3 a:visited:hover, #right_sidebar .featured .title a:hover, #right_sidebar .featured .title a:link:hover, #right_sidebar .featured .title a:visited:hover {
+        color: #000; }
+    #right_sidebar h3.small, #right_sidebar .featured .title.small {
+      margin: 0 0 6px;
+      padding: 0;
+      color: #09F;
+      font-size: 15px;
+      font-weight: bold;
+      line-height: 16px;
+      border-bottom: 0; }
+  #right_sidebar .title {
+    display: block;
+    margin: 0 0 3px;
+    line-height: 15px;
+    text-decoration: underline; }
+    #right_sidebar .title:hover {
+      color: #000; }
+  #right_sidebar .desc {
+    position: relative;
+    overflow: hidden; }
+    #right_sidebar .desc a, #right_sidebar .desc a:link, #right_sidebar .desc a:visited {
+      color: #09f; }
+    #right_sidebar .desc .neighborhood {
+      color: #8ea8b5;
+      font-size: 10px;
+      line-height: 10px;
+      text-transform: uppercase; }
+    #right_sidebar .desc .ellipsis {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      background-color: #fff; }
+  #right_sidebar .thumbnail_link {
+    margin: 0 0 8px;
+    width: 98px;
+    height: 65px; }
+    #right_sidebar .thumbnail_link img {
+      width: 98px;
+      height: 65px; }
+  #right_sidebar .quick_nav_links {
+    border-bottom: 1px dashed #ADC0C9;
+    padding: 0 0 5px;
+    margin: 0 0 5px; }
+    #right_sidebar .quick_nav_links a, #right_sidebar .quick_nav_links a:link, #right_sidebar .quick_nav_links a:visited {
+      color: #09f; }
+      #right_sidebar .quick_nav_links a:hover, #right_sidebar .quick_nav_links a:link:hover, #right_sidebar .quick_nav_links a:visited:hover {
+        color: #597686; }
+  #right_sidebar .name {
+    color: #09f;
+    font-size: 10px;
+    line-height: 10px;
+    text-transform: uppercase; }
+    #right_sidebar .name .date {
+      display: block;
+      float: left;
+      margin: 0 4px 0 0;
+      padding: 0 6px 0 0;
+      border-right: 1px solid #e4ebef; }
+    #right_sidebar .name a {
+      display: inline-block;
+      width: 160px;
+      height: 11px;
+      color: #09f;
+      text-decoration: none;
+      text-transform: none;
+      overflow: hidden; }
+  #right_sidebar .changer .name {
+    height: 10px;
+    margin: 0 0 6px;
+    padding: 0 0 6px;
+    vertical-align: top;
+    border-bottom: 1px solid #dae4e9; }
+  #right_sidebar .list .list_item.featured .thumbnail_link,
+  #right_sidebar .changer .thumbnail_link {
+    width: 210px;
+    height: 140px; }
+    #right_sidebar .list .list_item.featured .thumbnail_link img,
+    #right_sidebar .changer .thumbnail_link img {
+      width: 210px;
+      height: 140px; }
+  #right_sidebar .list .list_item {
+    margin: 8px 0 0;
+    padding: 8px 0 0;
+    border-top: 1px dashed #adc0c9; }
+    #right_sidebar .list .list_item.featured {
+      margin: 0 0 15px;
+      padding: 0 0 15px;
+      border-bottom: 1px solid #8ea8b5; }
+      #right_sidebar .list .list_item.featured .title {
+        margin: 0 0 8px;
+        padding: 0;
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 20px;
+        border: none; }
+      #right_sidebar .list .list_item.featured .venue_type {
+        margin: 0 0 6px; }
+    #right_sidebar .list .list_item p {
+      padding: 0;
+      line-height: 16px; }
+      #right_sidebar .list .list_item p.name {
+        line-height: 10px; }
+    #right_sidebar .list .list_item .date {
+      color: #09f;
+      font-size: 9px;
+      line-height: 11px;
+      text-transform: uppercase; }
+    #right_sidebar .list .list_item .arrow {
+      color: #09f; }
+    #right_sidebar .list .list_item .venue_type {
+      margin: 0;
+      padding: 0;
+      color: #6C8898;
+      line-height: 11px; }
+      #right_sidebar .list .list_item .venue_type a, #right_sidebar .list .list_item .venue_type a:link, #right_sidebar .list .list_item .venue_type a:visited {
+        color: #6C8898; }
+        #right_sidebar .list .list_item .venue_type a:hover, #right_sidebar .list .list_item .venue_type a:link:hover, #right_sidebar .list .list_item .venue_type a:visited:hover {
+          color: #597686;
+          text-decoration: underline; }
+    #right_sidebar .list .list_item:first-child {
+      margin-top: 0;
+      padding-top: 0;
+      border-top: none; }
+    #right_sidebar .list .list_item .name a, #right_sidebar .list .list_item .name a:link, #right_sidebar .list .list_item .name a:visited {
+      color: #09f; }
+      #right_sidebar .list .list_item .name a:hover, #right_sidebar .list .list_item .name a:link:hover, #right_sidebar .list .list_item .name a:visited:hover {
+        color: #597686;
+        text-decoration: underline; }
+  #right_sidebar .list a {
+    color: #000; }
+    #right_sidebar .list a:hover {
+      color: #597686; }
+  #right_sidebar .simple_list .list_item {
+    margin: 0 0 3px;
+    padding: 0;
+    border: none; }
+    #right_sidebar .simple_list .list_item a, #right_sidebar .simple_list .list_item a:link, #right_sidebar .simple_list .list_item a:visited {
+      color: #375363; }
+      #right_sidebar .simple_list .list_item a:hover, #right_sidebar .simple_list .list_item a:link:hover, #right_sidebar .simple_list .list_item a:visited:hover {
+        color: #000; }
+  #right_sidebar .photo_list .thumbnail_link {
+    float: left;
+    width: 75px;
+    height: 50px;
+    margin: 0 9px 0 0; }
+    #right_sidebar .photo_list .thumbnail_link img {
+      width: 75px;
+      height: 50px; }
+  #right_sidebar .photo_list .details {
+    float: left;
+    width: 120px; }
+    #right_sidebar .photo_list .details .title {
+      line-height: 15px;
+      margin: 0 0 3px;
+      color: #000; }
+      #right_sidebar .photo_list .details .title:hover {
+        color: #597686; }
+  #right_sidebar .arrow_select .list_item {
+    position: relative;
+    padding: 0 0 0 12px;
+    border: none; }
+    #right_sidebar .arrow_select .list_item .arrow {
+      display: none;
+      position: absolute;
+      top: 0;
+      left: 0; }
+    #right_sidebar .arrow_select .list_item.selected .arrow {
+      display: block; }
+  #right_sidebar .pod_footer {
+    margin: 5px 0 0;
+    padding: 5px 0 0;
+    border-top: 1px solid #adc0c9; }
+    #right_sidebar .pod_footer a, #right_sidebar .pod_footer a:link, #right_sidebar .pod_footer a:visited, #right_sidebar .pod_footer .fake_link {
+      float: right;
+      color: #09f;
+      text-align: right;
+      font-size: 11px;
+      line-height: 11px;
+      text-decoration: none; }
+      #right_sidebar .pod_footer a:hover, #right_sidebar .pod_footer a:link:hover, #right_sidebar .pod_footer a:visited:hover, #right_sidebar .pod_footer .fake_link:hover {
+        color: #597686; }
+      #right_sidebar .pod_footer a span, #right_sidebar .pod_footer a:link span, #right_sidebar .pod_footer a:visited span, #right_sidebar .pod_footer .fake_link span {
+        text-decoration: underline; }
+        #right_sidebar .pod_footer a span.arrow, #right_sidebar .pod_footer a:link span.arrow, #right_sidebar .pod_footer a:visited span.arrow, #right_sidebar .pod_footer .fake_link span.arrow {
+          top: 0;
+          color: #ff9000;
+          text-decoration: none; }
+  #right_sidebar .arrow {
+    display: inline-block;
+    position: relative;
+    width: 6px;
+    font-family: "Times New Roman";
+    font-size: 17px;
+    font-weight: normal;
+    line-height: 17px;
+    text-indent: -10px;
+    overflow: hidden; }
+  #right_sidebar .popular_entertainers .list li {
+    position: relative;
+    padding: 0 0 0 10px; }
+    #right_sidebar .popular_entertainers .list li .arrow {
+      display: none;
+      position: absolute;
+      left: 0; }
+    #right_sidebar .popular_entertainers .list li.selected .arrow {
+      display: inline-block; }
+  #right_sidebar .gptp_right_rail h3 {
+    padding: 0;
+    font-weight: normal;
+    border: none; }
+  #right_sidebar .gptp_right_rail ul li {
+    float: left;
+    margin: 0 4px 4px 0; }
+    #right_sidebar .gptp_right_rail ul li:nth-child(4n) {
+      margin-right: 0; }
+    #right_sidebar .gptp_right_rail ul li a, #right_sidebar .gptp_right_rail ul li a:link, #right_sidebar .gptp_right_rail ul li a:visited {
+      display: block;
+      width: 50px;
+      height: 50px; }
+      #right_sidebar .gptp_right_rail ul li a img, #right_sidebar .gptp_right_rail ul li a:link img, #right_sidebar .gptp_right_rail ul li a:visited img {
+        opacity: .85; }
+      #right_sidebar .gptp_right_rail ul li a:hover img, #right_sidebar .gptp_right_rail ul li a:link:hover img, #right_sidebar .gptp_right_rail ul li a:visited:hover img {
+        opacity: 100; }
+  #right_sidebar .gptp_right_rail .links {
+    font-size: 11px;
+    line-height: 11px; }
+    #right_sidebar .gptp_right_rail .links a, #right_sidebar .gptp_right_rail .links .fake_link {
+      text-decoration: underline; }
+    #right_sidebar .gptp_right_rail .links .arrow {
+      color: #ff9000; }
+    #right_sidebar .gptp_right_rail .links .learn_link {
+      float: left; }
+    #right_sidebar .gptp_right_rail .links .meet_link {
+      float: right; }
+  #right_sidebar .gptp_right_rail .buttons {
+    width: 217px;
+    margin: 8px 0 0;
+    padding: 8px 0 0;
+    border-top: 1px solid #8ea8b5; }
+    #right_sidebar .gptp_right_rail .buttons a, #right_sidebar .gptp_right_rail .buttons a:link, #right_sidebar .gptp_right_rail .buttons a:visited {
+      display: block;
+      position: relative;
+      float: left;
+      height: 46px;
+      margin-top: 2px;
+      margin-bottom: -6px;
+      background-image: url(/assets/common/right_colmun_sprite.png); }
+      #right_sidebar .gptp_right_rail .buttons a.writer, #right_sidebar .gptp_right_rail .buttons a:link.writer, #right_sidebar .gptp_right_rail .buttons a:visited.writer {
+        left: -2px;
+        width: 85px;
+        background-position: -1px -422px; }
+        #right_sidebar .gptp_right_rail .buttons a.writer:hover, #right_sidebar .gptp_right_rail .buttons a:link.writer:hover, #right_sidebar .gptp_right_rail .buttons a:visited.writer:hover {
+          background-position: -1px -476px; }
+      #right_sidebar .gptp_right_rail .buttons a.photographer, #right_sidebar .gptp_right_rail .buttons a:link.photographer, #right_sidebar .gptp_right_rail .buttons a:visited.photographer {
+        right: -3px;
+        width: 132px;
+        background-position: -88px -422px; }
+        #right_sidebar .gptp_right_rail .buttons a.photographer:hover, #right_sidebar .gptp_right_rail .buttons a:link.photographer:hover, #right_sidebar .gptp_right_rail .buttons a:visited.photographer:hover {
+          background-position: -88px -476px; }
+  #right_sidebar .missing_venue_event,
+  #right_sidebar .share_btn,
+  #right_sidebar .subscribe_btn,
+  #right_sidebar .follow_btns,
+  #right_sidebar .ad {
+    cursor: pointer;
+    background-image: url(/assets/common/right_colmun_sprite.png);
+    background-repeat: no-repeat; }
+  #right_sidebar #right_rail_simple_share {
+    position: absolute;
+    top: -60px;
+    left: -9px; }
+  #right_sidebar .missing_venue_event {
+    position: relative;
+    left: -2px;
+    width: 246px;
+    height: 154px;
+    margin: 0 0 8px;
+    background-position: -291px -233px; }
+    #right_sidebar .missing_venue_event:hover {
+      background-position: -291px -389px; }
+  #right_sidebar .share_btn,
+  #right_sidebar .subscribe_btn,
+  #right_sidebar .follow_btns {
+    position: relative;
+    right: 0;
+    width: 243px;
+    height: 44px;
+    margin: 0 0 9px; }
+  #right_sidebar .share_btn {
+    background-position: -291px -52px; }
+  #right_sidebar .subscribe_btn {
+    background-position: -291px -102px; }
+  #right_sidebar .follow_btns {
+    background-position: -291px -152px;
+    cursor: default !important; }
+    #right_sidebar .follow_btns a {
+      display: block;
+      position: absolute;
+      top: 9px;
+      width: 28px;
+      height: 28px;
+      margin: 0; }
+    #right_sidebar .follow_btns .gig-followbar-providerButton {
+      right: 44px; }
+    #right_sidebar .follow_btns .gig-followbar-providerButton-last {
+      right: 11px; }
+  #right_sidebar .ad {
+    width: 240px;
+    height: 400px;
+    background-position: 0 0; }
+/* GPTP IN THE PRESS POD
+--------------------------------------------------------------------------- */
+#gptp_in_press li {
+  padding: 12px 0 0;
+  border-top: 2px solid #adc0c9; }
+  #gptp_in_press li .img {
+    display: block;
+    float: left;
+    width: 48px;
+    height: 48px;
+    margin: 0 10px 0 0;
+    background-image: url(/assets/writer_applications/in_the_press_polaroids.jpg);
+    border: 1px solid #9a9a9a;
+    border-radius: 4px; }
+  #gptp_in_press li .details {
+    float: left;
+    width: 145px; }
+    #gptp_in_press li .details .name_location {
+      display: block;
+      font-size: 10px;
+      color: #8ea8b5;
+      text-decoration: none; }
+      #gptp_in_press li .details .name_location .name {
+        color: #09f;
+        text-decoration: underline; }
+        #gptp_in_press li .details .name_location .name:hover {
+          color: #597686; }
+    #gptp_in_press li .details .article {
+      display: block;
+      color: #375363; }
+      #gptp_in_press li .details .article:hover {
+        color: #000; }
+  #gptp_in_press li .featured {
+    display: block;
+    clear: left;
+    color: #8ea8b5;
+    font-size: 10px;
+    text-transform: uppercase; }
+    #gptp_in_press li .featured span {
+      display: block;
+      position: relative;
+      margin: 0 0 6px;
+      background-image: url(/assets/writer_applications/sprite.png); }
+      #gptp_in_press li .featured span.maxim {
+        width: 126px;
+        height: 33px;
+        margin-top: -18px;
+        margin-bottom: -2px;
+        margin-left: 77px;
+        background-position: 0 -46px; }
+      #gptp_in_press li .featured span.thp {
+        width: 217px;
+        height: 13px;
+        background-position: -128px -46px; }
+      #gptp_in_press li .featured span.look {
+        width: 73px;
+        height: 27px;
+        margin-top: -13px;
+        margin-left: 77px;
+        background-position: -347px -46px; }
+  #gptp_in_press li:first-child {
+    border-top: none; }
+    #gptp_in_press li:first-child .img {
+      display: none; }
+    #gptp_in_press li:first-child .details {
+      float: none;
+      width: auto; }
+    #gptp_in_press li:first-child .name_location {
+      margin-bottom: -15px; }
+      #gptp_in_press li:first-child .name_location .name {
+        display: block;
+        position: relative;
+        top: -10px;
+        left: 7px;
+        width: 196px;
+        height: 208px;
+        text-indent: -9999px;
+        background-image: url(/assets/writer_applications/in_the_press_polaroids.jpg);
+        transform: scale(1) rotate(-4deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
+        -moz-transform: scale(1) rotate(-4deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
+        -webkit-transform: scale(1) rotate(-4deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
+        -o-transform: scale(1) rotate(-4deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
+        -ms-transform: scale(1) rotate(-4deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
+        /* Uncomment if we want to implement for IE8 [https://snipt.net/viatropos/cross-browser-css-rotation-with-and-without-sass/]
+        filter:             progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=cos(-4deg), M12=-sin(-4deg), M21=sin(-4deg), M22=cos(-4deg));
+        -ms-filter:         "progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=cos(-4deg), M12=-sin(-4deg), M21=sin(-4deg), M22=cos(-4deg))"; */
+        zoom: 1; }
+      #gptp_in_press li:first-child .name_location .location {
+        visibility: hidden; }
+    #gptp_in_press li:first-child .article {
+      margin: 0 0 3px;
+      color: #09f;
+      font-size: 18px;
+      font-weight: bold; }
+  #gptp_in_press li.sykes .img {
+    background-position: 0 -210px; }
+  #gptp_in_press li.chu .img {
+    background-position: -50px -210px; }
+  #gptp_in_press li.merchants .img {
+    background-position: -100px -210px; }
+  #gptp_in_press li.hogan .img {
+    background-position: -150px -210px; }
+  #gptp_in_press li.sykes .name {
+    background-position: 0 0; }
+  #gptp_in_press li.chu .name {
+    background-position: -198px 0; }
+  #gptp_in_press li.merchants .name {
+    background-position: -396px 0; }
+  #gptp_in_press li.hogan .name {
+    background-position: -600px 0; }
+/*
+
+
+
+*/
+/* Styles for the application login step lightbox */
+#gptp_login {
+  width: 525px;
+  height: 205px;
+  margin-top: -102.5px;
+  margin-left: -262.5px;
+  padding: 20px; }
+  #gptp_login #gptp_login_left {
+    float: left;
+    width: 177px;
+    text-align: right;
+    line-height: 36px; }
+    #gptp_login #gptp_login_left h1 {
+      float: right;
+      margin: 0 0 5px;
+      line-height: 100%; }
+    #gptp_login #gptp_login_left h2 {
+      float: right;
+      clear: both;
+      font-weight: normal;
+      line-height: 18px; }
+  #gptp_login #social_login {
+    float: right;
+    margin: 0; }
+    #gptp_login #social_login .login_box {
+      padding: 15px 25px 10px; }
+    #gptp_login #social_login .social_icons {
+      margin: 0; }
+  #gptp_login .header {
+    margin: 0 0 5px; }
+  #gptp_login .footer {
+    clear: both;
+    text-align: right; }
+    #gptp_login .footer p {
+      margin: 0;
+      font-size: 11px;
+      line-height: 12px; }
+
+.ui-widget-overlay {
+  width: 100%;
+  height: 100%;
+  z-index: 1001; }
+
+#login_area {
+  text-align: left; }
+
+/* Header application steps */
+#application_steps {
+  margin: 0 0 11px;
+  padding: 0 0 11px;
+  border-bottom: 1px dashed #adc0c9; }
+  #application_steps li {
+    position: relative;
+    float: left;
+    margin: 0 35px 0 0;
+    padding: 5px 0 0 40px;
+    color: #ccc;
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 22px;
+    text-transform: capitalize; }
+    #application_steps li span {
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: block;
+      color: #fff;
+      font-size: 21px;
+      width: 30px;
+      height: 30px;
+      font-weight: normal;
+      text-align: center;
+      line-height: 30px;
+      background-color: #ccc;
+      border-radius: 50%; }
+    #application_steps li#step_1 {
+      width: 135px; }
+    #application_steps li#step_2 {
+      width: 170px; }
+    #application_steps li#step_3 {
+      width: 210px;
+      margin-right: 0; }
+    #application_steps li.selected {
+      color: #09f; }
+    #application_steps li.selected span {
+      background-color: #09f; }
+
+/* Introduction Text */
+#intro_text p {
+  margin: 15px 0 10px;
+  font-size: 15px; }
+
+/* Styles for user date of birth dropdown */
+/* Month */
+#writer_application_applicant_dob_2i,
+#photographer_application_applicant_dob_2i {
+  width: 121px; }
+
+/* Day */
+#writer_application_applicant_dob_3i,
+#photographer_application_applicant_dob_3i {
+  width: 65px; }
+
+/* Year */
+#writer_application_applicant_dob_1i,
+#photographer_application_applicant_dob_1i {
+  width: 80px; }
+
+/* Styles to allow Experience Level radio group labels to be in 1 line */
+#photographer_application_experience_level_input ol {
+  width: 375px; }
+
+/* Application review select boxes buttons */
+.select_list_btns {
+  margin: 0 0 8px; }
+  .select_list_btns li {
+    float: left;
+    margin: 0 10px 0 0; }
+    .select_list_btns li:last-child, .select_list_btns li.last {
+      margin-right: 0; }
+  .select_list_btns a {
+    display: block;
+    position: relative;
+    height: 20px;
+    padding: 0 25px 0 10px;
+    color: #597686;
+    font-size: 9px;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 23px;
+    text-decoration: none;
+    background-color: #fefefe;
+    background: gradient(linear, 0 0, 0 100%, from(#fefefe), to(#e5e5e5));
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#fefefe), to(#e5e5e5));
+    background: -moz-linear-gradient(top, #fefefe, #e5e5e5);
+    -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=#fefefe, endColorStr=#e5e5e5);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=#fefefe, endColorStr=#e5e5e5);
+    border: 1px solid #dadada;
+    border-radius: 4px;
+    box-shadow: 0 1px 1px #999; }
+    .select_list_btns a:hover {
+      color: #254350;
+      background-color: #fefefe;
+      background: gradient(linear, 0 0, 0 100%, from(#fefefe), to(#ebebeb));
+      background: -webkit-gradient(linear, 0 0, 0 100%, from(#fefefe), to(#ebebeb));
+      background: -moz-linear-gradient(top, #fefefe, #ebebeb);
+      -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=#fefefe, endColorStr=#ebebeb);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=#fefefe, endColorStr=#ebebeb);
+      box-shadow: 0 2px 4px #b2b2b2; }
+  .select_list_btns span {
+    display: block;
+    position: absolute;
+    top: 4px;
+    right: 3px;
+    width: 14px;
+    height: 14px;
+    background-image: url(/assets/writer_applications/sprite.png); }
+  .select_list_btns .refresh span {
+    background-position: 0 0; }
+  .select_list_btns .add span {
+    background-position: -16px 0; }
+  .select_list_btns .remove span {
+    background-position: -32px 0; }
+  .select_list_btns .plus span {
+    background-position: -48px 0; }
+
+.form_footer_note {
+  margin: 40px 0 0;
+  font-size: 10px;
+  line-height: 12px; }
+
+.gptp_right_rail .inner_divider.solid,
+.gptp_right_rail .app_btn {
+  display: none !important; }

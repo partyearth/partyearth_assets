@@ -1,0 +1,277 @@
+/* Recent Articles Sidebar Pod */
+#recent_articles .list .list_item {
+  float: left;
+  width: 100px;
+  margin: 0 0 0 12px;
+  padding: 0;
+  line-height: 15px;
+  border-top: none; }
+  #recent_articles .list .list_item:first-child + li {
+    margin-left: 0; }
+  #recent_articles .list .list_item .thumbnail_link {
+    margin: 0 0 5px; }
+  #recent_articles .list .list_item .title {
+    font-size: 11px;
+    line-height: 13px; }
+  #recent_articles .list .list_item.featured {
+    float: none;
+    width: auto;
+    margin-left: 0; }
+    #recent_articles .list .list_item.featured .thumbnail_link {
+      margin: 0 0 15px; }
+/*
+
+*/
+/*BEGIN NAVIGATION CSS*/
+/*CONTENT WRAPPER*/
+#event_info .headline,
+#schedule_info .headline {
+  margin-bottom: 4px; }
+
+#event_content .blue_link {
+  height: 10px !important; }
+
+/*TOP HALF DIV*/
+/*------------------------------------------------*/
+.tophalf {
+  width: 735px;
+  position: relative; }
+  .tophalf .inner_divider.dotted.width350 {
+    height: 3px;
+    margin: 6px 0; }
+
+.cutout_spacer {
+  width: 355px;
+  height: 314px;
+  margin: 0 0 7px 10px; }
+
+.cutout_wrapper {
+  background: url(/assets/content_bg/354_cutout_bg_with_subnav_without_ad.png) 0 0 no-repeat;
+  width: 367px;
+  height: 320px;
+  position: absolute;
+  right: -3px;
+  top: -3px;
+  z-index: 1000;
+  padding: 3px 0 0 0; }
+
+.cutout_wrapper.condensed {
+  background: none; }
+
+.WithSearchLink .cutout_wrapper {
+  background: url(/assets/content_bg/354_cutout_bg_search_bar_with_subnav.png) 0 0 no-repeat; }
+
+#gal_map {
+  margin: 0 3px 0 0;
+  width: 354px; }
+
+#map_info, #gal_info {
+  height: 270px; }
+
+#gal_info {
+  overflow: visible; }
+
+#event_info {
+  min-height: 381px; }
+  #event_info .left_section {
+    width: 348px;
+    min-height: 291px; }
+    #event_info .left_section .inner_divider.dashed {
+      height: 10px; }
+    #event_info .left_section table td {
+      vertical-align: top; }
+    #event_info .left_section .share_links {
+      margin-top: -1px; }
+      #event_info .left_section .share_links .inner_divider {
+        height: 6px; }
+  #event_info .city_neighborhood {
+    position: relative;
+    top: -5px;
+    font-size: 11px;
+    font-family: arial, sans-serif;
+    line-height: 15px; }
+    #event_info .city_neighborhood .arrow {
+      font-size: 13px; }
+  #event_info .title {
+    display: inline-block;
+    margin: 0 10px 0 0;
+    min-width: 81px;
+    text-transform: uppercase;
+    font-size: 9px;
+    line-height: 9px;
+    position: relative;
+    top: 2px;
+    /*FOR IE7*/
+    *width: 81px; }
+  #event_info .title.grey_text {
+    color: #8ea8b5; }
+  #event_info p {
+    padding: 0; }
+  #event_info .venue_type {
+    margin: 0 4px 0 0; }
+  #event_info .event_dates {
+    font-size: 16px;
+    font-weight: bold;
+    border-bottom: 1px dashed #8ea8b5;
+    padding: 0 0 10px;
+    margin: 0 0 3px 0;
+    /*width: 298px;*/ }
+  #event_info .fb_edge_widget_with_comment,
+  #event_info .gplus_btn {
+    position: relative;
+    top: 3px; }
+  #event_info .venue_name {
+    font-size: 16px;
+    line-height: 18px; }
+    #event_info .venue_name a:link,
+    #event_info .venue_name a:visited {
+      color: #000000;
+      display: inline-block;
+      line-height: 16px;
+      padding: 0 0 1px; }
+    #event_info .venue_name a:hover {
+      color: #597686; }
+  #event_info .event_desc {
+    cursor: pointer;
+    position: relative;
+    max-height: 47px;
+    overflow: hidden; }
+    #event_info .event_desc p {
+      line-height: 15px; }
+    #event_info .event_desc .more_desc_link {
+      background: #fff;
+      position: absolute;
+      bottom: 5px;
+      right: 0;
+      font-size: 12px;
+      line-height: 10px;
+      /*FOR IE8*/
+      bottom: 2px\9;
+      line-height: 14px\9; }
+      #event_info .event_desc .more_desc_link a:link {
+        position: relative;
+        top: -1px;
+        padding-bottom: 1px;
+        background: white; }
+  #event_info .event_desc:hover .more_desc_link a:link {
+    color: #597686; }
+  #event_info .full_address {
+    line-height: 16px;
+    font-size: 14px;
+    margin: 0 0 2px; }
+    #event_info .full_address .directions_link {
+      display: inline-block;
+      margin-top: 5px; }
+  #event_info .other_data {
+    color: #333;
+    font-size: 11px;
+    line-height: 13px;
+    font-family: arial, sans-serif; }
+    #event_info .other_data a:link,
+    #event_info .other_data a:visited {
+      color: #333; }
+    #event_info .other_data a:hover {
+      color: #597686; }
+  #event_info .event_links,
+  #event_info .event_performers {
+    margin: 0 0 5px; }
+    #event_info .event_links a:link,
+    #event_info .event_links a:visited,
+    #event_info .event_performers a:link,
+    #event_info .event_performers a:visited {
+      display: inline-block; }
+  #event_info .event_performers td,
+  #event_info .event_tags td {
+    vertical-align: top; }
+  #event_info .event_performers .title,
+  #event_info .event_tags .title {
+    margin: 0 10px 0 0;
+    width: 56px; }
+  #event_info .event_tags a, #event_info .event_tags .fake_link {
+    display: inline-block;
+    margin: 0 3px 0 0;
+    text-decoration: underline;
+    text-transform: lowercase;
+    color: #333;
+    /*FOR IE*/
+    zoom: 1; }
+  #event_info .event_tags a:hover,
+  #event_info .event_tags .fake_link:hover {
+    color: #597686; }
+  #event_info .right_section {
+    width: 355px; }
+
+#event_info.condensed {
+  min-height: 291px;
+  position: relative; }
+  #event_info.condensed .left_section .left_section_data {
+    min-height: 265px; }
+  #event_info.condensed .nearby_events {
+    position: absolute;
+    bottom: -4px;
+    left: 0; }
+  #event_info.condensed .more_events {
+    position: absolute;
+    bottom: -4px;
+    right: 0; }
+
+/* RIGHT SIDEBAR
+---------------------------------------*/
+#right_sidebar #ad_240x400 {
+  margin: 0 0 5px; }
+
+/*CITY EVENTS PROPERTIES*/
+/*------------------------------*/
+.city_events .city_events_content p {
+  padding: 0; }
+.city_events .city_events_content .event_item {
+  margin: 0 0 5px; }
+  .city_events .city_events_content .event_item table td {
+    vertical-align: top; }
+  .city_events .city_events_content .event_item .event_photo {
+    width: 76px;
+    height: 55px;
+    margin: 0 9px 0 0; }
+    .city_events .city_events_content .event_item .event_photo img {
+      width: 76px;
+      height: 55px; }
+  .city_events .city_events_content .event_item .grey_text,
+  .city_events .city_events_content .event_item .grey_text a:link,
+  .city_events .city_events_content .event_item .grey_text a:visited {
+    color: #6C8898; }
+  .city_events .city_events_content .event_item .venue_type.blue_text.caps a:link, .city_events .city_events_content .event_item .venue_type.blue_text.caps a:visited, .city_events .city_events_content .event_item .venue_type.blue_text.caps span {
+    color: #0099ff;
+    font-size: 9px; }
+.city_events .city_events_content .event_date {
+  background: #D2E2E9;
+  padding: 2px 7px 1px;
+  margin: 0 0 9px; }
+.city_events .city_events_content .day,
+.city_events .city_events_content .date {
+  font-size: 14px;
+  font-weight: bold; }
+.city_events .city_events_content .date {
+  color: #537A8B; }
+.city_events .inner_divider.dashed {
+  margin: 0 0 11px;
+  height: 11px; }
+.city_events .inner_divider {
+  height: 3px; }
+
+/*NEARBY VENUES PROPERTIES*/
+/*------------------------------*/
+.nearby_item table td {
+  vertical-align: top; }
+.nearby_item .nearby_photo {
+  width: 76px;
+  height: 55px;
+  margin: 0 9px 0 0; }
+  .nearby_item .nearby_photo img {
+    width: 76px;
+    height: 55px; }
+.nearby_item .headline.sub_headline {
+  margin: 0 0 5px 0; }
+.nearby_item .headline.sub_headline:hover {
+  text-decoration: underline; }
+.nearby_item .venue_type {
+  padding: 0; }
