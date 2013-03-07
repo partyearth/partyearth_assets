@@ -1,0 +1,20 @@
+#pop_neigh li {
+  float: left;
+  width: 102px;
+  margin: 0 0 0 18px; }
+  #pop_neigh li:first-child {
+    margin-left: 0; }
+  #pop_neigh li .name {
+    display: block;
+    margin: 0 0 6px;
+    color: #000;
+    line-height: 15px;
+    overflow: hidden; }
+    #pop_neigh li .name:hover {
+      color: #09f; }
+  #pop_neigh li .thumbnail_link,
+  #pop_neigh li .thumbnail_link img {
+    width: 100px;
+    height: 100px; }
+#pop_neigh.two_line_title li .name {
+  height: 30px; }

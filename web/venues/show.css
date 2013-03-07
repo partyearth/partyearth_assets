@@ -587,6 +587,8 @@
     font-size: 12px;
     line-height: 16px;
     vertical-align: bottom; }
+    .soe_sect .soe_sect_cont .soe_event_xtra .buy_ticket {
+      margin: 0 0 3px; }
 /* STYLES FOR RIGHT SIDEBAR
 -----------------------------------------------------
 :: Styles for the right sidebar and universal elements like pods.
@@ -595,6 +597,7 @@
   /* Lists used in Pods. If list needs specific styles override specific attributes in seperate stylesheet..*/
   /* Pod list stripped down with no border/padding etc. */
   /* Pod list with a thumbnail next to each item */
+  /* Arrow Select list - List with arrows that appear only when hovered*/
   /* Pod footer used on some pods. Any that goes in the footer should be added here.*/
   /* Little orange arrow mostly used on pod footer after a link. */
   /* Styles for Popular Entertainers/DJs */
@@ -769,6 +772,17 @@
       color: #000; }
       #right_sidebar .photo_list .details .title:hover {
         color: #597686; }
+  #right_sidebar .arrow_select .list_item {
+    position: relative;
+    padding: 0 0 0 12px;
+    border: none; }
+    #right_sidebar .arrow_select .list_item .arrow {
+      display: none;
+      position: absolute;
+      top: 0;
+      left: 0; }
+    #right_sidebar .arrow_select .list_item.selected .arrow {
+      display: block; }
   #right_sidebar .pod_footer {
     margin: 5px 0 0;
     padding: 5px 0 0;
@@ -1393,9 +1407,10 @@
   top: 144px;
   left: -72px;
   width: 52px;
-  height: 56px;
+  height: 55px;
   background-image: url(/assets/object_pages/sprite.png);
-  background-position: 0 -63px; }
+  background-position: 0 -63px;
+  background-repeat: no-repeat; }
   .floater_comments:hover {
     background-position: -54px -63px;
     cursor: pointer; }
@@ -1464,11 +1479,8 @@
 .video_section .video_title {
   display: block;
   height: 33px;
-  margin: 0 0 10px;
-  padding: 6px 0 0;
-  color: #333;
-  font-size: 26px;
-  font-weight: normal;
+  font-size: 22px;
+  font-weight: bold;
   line-height: 29px;
   overflow: hidden; }
 .video_section .more_videos {
@@ -2661,76 +2673,74 @@
 
 .in_season_sticker:hover {
   background-position: -297px -393px; }
+#object_page_info .help_btn {
+  position: absolute;
+  top: 5px;
+  right: 0;
+  z-index: 3000;
+  *display: none;
+  /*FOR IE7*/ }
+#object_page_info #liked_by_venue {
+  float: left;
+  width: 343px;
+  margin: 9px 0;
+  padding: 9px 0 0;
+  border-top: 1px dashed #ADC0C9; }
+  #object_page_info #liked_by_venue dt {
+    float: none;
+    width: auto;
+    position: static; }
+  #object_page_info #liked_by_venue dd {
+    float: none;
+    margin: 0;
+    position: relative;
+    font-size: 12px; }
+  #object_page_info #liked_by_venue ul {
+    float: left; }
+  #object_page_info #liked_by_venue .being_evaluated, #object_page_info #liked_by_venue .no_reviews {
+    display: block;
+    height: 35px;
+    background-image: url("/assets/content_bg/application_sprite.png"); }
+  #object_page_info #liked_by_venue .being_evaluated {
+    display: none;
+    float: left;
+    width: 343px;
+    background-position: -491px -529px; }
+  #object_page_info #liked_by_venue .no_reviews {
+    float: right;
+    width: 159px;
+    background-position: -491px -566px; }
+  #object_page_info #liked_by_venue .help_btn {
+    position: absolute;
+    top: -18px;
+    left: 333px; }
+  #object_page_info #liked_by_venue.no_likes .being_evaluated {
+    display: block; }
+  #object_page_info #liked_by_venue.no_likes dt, #object_page_info #liked_by_venue.no_likes ul, #object_page_info #liked_by_venue.no_likes .no_reviews, #object_page_info #liked_by_venue.no_likes .question_mark {
+    display: none; }
 /*
 
 
 
+
 */
-#object_page_info {
-  /* Venue ratings tooltip trigger/content styles.
-  -------------------------------------------------------------- */ }
-  #object_page_info .help_btn {
-    position: absolute;
-    top: 5px;
-    right: 0;
-    z-index: 3000;
-    *display: none;
-    /*FOR IE7*/ }
-  #object_page_info #liked_by_venue {
-    float: left;
-    width: 343px;
-    margin: 9px 0;
-    padding: 9px 0 0;
-    border-top: 1px dashed #ADC0C9; }
-    #object_page_info #liked_by_venue dt {
-      float: none;
-      width: auto;
-      position: static; }
-    #object_page_info #liked_by_venue dd {
-      float: none;
-      margin: 0;
-      position: relative;
-      font-size: 12px; }
-    #object_page_info #liked_by_venue ul {
-      float: left; }
-    #object_page_info #liked_by_venue .being_evaluated, #object_page_info #liked_by_venue .no_reviews {
-      display: block;
-      height: 35px;
-      background-image: url("/assets/content_bg/application_sprite.png"); }
-    #object_page_info #liked_by_venue .being_evaluated {
-      display: none;
-      float: left;
-      width: 343px;
-      background-position: -491px -529px; }
-    #object_page_info #liked_by_venue .no_reviews {
-      float: right;
-      width: 159px;
-      background-position: -491px -566px; }
-    #object_page_info #liked_by_venue .help_btn {
+#object_page_info .user_review_summary {
+  clear: left;
+  width: 343px;
+  padding-left: 0;
+  overflow: hidden; }
+  #object_page_info .user_review_summary p {
+    max-height: 54px; }
+    #object_page_info .user_review_summary p .ellipsis {
       position: absolute;
-      top: -18px;
-      left: 333px; }
-    #object_page_info #liked_by_venue.no_likes .being_evaluated {
-      display: block; }
-    #object_page_info #liked_by_venue.no_likes dt, #object_page_info #liked_by_venue.no_likes ul, #object_page_info #liked_by_venue.no_likes .no_reviews, #object_page_info #liked_by_venue.no_likes .question_mark {
-      display: none; }
-  #object_page_info .user_review_summary {
-    clear: left;
-    width: 343px;
-    padding-left: 0;
-    overflow: hidden; }
-    #object_page_info .user_review_summary p {
-      max-height: 54px; }
-      #object_page_info .user_review_summary p .ellipsis {
-        position: absolute;
-        right: 0;
-        bottom: 0;
-        background-color: #fff; }
-        #object_page_info .user_review_summary p .ellipsis a, #object_page_info .user_review_summary p .ellipsis a:link, #object_page_info .user_review_summary p .ellipsis a:visited {
-          color: #09f;
-          font-size: 11px; }
-          #object_page_info .user_review_summary p .ellipsis a:hover, #object_page_info .user_review_summary p .ellipsis a:link:hover, #object_page_info .user_review_summary p .ellipsis a:visited:hover {
-            color: #597686; }
+      right: 0;
+      bottom: 0;
+      background-color: #fff; }
+      #object_page_info .user_review_summary p .ellipsis a, #object_page_info .user_review_summary p .ellipsis a:link, #object_page_info .user_review_summary p .ellipsis a:visited {
+        color: #09f;
+        font-size: 11px; }
+        #object_page_info .user_review_summary p .ellipsis a:hover, #object_page_info .user_review_summary p .ellipsis a:link:hover, #object_page_info .user_review_summary p .ellipsis a:visited:hover {
+          color: #597686; }
 
 .obj_react {
   width: 346px;

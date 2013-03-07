@@ -366,7 +366,8 @@ fieldset ol {
   fieldset ol input[type=radio], fieldset ol input[type=checkbox] {
     margin: 0 5px 0 0; }
   fieldset ol img {
-    float: left; }
+    top: 27px;
+    left: 286px; }
   fieldset ol .inline-errors {
     left: 0; }
   fieldset ol .toggle {

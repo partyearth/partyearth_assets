@@ -214,6 +214,8 @@
     font-size: 12px;
     line-height: 16px;
     vertical-align: bottom; }
+    .soe_sect .soe_sect_cont .soe_event_xtra .buy_ticket {
+      margin: 0 0 3px; }
 /* Styles for the more links pod */
 #more_links_pod ul {
   margin-top: 10px;
@@ -313,6 +315,7 @@
   /* Lists used in Pods. If list needs specific styles override specific attributes in seperate stylesheet..*/
   /* Pod list stripped down with no border/padding etc. */
   /* Pod list with a thumbnail next to each item */
+  /* Arrow Select list - List with arrows that appear only when hovered*/
   /* Pod footer used on some pods. Any that goes in the footer should be added here.*/
   /* Little orange arrow mostly used on pod footer after a link. */
   /* Styles for Popular Entertainers/DJs */
@@ -487,6 +490,17 @@
       color: #000; }
       #right_sidebar .photo_list .details .title:hover {
         color: #597686; }
+  #right_sidebar .arrow_select .list_item {
+    position: relative;
+    padding: 0 0 0 12px;
+    border: none; }
+    #right_sidebar .arrow_select .list_item .arrow {
+      display: none;
+      position: absolute;
+      top: 0;
+      left: 0; }
+    #right_sidebar .arrow_select .list_item.selected .arrow {
+      display: block; }
   #right_sidebar .pod_footer {
     margin: 5px 0 0;
     padding: 5px 0 0;
@@ -769,7 +783,7 @@
 .read_more.pull_down .less_toggle {
   margin-top: -6px !important; }
 .read_more.pull_down .fake-link {
-  top: 14px; }
+  top: 13px; }
 
 #right_sidebar .missing_venue_event,
 #right_sidebar .ad {
@@ -1749,8 +1763,7 @@ div.datepicker {
       .browse_category .column.featured h3 {
         color: #09f;
         font-size: 15px;
-        line-height: 15px;
-        text-decoration: none; }
+        line-height: 15px; }
       .browse_category .column.featured .name {
         margin: 0;
         padding: 0;
@@ -1764,7 +1777,6 @@ div.datepicker {
     margin: 0 0 7px;
     color: #000;
     font-size: 17px;
-    text-decoration: underline;
     line-height: 18px;
     overflow: hidden; }
   .browse_category.two_line_title h3 {

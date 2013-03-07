@@ -591,8 +591,7 @@
       .browse_category .column.featured h3 {
         color: #09f;
         font-size: 15px;
-        line-height: 15px;
-        text-decoration: none; }
+        line-height: 15px; }
       .browse_category .column.featured .name {
         margin: 0;
         padding: 0;
@@ -606,7 +605,6 @@
     margin: 0 0 7px;
     color: #000;
     font-size: 17px;
-    text-decoration: underline;
     line-height: 18px;
     overflow: hidden; }
   .browse_category.two_line_title h3 {
@@ -1205,6 +1203,7 @@
   /* Lists used in Pods. If list needs specific styles override specific attributes in seperate stylesheet..*/
   /* Pod list stripped down with no border/padding etc. */
   /* Pod list with a thumbnail next to each item */
+  /* Arrow Select list - List with arrows that appear only when hovered*/
   /* Pod footer used on some pods. Any that goes in the footer should be added here.*/
   /* Little orange arrow mostly used on pod footer after a link. */
   /* Styles for Popular Entertainers/DJs */
@@ -1379,6 +1378,17 @@
       color: #000; }
       #right_sidebar .photo_list .details .title:hover {
         color: #597686; }
+  #right_sidebar .arrow_select .list_item {
+    position: relative;
+    padding: 0 0 0 12px;
+    border: none; }
+    #right_sidebar .arrow_select .list_item .arrow {
+      display: none;
+      position: absolute;
+      top: 0;
+      left: 0; }
+    #right_sidebar .arrow_select .list_item.selected .arrow {
+      display: block; }
   #right_sidebar .pod_footer {
     margin: 5px 0 0;
     padding: 5px 0 0;
@@ -1609,17 +1619,3 @@
   margin: 9px 0 0;
   padding: 11px 0 0;
   border-top: 1px dashed #adc0c9; }
-
-/* RIGHT COLUMN
---------------------------------------------- */
-#right_sidebar .free_things_to_do .list li {
-  position: relative;
-  padding: 0 0 0 12px;
-  border: none; }
-  #right_sidebar .free_things_to_do .list li .arrow {
-    display: none;
-    position: absolute;
-    top: 0;
-    left: 0; }
-  #right_sidebar .free_things_to_do .list li.selected .arrow {
-    display: block; }

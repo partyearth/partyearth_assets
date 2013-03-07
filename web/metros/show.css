@@ -244,6 +244,88 @@
   .acty_feed .acty_feed_itm.with_rating .name {
     position: relative;
     top: -1px; }
+
+/* Holiday Alert */
+#right_sidebar .hday_alert .label {
+  display: block;
+  margin: 0 0 5px;
+  padding: 3px 10px;
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  background-color: #b8d300; }
+#right_sidebar .hday_alert h3 {
+  margin: 0 0 1px;
+  padding: 0;
+  border-bottom: none; }
+#right_sidebar .hday_alert .date {
+  display: block;
+  margin: 0 0 4px;
+  color: #09f;
+  font-weight: bold;
+  font-size: 15px; }
+#right_sidebar .hday_alert .thumbnail_link,
+#right_sidebar .hday_alert .thumbnail_link img {
+  width: 210px;
+  height: 140px; }
+#right_sidebar .hday_alert .hday_count {
+  float: right; }
+  #right_sidebar .hday_alert .hday_count .days_left {
+    display: block;
+    float: left;
+    margin: 0 5px 0 0;
+    color: #8ea8b5;
+    font-size: 9px;
+    line-height: 11px;
+    text-transform: uppercase; }
+  #right_sidebar .hday_alert .hday_count .num_cont {
+    display: block;
+    float: left; }
+    #right_sidebar .hday_alert .hday_count .num_cont .num {
+      display: block;
+      float: left;
+      width: 19px;
+      height: 22px;
+      margin: 0 2px 0 0;
+      font-size: 20px;
+      font-weight: bold;
+      line-height: 30px;
+      text-align: center;
+      text-indent: -9999px;
+      background-image: url(/assets/holidays/sprite.png); }
+      #right_sidebar .hday_alert .hday_count .num_cont .num.num0 {
+        background-position: -33px -36px; }
+      #right_sidebar .hday_alert .hday_count .num_cont .num.num1 {
+        background-position: -54px -36px; }
+      #right_sidebar .hday_alert .hday_count .num_cont .num.num2 {
+        background-position: -75px -36px; }
+      #right_sidebar .hday_alert .hday_count .num_cont .num.num3 {
+        background-position: -96px -36px; }
+      #right_sidebar .hday_alert .hday_count .num_cont .num.num4 {
+        background-position: -117px -36px; }
+      #right_sidebar .hday_alert .hday_count .num_cont .num.num5 {
+        background-position: -138px -36px; }
+      #right_sidebar .hday_alert .hday_count .num_cont .num.num6 {
+        background-position: -159px -36px; }
+      #right_sidebar .hday_alert .hday_count .num_cont .num.num7 {
+        background-position: -180px -36px; }
+      #right_sidebar .hday_alert .hday_count .num_cont .num.num8 {
+        background-position: -201px -36px; }
+      #right_sidebar .hday_alert .hday_count .num_cont .num.num9 {
+        background-position: -222px -36px; }
+    #right_sidebar .hday_alert .hday_count .num_cont.is_today .num {
+      background-position: -243px -36px; }
+
+.luft_ad {
+  display: block;
+  width: 244px;
+  height: 121px;
+  margin: 0 0 8px;
+  text-indent: -9999px;
+  background-image: url(/assets/ads/lufthansa_ad.png); }
 .day_changer_head {
   width: 715px;
   /* Fix for linux */
@@ -1065,8 +1147,7 @@ div.datepicker {
       .browse_category .column.featured h3 {
         color: #09f;
         font-size: 15px;
-        line-height: 15px;
-        text-decoration: none; }
+        line-height: 15px; }
       .browse_category .column.featured .name {
         margin: 0;
         padding: 0;
@@ -1080,7 +1161,6 @@ div.datepicker {
     margin: 0 0 7px;
     color: #000;
     font-size: 17px;
-    text-decoration: underline;
     line-height: 18px;
     overflow: hidden; }
   .browse_category.two_line_title h3 {
@@ -1420,6 +1500,7 @@ div.datepicker {
   /* Lists used in Pods. If list needs specific styles override specific attributes in seperate stylesheet..*/
   /* Pod list stripped down with no border/padding etc. */
   /* Pod list with a thumbnail next to each item */
+  /* Arrow Select list - List with arrows that appear only when hovered*/
   /* Pod footer used on some pods. Any that goes in the footer should be added here.*/
   /* Little orange arrow mostly used on pod footer after a link. */
   /* Styles for Popular Entertainers/DJs */
@@ -1594,6 +1675,17 @@ div.datepicker {
       color: #000; }
       #right_sidebar .photo_list .details .title:hover {
         color: #597686; }
+  #right_sidebar .arrow_select .list_item {
+    position: relative;
+    padding: 0 0 0 12px;
+    border: none; }
+    #right_sidebar .arrow_select .list_item .arrow {
+      display: none;
+      position: absolute;
+      top: 0;
+      left: 0; }
+    #right_sidebar .arrow_select .list_item.selected .arrow {
+      display: block; }
   #right_sidebar .pod_footer {
     margin: 5px 0 0;
     padding: 5px 0 0;

@@ -443,6 +443,8 @@
     font-size: 12px;
     line-height: 16px;
     vertical-align: bottom; }
+    .soe_sect .soe_sect_cont .soe_event_xtra .buy_ticket {
+      margin: 0 0 3px; }
 /* STYLES FOR RIGHT SIDEBAR
 -----------------------------------------------------
 :: Styles for the right sidebar and universal elements like pods.
@@ -451,6 +453,7 @@
   /* Lists used in Pods. If list needs specific styles override specific attributes in seperate stylesheet..*/
   /* Pod list stripped down with no border/padding etc. */
   /* Pod list with a thumbnail next to each item */
+  /* Arrow Select list - List with arrows that appear only when hovered*/
   /* Pod footer used on some pods. Any that goes in the footer should be added here.*/
   /* Little orange arrow mostly used on pod footer after a link. */
   /* Styles for Popular Entertainers/DJs */
@@ -625,6 +628,17 @@
       color: #000; }
       #right_sidebar .photo_list .details .title:hover {
         color: #597686; }
+  #right_sidebar .arrow_select .list_item {
+    position: relative;
+    padding: 0 0 0 12px;
+    border: none; }
+    #right_sidebar .arrow_select .list_item .arrow {
+      display: none;
+      position: absolute;
+      top: 0;
+      left: 0; }
+    #right_sidebar .arrow_select .list_item.selected .arrow {
+      display: block; }
   #right_sidebar .pod_footer {
     margin: 5px 0 0;
     padding: 5px 0 0;
@@ -1160,11 +1174,8 @@
 .video_section .video_title {
   display: block;
   height: 33px;
-  margin: 0 0 10px;
-  padding: 6px 0 0;
-  color: #333;
-  font-size: 26px;
-  font-weight: normal;
+  font-size: 22px;
+  font-weight: bold;
   line-height: 29px;
   overflow: hidden; }
 .video_section .more_videos {

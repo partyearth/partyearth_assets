@@ -20,8 +20,7 @@
       .browse_category .column.featured h3 {
         color: #09f;
         font-size: 15px;
-        line-height: 15px;
-        text-decoration: none; }
+        line-height: 15px; }
       .browse_category .column.featured .name {
         margin: 0;
         padding: 0;
@@ -35,7 +34,6 @@
     margin: 0 0 7px;
     color: #000;
     font-size: 17px;
-    text-decoration: underline;
     line-height: 18px;
     overflow: hidden; }
   .browse_category.two_line_title h3 {

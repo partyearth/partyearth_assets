@@ -1,0 +1,62 @@
+/* Styles for SEO Pagination
+----------------------------------------- */
+#seo_pagination {
+  padding: 5px;
+  text-align: center;
+  line-height: 30px; }
+  #seo_pagination em, #seo_pagination a, #seo_pagination span {
+    display: inline-block;
+    height: 15px;
+    margin: 0 6px 0 0;
+    padding: 2px 6px;
+    color: #adc0c9;
+    font-style: normal;
+    line-height: 16px;
+    vertical-align: middle;
+    background-color: #fff;
+    border: 1px solid #adc0c9;
+    border-radius: 2px;
+    text-decoration: none; }
+  #seo_pagination em, #seo_pagination .current, #seo_pagination a:hover, #seo_pagination span:hover {
+    color: #fff;
+    background-color: #09f;
+    border: 1px solid #09f;
+    cursor: pointer; }
+  #seo_pagination em:hover {
+    cursor: default; }
+  #seo_pagination .gap, #seo_pagination .gap:hover {
+    padding: 0;
+    color: #adc0c9;
+    font-weight: bold;
+    font-size: 18px;
+    background-color: transparent;
+    border: none;
+    cursor: text; }
+  #seo_pagination .previous_page, #seo_pagination .next_page {
+    width: 18px;
+    height: 17px;
+    text-indent: -9999px;
+    background-image: url(/assets/search/search2_sprite.png);
+    overflow: hidden;
+    /* override previous a, a:hover styles */
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    border-radius: 0; }
+    #seo_pagination .previous_page:hover, #seo_pagination .next_page:hover {
+      background-color: transparent;
+      border: none; }
+    #seo_pagination .previous_page.disabled, #seo_pagination .next_page.disabled {
+      cursor: default; }
+  #seo_pagination .previous_page {
+    background-position: -144px -8px; }
+  #seo_pagination .previous_page:hover {
+    background-position: -123px -8px; }
+  #seo_pagination .previous_page.disabled {
+    background-position: -144px -25px; }
+  #seo_pagination .next_page {
+    background-position: -172px -8px; }
+  #seo_pagination .next_page:hover {
+    background-position: -123px -25px; }
+  #seo_pagination .next_page.disabled {
+    background-position: -172px -25px; }

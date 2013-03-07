@@ -186,9 +186,10 @@
   top: 144px;
   left: -72px;
   width: 52px;
-  height: 56px;
+  height: 55px;
   background-image: url(/assets/object_pages/sprite.png);
-  background-position: 0 -63px; }
+  background-position: 0 -63px;
+  background-repeat: no-repeat; }
   .floater_comments:hover {
     background-position: -54px -63px;
     cursor: pointer; }

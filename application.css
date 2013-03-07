@@ -2185,6 +2185,7 @@ div.fake_link:hover {
 .create,
 .ui-dialog .ui-dialog-buttonpane button,
 button,
+#admin_main .actions input[type=submit],
 .admin_info .formtastic .actions input[type=submit] {
   width: auto;
   padding: 8px 22px;
@@ -2224,6 +2225,7 @@ button,
   .create:hover,
   .ui-dialog .ui-dialog-buttonpane button:hover,
   button:hover,
+  #admin_main .actions input[type=submit]:hover,
   .admin_info .formtastic .actions input[type=submit]:hover {
     text-shadow: 0 0 12px #fff;
     box-shadow: 0 2px 5px #a8a8a8;
@@ -2235,6 +2237,7 @@ button,
   .create:active,
   .ui-dialog .ui-dialog-buttonpane button:active,
   button:active,
+  #admin_main .actions input[type=submit]:active,
   .admin_info .formtastic .actions input[type=submit]:active {
     color: #c0dbed;
     text-shadow: none;
@@ -2248,6 +2251,7 @@ button,
   .create.disabled,
   .ui-dialog .ui-dialog-buttonpane button.disabled,
   button.disabled,
+  #admin_main .actions input[type=submit].disabled,
   .admin_info .formtastic .actions input[type=submit].disabled {
     color: #ebebeb;
     text-shadow: 0 1px 2px #6f7a84;
@@ -2265,6 +2269,7 @@ button,
   .create.white_btn,
   .ui-dialog .ui-dialog-buttonpane button.white_btn,
   button.white_btn,
+  #admin_main .actions input[type=submit].white_btn,
   .admin_info .formtastic .actions input[type=submit].white_btn {
     color: #375363;
     text-shadow: 1px 1px 1px #b8d7e9;
@@ -2285,6 +2290,7 @@ button,
     .create.white_btn:hover,
     .ui-dialog .ui-dialog-buttonpane button.white_btn:hover,
     button.white_btn:hover,
+    #admin_main .actions input[type=submit].white_btn:hover,
     .admin_info .formtastic .actions input[type=submit].white_btn:hover {
       box-shadow: 0 2px 6px #a8a8a8;
       -webkit-box-shadow: 0 2px 6px #a8a8a8;
@@ -2295,6 +2301,7 @@ button,
   .create.inline_btn,
   .ui-dialog .ui-dialog-buttonpane button.inline_btn,
   button.inline_btn,
+  #admin_main .actions input[type=submit].inline_btn,
   .admin_info .formtastic .actions input[type=submit].inline_btn {
     display: inline-block;
     padding: 0 7px;
@@ -2492,6 +2499,26 @@ button,
   .box_link.calendar a:visited {
     color: #537a8b;
     text-decoration: none; }
+
+.buy_ticket,
+.buy_ticket:link,
+.buy_ticket:visited {
+  display: inline-block;
+  width: 87px;
+  height: 20px;
+  color: #fff;
+  font-size: 9px;
+  font-weight: bold;
+  text-indent: 29px;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 1px;
+  background-image: url(/assets/content_bg/app_sprite_2.png);
+  background-position: -329px 0; }
+  .buy_ticket:hover,
+  .buy_ticket:link:hover,
+  .buy_ticket:visited:hover {
+    background-position: -418px 0; }
 
 /* EMBED BUTTON
 --------------------------------------------*/
@@ -3002,19 +3029,29 @@ input, select, textarea {
           border-bottom: 2px solid; }
         #masthead #main_nav li a.selected, #masthead #main_nav li a:visited.selected, #masthead #main_nav li .fake_link.selected {
           color: #09f; }
+      #masthead #main_nav li .shadow_cover {
+        display: none;
+        position: absolute;
+        top: 24px;
+        left: 0;
+        z-index: 9001;
+        width: 100%;
+        height: 3px;
+        background-color: #fff; }
       #masthead #main_nav li ul {
         display: none;
         position: absolute;
-        top: 25px;
+        top: 27px;
         left: 0;
         z-index: 9000;
         min-width: 100%;
         padding: 3px 0 0;
         background: #fff;
         border-radius: 0 0 2px 2px;
-        box-shadow: 0 2px 2px #888; }
+        box-shadow: 0 1px 6px #000; }
         #masthead #main_nav li ul li {
           float: none;
+          padding: 0 14px;
           line-height: 20px;
           font-family: "Arimo", Arial, sans-serif;
           font-size: 12px;
@@ -3035,7 +3072,7 @@ input, select, textarea {
             #masthead #main_nav li ul li:hover a, #masthead #main_nav li ul li:hover a:visited, #masthead #main_nav li ul li:hover .fake_link {
               color: #fff;
               border-bottom: 1px solid #0099ff; }
-      #masthead #main_nav li:hover ul {
+      #masthead #main_nav li:hover ul, #masthead #main_nav li:hover .shadow_cover {
         display: block; }
       #masthead #main_nav li.current_city {
         width: 131px;
@@ -3044,13 +3081,12 @@ input, select, textarea {
           color: #09f; }
           #masthead #main_nav li.current_city a:hover, #masthead #main_nav li.current_city a:visited:hover, #masthead #main_nav li.current_city .fake_link:hover {
             color: #375363; }
+        #masthead #main_nav li.current_city .shadow_cover {
+          left: -15px;
+          width: 146px; }
         #masthead #main_nav li.current_city ul {
           left: -15px;
           min-width: 146px; }
-          #masthead #main_nav li.current_city ul li a, #masthead #main_nav li.current_city ul li a:visited, #masthead #main_nav li.current_city ul li .fake_link {
-            color: #375363; }
-            #masthead #main_nav li.current_city ul li a:hover, #masthead #main_nav li.current_city ul li a:visited:hover, #masthead #main_nav li.current_city ul li .fake_link:hover {
-              color: #fff; }
       #masthead #main_nav li.link_divider {
         position: relative;
         width: 2px;
@@ -3068,6 +3104,16 @@ input, select, textarea {
           border-width: 3px;
           border-style: solid;
           border-color: transparent transparent #9aa4a9 transparent; }
+      #masthead #main_nav li.dd_2cols ul {
+        border-top-right-radius: 2px; }
+      #masthead #main_nav li.dd_2cols li {
+        float: left;
+        clear: left;
+        width: 102px; }
+        #masthead #main_nav li.dd_2cols li.dd_2cols_right {
+          float: none;
+          clear: none;
+          margin: 0 0 0 130px; }
   #masthead.amsterdam #main_nav li {
     padding: 0 9px; }
     #masthead.amsterdam #main_nav li.link_divider {
@@ -3767,7 +3813,7 @@ h3.large_gray_btn_full {
 .add_to_calendar {
   position: relative;
   display: inline-block;
-  padding: 3px 7px;
+  padding: 3px 4px;
   color: #999;
   font-size: 10px;
   font-family: 'Arial', sans-serif;
@@ -3795,6 +3841,7 @@ h3.large_gray_btn_full {
       border-left: none; }
   .add_to_calendar:hover {
     color: #fff;
+    text-decoration: none;
     background-color: #09f;
     border: 1px solid #09f; }
     .add_to_calendar:hover .point {

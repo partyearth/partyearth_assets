@@ -1,0 +1,45 @@
+#object_page_info .help_btn {
+  position: absolute;
+  top: 5px;
+  right: 0;
+  z-index: 3000;
+  *display: none;
+  /*FOR IE7*/ }
+#object_page_info #liked_by_venue {
+  float: left;
+  width: 343px;
+  margin: 9px 0;
+  padding: 9px 0 0;
+  border-top: 1px dashed #ADC0C9; }
+  #object_page_info #liked_by_venue dt {
+    float: none;
+    width: auto;
+    position: static; }
+  #object_page_info #liked_by_venue dd {
+    float: none;
+    margin: 0;
+    position: relative;
+    font-size: 12px; }
+  #object_page_info #liked_by_venue ul {
+    float: left; }
+  #object_page_info #liked_by_venue .being_evaluated, #object_page_info #liked_by_venue .no_reviews {
+    display: block;
+    height: 35px;
+    background-image: url("/assets/content_bg/application_sprite.png"); }
+  #object_page_info #liked_by_venue .being_evaluated {
+    display: none;
+    float: left;
+    width: 343px;
+    background-position: -491px -529px; }
+  #object_page_info #liked_by_venue .no_reviews {
+    float: right;
+    width: 159px;
+    background-position: -491px -566px; }
+  #object_page_info #liked_by_venue .help_btn {
+    position: absolute;
+    top: -18px;
+    left: 333px; }
+  #object_page_info #liked_by_venue.no_likes .being_evaluated {
+    display: block; }
+  #object_page_info #liked_by_venue.no_likes dt, #object_page_info #liked_by_venue.no_likes ul, #object_page_info #liked_by_venue.no_likes .no_reviews, #object_page_info #liked_by_venue.no_likes .question_mark {
+    display: none; }
