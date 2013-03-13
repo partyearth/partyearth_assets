@@ -3087,6 +3087,10 @@ input, select, textarea {
         #masthead #main_nav li.current_city ul {
           left: -15px;
           min-width: 146px; }
+          #masthead #main_nav li.current_city ul a {
+            color: #375363; }
+          #masthead #main_nav li.current_city ul a:hover {
+            color: #fff; }
       #masthead #main_nav li.link_divider {
         position: relative;
         width: 2px;

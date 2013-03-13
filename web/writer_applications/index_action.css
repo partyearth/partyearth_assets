@@ -132,7 +132,9 @@
       line-height: 11px;
       text-transform: uppercase; }
     #right_sidebar .list .list_item .arrow {
-      color: #09f; }
+      color: #09f;
+      font-size: 17px;
+      line-height: 17px; }
     #right_sidebar .list .list_item .venue_type {
       margin: 0;
       padding: 0;

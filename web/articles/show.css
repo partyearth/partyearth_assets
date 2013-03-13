@@ -653,7 +653,9 @@
       line-height: 11px;
       text-transform: uppercase; }
     #right_sidebar .list .list_item .arrow {
-      color: #09f; }
+      color: #09f;
+      font-size: 17px;
+      line-height: 17px; }
     #right_sidebar .list .list_item .venue_type {
       margin: 0;
       padding: 0;
@@ -1424,7 +1426,8 @@
   #article_page #left_container .related_articles .related_img {
     float: left;
     width: 165px;
-    height: 165px;
+    min-height: 165px;
+    max-height: 181px;
     margin: 0 15px 10px 0; }
     #article_page #left_container .related_articles .related_img .thumbnail_link {
       width: 165px;
