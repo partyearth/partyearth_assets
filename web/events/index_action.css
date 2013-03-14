@@ -194,7 +194,9 @@
       line-height: 11px;
       text-transform: uppercase; }
     #right_sidebar .list .list_item .arrow {
-      color: #09f; }
+      color: #09f;
+      font-size: 17px;
+      line-height: 17px; }
     #right_sidebar .list .list_item .venue_type {
       margin: 0;
       padding: 0;
@@ -263,7 +265,7 @@
       color: #09f;
       text-align: right;
       font-size: 11px;
-      line-height: 11px;
+      line-height: 12px;
       text-decoration: none; }
       #right_sidebar .pod_footer a:hover, #right_sidebar .pod_footer a:link:hover, #right_sidebar .pod_footer a:visited:hover, #right_sidebar .pod_footer .fake_link:hover {
         color: #597686; }
@@ -278,9 +280,9 @@
     position: relative;
     width: 6px;
     font-family: "Times New Roman";
-    font-size: 17px;
+    font-size: 12px;
     font-weight: normal;
-    line-height: 17px;
+    line-height: 12px;
     text-indent: -10px;
     overflow: hidden; }
   #right_sidebar .popular_entertainers .list li {

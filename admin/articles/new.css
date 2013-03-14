@@ -265,15 +265,43 @@ table {
 
 
 */
-.site_location .choice #article_path_type_global,
-.site_location .choice .title {
-  vertical-align: top; }
-.site_location .choice .title {
+.form_fields li.site_location input {
   display: inline-block;
-  width: 104px; }
-.site_location .choice .url_message {
-  display: inline-block;
-  width: 554px; }
-  .site_location .choice .url_message ol {
-    padding-left: 23px;
-    list-style: disc; }
+  width: auto; }
+.form_fields li.site_location label {
+  display: block;
+  margin: 0 0 15px;
+  font-weight: bold; }
+  .form_fields li.site_location label span {
+    font-weight: normal; }
+.form_fields li.site_location ol.notes {
+  margin: 5px 0 0;
+  padding-left: 23px;
+  font-size: 10px;
+  font-weight: normal;
+  line-height: 10px;
+  list-style: disc; }
+.form_fields li#article_display_numbers_input {
+  margin: 0 0 3px;
+  padding: 0 0 3px;
+  border-bottom: 1px dashed #333; }
+.form_fields li.add_list_item_link {
+  margin: 3px 0 0;
+  padding: 3px 0 0;
+  border-top: 1px dashed #333; }
+
+#article_display_in_links_input {
+  position: absolute;
+  top: 0;
+  right: 0; }
+
+.ArticleItemsList .ui-sortable-item {
+  margin: 0 0 10px; }
+
+.form_fields_left {
+  float: right;
+  margin: 0; }
+
+.form_fields_right {
+  float: left;
+  margin: 0 5px 0 0; }

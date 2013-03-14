@@ -486,7 +486,9 @@
       line-height: 11px;
       text-transform: uppercase; }
     #right_sidebar .list .list_item .arrow {
-      color: #09f; }
+      color: #09f;
+      font-size: 17px;
+      line-height: 17px; }
     #right_sidebar .list .list_item .venue_type {
       margin: 0;
       padding: 0;
@@ -555,7 +557,7 @@
       color: #09f;
       text-align: right;
       font-size: 11px;
-      line-height: 11px;
+      line-height: 12px;
       text-decoration: none; }
       #right_sidebar .pod_footer a:hover, #right_sidebar .pod_footer a:link:hover, #right_sidebar .pod_footer a:visited:hover, #right_sidebar .pod_footer .fake_link:hover {
         color: #597686; }
@@ -570,9 +572,9 @@
     position: relative;
     width: 6px;
     font-family: "Times New Roman";
-    font-size: 17px;
+    font-size: 12px;
     font-weight: normal;
-    line-height: 17px;
+    line-height: 12px;
     text-indent: -10px;
     overflow: hidden; }
   #right_sidebar .popular_entertainers .list li {
@@ -751,7 +753,7 @@
   border-bottom: 2px solid #adc0c9; }
   .results_list li.result:hover {
     background-color: #ffffe5; }
-    .results_list li.result:hover .ellipses_dots {
+    .results_list li.result:hover .ellipsis {
       background-color: #ffffe5 !important; }
 .results_list .top_left_section {
   float: left;
@@ -780,11 +782,21 @@
     width: 455px;
     min-height: 87px; }
     .results_list .top_left_section .inner_content .desc, .results_list .top_left_section .inner_content .user_review_summary {
+      position: relative;
       overflow: hidden;
       padding: 0 16px 0 0;
       line-height: 16px; }
       .results_list .top_left_section .inner_content .desc .ellipsis, .results_list .top_left_section .inner_content .user_review_summary .ellipsis {
-        display: none; }
+        display: block;
+        position: absolute;
+        right: 16px;
+        bottom: 0;
+        background-color: #fff;
+        overflow: hidden; }
+        .results_list .top_left_section .inner_content .desc .ellipsis a, .results_list .top_left_section .inner_content .user_review_summary .ellipsis a {
+          position: relative;
+          bottom: 2px;
+          font-size: 11px; }
     .results_list .top_left_section .inner_content .desc {
       height: 65px;
       cursor: pointer; }

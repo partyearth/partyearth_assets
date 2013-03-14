@@ -330,7 +330,9 @@
       line-height: 11px;
       text-transform: uppercase; }
     #right_sidebar .list .list_item .arrow {
-      color: #09f; }
+      color: #09f;
+      font-size: 17px;
+      line-height: 17px; }
     #right_sidebar .list .list_item .venue_type {
       margin: 0;
       padding: 0;
@@ -399,7 +401,7 @@
       color: #09f;
       text-align: right;
       font-size: 11px;
-      line-height: 11px;
+      line-height: 12px;
       text-decoration: none; }
       #right_sidebar .pod_footer a:hover, #right_sidebar .pod_footer a:link:hover, #right_sidebar .pod_footer a:visited:hover, #right_sidebar .pod_footer .fake_link:hover {
         color: #597686; }
@@ -414,9 +416,9 @@
     position: relative;
     width: 6px;
     font-family: "Times New Roman";
-    font-size: 17px;
+    font-size: 12px;
     font-weight: normal;
-    line-height: 17px;
+    line-height: 12px;
     text-indent: -10px;
     overflow: hidden; }
   #right_sidebar .popular_entertainers .list li {
@@ -736,7 +738,14 @@
   #hday_upc .hday_desc .blue_flag {
     position: absolute;
     top: 15px;
-    left: -25px; }
+    left: -25px;
+    height: 17px;
+    padding-left: 12px;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 18px; }
+    #hday_upc .hday_desc .blue_flag .tip {
+      border-bottom: 8px solid transparent; }
 #hday_upc .hday_count {
   float: right;
   width: 99px; }
@@ -796,12 +805,12 @@
   line-height: 14px; }
   .overview_copy_block .blue_header {
     margin-bottom: 12px; }
-  .overview_copy_block .thumbnail_link {
+  .overview_copy_block .thumbnail_link, .overview_copy_block .thumbnail {
     float: left;
     width: 165px;
     height: 110px;
     margin: 0 12px 0 0; }
-    .overview_copy_block .thumbnail_link img {
+    .overview_copy_block .thumbnail_link img, .overview_copy_block .thumbnail img {
       width: 165px;
       height: 110px; }
   .overview_copy_block .read_more {

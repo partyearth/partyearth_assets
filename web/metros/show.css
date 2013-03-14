@@ -318,6 +318,14 @@
         background-position: -222px -36px; }
     #right_sidebar .hday_alert .hday_count .num_cont.is_today .num {
       background-position: -243px -36px; }
+
+.luft_ad {
+  display: block;
+  width: 244px;
+  height: 121px;
+  margin: 0 0 8px;
+  text-indent: -9999px;
+  background-image: url(/assets/ads/lufthansa_ad.png); }
 .day_changer_head {
   width: 715px;
   /* Fix for linux */
@@ -1618,7 +1626,9 @@ div.datepicker {
       line-height: 11px;
       text-transform: uppercase; }
     #right_sidebar .list .list_item .arrow {
-      color: #09f; }
+      color: #09f;
+      font-size: 17px;
+      line-height: 17px; }
     #right_sidebar .list .list_item .venue_type {
       margin: 0;
       padding: 0;
@@ -1687,7 +1697,7 @@ div.datepicker {
       color: #09f;
       text-align: right;
       font-size: 11px;
-      line-height: 11px;
+      line-height: 12px;
       text-decoration: none; }
       #right_sidebar .pod_footer a:hover, #right_sidebar .pod_footer a:link:hover, #right_sidebar .pod_footer a:visited:hover, #right_sidebar .pod_footer .fake_link:hover {
         color: #597686; }
@@ -1702,9 +1712,9 @@ div.datepicker {
     position: relative;
     width: 6px;
     font-family: "Times New Roman";
-    font-size: 17px;
+    font-size: 12px;
     font-weight: normal;
-    line-height: 17px;
+    line-height: 12px;
     text-indent: -10px;
     overflow: hidden; }
   #right_sidebar .popular_entertainers .list li {

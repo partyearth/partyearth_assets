@@ -3087,6 +3087,10 @@ input, select, textarea {
         #masthead #main_nav li.current_city ul {
           left: -15px;
           min-width: 146px; }
+          #masthead #main_nav li.current_city ul a {
+            color: #375363; }
+          #masthead #main_nav li.current_city ul a:hover {
+            color: #fff; }
       #masthead #main_nav li.link_divider {
         position: relative;
         width: 2px;
@@ -3105,7 +3109,7 @@ input, select, textarea {
           border-style: solid;
           border-color: transparent transparent #9aa4a9 transparent; }
       #masthead #main_nav li.dd_2cols ul {
-        border-radius-top-right: 2px; }
+        border-top-right-radius: 2px; }
       #masthead #main_nav li.dd_2cols li {
         float: left;
         clear: left;
@@ -3841,6 +3845,7 @@ h3.large_gray_btn_full {
       border-left: none; }
   .add_to_calendar:hover {
     color: #fff;
+    text-decoration: none;
     background-color: #09f;
     border: 1px solid #09f; }
     .add_to_calendar:hover .point {
@@ -3881,12 +3886,14 @@ h3.large_gray_btn_full {
 
 /* class and items for clearfix */
 .clearfix:before, .clearfix:after,
-formfield ol:before, .formfield ol:after {
+formfield ol:before, .formfield ol:after,
+.cke_skin_kama .cke_toolbox:before, .cke_skin_kama .cke_toolbox:after {
   content: "";
   display: table; }
 
 .clearfix:after,
-.formfield ol:after {
+.formfield ol:after,
+.cke_skin_kama .cke_toolbox:after {
   clear: both; }
 
 .clearfix {
