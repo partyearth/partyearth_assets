@@ -2925,6 +2925,8 @@
     .overview_copy_block .thumbnail_link img, .overview_copy_block .thumbnail img {
       width: 165px;
       height: 110px; }
+  .overview_copy_block.no_photo .read_more {
+    width: auto; }
   .overview_copy_block .read_more {
     width: 527px; }
 
