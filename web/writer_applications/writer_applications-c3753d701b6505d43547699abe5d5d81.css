@@ -1,0 +1,187 @@
+/* BEGIN PAGE PROPERTIES */
+.get_paid_to_party_content #left_container {
+  width: 675px;
+  margin: 0 0 0 -22px;
+  padding: 0 0 0 82px;
+  background-image: url(/assets/writer_applications/left_column_bg_repeat-f5897254fa6ff061316cf86b6a3676b9.png);
+  background-repeat: repeat-y; }
+
+.left_column_content {
+  position: relative;
+  min-height: 1130px; }
+
+.large_text {
+  font-size: 14px;
+  line-height: 17px; }
+
+.cursive_text {
+  position: absolute;
+  background-image: url(/assets/writer_applications/cursive_text_sprite-4a3d47102ed59797d39ed82dec87396b.png);
+  background-repeat: no-repeat; }
+  .cursive_text.next_partier {
+    top: 0;
+    left: 0;
+    width: 225px;
+    height: 29px;
+    margin: 14px 0 0; }
+  .cursive_text.instant_access {
+    top: 434px;
+    left: 444px;
+    width: 128px;
+    height: 44px;
+    margin: 14px 0 0;
+    background-position: 0 -29px; }
+  .cursive_text.become_an_insider {
+    top: 722px;
+    left: 189px;
+    width: 138px;
+    height: 65px;
+    margin: 14px 0 0;
+    background-position: -138px -29px; }
+  .cursive_text.skip_the_lines {
+    top: 1004px;
+    left: 470px;
+    width: 157px;
+    height: 22px;
+    margin: 14px 0 0;
+    background-position: 0 -94px; }
+
+.apply_link1 {
+  position: absolute;
+  top: 478px;
+  padding: 0 0 0 15px;
+  background-image: url(/assets/content_bg/left_thin_arrow-c98b20d522d35430922372af50f854dd.gif);
+  background-repeat: no-repeat;
+  background-position: 0 5px; }
+  .apply_link1 a.border_link {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 15px; }
+
+.left_column_content .headline {
+  padding: 54px 0 0; }
+.left_column_content .paragraph_1 {
+  width: 472px;
+  margin: 8px 0 0; }
+.left_column_content .paragraph_2 {
+  position: absolute;
+  top: 460px;
+  left: 0;
+  width: 430px; }
+.left_column_content .paragraph_3 {
+  position: absolute;
+  top: 509px;
+  left: 0;
+  width: 555px; }
+.left_column_content .city_list {
+  position: absolute; }
+  .left_column_content .city_list .region {
+    color: #09f;
+    font-size: 14px;
+    font-weight: bold; }
+  .left_column_content .city_list li {
+    text-transform: capitalize; }
+  .left_column_content .city_list.list1 {
+    top: 564px;
+    left: 200px; }
+  .left_column_content .city_list.list2 {
+    top: 564px;
+    left: 334px; }
+  .left_column_content .city_list.list3 {
+    top: 564px;
+    left: 482px; }
+.left_column_content .apply_btn {
+  background: url(/assets/writer_applications/get_paid_to_party_misc_sprite-6dcdc1163e3ade007f331bcac15a1595.png) -88px -317px no-repeat;
+  display: block;
+  height: 48px;
+  left: 497px;
+  position: absolute;
+  top: 738px;
+  width: 114px; }
+
+.polaroid {
+  display: block;
+  position: absolute;
+  background-image: url(/assets/writer_applications/get_paid_to_party_poloroid_bg_sprite-8224c83f8008c86b2903e00e511c7395.png); }
+  .polaroid.image1 {
+    top: 164px;
+    left: -56px;
+    width: 240px;
+    height: 260px;
+    background-position: 0 0; }
+  .polaroid.image2 {
+    top: 198px;
+    left: 185px;
+    width: 230px;
+    height: 249px;
+    z-index: 1000;
+    background-position: 0 -260px; }
+    .polaroid.image2:hover {
+      z-index: 1098; }
+  .polaroid.image3 {
+    top: 169px;
+    left: 339px;
+    z-index: 1002;
+    width: 236px;
+    height: 253px;
+    background-position: 0 -509px; }
+  .polaroid.image4 {
+    top: 81px;
+    left: 444px;
+    width: 260px;
+    height: 276px;
+    background-position: 0 -762px; }
+    .polaroid.image4:hover {
+      z-index: 1098; }
+  .polaroid.image5 {
+    top: 560px;
+    left: -113px;
+    z-index: 2;
+    width: 250px;
+    height: 260px;
+    background-position: 0 -1038px; }
+  .polaroid.image6 {
+    top: 632px;
+    left: -73px;
+    z-index: 1;
+    width: 260px;
+    height: 276px;
+    background-position: 0 -1297px; }
+    .polaroid.image6:hover {
+      z-index: 1098; }
+  .polaroid.image7 {
+    top: 854px;
+    left: 214px;
+    z-index: 2;
+    width: 236px;
+    height: 257px;
+    background-position: 0 -1573px; }
+  .polaroid.image8 {
+    background-position: 0 -1830px;
+    height: 250px;
+    left: 408px;
+    top: 709px;
+    width: 230px;
+    z-index: 1; }
+    .polaroid.image8:hover {
+      z-index: 1098; }
+
+.misc_item {
+  position: absolute;
+  background-image: url(/assets/writer_applications/get_paid_to_party_misc_sprite-6dcdc1163e3ade007f331bcac15a1595.png); }
+  .misc_item.pen {
+    top: 438px;
+    left: 608px;
+    z-index: 3;
+    width: 88px;
+    height: 368px;
+    background-position: 0 -317px; }
+
+.camera {
+  position: absolute;
+  height: 317px;
+  left: -128px;
+  top: 858px;
+  width: 282px;
+  z-index: 3; }
