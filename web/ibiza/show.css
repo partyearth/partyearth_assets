@@ -1466,7 +1466,7 @@
     border: 0;
     background-position: 0 0; }
   .video_section .controls .ui-slider-horizontal .ui-slider-handle {
-    margin-left: -0.6em; }
+    margin-left: -.6em; }
   .video_section .controls .ui-slider-horizontal .ui-slider-range {
     top: 0;
     height: 100%; }
@@ -1478,9 +1478,9 @@
     width: .8em;
     height: 100px; }
   .video_section .controls .ui-slider-vertical .ui-slider-handle {
-    left: -0.3em;
+    left: -.3em;
     margin-left: 0;
-    margin-bottom: -0.6em; }
+    margin-bottom: -.6em; }
   .video_section .controls .ui-slider-vertical .ui-slider-range {
     left: 0;
     width: 100%; }
@@ -2143,7 +2143,7 @@ h1, h2, h3, h4 {
       height: 31px;
       margin: 0 0 10px;
       overflow: hidden;
-      letter-spacing: -1px \9;
+      letter-spacing: -1px\9;
       /*FOR IE*/ }
     #ibiza_spots .spot_item .scene_desc {
       position: relative;

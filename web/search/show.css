@@ -1627,7 +1627,7 @@ div.datepicker {
         .ui-dialog .ui-dialog-content.WhoAreTheyDialog a:hover {
           color: #597686; }
   .ui-dialog .ui-dialog-buttonpane {
-    background-color: #889AA4\9 !important;
+    background-color: #889aa4 \9  !important;
     position: static !important; }
   .ui-dialog.ui-widget-content .editable_label {
     cursor: pointer;
