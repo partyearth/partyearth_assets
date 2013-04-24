@@ -1101,9 +1101,8 @@
     position: relative;
     width: 6px;
     font-family: "Times New Roman";
-    font-size: 12px;
+    font-size: 16px;
     font-weight: normal;
-    line-height: 12px;
     text-indent: -10px;
     overflow: hidden; }
   #right_sidebar .popular_entertainers .list li {
@@ -1138,7 +1137,9 @@
     #right_sidebar .gptp_right_rail .links a, #right_sidebar .gptp_right_rail .links .fake_link {
       text-decoration: underline; }
     #right_sidebar .gptp_right_rail .links .arrow {
-      color: #ff9000; }
+      color: #ff9000;
+      font-size: 16px;
+      top: 1px; }
     #right_sidebar .gptp_right_rail .links .learn_link {
       float: left; }
     #right_sidebar .gptp_right_rail .links .meet_link {

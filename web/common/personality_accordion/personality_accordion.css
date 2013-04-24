@@ -159,7 +159,8 @@
         padding: 0;
         line-height: 15px;
         text-shadow: 0 0 0.08em #dadada;
-        overflow: hidden; }
+        overflow: hidden;
+        width: 111px; }
         .pe .character_content .venue_item_wrapper .venue_item .venue_name a, .pe .character_content .venue_item_wrapper .venue_item .venue_name a:visited {
           color: #000; }
           .pe .character_content .venue_item_wrapper .venue_item .venue_name a:hover, .pe .character_content .venue_item_wrapper .venue_item .venue_name a:visited:hover {
