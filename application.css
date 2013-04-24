@@ -4282,3 +4282,10 @@ formfield ol:before, .formfield ol:after,
     margin: 0 0 0 15px; }
 .missing_dialog .ui-dialog-content .ast {
   color: #09f; }
+
+.spinnable {
+  background-image: url(/assets/content_bg/spinner.gif);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 72px;
+  height: 72px; }

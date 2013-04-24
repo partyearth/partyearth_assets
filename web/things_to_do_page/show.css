@@ -1005,8 +1005,7 @@
         padding: 0;
         line-height: 15px;
         text-shadow: 0 0 0.08em #dadada;
-        overflow: hidden;
-        width: 111px; }
+        overflow: hidden; }
         .pe .character_content .venue_item_wrapper .venue_item .venue_name a, .pe .character_content .venue_item_wrapper .venue_item .venue_name a:visited {
           color: #000; }
           .pe .character_content .venue_item_wrapper .venue_item .venue_name a:hover, .pe .character_content .venue_item_wrapper .venue_item .venue_name a:visited:hover {
@@ -1416,8 +1415,9 @@
     position: relative;
     width: 6px;
     font-family: "Times New Roman";
-    font-size: 16px;
+    font-size: 12px;
     font-weight: normal;
+    line-height: 12px;
     text-indent: -10px;
     overflow: hidden; }
   #right_sidebar .popular_entertainers .list li {
@@ -1452,9 +1452,7 @@
     #right_sidebar .gptp_right_rail .links a, #right_sidebar .gptp_right_rail .links .fake_link {
       text-decoration: underline; }
     #right_sidebar .gptp_right_rail .links .arrow {
-      color: #ff9000;
-      font-size: 16px;
-      top: 1px; }
+      color: #ff9000; }
     #right_sidebar .gptp_right_rail .links .learn_link {
       float: left; }
     #right_sidebar .gptp_right_rail .links .meet_link {
