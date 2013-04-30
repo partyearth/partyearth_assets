@@ -809,9 +809,8 @@
     position: relative;
     width: 6px;
     font-family: "Times New Roman";
-    font-size: 12px;
+    font-size: 16px;
     font-weight: normal;
-    line-height: 12px;
     text-indent: -10px;
     overflow: hidden; }
   #right_sidebar .popular_entertainers .list li {
@@ -846,7 +845,9 @@
     #right_sidebar .gptp_right_rail .links a, #right_sidebar .gptp_right_rail .links .fake_link {
       text-decoration: underline; }
     #right_sidebar .gptp_right_rail .links .arrow {
-      color: #ff9000; }
+      color: #ff9000;
+      font-size: 16px;
+      top: 1px; }
     #right_sidebar .gptp_right_rail .links .learn_link {
       float: left; }
     #right_sidebar .gptp_right_rail .links .meet_link {
@@ -1685,7 +1686,7 @@
     border: 0;
     background-position: 0 0; }
   .video_section .controls .ui-slider-horizontal .ui-slider-handle {
-    margin-left: -0.6em; }
+    margin-left: -.6em; }
   .video_section .controls .ui-slider-horizontal .ui-slider-range {
     top: 0;
     height: 100%; }
@@ -1697,9 +1698,9 @@
     width: .8em;
     height: 100px; }
   .video_section .controls .ui-slider-vertical .ui-slider-handle {
-    left: -0.3em;
+    left: -.3em;
     margin-left: 0;
-    margin-bottom: -0.6em; }
+    margin-bottom: -.6em; }
   .video_section .controls .ui-slider-vertical .ui-slider-range {
     left: 0;
     width: 100%; }
@@ -3008,7 +3009,8 @@
 #comments .gig-comments-star,
 #comments .gig-comments-star-editable,
 #comments .gig-comments-star-editable-full,
-#comments .gig-comments-star-full {
+#comments .gig-comments-star-full,
+#comments .gig-comments-star-myRating {
   float: left;
   width: 19px;
   height: 19px;
@@ -3018,15 +3020,18 @@
   background-position: -407px -407px; }
 #comments .gig-rating-star-full,
 #comments .gig-comments-star-editable-full,
-#comments .gig-comments-star-full {
+#comments .gig-comments-star-full,
+#comments .gig-comments-star-myRating-full {
   background-position: -386px -407px; }
 #comments .gig-rating-star-half,
 #comments .gig-comments-star-editable-half,
-#comments .gig-comments-star-half {
+#comments .gig-comments-star-half,
+#comments .gig-comments-star-myRating-half {
   background-position: -428px -407px; }
 #comments .gig-rating-stars .gig-rating-star:last-child,
 #comments .gig-comments-rating .gig-comments-star:last-child,
 #comments .gig-comments-star-editable:last-child,
+#comments .gig-comments-star-myRating:last-child,
 #comments #Comments_rating__overall_4 {
   display: none; }
 #comments .gig-comments-addComment-ratings-details {

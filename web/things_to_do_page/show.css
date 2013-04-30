@@ -892,9 +892,9 @@
       display: inline-block;
       position: absolute;
       top: 10%;
-      top: 42%\9;
+      top: 42% \9;
       left: 10%;
-      left: 5%\9;
+      left: 5% \9;
       text-align: center;
       -webkit-transform: rotate(90deg);
       -moz-transform: rotate(90deg);
@@ -1005,7 +1005,8 @@
         padding: 0;
         line-height: 15px;
         text-shadow: 0 0 0.08em #dadada;
-        overflow: hidden; }
+        overflow: hidden;
+        width: 111px; }
         .pe .character_content .venue_item_wrapper .venue_item .venue_name a, .pe .character_content .venue_item_wrapper .venue_item .venue_name a:visited {
           color: #000; }
           .pe .character_content .venue_item_wrapper .venue_item .venue_name a:hover, .pe .character_content .venue_item_wrapper .venue_item .venue_name a:visited:hover {
@@ -1069,7 +1070,7 @@
   color: white; }
 
 .dark li > .accordion_tab b {
-  background: #353535\9;
+  background: #353535 \9;
   color: #030303;
   font-size: 20px;
   text-shadow: -1px 1px 0 #5b5b5b; }
@@ -1080,7 +1081,7 @@
   background: -moz-linear-gradient(top left, #353535 0%, #555555 100%); }
 
 .dark .accordion_tab.selected b {
-  background: #434343\9; }
+  background: #434343 \9; }
 
 /*** .dark li > div { background: #030303; margin-left: 5px; } */
 .dark li > div {
@@ -1415,9 +1416,8 @@
     position: relative;
     width: 6px;
     font-family: "Times New Roman";
-    font-size: 12px;
+    font-size: 16px;
     font-weight: normal;
-    line-height: 12px;
     text-indent: -10px;
     overflow: hidden; }
   #right_sidebar .popular_entertainers .list li {
@@ -1452,7 +1452,9 @@
     #right_sidebar .gptp_right_rail .links a, #right_sidebar .gptp_right_rail .links .fake_link {
       text-decoration: underline; }
     #right_sidebar .gptp_right_rail .links .arrow {
-      color: #ff9000; }
+      color: #ff9000;
+      font-size: 16px;
+      top: 1px; }
     #right_sidebar .gptp_right_rail .links .learn_link {
       float: left; }
     #right_sidebar .gptp_right_rail .links .meet_link {

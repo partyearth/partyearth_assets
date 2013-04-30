@@ -176,7 +176,7 @@ li.as-result-item.active em {
     margin-top: 0; } }
 /* IE Hacks  */
 ul.as-list {
-  border: 1px solid #888\9; }
+  border: 1px solid #888888 \9; }
 
 ul.as-selections li.as-selection-item a.as-close {
   margin-left: 4px\9;
