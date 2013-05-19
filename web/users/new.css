@@ -400,5 +400,40 @@ div.actions fieldset, .store_action_btns fieldset {
 
 
 */
-p.or {
-  top: 170px; }
+.terms {
+  padding-top: 18px; }
+
+.terms_submit {
+  display: block;
+  border-top: 1px dashed #CCC;
+  height: 40px;
+  padding-top: 12px; }
+  .terms_submit .terms {
+    font-size: 10px;
+    padding-top: 0 !important;
+    line-height: 15px;
+    width: 65%; }
+  .terms_submit .submit {
+    width: 96px; }
+    .terms_submit .submit .actions {
+      float: right;
+      margin: 0;
+      padding: 0;
+      width: 96px; }
+      .terms_submit .submit .actions button {
+        margin: 0; }
+
+.not_twitter .login_box .terms {
+  display: none; }
+
+.twitter .terms_submit {
+  border-top: none; }
+  .twitter .terms_submit .terms {
+    display: none; }
+
+#RegPopupWrapper #additional_information p.or {
+  background: url(/assets/social_login/or.png) no-repeat;
+  left: 223px;
+  top: 70px;
+  height: 49px;
+  width: 49px; }

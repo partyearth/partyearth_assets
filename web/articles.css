@@ -1,9 +1,12 @@
 /* LEFT COLUMN
 ---------------------------------------------*/
+#articles_page #left_container .pod {
+  margin: 0; }
 #articles_page #left_container .section_footer {
   border: none;
-  margin: 13px 0;
-  padding: 0; }
+  margin: 0;
+  padding: 13px 0;
+  vertical-align: baseline; }
 #articles_page #left_container .article_item {
   position: relative;
   border-bottom: 1px solid #ADC0C9;
@@ -38,6 +41,8 @@
       width: 210px;
       height: 140px; }
   #articles_page #left_container .article_item .details {
+    border-bottom: 1px dashed #8ea8b5;
+    padding-bottom: 12px;
     position: absolute;
     float: left;
     left: 225px;
@@ -79,7 +84,7 @@
 #articles_page #left_container .article_item.sponsored .headline {
   padding: 0 100px 0 0; }
 #articles_page #left_container .article_item:last-of-type {
-  margin-bottom: 4px; }
+  margin-bottom: 0; }
 #articles_page #left_container .loading {
   display: block;
   margin: 0 auto; }
@@ -115,7 +120,7 @@
   display: block;
   position: relative;
   float: right;
-  padding: 3px 0 0;
+  padding: 5px 0 0;
   color: #597686;
   font-size: 11px; }
   .comments_link span, .comments_link:link span, .comments_link:visited span {
@@ -837,14 +842,13 @@
 /* Start Explore Category Pod */
 #articles_page .cat_cont {
   border-bottom: 1px solid #ADC0C9;
-  height: 265px; }
+  height: 195px; }
   #articles_page .cat_cont .column {
-    height: 250px;
+    height: 180px;
     width: 166px !important;
     margin-left: 6px;
     padding-left: 6px; }
     #articles_page .cat_cont .column h3 {
-      min-height: 36px;
       line-height: 18px; }
     #articles_page .cat_cont .column:nth-child(1n+1) {
       border-left: 1px dotted #ADC0C9; }
@@ -861,7 +865,6 @@
       #articles_page .cat_cont .column ul li {
         min-height: 36px; }
       #articles_page .cat_cont .column ul li:first-child {
-        border-bottom: 1px dashed #ADC0C9;
         margin-bottom: 8px;
         padding-bottom: 8px; }
       #articles_page .cat_cont .column ul li:last-child {
@@ -885,14 +888,15 @@
 /* Start More Articles Pod */
 .more_articles .article_item {
   border-bottom: 1px dashed #ADC0C9 !important;
-  margin-bottom: 16px !important; }
+  margin-bottom: 12px !important;
+  padding-bottom: 12px !important; }
   .more_articles .article_item .date {
     display: block;
     float: left;
     color: #8EA8B5;
     font-size: 10px;
     text-transform: uppercase;
-    margin: 0px;
+    margin: 0 10px 0 0;
     padding: 0px;
     width: 70px; }
   .more_articles .article_item .thumbnail {
@@ -910,5 +914,16 @@
     .more_articles .article_item .title h3 {
       line-height: 18px;
       margin-left: 15px; }
+      .more_articles .article_item .title h3 a {
+        text-decoration: none !important; }
+      .more_articles .article_item .title h3:hover {
+        text-decoration: underline; }
+  .more_articles .article_item .article_item_footer {
+    bottom: 12px; }
   .more_articles .article_item .local_label {
     margin-left: 15px !important; }
+.more_articles .article_item:last-of-type {
+  margin-bottom: 0 !important; }
+
+.more_articles_footer {
+  padding: 13px 0 0 0 !important; }

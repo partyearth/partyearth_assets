@@ -1,9 +1,12 @@
 /* LEFT COLUMN
 ---------------------------------------------*/
+#articles_page #left_container .pod {
+  margin: 0; }
 #articles_page #left_container .section_footer {
   border: none;
-  margin: 13px 0;
-  padding: 0; }
+  margin: 0;
+  padding: 13px 0;
+  vertical-align: baseline; }
 #articles_page #left_container .article_item {
   position: relative;
   border-bottom: 1px solid #ADC0C9;
@@ -38,6 +41,8 @@
       width: 210px;
       height: 140px; }
   #articles_page #left_container .article_item .details {
+    border-bottom: 1px dashed #8ea8b5;
+    padding-bottom: 12px;
     position: absolute;
     float: left;
     left: 225px;
@@ -79,7 +84,7 @@
 #articles_page #left_container .article_item.sponsored .headline {
   padding: 0 100px 0 0; }
 #articles_page #left_container .article_item:last-of-type {
-  margin-bottom: 4px; }
+  margin-bottom: 0; }
 #articles_page #left_container .loading {
   display: block;
   margin: 0 auto; }
@@ -115,7 +120,7 @@
   display: block;
   position: relative;
   float: right;
-  padding: 3px 0 0;
+  padding: 5px 0 0;
   color: #597686;
   font-size: 11px; }
   .comments_link span, .comments_link:link span, .comments_link:visited span {
