@@ -1501,6 +1501,8 @@
 !binary "c3RvcmUvcHJvZHVjdF9wYWdlX2Jvb2tfc3ByaXRlL2luZGV4LnBuZw==": store/product_page_book_sprite-5b4bdeb0b0e5c02247290e8baf498407.png
 !binary "c3RvcmUvc3RvcmVfYnRuc19zcHJpdGUucG5n": store/store_btns_sprite-fa835f723ab85361917849ab0745c270.png
 !binary "c3RvcmUvc3RvcmVfYnRuc19zcHJpdGUvaW5kZXgucG5n": store/store_btns_sprite-fa835f723ab85361917849ab0745c270.png
+!binary "c3R1Yi5naWY=": stub-d49ee271abf70f05c06f7883dbf116dd.gif
+!binary "c3R1Yi9pbmRleC5naWY=": stub-d49ee271abf70f05c06f7883dbf116dd.gif
 !binary "dGVtcC8yNDB4NDAwX2FkLmpwZw==": temp/240x400_ad-429a6626c52dbfe6f9b9f155b67b094d.jpg
 !binary "dGVtcC8yNDB4NDAwX2FkL2luZGV4LmpwZw==": temp/240x400_ad-429a6626c52dbfe6f9b9f155b67b094d.jpg
 !binary "dGVtcC8yNDB4NDAwX2F1c3RyaWFuLmpwZw==": temp/240x400_austrian-9be60162172449e234d2f0ffed67f015.jpg
@@ -2563,8 +2565,8 @@
 !binary "YWRtaW4vbmVpZ2hib3Job29kcy9lbmRwb2ludHNfYWN0aW9uLmpz": admin/neighborhoods/endpoints/index_action-30fe078f99529c02b874419fd1594809.js
 !binary "YWRtaW4vbmVpZ2hib3Job29kcy9pbmRleF9hY3Rpb24uanM=": admin/neighborhoods/index_action-af8475bd1ecee3d25c26aeee388bcbec.js
 !binary "YWRtaW4vbmVpZ2hib3Job29kc19hY3Rpb24uanM=": admin/neighborhoods/index_action-af8475bd1ecee3d25c26aeee388bcbec.js
-!binary "YWRtaW4vbmV3c2xldHRlcnMvZWRpdC5qcw==": admin/newsletters/edit-dd8227fb1fd5bff8f0c223c1a21c5f70.js
-!binary "YWRtaW4vbmV3c2xldHRlcnMvZWRpdC9pbmRleC5qcw==": admin/newsletters/edit-dd8227fb1fd5bff8f0c223c1a21c5f70.js
+!binary "YWRtaW4vbmV3c2xldHRlcnMvZWRpdC5qcw==": admin/newsletters/edit-fff912b86a64ab1d641f8dde15784a78.js
+!binary "YWRtaW4vbmV3c2xldHRlcnMvZWRpdC9pbmRleC5qcw==": admin/newsletters/edit-fff912b86a64ab1d641f8dde15784a78.js
 !binary "YWRtaW4vcGFnZXMvbmV3Lmpz": admin/pages/new-444cdb4f1ba81deb88ee68d37b4a657e.js
 !binary "YWRtaW4vcGFnZXMvbmV3L2luZGV4Lmpz": admin/pages/new-444cdb4f1ba81deb88ee68d37b4a657e.js
 !binary "YWRtaW4vcGVyZm9ybWVycy9lZGl0X3BvcHVsYXJpdHkuanM=": admin/performers/edit_popularity-0dc92b2d418ecf82d7f0a3c6ec3c1d3d.js
