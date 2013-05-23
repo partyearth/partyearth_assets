@@ -1,0 +1,43 @@
+/* FOR QUANTITY COLUMN */
+.quantity .input_wrapper {
+  width: 52px; }
+
+#store_info .quantity .update_link {
+  width: 58px;
+  text-align: center;
+  background: none; }
+
+/* FOR GRAY ROW */
+.cart_page .gray_row {
+  padding: 2px 0 0; }
+.cart_page .gray_row .blue_text {
+  display: block;
+  padding: 6px 0 0; }
+
+/*FOR PROMO CODE SECTION*/
+.promo_code {
+  height: 30px;
+  position: relative;
+  /*DISPLAY COUPON CODE*/ }
+  .promo_code .label {
+    display: inline-block;
+    margin: 5px 7px 0 0; }
+  .promo_code .input_wrapper {
+    width: 100px;
+    margin: 0 6px 0 0; }
+  .promo_code .submit_btn {
+    position: absolute;
+    top: 0;
+    left: 191px; }
+  .promo_code .display_coupon {
+    margin: 5px 0 0;
+    padding: 0 5px;
+    background-color: #a5d5f5; }
+    .promo_code .display_coupon .coupon_code {
+      display: inline-block;
+      width: 110px;
+      margin: 0 10px 0 0; }
+    .promo_code .display_coupon .edit_code {
+      color: #666;
+      font-size: 11px;
+      cursor: pointer; }

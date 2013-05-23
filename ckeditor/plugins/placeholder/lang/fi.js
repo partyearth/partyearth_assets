@@ -1,0 +1,1 @@
+CKEDITOR.plugins.setLang("placeholder","fi",{placeholder:{title:"Paikkamerkin ominaisuudet",toolbar:"Luo paikkamerkki",text:"Paikkamerkin teksti",edit:"Muokkaa paikkamerkki\u00e4",textMissing:"Paikkamerkin t\u00e4ytyy sis\u00e4lt\u00e4\u00e4 teksti\u00e4"}});

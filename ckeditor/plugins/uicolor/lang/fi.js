@@ -1,0 +1,1 @@
+CKEDITOR.plugins.setLang("uicolor","fi",{uicolor:{title:"K\u00e4ytt\u00f6liittym\u00e4n v\u00e4rivalitsin",preview:"Esikatsele",config:"Liit\u00e4 t\u00e4m\u00e4 merkkijono config.js tiedostoosi",predefined:"Esim\u00e4\u00e4ritellyt v\u00e4rijoukot"}});

@@ -1,0 +1,461 @@
+/*
+Uploadify
+Copyright (c) 2012 Reactive Apps, Ronnie Garcia
+Released under the MIT License <http://www.opensource.org/licenses/mit-license.php>
+*/
+.uploadify {
+  position: relative;
+  margin-bottom: 1em; }
+
+.uploadify-button {
+  background-color: #505050;
+  background-image: linear-gradient(bottom, #505050 0%, #707070 100%);
+  background-image: -o-linear-gradient(bottom, #505050 0%, #707070 100%);
+  background-image: -moz-linear-gradient(bottom, #505050 0%, #707070 100%);
+  background-image: -webkit-linear-gradient(bottom, #505050 0%, #707070 100%);
+  background-image: -ms-linear-gradient(bottom, #505050 0%, #707070 100%);
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #505050), color-stop(1, #707070));
+  background-position: center top;
+  background-repeat: no-repeat;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+  border: 2px solid #808080;
+  color: #FFF;
+  font: bold 12px Arial, Helvetica, sans-serif;
+  text-align: center;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  width: 100%; }
+
+.uploadify:hover .uploadify-button {
+  background-color: #606060;
+  background-image: linear-gradient(top, #606060 0%, gray 100%);
+  background-image: -o-linear-gradient(top, #606060 0%, gray 100%);
+  background-image: -moz-linear-gradient(top, #606060 0%, gray 100%);
+  background-image: -webkit-linear-gradient(top, #606060 0%, gray 100%);
+  background-image: -ms-linear-gradient(top, #606060 0%, gray 100%);
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #606060), color-stop(1, gray));
+  background-position: center bottom; }
+
+.uploadify-button.disabled {
+  background-color: #D0D0D0;
+  color: #808080; }
+
+.uploadify-queue {
+  margin-bottom: 1em; }
+
+.uploadify-queue-item {
+  background-color: #F5F5F5;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  font: 11px Verdana, Geneva, sans-serif;
+  margin-top: 5px;
+  max-width: 350px;
+  padding: 10px; }
+
+.uploadify-error {
+  background-color: #FDE5DD !important; }
+
+.uploadify-queue-item .cancel a {
+  background: url("uploadify-cancel.png") 0 0 no-repeat;
+  float: right;
+  height: 16px;
+  text-indent: -9999px;
+  width: 16px; }
+
+.uploadify-queue-item.completed {
+  background-color: #E5E5E5; }
+
+.uploadify-progress {
+  background-color: #E5E5E5;
+  margin-top: 10px;
+  width: 100%; }
+
+.uploadify-progress-bar {
+  background-color: #0099FF;
+  height: 3px;
+  width: 1px; }
+/*DROPDOWN OVERRIDES*/
+/*-------------------------------------------------*/
+#admin_content .TitleContainer {
+  background: none;
+  padding: 0; }
+
+#admin_content .Title {
+  background: none;
+  height: auto; }
+
+/*-------------------------------------------------*/
+/*BEGIN GENERAL STYLES*/
+#admin_content {
+  background-color: #fff;
+  padding: 0 1px 20px;
+  text-align: center; }
+  #admin_content #fileInput {
+    width: 124px !important;
+    height: 34px !important;
+    margin: 0 auto;
+    text-align: left; }
+
+#admin_content div {
+  text-align: center;
+  margin: 6px 0;
+  -moz-border-radius: 4px;
+  border-radius: 4px; }
+
+#admin_content form {
+  padding: 10px 0 0;
+  text-align: center; }
+
+#admin_content input[type="checkbox"] {
+  cursor: default;
+  /*for ie to show arrow*/ }
+
+#admin_content textarea {
+  background: none repeat scroll 0 0 #EFEFEF;
+  border: 1px solid #CCCCCC;
+  width: 400px;
+  height: 150px;
+  margin: 15px 0;
+  padding: 10px;
+  font-size: 12px;
+  box-shadow: inset 0 0 7px 0 #beccd5;
+  -webkit-box-shadow: inset 0 0 7px 0 #beccd5; }
+
+#admin_content textarea:focus {
+  background: none repeat scroll 0 0 #fff;
+  border: 1px solid #0099ff; }
+
+.fake_link {
+  text-decoration: underline; }
+
+h1 {
+  font-size: 30px;
+  background-color: #33628C;
+  color: #fff;
+  padding: 5px 0;
+  margin: 0 0 20px; }
+  h1 a, h1 a:visited {
+    background: #fff;
+    padding: 0 14px;
+    border-radius: 16px;
+    line-height: 33px; }
+
+h1, p {
+  text-align: center; }
+
+#admin_content .big_n_bold {
+  font-size: 20px;
+  font-weight: bold; }
+
+#admin_content input.button,
+#admin_content input[type="button"],
+#admin_content input[type="submit"],
+#admin_content .Title {
+  -moz-border-radius: 4px 4px 4px 4px;
+  background-color: #33628C;
+  border: 1px solid #2E7FC7;
+  color: #FFFFFF;
+  cursor: pointer;
+  margin: 0 auto;
+  padding: 2px;
+  width: 85px; }
+
+#admin_content input.button:hover,
+#admin_content input[type="button"]:hover,
+#admin_content input[type="submit"]:hover,
+#admin_content .Title:hover {
+  background-color: #2B71AF; }
+
+#admin_content textarea {
+  outline: none; }
+
+#admin_content .Dropdown .dropdown {
+  background-color: #FFFFFF;
+  border-bottom: 1px solid #999999;
+  border-top: 1px solid #999999;
+  padding: 5px; }
+
+#admin_content .Choice {
+  background-color: #999999;
+  border-bottom: 2px solid #333333;
+  color: #FFFFFF;
+  cursor: pointer;
+  margin: 0 auto;
+  padding: 2px;
+  width: 68px; }
+
+#admin_content .Choice:hover {
+  background-color: #33628C; }
+
+#admin_content #sortable {
+  list-style-type: none;
+  margin: 0;
+  padding: 0; }
+
+#admin_content #sortable li {
+  -moz-border-radius: 4px 4px 4px 4px;
+  border-radius: 4px 4px 4px 4px;
+  background-color: #EBECED;
+  border: 1px solid #CCCCCC;
+  float: left;
+  margin: 0 2.3px 4.5px;
+  overflow: hidden;
+  padding: 2px 1px;
+  text-align: center;
+  width: 189px; }
+
+#admin_content #sortable li:hover {
+  border: 1px solid #74A8CF;
+  background-color: #333;
+  cursor: move;
+  color: #fff; }
+
+#admin_content #sortable li:hover a:link,
+#admin_content #sortable li:hover a:visited,
+#admin_content #sortable li:hover .fake_link {
+  color: #b9d8f4; }
+
+#admin_content #sortable li:hover a:hover,
+#admin_content #sortable li:hover .fake_link:hover {
+  color: #0dc0ed; }
+
+#admin_content li.ui-state-default img {
+  height: 120px; }
+
+#admin_content .AjaxFlag {
+  margin: 2px 0; }
+
+#admin_content .AjaxFlag input[type="text"] {
+  background-color: #FFFFFF;
+  border: 1px solid #CFCFCF;
+  padding: 3px; }
+
+#admin_content .PhotoStatusSelect {
+  margin: 0 0 0 2px; }
+
+#admin_content .PhotoQualityStatusSelect {
+  margin: 0 2px 0 0; }
+
+/*SPECIFICALLY FOR THE SHOW PHOTO PAGE*/
+#admin_content #photoview {
+  margin: 6px 0 0 6px; }
+
+#admin_content #photoview img {
+  width: 460px; }
+
+#admin_content #photoview_properties {
+  background-color: #EBECED;
+  border: 1px solid #CCCCCC;
+  margin: 6px 6px 6px 0;
+  padding: 6px;
+  width: 456px; }
+
+#admin_content #photoview_properties .AjaxFlag textarea.sm_textarea {
+  height: 50px;
+  margin: 0;
+  vertical-align: middle;
+  width: 220px; }
+
+#admin_content #photoview_properties .AjaxFlag textarea.md_textarea {
+  height: 100px;
+  margin: 0 0 15px; }
+/*
+
+
+*/
+/* ADMIN PHOTO GALLERY
+---------------------------------------------------
+:: Includes styles only used in the Admin Photo Gallery page
+--------------------------------------------------- */
+#admin_content .photo_options {
+  margin: 3px 0;
+  padding: 0 3px; }
+  #admin_content .photo_options .photo_option {
+    float: left;
+    margin: 0 5px 0 0; }
+#admin_content h1, #admin_content p {
+  text-align: left; }
+#admin_content div {
+  margin: 0;
+  text-align: left;
+  border-radius: 0; }
+#admin_content input, #admin_content input[type=submit] {
+  background-color: #fff;
+  border: none;
+  padding: 0;
+  width: auto; }
+#admin_content .btn, #admin_content .select, #admin_content input[type=submit], #admin_content input[type=button] {
+  display: inline-block;
+  width: auto;
+  padding: 2px 8px;
+  color: #fff;
+  font-size: 11px;
+  font-weight: bold;
+  line-height: 18px;
+  background-color: #2B71AF;
+  border: none !important;
+  border-radius: 5px; }
+  #admin_content .btn:hover, #admin_content .select:hover, #admin_content input[type=submit]:hover, #admin_content input[type=button]:hover {
+    cursor: pointer;
+    background-color: #1c5b93; }
+#admin_content .btn_red {
+  background-color: #e71818; }
+#admin_content .btn_red:hover {
+  background-color: #c51313; }
+#admin_content .btn_green {
+  background-color: #0b9008; }
+#admin_content .btn_green:hover {
+  background-color: #0b9008; }
+
+.form_fields, .actions {
+  padding: 10px 0; }
+  .form_fields li, .actions li {
+    float: left;
+    margin: 0 10px 0 0; }
+  .form_fields label, .actions label {
+    display: block;
+    margin: 0 0 5px;
+    font-weight: bold;
+    font-size: 12px;
+    text-align: left;
+    line-height: 14px; }
+  .form_fields select, .actions select {
+    display: block;
+    width: 100px;
+    background-color: #fff; }
+
+/* ADMIN GALLERY TOOLBOX
+---------------------------------------------------
+:: Includes styles only used in the Admin Photo Gallery Toolbox
+--------------------------------------------------- */
+div#gallery_toolbox {
+  position: relative;
+  margin: 0 2px;
+  background-color: #efefef;
+  border: 1px solid #c4c4c4;
+  border-radius: 5px; }
+  div#gallery_toolbox h1, div#gallery_toolbox h2 {
+    margin: 0 0 10px;
+    padding: 0;
+    color: #000;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: transparent; }
+  div#gallery_toolbox h2 {
+    font-size: 16px; }
+    div#gallery_toolbox h2 span {
+      font-size: 14px;
+      font-weight: normal; }
+  div#gallery_toolbox form {
+    padding: 0; }
+  div#gallery_toolbox strong, div#gallery_toolbox strong input {
+    font-weight: bold; }
+  div#gallery_toolbox .custom_dropdown {
+    display: inline-block;
+    position: relative;
+    margin: 0;
+    font-size: 12px;
+    text-transform: capitalize; }
+    div#gallery_toolbox .custom_dropdown .select {
+      width: auto;
+      padding: 0 20px;
+      border: none;
+      border-radius: 5px; }
+    div#gallery_toolbox .custom_dropdown .Opened .select {
+      border-bottom-right-radius: 0;
+      border-bottom-left-radius: 0; }
+    div#gallery_toolbox .custom_dropdown .dropdown {
+      position: absolute;
+      left: 0;
+      right: 0;
+      padding: 0 0 5px;
+      background-color: #999;
+      border-bottom-right-radius: 5px;
+      border-bottom-left-radius: 5px; }
+      div#gallery_toolbox .custom_dropdown .dropdown .Choice {
+        width: auto;
+        border: none; }
+  div#gallery_toolbox .custom_checkbox {
+    display: inline-block; }
+  div#gallery_toolbox .custom_textbox label {
+    display: block;
+    font-weight: bold; }
+  div#gallery_toolbox .custom_textbox textarea {
+    display: block;
+    width: 350px;
+    height: 105px;
+    margin: 0 0 5px;
+    padding: 5px 10px;
+    background-color: #fff;
+    border-radius: 5px; }
+  div#gallery_toolbox .custom_textbox input {
+    float: right; }
+  div#gallery_toolbox #gallery_toolbox_main {
+    padding: 10px; }
+  div#gallery_toolbox #main_tools {
+    float: left;
+    margin: 0 15px 0 0; }
+    div#gallery_toolbox #main_tools .actions {
+      position: absolute;
+      bottom: -40px;
+      left: 0;
+      padding: 0; }
+
+div#bulk_panel {
+  float: left;
+  padding: 10px;
+  background-color: #cecece;
+  border: 1px solid #c1c1c1;
+  border-radius: 5px;
+  box-shadow: inset 0 0 5px #c1c1c1; }
+  div#bulk_panel .form_fields, div#bulk_panel .actions {
+    border-top: 1px solid #fff; }
+  div#bulk_panel .form_fields input[type=submit], div#bulk_panel .form_fields .btn {
+    margin-top: 14px; }
+  div#bulk_panel .actions li {
+    float: right; }
+  div#bulk_panel .SelectedInputData {
+    width: 252px;
+    overflow: hidden; }
+    div#bulk_panel .SelectedInputData p {
+      padding: 0 5px !important;
+      font-size: 12px !important; }
+    div#bulk_panel .SelectedInputData span {
+      float: none;
+      text-align: left; }
+
+#sortable div, #sortable p {
+  text-align: center; }
+#sortable .bulk_checkbox {
+  margin: 3px 10px;
+  text-align: left; }
+  #sortable .bulk_checkbox label {
+    display: none; }
+
+#gallery_footer, #gallery_footer * {
+  text-align: center !important; }
+
+.admin_tips {
+  margin: 0 0 15px;
+  padding: 10px;
+  background-color: #ffffdb;
+  border-bottom: 1px solid #c4c4c4;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  box-shadow: inset 0 -2px 5px #d9d9af; }
+
+.actions li {
+  float: left;
+  margin: 0 10px 0 0; }
+
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table; }
+
+.clearfix:after {
+  clear: both; }
+
+.clearfix {
+  *zoom: 1; }

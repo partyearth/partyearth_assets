@@ -1,0 +1,1 @@
+CKEDITOR.plugins.setLang("placeholder","vi",{placeholder:{title:"Thu\u1ed9c t\u00ednh \u0111\u1eb7t ch\u1ed7",toolbar:"T\u1ea1o \u0111\u1eb7t ch\u1ed7",text:"V\u0103n b\u1ea3n \u0111\u1eb7t ch\u1ed7",edit:"Edit Placeholder",textMissing:"The placeholder must contain text."}});

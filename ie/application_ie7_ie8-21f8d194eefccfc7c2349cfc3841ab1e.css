@@ -1,0 +1,16 @@
+.headline {
+  /* FOR IE7 */
+  *line-height: 36px; }
+
+/*FOOTER RELATED*/
+#footer_content .pod .subtitle {
+  font-size: 11pt;
+  line-height: 1.05em; }
+
+#footer_content {
+  *position: static;
+  *margin: 10px 0 0 -3px; }
+
+/* Newsletter Popup */
+.ui-widget-overlay {
+  width: 100% !important; }

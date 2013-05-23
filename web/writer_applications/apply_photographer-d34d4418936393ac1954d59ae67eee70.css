@@ -1,0 +1,50 @@
+/*
+
+
+*/
+/*BEGIN PAGE PROPERTIES*/
+/*--------------------------------------------------*/
+.get_paid_to_party_content.photographer_apply_page .left_column_wrapper {
+  width: 735px; }
+
+.get_paid_to_party_content.photographer_apply_page #left_container {
+  background: url(/assets/writer_applications/left_column_bg_repeat-f5897254fa6ff061316cf86b6a3676b9.png) 0 0 repeat-y;
+  margin: 0 0 0 -22px;
+  min-height: 341px;
+  padding: 52px 20px 0 95px;
+  position: relative;
+  width: 641px;
+  font-size: 14px;
+  line-height: 17px; }
+
+.get_paid_to_party_content.photographer_apply_page .left_column_content {
+  position: relative; }
+
+.get_paid_to_party_content.photographer_apply_page .page_title {
+  height: 26px;
+  left: 75px;
+  position: absolute;
+  top: 15px;
+  width: 211px; }
+
+.get_paid_to_party_content.photographer_apply_page .apply_bullets {
+  padding: 0 0 0 154px; }
+
+.get_paid_to_party_content.photographer_apply_page .apply_bullets ol {
+  list-style-type: decimal;
+  margin: 10px 0 0;
+  padding: 0 0 0 20px; }
+
+.get_paid_to_party_content.photographer_apply_page .apply_bullets ol li {
+  margin: 0 0 6px; }
+
+.get_paid_to_party_content.photographer_apply_page .camera {
+  height: 317px;
+  left: -179px;
+  position: absolute;
+  top: 38px;
+  width: 282px;
+  z-index: 3; }
+.floater.fixed {
+  position: fixed;
+  top: 0; }

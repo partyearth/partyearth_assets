@@ -1,0 +1,45 @@
+/*
+Copyright (c) 2003-2012, CKSource - Frederico Knabben. All rights reserved.
+For licensing, see LICENSE.html or http://ckeditor.com/license
+*/
+
+
+body {
+    color: #222;
+    font-size: 12px;
+    font-family: Arial, Verdana, sans-serif;
+    background-color: #fff;
+}
+
+ol, ul, dl {
+	/* IE7: reset rtl list margin. (#7334) */
+	*margin-right: 0px;
+	/* preserved spaces for list items with text direction other than the list. (#6249,#8049)*/
+    padding: 0 40px;
+}
+
+.article_video_left,
+.article_video_right,
+.article_video_full,
+.article_photo_left,
+.article_photo_right {
+    display: block;
+    border: none;
+}
+
+.article_video_left,
+.article_photo_left {
+    float: left;
+    margin: 0 20px 10px 0;
+}
+
+.article_video_right,
+.article_photo_right {
+    float: right;
+    margin: 0 0 10px 20px;
+}
+
+.article_video_full {margin: 0 0 10px;}
+
+.article_photo_left,
+.article_photo_right {margin-top: 10px;}
