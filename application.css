@@ -473,6 +473,190 @@ ul.ui-autocomplete .ui-autocomplete-category.first_category {
 .ui-autocomplete.ui-menu .ui-menu-item.text_link a.ui-state-active {
   background: #0099ff;
   font-weight: normal; }
+.subscription_dialog {
+  background-color: #f4f4f4 !important;
+  border: 3px solid #0099ff !important;
+  border-radius: 4px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow: hidden !important; }
+  .subscription_dialog .ui-dialog-titlebar {
+    margin-top: -18px !important;
+    padding: 0 !important; }
+    .subscription_dialog .ui-dialog-titlebar .ui-dialog-titlebar-close {
+      position: absolute;
+      right: 0;
+      top: 27px;
+      z-index: 100000; }
+    .subscription_dialog .ui-dialog-titlebar .ui-icon {
+      background-position: -147px -151px !important; }
+  .subscription_dialog .ui-dialog-title {
+    background-color: #f4f4f4 !important;
+    padding: 0 !important; }
+    .subscription_dialog .ui-dialog-title span {
+      display: none !important; }
+  .subscription_dialog .ui-widget-content {
+    background-color: #f4f4f4 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    min-height: 120px !important;
+    max-height: 535px !important;
+    min-width: 400px !important;
+    max-width: 705px !important; }
+    .subscription_dialog .ui-widget-content .cont_bg {
+      background-image: url(/assets/subscriptions/pe_newsletter_signup_sample.png) !important;
+      background-repeat: no-repeat !important;
+      background-position: bottom right !important; }
+    .subscription_dialog .ui-widget-content .headline {
+      background-image: url(/assets/subscriptions/pe_newsletter_signup_header.png);
+      background-repeat: no-repeat;
+      height: 103px;
+      width: 675px; }
+    .subscription_dialog .ui-widget-content p {
+      color: #464646;
+      font-family: Arial, sans-serif;
+      font-size: 17px;
+      font-weight: normal;
+      line-height: 20px;
+      padding: 10px 0 12px 0; }
+    .subscription_dialog .ui-widget-content .multi_select {
+      border-bottom: 1px dashed #adc0c9;
+      margin-bottom: 12px;
+      width: 382px; }
+      .subscription_dialog .ui-widget-content .multi_select .SubscriptionList {
+        border: 1px solid #cdd9df;
+        color: #464646;
+        font-size: 14px;
+        margin-bottom: 12px;
+        padding: 5px;
+        width: 300px; }
+    .subscription_dialog .ui-widget-content .btn_fb {
+      background: #627eb7;
+      background: -moz-linear-gradient(top, #627eb7 0%, #384f79 100%);
+      background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #627eb7), color-stop(100%, #384f79));
+      background: -webkit-linear-gradient(top, #627eb7 0%, #384f79 100%);
+      background: -o-linear-gradient(top, #627eb7 0%, #384f79 100%);
+      background: -ms-linear-gradient(top, #627eb7 0%, #384f79 100%);
+      background: linear-gradient(to bottom, #627eb7 0%, #384f79 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#627eb7', endColorstr='#384f79',GradientType=0 );
+      cursor: pointer;
+      height: 49px;
+      width: 300px;
+      -webkit-border-radius: 3px;
+      -moz-border-radius: 3px;
+      border-radius: 3px;
+      -webkit-box-shadow: 0 1px 3px #adadad;
+      -moz-box-shadow: 0 1px 3px #adadad;
+      box-shadow: 0 1px 3px #adadad; }
+      .subscription_dialog .ui-widget-content .btn_fb:hover {
+        background: #6c87be;
+        background: -moz-linear-gradient(top, #6c87be 0%, #49618d 100%);
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #6c87be), color-stop(100%, #49618d));
+        background: -webkit-linear-gradient(top, #6c87be 0%, #49618d 100%);
+        background: -o-linear-gradient(top, #6c87be 0%, #49618d 100%);
+        background: -ms-linear-gradient(top, #6c87be 0%, #49618d 100%);
+        background: linear-gradient(to bottom, #6c87be 0%, #49618d 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#6c87be', endColorstr='#49618d',GradientType=0 );
+        -webkit-box-shadow: 0 2px 6px #999999;
+        -moz-box-shadow: 0 2px 6px #999999;
+        box-shadow: 0 2px 6px #999999; }
+      .subscription_dialog .ui-widget-content .btn_fb .logo {
+        background-image: url(/assets/subscriptions/pe_newsletter_signup_f.png);
+        background-repeat: no-repeat;
+        height: 40px;
+        width: 36px;
+        margin: 4px 0 0 18px; }
+      .subscription_dialog .ui-widget-content .btn_fb span {
+        color: #FFF;
+        font-size: 18px;
+        font-family: Arial, sans-serif;
+        margin: 15px 0 0 25px;
+        text-shadow: -1px -1px #354667; }
+    .subscription_dialog .ui-widget-content .email {
+      margin-top: -4px; }
+      .subscription_dialog .ui-widget-content .email input {
+        border: 1px solid #cdd9df;
+        color: #464646;
+        font-size: 14px;
+        padding: 5px;
+        width: 290px; }
+      .subscription_dialog .ui-widget-content .email .inline-errors {
+        color: red;
+        display: block;
+        font-size: 12px;
+        position: absolute;
+        bottom: 36px;
+        left: 15px; }
+      .subscription_dialog .ui-widget-content .email img {
+        display: none; }
+    .subscription_dialog .ui-widget-content .footer {
+      border-top: 1px dashed #adc0c9;
+      font-size: 11px;
+      margin-top: 12px;
+      padding-top: 12px;
+      width: 440px; }
+      .subscription_dialog .ui-widget-content .footer a {
+        color: #acacac;
+        text-decoration: underline; }
+        .subscription_dialog .ui-widget-content .footer a:hover {
+          color: #0099ff; }
+      .subscription_dialog .ui-widget-content .footer .terms {
+        margin-top: 18px; }
+        .subscription_dialog .ui-widget-content .footer .terms a {
+          margin-right: 20px; }
+      .subscription_dialog .ui-widget-content .footer .btn_blue {
+        cursor: pointer;
+        font-weight: bold;
+        margin-left: 85px;
+        text-transform: uppercase;
+        width: 90px;
+        background-color: #0099FF;
+        border-bottom: 1px solid #0067b1;
+        color: #FFF;
+        display: block;
+        font-size: 13px;
+        padding: 8px 10px 6px 10px;
+        position: relative;
+        text-align: center;
+        text-decoration: none;
+        text-shadow: -1px -1px #0080e6;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+        -webkit-box-shadow: 0px 1px 2px rgba(50, 50, 50, 0.5);
+        -moz-box-shadow: 0px 1px 2px rgba(50, 50, 50, 0.5);
+        box-shadow: 0px 1px 2px rgba(50, 50, 50, 0.5);
+        z-index: 1000; }
+        .subscription_dialog .ui-widget-content .footer .btn_blue:hover {
+          background-color: #2baaff; }
+
+.subscription_confirmation {
+  text-align: center;
+  width: 400px; }
+  .subscription_confirmation p {
+    color: #464646;
+    font-family: Arial, sans-serif;
+    font-size: 14px !important;
+    font-weight: normal;
+    line-height: 20px;
+    padding: 15px !important;
+    text-align: center; }
+  .subscription_confirmation .heading {
+    color: #0099FF;
+    font-size: 18px;
+    font-weight: bold;
+    padding-top: 15px; }
+  .subscription_confirmation .close {
+    padding-bottom: 15px;
+    color: #0099FF;
+    cursor: pointer;
+    font-size: 13px;
+    text-decoration: underline; }
+    .subscription_confirmation .close:hover {
+      color: #464646; }
+/*
+
+*/
 /*BEGIN GENERAL BOTTOM BAR STYLES*/
 .floating_bar_wrapper {
   margin: 0 auto;
@@ -2934,10 +3118,14 @@ input, select, textarea {
 #masthead {
   margin: 0 0 12px;
   padding: 11px 15px 0;
-  background: -webkit-gradient(linear, 0 0, 0 56%, from(#e0e5e8), to(white));
-  background: -moz-linear-gradient(top, #e0e5e8, white);
-  -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=#e0e5e8, endColorStr=#ffffff);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=#e0e5e8, endColorStr=#ffffff);
+  background: #e0e5e8;
+  background: -moz-linear-gradient(top, #e0e5e8 0%, white 44%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #e0e5e8), color-stop(44%, white));
+  background: -webkit-linear-gradient(top, #e0e5e8 0%, white 44%);
+  background: -o-linear-gradient(top, #e0e5e8 0%, white 44%);
+  background: -ms-linear-gradient(top, #e0e5e8 0%, white 44%);
+  background: linear-gradient(to bottom, #e0e5e8 0%, white 44%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e0e5e8', endColorstr='#ffffff',GradientType=0 );
   border-radius: 0 0 3px 3px;
   /* Amsterdam Masthead
    ------------------------------------------------------------*/ }
