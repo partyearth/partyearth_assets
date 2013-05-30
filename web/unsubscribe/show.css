@@ -498,7 +498,7 @@ strong {
     text-decoration: underline; }
     .unsubscribe .unsub_link:hover {
       color: #597686; }
-  .unsubscribe .blue_btn {
+  .unsubscribe .btn_blue {
     width: 240px; }
   .unsubscribe .confirm_cont {
     color: #252525;
