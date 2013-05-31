@@ -20,7 +20,6 @@
     background: #f0f0f0;
     height: auto;
     padding: 0;
-    width: 320px;
     /* Mobile Confirmation */
     /* Logo */
     /* Multi-Select Button */
@@ -32,7 +31,7 @@
       text-align: center;
       height: 480px;
       margin: 0 auto;
-      width: 350px; }
+      width: 290px; }
       .mobile_sub .subscription_confirmation .heading {
         font-family: "Helvetica Neue Light", Arial, sans-serif;
         font-size: 40px;
@@ -68,28 +67,29 @@
           text-decoration: none !important; }
     .mobile_sub .logo_mobile {
       border-bottom: 1px dashed #adc0c9;
-      height: 55px;
-      width: 320px; }
+      height: 50px;
+      width: 290px; }
       .mobile_sub .logo_mobile .logo {
         background: url(/assets/subscriptions/pe_newsletter_logo_290.jpg) no-repeat top left;
         background-size: 100%;
-        height: 53px;
-        width: 200px; }
+        height: 45px;
+        width: 180px; }
     .mobile_sub .padding {
       padding: 15px !important; }
     .mobile_sub .headline {
       background: url(/assets/subscriptions/pe_newsletter_stay_450.png) no-repeat top left;
       background-size: 100%;
       height: 75px;
-      margin-top: 15px;
-      padding-bottom: 15px;
-      width: 320px; }
+      margin-top: 10px;
+      padding-bottom: 0;
+      width: 290px; }
     .mobile_sub p {
       color: #464646;
       font-family: Arimo, Arial, sans-serif;
-      font-size: 20px;
+      font-size: 15px;
       font-weight: normal;
-      line-height: 27px;
+      line-height: 20px;
+      margin: 0;
       padding: 0; }
     .mobile_sub .margin_left {
       margin: 0;
@@ -98,7 +98,7 @@
       border-bottom: 1px dashed #adc0c9;
       margin: 15px 0;
       padding-bottom: 15px;
-      width: 320px; }
+      width: 290px; }
       .mobile_sub .multi_select select {
         border: 1px solid #cdd9df;
         border-radius: 4px !important;
@@ -119,8 +119,8 @@
       filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#627eb7', endColorstr='#384f79',GradientType=0 );
       cursor: pointer;
       height: 49px;
-      width: 320px;
-      margin-bottom: 15px;
+      width: 290px;
+      margin-bottom: 10px;
       -webkit-border-radius: 3px;
       -moz-border-radius: 3px;
       border-radius: 3px;
@@ -148,7 +148,7 @@
         margin: 4px 0 0 18px; }
       .mobile_sub .btn_fb span {
         color: #FFF;
-        font-size: 20px;
+        font-size: 18px;
         font-family: Arial, sans-serif;
         margin: 15px 0 0 25px;
         text-shadow: -1px -1px #354667; }
@@ -167,7 +167,7 @@
         font-family: "Helvetica Neue Light", Arial, sans-serif;
         padding: 5px;
         margin: 0;
-        width: 310px; }
+        width: 280px; }
       .mobile_sub .email .inline-errors {
         bottom: -50px;
         color: red;
@@ -179,10 +179,10 @@
         display: none; }
     .mobile_sub .footer {
       border-top: 1px dashed #adc0c9;
-      font-size: 12px;
+      font-size: 11px;
       margin-top: 15px;
       padding-top: 15px;
-      width: 320px; }
+      width: 290px; }
       .mobile_sub .footer a {
         color: #acacac;
         text-decoration: underline; }
@@ -191,17 +191,17 @@
       .mobile_sub .footer .terms {
         margin-top: 21px; }
         .mobile_sub .footer .terms a:first-child {
-          margin-right: 20px; }
+          margin-right: 10px; }
       .mobile_sub .footer .btn_blue {
         background-color: #0099FF;
         color: #FFFFFF !important;
         cursor: pointer;
-        font-size: 22px;
+        font-size: 18px;
         font-weight: bold;
         text-align: center;
         text-transform: uppercase;
-        margin-left: 27px;
-        padding: 15px;
+        margin-left: 40px;
+        padding: 12px;
         -webkit-border-radius: 4px;
         -moz-border-radius: 4px;
         border-radius: 4px; }
@@ -420,7 +420,7 @@
           background-color: #2baaff; }
         .mobile_sub .footer .btn_blue:hover {
           background-color: #2baaff; } }
-/* #### Mobile Phones Portrait - 720px Wide #### */
+/* #### Mobile Phones Portrait - 481px - 720px #### */
 @media screen and (min-device-width: 481px) and (max-device-width: 720px) and (orientation: portrait) {
   html {
     -webkit-text-size-adjust: none; }
@@ -631,7 +631,7 @@
           background-color: #2baaff; }
         .mobile_sub .footer .btn_blue:hover {
           background-color: #2baaff; } }
-/* #### Mobile Phones Landscape - 1023px Wide #### */
+/* #### Mobile Phones Landscape - 1023px #### */
 @media screen and (max-device-width: 1023px) and (orientation: landscape) {
   html {
     -webkit-text-size-adjust: none; }
@@ -844,7 +844,7 @@
           background-color: #2baaff; }
         .mobile_sub .footer .btn_blue:hover {
           background-color: #2baaff; } }
-/* #### Mobile Phones Landscape - 1024px - 1280px Wide #### */
+/* #### Mobile Phones Landscape - 1024px - 1280px #### */
 @media screen and (min-device-width: 1024px) and (max-device-width: 1280px) and (orientation: landscape) {
   html {
     -webkit-text-size-adjust: none; }
