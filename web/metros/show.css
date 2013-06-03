@@ -318,14 +318,6 @@
         background-position: -222px -36px; }
     #right_sidebar .hday_alert .hday_count .num_cont.is_today .num {
       background-position: -243px -36px; }
-
-.luft_ad {
-  display: block;
-  width: 244px;
-  height: 121px;
-  margin: 0 0 8px;
-  text-indent: -9999px;
-  background-image: url(/assets/ads/lufthansa_ad.png); }
 .day_changer_head {
   width: 715px;
   /* Fix for linux */

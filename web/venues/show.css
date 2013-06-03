@@ -188,6 +188,125 @@
     background-position: 0 -89px; }
   #ratings-help .stars.row5 {
     background-position: 0 -103px; }
+.spinnable {
+  background-color: #f9f9f9;
+  padding: 15px; }
+
+.close {
+  color: #CCC;
+  font-size: 12px;
+  position: absolute;
+  top: 0;
+  right: 5px; }
+  .close:hover {
+    color: #adc0c9;
+    cursor: pointer; }
+
+.error_msg {
+  color: red;
+  font-size: 11px; }
+
+.error_msg_block {
+  display: block;
+  color: red;
+  font-size: 11px;
+  padding-bottom: 5px; }
+/*
+
+*/
+/* Add to list button & Dialog Container */
+.add_to_list {
+  padding: 0; }
+  .add_to_list .add_button {
+    color: #FFF;
+    margin: 0;
+    padding: 5px; }
+    .add_to_list .add_button .plus {
+      font-weight: bold;
+      text-shadow: -1px -1px #0079c9; }
+  .add_to_list .dialog_cont {
+    display: none;
+    background-color: #f9f9f9;
+    border: 3px solid #0099FF;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    position: absolute;
+    z-index: 10000; }
+    .add_to_list .dialog_cont:after, .add_to_list .dialog_cont:before {
+      border: solid transparent;
+      content: " ";
+      height: 0;
+      width: 0;
+      position: absolute;
+      pointer-events: none; }
+    .add_to_list .dialog_cont:after {
+      border-color: rgba(255, 255, 255, 0);
+      border-width: 8px; }
+    .add_to_list .dialog_cont:before {
+      border-color: rgba(0, 153, 255, 0);
+      border-width: 12px; }
+
+/* Wide View */
+.outside .add_to_list {
+  position: absolute;
+  left: -70px;
+  top: 278px !important;
+  width: 48px; }
+  .outside .add_to_list .add_button {
+    font-size: 9px;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 11px; }
+    .outside .add_to_list .add_button span {
+      display: block; }
+    .outside .add_to_list .add_button .plus {
+      font-size: 30px;
+      padding: 5px 0; }
+  .outside .add_to_list .dialog_cont {
+    left: 59px; }
+    .outside .add_to_list .dialog_cont:after, .outside .add_to_list .dialog_cont:before {
+      right: 100%; }
+    .outside .add_to_list .dialog_cont:after {
+      border-right-color: #f9f9f9;
+      top: 23px;
+      margin-top: -5px; }
+    .outside .add_to_list .dialog_cont:before {
+      border-right-color: #0099FF;
+      top: 25px;
+      margin-top: -11px; }
+
+/* Narrow View */
+.inside .btn_cont {
+  border-top: 1px dashed #adc0c9;
+  height: 36px;
+  padding: 4px 0; }
+.inside .add_to_list {
+  margin-top: 5px;
+  position: relative;
+  left: 0;
+  top: 0;
+  height: 22px;
+  width: 343px; }
+  .inside .add_to_list .add_button {
+    font-size: 12px;
+    text-align: left; }
+    .inside .add_to_list .add_button .plus {
+      font-size: 18px;
+      float: left;
+      padding-right: 5px; }
+  .inside .add_to_list .dialog_cont {
+    top: 6px; }
+    .inside .add_to_list .dialog_cont:after, .inside .add_to_list .dialog_cont:before {
+      bottom: 100%; }
+    .inside .add_to_list .dialog_cont:after {
+      border-bottom-color: #f9f9f9;
+      left: 26px;
+      margin-left: -8px; }
+    .inside .add_to_list .dialog_cont:before {
+      border-bottom-color: #0099FF;
+      left: 25px;
+      margin-left: -11px; }
 /*
  * jQuery Nivo Slider v2.1
  * http://nivo.dev7studios.com
@@ -2728,6 +2847,7 @@
 
 
 
+
 */
 #object_page_info .user_review_summary {
   clear: left;
@@ -3041,7 +3161,7 @@
   font-size: 12px; }
 #comments #gigya_header {
   border-bottom: 1px dashed #adc0c9;
-  /* Need to style Gigya review button seperate from our button because of limitations in Gigya's HTML structure */ }
+  /* Need to style Gigya review button separate from our button because of limitations in Gigya's HTML structure */ }
   #comments #gigya_header .large_gray_btn {
     float: right;
     padding: 0 12px; }

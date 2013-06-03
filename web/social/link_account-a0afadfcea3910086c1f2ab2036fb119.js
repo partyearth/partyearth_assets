@@ -1,1 +1,0 @@
-$(document).ready(function(){0<$("#LinkAccountSuccessButton").length&&(0<window.parent.length?$("#LinkAccountSuccessButton").click(function(){window.parent.location.reload(!0)}):$("#LinkAccountSuccessButton").click(function(){window.location.reload(!0)}))});

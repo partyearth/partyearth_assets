@@ -1790,3 +1790,5 @@ div.datepicker {
   font-size: 19px; }
 .day_changer_cont .item .blue_flag {
   margin-right: 44px; }
+.day_changer_cont .user_review_summary .ellipsis {
+  position: relative; }

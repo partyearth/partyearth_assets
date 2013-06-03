@@ -1,1 +1,0 @@
-CKEDITOR.plugins.setLang("devtools","vi",{devTools:{title:"Th\u00f4ng tin th\u00e0nh ph",dialogName:"T\u00ean h\u1ed9p tho",tabName:"T\u00ean th",elementId:"M\u00e3 th\u00e0nh ph",elementType:"Lo\u1ea1i th\u00e0nh ph"}});

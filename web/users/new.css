@@ -396,9 +396,92 @@ div.actions fieldset, .store_action_btns fieldset {
     background-position: -274px -78px; }
   #social_login .yahoo:hover:hover {
     background-position: -300px -78px; }
+.spinnable {
+  background-color: #f9f9f9;
+  padding: 15px; }
+
+.close {
+  color: #CCC;
+  font-size: 12px;
+  position: absolute;
+  top: 0;
+  right: 5px; }
+  .close:hover {
+    color: #adc0c9;
+    cursor: pointer; }
+
+.error_msg {
+  color: red;
+  font-size: 11px; }
+
+.error_msg_block {
+  display: block;
+  color: red;
+  font-size: 11px;
+  padding-bottom: 5px; }
 /*
 
 
+
 */
-p.or {
-  top: 170px; }
+.terms {
+  margin-top: -5px;
+  color: #c5c5c5;
+  font-size: 11px;
+  margin-left: 34px;
+  height: 15px; }
+  .terms a {
+    color: #7d7d7d;
+    text-decoration: underline; }
+    .terms a:hover {
+      color: #0099ff;
+      text-decoration: none; }
+
+.terms_submit {
+  display: block;
+  border-top: 1px dashed #CCC;
+  height: 40px;
+  padding-top: 12px; }
+  .terms_submit .terms {
+    font-size: 10px;
+    padding-top: 0 !important;
+    line-height: 15px;
+    width: 65%; }
+  .terms_submit .submit {
+    width: 96px; }
+    .terms_submit .submit .actions {
+      float: right;
+      margin: 0;
+      padding: 0;
+      width: 96px; }
+      .terms_submit .submit .actions button {
+        margin: 0; }
+
+.not_twitter .login_box .terms {
+  display: none; }
+
+.twitter .terms_submit {
+  border-top: none; }
+  .twitter .terms_submit .terms {
+    display: none; }
+
+#RegPopupWrapper #additional_information p.or {
+  background: url(/assets/social_login/or.png) no-repeat;
+  left: 223px;
+  top: 70px;
+  height: 49px;
+  width: 49px; }
+
+#login_area {
+  background-color: #f9f9f9;
+  padding: 15px;
+  width: 600px; }
+  #login_area h1 {
+    background-color: #f9f9f9;
+    margin-bottom: 0px;
+    padding-bottom: 10px;
+    text-align: left; }
+  #login_area ol {
+    padding: 0 0 0 25px; }
+  #login_area #user_subscribe_input label {
+    width: 260px; }

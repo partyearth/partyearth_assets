@@ -1,0 +1,18 @@
+/* Reviews Page Overview */
+.reviews_empty {
+  color: #375363;
+  padding: 20px 0;
+  text-align: center; }
+  .reviews_empty p {
+    font-size: 12px;
+    line-height: 16px; }
+  .reviews_empty .search_cont {
+    margin: 0 auto;
+    width: 440px; }
+    .reviews_empty .search_cont .search {
+      border: 1px solid #cfd9de;
+      border-radius: 3px;
+      padding: 6px;
+      width: 330px; }
+    .reviews_empty .search_cont .btn_blue {
+      width: 80px; }

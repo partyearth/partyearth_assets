@@ -1,1 +1,0 @@
-CKEDITOR.plugins.setLang("uicolor","pl",{uicolor:{title:"Wyb\u00f3r koloru interfejsu",preview:"Podgl\u0105d na \u017cywo",config:"Wklej poni\u017cszy \u0142a\u0144cuch znak\u00f3w do pliku config.js:",predefined:"Predefiniowane zestawy kolor\u00f3w"}});

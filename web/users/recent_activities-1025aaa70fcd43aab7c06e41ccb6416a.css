@@ -1,0 +1,119 @@
+/* Recent Activities Overview */
+.activities_empty {
+  color: #375363;
+  padding: 20px 0;
+  text-align: center; }
+  .activities_empty p {
+    font-size: 12px;
+    line-height: 16px; }
+
+.recent_activities {
+  border-bottom: 1px solid #adc0c9;
+  height: 237px;
+  -webkit-column-count: 2;
+  -moz-column-count: 2;
+  column-count: 2;
+  -webkit-column-gap: 10px;
+  -moz-column-gap: 10px;
+  column-gap: 10px; }
+  .recent_activities li {
+    border-bottom: 1px dashed #adc0c9;
+    height: 63px;
+    padding-bottom: 9px;
+    margin-bottom: 9px;
+    width: 270px; }
+    .recent_activities li:nth-child(3) {
+      border: none; }
+    .recent_activities li:last-child {
+      border: none; }
+    .recent_activities li .activity_cont {
+      width: 270px; }
+      .recent_activities li .activity_cont .thumbnail {
+        width: 63px;
+        height: 63px; }
+      .recent_activities li .activity_cont .info {
+        height: 53px;
+        text-align: left;
+        padding-left: 10px;
+        width: 185px; }
+        .recent_activities li .activity_cont .info .activity {
+          color: #0099FF;
+          font-size: 10px;
+          line-height: 100%;
+          text-transform: uppercase; }
+        .recent_activities li .activity_cont .info .name {
+          font-size: 12px;
+          font-weight: bold;
+          padding: 2px 0 1px 0; }
+          .recent_activities li .activity_cont .info .name a {
+            color: #000000; }
+            .recent_activities li .activity_cont .info .name a:hover {
+              text-decoration: none; }
+        .recent_activities li .activity_cont .info .type {
+          padding: 2px 0 0 0;
+          margin: 0; }
+      .recent_activities li .activity_cont .date {
+        color: #8EA8B5;
+        font-family: 'Arial', sans-serif;
+        font-size: 9px;
+        line-height: 100%x;
+        padding-left: 10px;
+        text-align: left;
+        text-transform: uppercase; }
+
+.recent_activities_arrows {
+  height: 22px;
+  margin-top: 7px; }
+  .recent_activities_arrows .btn {
+    border: 1px solid #e3e8ea;
+    border-bottom: 1px solid #cfd1d3;
+    cursor: pointer;
+    height: 22px;
+    width: 45px;
+    background: #fdfdfd;
+    background: -moz-linear-gradient(top, #fdfdfd 0%, #f1f1f1 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fdfdfd), color-stop(100%, #f1f1f1));
+    background: -webkit-linear-gradient(top, #fdfdfd 0%, #f1f1f1 100%);
+    background: -o-linear-gradient(top, #fdfdfd 0%, #f1f1f1 100%);
+    background: -ms-linear-gradient(top, #fdfdfd 0%, #f1f1f1 100%);
+    background: linear-gradient(to bottom, #fdfdfd 0%, #f1f1f1 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fdfdfd', endColorstr='#f1f1f1',GradientType=0 );
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    -webkit-box-shadow: #ebeeef;
+    -moz-box-shadow: #ebeeef;
+    box-shadow: #ebeeef; }
+    .recent_activities_arrows .btn:hover {
+      background: #f1f1f1;
+      background: -moz-linear-gradient(top, #f1f1f1 0%, #fdfdfd 100%);
+      background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f1f1f1), color-stop(100%, #fdfdfd));
+      background: -webkit-linear-gradient(top, #f1f1f1 0%, #fdfdfd 100%);
+      background: -o-linear-gradient(top, #f1f1f1 0%, #fdfdfd 100%);
+      background: -ms-linear-gradient(top, #f1f1f1 0%, #fdfdfd 100%);
+      background: linear-gradient(to bottom, #f1f1f1 0%, #fdfdfd 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f1f1f1', endColorstr='#fdfdfd',GradientType=0 ); }
+    .recent_activities_arrows .btn:first-child {
+      margin-right: 3px; }
+    .recent_activities_arrows .btn .arrow_down {
+      width: 0px;
+      height: 0px;
+      margin: 6px auto 0 auto;
+      border-style: solid;
+      border-width: 0 5px 10px 5px;
+      border-color: transparent transparent #0099ff transparent;
+      -webkit-transform: rotate(360deg);
+      -webkit-box-shadow: 0px 1px 0px 0px #FFFFFF;
+      -moz-box-shadow: 0px 1px 0px 0px #FFFFFF;
+      box-shadow: 0px 1px 0px 0px #FFFFFF; }
+    .recent_activities_arrows .btn .arrow_up {
+      width: 0px;
+      height: 0px;
+      margin: 6px auto 0 auto;
+      border-style: solid;
+      border-width: 10px 5px 0 5px;
+      border-color: #0099ff transparent transparent transparent;
+      -webkit-transform: rotate(360deg);
+      -webkit-box-shadow: 0px -1px 0px 0px #FFFFFF;
+      -moz-box-shadow: 0px -1px 0px 0px #FFFFFF;
+      box-shadow: 0px -1px 0px 0px #FFFFFF; }

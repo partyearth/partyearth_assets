@@ -1933,7 +1933,7 @@ body {
   margin: 0;
   font-size: 13px;
   line-height: 18px;
-  font-family: "Arimo", Arial, san-serif;
+  font-family: "Arimo", Arial, sans-serif;
   background-color: #ebecee;
   background: url(/assets/content_bg/body_bg_repeat.png);
   background-position: 0 -1px; }
@@ -2315,6 +2315,51 @@ button,
   color: #999999;
   font-size: 13px;
   text-decoration: underline; }
+
+/* New Buttons for Lists & Profile */
+.btn_blue {
+  background-color: #0099FF;
+  border-bottom: 1px solid #0067b1;
+  color: #FFF;
+  display: block;
+  font-size: 13px;
+  padding: 6px 10px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: -1px -1px #0080e6;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-box-shadow: 0px 1px 2px rgba(50, 50, 50, 0.5);
+  -moz-box-shadow: 0px 1px 2px rgba(50, 50, 50, 0.5);
+  box-shadow: 0px 1px 2px rgba(50, 50, 50, 0.5);
+  z-index: 1000; }
+  .btn_blue:hover {
+    background-color: #2baaff;
+    cursor: pointer; }
+
+.btn_orange {
+  background-color: #ff9000;
+  border-bottom: 1px solid #d27700;
+  color: #FFF;
+  display: block;
+  font-size: 13px;
+  padding: 6px 10px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: -1px -1px #f17f00;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-box-shadow: 0px 1px 2px rgba(50, 50, 50, 0.5);
+  -moz-box-shadow: 0px 1px 2px rgba(50, 50, 50, 0.5);
+  box-shadow: 0px 1px 2px rgba(50, 50, 50, 0.5);
+  z-index: 1000; }
+  .btn_orange:hover {
+    background-color: #ff9a17;
+    cursor: pointer; }
 
 /* CLOSE BUTTON */
 .close_btn {
@@ -4282,3 +4327,10 @@ formfield ol:before, .formfield ol:after,
     margin: 0 0 0 15px; }
 .missing_dialog .ui-dialog-content .ast {
   color: #09f; }
+
+.spinnable {
+  background-image: url(/assets/content_bg/spinner.gif);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 72px;
+  height: 72px; }

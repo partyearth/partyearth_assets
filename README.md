@@ -1,2 +1,0 @@
-partyearth_assets
-=================

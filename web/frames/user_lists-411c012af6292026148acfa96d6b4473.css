@@ -1,0 +1,222 @@
+.spinnable {
+  background-color: #f9f9f9;
+  padding: 15px; }
+
+.close {
+  color: #CCC;
+  font-size: 12px;
+  position: absolute;
+  top: 0;
+  right: 5px; }
+  .close:hover {
+    color: #adc0c9;
+    cursor: pointer; }
+
+.error_msg {
+  color: red;
+  font-size: 11px; }
+
+.error_msg_block {
+  display: block;
+  color: red;
+  font-size: 11px;
+  padding-bottom: 5px; }
+/*
+ * CSS Styles that are needed by jScrollPane for it to operate correctly.
+ *
+ * Include this stylesheet in your site or copy and paste the styles below into your stylesheet - jScrollPane
+ * may not operate correctly without them.
+ */
+.jspContainer {
+  overflow: hidden;
+  position: relative; }
+
+.jspPane {
+  position: absolute; }
+
+.jspVerticalBar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 16px;
+  height: 100%;
+  /*background: red;*/ }
+
+.jspHorizontalBar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 16px;
+  /*background: red;*/ }
+
+.jspVerticalBar *,
+.jspHorizontalBar * {
+  margin: 0;
+  padding: 0; }
+
+.jspCap {
+  display: none; }
+
+.jspHorizontalBar .jspCap {
+  float: left; }
+
+.jspTrack {
+  /*background: #dde;*/
+  position: relative; }
+
+.jspDrag {
+  /*background: #bbd;*/
+  position: relative;
+  top: 0;
+  /*left: 0;*/
+  cursor: pointer; }
+
+.jspHorizontalBar .jspTrack,
+.jspHorizontalBar .jspDrag {
+  float: left;
+  height: 100%; }
+
+.jspArrow {
+  /*background: #50506d;*/
+  text-indent: -20000px;
+  display: block;
+  cursor: pointer; }
+
+.jspArrow.jspDisabled {
+  cursor: default;
+  background: #80808d; }
+
+.jspVerticalBar .jspArrow {
+  /*height: 16px;*/ }
+
+.jspHorizontalBar .jspArrow {
+  width: 16px;
+  float: left;
+  height: 100%; }
+
+.jspVerticalBar .jspArrow:focus {
+  outline: none; }
+
+.jspCorner {
+  background: #eeeef4;
+  float: left;
+  height: 100%; }
+
+/* Yuk! CSS Hack for IE6 3 pixel bug :( */
+* html .jspCorner {
+  margin: 0 -3px 0 0; }
+/*
+
+
+*/
+/* User list styles */
+.list_form {
+  background: #f9f9f9;
+  padding: 15px;
+  min-width: 320px;
+  /* jspScroller */
+  /* Create list field & button */ }
+  .list_form .solid {
+    margin-bottom: 0; }
+  .list_form ul {
+    border: 1px solid #D7D7D7;
+    margin: 10px 0 0 0;
+    width: 311px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px; }
+    .list_form ul li {
+      background-color: #FFF;
+      border-bottom: 1px dashed #D7D7D7;
+      color: #375363;
+      cursor: pointer;
+      display: block;
+      font-size: 12px;
+      padding: 3px 5px; }
+      .list_form ul li:hover {
+        background-color: #F1F1F1;
+        color: #375363;
+        cursor: pointer; }
+      .list_form ul li:last-child {
+        border: none; }
+      .list_form ul li .blue_text {
+        display: none; }
+    .list_form ul .selected {
+      background-color: #597686;
+      color: #FFF; }
+      .list_form ul .selected:hover {
+        background-color: #597686;
+        color: #FFF; }
+    .list_form ul .checked {
+      background: url(/assets/lists/checkmark-9a047fef06799efce46f4d4b0371e23a.png) no-repeat;
+      background-position: right;
+      background-color: #FFFFFF;
+      color: #375363; }
+      .list_form ul .checked:hover {
+        background-color: #F1F1F1;
+        color: #375363; }
+  .list_form .jspScrollable {
+    padding: 3px !important; }
+  .list_form .jspContainer .jspVerticalBar {
+    width: 9px; }
+    .list_form .jspContainer .jspVerticalBar .jspTrack {
+      background: #d7d7d7;
+      border-radius: 5px;
+      height: 99px !important;
+      width: 9px; }
+    .list_form .jspContainer .jspVerticalBar .jspDrag {
+      background: #929292;
+      border-radius: 5px;
+      margin-left: 2px;
+      width: 5px; }
+  .list_form .create_list {
+    margin-top: 10px; }
+    .list_form .create_list input {
+      -webkit-border-radius: 4px;
+      -moz-border-radius: 4px;
+      border-radius: 4px;
+      border: 1px solid #D7D7D7;
+      color: #375363;
+      font-size: 12px;
+      height: 14px;
+      padding: 6px;
+      width: 190px; }
+    .list_form .create_list .white_btn {
+      display: block;
+      position: relative;
+      padding: 4px 8px;
+      color: #929292;
+      font-size: 11px;
+      text-decoration: none;
+      background-color: #fefefe;
+      background: gradient(linear, 0 0, 0 100%, from(#fefefe), to(#e5e5e5));
+      background: -webkit-gradient(linear, 0 0, 0 100%, from(#fefefe), to(#e5e5e5));
+      background: -moz-linear-gradient(top, #fefefe, #e5e5e5);
+      -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=#fefefe, endColorStr=#e5e5e5);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=#fefefe, endColorStr=#e5e5e5);
+      border: 1px solid #D7D7D7;
+      -webkit-border-radius: 4px;
+      -moz-border-radius: 4px;
+      border-radius: 4px; }
+      .list_form .create_list .white_btn:hover {
+        color: #375363;
+        background-color: #fefefe;
+        background: gradient(linear, 0 0, 0 100%, from(#fefefe), to(#ebebeb));
+        background: -webkit-gradient(linear, 0 0, 0 100%, from(#fefefe), to(#ebebeb));
+        background: -moz-linear-gradient(top, #fefefe, #ebebeb);
+        -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=#fefefe, endColorStr=#ebebeb);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=#fefefe, endColorStr=#ebebeb);
+        cursor: pointer; }
+  .list_form .submit {
+    margin-top: 10px; }
+    .list_form .submit .error_msg {
+      padding-left: 10px; }
+
+/* Confirmation Pod */
+.confirmation {
+  background-color: #f9f9f9;
+  padding: 15px;
+  width: 320px; }
+  .confirmation .see_all {
+    margin-left: 15px; }
