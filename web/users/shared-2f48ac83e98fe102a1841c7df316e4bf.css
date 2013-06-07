@@ -1,0 +1,142 @@
+/* Lists Sort Display */
+.list_tab {
+  position: relative; }
+  .list_tab .btn_blue {
+    margin-left: 6px;
+    width: 132px; }
+  .list_tab .create_new {
+    position: absolute;
+    right: 0;
+    top: -4px; }
+  .list_tab .list_creator_cont {
+    background-color: #f9f9f9;
+    border: 3px solid #0099ff;
+    padding: 10px;
+    position: absolute;
+    right: 0;
+    top: 36px;
+    width: 524px;
+    z-index: 10000; }
+    .list_tab .list_creator_cont:after, .list_tab .list_creator_cont:before {
+      bottom: 100%;
+      border: solid transparent;
+      content: " ";
+      height: 0;
+      width: 0;
+      position: absolute;
+      pointer-events: none; }
+    .list_tab .list_creator_cont:after {
+      border-color: rgba(249, 249, 249, 0);
+      border-bottom-color: #f9f9f9;
+      border-width: 7px;
+      left: 472px;
+      margin-left: -7px; }
+    .list_tab .list_creator_cont:before {
+      border-color: rgba(0, 153, 255, 0);
+      border-bottom-color: #0099ff;
+      border-width: 11px;
+      left: 472px;
+      margin-left: -11px; }
+    .list_tab .list_creator_cont input {
+      border: 1px solid #cfd9de;
+      margin-bottom: 12px;
+      padding: 6px 12px;
+      width: 496px; }
+    .list_tab .list_creator_cont .btn_blue {
+      width: 70px; }
+    .list_tab .list_creator_cont .fake_link {
+      color: #8ea8b5;
+      padding: 9px 5px 0;
+      text-decoration: underline !important; }
+      .list_tab .list_creator_cont .fake_link:hover {
+        color: #0099ff;
+        text-decoration: none !important; }
+  .list_tab form {
+    margin: 0;
+    padding: 0; }
+    .list_tab form span {
+      font-size: 12px;
+      color: #8ea8b5; }
+    .list_tab form .display {
+      padding-left: 115px; }
+    .list_tab form select {
+      color: #597686;
+      border: 1px solid #C3D5DE;
+      font-size: 12px;
+      padding: 2px;
+      margin-left: 5px; }
+      .list_tab form select:nth-child(2) {
+        width: 130px; }
+      .list_tab form select:nth-child(4) {
+        width: 48px; }
+    .list_tab form .divider {
+      border-bottom: 1px solid #adc0c9;
+      height: 1px;
+      margin-bottom: 12px;
+      padding-top: 12px; }
+
+/* Reviews & Comments Sort Display */
+.action_bar form {
+  margin: 0;
+  padding: 0; }
+  .action_bar form span {
+    color: #8ea8b5;
+    font-size: 12px; }
+    .action_bar form span:nth-child(3) {
+      padding-left: 115px; }
+  .action_bar form select {
+    border: 1px solid #C3D5DE;
+    color: #597686;
+    font-size: 12px;
+    margin-left: 5px;
+    padding: 2px; }
+    .action_bar form select:nth-child(2) {
+      width: 130px; }
+    .action_bar form select:nth-child(4) {
+      width: 48px; }
+  .action_bar form .divider {
+    border-bottom: 1px solid #adc0c9;
+    height: 1px;
+    margin-bottom: 12px;
+    padding-top: 12px; }
+
+/* Pagination Container */
+.pagination_cont {
+  background: #f7f9f9;
+  background: -moz-linear-gradient(top, #f7f9f9 0%, #e6ecef 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f7f9f9), color-stop(100%, #e6ecef));
+  background: -webkit-linear-gradient(top, #f7f9f9 0%, #e6ecef 100%);
+  background: -o-linear-gradient(top, #f7f9f9 0%, #e6ecef 100%);
+  background: -ms-linear-gradient(top, #f7f9f9 0%, #e6ecef 100%);
+  background: linear-gradient(to bottom, #f7f9f9 0%, #e6ecef 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f7f9f9', endColorstr='#e6ecef',GradientType=0 );
+  border: 1px solid #bdc9cf;
+  padding: 5px 15px;
+  -webkit-border-radius: 0 0 5px 5px;
+  -moz-border-radius: 0 0 5px 5px;
+  border-radius: 0 0 5px 5px; }
+  .pagination_cont .pagination .previous_page {
+    display: none; }
+  .pagination_cont .pagination .next_page {
+    display: none; }
+  .pagination_cont .pagination em, .pagination_cont .pagination a {
+    background-color: #FFFFFF;
+    border: 1px solid #adc0c9;
+    color: #b0bdc4;
+    display: inline-block;
+    font-style: normal;
+    margin: 0;
+    margin-right: 3px;
+    padding: 2px 6px 0 6px;
+    text-align: center;
+    text-decoration: none;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px; }
+  .pagination_cont .pagination em {
+    background-color: #0099ff;
+    border: none;
+    color: #FFFFFF; }
+  .pagination_cont .pagination a:hover {
+    background-color: #adc0c9;
+    color: #FFFFFF; }

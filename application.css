@@ -473,6 +473,249 @@ ul.ui-autocomplete .ui-autocomplete-category.first_category {
 .ui-autocomplete.ui-menu .ui-menu-item.text_link a.ui-state-active {
   background: #0099ff;
   font-weight: normal; }
+.subscription_dialog {
+  background-color: #f4f4f4 !important;
+  border: 3px solid #0099ff !important;
+  border-radius: 4px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow: hidden !important; }
+  .subscription_dialog .ui-dialog-titlebar {
+    margin-top: -18px !important;
+    padding: 0 !important; }
+    .subscription_dialog .ui-dialog-titlebar .ui-dialog-titlebar-close {
+      position: absolute;
+      right: 0;
+      top: 27px;
+      z-index: 100000; }
+    .subscription_dialog .ui-dialog-titlebar .ui-icon {
+      background-position: -147px -151px !important; }
+  .subscription_dialog .ui-dialog-title {
+    background-color: #f4f4f4 !important;
+    padding: 0 !important; }
+    .subscription_dialog .ui-dialog-title span {
+      display: none !important; }
+  .subscription_dialog .ui-widget-content {
+    background-color: #f4f4f4 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    min-height: 120px !important;
+    max-height: 535px !important;
+    min-width: 400px !important;
+    max-width: 705px !important; }
+    .subscription_dialog .ui-widget-content .cont_bg {
+      background-image: url(/assets/subscriptions/pe_newsletter_ex_small.png) !important;
+      background-repeat: no-repeat !important;
+      background-position: bottom right !important; }
+    .subscription_dialog .ui-widget-content .headline {
+      background-image: url(/assets/subscriptions/pe_newsletter_signup_header.png);
+      background-repeat: no-repeat;
+      height: 103px;
+      width: 675px; }
+    .subscription_dialog .ui-widget-content p {
+      color: #464646;
+      font-family: Arial, sans-serif;
+      font-size: 17px;
+      font-weight: normal;
+      line-height: 20px;
+      padding: 10px 0 12px 0; }
+    .subscription_dialog .ui-widget-content .margin_left {
+      margin-left: 70px;
+      width: 370px; }
+    .subscription_dialog .ui-widget-content .multi_select {
+      border-bottom: 1px dashed #adc0c9;
+      margin-bottom: 12px;
+      padding-bottom: 12px;
+      width: 393px; }
+      .subscription_dialog .ui-widget-content .multi_select button {
+        border: 1px solid #cdd9df;
+        width: 300px !important;
+        padding: 5px 10px !important;
+        color: #464646;
+        font-family: "Helvetica Neue Light", Arial, sans-serif;
+        font-size: 14px !important;
+        font-weight: normal !important;
+        text-align: left;
+        text-decoration: none;
+        text-transform: none;
+        text-shadow: none;
+        line-height: 100%;
+        background: url(/assets/subscriptions/pe_arrow_down_blue.png) white center right no-repeat !important;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        border-radius: 4px;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+        cursor: pointer; }
+        .subscription_dialog .ui-widget-content .multi_select button:active {
+          border: 1px solid #0067b1;
+          color: #FFFFFF;
+          text-shadow: none;
+          background: url(/assets/subscriptions/pe_arrow_down_white.png) #0099ff center right no-repeat !important;
+          -webkit-box-shadow: none;
+          -moz-box-shadow: none;
+          box-shadow: none; }
+    .subscription_dialog .ui-widget-content .btn_fb {
+      background: #627eb7;
+      background: -moz-linear-gradient(top, #627eb7 0%, #384f79 100%);
+      background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #627eb7), color-stop(100%, #384f79));
+      background: -webkit-linear-gradient(top, #627eb7 0%, #384f79 100%);
+      background: -o-linear-gradient(top, #627eb7 0%, #384f79 100%);
+      background: -ms-linear-gradient(top, #627eb7 0%, #384f79 100%);
+      background: linear-gradient(to bottom, #627eb7 0%, #384f79 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#627eb7', endColorstr='#384f79',GradientType=0 );
+      cursor: pointer;
+      height: 49px;
+      width: 300px;
+      -webkit-border-radius: 3px;
+      -moz-border-radius: 3px;
+      border-radius: 3px; }
+      .subscription_dialog .ui-widget-content .btn_fb:hover {
+        background: #6c87be;
+        background: -moz-linear-gradient(top, #6c87be 0%, #49618d 100%);
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #6c87be), color-stop(100%, #49618d));
+        background: -webkit-linear-gradient(top, #6c87be 0%, #49618d 100%);
+        background: -o-linear-gradient(top, #6c87be 0%, #49618d 100%);
+        background: -ms-linear-gradient(top, #6c87be 0%, #49618d 100%);
+        background: linear-gradient(to bottom, #6c87be 0%, #49618d 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#6c87be', endColorstr='#49618d',GradientType=0 );
+        -webkit-box-shadow: 0 2px 6px #999999;
+        -moz-box-shadow: 0 2px 6px #999999;
+        box-shadow: 0 2px 6px #999999; }
+      .subscription_dialog .ui-widget-content .btn_fb .logo {
+        background-image: url(/assets/subscriptions/pe_newsletter_signup_f.png);
+        background-repeat: no-repeat;
+        height: 40px;
+        width: 36px;
+        margin: 4px 0 0 18px; }
+      .subscription_dialog .ui-widget-content .btn_fb span {
+        color: #FFF;
+        font-size: 18px;
+        font-family: Arial, sans-serif;
+        margin: 15px 0 0 25px;
+        text-shadow: -1px -1px #354667; }
+    .subscription_dialog .ui-widget-content .email {
+      margin-top: -4px; }
+      .subscription_dialog .ui-widget-content .email label {
+        font-family: "Helvetica Neue Light", Arial, sans-serif;
+        font-size: 14px;
+        top: 5px;
+        left: 10px; }
+      .subscription_dialog .ui-widget-content .email input {
+        border: 1px solid #cdd9df;
+        color: #464646;
+        font-size: 14px;
+        padding: 5px 10px;
+        width: 278px;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        border-radius: 4px; }
+      .subscription_dialog .ui-widget-content .email .inline-errors {
+        color: red;
+        display: block;
+        font-size: 12px;
+        position: absolute;
+        bottom: -40px;
+        left: -71px; }
+      .subscription_dialog .ui-widget-content .email img {
+        display: none; }
+    .subscription_dialog .ui-widget-content .footer {
+      border-top: 1px dashed #adc0c9;
+      font-size: 11px;
+      margin-top: 12px;
+      padding-top: 12px;
+      width: 447px; }
+      .subscription_dialog .ui-widget-content .footer a {
+        color: #acacac;
+        text-decoration: underline; }
+        .subscription_dialog .ui-widget-content .footer a:hover {
+          color: #0099ff; }
+      .subscription_dialog .ui-widget-content .footer .terms {
+        margin-top: 18px; }
+        .subscription_dialog .ui-widget-content .footer .terms a {
+          margin-right: 20px; }
+      .subscription_dialog .ui-widget-content .footer .btn_blue {
+        cursor: pointer;
+        font-weight: bold;
+        margin-left: 85px;
+        text-transform: uppercase;
+        width: 90px;
+        background-color: #0099FF;
+        border-bottom: 1px solid #0067b1;
+        color: #FFF;
+        display: block;
+        font-size: 13px;
+        padding: 8px 10px 6px 10px;
+        position: relative;
+        text-align: center;
+        text-decoration: none;
+        text-shadow: -1px -1px #0080e6;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+        -webkit-box-shadow: 0px 1px 2px rgba(50, 50, 50, 0.5);
+        -moz-box-shadow: 0px 1px 2px rgba(50, 50, 50, 0.5);
+        box-shadow: 0px 1px 2px rgba(50, 50, 50, 0.5);
+        z-index: 1000; }
+        .subscription_dialog .ui-widget-content .footer .btn_blue:hover {
+          background-color: #2baaff; }
+
+/* Multi-Select */
+.ui-multiselect-menu {
+  border: 1px solid #cdd9df !important;
+  border-top: none !important;
+  color: #464646;
+  font-size: 14px;
+  margin-top: -3px !important;
+  padding: 2px 5px 5px 5px;
+  height: 105px;
+  width: 292px !important;
+  -webkit-border-radius: 0 0 4px 4px;
+  -moz-border-radius: 0 0 4px 4px;
+  border-radius: 0 0 4px 4px;
+  z-index: 90000 !important; }
+  .ui-multiselect-menu .ui-multiselect-checkboxes {
+    border-top: 1px dashed #adc0c9;
+    height: 103px !important;
+    width: 290px; }
+    .ui-multiselect-menu .ui-multiselect-checkboxes li {
+      padding: 0; }
+    .ui-multiselect-menu .ui-multiselect-checkboxes label {
+      font-family: "Helvetica Neue Light", Arial, sans-serif;
+      font-size: 13px; }
+      .ui-multiselect-menu .ui-multiselect-checkboxes label input {
+        top: 1px; }
+      .ui-multiselect-menu .ui-multiselect-checkboxes label span {
+        margin-left: 5px; }
+
+.subscription_confirmation {
+  text-align: center;
+  width: 400px;
+  height: 160px !important; }
+  .subscription_confirmation p {
+    color: #464646;
+    font-family: Arial, sans-serif;
+    font-size: 14px !important;
+    font-weight: normal;
+    line-height: 20px;
+    padding: 15px !important;
+    text-align: center; }
+  .subscription_confirmation .heading {
+    color: #0099FF;
+    font-size: 18px;
+    font-weight: bold;
+    padding-top: 15px; }
+  .subscription_confirmation span {
+    color: #0099FF;
+    cursor: pointer;
+    font-size: 13px;
+    text-decoration: underline; }
+    .subscription_confirmation span:hover {
+      color: #464646; }
+/*
+
+*/
 /*BEGIN GENERAL BOTTOM BAR STYLES*/
 .floating_bar_wrapper {
   margin: 0 auto;
@@ -1901,6 +2144,89 @@ ul.ui-autocomplete .ui-autocomplete-category.first_category {
     left: 4px;
     top: 8px;
     color: #999; }
+.ui-multiselect {
+  padding: 2px 0 2px 4px;
+  text-align: left; }
+
+.ui-multiselect span.ui-icon {
+  float: right; }
+
+.ui-multiselect-single .ui-multiselect-checkboxes input {
+  position: absolute !important;
+  top: auto !important;
+  left: -9999px; }
+
+.ui-multiselect-single .ui-multiselect-checkboxes label {
+  padding: 5px !important; }
+
+.ui-multiselect-header {
+  margin-bottom: 3px;
+  padding: 3px 0 3px 4px; }
+
+.ui-multiselect-header ul {
+  font-size: 0.9em; }
+
+.ui-multiselect-header ul li {
+  float: left;
+  padding: 0 10px 0 0; }
+
+.ui-multiselect-header a {
+  text-decoration: none; }
+
+.ui-multiselect-header a:hover {
+  text-decoration: underline; }
+
+.ui-multiselect-header span.ui-icon {
+  float: left; }
+
+.ui-multiselect-header li.ui-multiselect-close {
+  float: right;
+  text-align: right;
+  padding-right: 0; }
+
+.ui-multiselect-menu {
+  display: none;
+  padding: 3px;
+  position: absolute;
+  z-index: 10000;
+  text-align: left;
+  background-color: #FFFFFF;
+  width: 300px; }
+
+.ui-multiselect-checkboxes {
+  position: relative;
+  overflow-y: scroll;
+  width: 200px; }
+
+.ui-multiselect-checkboxes label {
+  cursor: default;
+  display: block;
+  border: 1px solid transparent;
+  padding: 3px 1px; }
+
+.ui-multiselect-checkboxes label input {
+  position: relative;
+  top: 1px; }
+
+.ui-multiselect-checkboxes li {
+  clear: both;
+  font-size: 0.9em;
+  padding-right: 3px; }
+
+.ui-multiselect-checkboxes li.ui-multiselect-optgroup-label {
+  text-align: center;
+  font-weight: bold;
+  border-bottom: 1px solid; }
+
+.ui-multiselect-checkboxes li.ui-multiselect-optgroup-label a {
+  display: block;
+  padding: 3px;
+  margin: 1px 0;
+  text-decoration: none; }
+
+/* remove label borders in IE6 because IE6 does not support transparency */
+* html .ui-multiselect-checkboxes label {
+  border: none; }
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
@@ -1911,6 +2237,7 @@ ul.ui-autocomplete .ui-autocomplete-category.first_category {
  * You're free to add application-wide styles to this file and they'll appear at the top of the
  * compiled file, but it's generally better to create a new file per style scope.
  *
+
 
 
 
@@ -2946,6 +3273,8 @@ input, select, textarea {
     background-position: -487px -314px; }
   .login_dropdown .aol {
     background-position: -512px -314px; }
+  .login_dropdown .googleplus {
+    background-position: -535px -338px; }
   .login_dropdown .twitter:hover {
     background-position: -387px -338px; }
   .login_dropdown .google:hover {
@@ -2958,6 +3287,8 @@ input, select, textarea {
     background-position: -487px -338px; }
   .login_dropdown .aol:hover {
     background-position: -512px -338px; }
+  .login_dropdown .googleplus:hover {
+    background-position: -558px -338px; }
 
 #profile_options li {
   font-size: 14px; }
@@ -2979,10 +3310,14 @@ input, select, textarea {
 #masthead {
   margin: 0 0 12px;
   padding: 11px 15px 0;
-  background: -webkit-gradient(linear, 0 0, 0 56%, from(#e0e5e8), to(white));
-  background: -moz-linear-gradient(top, #e0e5e8, white);
-  -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=#e0e5e8, endColorStr=#ffffff);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=#e0e5e8, endColorStr=#ffffff);
+  background: #e0e5e8;
+  background: -moz-linear-gradient(top, #e0e5e8 0%, white 44%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #e0e5e8), color-stop(44%, white));
+  background: -webkit-linear-gradient(top, #e0e5e8 0%, white 44%);
+  background: -o-linear-gradient(top, #e0e5e8 0%, white 44%);
+  background: -ms-linear-gradient(top, #e0e5e8 0%, white 44%);
+  background: linear-gradient(to bottom, #e0e5e8 0%, white 44%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e0e5e8', endColorstr='#ffffff',GradientType=0 );
   border-radius: 0 0 3px 3px;
   /* Amsterdam Masthead
    ------------------------------------------------------------*/ }

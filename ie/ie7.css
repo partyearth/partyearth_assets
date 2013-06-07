@@ -86,6 +86,10 @@
 #footer_content {
   *position: static;
   *margin: 10px 0 0 -3px; }
+
+/* Newsletter Popup */
+.ui-widget-overlay {
+  width: 99.99% !important; }
 .map_controls #result_types {
   margin: 6px 0 2px; }
 
