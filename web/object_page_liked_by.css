@@ -2,7 +2,7 @@
   position: absolute;
   top: 5px;
   right: 0;
-  z-index: 3000;
+  z-index: 999;
   *display: none;
   /*FOR IE7*/ }
 #object_page_info #liked_by_venue {

@@ -3198,29 +3198,26 @@ input, select, textarea {
 /* Begin Login Dropdown Styles
 --------------------------------------- */
 .login_dropdown {
+  background: #18252c;
   display: none;
   position: absolute;
-  top: 28px;
   right: 0;
-  z-index: 9999;
+  top: 28px;
   width: 240px;
-  border-bottom-right-radius: 2px;
-  border-bottom-left-radius: 2px;
-  -moz-box-shadow: 0px 1px 2px #909090;
+  z-index: 9999;
+  -webkit-border-radius: 0px 0px 2px 2px;
+  border-radius: 0px 0px 2px 2px;
   -webkit-box-shadow: 0px 1px 2px #909090;
-  box-shadow: 0px 1px 2px #909090;
-  background: -webkit-gradient(linear, left top, left bottom, from(#18252c), to(#18252c));
-  background: -moz-linear-gradient(top, #18252c, #18252c);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#18252c', endColorstr='#18252c'); }
+  box-shadow: 0px 1px 2px #909090; }
   .login_dropdown li {
-    margin: 0 15px;
-    padding: 8px 0;
+    border-top: 1px dashed #45545b;
     color: #8ea8b5;
     font-size: 11px;
-    text-align: left;
-    text-transform: none;
     line-height: 14px;
-    border-top: 1px dashed #45545b; }
+    margin: 0 15px;
+    padding: 8px 0;
+    text-align: left;
+    text-transform: none; }
     .login_dropdown li a {
       color: #8ea8b5;
       text-transform: uppercase; }
@@ -3233,17 +3230,19 @@ input, select, textarea {
       border-top: none; }
       .login_dropdown li li a {
         display: block;
-        width: 23px;
-        height: 22px;
+        width: 30px;
+        height: 36px;
         text-indent: -9999px;
         background-image: url(/assets/content_bg/application_sprite.png); }
+  .login_dropdown .social_dropdown {
+    float: left; }
   .login_dropdown table, .login_dropdown td {
     height: auto !important; }
   .login_dropdown span {
     display: block;
     position: static;
     float: left;
-    width: 70px;
+    width: 100%;
     margin: 0;
     line-height: 12px; }
   .login_dropdown .facebook {
@@ -3262,29 +3261,33 @@ input, select, textarea {
   .login_dropdown .facebook:hover {
     background-position: -599px -265px; }
   .login_dropdown .twitter {
-    background-position: -387px -314px; }
+    background-position: -748px -164px; }
   .login_dropdown .google {
-    background-position: -412px -314px; }
+    background-position: -780px -164px; }
   .login_dropdown .foursquare {
-    background-position: -437px -314px; }
+    background-position: -813px -164px; }
   .login_dropdown .yahoo {
-    background-position: -462px -314px; }
+    background-position: -942px -164px; }
   .login_dropdown .messenger {
-    background-position: -487px -314px; }
+    background-position: -845px -164px; }
   .login_dropdown .aol {
-    background-position: -512px -314px; }
+    background-position: -877px -164px; }
+  .login_dropdown .googleplus {
+    background-position: -910px -164px; }
   .login_dropdown .twitter:hover {
-    background-position: -387px -338px; }
+    background-position: -748px -201px; }
   .login_dropdown .google:hover {
-    background-position: -412px -338px; }
+    background-position: -780px -201px; }
   .login_dropdown .foursquare:hover {
-    background-position: -437px -338px; }
+    background-position: -813px -201px; }
   .login_dropdown .yahoo:hover {
-    background-position: -462px -338px; }
+    background-position: -942px -201px; }
   .login_dropdown .messenger:hover {
-    background-position: -487px -338px; }
+    background-position: -845px -201px; }
   .login_dropdown .aol:hover {
-    background-position: -512px -338px; }
+    background-position: -877px -201px; }
+  .login_dropdown .googleplus:hover {
+    background-position: -910px -201px; }
 
 #profile_options li {
   font-size: 14px; }
@@ -4444,8 +4447,8 @@ formfield ol:before, .formfield ol:after,
     #additional_information fieldset ol .day_dropdown .choices_wrapper, #link_accounts fieldset ol .day_dropdown .choices_wrapper {
       width: 70px; }
     #additional_information fieldset ol img, #link_accounts fieldset ol img {
-      top: 24px;
-      left: 286px; }
+      top: 25px;
+      left: 266px; }
     #additional_information fieldset ol .inline-errors, #link_accounts fieldset ol .inline-errors {
       left: 0; }
     #additional_information fieldset ol .toggle, #link_accounts fieldset ol .toggle {
@@ -4658,3 +4661,10 @@ formfield ol:before, .formfield ol:after,
     margin: 0 0 0 15px; }
 .missing_dialog .ui-dialog-content .ast {
   color: #09f; }
+
+.spinnable {
+  background-image: url(/assets/content_bg/spinner.gif);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 72px;
+  height: 72px; }

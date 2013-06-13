@@ -1,0 +1,145 @@
+/* Personality Layout */
+.title_text {
+  color: #0099FF;
+  font-size: 16px;
+  padding-bottom: 12px; }
+
+.body_text {
+  padding-bottom: 12px;
+  border-bottom: 1px dashed #adc0c9; }
+
+.characters {
+  margin: 12px 0 0 0; }
+  .characters .char_cont {
+    cursor: pointer;
+    float: left;
+    margin: 0 16px 0 0;
+    width: 125px;
+    /* Paragraph & More Link */
+    /* Lucas Column */
+    /* Disabled */
+    /* Adriana Column */
+    /* Disabled */
+    /* Jonah Column */
+    /* Disabled */
+    /* Emma Column */
+    /* Disabled */
+    /* Disabled Classes */ }
+    .characters .char_cont:last-child {
+      margin-right: 0; }
+    .characters .char_cont .assign, .characters .char_cont .unassign {
+      background: #375363;
+      background-color: rgba(90, 110, 110, 0.7);
+      color: #FFFFFF;
+      display: none;
+      position: absolute;
+      padding: 5px;
+      text-align: center;
+      text-decoration: underline;
+      top: 130px;
+      width: 100%;
+      -webkit-border-radius: 4px;
+      -moz-border-radius: 4px;
+      border-radius: 4px; }
+    .characters .char_cont p {
+      color: #000000;
+      cursor: default;
+      font-size: 11px;
+      line-height: 15px; }
+    .characters .char_cont span.more {
+      font-size: 11px; }
+    .characters .char_cont .lucas {
+      /* Character Picture */ }
+      .characters .char_cont .lucas:hover .char_pic .assign {
+        display: none; }
+      .characters .char_cont .lucas:hover .char_pic .unassign {
+        display: block; }
+      .characters .char_cont .lucas .name_check_cont .checkmark {
+        background-image: url(/assets/characters/char_checkmark_lucas-7f4aef9f5b1347b0e7436a1478925d5a.png); }
+      .characters .char_cont .lucas .name_check_cont .name {
+        color: #5b86b6; }
+      .characters .char_cont .lucas .char_pic {
+        background-image: url(/assets/characters/char_lucas_color-c03a7247396cd6197f5149c796a611df.png); }
+    .characters .char_cont .lucas.disabled:hover .char_pic .assign {
+      display: block; }
+    .characters .char_cont .lucas.disabled:hover .char_pic .unassign {
+      display: none; }
+    .characters .char_cont .lucas.disabled .char_pic {
+      background-image: url(/assets/characters/char_lucas-a7e3e9388866fb0e2b4f61c45a9a7f20.png); }
+    .characters .char_cont .adriana {
+      /* Character Picture */ }
+      .characters .char_cont .adriana:hover .char_pic .assign {
+        display: none; }
+      .characters .char_cont .adriana:hover .char_pic .unassign {
+        display: block; }
+      .characters .char_cont .adriana .name_check_cont .checkmark {
+        background-image: url(/assets/characters/char_checkmark_adriana-55fdf2bafdfdf0947d65a0a776b051d1.png); }
+      .characters .char_cont .adriana .name_check_cont .name {
+        color: #ce86bb; }
+      .characters .char_cont .adriana .char_pic {
+        background-image: url(/assets/characters/char_adriana_color-448526cd621b6f54e6d6b29ff344fee4.png); }
+    .characters .char_cont .adriana.disabled:hover .char_pic .assign {
+      display: block; }
+    .characters .char_cont .adriana.disabled:hover .char_pic .unassign {
+      display: none; }
+    .characters .char_cont .adriana.disabled .char_pic {
+      background-image: url(/assets/characters/char_adriana-82f5fd6891a5d69538e4ad4ec01062db.png); }
+    .characters .char_cont .jonah {
+      /* Character Picture */ }
+      .characters .char_cont .jonah:hover .char_pic .assign {
+        display: none; }
+      .characters .char_cont .jonah:hover .char_pic .unassign {
+        display: block; }
+      .characters .char_cont .jonah .name_check_cont .checkmark {
+        background-image: url(/assets/characters/char_checkmark_jonah-47d4bf9d25879dde0e67fc20daa1956c.png); }
+      .characters .char_cont .jonah .name_check_cont .name {
+        color: #a4d05d; }
+      .characters .char_cont .jonah .char_pic {
+        background-image: url(/assets/characters/char_jonah_color-4cbefa7bac2aeed8d529936d4ad91c76.png); }
+    .characters .char_cont .jonah.disabled:hover .char_pic .assign {
+      display: block; }
+    .characters .char_cont .jonah.disabled:hover .char_pic .unassign {
+      display: none; }
+    .characters .char_cont .jonah.disabled .char_pic {
+      background-image: url(/assets/characters/char_jonah-f3213601bb8632bb5c823c9b7d780115.png); }
+    .characters .char_cont .emma {
+      /* Character Picture */ }
+      .characters .char_cont .emma:hover .char_pic .assign {
+        display: none; }
+      .characters .char_cont .emma:hover .char_pic .unassign {
+        display: block; }
+      .characters .char_cont .emma .name_check_cont {
+        margin-bottom: 12px; }
+        .characters .char_cont .emma .name_check_cont .checkmark {
+          background-image: url(/assets/characters/char_checkmark_emma-c61f31fbe9da6f2efe6a141cabe77423.png); }
+        .characters .char_cont .emma .name_check_cont .name {
+          color: #ffbf50; }
+      .characters .char_cont .emma .char_pic {
+        background-image: url(/assets/characters/char_emma_color-98c90b1ddb779cc402b1c0cb22f42150.png); }
+    .characters .char_cont .emma.disabled:hover .char_pic .assign {
+      display: block; }
+    .characters .char_cont .emma.disabled:hover .char_pic .unassign {
+      display: none; }
+    .characters .char_cont .emma.disabled .char_pic {
+      background-image: url(/assets/characters/char_emma-3118e6708f3e08aff8c43894faa5d6a9.png); }
+    .characters .char_cont .disabled .name_check_cont .checkmark {
+      background-image: url(/assets/characters/char_checkmark-30a599c18af5ac19cd8beb5a0ea2a15a.png); }
+    .characters .char_cont .disabled .name_check_cont .name {
+      color: #adc0c9; }
+    .characters .char_cont .char .name_check_cont {
+      margin-bottom: 12px; }
+      .characters .char_cont .char .name_check_cont .checkmark {
+        background-repeat: no-repeat;
+        float: left;
+        height: 25px;
+        width: 25px; }
+      .characters .char_cont .char .name_check_cont .name {
+        float: left;
+        font-size: 20px;
+        font-weight: bold;
+        margin: 5px 0 0 0;
+        text-decoration: underline; }
+    .characters .char_cont .char .char_pic {
+      height: 296px;
+      position: relative;
+      width: 125px; }

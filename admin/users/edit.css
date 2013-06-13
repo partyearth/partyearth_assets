@@ -248,8 +248,8 @@ fieldset .inline-errors {
 fieldset .inline-success, fieldset img {
   display: block;
   position: absolute;
-  top: 7px;
-  left: 451px; }
+  top: 8px;
+  left: 457px; }
 fieldset .toggle {
   display: block;
   position: relative;
@@ -335,17 +335,14 @@ div.actions fieldset, .store_action_btns fieldset {
       display: inline-block;
       margin: 0 4px 0 0; }
   #social_login .social_icon {
-    display: inline-block;
-    width: 24px;
-    height: 24px;
-    font-size: 12px;
-    line-height: 24px;
-    box-shadow: 0 1px 3px #696969;
+    background-image: url(/assets/content_bg/social_login_sprite.png);
     border-radius: 5px;
+    display: inline-block;
+    font-size: 12px;
+    height: 37px;
+    line-height: 24px;
     text-indent: -9999px;
-    background-image: url(/assets/content_bg/social_login_sprite.png); }
-    #social_login .social_icon:hover {
-      box-shadow: 0 2px 3px #1c1c1c; }
+    width: 33px; }
     #social_login .social_icon.facebook, #social_login .social_icon.facebook_big {
       width: 138px;
       padding: 0 0 0 30px;
@@ -369,52 +366,108 @@ div.actions fieldset, .store_action_btns fieldset {
   #social_login .facebook {
     background-position: 0 -52px; }
   #social_login .twitter {
-    background-position: -170px -52px; }
+    background-position: -171px -52px; }
   #social_login .google {
-    background-position: -196px -52px; }
-  #social_login .foursquare {
-    background-position: -222px -52px; }
-  #social_login .messenger {
-    background-position: -248px -52px; }
-  #social_login .aol {
-    background-position: -274px -52px; }
+    background-position: -211px -52px; }
   #social_login .yahoo {
-    background-position: -300px -52px; }
+    background-position: -411px -52px; }
+  #social_login .messenger {
+    background-position: -291px -52px; }
+  #social_login .aol {
+    background-position: -331px -52px; }
+  #social_login .googleplus {
+    background-position: -371px -52px; }
+  #social_login .foursquare {
+    background-position: -251px -52px; }
   #social_login .facebook_big:hover {
     background-position: -286px 0; }
   #social_login .facebook:hover {
     background-position: 0 -78px; }
   #social_login .twitter:hover {
-    background-position: -170px -78px; }
+    background-position: -171px -95px; }
   #social_login .google:hover {
-    background-position: -196px -78px; }
-  #social_login .foursquare:hover {
-    background-position: -222px -78px; }
+    background-position: -211px -95px; }
+  #social_login .yahoo:hover {
+    background-position: -411px -95px; }
   #social_login .messenger:hover {
-    background-position: -248px -78px; }
+    background-position: -291px -95px; }
   #social_login .aol:hover {
-    background-position: -274px -78px; }
-  #social_login .yahoo:hover:hover {
-    background-position: -300px -78px; }
+    background-position: -331px -95px; }
+  #social_login .googleplus:hover {
+    background-position: -371px -95px; }
+  #social_login .foursquare:hover {
+    background-position: -251px -95px; }
 /*
 
 
 */
-fieldset.inputs .boolean {
-  display: inline;
-  width: auto;
-  margin: 0 0 4px; }
-  fieldset.inputs .boolean label {
-    display: inline;
-    width: auto; }
+/* Admin User Edit */
+#edit_user {
+  color: #375363; }
+  #edit_user abbr {
+    color: #0099FF;
+    font-weight: bold;
+    padding: 0 0 0 3px; }
+  #edit_user .radio {
+    height: 125px; }
+    #edit_user .radio .choices legend {
+      display: block;
+      height: 30px; }
+    #edit_user .radio .choices ol.choices-group {
+      position: absolute;
+      right: 237px;
+      top: 0; }
+      #edit_user .radio .choices ol.choices-group .choice {
+        float: none;
+        width: auto;
+        margin: 0;
+        height: 25px; }
+        #edit_user .radio .choices ol.choices-group .choice label {
+          display: inline;
+          text-align: left;
+          text-transform: capitalize;
+          width: 100%; }
+          #edit_user .radio .choices ol.choices-group .choice label input {
+            margin-right: 5px; }
+  #edit_user .actions {
+    width: 706px; }
+    #edit_user .actions a {
+      float: left;
+      margin: 0 0 0 -73px;
+      padding: 0;
+      text-align: left; }
 
-fieldset.choices {
-  max-height: none; }
-  fieldset.choices .choices-group li {
-    float: none;
+/* Existing CSS */
+.roles {
+  font-size: 12px;
+  position: relative;
+  margin-left: 160px; }
+  .roles span {
+    bottom: 105px;
+    left: -47px;
+    position: absolute; }
+  .roles li.boolean {
+    margin: 0;
+    padding: 0; }
+    .roles li.boolean input {
+      display: block;
+      width: 25px; }
+    .roles li.boolean label {
+      display: block;
+      text-align: left !important;
+      width: 180px; }
+
+.roles2 {
+  font-size: 12px;
+  margin-top: 15px;
+  margin-left: 160px; }
+  .roles2 .boolean {
+    display: inline;
     width: auto;
-    margin: 0; }
-    fieldset.choices .choices-group li label {
+    margin: 0 0 4px; }
+    .roles2 .boolean input {
+      width: 25px; }
+    .roles2 .boolean label {
       display: inline;
       width: auto; }
 

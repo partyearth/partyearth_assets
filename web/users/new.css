@@ -248,8 +248,8 @@ fieldset .inline-errors {
 fieldset .inline-success, fieldset img {
   display: block;
   position: absolute;
-  top: 7px;
-  left: 451px; }
+  top: 8px;
+  left: 457px; }
 fieldset .toggle {
   display: block;
   position: relative;
@@ -335,17 +335,14 @@ div.actions fieldset, .store_action_btns fieldset {
       display: inline-block;
       margin: 0 4px 0 0; }
   #social_login .social_icon {
-    display: inline-block;
-    width: 24px;
-    height: 24px;
-    font-size: 12px;
-    line-height: 24px;
-    box-shadow: 0 1px 3px #696969;
+    background-image: url(/assets/content_bg/social_login_sprite.png);
     border-radius: 5px;
+    display: inline-block;
+    font-size: 12px;
+    height: 37px;
+    line-height: 24px;
     text-indent: -9999px;
-    background-image: url(/assets/content_bg/social_login_sprite.png); }
-    #social_login .social_icon:hover {
-      box-shadow: 0 2px 3px #1c1c1c; }
+    width: 33px; }
     #social_login .social_icon.facebook, #social_login .social_icon.facebook_big {
       width: 138px;
       padding: 0 0 0 30px;
@@ -369,71 +366,219 @@ div.actions fieldset, .store_action_btns fieldset {
   #social_login .facebook {
     background-position: 0 -52px; }
   #social_login .twitter {
-    background-position: -170px -52px; }
+    background-position: -171px -52px; }
   #social_login .google {
-    background-position: -196px -52px; }
-  #social_login .foursquare {
-    background-position: -222px -52px; }
-  #social_login .messenger {
-    background-position: -248px -52px; }
-  #social_login .aol {
-    background-position: -274px -52px; }
+    background-position: -211px -52px; }
   #social_login .yahoo {
-    background-position: -300px -52px; }
+    background-position: -411px -52px; }
+  #social_login .messenger {
+    background-position: -291px -52px; }
+  #social_login .aol {
+    background-position: -331px -52px; }
+  #social_login .googleplus {
+    background-position: -371px -52px; }
+  #social_login .foursquare {
+    background-position: -251px -52px; }
   #social_login .facebook_big:hover {
     background-position: -286px 0; }
   #social_login .facebook:hover {
     background-position: 0 -78px; }
   #social_login .twitter:hover {
-    background-position: -170px -78px; }
+    background-position: -171px -95px; }
   #social_login .google:hover {
-    background-position: -196px -78px; }
-  #social_login .foursquare:hover {
-    background-position: -222px -78px; }
+    background-position: -211px -95px; }
+  #social_login .yahoo:hover {
+    background-position: -411px -95px; }
   #social_login .messenger:hover {
-    background-position: -248px -78px; }
+    background-position: -291px -95px; }
   #social_login .aol:hover {
-    background-position: -274px -78px; }
-  #social_login .yahoo:hover:hover {
-    background-position: -300px -78px; }
+    background-position: -331px -95px; }
+  #social_login .googleplus:hover {
+    background-position: -371px -95px; }
+  #social_login .foursquare:hover {
+    background-position: -251px -95px; }
+.spinnable {
+  background-color: #f9f9f9;
+  padding: 15px; }
+
+.close {
+  color: #CCC;
+  font-size: 12px;
+  position: absolute;
+  top: 0;
+  right: 5px; }
+  .close:hover {
+    color: #adc0c9;
+    cursor: pointer; }
+
+.error_msg {
+  color: red;
+  font-size: 11px; }
+
+.error_msg_block {
+  display: block;
+  color: red;
+  font-size: 11px;
+  padding-bottom: 1px; }
 /*
 
 
+
 */
-.terms {
-  padding-top: 18px; }
-
-.terms_submit {
-  display: block;
-  border-top: 1px dashed #CCC;
-  height: 40px;
-  padding-top: 12px; }
-  .terms_submit .terms {
-    font-size: 10px;
-    padding-top: 0 !important;
-    line-height: 15px;
-    width: 65%; }
-  .terms_submit .submit {
-    width: 96px; }
-    .terms_submit .submit .actions {
-      float: right;
+/* New Registration Page */
+#login_area {
+  width: 706px; }
+  #login_area h1 {
+    background-color: #f9f9f9;
+    margin-bottom: 0px;
+    padding-bottom: 10px;
+    text-align: left; }
+  #login_area #social_login .login_box {
+    padding-left: 28px; }
+  #login_area #social_login .other_account {
+    font-size: 15px !important;
+    padding: 5px 0 0 0; }
+  #login_area .login_box {
+    padding: 18px 0; }
+    #login_area .login_box abbr {
+      color: #0099FF;
+      font-weight: bold; }
+    #login_area .login_box .form_fields {
       margin: 0;
-      padding: 0;
-      width: 96px; }
-      .terms_submit .submit .actions button {
-        margin: 0; }
+      padding: 0; }
+      #login_area .login_box .form_fields li {
+        margin: 0;
+        padding: 0 0 7px 0; }
+        #login_area .login_box .form_fields li label {
+          color: #375363;
+          font-size: 14px;
+          padding-right: 14px;
+          margin: 0 !important;
+          width: 160px; }
+          #login_area .login_box .form_fields li label abbr {
+            color: #0099ff;
+            padding-left: 5px;
+            font-weight: bold; }
+        #login_area .login_box .form_fields li span {
+          font-size: 11px;
+          padding-left: 10px; }
+        #login_area .login_box .form_fields li span.inline-errors {
+          font-size: 12px;
+          left: 170px;
+          padding-left: 20px; }
+        #login_area .login_box .form_fields li .inline-success {
+          left: 457px;
+          top: 8px; }
+      #login_area .login_box .form_fields .user_dob_input img {
+        top: 9px !important;
+        left: 457px !important; }
+  #login_area .terms {
+    margin-top: 5px;
+    color: #375363;
+    font-size: 11px; }
+    #login_area .terms a {
+      color: #0099FF;
+      text-decoration: underline; }
+      #login_area .terms a:hover {
+        color: #375363; }
 
-.not_twitter .login_box .terms {
-  display: none; }
+/* Add to List Registration */
+.add_to_list_register {
+  background: #FFFFFF;
+  padding: 15px; }
+  .add_to_list_register h1 {
+    background-color: #FFFFFF !important; }
+  .add_to_list_register .terms {
+    height: 10px;
+    margin: 0 0 0 -60px !important; }
 
-.twitter .terms_submit {
-  border-top: none; }
-  .twitter .terms_submit .terms {
+/* Registration Pop-Up */
+#RegPopupWrapper {
+  min-height: 130px !important;
+  /* Email Present */
+  /* Email Not Present */ }
+  #RegPopupWrapper #additional_information {
+    /* Terms & Submit */ }
+    #RegPopupWrapper #additional_information .dob {
+      width: 300px; }
+      #RegPopupWrapper #additional_information .dob select {
+        cursor: pointer; }
+        #RegPopupWrapper #additional_information .dob select:first-child {
+          width: 105px; }
+        #RegPopupWrapper #additional_information .dob select:nth-child(2) {
+          width: 70px; }
+        #RegPopupWrapper #additional_information .dob select:last-child {
+          width: 77px; }
+    #RegPopupWrapper #additional_information .radio_group ul {
+      margin-top: 5px !important; }
+      #RegPopupWrapper #additional_information .radio_group ul li {
+        display: inline;
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        width: 65px; }
+        #RegPopupWrapper #additional_information .radio_group ul li:first-child {
+          margin-right: 15px;
+          width: 50px; }
+        #RegPopupWrapper #additional_information .radio_group ul li label {
+          cursor: pointer !important;
+          float: left;
+          margin: 0 !important;
+          padding: 0;
+          width: 45px; }
+          #RegPopupWrapper #additional_information .radio_group ul li label:first-child {
+            width: 30px; }
+        #RegPopupWrapper #additional_information .radio_group ul li input {
+          cursor: pointer !important;
+          float: right;
+          margin: 0;
+          padding: 0;
+          width: 20px; }
+    #RegPopupWrapper #additional_information .footer_cont {
+      border-top: 1px dashed #CCC;
+      display: block;
+      padding-top: 12px;
+      width: 298px !important; }
+      #RegPopupWrapper #additional_information .footer_cont .terms_submit {
+        font-size: 10px;
+        line-height: 15px;
+        width: 180px !important; }
+      #RegPopupWrapper #additional_information .footer_cont .submit {
+        width: 100px; }
+        #RegPopupWrapper #additional_information .footer_cont .submit .actions {
+          float: right;
+          margin: 0;
+          padding: 0;
+          width: 96px !important; }
+          #RegPopupWrapper #additional_information .footer_cont .submit .actions button {
+            margin: 0; }
+    #RegPopupWrapper #additional_information p.or {
+      background: url(/assets/social_login/or.png) no-repeat;
+      left: 293px;
+      top: 70px;
+      height: 49px;
+      width: 49px; }
+  #RegPopupWrapper .email_present p.non_twitter {
+    display: block; }
+  #RegPopupWrapper .email_present p.twitter {
     display: none; }
-
-#RegPopupWrapper #additional_information p.or {
-  background: url(/assets/social_login/or.png) no-repeat;
-  left: 223px;
-  top: 70px;
-  height: 49px;
-  width: 49px; }
+  #RegPopupWrapper .email_present .not_twitter input {
+    width: 268px; }
+  #RegPopupWrapper .email_present .not_twitter select {
+    width: 280px; }
+  #RegPopupWrapper .email_present .not_twitter li img {
+    left: 285px; }
+  #RegPopupWrapper .email_not_present {
+    width: 640px !important; }
+    #RegPopupWrapper .email_not_present p.non_twitter {
+      display: none; }
+    #RegPopupWrapper .email_not_present p.twitter {
+      display: block; }
+    #RegPopupWrapper .email_not_present .login_box input {
+      width: 255px; }
+    #RegPopupWrapper .email_not_present .login_box_cont {
+      width: 300px; }
+    #RegPopupWrapper .email_not_present .twitter input {
+      width: 250px; }
+    #RegPopupWrapper .email_not_present .twitter select {
+      width: 261px; }

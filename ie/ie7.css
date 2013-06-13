@@ -90,6 +90,15 @@
 /* Newsletter Popup */
 .ui-widget-overlay {
   width: 99.99% !important; }
+
+/* Profile Sort */
+.list_tab form select {
+  padding: 3px 2px 2px 2px;
+  height: 23px; }
+
+.action_bar form select {
+  padding: 3px 2px 2px 2px;
+  height: 23px; }
 .map_controls #result_types {
   margin: 6px 0 2px; }
 
