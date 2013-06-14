@@ -4976,8 +4976,10 @@
 !binary "Y2tlZGl0b3Ivc2tpbnMvdjIvdGVtcGxhdGVzL2luZGV4LmNzcw==": ckeditor/skins/v2/templates-24b0af29290430eb8d93be7d38b24ad6.css
 !binary "Y2tlZGl0b3IvdGhlbWVzL2RlZmF1bHQvdGhlbWUuanM=": ckeditor/themes/default/theme-c5868edf67fdd5f394d91a52700e5eb5.js
 !binary "Y2tlZGl0b3IvdGhlbWVzL2RlZmF1bHQvdGhlbWUvaW5kZXguanM=": ckeditor/themes/default/theme-c5868edf67fdd5f394d91a52700e5eb5.js
-!binary "ZXh0ZXJuYWwvanF1ZXJ5LTEuNS4yLmpz": external/jquery-1.5.2-46348dcb70be94e91ba9eed2f935f41a.js
-!binary "ZXh0ZXJuYWwvanF1ZXJ5LTEvaW5kZXguNS4yLmpz": external/jquery-1.5.2-46348dcb70be94e91ba9eed2f935f41a.js
+!binary "ZXh0ZXJuYWwvanF1ZXJ5LTEuNS4yLmpz": external/jquery-1.5.2-232cc2bdd8f3b20fc77c821ec715ebc9.js
+!binary "ZXh0ZXJuYWwvanF1ZXJ5LTEvaW5kZXguNS4yLmpz": external/jquery-1.5.2-232cc2bdd8f3b20fc77c821ec715ebc9.js
+!binary "ZXh0ZXJuYWwvanF1ZXJ5LTEuNS4yLm1pbi5qcw==": external/jquery-1.5.2.min-cfd0e77c0cecfde96507f414207e8f3d.js
+!binary "ZXh0ZXJuYWwvanF1ZXJ5LTEvaW5kZXguNS4yLm1pbi5qcw==": external/jquery-1.5.2.min-cfd0e77c0cecfde96507f414207e8f3d.js
 !binary "ZXh0ZXJuYWwvanF1ZXJ5LXVpLTEuOC4xMy5jdXN0b20ubWluLmpz": external/jquery-ui-1.8.13.custom.min-0688ec847d7efbf50dbfbc61df491ae0.js
 !binary "ZXh0ZXJuYWwvanF1ZXJ5LXVpLTEvaW5kZXguOC4xMy5jdXN0b20ubWluLmpz": external/jquery-ui-1.8.13.custom.min-0688ec847d7efbf50dbfbc61df491ae0.js
 !binary "ZXh0ZXJuYWwvanF1ZXJ5Lm11bHRpc2VsZWN0Lm1pbi5qcw==": external/jquery.multiselect.min-d8e066569eac6c6df372dc4b43006451.js
