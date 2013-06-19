@@ -999,3 +999,13 @@ div.actions fieldset, .store_action_btns fieldset {
   #social_login p {
     color: #000;
     font-size: 13px; }
+  #social_login .facebook_big {
+    cursor: pointer;
+    margin-bottom: 8px; }
+  #social_login .social_icons {
+    margin: 0; }
+    #social_login .social_icons .social_icon {
+      cursor: pointer;
+      margin: 0; }
+    #social_login .social_icons li {
+      margin: 0 5px 0 0 !important; }

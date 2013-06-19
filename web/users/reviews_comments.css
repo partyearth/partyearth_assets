@@ -4,6 +4,7 @@
   padding: 20px 0;
   text-align: center; }
   .reviews_empty p {
+    color: #375363;
     font-size: 12px;
     line-height: 16px; }
   .reviews_empty .search_cont {
@@ -22,7 +23,7 @@ ul.reviews_comments li {
   border-bottom: 1px dashed #adc0c9;
   margin-bottom: 12px;
   padding-bottom: 12px;
-  width: 550px; }
+  width: 560px; }
   ul.reviews_comments li:last-child {
     border: none;
     margin: 0;
@@ -81,7 +82,7 @@ ul.reviews_comments li {
   ul.reviews_comments li .cont_right {
     color: #464646;
     font-size: 12px;
-    width: 440px; }
+    width: 450px; }
     ul.reviews_comments li .cont_right .created {
       color: #8EA8B5;
       font-family: Arial, sans-serif;

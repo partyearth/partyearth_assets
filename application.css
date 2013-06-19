@@ -2294,6 +2294,10 @@ h2 {
   position: relative;
   width: 990px;
   margin: 0 auto; }
+  #wrapper .google_adsense {
+    width: 728px;
+    height: 90px;
+    margin: 0 auto; }
 
 #left_container {
   position: relative;
@@ -2494,8 +2498,6 @@ div.fake_link:hover {
     font-size: 11px; }
     .breadcrumbs li:after {
       content: " \00BB"; }
-    .breadcrumbs li.breadcrumbs_cur:after {
-      content: none; }
     .breadcrumbs li a, .breadcrumbs li a:link, .breadcrumbs li a:visited {
       color: #8EA8B5; }
       .breadcrumbs li a:hover, .breadcrumbs li a:link:hover, .breadcrumbs li a:visited:hover {
@@ -2650,7 +2652,7 @@ button,
   color: #FFF;
   display: block;
   font-size: 13px;
-  padding: 6px 10px;
+  padding: 8px 10px 6px;
   position: relative;
   text-align: center;
   text-decoration: none;
@@ -2658,13 +2660,16 @@ button,
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
-  -webkit-box-shadow: 0px 1px 2px rgba(50, 50, 50, 0.5);
-  -moz-box-shadow: 0px 1px 2px rgba(50, 50, 50, 0.5);
-  box-shadow: 0px 1px 2px rgba(50, 50, 50, 0.5);
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
   z-index: 1000; }
   .btn_blue:hover {
     background-color: #2baaff;
-    cursor: pointer; }
+    cursor: pointer;
+    -webkit-box-shadow: 0px 1px 2px rgba(50, 50, 50, 0.5);
+    -moz-box-shadow: 0px 1px 2px rgba(50, 50, 50, 0.5);
+    box-shadow: 0px 1px 2px rgba(50, 50, 50, 0.5); }
 
 .btn_orange {
   background-color: #ff9000;
@@ -2672,7 +2677,7 @@ button,
   color: #FFF;
   display: block;
   font-size: 13px;
-  padding: 6px 10px;
+  padding: 8px 10px 6px;
   position: relative;
   text-align: center;
   text-decoration: none;
@@ -2680,13 +2685,13 @@ button,
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
-  -webkit-box-shadow: 0px 1px 2px rgba(50, 50, 50, 0.5);
-  -moz-box-shadow: 0px 1px 2px rgba(50, 50, 50, 0.5);
-  box-shadow: 0px 1px 2px rgba(50, 50, 50, 0.5);
   z-index: 1000; }
   .btn_orange:hover {
     background-color: #ff9a17;
-    cursor: pointer; }
+    cursor: pointer;
+    -webkit-box-shadow: 0px 1px 2px rgba(50, 50, 50, 0.5);
+    -moz-box-shadow: 0px 1px 2px rgba(50, 50, 50, 0.5);
+    box-shadow: 0px 1px 2px rgba(50, 50, 50, 0.5); }
 
 /* CLOSE BUTTON */
 .close_btn {

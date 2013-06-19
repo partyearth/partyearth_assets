@@ -1084,88 +1084,105 @@ div.actions fieldset, .store_action_btns fieldset {
 
 
 */
-#user_info .section_nav {
-  border-top: 1px solid #adc0c9;
-  margin-top: 12px;
-  padding-top: 8px; }
-#user_info #login_area form .login_box {
-  background-color: #FFFFFF;
-  background-image: none;
-  color: #999999 !important;
-  padding: 0 !important; }
-  #user_info #login_area form .login_box abbr {
-    color: #0099FF;
-    font-weight: bold;
-    padding-left: 2px; }
-  #user_info #login_area form .login_box fieldset ol {
-    padding: 0; }
-    #user_info #login_area form .login_box fieldset ol .radio_group legend {
-      margin-top: -8px !important; }
-  #user_info #login_area form .login_box .form_fields {
-    margin: 0;
-    padding: 0; }
-    #user_info #login_area form .login_box .form_fields li {
+#user_info #login_area {
+  margin-top: 20px; }
+  #user_info #login_area form .login_box {
+    background-color: #FFFFFF;
+    background-image: none;
+    color: #999999 !important;
+    padding: 0 !important; }
+    #user_info #login_area form .login_box abbr {
+      color: #0099FF;
+      font-weight: bold;
+      padding-left: 2px; }
+    #user_info #login_area form .login_box fieldset ol {
+      padding: 0; }
+      #user_info #login_area form .login_box fieldset ol .radio_group legend {
+        margin-top: -8px !important; }
+    #user_info #login_area form .login_box .form_fields {
       margin: 0;
-      padding: 0 !important; }
-      #user_info #login_area form .login_box .form_fields li label {
-        color: #375363;
-        font-size: 14px;
-        padding-right: 14px;
-        margin: 0 !important;
-        width: 160px; }
-        #user_info #login_area form .login_box .form_fields li label abbr {
-          color: #0099ff;
-          padding-left: 5px;
-          font-weight: bold; }
-      #user_info #login_area form .login_box .form_fields li span {
-        font-size: 11px;
-        padding-left: 10px; }
-      #user_info #login_area form .login_box .form_fields li span.inline-errors {
-        font-size: 12px;
-        left: 170px;
-        padding-left: 20px; }
-      #user_info #login_area form .login_box .form_fields li .inline-success {
-        left: 457px;
-        top: 8px; }
-#user_info #login_area form .accounts_cont {
-  border-top: 1px dashed #adc0c9;
-  border-bottom: 1px dashed #adc0c9;
-  width: 100%;
-  padding: 5px 0; }
-#user_info #login_area form .change_pw_cont {
-  border-bottom: 1px solid #adc0c9;
-  display: block;
-  padding: 12px 0;
-  width: 100%; }
-  #user_info #login_area form .change_pw_cont .pw_inputs {
-    margin-top: 15px; }
-#user_info #login_area form .actions {
-  margin-top: 7px; }
-  #user_info #login_area form .actions a {
+      padding: 0; }
+      #user_info #login_area form .login_box .form_fields li {
+        margin: 0;
+        padding: 0 !important; }
+        #user_info #login_area form .login_box .form_fields li label {
+          color: #375363;
+          font-size: 14px;
+          padding-right: 14px;
+          margin: 0 !important;
+          width: 160px; }
+          #user_info #login_area form .login_box .form_fields li label abbr {
+            color: #0099ff;
+            padding-left: 5px;
+            font-weight: bold; }
+        #user_info #login_area form .login_box .form_fields li span {
+          font-size: 11px;
+          padding-left: 10px; }
+        #user_info #login_area form .login_box .form_fields li span.inline-errors {
+          font-size: 12px;
+          left: 170px;
+          padding-left: 20px; }
+        #user_info #login_area form .login_box .form_fields li .inline-success {
+          left: 457px;
+          top: 8px; }
+  #user_info #login_area form .accounts_cont {
+    border-top: 1px dashed #adc0c9;
+    border-bottom: 1px dashed #adc0c9;
+    display: block;
+    padding: 5px 0;
+    position: relative;
+    width: 100%; }
+    #user_info #login_area form .accounts_cont span.label {
+      color: #999999;
+      display: block;
+      float: left;
+      padding: 11px 0 0 48px !important; }
+    #user_info #login_area form .accounts_cont .social_accounts {
+      position: relative !important;
+      display: block;
+      width: 385px !important; }
+      #user_info #login_area form .accounts_cont .social_accounts table table tr:nth-child(2) {
+        height: 0; }
+      #user_info #login_area form .accounts_cont .social_accounts #ProfileLinkAccounts_bottomLink {
+        position: absolute;
+        top: 18px;
+        right: 105px; }
+  #user_info #login_area form .change_pw_cont {
+    border-bottom: 1px solid #adc0c9;
+    display: block;
+    padding: 12px 0;
+    width: 100%; }
+    #user_info #login_area form .change_pw_cont .pw_inputs {
+      margin-top: 15px; }
+  #user_info #login_area form .actions {
     margin-top: 7px; }
-  #user_info #login_area form .actions .btn_blue {
-    padding: 8px 0;
-    width: 80px; }
+    #user_info #login_area form .actions a {
+      margin-top: 7px; }
+    #user_info #login_area form .actions .btn_blue {
+      padding: 8px 0;
+      width: 80px; }
 /* List View Tab */
-.recent_lists .date {
-  color: #8EA8B5;
-  font-family: 'Arial', sans-serif;
-  font-size: 10px;
-  line-height: 11px;
-  padding-top: 1px;
-  text-transform: uppercase;
-  width: 80px; }
-.recent_lists .info {
-  width: 470px; }
-.recent_lists .btn_blue {
-  margin: 10px 0 0 0 !important;
-  width: 70px !important; }
-.recent_lists .published {
-  color: #0099ff;
-  margin-top: 10px; }
-.recent_lists .error {
-  color: red;
-  margin-top: 10px; }
+.recent_lists {
+  width: 560px; }
+  .recent_lists .date {
+    color: #8EA8B5;
+    font-family: 'Arial', sans-serif;
+    font-size: 10px;
+    line-height: 11px;
+    padding-top: 1px;
+    text-transform: uppercase;
+    width: 80px; }
+  .recent_lists .info {
+    width: 480px; }
+  .recent_lists .btn_blue {
+    margin: 10px 0 0 0 !important;
+    width: 70px !important; }
+  .recent_lists .published {
+    color: #0099ff;
+    margin-top: 10px; }
+  .recent_lists .error {
+    color: red;
+    margin-top: 10px; }
 /* Personality Layout */
 .title_text {
   color: #0099FF;
@@ -1317,6 +1334,7 @@ div.actions fieldset, .store_action_btns fieldset {
   padding: 20px 0;
   text-align: center; }
   .activities_empty p {
+    color: #375363;
     font-size: 12px;
     line-height: 16px; }
 
@@ -1448,6 +1466,7 @@ div.actions fieldset, .store_action_btns fieldset {
   padding: 20px 0;
   text-align: center; }
   .reviews_empty p {
+    color: #375363;
     font-size: 12px;
     line-height: 16px; }
   .reviews_empty .search_cont {
@@ -1466,7 +1485,7 @@ ul.reviews_comments li {
   border-bottom: 1px dashed #adc0c9;
   margin-bottom: 12px;
   padding-bottom: 12px;
-  width: 550px; }
+  width: 560px; }
   ul.reviews_comments li:last-child {
     border: none;
     margin: 0;
@@ -1525,7 +1544,7 @@ ul.reviews_comments li {
   ul.reviews_comments li .cont_right {
     color: #464646;
     font-size: 12px;
-    width: 440px; }
+    width: 450px; }
     ul.reviews_comments li .cont_right .created {
       color: #8EA8B5;
       font-family: Arial, sans-serif;
@@ -1553,14 +1572,17 @@ ul.reviews_comments li {
       width: 19px; }
 /* Lists Sort Display */
 .list_tab {
-  position: relative; }
+  position: relative;
+  width: 560px; }
   .list_tab .btn_blue {
     margin-left: 6px;
     width: 132px; }
   .list_tab .create_new {
+    padding: 5px;
     position: absolute;
     right: 0;
-    top: -4px; }
+    top: -3px;
+    width: 100px; }
   .list_tab .list_creator_cont {
     background-color: #f9f9f9;
     border: 3px solid #0099ff;
@@ -1611,7 +1633,7 @@ ul.reviews_comments li {
       font-size: 12px;
       color: #8ea8b5; }
     .list_tab form .display {
-      padding-left: 95px; }
+      padding-left: 145px; }
     .list_tab form select {
       color: #597686;
       border: 1px solid #C3D5DE;
@@ -1627,7 +1649,20 @@ ul.reviews_comments li {
       border-bottom: 1px solid #adc0c9;
       height: 1px;
       margin-bottom: 12px;
-      padding-top: 12px; }
+      padding-top: 5px; }
+  .list_tab .public_view .display {
+    padding-left: 266px; }
+  .list_tab .public_view select {
+    color: #597686;
+    border: 1px solid #C3D5DE;
+    font-size: 12px;
+    padding: 2px;
+    margin-left: 5px;
+    width: 50px; }
+    .list_tab .public_view select:nth-child(3) {
+      width: 145px; }
+    .list_tab .public_view select:nth-child(5) {
+      width: 48px; }
 
 /* Reviews & Comments Sort Display */
 .action_bar form {
@@ -1637,7 +1672,7 @@ ul.reviews_comments li {
     font-size: 12px;
     color: #8ea8b5; }
   .action_bar form .display {
-    padding-left: 257px; }
+    padding-left: 266px; }
   .action_bar form select {
     color: #597686;
     border: 1px solid #C3D5DE;
@@ -1653,7 +1688,7 @@ ul.reviews_comments li {
     border-bottom: 1px solid #adc0c9;
     height: 1px;
     margin-bottom: 12px;
-    padding-top: 12px; }
+    padding-top: 6px; }
 
 /* Pagination Container */
 .pagination {
@@ -1740,8 +1775,10 @@ h2 {
   width: 130px; }
   #user_image .profile_pic_cont {
     position: relative;
-    width: 130px; }
+    height: 130px;
+    margin-bottom: 10px; }
     #user_image .profile_pic_cont .photo_up {
+      background: #375363;
       background: rgba(0, 0, 0, 0.5);
       bottom: 43%;
       color: #FFFFFF;
@@ -1764,11 +1801,9 @@ h2 {
     display: block;
     float: left; }
     #user_image .relate_to dt {
-      font-size: 11px; }
+      font-size: 10px; }
     #user_image .relate_to .liked_by {
       width: 132px; }
-      #user_image .relate_to .liked_by ul {
-        margin-right: 12px; }
 
 /* Relate To */
 .relate_to .select_characters {
@@ -1792,26 +1827,60 @@ h2 {
 
 /* User Menu */
 #user_info {
-  width: 550px; }
+  position: relative;
+  width: 560px; }
   #user_info h1 {
     color: #375363;
-    font-size: 28px;
-    font-weight: normal; }
+    font-size: 24px;
+    font-weight: normal;
+    margin: -5px 0 0 0; }
   #user_info .city {
     color: #acacac;
-    font-size: 12px; }
+    font-size: 12px;
+    margin-bottom: 0; }
   #user_info .summary_cont {
     border: 1px solid #cfd9de;
     border-radius: 3px;
     color: #959595;
     font-size: 12px;
     line-height: 16px;
-    margin: 10px 0;
-    overflow: hidden;
+    margin: 5px 0 0 0;
     padding: 5px 10px;
     position: relative; }
+    #user_info .summary_cont .anchor {
+      background-color: red;
+      position: absolute;
+      top: -2px;
+      left: -4px;
+      z-index: 1; }
+      #user_info .summary_cont .anchor:after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 12px;
+        left: -8px;
+        width: 0;
+        height: 0;
+        border-color: #FFFFFF #FFFFFF transparent transparent;
+        border-style: solid;
+        border-width: 8px; }
+      #user_info .summary_cont .anchor:before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 11px;
+        left: -10px;
+        width: 0;
+        height: 0;
+        border-color: #cfd9de #cfd9de transparent transparent;
+        border-style: solid;
+        border-width: 7px; }
+    #user_info .summary_cont:hover {
+      border: 1px solid #0099FF; }
+      #user_info .summary_cont:hover .anchor:before {
+        border-color: #0099FF #0099FF transparent transparent !important; }
     #user_info .summary_cont .textarea_editable textarea {
-      background-color: #ffffe5;
+      border: none;
       color: #636363;
       font-size: 12px !important;
       line-height: 16px !important;
@@ -1836,12 +1905,13 @@ h2 {
 
 /* Navigation */
 .section_nav {
+  border-top: 1px solid #adc0c9;
   border-bottom: 1px solid #adc0c9;
   display: block;
-  margin-bottom: 12px;
-  padding-bottom: 8px;
+  margin: 6px 0;
+  padding: 7px 10px;
   position: relative;
-  width: 550px; }
+  width: 540px; }
   .section_nav ul li {
     display: inline-block;
     float: left;
@@ -1857,28 +1927,6 @@ h2 {
       .section_nav ul li a:hover {
         color: #0099ff;
         text-decoration: underline !important; }
-        .section_nav ul li a:hover:after, .section_nav ul li a:hover:before {
-          bottom: 100%;
-          border: solid transparent;
-          content: " ";
-          height: 0;
-          width: 0;
-          position: absolute;
-          pointer-events: none; }
-        .section_nav ul li a:hover:after {
-          border-color: rgba(255, 255, 255, 0);
-          border-bottom-color: #FFF;
-          border-width: 5px;
-          left: 50%;
-          top: 17px;
-          margin-left: -5px; }
-        .section_nav ul li a:hover:before {
-          border-color: rgba(173, 192, 201, 0);
-          border-bottom-color: #adc0c9;
-          border-width: 6px;
-          left: 50%;
-          top: 15px;
-          margin-left: -6px; }
     .section_nav ul li .current {
       color: #0099ff;
       cursor: default;
@@ -1896,14 +1944,14 @@ h2 {
         border-bottom-color: #FFF;
         border-width: 5px;
         left: 50%;
-        top: 17px;
+        top: 16px;
         margin-left: -5px; }
       .section_nav ul li .current:before {
         border-color: rgba(173, 192, 201, 0);
         border-bottom-color: #adc0c9;
         border-width: 6px;
         left: 50%;
-        top: 15px;
+        top: 14px;
         margin-left: -6px; }
 
 /* Recent Lists */
@@ -1951,3 +1999,8 @@ h2 {
     color: #ff9000;
     font-size: 16px;
     top: 1px; }
+
+/* Hide Hover On About Me Public View */
+.public_about {
+  pointer-events: none;
+  cursor: default; }

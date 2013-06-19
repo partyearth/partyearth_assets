@@ -401,65 +401,80 @@ div.actions fieldset, .store_action_btns fieldset {
 
 
 */
-#user_info .section_nav {
-  border-top: 1px solid #adc0c9;
-  margin-top: 12px;
-  padding-top: 8px; }
-#user_info #login_area form .login_box {
-  background-color: #FFFFFF;
-  background-image: none;
-  color: #999999 !important;
-  padding: 0 !important; }
-  #user_info #login_area form .login_box abbr {
-    color: #0099FF;
-    font-weight: bold;
-    padding-left: 2px; }
-  #user_info #login_area form .login_box fieldset ol {
-    padding: 0; }
-    #user_info #login_area form .login_box fieldset ol .radio_group legend {
-      margin-top: -8px !important; }
-  #user_info #login_area form .login_box .form_fields {
-    margin: 0;
-    padding: 0; }
-    #user_info #login_area form .login_box .form_fields li {
+#user_info #login_area {
+  margin-top: 20px; }
+  #user_info #login_area form .login_box {
+    background-color: #FFFFFF;
+    background-image: none;
+    color: #999999 !important;
+    padding: 0 !important; }
+    #user_info #login_area form .login_box abbr {
+      color: #0099FF;
+      font-weight: bold;
+      padding-left: 2px; }
+    #user_info #login_area form .login_box fieldset ol {
+      padding: 0; }
+      #user_info #login_area form .login_box fieldset ol .radio_group legend {
+        margin-top: -8px !important; }
+    #user_info #login_area form .login_box .form_fields {
       margin: 0;
-      padding: 0 !important; }
-      #user_info #login_area form .login_box .form_fields li label {
-        color: #375363;
-        font-size: 14px;
-        padding-right: 14px;
-        margin: 0 !important;
-        width: 160px; }
-        #user_info #login_area form .login_box .form_fields li label abbr {
-          color: #0099ff;
-          padding-left: 5px;
-          font-weight: bold; }
-      #user_info #login_area form .login_box .form_fields li span {
-        font-size: 11px;
-        padding-left: 10px; }
-      #user_info #login_area form .login_box .form_fields li span.inline-errors {
-        font-size: 12px;
-        left: 170px;
-        padding-left: 20px; }
-      #user_info #login_area form .login_box .form_fields li .inline-success {
-        left: 457px;
-        top: 8px; }
-#user_info #login_area form .accounts_cont {
-  border-top: 1px dashed #adc0c9;
-  border-bottom: 1px dashed #adc0c9;
-  width: 100%;
-  padding: 5px 0; }
-#user_info #login_area form .change_pw_cont {
-  border-bottom: 1px solid #adc0c9;
-  display: block;
-  padding: 12px 0;
-  width: 100%; }
-  #user_info #login_area form .change_pw_cont .pw_inputs {
-    margin-top: 15px; }
-#user_info #login_area form .actions {
-  margin-top: 7px; }
-  #user_info #login_area form .actions a {
+      padding: 0; }
+      #user_info #login_area form .login_box .form_fields li {
+        margin: 0;
+        padding: 0 !important; }
+        #user_info #login_area form .login_box .form_fields li label {
+          color: #375363;
+          font-size: 14px;
+          padding-right: 14px;
+          margin: 0 !important;
+          width: 160px; }
+          #user_info #login_area form .login_box .form_fields li label abbr {
+            color: #0099ff;
+            padding-left: 5px;
+            font-weight: bold; }
+        #user_info #login_area form .login_box .form_fields li span {
+          font-size: 11px;
+          padding-left: 10px; }
+        #user_info #login_area form .login_box .form_fields li span.inline-errors {
+          font-size: 12px;
+          left: 170px;
+          padding-left: 20px; }
+        #user_info #login_area form .login_box .form_fields li .inline-success {
+          left: 457px;
+          top: 8px; }
+  #user_info #login_area form .accounts_cont {
+    border-top: 1px dashed #adc0c9;
+    border-bottom: 1px dashed #adc0c9;
+    display: block;
+    padding: 5px 0;
+    position: relative;
+    width: 100%; }
+    #user_info #login_area form .accounts_cont span.label {
+      color: #999999;
+      display: block;
+      float: left;
+      padding: 11px 0 0 48px !important; }
+    #user_info #login_area form .accounts_cont .social_accounts {
+      position: relative !important;
+      display: block;
+      width: 385px !important; }
+      #user_info #login_area form .accounts_cont .social_accounts table table tr:nth-child(2) {
+        height: 0; }
+      #user_info #login_area form .accounts_cont .social_accounts #ProfileLinkAccounts_bottomLink {
+        position: absolute;
+        top: 18px;
+        right: 105px; }
+  #user_info #login_area form .change_pw_cont {
+    border-bottom: 1px solid #adc0c9;
+    display: block;
+    padding: 12px 0;
+    width: 100%; }
+    #user_info #login_area form .change_pw_cont .pw_inputs {
+      margin-top: 15px; }
+  #user_info #login_area form .actions {
     margin-top: 7px; }
-  #user_info #login_area form .actions .btn_blue {
-    padding: 8px 0;
-    width: 80px; }
+    #user_info #login_area form .actions a {
+      margin-top: 7px; }
+    #user_info #login_area form .actions .btn_blue {
+      padding: 8px 0;
+      width: 80px; }

@@ -1098,6 +1098,12 @@
 #article_page #left_container {
   /* LIST-ITEM STYLES
      ---------------------------------------------*/ }
+  #article_page #left_container .inside .social_media_btns {
+    margin: 9px 0 !important;
+    padding: 9px 0 !important;
+    border-bottom: 1px dashed #ADC0C9; }
+    #article_page #left_container .inside .social_media_btns table td {
+      min-width: auto; }
   #article_page #left_container .sponsored_label {
     position: absolute;
     right: 18px;
