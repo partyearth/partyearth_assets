@@ -1161,6 +1161,46 @@ div.actions fieldset, .store_action_btns fieldset {
     #user_info #login_area form .actions .btn_blue {
       padding: 8px 0;
       width: 80px; }
+/* Recent Lists */
+.recent_lists_overview, .recent_lists {
+  margin-top: 12px; }
+  .recent_lists_overview li, .recent_lists li {
+    border-bottom: 1px dashed #adc0c9;
+    margin-bottom: 8px;
+    padding-bottom: 7px; }
+    .recent_lists_overview li:last-child, .recent_lists li:last-child {
+      border: none;
+      margin: 0; }
+    .recent_lists_overview li .title a, .recent_lists li .title a {
+      color: #000;
+      font-size: 16px;
+      font-weight: bold;
+      margin-right: 5px;
+      text-decoration: none; }
+      .recent_lists_overview li .title a:hover, .recent_lists li .title a:hover {
+        color: #0099ff;
+        text-decoration: underline; }
+    .recent_lists_overview li .count, .recent_lists li .count {
+      color: #0099ff;
+      font-size: 10px; }
+    .recent_lists_overview li .unpublished, .recent_lists li .unpublished {
+      color: #d92100;
+      font-size: 11px;
+      line-height: 16px;
+      margin-right: 3px; }
+    .recent_lists_overview li .description, .recent_lists li .description {
+      color: #375363;
+      font-size: 12px;
+      line-height: 16px; }
+      .recent_lists_overview li .description p, .recent_lists li .description p {
+        color: #375363; }
+
+.list_more {
+  border-top: 1px solid #adc0c9;
+  padding-top: 10px;
+  text-align: right;
+  width: 100%; }
+
 /* List View Tab */
 .recent_lists {
   width: 560px; }
@@ -1169,25 +1209,31 @@ div.actions fieldset, .store_action_btns fieldset {
     font-family: 'Arial', sans-serif;
     font-size: 10px;
     line-height: 11px;
-    padding-top: 1px;
+    padding-top: 5px;
     text-transform: uppercase;
     width: 80px; }
   .recent_lists .info {
     width: 480px; }
-  .recent_lists .btn_blue {
-    margin: 10px 0 0 0 !important;
-    width: 70px !important; }
-  .recent_lists .published {
-    color: #0099ff;
-    margin-top: 10px; }
+    .recent_lists .info .btn_blue {
+      margin: 2px 0 0 0 !important;
+      padding: 4px 0 3px 0;
+      width: 60px !important;
+      font-size: 11px;
+      letter-spacing: 1px; }
+  .recent_lists .publish_btn_cont {
+    height: 28px; }
+    .recent_lists .publish_btn_cont .published {
+      color: #0099ff;
+      margin-top: 7px; }
   .recent_lists .error {
     color: red;
-    margin-top: 10px; }
+    margin-top: 7px; }
 /* Personality Layout */
 .title_text {
   color: #0099FF;
   font-size: 16px;
-  padding-bottom: 12px; }
+  line-height: 20px;
+  padding-bottom: 7px; }
 
 .body_text {
   padding-bottom: 12px;
@@ -1441,9 +1487,9 @@ div.actions fieldset, .store_action_btns fieldset {
     .recent_activities_arrows .btn .arrow_down {
       width: 0px;
       height: 0px;
-      margin: 6px auto 0 auto;
+      margin: 7px auto 0 auto;
       border-style: solid;
-      border-width: 0 5px 10px 5px;
+      border-width: 0 7px 8px 7px;
       border-color: transparent transparent #0099ff transparent;
       -webkit-transform: rotate(360deg);
       -webkit-box-shadow: 0px 1px 0px 0px #FFFFFF;
@@ -1452,9 +1498,9 @@ div.actions fieldset, .store_action_btns fieldset {
     .recent_activities_arrows .btn .arrow_up {
       width: 0px;
       height: 0px;
-      margin: 6px auto 0 auto;
+      margin: 7px auto 0 auto;
       border-style: solid;
-      border-width: 10px 5px 0 5px;
+      border-width: 8px 7px 0 7px;
       border-color: #0099ff transparent transparent transparent;
       -webkit-transform: rotate(360deg);
       -webkit-box-shadow: 0px -1px 0px 0px #FFFFFF;
@@ -1483,8 +1529,8 @@ div.actions fieldset, .store_action_btns fieldset {
 /* Reviews & Comments Display */
 ul.reviews_comments li {
   border-bottom: 1px dashed #adc0c9;
-  margin-bottom: 12px;
-  padding-bottom: 12px;
+  margin-bottom: 4px;
+  padding-bottom: 10px;
   width: 560px; }
   ul.reviews_comments li:last-child {
     border: none;
@@ -1492,17 +1538,17 @@ ul.reviews_comments li {
     padding: 0; }
   ul.reviews_comments li .cont_top {
     position: relative;
-    width: 550px; }
+    width: 560px; }
     ul.reviews_comments li .cont_top .local_label {
       background: #545454;
       color: white;
       font-size: 8px;
       letter-spacing: 1px;
-      padding: 2px 4px;
+      padding: 3px 4px 2px;
       position: absolute;
       line-height: 9px;
       text-transform: uppercase;
-      top: 2px;
+      top: 6px;
       right: 0; }
     ul.reviews_comments li .cont_top h2 {
       display: block;
@@ -1545,44 +1591,77 @@ ul.reviews_comments li {
     color: #464646;
     font-size: 12px;
     width: 450px; }
-    ul.reviews_comments li .cont_right .created {
-      color: #8EA8B5;
-      font-family: Arial, sans-serif;
-      font-size: 11px;
-      margin-right: 5px;
-      text-transform: uppercase; }
-    ul.reviews_comments li .cont_right .summary {
-      color: #000000;
-      font-weight: bold;
-      padding-right: 2px; }
-    ul.reviews_comments li .cont_right .more_link {
-      font-family: Arial, sans-serif;
-      font-size: 11px; }
-    ul.reviews_comments li .cont_right .gig-comments-star-full {
-      background-image: url(/assets/content_bg/application_sprite.png);
-      background-position: -386px -407px;
-      display: inline-block;
-      height: 19px;
-      width: 19px; }
-    ul.reviews_comments li .cont_right .gig-comments-star-empty {
-      background-image: url(/assets/content_bg/application_sprite.png);
-      background-position: -407px -407px;
-      display: inline-block;
-      height: 19px;
-      width: 19px; }
+    ul.reviews_comments li .cont_right .details {
+      line-height: 16px;
+      margin-top: -4px; }
+      ul.reviews_comments li .cont_right .details .pull_down {
+        position: relative; }
+        ul.reviews_comments li .cont_right .details .pull_down .clipped {
+          height: 47px;
+          overflow: hidden; }
+        ul.reviews_comments li .cont_right .details .pull_down .more_toggle {
+          background-color: #FFFFFF;
+          padding: 0 0 0 5px;
+          position: absolute;
+          right: 0;
+          top: 32px; }
+          ul.reviews_comments li .cont_right .details .pull_down .more_toggle span {
+            font-size: 11px !important;
+            color: #0099ff !important; }
+            ul.reviews_comments li .cont_right .details .pull_down .more_toggle span:hover {
+              color: #597686 !important; }
+        ul.reviews_comments li .cont_right .details .pull_down .less_toggle span {
+          font-size: 11px !important;
+          color: #0099ff !important; }
+          ul.reviews_comments li .cont_right .details .pull_down .less_toggle span:hover {
+            color: #597686 !important; }
+      ul.reviews_comments li .cont_right .details .created {
+        color: #959595;
+        font-family: Arial, sans-serif;
+        font-size: 10px;
+        margin-right: 5px;
+        text-transform: uppercase; }
+      ul.reviews_comments li .cont_right .details .summary {
+        color: #000000;
+        font-weight: bold;
+        padding-right: 2px; }
+      ul.reviews_comments li .cont_right .details .more_link {
+        font-family: Arial, sans-serif;
+        font-size: 11px; }
+    ul.reviews_comments li .cont_right .ratings {
+      width: 100%;
+      height: 20px;
+      display: block; }
+    ul.reviews_comments li .cont_right .gig-comments-rating {
+      height: 14px;
+      overflow: hidden !important;
+      width: 65px; }
+      ul.reviews_comments li .cont_right .gig-comments-rating .gig-comments-star-full {
+        background-image: url(/assets/content_bg/application_sprite.png);
+        background-position: -450px -407px;
+        display: inline-block;
+        height: 14px;
+        width: 14px; }
+      ul.reviews_comments li .cont_right .gig-comments-rating .gig-comments-star-empty {
+        background-image: url(/assets/content_bg/application_sprite.png);
+        background-position: -466px -407px;
+        display: inline-block;
+        height: 14px;
+        width: 14px; }
 /* Lists Sort Display */
 .list_tab {
   position: relative;
+  margin-top: 7px;
   width: 560px; }
   .list_tab .btn_blue {
     margin-left: 6px;
     width: 132px; }
   .list_tab .create_new {
-    padding: 5px;
+    padding: 5px 0 3px;
     position: absolute;
     right: 0;
-    top: -3px;
-    width: 100px; }
+    top: -2px;
+    width: 135px; }
   .list_tab .list_creator_cont {
     background-color: #f9f9f9;
     border: 3px solid #0099ff;
@@ -1590,7 +1669,7 @@ ul.reviews_comments li {
     position: absolute;
     right: 0;
     top: 36px;
-    width: 524px;
+    width: 534px;
     z-index: 10000; }
     .list_tab .list_creator_cont:after, .list_tab .list_creator_cont:before {
       bottom: 100%;
@@ -1604,21 +1683,21 @@ ul.reviews_comments li {
       border-color: rgba(249, 249, 249, 0);
       border-bottom-color: #f9f9f9;
       border-width: 7px;
-      left: 472px;
+      left: 490px;
       margin-left: -7px; }
     .list_tab .list_creator_cont:before {
       border-color: rgba(0, 153, 255, 0);
       border-bottom-color: #0099ff;
       border-width: 11px;
-      left: 472px;
+      left: 490px;
       margin-left: -11px; }
     .list_tab .list_creator_cont input {
       border: 1px solid #cfd9de;
       margin-bottom: 12px;
       padding: 6px 12px;
-      width: 496px; }
+      width: 508px; }
     .list_tab .list_creator_cont .btn_blue {
-      width: 70px; }
+      width: 70px !important; }
     .list_tab .list_creator_cont .fake_link {
       color: #8ea8b5;
       padding: 9px 5px 0;
@@ -1633,7 +1712,7 @@ ul.reviews_comments li {
       font-size: 12px;
       color: #8ea8b5; }
     .list_tab form .display {
-      padding-left: 145px; }
+      padding-left: 140px; }
     .list_tab form select {
       color: #597686;
       border: 1px solid #C3D5DE;
@@ -1642,14 +1721,14 @@ ul.reviews_comments li {
       margin-left: 5px;
       width: 50px; }
       .list_tab form select:nth-child(2) {
-        width: 145px; }
+        width: 127px; }
       .list_tab form select:nth-child(4) {
         width: 48px; }
     .list_tab form .divider {
-      border-bottom: 1px solid #adc0c9;
+      border-bottom: 1px solid #cfd9de;
       height: 1px;
       margin-bottom: 12px;
-      padding-top: 5px; }
+      padding-top: 6px; }
   .list_tab .public_view .display {
     padding-left: 266px; }
   .list_tab .public_view select {
@@ -1665,30 +1744,32 @@ ul.reviews_comments li {
       width: 48px; }
 
 /* Reviews & Comments Sort Display */
-.action_bar form {
-  margin: 0;
-  padding: 0; }
-  .action_bar form span {
-    font-size: 12px;
-    color: #8ea8b5; }
-  .action_bar form .display {
-    padding-left: 266px; }
-  .action_bar form select {
-    color: #597686;
-    border: 1px solid #C3D5DE;
-    font-size: 12px;
-    padding: 2px;
-    margin-left: 5px;
-    width: 50px; }
-    .action_bar form select:nth-child(2) {
-      width: 145px; }
-    .action_bar form select:nth-child(4) {
-      width: 48px; }
-  .action_bar form .divider {
-    border-bottom: 1px solid #adc0c9;
-    height: 1px;
-    margin-bottom: 12px;
-    padding-top: 6px; }
+.action_bar {
+  padding-top: 1px; }
+  .action_bar form {
+    margin: 0;
+    padding: 0; }
+    .action_bar form span {
+      font-size: 12px;
+      color: #8ea8b5; }
+    .action_bar form .display {
+      padding-left: 266px; }
+    .action_bar form select {
+      color: #597686;
+      border: 1px solid #C3D5DE;
+      font-size: 12px;
+      padding: 2px;
+      margin-left: 5px;
+      width: 50px; }
+      .action_bar form select:nth-child(2) {
+        width: 145px; }
+      .action_bar form select:nth-child(4) {
+        width: 48px; }
+    .action_bar form .divider {
+      border-bottom: 1px solid #cfd9de;
+      height: 1px;
+      margin-bottom: 6px;
+      padding-top: 6px; }
 
 /* Pagination Container */
 .pagination {
@@ -1765,7 +1846,7 @@ ul.reviews_comments li {
 
 h2 {
   margin: 0 0 6px;
-  font-size: 17px;
+  font-size: 22px;
   font-weight: bold;
   line-height: 21px; }
 
@@ -1839,9 +1920,10 @@ h2 {
     font-size: 12px;
     margin-bottom: 0; }
   #user_info .summary_cont {
-    border: 1px solid #cfd9de;
+    background-color: #f2f2f2;
+    border: 1px solid #e8e8e8;
     border-radius: 3px;
-    color: #959595;
+    color: #636363;
     font-size: 12px;
     line-height: 16px;
     margin: 5px 0 0 0;
@@ -1861,7 +1943,7 @@ h2 {
         left: -8px;
         width: 0;
         height: 0;
-        border-color: #FFFFFF #FFFFFF transparent transparent;
+        border-color: #f2f2f2 #f2f2f2 transparent transparent;
         border-style: solid;
         border-width: 8px; }
       #user_info .summary_cont .anchor:before {
@@ -1872,19 +1954,26 @@ h2 {
         left: -10px;
         width: 0;
         height: 0;
-        border-color: #cfd9de #cfd9de transparent transparent;
+        border-color: #e8e8e8 #e8e8e8 transparent transparent;
         border-style: solid;
         border-width: 7px; }
     #user_info .summary_cont:hover {
-      border: 1px solid #0099FF; }
+      border: 1px solid #0099FF;
+      background-color: #FFFFFF; }
+      #user_info .summary_cont:hover .anchor:after {
+        border-color: #ffffff #ffffff transparent transparent !important; }
       #user_info .summary_cont:hover .anchor:before {
         border-color: #0099FF #0099FF transparent transparent !important; }
     #user_info .summary_cont .textarea_editable textarea {
-      border: none;
+      background-color: #f2f2f2;
+      border: none !important;
       color: #636363;
       font-size: 12px !important;
       line-height: 16px !important;
+      resize: none;
       height: 50px; }
+      #user_info .summary_cont .textarea_editable textarea:hover {
+        background-color: #FFFFFF; }
     #user_info .summary_cont .counter_cont {
       position: relative;
       font-size: 11px;
@@ -1953,44 +2042,6 @@ h2 {
         left: 50%;
         top: 14px;
         margin-left: -6px; }
-
-/* Recent Lists */
-.recent_lists {
-  margin-top: 12px; }
-  .recent_lists li {
-    border-bottom: 1px dashed #adc0c9;
-    margin-bottom: 12px;
-    padding-bottom: 12px; }
-    .recent_lists li:last-child {
-      border: none;
-      margin: 0; }
-    .recent_lists li .title a {
-      color: #000;
-      font-size: 16px;
-      font-weight: bold;
-      margin-right: 5px;
-      text-decoration: none; }
-      .recent_lists li .title a:hover {
-        color: #0099ff;
-        text-decoration: underline; }
-    .recent_lists li .count {
-      color: #0099ff;
-      font-size: 10px; }
-    .recent_lists li .unpublished {
-      color: #d92100;
-      font-size: 11px;
-      line-height: 16px;
-      margin-right: 3px; }
-    .recent_lists li .description {
-      color: #375363;
-      font-size: 12px;
-      line-height: 16px; }
-
-.list_more {
-  border-top: 1px solid #adc0c9;
-  padding-top: 10px;
-  text-align: right;
-  width: 100%; }
 
 /* Saved Applications */
 .applications {

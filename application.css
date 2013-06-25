@@ -2294,10 +2294,20 @@ h2 {
   position: relative;
   width: 990px;
   margin: 0 auto; }
-  #wrapper .google_adsense {
-    width: 728px;
-    height: 90px;
-    margin: 0 auto; }
+
+#adsense_wrapper {
+  position: relative;
+  margin: 0 auto;
+  width: 990px; }
+  #adsense_wrapper .adsense_cont {
+    background-color: #FFFFFF;
+    float: left;
+    position: relative;
+    width: 740px; }
+    #adsense_wrapper .adsense_cont .ad {
+      height: 90px;
+      margin: 6px;
+      width: 728px; }
 
 #left_container {
   position: relative;

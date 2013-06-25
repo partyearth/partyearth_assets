@@ -1115,8 +1115,8 @@
     height: 405px; }
   .carousel_3.two_line_title .spot_item {
     height: 405px; }
-    .carousel_3.two_line_title .spot_item .name {
-      height: 36px; }
+    .carousel_3.two_line_title .spot_item .name_height {
+      min-height: 36px; }
   .carousel_3.address_3_lines {
     /* If it is for Events and it has 2 line titles increase again by the height of the '.name' (18px) element. */ }
     .carousel_3.address_3_lines .carousel_3_box {

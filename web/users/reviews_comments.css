@@ -21,8 +21,8 @@
 /* Reviews & Comments Display */
 ul.reviews_comments li {
   border-bottom: 1px dashed #adc0c9;
-  margin-bottom: 12px;
-  padding-bottom: 12px;
+  margin-bottom: 4px;
+  padding-bottom: 10px;
   width: 560px; }
   ul.reviews_comments li:last-child {
     border: none;
@@ -30,17 +30,17 @@ ul.reviews_comments li {
     padding: 0; }
   ul.reviews_comments li .cont_top {
     position: relative;
-    width: 550px; }
+    width: 560px; }
     ul.reviews_comments li .cont_top .local_label {
       background: #545454;
       color: white;
       font-size: 8px;
       letter-spacing: 1px;
-      padding: 2px 4px;
+      padding: 3px 4px 2px;
       position: absolute;
       line-height: 9px;
       text-transform: uppercase;
-      top: 2px;
+      top: 6px;
       right: 0; }
     ul.reviews_comments li .cont_top h2 {
       display: block;
@@ -83,28 +83,60 @@ ul.reviews_comments li {
     color: #464646;
     font-size: 12px;
     width: 450px; }
-    ul.reviews_comments li .cont_right .created {
-      color: #8EA8B5;
-      font-family: Arial, sans-serif;
-      font-size: 11px;
-      margin-right: 5px;
-      text-transform: uppercase; }
-    ul.reviews_comments li .cont_right .summary {
-      color: #000000;
-      font-weight: bold;
-      padding-right: 2px; }
-    ul.reviews_comments li .cont_right .more_link {
-      font-family: Arial, sans-serif;
-      font-size: 11px; }
-    ul.reviews_comments li .cont_right .gig-comments-star-full {
-      background-image: url(/assets/content_bg/application_sprite.png);
-      background-position: -386px -407px;
-      display: inline-block;
-      height: 19px;
-      width: 19px; }
-    ul.reviews_comments li .cont_right .gig-comments-star-empty {
-      background-image: url(/assets/content_bg/application_sprite.png);
-      background-position: -407px -407px;
-      display: inline-block;
-      height: 19px;
-      width: 19px; }
+    ul.reviews_comments li .cont_right .details {
+      line-height: 16px;
+      margin-top: -4px; }
+      ul.reviews_comments li .cont_right .details .pull_down {
+        position: relative; }
+        ul.reviews_comments li .cont_right .details .pull_down .clipped {
+          height: 47px;
+          overflow: hidden; }
+        ul.reviews_comments li .cont_right .details .pull_down .more_toggle {
+          background-color: #FFFFFF;
+          padding: 0 0 0 5px;
+          position: absolute;
+          right: 0;
+          top: 32px; }
+          ul.reviews_comments li .cont_right .details .pull_down .more_toggle span {
+            font-size: 11px !important;
+            color: #0099ff !important; }
+            ul.reviews_comments li .cont_right .details .pull_down .more_toggle span:hover {
+              color: #597686 !important; }
+        ul.reviews_comments li .cont_right .details .pull_down .less_toggle span {
+          font-size: 11px !important;
+          color: #0099ff !important; }
+          ul.reviews_comments li .cont_right .details .pull_down .less_toggle span:hover {
+            color: #597686 !important; }
+      ul.reviews_comments li .cont_right .details .created {
+        color: #959595;
+        font-family: Arial, sans-serif;
+        font-size: 10px;
+        margin-right: 5px;
+        text-transform: uppercase; }
+      ul.reviews_comments li .cont_right .details .summary {
+        color: #000000;
+        font-weight: bold;
+        padding-right: 2px; }
+      ul.reviews_comments li .cont_right .details .more_link {
+        font-family: Arial, sans-serif;
+        font-size: 11px; }
+    ul.reviews_comments li .cont_right .ratings {
+      width: 100%;
+      height: 20px;
+      display: block; }
+    ul.reviews_comments li .cont_right .gig-comments-rating {
+      height: 14px;
+      overflow: hidden !important;
+      width: 65px; }
+      ul.reviews_comments li .cont_right .gig-comments-rating .gig-comments-star-full {
+        background-image: url(/assets/content_bg/application_sprite.png);
+        background-position: -450px -407px;
+        display: inline-block;
+        height: 14px;
+        width: 14px; }
+      ul.reviews_comments li .cont_right .gig-comments-rating .gig-comments-star-empty {
+        background-image: url(/assets/content_bg/application_sprite.png);
+        background-position: -466px -407px;
+        display: inline-block;
+        height: 14px;
+        width: 14px; }

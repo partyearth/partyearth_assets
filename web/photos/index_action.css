@@ -653,78 +653,86 @@
 ------------------------------------
 :: These styles are specifically for the comments which are powered by Gigya..
 ------------------------------------*/
-#comments h3 {
-  margin: 0 0 10px;
-  padding: 0 0 10px;
-  color: #0099FF;
-  font-size: 21px;
-  font-weight: bold;
-  border-bottom: 1px dashed #ADC0C9; }
-#comments .gig-comments-container {
-  width: auto !important;
-  /* Top Comment Box */
-  /* Comment List Header "0 Comment ----------- RSS | Subscribe */
-  /* List of Comments */ }
-  #comments .gig-comments-container #Comments-commentBox {
-    margin: 10px 0 10px;
+#comments {
+  /* Gigya Username Link Styles */ }
+  #comments .gig-comments-username {
+    color: #0099FF;
+    cursor: pointer;
+    text-decoration: underline; }
+    #comments .gig-comments-username:hover {
+      color: #597686; }
+  #comments h3 {
+    margin: 0 0 10px;
     padding: 0 0 10px;
-    border-bottom: 1px dashed #adc0c9;
-    /* Header Text "Post a new comment" */
-    /* Top Comment Box Textarea */ }
-    #comments .gig-comments-container #Comments-commentBox #Comments-commentBox {
-      margin: 0;
-      border: none; }
-    #comments .gig-comments-container #Comments-commentBox .gig-comments-headerText {
-      padding-top: 0;
-      line-height: 100%; }
-    #comments .gig-comments-container #Comments-commentBox textarea.gig-comments-commentBox-textarea {
-      width: 694px !important; }
-  #comments .gig-comments-container .gig-comments-commentList-header {
-    padding: 0 0 10px; }
-    #comments .gig-comments-container .gig-comments-commentList-header .gig-comments-commentList-header-commentsCount {
-      margin: 0;
-      padding: 0;
-      border-bottom: none; }
-    #comments .gig-comments-container .gig-comments-commentList-header .gig-comments-headerLinks {
-      padding: 0; }
-  #comments .gig-comments-container .gig-commentList {
-    /* Comment Reply Textarea */ }
-    #comments .gig-comments-container .gig-commentList textarea.gig-comments-replyBox-textarea {
-      width: 674px !important; }
-    #comments .gig-comments-container .gig-commentList > div:first-child .gig-comments-comment {
-      padding: 10px 0 0;
-      border-top: 1px dashed #adc0c9; }
-  #comments .gig-comments-container .gig-comments-commentBox-bottom {
-    margin: 10px 0 0;
-    padding: 10px 0 0; }
-#comments #Comments-postButton a {
-  display: inline-block;
-  font-family: Arial, Helvetica, sans-serif;
-  padding: 7px 30px;
-  color: white;
-  font-size: 1.1em;
-  font-weight: bold;
-  text-align: center;
-  text-decoration: none;
-  text-transform: uppercase;
-  line-height: 1.1em;
-  text-shadow: 0px 1px 2px #5BC6F3;
-  border: solid #0098FE 1px;
-  cursor: pointer;
-  background: -webkit-gradient(linear, 0 0, 0 100%, from(#0098fe), to(#1977ce));
-  background: -moz-linear-gradient(top, #0098fe, #1977ce);
-  -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=#0098fe, endColorStr=#1977ce);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=#0098fe, endColorStr=#1977ce);
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  -webkit-box-shadow: 0px 1px 5px #999;
-  -moz-box-shadow: 0px 1px 5px #999; }
-  #comments #Comments-postButton a:hover {
-    background: #2388f5;
-    text-shadow: 0px 0px 12px #fff;
-    /*FOR IE*/
-    -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=#2388f5, endColorStr=#2388f5);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=#2388f5, endColorStr=#2388f5); }
+    color: #0099FF;
+    font-size: 21px;
+    font-weight: bold;
+    border-bottom: 1px dashed #ADC0C9; }
+  #comments .gig-comments-container {
+    width: auto !important;
+    /* Top Comment Box */
+    /* Comment List Header "0 Comment ----------- RSS | Subscribe */
+    /* List of Comments */ }
+    #comments .gig-comments-container #Comments-commentBox {
+      margin: 10px 0 10px;
+      padding: 0 0 10px;
+      border-bottom: 1px dashed #adc0c9;
+      /* Header Text "Post a new comment" */
+      /* Top Comment Box Textarea */ }
+      #comments .gig-comments-container #Comments-commentBox #Comments-commentBox {
+        margin: 0;
+        border: none; }
+      #comments .gig-comments-container #Comments-commentBox .gig-comments-headerText {
+        padding-top: 0;
+        line-height: 100%; }
+      #comments .gig-comments-container #Comments-commentBox textarea.gig-comments-commentBox-textarea {
+        width: 694px !important; }
+    #comments .gig-comments-container .gig-comments-commentList-header {
+      padding: 0 0 10px; }
+      #comments .gig-comments-container .gig-comments-commentList-header .gig-comments-commentList-header-commentsCount {
+        margin: 0;
+        padding: 0;
+        border-bottom: none; }
+      #comments .gig-comments-container .gig-comments-commentList-header .gig-comments-headerLinks {
+        padding: 0; }
+    #comments .gig-comments-container .gig-commentList {
+      /* Comment Reply Textarea */ }
+      #comments .gig-comments-container .gig-commentList textarea.gig-comments-replyBox-textarea {
+        width: 674px !important; }
+      #comments .gig-comments-container .gig-commentList > div:first-child .gig-comments-comment {
+        padding: 10px 0 0;
+        border-top: 1px dashed #adc0c9; }
+    #comments .gig-comments-container .gig-comments-commentBox-bottom {
+      margin: 10px 0 0;
+      padding: 10px 0 0; }
+  #comments #Comments-postButton a {
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 7px 30px;
+    color: white;
+    font-size: 1.1em;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    line-height: 1.1em;
+    text-shadow: 0px 1px 2px #5BC6F3;
+    border: solid #0098FE 1px;
+    cursor: pointer;
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#0098fe), to(#1977ce));
+    background: -moz-linear-gradient(top, #0098fe, #1977ce);
+    -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=#0098fe, endColorStr=#1977ce);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=#0098fe, endColorStr=#1977ce);
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-box-shadow: 0px 1px 5px #999;
+    -moz-box-shadow: 0px 1px 5px #999; }
+    #comments #Comments-postButton a:hover {
+      background: #2388f5;
+      text-shadow: 0px 0px 12px #fff;
+      /*FOR IE*/
+      -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=#2388f5, endColorStr=#2388f5);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=#2388f5, endColorStr=#2388f5); }
 
 /* Comment Link with Comment Count */
 .comments_link {

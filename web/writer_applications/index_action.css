@@ -448,12 +448,14 @@
   #gptp_in_press li.hogan .name {
     background-position: -600px 0; }
 /* BEGIN PAGE PROPERTIES */
-.get_paid_to_party_content #left_container {
-  width: 675px;
-  margin: 0 0 0 -22px;
-  padding: 0 0 0 82px;
-  background-image: url(/assets/writer_applications/left_column_bg_repeat.png);
-  background-repeat: repeat-y; }
+.get_paid_to_party_content {
+  margin-bottom: 12px; }
+  .get_paid_to_party_content #left_container {
+    width: 675px;
+    margin: 0 0 0 -22px;
+    padding: 0 0 0 82px;
+    background-image: url(/assets/writer_applications/left_column_bg_repeat.png);
+    background-repeat: repeat-y; }
 
 .left_column_content {
   position: relative;

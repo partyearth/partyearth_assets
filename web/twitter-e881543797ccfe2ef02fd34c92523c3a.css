@@ -1,0 +1,61 @@
+/*BEGIN CUSTOM TWITTER STYLES*/
+/*-----------------------------------------*/
+#twitter_pod h3 {
+  padding: 0;
+  border: none; }
+#twitter_pod .twitter_handle {
+  display: block;
+  font-size: 18px;
+  line-height: 18px; }
+#twitter_pod .account_image {
+  width: 128px;
+  height: 128px;
+  border: 1px solid #999; }
+#twitter_pod .headline {
+  font-weight: normal; }
+#twitter_pod .pod_footer {
+  margin-top: -23px;
+  padding: 0 0 5px;
+  border-top: none; }
+  #twitter_pod .pod_footer .prev_next {
+    float: right; }
+  #twitter_pod .pod_footer .prev_btn, #twitter_pod .pod_footer .next_btn {
+    float: left;
+    width: 16px;
+    height: 16px;
+    background-image: url(/assets/content_bg/application_sprite-1685bfa627d68851296ccc502aac126a.png); }
+    #twitter_pod .pod_footer .prev_btn.disabled, #twitter_pod .pod_footer .next_btn.disabled {
+      display: none; }
+  #twitter_pod .pod_footer .prev_btn {
+    margin-right: 5px;
+    background-position: -174px -193px; }
+    #twitter_pod .pod_footer .prev_btn:hover {
+      background-position: -174px -209px; }
+  #twitter_pod .pod_footer .next_btn {
+    background-position: -158px -193px; }
+    #twitter_pod .pod_footer .next_btn:hover {
+      background-position: -158px -209px; }
+#twitter_pod .page_count {
+  display: none; }
+
+.verified_account {
+  display: inline-block;
+  position: relative;
+  bottom: -3px;
+  left: 2px;
+  width: 23px;
+  height: 23px;
+  background: url(/assets/content_bg/application_sprite-1685bfa627d68851296ccc502aac126a.png);
+  background-position: -123px -150px;
+  zoom: 1; }
+
+.twitter_stats {
+  margin: 5px 0;
+  font-size: 11px; }
+  .twitter_stats .label {
+    width: 62px; }
+
+.tweets li {
+  margin: 0 0 6px;
+  padding: 6px 0 0;
+  border-top: 1px solid #eee; }
