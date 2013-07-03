@@ -550,10 +550,16 @@ div.datepicker {
   width: 327px;
   height: 225px;
   padding: 10px 15px;
-  background: -webkit-gradient(linear, 0 0, 0 100%, from(#1977ce), to(#0098fe));
-  background: -moz-linear-gradient(top, #1977ce, #0098fe);
-  -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=#1977ce, endColorStr=#0098fe);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=#1977ce, endColorStr=#0098fe);
+  background: #1977ce;
+  background: -moz-linear-gradient(top, #1977ce 0%, #0098fe 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #1977ce), color-stop(100%, #0098fe));
+  background: -webkit-linear-gradient(top, #1977ce 0%, #0098fe 100%);
+  background: -o-linear-gradient(top, #1977ce 0%, #0098fe 100%);
+  background: -ms-linear-gradient(top, #1977ce 0%, #0098fe 100%);
+  background: linear-gradient(to bottom, #1977ce 0%, #0098fe 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1977ce', endColorstr='#0098fe',GradientType=0 );
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
   border-radius: 2px; }
   .date_picker_block .point {
     position: absolute;
@@ -928,11 +934,17 @@ div.datepicker {
   width: 278px;
   padding: 8px 10px;
   color: #fff;
-  background: -webkit-gradient(linear, 0 0, 0 100%, from(#1977ce), to(#0098fe));
-  background: -moz-linear-gradient(top, #1977ce, #0098fe);
-  -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=#1977ce, endColorStr=#0098fe);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=#1977ce, endColorStr=#0098fe);
-  border-radius: 2px 2px 2px 2px;
+  background: #1977ce;
+  background: -moz-linear-gradient(top, #1977ce 0%, #0098fe 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #1977ce), color-stop(100%, #0098fe));
+  background: -webkit-linear-gradient(top, #1977ce 0%, #0098fe 100%);
+  background: -o-linear-gradient(top, #1977ce 0%, #0098fe 100%);
+  background: -ms-linear-gradient(top, #1977ce 0%, #0098fe 100%);
+  background: linear-gradient(to bottom, #1977ce 0%, #0098fe 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1977ce', endColorstr='#0098fe',GradientType=0 );
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
   /* update to orange version of blue btn  (also used in date picker) */ }
   .location_popup .popup_title {
     margin: 0 0 7px; }
@@ -1655,3 +1667,8 @@ div.datepicker {
     top: -2px;
     font-size: 12px;
     text-transform: capitalize; }
+
+.subscription_dialog .ui-widget-content .email label {
+  left: 10px;
+  top: 5px;
+  position: absolute !important; }

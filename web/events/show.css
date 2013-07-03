@@ -1029,6 +1029,8 @@
     /* Top Comment Box */
     /* Comment List Header "0 Comment ----------- RSS | Subscribe */
     /* List of Comments */ }
+    #comments .gig-comments-container .gig-comments-photoImageLarge img {
+      cursor: pointer !important; }
     #comments .gig-comments-container #Comments-commentBox {
       margin: 10px 0 10px;
       padding: 0 0 10px;
@@ -1058,6 +1060,8 @@
       #comments .gig-comments-container .gig-commentList > div:first-child .gig-comments-comment {
         padding: 10px 0 0;
         border-top: 1px dashed #adc0c9; }
+      #comments .gig-comments-container .gig-commentList .gig-comments-comment-photo-container img {
+        cursor: pointer; }
     #comments .gig-comments-container .gig-comments-commentBox-bottom {
       margin: 10px 0 0;
       padding: 10px 0 0; }
@@ -2969,3 +2973,26 @@
     display: none; }
     #event_tweets.tweets_collapsed .tweets li:first-child {
       display: block; }
+
+/* Google Right Rail Ads */
+.google_ad {
+  padding: 0 !important; }
+  .google_ad .google_ad_200x200 {
+    margin: 0 auto 10px;
+    height: 200px;
+    padding: 20px 0;
+    width: 200px; }
+  .google_ad .google_ad_234x60 {
+    height: 60px;
+    margin: 0 auto;
+    padding: 3px 0;
+    width: 234px; }
+  .google_ad .ad_link {
+    display: block;
+    font-size: 9px;
+    text-align: right;
+    position: absolute;
+    right: 19px;
+    bottom: 2px; }
+    .google_ad .ad_link a {
+      color: #c2c2c2; }
