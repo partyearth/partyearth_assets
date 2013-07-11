@@ -885,11 +885,12 @@
     padding-bottom: 0; }
   .spot_item .date_time {
     display: block;
-    height: 16px;
+    height: 20px;
     color: #09f;
-    font-size: 16px;
-    font-weight: bold;
+    font-size: 14px;
+    font-family: Arial Black, serif, sans-serif;
     line-height: 16px;
+    text-transform: uppercase;
     overflow: hidden; }
   .spot_item .event_venue {
     display: block;
@@ -910,13 +911,13 @@
     margin: 16px 0 0; }
   .spot_item address {
     position: relative;
-    height: 24px;
+    height: 39px;
     margin: 8px 0 0;
     padding: 8px 0 0 25px;
     color: #6c8898;
     font-size: 10px;
     line-height: 12px;
-    font-family: 'Arial', sans-serif;
+    font-family: Arial, serif, sans-serif;
     border-top: 1px dashed #adc0c9;
     overflow: hidden; }
     .spot_item address p {
@@ -970,48 +971,48 @@
     position: relative; }
   .carousel_3 .carousel_3_box {
     position: relative;
-    height: 387px;
+    height: 396px;
     overflow: hidden; }
     .carousel_3 .carousel_3_box .spot_item {
-      height: 387px; }
+      height: 396px; }
   .carousel_3.two_line_title .carousel_3_box {
-    height: 405px; }
+    height: 414px; }
   .carousel_3.two_line_title .spot_item {
-    height: 405px; }
+    height: 414px; }
     .carousel_3.two_line_title .spot_item .name_height {
       min-height: 36px; }
   .carousel_3.address_3_lines {
     /* If it is for Events and it has 2 line titles increase again by the height of the '.name' (18px) element. */ }
     .carousel_3.address_3_lines .carousel_3_box {
-      height: 399px; }
+      height: 408px; }
     .carousel_3.address_3_lines .spot_item {
-      height: 399px; }
+      height: 408px; }
       .carousel_3.address_3_lines .spot_item address {
         height: 36px; }
     .carousel_3.address_3_lines.two_line_title .carousel_3_box {
-      height: 417px; }
+      height: 426px; }
     .carousel_3.address_3_lines.two_line_title .spot_item {
-      height: 417px; }
+      height: 426px; }
   .carousel_3.event_venues {
     /* If it is for Events and it has 2 line titles increase again by the height of the '.name' (18px) element. */ }
     .carousel_3.event_venues .carousel_3_box {
-      height: 418px; }
+      height: 427px; }
     .carousel_3.event_venues .spot_item {
-      height: 418px; }
+      height: 427px; }
     .carousel_3.event_venues.two_line_title .carousel_3_box {
-      height: 436px; }
+      height: 445px; }
     .carousel_3.event_venues.two_line_title .spot_item {
-      height: 436px; }
+      height: 445px; }
   .carousel_3.carousel_events {
     /* If it is for Events and it has 2 line titles increase again by the height of the '.name' (18px) element. */ }
     .carousel_3.carousel_events .carousel_3_box {
-      height: 373px; }
+      height: 382px; }
     .carousel_3.carousel_events .spot_item {
-      height: 373px; }
+      height: 382px; }
     .carousel_3.carousel_events.two_line_title .carousel_3_box {
-      height: 391px; }
+      height: 400px; }
     .carousel_3.carousel_events.two_line_title .spot_item {
-      height: 391px; }
+      height: 400px; }
   .carousel_3 .carousel_3_sldr {
     position: absolute;
     top: 0;

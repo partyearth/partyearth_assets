@@ -2103,20 +2103,6 @@ h2 {
   width: 990px;
   margin: 0 auto; }
 
-#adsense_wrapper {
-  position: relative;
-  margin: 0 auto;
-  width: 990px; }
-  #adsense_wrapper .adsense_cont {
-    background-color: #FFFFFF;
-    float: left;
-    position: relative;
-    width: 740px; }
-    #adsense_wrapper .adsense_cont .ad {
-      height: 90px;
-      margin: 6px;
-      width: 728px; }
-
 #left_container {
   position: relative;
   float: left;
@@ -3305,9 +3291,9 @@ input, select, textarea {
         width: 131px;
         padding: 0; }
         #masthead #main_nav li.current_city a, #masthead #main_nav li.current_city a:visited, #masthead #main_nav li.current_city .fake_link {
-          color: #09f; }
+          color: #0099FF; }
           #masthead #main_nav li.current_city a:hover, #masthead #main_nav li.current_city a:visited:hover, #masthead #main_nav li.current_city .fake_link:hover {
-            color: #375363; }
+            color: #0099FF; }
         #masthead #main_nav li.current_city .shadow_cover {
           left: -15px;
           width: 146px; }
@@ -4516,3 +4502,58 @@ formfield ol:before, .formfield ol:after,
   background-position: center;
   width: 72px;
   height: 72px; }
+
+/* Google Ads */
+#left_container .google_ad {
+  padding: 0 !important; }
+  #left_container .google_ad .google_ad_728x90 {
+    height: 90px;
+    margin: 0 auto;
+    padding: 6px 0;
+    width: 728px; }
+  #left_container .google_ad .google_ad_468x60 {
+    height: 60px;
+    margin: 0 0 15px 208px;
+    width: 468px; }
+
+#right_sidebar .google_ad {
+  padding: 0 !important; }
+  #right_sidebar .google_ad .google_ad_200x200 {
+    margin: 0 auto 10px;
+    height: 200px;
+    padding: 20px 0;
+    width: 200px; }
+  #right_sidebar .google_ad .google_ad_234x60 {
+    height: 60px;
+    margin: 0 auto;
+    padding: 3px 0;
+    width: 234px; }
+  #right_sidebar .google_ad .ad_link {
+    display: block;
+    font-size: 9px;
+    text-align: right;
+    position: absolute;
+    right: 19px;
+    bottom: 2px; }
+    #right_sidebar .google_ad .ad_link a {
+      color: #c2c2c2; }
+
+.pamplona_ad {
+  height: 380px !important;
+  float: right !important;
+  width: 205px !important; }
+  .pamplona_ad .google_ad_180x150 {
+    margin: 0 auto;
+    padding: 7px 0; }
+  .pamplona_ad .ad_link {
+    display: block;
+    font-size: 9px;
+    text-align: right;
+    position: absolute;
+    right: 19px;
+    bottom: 10px; }
+    .pamplona_ad .ad_link a {
+      color: #c2c2c2; }
+
+.google_ad_320x50 {
+  margin-top: 25px; }
