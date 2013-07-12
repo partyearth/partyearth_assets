@@ -168,13 +168,13 @@
     height: 20px;
     width: 342px; }
   .liked_by_big.no_likes .being_evaluated {
-    display: block !important;
+    display: block;
     margin: 0 21px 6px 0; }
   .liked_by_big.no_likes #ratings_help {
     top: 9px !important;
     left: 327px !important; }
   .liked_by_big.no_likes dt, .liked_by_big.no_likes ul, .liked_by_big.no_likes .no_reviews, .liked_by_big.no_likes .question_mark {
-    display: none !important; }
+    display: none; }
   .liked_by_big div, .liked_by_big p, .liked_by_big span {
     -moz-user-select: none;
     user-select: none; }
@@ -387,3 +387,27 @@
       background-position: -410px -85px; }
     .liked_by_big .disabled.emma .character {
       background-position: -480px -85px; }
+
+/* User Reviewed Venue */
+.user_review_venue_liked_by .liked_by_big ul {
+  border-bottom: none !important;
+  margin: 0 !important;
+  height: 87px !important; }
+  .user_review_venue_liked_by .liked_by_big ul .dialog_box {
+    top: -88px !important;
+    right: -363px !important; }
+.user_review_venue_liked_by .liked_by_big.no_likes .being_evaluated {
+  display: block; }
+.user_review_venue_liked_by .liked_by_big.no_likes dt, .user_review_venue_liked_by .liked_by_big.no_likes ul, .user_review_venue_liked_by .liked_by_big.no_likes .no_reviews, .user_review_venue_liked_by .liked_by_big.no_likes .question_mark {
+  display: none !important; }
+
+/* Event Venue */
+.event_venue_liked_by .liked_by_big ul {
+  border-bottom: none !important;
+  margin: 0 !important;
+  height: 87px !important; }
+  .event_venue_liked_by .liked_by_big ul .dialog_box {
+    top: -88px !important;
+    right: -363px !important; }
+.event_venue_liked_by .liked_by_big .no_reviews {
+  display: none !important; }

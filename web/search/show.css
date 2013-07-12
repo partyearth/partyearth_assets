@@ -1360,7 +1360,7 @@ div.datepicker {
           padding: 0; }
     #search_page #search_results_list .search_result .top_right_section {
       width: 130px;
-      padding: 0 9px 52px 9px;
+      padding: 0 9px 9px 9px;
       min-height: 75px;
       border-left: 1px solid #ADC0C9;
       color: #6C8898;
@@ -1392,10 +1392,12 @@ div.datepicker {
         color: #597686 !important;
         text-decoration: none !important; }
       #search_page #search_results_list .search_result .top_right_section .liked_by {
-        position: absolute;
+        position: relative;
         bottom: 0;
-        right: 9px;
-        width: 120px; }
+        left: 10px;
+        width: 120px;
+        display: block;
+        padding-top: 10px; }
         #search_page #search_results_list .search_result .top_right_section .liked_by .character_cont .dialog_content p {
           text-align: left; }
       #search_page #search_results_list .search_result .top_right_section .add_to_calendar {
