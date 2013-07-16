@@ -591,10 +591,16 @@ div.datepicker {
   width: 327px;
   height: 225px;
   padding: 10px 15px;
-  background: -webkit-gradient(linear, 0 0, 0 100%, from(#1977ce), to(#0098fe));
-  background: -moz-linear-gradient(top, #1977ce, #0098fe);
-  -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=#1977ce, endColorStr=#0098fe);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=#1977ce, endColorStr=#0098fe);
+  background: #1977ce;
+  background: -moz-linear-gradient(top, #1977ce 0%, #0098fe 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #1977ce), color-stop(100%, #0098fe));
+  background: -webkit-linear-gradient(top, #1977ce 0%, #0098fe 100%);
+  background: -o-linear-gradient(top, #1977ce 0%, #0098fe 100%);
+  background: -ms-linear-gradient(top, #1977ce 0%, #0098fe 100%);
+  background: linear-gradient(to bottom, #1977ce 0%, #0098fe 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1977ce', endColorstr='#0098fe',GradientType=0 );
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
   border-radius: 2px; }
   .date_picker_block .point {
     position: absolute;
@@ -914,8 +920,7 @@ div.datepicker {
 */
 .liked_by {
   /* Specific character styles */
-  /* Disabled styles */
-  /* Bigger version styles */ }
+  /* Disabled styles */ }
   .liked_by div, .liked_by p, .liked_by span {
     -moz-user-select: none;
     user-select: none; }
@@ -947,32 +952,54 @@ div.datepicker {
       border-radius: 2px;
       cursor: pointer; }
     .liked_by .character_cont .dialog_box {
-      right: -9px;
-      bottom: 41px; }
+      bottom: 38px;
+      right: 0 !important;
+      padding: 2px;
+      z-index: 9999;
+      -webkit-border-radius: 2px;
+      -moz-border-radius: 2px;
+      border-radius: 2px; }
       .liked_by .character_cont .dialog_box .dialog_content_wrapper {
-        width: 184px;
-        padding: 11px 10px 9px; }
+        background-color: #FFFFFF;
+        padding: 10px;
+        width: 188px;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        border-radius: 0; }
       .liked_by .character_cont .dialog_box .dialog_img {
         display: block;
         float: left;
-        width: 32px;
-        height: 87px;
-        background-image: url(/assets/characters/liked_by_sprite.png); }
+        width: 50px;
+        height: 110px;
+        background-image: url(/assets/characters/liked_by.png) !important; }
       .liked_by .character_cont .dialog_box .dialog_content {
         float: left;
-        width: 134px;
-        margin: 7px 0 0 11px; }
+        width: 138px;
+        margin: 0; }
+        .liked_by .character_cont .dialog_box .dialog_content .title {
+          display: block;
+          font-size: 22px;
+          font-weight: bold;
+          padding-bottom: 10px;
+          text-align: left;
+          text-transform: capitalize;
+          width: 100%; }
+        .liked_by .character_cont .dialog_box .dialog_content p {
+          font-size: 11px;
+          line-height: 14px !important; }
     .liked_by .character_cont .dialog_point {
       position: relative;
-      bottom: 39px;
-      left: 1px;
+      bottom: 40px;
+      left: 2px !important;
       border-top: 12px solid #889AA4;
       border-bottom: none; }
       .liked_by .character_cont .dialog_point .dialog_inner_point {
         bottom: -5px;
         left: -10px;
-        border-top: 10px solid #F7F9FB;
-        border-bottom: none; }
+        border-top: 10px solid #FFFFFF;
+        border-bottom: none;
+        margin: 0 0 8px;
+        z-index: 9999; }
   .liked_by .lucas {
     border-color: #4175ab; }
     .liked_by .lucas .character {
@@ -980,7 +1007,7 @@ div.datepicker {
     .liked_by .lucas .title {
       color: #4175ab; }
     .liked_by .lucas .dialog_img {
-      background-position: 0 -209px; }
+      background-position: -260px -195px; }
     .liked_by .lucas:hover {
       border-color: #4175ab; }
       .liked_by .lucas:hover .character {
@@ -993,7 +1020,7 @@ div.datepicker {
     .liked_by .adriana .title {
       color: #c675b1; }
     .liked_by .adriana .dialog_img {
-      background-position: -32px -209px; }
+      background-position: -312px -195px; }
     .liked_by .adriana:hover {
       border-color: #c675b1; }
       .liked_by .adriana:hover .character {
@@ -1006,7 +1033,7 @@ div.datepicker {
     .liked_by .jonah .title {
       color: #95c946; }
     .liked_by .jonah .dialog_img {
-      background-position: -64px -209px; }
+      background-position: -365px -195px; }
     .liked_by .jonah:hover {
       border-color: #95c946; }
       .liked_by .jonah:hover .character {
@@ -1020,7 +1047,7 @@ div.datepicker {
     .liked_by .emma .title {
       color: #ffb637; }
     .liked_by .emma .dialog_img {
-      background-position: -96px -209px; }
+      background-position: -420px -195px; }
     .liked_by .emma:hover {
       border-color: #ffb637; }
       .liked_by .emma:hover .character {
@@ -1036,39 +1063,6 @@ div.datepicker {
       background-position: -61px -33px; }
     .liked_by .disabled.emma .character {
       background-position: -91px -33px; }
-  .liked_by.liked_by_big .character_cont {
-    border-width: 3px; }
-    .liked_by.liked_by_big .character_cont .character {
-      width: 28px;
-      height: 28px; }
-    .liked_by.liked_by_big .character_cont .dialog_box {
-      bottom: 43px; }
-    .liked_by.liked_by_big .character_cont .dialog_point {
-      bottom: 41px; }
-  .liked_by.liked_by_big .lucas .character {
-    background-position: 0 0; }
-  .liked_by.liked_by_big .lucas:hover .character {
-    background-position: 0 0 !important; }
-  .liked_by.liked_by_big .adriana .character {
-    background-position: -30px 0; }
-  .liked_by.liked_by_big .adriana:hover .character {
-    background-position: -30px 0 !important; }
-  .liked_by.liked_by_big .jonah .character {
-    background-position: -60px 0; }
-  .liked_by.liked_by_big .jonah:hover .character {
-    background-position: -60px 0 !important; }
-  .liked_by.liked_by_big .emma .character {
-    background-position: -90px 0; }
-  .liked_by.liked_by_big .emma:hover .character {
-    background-position: -90px 0 !important; }
-  .liked_by.liked_by_big .disabled.lucas .character {
-    background-position: 0 -30px; }
-  .liked_by.liked_by_big .disabled.adriana .character {
-    background-position: -30px -30px; }
-  .liked_by.liked_by_big .disabled.jonah .character {
-    background-position: -60px -30px; }
-  .liked_by.liked_by_big .disabled.emma .character {
-    background-position: -90px -30px; }
 /* Default More Links List Styles */
 .more_links_list {
   line-height: 14px; }
@@ -1139,11 +1133,12 @@ div.datepicker {
     padding-bottom: 0; }
   .spot_item .date_time {
     display: block;
-    height: 16px;
+    height: 20px;
     color: #09f;
-    font-size: 16px;
-    font-weight: bold;
+    font-size: 14px;
+    font-family: Arial Black, serif, sans-serif;
     line-height: 16px;
+    text-transform: uppercase;
     overflow: hidden; }
   .spot_item .event_venue {
     display: block;
@@ -1164,13 +1159,13 @@ div.datepicker {
     margin: 16px 0 0; }
   .spot_item address {
     position: relative;
-    height: 24px;
+    height: 39px;
     margin: 8px 0 0;
     padding: 8px 0 0 25px;
     color: #6c8898;
     font-size: 10px;
     line-height: 12px;
-    font-family: 'Arial', sans-serif;
+    font-family: Arial, serif, sans-serif;
     border-top: 1px dashed #adc0c9;
     overflow: hidden; }
     .spot_item address p {
@@ -1224,48 +1219,48 @@ div.datepicker {
     position: relative; }
   .carousel_3 .carousel_3_box {
     position: relative;
-    height: 387px;
+    height: 396px;
     overflow: hidden; }
     .carousel_3 .carousel_3_box .spot_item {
-      height: 387px; }
+      height: 396px; }
   .carousel_3.two_line_title .carousel_3_box {
-    height: 405px; }
+    height: 414px; }
   .carousel_3.two_line_title .spot_item {
-    height: 405px; }
-    .carousel_3.two_line_title .spot_item .name {
-      height: 36px; }
+    height: 414px; }
+    .carousel_3.two_line_title .spot_item .name_height {
+      min-height: 36px; }
   .carousel_3.address_3_lines {
     /* If it is for Events and it has 2 line titles increase again by the height of the '.name' (18px) element. */ }
     .carousel_3.address_3_lines .carousel_3_box {
-      height: 399px; }
+      height: 408px; }
     .carousel_3.address_3_lines .spot_item {
-      height: 399px; }
+      height: 408px; }
       .carousel_3.address_3_lines .spot_item address {
         height: 36px; }
     .carousel_3.address_3_lines.two_line_title .carousel_3_box {
-      height: 417px; }
+      height: 426px; }
     .carousel_3.address_3_lines.two_line_title .spot_item {
-      height: 417px; }
+      height: 426px; }
   .carousel_3.event_venues {
     /* If it is for Events and it has 2 line titles increase again by the height of the '.name' (18px) element. */ }
     .carousel_3.event_venues .carousel_3_box {
-      height: 418px; }
+      height: 427px; }
     .carousel_3.event_venues .spot_item {
-      height: 418px; }
+      height: 427px; }
     .carousel_3.event_venues.two_line_title .carousel_3_box {
-      height: 436px; }
+      height: 445px; }
     .carousel_3.event_venues.two_line_title .spot_item {
-      height: 436px; }
+      height: 445px; }
   .carousel_3.carousel_events {
     /* If it is for Events and it has 2 line titles increase again by the height of the '.name' (18px) element. */ }
     .carousel_3.carousel_events .carousel_3_box {
-      height: 373px; }
+      height: 382px; }
     .carousel_3.carousel_events .spot_item {
-      height: 373px; }
+      height: 382px; }
     .carousel_3.carousel_events.two_line_title .carousel_3_box {
-      height: 391px; }
+      height: 400px; }
     .carousel_3.carousel_events.two_line_title .spot_item {
-      height: 391px; }
+      height: 400px; }
   .carousel_3 .carousel_3_sldr {
     position: absolute;
     top: 0;
