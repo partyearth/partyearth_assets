@@ -3108,7 +3108,7 @@ input, select, textarea {
     text-transform: capitalize;
     line-height: 20px; }
 
-/* Added by Sergei in _profile.html.haml */
+/* Added by Sergei in _profile.html */
 #LinkAccounts_bottomLink {
   display: none; }
 
@@ -4557,3 +4557,10 @@ formfield ol:before, .formfield ol:after,
 
 .google_ad_320x50 {
   margin-top: 25px; }
+
+.search_ad .google_ad {
+  padding: 10px 0; }
+  .search_ad .google_ad .google_ad_970x90 {
+    height: 90px;
+    margin: 0 auto;
+    width: 970px; }

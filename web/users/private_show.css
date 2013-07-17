@@ -1426,6 +1426,12 @@ div.actions fieldset, .store_action_btns fieldset {
         .recent_activities .row .activity_cont .info .type {
           padding: 2px 0 5px 0;
           margin: 0; }
+        .recent_activities .row .activity_cont .info .event_date {
+          bottom: 0;
+          color: #0099FF;
+          font-size: 11px;
+          left: 97px;
+          text-transform: uppercase; }
       .recent_activities .row .activity_cont .date {
         color: #8EA8B5;
         font-family: Arial, Helvetica, sans-serif;
@@ -1465,6 +1471,10 @@ div.actions fieldset, .store_action_btns fieldset {
     -webkit-user-select: none;
     -o-user-select: none;
     user-select: none; }
+    .recent_activities_arrows .btn.disabled {
+      cursor: default;
+      pointer-events: none;
+      opacity: 0.5; }
     .recent_activities_arrows .btn:hover {
       background: #f1f1f1;
       background: -moz-linear-gradient(top, #f1f1f1 0%, #fdfdfd 100%);
@@ -1877,6 +1887,8 @@ h2 {
       font-size: 10px; }
     #user_image .relate_to .liked_by {
       width: 132px; }
+      #user_image .relate_to .liked_by dd {
+        float: left; }
 
 /* Relate To */
 .relate_to .select_characters {
