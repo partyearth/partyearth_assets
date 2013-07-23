@@ -1379,7 +1379,8 @@ div.datepicker {
           font-family: Arial, serif, sans-serif !important;
           font-size: 10px;
           line-height: 12px;
-          margin: 2px 0 0 0; }
+          margin: 5px 0 0 0;
+          padding-left: 12px; }
       #search_page #search_results_list .search_result .top_right_section .neighborhood_link {
         color: #8ea8b5;
         display: block;
