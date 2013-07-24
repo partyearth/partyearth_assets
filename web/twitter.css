@@ -4,18 +4,31 @@
   padding: 0;
   border: none; }
 #twitter_pod .twitter_handle {
+  color: #375363;
   display: block;
-  font-size: 18px;
-  line-height: 18px; }
-#twitter_pod .account_image {
-  width: 128px;
-  height: 128px;
-  border: 1px solid #999; }
+  font-size: 24px;
+  line-height: 27px; }
+#twitter_pod .img_cont {
+  position: relative; }
+  #twitter_pod .img_cont .account_image {
+    border: 1px solid #999;
+    height: 85px;
+    width: 85px; }
+  #twitter_pod .img_cont .verified_account {
+    display: inline-block;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    width: 23px;
+    height: 23px;
+    background: url(/assets/content_bg/application_sprite.png);
+    background-position: -123px -150px;
+    zoom: 1; }
 #twitter_pod .headline {
   font-weight: normal; }
 #twitter_pod .pod_footer {
-  margin-top: -23px;
-  padding: 0 0 5px;
+  margin-top: 10px;
+  padding: 0;
   border-top: none; }
   #twitter_pod .pod_footer .prev_next {
     float: right; }
@@ -37,25 +50,21 @@
       background-position: -158px -209px; }
 #twitter_pod .page_count {
   display: none; }
-
-.verified_account {
-  display: inline-block;
-  position: relative;
-  bottom: -3px;
-  left: 2px;
-  width: 23px;
-  height: 23px;
-  background: url(/assets/content_bg/application_sprite.png);
-  background-position: -123px -150px;
-  zoom: 1; }
-
-.twitter_stats {
-  margin: 5px 0;
-  font-size: 11px; }
-  .twitter_stats .label {
-    width: 62px; }
-
-.tweets li {
-  margin: 0 0 6px;
-  padding: 6px 0 0;
-  border-top: 1px solid #eee; }
+#twitter_pod .twitter_stats {
+  color: #000000;
+  font-size: 11px;
+  width: 165px; }
+  #twitter_pod .twitter_stats td .label {
+    color: #8ea8b5;
+    font-size: 10px;
+    text-transform: uppercase;
+    width: 60px; }
+#twitter_pod .tweets {
+  margin-top: 5px; }
+  #twitter_pod .tweets li {
+    border-top: 1px dashed #adc0c9;
+    margin: 0 0 5px;
+    padding: 5px 0 0; }
+    #twitter_pod .tweets li:last-child {
+      border-bottom: 1px dashed #adc0c9;
+      padding-bottom: 5px; }

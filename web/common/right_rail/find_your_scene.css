@@ -71,10 +71,14 @@
 #find_scene #search_filters {
   /*BEGIN DROPDOWNS*/ }
   #find_scene #search_filters p {
-    padding: 0; }
+    color: #375363;
+    font-size: 14px;
+    padding: 0 0 5px 0; }
+  #find_scene #search_filters .btn_blue {
+    width: 70px; }
   #find_scene #search_filters .dropdown_wrapper {
     position: relative;
-    width: 206px;
+    width: 270px;
     margin: 0 0 10px; }
     #find_scene #search_filters .dropdown_wrapper.character_dropdown {
       z-index: 3; }
@@ -88,11 +92,13 @@
     #find_scene #search_filters .dropdown_wrapper .Choices.choices {
       position: relative;
       z-index: 1000;
-      width: 204px;
+      width: 268px;
       max-height: 75px;
       font-size: 11px;
       overflow: auto; }
     #find_scene #search_filters .dropdown_wrapper .footer_bottom {
-      width: 195px; }
+      width: 259px; }
   #find_scene #search_filters .go_btn {
-    float: right; }
+    float: right;
+    margin-right: 1px;
+    z-index: 1; }

@@ -45,7 +45,7 @@ abbr, acronym {
 
 #footer_content {
   z-index: 0;
-  width: 956px;
+  width: 1016px;
   margin: 0 auto;
   padding: 0 20px 15px; }
   #footer_content a, #footer_content a:visited, #footer_content .fake_link {
@@ -72,7 +72,7 @@ abbr, acronym {
   #footer_sitemap dl {
     position: relative;
     float: left;
-    width: 145px;
+    width: 155px;
     height: 198px;
     margin: 0 17px 0 0; }
     #footer_sitemap dl dt {
@@ -117,7 +117,7 @@ abbr, acronym {
   #footer_bottom #footer_reviewers {
     position: relative;
     float: left;
-    width: 190px;
+    width: 220px;
     margin: 0 34px 0 0;
     padding: 0 0 0 268px; }
     #footer_bottom #footer_reviewers #footer_characters {
@@ -162,10 +162,10 @@ abbr, acronym {
           color: #fff; }
   #footer_bottom #footer_cities {
     float: left;
-    width: 464px; }
+    width: 494px; }
     #footer_bottom #footer_cities ul {
       float: left;
-      margin: 0 50px 0 0; }
+      margin: 0 60px 0 0; }
       #footer_bottom #footer_cities ul li {
         margin: 0 0 4px; }
         #footer_bottom #footer_cities ul li a, #footer_bottom #footer_cities ul li a:visited, #footer_bottom #footer_cities ul li .fake_link {
@@ -174,6 +174,9 @@ abbr, acronym {
             color: #fff; }
       #footer_bottom #footer_cities ul.last {
         margin-right: 0; }
+
+#footer_bottom_padding {
+  height: 42px; }
 
 #footer_links {
   padding: 6px 0;
@@ -2100,7 +2103,7 @@ h2 {
 
 #wrapper {
   position: relative;
-  width: 990px;
+  width: 1050px;
   margin: 0 auto; }
 
 #left_container {
@@ -2141,9 +2144,9 @@ h2 {
 
 #right_sidebar {
   float: right;
-  width: 240px; }
+  width: 300px; }
   #right_sidebar .pod {
-    padding: 13px 14px; }
+    padding: 15px; }
   #right_sidebar .ad {
     margin: 0 0 12px; }
   #right_sidebar .admin_info fieldset ol, #right_sidebar .admin_info fieldset li {
@@ -2838,12 +2841,13 @@ input, select, textarea {
   background-color: #152026;
   background-image: url(/assets/content_bg/more_cities_bg.png);
   background-repeat: no-repeat;
+  background-position-x: 30px;
   overflow: hidden; }
 
 /* BEGIN MORE CITIES LIST
  ---------------------------------------*/
 #more_cities_list {
-  padding: 25px 18px 12px 343px; }
+  padding: 25px 18px 12px 375px; }
   #more_cities_list p {
     margin: 0 0 15px;
     padding: 0;
@@ -3511,7 +3515,7 @@ If you don't know where else to place something, place it below this line.
   line-height: 11px;
   text-transform: uppercase;
   font-family: 'Arial', sans-serif;
-  color: #6C8898; }
+  color: #597686; }
   .venue_type a, .venue_type a:visited, .venue_type .fake_link, .type a, .type a:visited, .type .fake_link {
     color: #6C8898;
     text-decoration: none; }
@@ -4503,40 +4507,50 @@ formfield ol:before, .formfield ol:after,
   width: 72px;
   height: 72px; }
 
-/* Google Ads */
-#left_container .google_ad {
-  padding: 0 !important; }
-  #left_container .google_ad .google_ad_728x90 {
-    height: 90px;
-    margin: 0 auto;
-    padding: 6px 0;
-    width: 728px; }
-  #left_container .google_ad .google_ad_468x60 {
-    height: 60px;
-    margin: 0 0 15px 208px;
-    width: 468px; }
+/* Google & Advertisement.com Ads */
+#left_container {
+  /* Advertisement.com Ads */ }
+  #left_container .advert_pod {
+    padding: 0 !important; }
+    #left_container .advert_pod .ad_728x90 {
+      height: 90px;
+      width: 728px;
+      margin: 0 auto;
+      padding: 6px 0; }
+    #left_container .advert_pod .ad_468x60 {
+      height: 60px;
+      margin: 0 0 15px 208px;
+      width: 468px; }
 
-#right_sidebar .google_ad {
-  padding: 0 !important; }
-  #right_sidebar .google_ad .google_ad_200x200 {
-    margin: 0 auto 10px;
-    height: 200px;
-    padding: 20px 0;
-    width: 200px; }
-  #right_sidebar .google_ad .google_ad_234x60 {
-    height: 60px;
-    margin: 0 auto;
-    padding: 3px 0;
-    width: 234px; }
-  #right_sidebar .google_ad .ad_link {
-    display: block;
-    font-size: 9px;
-    text-align: right;
-    position: absolute;
-    right: 19px;
-    bottom: 2px; }
-    #right_sidebar .google_ad .ad_link a {
-      color: #c2c2c2; }
+#right_sidebar {
+  /* Advertisement.com Ads */
+  /* Google Ads */ }
+  #right_sidebar .advert_pod, #right_sidebar .x_games_pod {
+    margin-bottom: 12px; }
+    #right_sidebar .advert_pod .ad_300x250, #right_sidebar .x_games_pod .ad_300x250 {
+      height: 250px;
+      width: 300px; }
+  #right_sidebar .google_ad {
+    padding: 0 !important; }
+    #right_sidebar .google_ad .google_ad_200x200 {
+      margin: 0 auto 10px;
+      height: 200px;
+      padding: 20px 0;
+      width: 200px; }
+    #right_sidebar .google_ad .google_ad_234x60 {
+      height: 60px;
+      margin: 0 auto;
+      padding: 3px 0;
+      width: 234px; }
+    #right_sidebar .google_ad .ad_link {
+      display: block;
+      font-size: 9px;
+      text-align: right;
+      position: absolute;
+      right: 19px;
+      bottom: 2px; }
+      #right_sidebar .google_ad .ad_link a {
+        color: #c2c2c2; }
 
 .pamplona_ad {
   height: 380px !important;

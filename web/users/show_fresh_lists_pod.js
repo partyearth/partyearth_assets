@@ -1,0 +1,1 @@
+(function(){pe.ShowFreshListsPod=function(a){var b,c;this.container=a;0<this.container.length&&(b=$("#left_container").height(),c=$("#right_sidebar").height(),a=94*this.container.find(".list_cont").length+100,b>c+a&&this.container.removeClass("hidden"))}}).call(this);

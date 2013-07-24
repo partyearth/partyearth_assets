@@ -14,49 +14,54 @@
     border-radius: 4px; }
   #gptp_in_press li .details {
     float: left;
-    width: 145px; }
+    margin-bottom: 5px;
+    width: 210px; }
     #gptp_in_press li .details .name_location {
+      color: #8ea8b5;
       display: block;
       font-size: 10px;
-      color: #8ea8b5;
-      text-decoration: none; }
+      text-decoration: none;
+      margin-top: 2px; }
       #gptp_in_press li .details .name_location .name {
         color: #09f;
-        text-decoration: underline; }
+        text-decoration: underline;
+        text-transform: capitalize; }
         #gptp_in_press li .details .name_location .name:hover {
           color: #597686; }
     #gptp_in_press li .details .article {
+      color: #375363;
       display: block;
-      color: #375363; }
+      font-size: 15px;
+      line-height: 17px; }
       #gptp_in_press li .details .article:hover {
-        color: #000; }
+        color: #000000; }
   #gptp_in_press li .featured {
     display: block;
-    clear: left;
     color: #8ea8b5;
     font-size: 10px;
+    margin: 5px 0;
     text-transform: uppercase; }
     #gptp_in_press li .featured span {
-      display: block;
       position: relative;
       margin: 0 0 6px;
       background-image: url(/assets/writer_applications/sprite.png); }
       #gptp_in_press li .featured span.maxim {
-        width: 126px;
-        height: 33px;
-        margin-top: -18px;
-        margin-bottom: -2px;
-        margin-left: 77px;
+        float: right;
+        width: 82px;
+        height: 22px;
+        margin-right: 112px;
         background-position: 0 -46px; }
       #gptp_in_press li .featured span.thp {
-        width: 217px;
-        height: 13px;
+        float: right;
+        width: 180px;
+        height: 12px;
+        margin: 2px 14px 0 0;
         background-position: -128px -46px; }
       #gptp_in_press li .featured span.look {
-        width: 73px;
-        height: 27px;
-        margin-top: -13px;
-        margin-left: 77px;
+        float: right;
+        width: 50px;
+        height: 19px;
+        margin: 0 144px 0 0;
         background-position: -347px -46px; }
   #gptp_in_press li:first-child {
     border-top: none; }
@@ -71,20 +76,11 @@
         display: block;
         position: relative;
         top: -10px;
-        left: 7px;
+        left: 35px;
         width: 196px;
         height: 208px;
         text-indent: -9999px;
-        background-image: url(/assets/writer_applications/in_the_press_polaroids.jpg);
-        transform: scale(1) rotate(-4deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
-        -moz-transform: scale(1) rotate(-4deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
-        -webkit-transform: scale(1) rotate(-4deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
-        -o-transform: scale(1) rotate(-4deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
-        -ms-transform: scale(1) rotate(-4deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
-        /* Uncomment if we want to implement for IE8 [https://snipt.net/viatropos/cross-browser-css-rotation-with-and-without-sass/]
-        filter:             progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=cos(-4deg), M12=-sin(-4deg), M21=sin(-4deg), M22=cos(-4deg));
-        -ms-filter:         "progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=cos(-4deg), M12=-sin(-4deg), M21=sin(-4deg), M22=cos(-4deg))"; */
-        zoom: 1; }
+        background-image: url(/assets/writer_applications/in_the_press_polaroids.jpg); }
       #gptp_in_press li:first-child .name_location .location {
         visibility: hidden; }
     #gptp_in_press li:first-child .article {
