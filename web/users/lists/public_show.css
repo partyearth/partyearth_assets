@@ -4214,6 +4214,7 @@ ol.list_info {
     cursor: default; }
     ol.list_info li.litem .item_info {
       /* List Notes */
+      /* Item Rating */
       /* Yes & Huh */ }
       ol.list_info li.litem .item_info .item_title {
         cursor: default !important;
@@ -4239,6 +4240,9 @@ ol.list_info {
             overflow-y: hidden; }
           ol.list_info li.litem .item_info .list_notes .description_cont .clipped .event, ol.list_info li.litem .item_info .list_notes .description_cont .clipped .venue, ol.list_info li.litem .item_info .list_notes .description_cont .clipped .performer {
             height: 27px; }
+      ol.list_info li.litem .item_info .item_rating a {
+        cursor: pointer !important;
+        pointer-events: all !important; }
       ol.list_info li.litem .item_info .yes_huh {
         text-align: right;
         margin-top: 5px; }
