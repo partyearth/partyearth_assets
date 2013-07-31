@@ -4048,17 +4048,17 @@ h3.large_gray_btn_full {
     position: absolute;
     top: 4px;
     left: -6px;
-    border-top: 4px solid transparent;
+    border-top: 4px solid rgba(255, 255, 255, 0);
     border-right: 5px solid #d3cbcb;
-    border-bottom: 4px solid transparent;
+    border-bottom: 4px solid rgba(255, 255, 255, 0);
     border-left: none; }
     .add_to_calendar .point .point_inner {
       position: absolute;
       top: -3px;
       right: -6px;
-      border-top: 3px solid transparent;
-      border-right: 4px solid #fff;
-      border-bottom: 3px solid transparent;
+      border-top: 3px solid rgba(255, 255, 255, 0);
+      border-right: 4px solid #FFFFFF;
+      border-bottom: 3px solid rgba(255, 255, 255, 0);
       border-left: none; }
   .add_to_calendar:hover {
     color: #fff;
@@ -4517,10 +4517,9 @@ formfield ol:before, .formfield ol:after,
       width: 728px;
       margin: 0 auto;
       padding: 6px 0; }
-    #left_container .advert_pod .ad_468x60 {
-      height: 60px;
-      margin: 0 0 15px 208px;
-      width: 468px; }
+  #left_container .advert_pod_left {
+    margin: 0 0 5px -11px;
+    padding: 0 !important; }
 
 #right_sidebar {
   /* Advertisement.com Ads */

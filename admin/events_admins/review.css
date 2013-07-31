@@ -886,21 +886,20 @@ BODY:first-of-type ul.as-list, x:-moz-any-link, x:default {
     #event_importer .event_list .event,
     #events_review .event_list .event {
       position: relative;
-      margin: 0;
-      padding: 30px 5px;
+      margin: 0 auto;
+      padding: 5px 30px;
       border-top: 2px solid #8c8c8c;
       counter-increment: index; }
       #event_importer .event_list .event .event_count,
       #events_review .event_list .event .event_count {
         position: absolute;
-        top: 30px;
+        left: 0;
+        top: 0;
         right: 936px;
         font-size: 20px;
         line-height: 20px;
         font-weight: bold;
-        background-color: #e2e2e2;
-        padding: 5px;
-        border-left: 2px solid #bbb; }
+        padding: 5px; }
         #event_importer .event_list .event .event_count:before,
         #events_review .event_list .event .event_count:before {
           content: counter(index); }
@@ -911,15 +910,9 @@ BODY:first-of-type ul.as-list, x:-moz-any-link, x:default {
       #events_review .event_list .event:first-child {
         padding-top: 0;
         border-top: none; }
-        #event_importer .event_list .event:first-child .event_count,
-        #events_review .event_list .event:first-child .event_count {
-          top: 0; }
       #event_importer .event_list .event:nth-child(even),
       #events_review .event_list .event:nth-child(even) {
         background-color: #bbb; }
-        #event_importer .event_list .event:nth-child(even) .event_count,
-        #events_review .event_list .event:nth-child(even) .event_count {
-          background-color: #c9c9c9; }
         #event_importer .event_list .event:nth-child(even) .event_item,
         #events_review .event_list .event:nth-child(even) .event_item {
           background-color: #c9c9c9; }
@@ -929,7 +922,7 @@ BODY:first-of-type ul.as-list, x:-moz-any-link, x:default {
           background-color: #ebeced; }
       #event_importer .event_list .event .event_row .event_row,
       #events_review .event_list .event .event_row .event_row {
-        float: right; }
+        float: left; }
       #event_importer .event_list .event .event_item,
       #events_review .event_list .event .event_item {
         float: left;

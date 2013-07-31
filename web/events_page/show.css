@@ -176,8 +176,7 @@
         top: -4px;
         width: 19px;
         height: 12px;
-        background-image: url(/assets/video/video_sprite.png);
-        background-position: -86px -78px; }
+        background: rgba(255, 255, 255, 0) url(/assets/video/video_sprite.png) -86px -78px; }
   .video_section .controls .volume {
     float: left;
     width: 68px;
@@ -483,6 +482,7 @@
   background-color: #fff;
   overflow: hidden; }
 .day_changer_cont .featured_item {
+  height: 500px;
   float: left;
   width: 345px;
   margin: 0 14px 0 0; }
@@ -1302,8 +1302,7 @@ div.datepicker {
       padding: 0 6px 0 0;
       border-right: 1px solid #e4ebef; }
     #right_sidebar .name a {
-      display: inline-block;
-      width: 160px;
+      display: inline;
       height: 11px;
       color: #09f;
       text-decoration: none;
@@ -1403,8 +1402,8 @@ div.datepicker {
     margin: 0 0 5px;
     padding: 0 0 5px; }
   #right_sidebar .popular_nightlife .simple_list .list_item a {
-    font-size: 16px;
-    line-height: 26px; }
+    font-size: 15px !important;
+    line-height: 17px !important; }
   #right_sidebar .photo_list .thumbnail_link {
     float: left;
     width: 75px;
@@ -1480,8 +1479,8 @@ div.datepicker {
     border: none; }
   #right_sidebar .gptp_right_rail ul li {
     float: left;
-    margin: 0 4px 4px 0; }
-    #right_sidebar .gptp_right_rail ul li:nth-child(4n) {
+    margin: 0 5px 5px 0; }
+    #right_sidebar .gptp_right_rail ul li:nth-child(5n) {
       margin-right: 0; }
     #right_sidebar .gptp_right_rail ul li a, #right_sidebar .gptp_right_rail ul li a:link, #right_sidebar .gptp_right_rail ul li a:visited {
       display: block;
@@ -1505,7 +1504,7 @@ div.datepicker {
     #right_sidebar .gptp_right_rail .links .meet_link {
       float: right; }
   #right_sidebar .gptp_right_rail .buttons {
-    width: 217px;
+    width: 270px;
     margin: 8px 0 0;
     padding: 8px 0 0;
     border-top: 1px solid #8ea8b5; }
@@ -1524,7 +1523,7 @@ div.datepicker {
         #right_sidebar .gptp_right_rail .buttons a.writer:hover, #right_sidebar .gptp_right_rail .buttons a:link.writer:hover, #right_sidebar .gptp_right_rail .buttons a:visited.writer:hover {
           background-position: -1px -476px; }
       #right_sidebar .gptp_right_rail .buttons a.photographer, #right_sidebar .gptp_right_rail .buttons a:link.photographer, #right_sidebar .gptp_right_rail .buttons a:visited.photographer {
-        right: -3px;
+        right: -55px;
         width: 132px;
         background-position: -88px -422px; }
         #right_sidebar .gptp_right_rail .buttons a.photographer:hover, #right_sidebar .gptp_right_rail .buttons a:link.photographer:hover, #right_sidebar .gptp_right_rail .buttons a:visited.photographer:hover {
@@ -1581,27 +1580,35 @@ div.datepicker {
     width: 240px;
     height: 400px;
     background-position: 0 0; }
-/* Recent Articles Sidebar Pod */
-#recent_articles .list .list_item {
-  float: left;
-  width: 127px;
-  margin: 0;
-  padding: 0;
-  line-height: 15px;
-  border-top: none; }
-  #recent_articles .list .list_item:first-child + li {
-    margin-right: 16px; }
-  #recent_articles .list .list_item .thumbnail_link {
-    margin: 0 0 5px; }
-  #recent_articles .list .list_item .title {
-    font-size: 12px;
-    line-height: 14px; }
-  #recent_articles .list .list_item.featured {
-    float: none;
-    width: auto;
-    margin-left: 0; }
-    #recent_articles .list .list_item.featured .thumbnail_link {
-      margin: 0 0 15px; }
+#fresh_lists .list_cont {
+  border-bottom: 1px dashed #adc0c9;
+  padding-bottom: 8px;
+  margin-bottom: 8px; }
+  #fresh_lists .list_cont:last-child {
+    border: none;
+    margin: 0;
+    padding: 0; }
+  #fresh_lists .list_cont .avatar {
+    float: left;
+    margin-right: 10px;
+    height: 85px;
+    width: 85px; }
+  #fresh_lists .list_cont .info {
+    color: #acacac;
+    float: right;
+    font-size: 11px;
+    line-height: 12px;
+    width: 175px; }
+    #fresh_lists .list_cont .info .list_name {
+      font-size: 14px;
+      line-height: 15px;
+      color: #252525; }
+      #fresh_lists .list_cont .info .list_name:hover {
+        color: #597686; }
+    #fresh_lists .list_cont .info .user {
+      padding: 2px 0; }
+    #fresh_lists .list_cont .info span.items {
+      display: block; }
 /*BEGIN NEW IN PHOTO GALLERIES STYLES*/
 /*---------------------------------------------*/
 #photo_pod {

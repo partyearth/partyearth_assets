@@ -198,8 +198,7 @@
       padding: 0 6px 0 0;
       border-right: 1px solid #e4ebef; }
     #right_sidebar .name a {
-      display: inline-block;
-      width: 160px;
+      display: inline;
       height: 11px;
       color: #09f;
       text-decoration: none;
@@ -299,8 +298,8 @@
     margin: 0 0 5px;
     padding: 0 0 5px; }
   #right_sidebar .popular_nightlife .simple_list .list_item a {
-    font-size: 16px;
-    line-height: 26px; }
+    font-size: 15px !important;
+    line-height: 17px !important; }
   #right_sidebar .photo_list .thumbnail_link {
     float: left;
     width: 75px;
@@ -376,8 +375,8 @@
     border: none; }
   #right_sidebar .gptp_right_rail ul li {
     float: left;
-    margin: 0 4px 4px 0; }
-    #right_sidebar .gptp_right_rail ul li:nth-child(4n) {
+    margin: 0 5px 5px 0; }
+    #right_sidebar .gptp_right_rail ul li:nth-child(5n) {
       margin-right: 0; }
     #right_sidebar .gptp_right_rail ul li a, #right_sidebar .gptp_right_rail ul li a:link, #right_sidebar .gptp_right_rail ul li a:visited {
       display: block;
@@ -401,7 +400,7 @@
     #right_sidebar .gptp_right_rail .links .meet_link {
       float: right; }
   #right_sidebar .gptp_right_rail .buttons {
-    width: 217px;
+    width: 270px;
     margin: 8px 0 0;
     padding: 8px 0 0;
     border-top: 1px solid #8ea8b5; }
@@ -420,7 +419,7 @@
         #right_sidebar .gptp_right_rail .buttons a.writer:hover, #right_sidebar .gptp_right_rail .buttons a:link.writer:hover, #right_sidebar .gptp_right_rail .buttons a:visited.writer:hover {
           background-position: -1px -476px; }
       #right_sidebar .gptp_right_rail .buttons a.photographer, #right_sidebar .gptp_right_rail .buttons a:link.photographer, #right_sidebar .gptp_right_rail .buttons a:visited.photographer {
-        right: -3px;
+        right: -55px;
         width: 132px;
         background-position: -88px -422px; }
         #right_sidebar .gptp_right_rail .buttons a.photographer:hover, #right_sidebar .gptp_right_rail .buttons a:link.photographer:hover, #right_sidebar .gptp_right_rail .buttons a:visited.photographer:hover {
@@ -1108,6 +1107,89 @@
       background-position: -61px -33px; }
     .liked_by .disabled.emma .character {
       background-position: -91px -33px; }
+#new_user_reviews .review {
+  color: #252525;
+  font-size: 11px;
+  line-height: 12px;
+  margin-bottom: 11px;
+  padding: 10px;
+  position: relative;
+  background: #fefaf1;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #fefaf1 0%, #f9eacb 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fefaf1), color-stop(100%, #f9eacb));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #fefaf1 0%, #f9eacb 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #fefaf1 0%, #f9eacb 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #fefaf1 0%, #f9eacb 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #fefaf1 0%, #f9eacb 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fefaf1', endColorstr='#f9eacb',GradientType=0 );
+  /* IE6-9 */
+  -webkit-border-radius: 4px;
+  border-radius: 4px; }
+  #new_user_reviews .review:after {
+    top: 100%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none; }
+  #new_user_reviews .review:after {
+    border-color: rgba(234, 196, 113, 0);
+    border-top-color: #f9eacb;
+    border-width: 10px;
+    left: 50%;
+    margin-left: -103px; }
+  #new_user_reviews .review .avatar {
+    margin-right: 10px;
+    width: 65px; }
+  #new_user_reviews .review .info {
+    width: 175px;
+    margin-top: -2px; }
+    #new_user_reviews .review .info .gig-comments-rating {
+      height: 14px;
+      padding: 6px 0 0;
+      overflow: hidden !important;
+      width: 100%; }
+      #new_user_reviews .review .info .gig-comments-rating .gig-comments-star-full {
+        background-image: url(/assets/content_bg/application_sprite.png);
+        background-position: -483px -407px;
+        display: inline-block;
+        height: 9px;
+        width: 9px; }
+      #new_user_reviews .review .info .gig-comments-rating .gig-comments-star-empty {
+        background-image: url(/assets/content_bg/application_sprite.png);
+        background-position: -494px -407px;
+        display: inline-block;
+        height: 9px;
+        width: 9px; }
+    #new_user_reviews .review .info .text {
+      display: block; }
+#new_user_reviews .review_footer {
+  border-bottom: 1px dashed #adc0c9;
+  display: block;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+  text-align: left; }
+  #new_user_reviews .review_footer:last-child {
+    border: none;
+    margin-bottom: 0;
+    padding-bottom: 0; }
+  #new_user_reviews .review_footer .venue_name {
+    font-size: 14px;
+    padding-bottom: 3px; }
+    #new_user_reviews .review_footer .venue_name a {
+      color: #252525; }
+      #new_user_reviews .review_footer .venue_name a:hover {
+        color: #597686; }
+  #new_user_reviews .review_footer .type {
+    margin-bottom: 0; }
 /*
 
 */
@@ -1154,7 +1236,7 @@
   .carousel_3.two_line_title .spot_item {
     height: 414px; }
     .carousel_3.two_line_title .spot_item .name_height {
-      min-height: 36px; }
+      min-height: 40px; }
   .carousel_3.address_3_lines {
     /* If it is for Events and it has 2 line titles increase again by the height of the '.name' (18px) element. */ }
     .carousel_3.address_3_lines .carousel_3_box {
@@ -1759,6 +1841,7 @@ div.datepicker {
   height: 42px;
   overflow: hidden; }
 /*
+
 
 
 

@@ -47,7 +47,7 @@
       height: 14px;
       padding: 6px 0 0;
       overflow: hidden !important;
-      width: 65px; }
+      width: 100%; }
       #new_user_reviews .review .info .gig-comments-rating .gig-comments-star-full {
         background-image: url(/assets/content_bg/application_sprite.png);
         background-position: -483px -407px;

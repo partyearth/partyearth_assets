@@ -22,13 +22,11 @@
   margin: 9px 0 0;
   padding: 9px 0 0;
   background-color: #fff;
-  border-top: 1px dashed #adc0c9; }
+  border-top: 1px dashed #adc0c9;
+  /*td {min-width: 65px;}*/
+  /*td td {min-width: 0;}*/ }
   .social_media_btns .total_count {
     display: none; }
-  .social_media_btns td {
-    min-width: 65px; }
-  .social_media_btns td td {
-    min-width: 0; }
   .social_media_btns .gig-counter .gig-counter-text {
     font-weight: normal !important; }
 

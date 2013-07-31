@@ -22,13 +22,11 @@
   margin: 9px 0 0;
   padding: 9px 0 0;
   background-color: #fff;
-  border-top: 1px dashed #adc0c9; }
+  border-top: 1px dashed #adc0c9;
+  /*td {min-width: 65px;}*/
+  /*td td {min-width: 0;}*/ }
   .social_media_btns .total_count {
     display: none; }
-  .social_media_btns td {
-    min-width: 65px; }
-  .social_media_btns td td {
-    min-width: 0; }
   .social_media_btns .gig-counter .gig-counter-text {
     font-weight: normal !important; }
 
@@ -326,7 +324,7 @@
       width: 259px; }
   #find_scene #search_filters .go_btn {
     float: right;
-    margin-right: 1px;
+    margin-right: 2px;
     z-index: 1; }
 /* STYLES FOR RIGHT SIDEBAR
 -----------------------------------------------------
@@ -417,8 +415,7 @@
       padding: 0 6px 0 0;
       border-right: 1px solid #e4ebef; }
     #right_sidebar .name a {
-      display: inline-block;
-      width: 160px;
+      display: inline;
       height: 11px;
       color: #09f;
       text-decoration: none;
@@ -518,8 +515,8 @@
     margin: 0 0 5px;
     padding: 0 0 5px; }
   #right_sidebar .popular_nightlife .simple_list .list_item a {
-    font-size: 16px;
-    line-height: 26px; }
+    font-size: 15px !important;
+    line-height: 17px !important; }
   #right_sidebar .photo_list .thumbnail_link {
     float: left;
     width: 75px;
@@ -595,8 +592,8 @@
     border: none; }
   #right_sidebar .gptp_right_rail ul li {
     float: left;
-    margin: 0 4px 4px 0; }
-    #right_sidebar .gptp_right_rail ul li:nth-child(4n) {
+    margin: 0 5px 5px 0; }
+    #right_sidebar .gptp_right_rail ul li:nth-child(5n) {
       margin-right: 0; }
     #right_sidebar .gptp_right_rail ul li a, #right_sidebar .gptp_right_rail ul li a:link, #right_sidebar .gptp_right_rail ul li a:visited {
       display: block;
@@ -620,7 +617,7 @@
     #right_sidebar .gptp_right_rail .links .meet_link {
       float: right; }
   #right_sidebar .gptp_right_rail .buttons {
-    width: 217px;
+    width: 270px;
     margin: 8px 0 0;
     padding: 8px 0 0;
     border-top: 1px solid #8ea8b5; }
@@ -639,7 +636,7 @@
         #right_sidebar .gptp_right_rail .buttons a.writer:hover, #right_sidebar .gptp_right_rail .buttons a:link.writer:hover, #right_sidebar .gptp_right_rail .buttons a:visited.writer:hover {
           background-position: -1px -476px; }
       #right_sidebar .gptp_right_rail .buttons a.photographer, #right_sidebar .gptp_right_rail .buttons a:link.photographer, #right_sidebar .gptp_right_rail .buttons a:visited.photographer {
-        right: -3px;
+        right: -55px;
         width: 132px;
         background-position: -88px -422px; }
         #right_sidebar .gptp_right_rail .buttons a.photographer:hover, #right_sidebar .gptp_right_rail .buttons a:link.photographer:hover, #right_sidebar .gptp_right_rail .buttons a:visited.photographer:hover {

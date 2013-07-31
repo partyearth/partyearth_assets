@@ -122,6 +122,7 @@
   background-color: #fff;
   overflow: hidden; }
 .day_changer_cont .featured_item {
+  height: 500px;
   float: left;
   width: 345px;
   margin: 0 14px 0 0; }

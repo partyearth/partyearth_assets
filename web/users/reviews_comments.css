@@ -117,6 +117,8 @@ ul.reviews_comments li {
         color: #000000;
         font-weight: bold;
         padding-right: 2px; }
+      ul.reviews_comments li .cont_right .details .review {
+        color: #464646; }
       ul.reviews_comments li .cont_right .details .more_link {
         font-family: Arial, sans-serif;
         font-size: 11px; }

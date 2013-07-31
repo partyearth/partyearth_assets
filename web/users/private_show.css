@@ -409,7 +409,7 @@
       height: 14px;
       padding: 6px 0 0;
       overflow: hidden !important;
-      width: 65px; }
+      width: 100%; }
       #new_user_reviews .review .info .gig-comments-rating .gig-comments-star-full {
         background-image: url(/assets/content_bg/application_sprite.png);
         background-position: -483px -407px;
@@ -532,8 +532,7 @@
       padding: 0 6px 0 0;
       border-right: 1px solid #e4ebef; }
     #right_sidebar .name a {
-      display: inline-block;
-      width: 160px;
+      display: inline;
       height: 11px;
       color: #09f;
       text-decoration: none;
@@ -633,8 +632,8 @@
     margin: 0 0 5px;
     padding: 0 0 5px; }
   #right_sidebar .popular_nightlife .simple_list .list_item a {
-    font-size: 16px;
-    line-height: 26px; }
+    font-size: 15px !important;
+    line-height: 17px !important; }
   #right_sidebar .photo_list .thumbnail_link {
     float: left;
     width: 75px;
@@ -710,8 +709,8 @@
     border: none; }
   #right_sidebar .gptp_right_rail ul li {
     float: left;
-    margin: 0 4px 4px 0; }
-    #right_sidebar .gptp_right_rail ul li:nth-child(4n) {
+    margin: 0 5px 5px 0; }
+    #right_sidebar .gptp_right_rail ul li:nth-child(5n) {
       margin-right: 0; }
     #right_sidebar .gptp_right_rail ul li a, #right_sidebar .gptp_right_rail ul li a:link, #right_sidebar .gptp_right_rail ul li a:visited {
       display: block;
@@ -735,7 +734,7 @@
     #right_sidebar .gptp_right_rail .links .meet_link {
       float: right; }
   #right_sidebar .gptp_right_rail .buttons {
-    width: 217px;
+    width: 270px;
     margin: 8px 0 0;
     padding: 8px 0 0;
     border-top: 1px solid #8ea8b5; }
@@ -754,7 +753,7 @@
         #right_sidebar .gptp_right_rail .buttons a.writer:hover, #right_sidebar .gptp_right_rail .buttons a:link.writer:hover, #right_sidebar .gptp_right_rail .buttons a:visited.writer:hover {
           background-position: -1px -476px; }
       #right_sidebar .gptp_right_rail .buttons a.photographer, #right_sidebar .gptp_right_rail .buttons a:link.photographer, #right_sidebar .gptp_right_rail .buttons a:visited.photographer {
-        right: -3px;
+        right: -55px;
         width: 132px;
         background-position: -88px -422px; }
         #right_sidebar .gptp_right_rail .buttons a.photographer:hover, #right_sidebar .gptp_right_rail .buttons a:link.photographer:hover, #right_sidebar .gptp_right_rail .buttons a:visited.photographer:hover {
@@ -1772,6 +1771,8 @@ ul.reviews_comments li {
         color: #000000;
         font-weight: bold;
         padding-right: 2px; }
+      ul.reviews_comments li .cont_right .details .review {
+        color: #464646; }
       ul.reviews_comments li .cont_right .details .more_link {
         font-family: Arial, sans-serif;
         font-size: 11px; }
@@ -2096,7 +2097,7 @@ h2 {
         left: -8px;
         width: 0;
         height: 0;
-        border-color: #FFFFFF #FFFFFF transparent transparent;
+        border-color: white white rgba(255, 255, 255, 0) rgba(255, 255, 255, 0);
         border-style: solid;
         border-width: 8px; }
       #user_info .summary_cont .anchor:before {
@@ -2107,16 +2108,16 @@ h2 {
         left: -10px;
         width: 0;
         height: 0;
-        border-color: #CCCCCC #CCCCCC transparent transparent;
+        border-color: #cccccc #cccccc rgba(255, 255, 255, 0) rgba(255, 255, 255, 0);
         border-style: solid;
         border-width: 7px; }
     #user_info .summary_cont:hover {
       border: 1px solid #0099FF;
       background-color: #FFFFFF; }
       #user_info .summary_cont:hover .anchor:after {
-        border-color: #ffffff #ffffff transparent transparent !important; }
+        border-color: white white rgba(255, 255, 255, 0) rgba(255, 255, 255, 0) !important; }
       #user_info .summary_cont:hover .anchor:before {
-        border-color: #0099FF #0099FF transparent transparent !important; }
+        border-color: #0099ff #0099ff rgba(255, 255, 255, 0) rgba(255, 255, 255, 0) !important; }
     #user_info .summary_cont .textarea_editable textarea {
       background-color: #FFFFFF;
       border: none !important;

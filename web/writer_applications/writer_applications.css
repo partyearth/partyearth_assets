@@ -133,7 +133,8 @@
     left: 444px;
     width: 260px;
     height: 276px;
-    background-position: 0 -762px; }
+    background-position: 0 -762px;
+    z-index: 1; }
     .polaroid.image4:hover {
       z-index: 1098; }
   .polaroid.image5 {

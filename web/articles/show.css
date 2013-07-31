@@ -22,13 +22,11 @@
   margin: 9px 0 0;
   padding: 9px 0 0;
   background-color: #fff;
-  border-top: 1px dashed #adc0c9; }
+  border-top: 1px dashed #adc0c9;
+  /*td {min-width: 65px;}*/
+  /*td td {min-width: 0;}*/ }
   .social_media_btns .total_count {
     display: none; }
-  .social_media_btns td {
-    min-width: 65px; }
-  .social_media_btns td td {
-    min-width: 0; }
   .social_media_btns .gig-counter .gig-counter-text {
     font-weight: normal !important; }
 
@@ -507,6 +505,118 @@
       background-position: -61px -33px; }
     .liked_by .disabled.emma .character {
       background-position: -91px -33px; }
+#fresh_lists .list_cont {
+  border-bottom: 1px dashed #adc0c9;
+  padding-bottom: 8px;
+  margin-bottom: 8px; }
+  #fresh_lists .list_cont:last-child {
+    border: none;
+    margin: 0;
+    padding: 0; }
+  #fresh_lists .list_cont .avatar {
+    float: left;
+    margin-right: 10px;
+    height: 85px;
+    width: 85px; }
+  #fresh_lists .list_cont .info {
+    color: #acacac;
+    float: right;
+    font-size: 11px;
+    line-height: 12px;
+    width: 175px; }
+    #fresh_lists .list_cont .info .list_name {
+      font-size: 14px;
+      line-height: 15px;
+      color: #252525; }
+      #fresh_lists .list_cont .info .list_name:hover {
+        color: #597686; }
+    #fresh_lists .list_cont .info .user {
+      padding: 2px 0; }
+    #fresh_lists .list_cont .info span.items {
+      display: block; }
+#new_user_reviews .review {
+  color: #252525;
+  font-size: 11px;
+  line-height: 12px;
+  margin-bottom: 11px;
+  padding: 10px;
+  position: relative;
+  background: #fefaf1;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #fefaf1 0%, #f9eacb 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fefaf1), color-stop(100%, #f9eacb));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #fefaf1 0%, #f9eacb 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #fefaf1 0%, #f9eacb 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #fefaf1 0%, #f9eacb 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #fefaf1 0%, #f9eacb 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fefaf1', endColorstr='#f9eacb',GradientType=0 );
+  /* IE6-9 */
+  -webkit-border-radius: 4px;
+  border-radius: 4px; }
+  #new_user_reviews .review:after {
+    top: 100%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none; }
+  #new_user_reviews .review:after {
+    border-color: rgba(234, 196, 113, 0);
+    border-top-color: #f9eacb;
+    border-width: 10px;
+    left: 50%;
+    margin-left: -103px; }
+  #new_user_reviews .review .avatar {
+    margin-right: 10px;
+    width: 65px; }
+  #new_user_reviews .review .info {
+    width: 175px;
+    margin-top: -2px; }
+    #new_user_reviews .review .info .gig-comments-rating {
+      height: 14px;
+      padding: 6px 0 0;
+      overflow: hidden !important;
+      width: 100%; }
+      #new_user_reviews .review .info .gig-comments-rating .gig-comments-star-full {
+        background-image: url(/assets/content_bg/application_sprite.png);
+        background-position: -483px -407px;
+        display: inline-block;
+        height: 9px;
+        width: 9px; }
+      #new_user_reviews .review .info .gig-comments-rating .gig-comments-star-empty {
+        background-image: url(/assets/content_bg/application_sprite.png);
+        background-position: -494px -407px;
+        display: inline-block;
+        height: 9px;
+        width: 9px; }
+    #new_user_reviews .review .info .text {
+      display: block; }
+#new_user_reviews .review_footer {
+  border-bottom: 1px dashed #adc0c9;
+  display: block;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+  text-align: left; }
+  #new_user_reviews .review_footer:last-child {
+    border: none;
+    margin-bottom: 0;
+    padding-bottom: 0; }
+  #new_user_reviews .review_footer .venue_name {
+    font-size: 14px;
+    padding-bottom: 3px; }
+    #new_user_reviews .review_footer .venue_name a {
+      color: #252525; }
+      #new_user_reviews .review_footer .venue_name a:hover {
+        color: #597686; }
+  #new_user_reviews .review_footer .type {
+    margin-bottom: 0; }
 /* STYLES FOR RIGHT SIDEBAR
 -----------------------------------------------------
 :: Styles for the right sidebar and universal elements like pods.
@@ -596,8 +706,7 @@
       padding: 0 6px 0 0;
       border-right: 1px solid #e4ebef; }
     #right_sidebar .name a {
-      display: inline-block;
-      width: 160px;
+      display: inline;
       height: 11px;
       color: #09f;
       text-decoration: none;
@@ -697,8 +806,8 @@
     margin: 0 0 5px;
     padding: 0 0 5px; }
   #right_sidebar .popular_nightlife .simple_list .list_item a {
-    font-size: 16px;
-    line-height: 26px; }
+    font-size: 15px !important;
+    line-height: 17px !important; }
   #right_sidebar .photo_list .thumbnail_link {
     float: left;
     width: 75px;
@@ -774,8 +883,8 @@
     border: none; }
   #right_sidebar .gptp_right_rail ul li {
     float: left;
-    margin: 0 4px 4px 0; }
-    #right_sidebar .gptp_right_rail ul li:nth-child(4n) {
+    margin: 0 5px 5px 0; }
+    #right_sidebar .gptp_right_rail ul li:nth-child(5n) {
       margin-right: 0; }
     #right_sidebar .gptp_right_rail ul li a, #right_sidebar .gptp_right_rail ul li a:link, #right_sidebar .gptp_right_rail ul li a:visited {
       display: block;
@@ -799,7 +908,7 @@
     #right_sidebar .gptp_right_rail .links .meet_link {
       float: right; }
   #right_sidebar .gptp_right_rail .buttons {
-    width: 217px;
+    width: 270px;
     margin: 8px 0 0;
     padding: 8px 0 0;
     border-top: 1px solid #8ea8b5; }
@@ -818,7 +927,7 @@
         #right_sidebar .gptp_right_rail .buttons a.writer:hover, #right_sidebar .gptp_right_rail .buttons a:link.writer:hover, #right_sidebar .gptp_right_rail .buttons a:visited.writer:hover {
           background-position: -1px -476px; }
       #right_sidebar .gptp_right_rail .buttons a.photographer, #right_sidebar .gptp_right_rail .buttons a:link.photographer, #right_sidebar .gptp_right_rail .buttons a:visited.photographer {
-        right: -3px;
+        right: -55px;
         width: 132px;
         background-position: -88px -422px; }
         #right_sidebar .gptp_right_rail .buttons a.photographer:hover, #right_sidebar .gptp_right_rail .buttons a:link.photographer:hover, #right_sidebar .gptp_right_rail .buttons a:visited.photographer:hover {
@@ -904,15 +1013,6 @@
       margin-right: 0; }
     #photo_pod li.bottom {
       margin-bottom: 0; }
-/* Latest Reviews Sidebar Pod */
-#latest_reviews .list .list_item:first-child + .list_item {
-  margin-top: 0;
-  padding-top: 0;
-  border-top: none; }
-#latest_reviews .title {
-  font-size: 15px;
-  line-height: 17px;
-  padding-bottom: 2px; }
 .share_btn,
 .subscribe_btn,
 .follow_btns {
@@ -1130,6 +1230,7 @@
 
 
 
+
 */
 /* LEFT COLUMN
 ---------------------------------------------*/
@@ -1140,8 +1241,16 @@
     margin: 9px 0 !important;
     padding: 9px 0 !important;
     border-bottom: 1px dashed #ADC0C9; }
-    #article_page #left_container .inside .social_media_btns table td {
-      min-width: auto; }
+    #article_page #left_container .inside .social_media_btns table td:nth-child(1) {
+      width: 104px !important; }
+    #article_page #left_container .inside .social_media_btns table td:nth-child(2) {
+      width: 50px !important; }
+    #article_page #left_container .inside .social_media_btns table td:nth-child(3) {
+      width: 65px !important; }
+    #article_page #left_container .inside .social_media_btns table td:nth-child(4) {
+      width: 37px !important; }
+    #article_page #left_container .inside .social_media_btns table td:nth-child(5) {
+      width: 63px !important; }
   #article_page #left_container .sponsored_label {
     position: absolute;
     right: 18px;
@@ -1420,7 +1529,7 @@
         line-height: 12px; }
         #article_page #left_container #article_list .location .address p {
           padding: 0px !important;
-          color: #7d7d7d; }
+          color: #6c8898 !important; }
       #article_page #left_container #article_list .location .phone {
         background: url(/assets/icons/phone.png) no-repeat left top;
         color: #6c8898 !important;

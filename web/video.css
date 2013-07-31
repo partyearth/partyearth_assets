@@ -176,8 +176,7 @@
         top: -4px;
         width: 19px;
         height: 12px;
-        background-image: url(/assets/video/video_sprite.png);
-        background-position: -86px -78px; }
+        background: rgba(255, 255, 255, 0) url(/assets/video/video_sprite.png) -86px -78px; }
   .video_section .controls .volume {
     float: left;
     width: 68px;

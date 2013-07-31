@@ -1368,7 +1368,7 @@ div.datepicker {
       text-align: left;
       width: 130px; }
       #search_page #search_results_list .search_result .top_right_section .result_address p {
-        color: #6c8898;
+        color: #6c8898 !important;
         display: block;
         font-family: Arial, sans-serif, serif;
         font-size: 10px;
