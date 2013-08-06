@@ -377,6 +377,12 @@
 /*
 
 */
+#inter_container {
+  position: relative;
+  float: left;
+  width: 740px;
+  margin: 23px 0 0 -6px; }
+
 /* INTERN APPLICATION LANDING PAGE STYLES */
 #left_container {
   width: 689px;

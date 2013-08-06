@@ -4508,25 +4508,25 @@ formfield ol:before, .formfield ol:after,
   height: 72px; }
 
 /* Google & Advertisement.com Ads */
-#left_container {
+#left_container, #inter_container {
   /* Advertisement.com Ads */ }
-  #left_container .advert_pod {
+  #left_container .advert_pod, #inter_container .advert_pod {
     padding: 0 !important; }
-    #left_container .advert_pod .ad_728x90 {
+    #left_container .advert_pod .ad_728x90, #inter_container .advert_pod .ad_728x90 {
       height: 90px;
       width: 728px;
       margin: 0 auto;
       padding: 6px 0; }
-  #left_container .advert_pod_left {
+  #left_container .advert_pod_left, #inter_container .advert_pod_left {
     margin: 0 0 5px -11px;
     padding: 0 !important; }
 
 #right_sidebar {
   /* Advertisement.com Ads */
   /* Google Ads */ }
-  #right_sidebar .advert_pod, #right_sidebar .x_games_pod {
+  #right_sidebar .advert_pod {
     margin-bottom: 12px; }
-    #right_sidebar .advert_pod .ad_300x250, #right_sidebar .x_games_pod .ad_300x250 {
+    #right_sidebar .advert_pod .ad_300x250 {
       height: 250px;
       width: 300px; }
   #right_sidebar .google_ad {
