@@ -655,3 +655,38 @@
 
 
 */
+.admin_pages_content .left_column {
+  width: 795px; }
+  .admin_pages_content .left_column .sale_status {
+    display: block;
+    height: 14px;
+    margin: 10px 0; }
+  .admin_pages_content .left_column .add_ticket_btn {
+    display: block;
+    height: 43px; }
+  .admin_pages_content .left_column .ticket_table th, .admin_pages_content .left_column .ticket_table td {
+    text-align: center; }
+  .admin_pages_content .left_column .choices-group {
+    position: absolute;
+    top: 5px;
+    left: 110px;
+    width: 200px; }
+    .admin_pages_content .left_column .choices-group li {
+      display: inline-block;
+      margin-right: 10px; }
+  .admin_pages_content .left_column .sale_status_radio {
+    position: absolute;
+    top: 75px;
+    left: 20px; }
+    .admin_pages_content .left_column .sale_status_radio li fieldset legend label {
+      background: none !important;
+      border: none !important;
+      box-shadow: none !important; }
+  .admin_pages_content .left_column .btn_blue {
+    display: block;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 10px;
+    text-decoration: none !important;
+    text-shadow: none !important; }
