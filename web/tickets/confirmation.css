@@ -21,7 +21,8 @@
     .ticket_form .venue_name_cont .date {
       color: #0099FF;
       font-size: 16px;
-      padding-top: 16px; }
+      font-weight: bold;
+      padding-top: 8px; }
   .ticket_form .form_cont {
     /* Submit Button */ }
     .ticket_form .form_cont .ticket_table {
@@ -59,19 +60,24 @@
       .ticket_form .form_cont .ticket_table td {
         color: #252525;
         font-family: "Roboto Light", Arial, sans-serif;
-        font-size: 16px;
-        padding: 12px 0;
+        font-size: 14px;
+        padding: 8px 0;
         vertical-align: top; }
         .ticket_form .form_cont .ticket_table td.ticket_type {
-          padding-top: 17px;
+          padding-top: 14px;
           text-align: left; }
           .ticket_form .form_cont .ticket_table td.ticket_type .more_info_cont {
             display: block; }
             .ticket_form .form_cont .ticket_table td.ticket_type .more_info_cont .link {
-              color: #8ea8b5;
-              cursor: pointer;
-              font-size: 11px;
-              text-decoration: underline; }
+              font-size: 11px; }
+              .ticket_form .form_cont .ticket_table td.ticket_type .more_info_cont .link span {
+                border-bottom: 1px dotted #8ea8b5;
+                color: #8ea8b5;
+                cursor: pointer;
+                text-decoration: none; }
+                .ticket_form .form_cont .ticket_table td.ticket_type .more_info_cont .link span:hover {
+                  border-bottom: 1px dotted #000000;
+                  color: #000000; }
             .ticket_form .form_cont .ticket_table td.ticket_type .more_info_cont p {
               color: #959595;
               font-size: 11px;
@@ -79,21 +85,14 @@
               padding: 5px 0 0;
               width: 175px; }
         .ticket_form .form_cont .ticket_table td.show_time {
-          padding-top: 17px; }
+          padding-top: 14px; }
         .ticket_form .form_cont .ticket_table td.ages {
-          font-size: 14px;
-          padding-top: 18px;
+          padding-top: 14px;
           text-align: center; }
-        .ticket_form .form_cont .ticket_table td.price {
-          font-size: 14px;
-          padding-top: 18px;
-          text-align: right; }
-        .ticket_form .form_cont .ticket_table td.fee {
-          font-size: 14px;
-          padding-top: 18px;
+        .ticket_form .form_cont .ticket_table td.price, .ticket_form .form_cont .ticket_table td.fee {
+          padding-top: 14px;
           text-align: right; }
         .ticket_form .form_cont .ticket_table td.quantity {
-          font-size: 14px;
           line-height: 15px;
           text-align: right; }
           .ticket_form .form_cont .ticket_table td.quantity span {
@@ -123,7 +122,7 @@
         text-transform: uppercase;
         width: 165px; }
   .ticket_form h2 {
-    border-bottom: 1px dashed #d7d7d7;
+    border-bottom: 1px dashed #adc0c9;
     color: #0099FF;
     font-size: 23px;
     font-weight: normal;
@@ -139,9 +138,11 @@
       width: 100px; }
   .ticket_form .ticket_info {
     color: #252525;
+    float: right;
     font-family: "Roboto Light", "Arimo", Arial, sans-serif;
     font-size: 13px;
-    line-height: 16px; }
+    line-height: 16px;
+    width: 565px; }
 
 /* Ticket Sidebar - Right Area */
 .ticket_sidebar {
@@ -160,8 +161,8 @@
       margin-bottom: 5px; }
     .ticket_sidebar .venue .address {
       line-height: 14px; }
-      .ticket_sidebar .venue .address p:first-child {
-        padding-bottom: 0; }
+      .ticket_sidebar .venue .address p {
+        padding: 0; }
   .ticket_sidebar .map_cont {
     border: 1px solid #d3cbcb;
     background-color: #efebe2;
@@ -170,11 +171,12 @@
     border-radius: 2px; }
   .ticket_sidebar .ask_party_earth {
     position: relative;
+    width: 300px;
     /* Question Link */
     /* Misc Items */
     /* Form */ }
     .ticket_sidebar .ask_party_earth .questions {
-      border-bottom: 1px dashed #d7d7d7;
+      border-bottom: 1px dashed #adc0c9;
       border-top: 1px solid #adc0c9;
       color: #0099FF;
       font-size: 20px;
@@ -182,12 +184,13 @@
       margin-top: 11px;
       padding: 14px 0; }
       .ticket_sidebar .ask_party_earth .questions span {
+        border-bottom: 1px dotted #0099FF;
         color: #0099FF;
         cursor: pointer;
-        text-decoration: underline; }
+        text-decoration: none; }
         .ticket_sidebar .ask_party_earth .questions span:hover {
-          color: #597686;
-          text-decoration: none; }
+          border-bottom: 1px dotted #597686;
+          color: #597686; }
     .ticket_sidebar .ask_party_earth .required_text {
       color: #c2c2c2;
       font-size: 12px;
@@ -469,12 +472,10 @@
       padding-right: 5px;
       text-align: right; }
     .ticket_form .form_cont .purchase_table td {
-      padding: 7px 0 !important; }
+      padding: 8px 0 !important; }
       .ticket_form .form_cont .purchase_table td.qty {
-        font-size: 14px;
         text-align: center; }
       .ticket_form .form_cont .purchase_table td.total {
-        font-size: 14px;
         padding-right: 5px !important;
         text-align: right; }
     .ticket_form .form_cont .ticket_total {
@@ -482,13 +483,14 @@
       color: #000000;
       font-size: 16px;
       font-weight: bold;
-      padding: 8px 0;
+      line-height: 100%;
+      padding: 12px 0 10px;
       text-align: right;
       text-transform: uppercase; }
       .ticket_form .form_cont .ticket_total .label {
-        padding-right: 10px; }
+        padding-right: 43px; }
   .ticket_form h2 {
-    border-bottom: 1px dashed #d7d7d7;
+    border-bottom: 1px dashed #adc0c9;
     color: #0099FF;
     font-size: 23px;
     font-weight: normal;
@@ -532,8 +534,14 @@
       width: 170px;
       -webkit-border-radius: 2px;
       border-radius: 2px; }
-      .ticket_form .payment_info input.cc_month, .ticket_form .payment_info input.cc_year, .ticket_form .payment_info select.cc_month, .ticket_form .payment_info select.cc_year {
+      .ticket_form .payment_info input.cc_type, .ticket_form .payment_info select.cc_type {
+        width: 158px; }
+      .ticket_form .payment_info input.cc_number, .ticket_form .payment_info select.cc_number {
+        width: 136px; }
+      .ticket_form .payment_info input.cc_month, .ticket_form .payment_info select.cc_month {
         width: 67px; }
+      .ticket_form .payment_info input.cc_year, .ticket_form .payment_info select.cc_year {
+        width: 77px; }
       .ticket_form .payment_info input.cc_month, .ticket_form .payment_info select.cc_month {
         margin-right: 10px; }
       .ticket_form .payment_info input.cc_cvc, .ticket_form .payment_info select.cc_cvc {
@@ -575,48 +583,57 @@
           background: url(/assets/tickets/pe_www_tickets_discover.png) no-repeat;
           width: 63px; }
       .ticket_form .payment_info .credit_card_info .card_id .inline-success {
-        margin-left: 25px; }
+        bottom: 24px;
+        left: 273px;
+        position: absolute; }
     .ticket_form .payment_info .billing_info {
-      border-bottom: 1px dashed #adc0c9;
-      padding-bottom: 6px; }
-    .ticket_form .payment_info .delivery_info ul {
       border-bottom: 1px dashed #d7d7d7;
-      height: 45px;
-      margin-top: 14px;
       padding-bottom: 6px; }
-      .ticket_form .payment_info .delivery_info ul li {
-        position: relative; }
-        .ticket_form .payment_info .delivery_info ul li label {
-          float: left; }
-          .ticket_form .payment_info .delivery_info ul li label input {
-            margin-top: 2px;
-            position: absolute;
-            right: 469px;
-            width: 13px; }
-          .ticket_form .payment_info .delivery_info ul li label span {
-            margin-top: 1px;
-            position: absolute;
-            right: 15px;
-            text-align: left;
-            width: 450px; }
-    .ticket_form .payment_info .delivery_info .no_options {
-      height: 26px; }
-      .ticket_form .payment_info .delivery_info .no_options span {
-        color: #375363;
-        display: block;
-        padding-top: 1px; }
+    .ticket_form .payment_info .delivery_info {
+      position: relative; }
+      .ticket_form .payment_info .delivery_info ul {
+        border-bottom: 1px dashed #d7d7d7;
+        height: 50px;
+        margin-top: 14px;
+        padding-bottom: 6px; }
+        .ticket_form .payment_info .delivery_info ul li {
+          position: relative; }
+          .ticket_form .payment_info .delivery_info ul li label {
+            float: left; }
+            .ticket_form .payment_info .delivery_info ul li label.will_call {
+              bottom: -5px;
+              right: -13px;
+              position: absolute; }
+            .ticket_form .payment_info .delivery_info ul li label input {
+              margin-top: 2px;
+              position: absolute;
+              right: 469px;
+              width: 13px; }
+            .ticket_form .payment_info .delivery_info ul li label span {
+              margin-top: 1px;
+              position: absolute;
+              right: 15px;
+              text-align: left;
+              width: 450px; }
+      .ticket_form .payment_info .delivery_info .no_options {
+        height: 26px; }
+        .ticket_form .payment_info .delivery_info .no_options span {
+          color: #375363;
+          display: block;
+          padding-top: 1px; }
     .ticket_form .payment_info .email_info {
       margin-top: 14px;
       padding-bottom: 14px;
       position: relative; }
       .ticket_form .payment_info .email_info .email_text {
+        color: #375363;
         margin-left: 197px; }
       .ticket_form .payment_info .email_info .inline-success {
         left: 393px;
         position: absolute;
         top: 8px; }
       .ticket_form .payment_info .email_info .inline-errors {
-        margin-left: 197px; }
+        margin-left: 192px; }
     .ticket_form .payment_info .action_cont {
       border-top: 1px solid #d7d7d7;
       padding-top: 14px;
@@ -648,15 +665,17 @@
           padding: 5px; }
     .ticket_form .payment_info .inline-errors {
       color: red;
-      font-size: 11px; }
+      font-size: 11px;
+      padding-left: 5px; }
 
 /* Ticket Sidebar - Right Area */
-.ticket_sidebar .timer_sticky .timer_cont {
+.ticket_sidebar .timer_cont {
   background-color: #fff9d0;
+  margin-top: 10px;
   padding: 10px;
   -webkit-border-radius: 4px;
   border-radius: 4px; }
-  .ticket_sidebar .timer_sticky .timer_cont .timer {
+  .ticket_sidebar .timer_cont .timer {
     color: #ff9000;
     float: left;
     font-family: "Roboto Light", Arial, sans-serif;
@@ -665,7 +684,7 @@
     margin-top: 14px;
     text-align: right;
     width: 105px; }
-  .ticket_sidebar .timer_sticky .timer_cont .info {
+  .ticket_sidebar .timer_cont .info {
     color: #959595;
     float: left;
     font-size: 11px;
@@ -681,15 +700,14 @@
   margin-bottom: 10px;
   width: 1015px; }
   .ticket_form_full h3 {
-    font-size: 16px; }
+    font-size: 18px; }
   .ticket_form_full .tickets_sent {
-    font-size: 16px;
-    padding-bottom: 5px; }
+    font-size: 15px; }
     .ticket_form_full .tickets_sent span {
       color: #0099FF; }
   .ticket_form_full .tickets_notice {
     color: #d92100;
-    font-size: 16px;
+    font-size: 15px;
     font-weight: bold; }
   .ticket_form_full .divider {
     background-color: #EBEBEB;
@@ -698,6 +716,7 @@
 
 /* Ticket Form - Left Area */
 .ticket_form {
+  position: relative;
   /* Venue Name Container */
   /* Form Container */
   /* Customer Details */
@@ -706,7 +725,7 @@
   .ticket_form .venue_name_cont {
     height: 35px; }
   .ticket_form .form_cont {
-    padding-bottom: 18px; }
+    padding-bottom: 10px; }
   .ticket_form .customer_details {
     color: #464646;
     font-size: 12px; }
@@ -725,10 +744,12 @@
           vertical-align: top; }
   .ticket_form .similar_events {
     border-top: 1px solid #adc0c9;
-    margin: 19px 0 8px;
+    margin: 10px 0 8px;
     padding: 10px 0 8px; }
   .ticket_form .similar_list {
     margin-bottom: 10px; }
+    .ticket_form .similar_list.two_line_title li .name {
+      min-height: 44px; }
     .ticket_form .similar_list li {
       display: inline-block;
       float: left;
@@ -739,16 +760,21 @@
         margin-left: 0; }
       .ticket_form .similar_list li .date {
         color: #0099FF;
-        font-size: 11px;
-        line-height: 100%;
+        font-family: Arial, sans-serif, serif;
+        font-size: 14px;
+        font-weight: bold;
+        line-height: 130%;
         margin-top: 5px;
         text-transform: uppercase; }
       .ticket_form .similar_list li .name {
-        color: #000000;
         font-size: 16px;
         font-weight: bold;
         line-height: 22px;
         margin-bottom: 5px; }
+        .ticket_form .similar_list li .name a {
+          color: #000000; }
+          .ticket_form .similar_list li .name a:hover {
+            color: #597686; }
       .ticket_form .similar_list li .thumbnail {
         border: 1px solid #d2dce1;
         height: 140px;
@@ -793,6 +819,9 @@
       top: 0; }
 
 /* Ticket Sidebar - Right Area */
+.ticket_sidebar .get_directions {
+  display: block;
+  padding: 5px 0 10px; }
 .ticket_sidebar .nearby_venues {
   /* Upcoming Events Footer */ }
   .ticket_sidebar .nearby_venues h2 {
@@ -818,10 +847,18 @@
     .ticket_sidebar .nearby_venues ol li .info {
       float: left; }
       .ticket_sidebar .nearby_venues ol li .info .name {
-        color: #000000;
         font-size: 16px;
         font-weight: bold;
-        line-height: 22px; }
+        line-height: 20px;
+        margin-top: -2px;
+        width: 213px; }
+        .ticket_sidebar .nearby_venues ol li .info .name a {
+          color: #000000; }
+          .ticket_sidebar .nearby_venues ol li .info .name a:hover {
+            color: #597686; }
+      .ticket_sidebar .nearby_venues ol li .info .type {
+        padding-top: 3px;
+        width: 213px; }
   .ticket_sidebar .nearby_venues .nearby_events_footer {
     border-top: 1px solid #adc0c9;
     font-size: 11px;
