@@ -1701,6 +1701,8 @@
 !binary "dGVtcC92ZW51ZV9jaGFyX3JhdGluZ190ZW1wL2luZGV4LmpwZw==": temp/venue_char_rating_temp-c0b6d431a2c02802636a7aa71de4d8d1.jpg
 !binary "dGVtcC92ZW51ZV9jaGFyX3RpcF90ZW1wLmpwZw==": temp/venue_char_tip_temp-5cbce595a2c2af3b4cf95da39f470729.jpg
 !binary "dGVtcC92ZW51ZV9jaGFyX3RpcF90ZW1wL2luZGV4LmpwZw==": temp/venue_char_tip_temp-5cbce595a2c2af3b4cf95da39f470729.jpg
+!binary "dGlja2V0cy9wZV93ZWJfdGlja2V0X2Rhc2hib2FyZF94bHMucG5n": tickets/pe_web_ticket_dashboard_xls-30a3b03185a333a4621fe937f28d36ec.png
+!binary "dGlja2V0cy9wZV93ZWJfdGlja2V0X2Rhc2hib2FyZF94bHMvaW5kZXgucG5n": tickets/pe_web_ticket_dashboard_xls-30a3b03185a333a4621fe937f28d36ec.png
 !binary "dGlja2V0cy9wZV93d3dfdGlja2V0c19hbWV4LnBuZw==": tickets/pe_www_tickets_amex-9383c6fcbde8e0016b6ce71d053bbc4a.png
 !binary "dGlja2V0cy9wZV93d3dfdGlja2V0c19hbWV4L2luZGV4LnBuZw==": tickets/pe_www_tickets_amex-9383c6fcbde8e0016b6ce71d053bbc4a.png
 !binary "dGlja2V0cy9wZV93d3dfdGlja2V0c19jYXJkLnBuZw==": tickets/pe_www_tickets_card-0672573624aca3fba0fbe9cbcde02550.png
@@ -2777,6 +2779,8 @@
 !binary "YWRtaW4vdGFncy9uZXcvaW5kZXguanM=": admin/tags/new-baacc9d40a9011d72d69f153b8b0e523.js
 !binary "YWRtaW4vdGFncy9zaG93Lmpz": admin/tags/show-c9aad4841ae4a799c3b55d525c812266.js
 !binary "YWRtaW4vdGFncy9zaG93L2luZGV4Lmpz": admin/tags/show-c9aad4841ae4a799c3b55d525c812266.js
+!binary "YWRtaW4vdGlja2V0X2NsaWVudHMuanM=": admin/ticket_clients-f3a94607b45de2176b93d3bb8aabc6dc.js
+!binary "YWRtaW4vdGlja2V0X2NsaWVudHMvaW5kZXguanM=": admin/ticket_clients-f3a94607b45de2176b93d3bb8aabc6dc.js
 !binary "YWRtaW4vdGlja2V0X3R5cGVzLmpz": admin/ticket_types-8c4d4a5c520639dd1f8b3bab1ec5e97b.js
 !binary "YWRtaW4vdGlja2V0X3R5cGVzL2luZGV4Lmpz": admin/ticket_types-8c4d4a5c520639dd1f8b3bab1ec5e97b.js
 !binary "YWRtaW4vdHdpdHRlcl9hY2NvdW50cy9lZGl0Lmpz": admin/twitter_accounts/edit-193c4a4c437398bf32aa83866d0d781e.js
@@ -3018,8 +3022,8 @@
 !binary "d2ViL3RpY2tldHMvY29uZmlybWF0aW9uL2luZGV4Lmpz": web/tickets/confirmation-6b41014f8e2de09a364edf33772c06d6.js
 !binary "d2ViL3RpY2tldHMvbWFwLmpz": web/tickets/map-fa02f1f4e7da3f8e24159d3a6ba1545f.js
 !binary "d2ViL3RpY2tldHMvbWFwL2luZGV4Lmpz": web/tickets/map-fa02f1f4e7da3f8e24159d3a6ba1545f.js
-!binary "d2ViL3RpY2tldHMvcHVyY2hhc2UuanM=": web/tickets/purchase-3fbf1a9738682f98e923ff6c139aaa19.js
-!binary "d2ViL3RpY2tldHMvcHVyY2hhc2UvaW5kZXguanM=": web/tickets/purchase-3fbf1a9738682f98e923ff6c139aaa19.js
+!binary "d2ViL3RpY2tldHMvcHVyY2hhc2UuanM=": web/tickets/purchase-00f20f68373f3a476302c950f2824474.js
+!binary "d2ViL3RpY2tldHMvcHVyY2hhc2UvaW5kZXguanM=": web/tickets/purchase-00f20f68373f3a476302c950f2824474.js
 !binary "d2ViL3Vuc3Vic2NyaXB0aW9ucy5qcw==": web/unsubscriptions-925eb5f5d8c136344041fb5062ce855d.js
 !binary "d2ViL3Vuc3Vic2NyaXB0aW9ucy9pbmRleC5qcw==": web/unsubscriptions-925eb5f5d8c136344041fb5062ce855d.js
 !binary "d2ViL3VzZXJzL2NoYW5nZV9wYXNzd29yZC5qcw==": web/users/change_password-88c56bd4495a015289f7122a9b87d924.js
@@ -3030,6 +3034,8 @@
 !binary "d2ViL3VzZXJzL2NvbmZpcm1fZW1haWwvaW5kZXguanM=": web/users/confirm_email-1284b88ca53363bf5860a901590d081b.js
 !binary "d2ViL3VzZXJzL2NyZWF0ZS5qcw==": web/users/create-f4ca215242868c9a2f4b77bbde5c8a2b.js
 !binary "d2ViL3VzZXJzL2NyZWF0ZS9pbmRleC5qcw==": web/users/create-f4ca215242868c9a2f4b77bbde5c8a2b.js
+!binary "d2ViL3VzZXJzL2Rhc2hib2FyZC5qcw==": web/users/dashboard-d20fecfbad484bd69457b84fe1fc9f7b.js
+!binary "d2ViL3VzZXJzL2Rhc2hib2FyZC9pbmRleC5qcw==": web/users/dashboard-d20fecfbad484bd69457b84fe1fc9f7b.js
 !binary "d2ViL3VzZXJzL2VkaXQuanM=": web/users/edit-528265c6e3a821119348cbbdaca959ce.js
 !binary "d2ViL3VzZXJzL2VkaXQvaW5kZXguanM=": web/users/edit-528265c6e3a821119348cbbdaca959ce.js
 !binary "d2ViL3VzZXJzL2xpc3RzL2FkZF90b19saXN0X3NlYXJjaC5qcw==": web/users/lists/add_to_list_search-6dc44e58939184054568b0e2b21c11d3.js
@@ -3234,8 +3240,8 @@
 !binary "YWRtaW4vZW5kcG9pbnRzL21lcmdlX2R1cGxpY2F0ZS9pbmRleC5jc3M=": admin/endpoints/merge_duplicate-463cd2f16bf0caaae43db49e6ac5611f.css
 !binary "YWRtaW4vZW5kcG9pbnRzL25ldy5jc3M=": admin/endpoints/new-cf483fd96bf807c3ab52180a53a35830.css
 !binary "YWRtaW4vZW5kcG9pbnRzL25ldy9pbmRleC5jc3M=": admin/endpoints/new-cf483fd96bf807c3ab52180a53a35830.css
-!binary "YWRtaW4vZXZlbnRzL2VkaXQuY3Nz": admin/events/edit-464efb21f63a34ad3f5bc25999125cb3.css
-!binary "YWRtaW4vZXZlbnRzL2VkaXQvaW5kZXguY3Nz": admin/events/edit-464efb21f63a34ad3f5bc25999125cb3.css
+!binary "YWRtaW4vZXZlbnRzL2VkaXQuY3Nz": admin/events/edit-c242ce8d8e1b1a97564fc1ad237488b3.css
+!binary "YWRtaW4vZXZlbnRzL2VkaXQvaW5kZXguY3Nz": admin/events/edit-c242ce8d8e1b1a97564fc1ad237488b3.css
 !binary "YWRtaW4vZXZlbnRzL2luZGV4X2FjdGlvbi5jc3M=": admin/events/index_action-a84ed4178ea0dcfc697c6e942ca4ac2f.css
 !binary "YWRtaW4vZXZlbnRzX2FjdGlvbi5jc3M=": admin/events/index_action-a84ed4178ea0dcfc697c6e942ca4ac2f.css
 !binary "YWRtaW4vZXZlbnRzL21lcmdlX2R1cGxpY2F0ZS5jc3M=": admin/events/merge_duplicate-463cd2f16bf0caaae43db49e6ac5611f.css
@@ -3963,18 +3969,18 @@
 !binary "d2ViL3Nwb3J0c19wYWdlL3Nob3cvaW5kZXguY3Nz": web/sports_page/show-8ff6964e155197c21a238830925a53b6.css
 !binary "d2ViL3N0b3JlL3N0b3JlLmNzcw==": web/store/store-4e24d972df177df9722dc464d84c43b2.css
 !binary "d2ViL3N0b3JlL3N0b3JlL2luZGV4LmNzcw==": web/store/store-4e24d972df177df9722dc464d84c43b2.css
-!binary "d2ViL3N1YnNjcmliZS5jc3M=": web/subscribe-4f4a455a5b4045692b2f3faa71045bda.css
-!binary "d2ViL3N1YnNjcmliZS9pbmRleC5jc3M=": web/subscribe-4f4a455a5b4045692b2f3faa71045bda.css
+!binary "d2ViL3N1YnNjcmliZS5jc3M=": web/subscribe-9075f56a8f24d98f59314c7a749e21ea.css
+!binary "d2ViL3N1YnNjcmliZS9pbmRleC5jc3M=": web/subscribe-9075f56a8f24d98f59314c7a749e21ea.css
 !binary "d2ViL3N1YnNjcmliZV9tb2JpbGUuY3Nz": web/subscribe_mobile-f68e710a276cc3b134d5374b8932b72e.css
 !binary "d2ViL3N1YnNjcmliZV9tb2JpbGUvaW5kZXguY3Nz": web/subscribe_mobile-f68e710a276cc3b134d5374b8932b72e.css
 !binary "d2ViL3RoaW5nc190b19kb19wYWdlL3Nob3cuY3Nz": web/things_to_do_page/show-7778a5c7b5a528341a4e44ae0fa10a64.css
 !binary "d2ViL3RoaW5nc190b19kb19wYWdlL3Nob3cvaW5kZXguY3Nz": web/things_to_do_page/show-7778a5c7b5a528341a4e44ae0fa10a64.css
-!binary "d2ViL3RpY2tldHMvY29uZmlybWF0aW9uLmNzcw==": web/tickets/confirmation-d91b9b43faf5f2e1335330cfc7f8ab06.css
-!binary "d2ViL3RpY2tldHMvY29uZmlybWF0aW9uL2luZGV4LmNzcw==": web/tickets/confirmation-d91b9b43faf5f2e1335330cfc7f8ab06.css
-!binary "d2ViL3RpY2tldHMvaW5kZXguY3Nz": web/tickets/index-c76ade6bd453daa509384089996acde1.css
-!binary "d2ViL3RpY2tldHMuY3Nz": web/tickets/index-c76ade6bd453daa509384089996acde1.css
-!binary "d2ViL3RpY2tldHMvcHVyY2hhc2UuY3Nz": web/tickets/purchase-7650a92e42d1f4587db87c8d5a79b064.css
-!binary "d2ViL3RpY2tldHMvcHVyY2hhc2UvaW5kZXguY3Nz": web/tickets/purchase-7650a92e42d1f4587db87c8d5a79b064.css
+!binary "d2ViL3RpY2tldHMvY29uZmlybWF0aW9uLmNzcw==": web/tickets/confirmation-cbe85e1ef31c8ff2b3f227bf8ddfd474.css
+!binary "d2ViL3RpY2tldHMvY29uZmlybWF0aW9uL2luZGV4LmNzcw==": web/tickets/confirmation-cbe85e1ef31c8ff2b3f227bf8ddfd474.css
+!binary "d2ViL3RpY2tldHMvaW5kZXguY3Nz": web/tickets/index-2fcb5b9f5027f24bc52ed08481831c10.css
+!binary "d2ViL3RpY2tldHMuY3Nz": web/tickets/index-2fcb5b9f5027f24bc52ed08481831c10.css
+!binary "d2ViL3RpY2tldHMvcHVyY2hhc2UuY3Nz": web/tickets/purchase-19bdf110da0150ed9f5513251997632a.css
+!binary "d2ViL3RpY2tldHMvcHVyY2hhc2UvaW5kZXguY3Nz": web/tickets/purchase-19bdf110da0150ed9f5513251997632a.css
 !binary "d2ViL3R3aXR0ZXIuY3Nz": web/twitter-83fd0fa7c605039cf4944108fb1ddba5.css
 !binary "d2ViL3R3aXR0ZXIvaW5kZXguY3Nz": web/twitter-83fd0fa7c605039cf4944108fb1ddba5.css
 !binary "d2ViL3Vuc3Vic2NyaWJlL3Nob3cuY3Nz": web/unsubscribe/show-38b4f943d071b79ba1cea68ac2283c16.css
@@ -3987,6 +3993,8 @@
 !binary "d2ViL3VzZXJzL2NvbmZpcm1fZW1haWwvaW5kZXguY3Nz": web/users/confirm_email-0b7823f72dd69d51b0047446976a82cd.css
 !binary "d2ViL3VzZXJzL2NyZWF0ZS5jc3M=": web/users/create-0b7823f72dd69d51b0047446976a82cd.css
 !binary "d2ViL3VzZXJzL2NyZWF0ZS9pbmRleC5jc3M=": web/users/create-0b7823f72dd69d51b0047446976a82cd.css
+!binary "d2ViL3VzZXJzL2Rhc2hib2FyZC5jc3M=": web/users/dashboard-87d145c9b78a81971122ccaefceacdc2.css
+!binary "d2ViL3VzZXJzL2Rhc2hib2FyZC9pbmRleC5jc3M=": web/users/dashboard-87d145c9b78a81971122ccaefceacdc2.css
 !binary "d2ViL3VzZXJzL2VkaXQuY3Nz": web/users/edit-83889641f80dba6e5a5e922e5643d61e.css
 !binary "d2ViL3VzZXJzL2VkaXQvaW5kZXguY3Nz": web/users/edit-83889641f80dba6e5a5e922e5643d61e.css
 !binary "d2ViL3VzZXJzL2xpc3Rfdmlldy5jc3M=": web/users/list_view-11bc7f36e2a7a07167e64ba0c950ec79.css
@@ -5105,6 +5113,8 @@
 !binary "ZXh0ZXJuYWwvdXBsb2FkaWZ5L3VwbG9hZGlmeS9pbmRleC5waHA=": external/uploadify/uploadify-f9a850e9315d29326e3d33fc4a098dc7.php
 !binary "ZXh0ZXJuYWwvdXBsb2FkaWZ5L3VwbG9hZGlmeS5zd2Y=": external/uploadify/uploadify-e24fa9e27d27f14a838eaaf650a80141.swf
 !binary "ZXh0ZXJuYWwvdXBsb2FkaWZ5L3VwbG9hZGlmeS9pbmRleC5zd2Y=": external/uploadify/uploadify-e24fa9e27d27f14a838eaaf650a80141.swf
+!binary "ZXh0ZXJuYWwvemVyb2NsaXBib2FyZC5zd2Y=": external/zeroclipboard-56f08f82bb5c74065a1c057004c212c6.swf
+!binary "ZXh0ZXJuYWwvemVyb2NsaXBib2FyZC9pbmRleC5zd2Y=": external/zeroclipboard-56f08f82bb5c74065a1c057004c212c6.swf
 ? !binary |-
   ZXh0ZXJuYWwvcHJldHR5X3Bob3RvL2ltYWdlcy9iYWNrZ3JvdW5kcy9ib2R5
   QmFja2dyb3VuZC5qcGc=

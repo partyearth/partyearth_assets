@@ -55,8 +55,9 @@
           text-align: right;
           width: 65px; }
         .ticket_form .form_cont .ticket_table th.quantity {
-          text-align: center;
-          width: 120px; }
+          text-align: right;
+          padding-right: 5px;
+          width: 115px; }
       .ticket_form .form_cont .ticket_table td {
         color: #252525;
         font-family: "Roboto Light", Arial, sans-serif;
@@ -97,15 +98,17 @@
           text-align: right; }
           .ticket_form .form_cont .ticket_table td.quantity span {
             display: block;
-            padding-top: 7px; }
+            padding: 7px 0; }
           .ticket_form .form_cont .ticket_table td.quantity select {
             border: 1px solid #c4c3c3;
             font-family: "Roboto Light", Arial, sans-serif;
             font-size: 14px;
-            padding: 5px;
+            padding: 5px 5px 5px 0;
             width: 85px;
             -webkit-border-radius: 4px;
-            border-radius: 4px; }
+            border-radius: 4px;
+            text-indent: 6px;
+            line-height: 24px; }
     .ticket_form .form_cont .submit_button {
       border-bottom: 1px solid #adc0c9;
       padding: 8px 0;
@@ -204,7 +207,7 @@
       margin-top: 10px; }
     .ticket_sidebar .ask_party_earth form {
       margin-top: 10px; }
-      .ticket_sidebar .ask_party_earth form ol li {
+      .ticket_sidebar .ask_party_earth form ol {
         position: relative; }
         .ticket_sidebar .ask_party_earth form ol li .inline-errors {
           color: red;
@@ -465,8 +468,10 @@
     .ticket_form .form_cont .purchase_table th.qty {
       text-align: center;
       width: 15px !important; }
+    .ticket_form .form_cont .purchase_table th.price {
+      width: 85px; }
     .ticket_form .form_cont .purchase_table th.fee {
-      width: 93px !important; }
+      width: 73px !important; }
     .ticket_form .form_cont .purchase_table th.total {
       width: 100px;
       padding-right: 5px;
@@ -484,11 +489,11 @@
       font-size: 16px;
       font-weight: bold;
       line-height: 100%;
-      padding: 12px 0 10px;
+      padding: 12px 5px 10px 0;
       text-align: right;
       text-transform: uppercase; }
       .ticket_form .form_cont .ticket_total .label {
-        padding-right: 43px; }
+        padding-right: 38px; }
   .ticket_form h2 {
     border-bottom: 1px dashed #adc0c9;
     color: #0099FF;
@@ -553,7 +558,9 @@
       .ticket_form .payment_info input.cc_phone, .ticket_form .payment_info select.cc_phone {
         width: 150px; }
     .ticket_form .payment_info select {
-      padding-right: 5px; }
+      line-height: 20px;
+      padding: 5px 5px 5px 0;
+      text-indent: 6px; }
     .ticket_form .payment_info .credit_card_info {
       border-bottom: 1px solid #adc0c9;
       padding-bottom: 10px;
@@ -612,9 +619,9 @@
             .ticket_form .payment_info .delivery_info ul li label span {
               margin-top: 1px;
               position: absolute;
-              right: 15px;
+              right: 0;
               text-align: left;
-              width: 450px; }
+              width: 465px; }
       .ticket_form .payment_info .delivery_info .no_options {
         height: 26px; }
         .ticket_form .payment_info .delivery_info .no_options span {
@@ -797,13 +804,15 @@
           width: 115px; }
           .ticket_form .similar_list li .actions_cont .add_to_cal:hover {
             background-color: #e0e0e0; }
-        .ticket_form .similar_list li .actions_cont .buy_tickets {
-          background-color: #ff9000;
-          color: #FFFFFF;
-          float: right;
-          width: 90px; }
-          .ticket_form .similar_list li .actions_cont .buy_tickets:hover {
-            background-color: #ff9a17; }
+        .ticket_form .similar_list li .actions_cont a {
+          text-decoration: none; }
+          .ticket_form .similar_list li .actions_cont a .buy_tickets {
+            background-color: #ff9000;
+            color: #FFFFFF;
+            float: right;
+            width: 90px; }
+            .ticket_form .similar_list li .actions_cont a .buy_tickets:hover {
+              background-color: #ff9a17; }
   .ticket_form .upcoming_events_footer {
     border-top: 1px solid #adc0c9;
     font-size: 11px;
@@ -825,8 +834,8 @@
 .ticket_sidebar .nearby_venues {
   /* Upcoming Events Footer */ }
   .ticket_sidebar .nearby_venues h2 {
-    border-top: 1px solid #d7d7d7;
-    border-bottom: 1px dashed #d7d7d7;
+    border-top: 1px solid #adc0c9;
+    border-bottom: 1px dashed #adc0c9;
     color: #0099FF;
     font-size: 23px;
     font-weight: normal;
