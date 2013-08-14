@@ -2260,18 +2260,25 @@
         width: 33px;
         height: 33px;
         border: 1px solid #cbd7dd; }
-#overview_cont .thumbnail {
+#overview_cont .overview_left {
   float: left;
-  margin: 0 10px 0 0;
-  width: 165px;
-  height: 110px; }
+  width: 165px; }
+  #overview_cont .overview_left .thumbnail {
+    float: left;
+    margin: 0 10px 10px 0;
+    width: 165px;
+    height: 110px; }
+#overview_cont .overview_right {
+  float: right;
+  width: 520px; }
+  #overview_cont .overview_right #overview_desc {
+    float: left;
+    width: 520px; }
+#overview_cont.no_photo .thumbnail {
+  display: none; }
 #overview_cont.no_photo #overview_desc {
   float: none;
   width: auto; }
-
-#overview_desc {
-  float: left;
-  width: 520px; }
 /* Map Tooltip / Popup */
 .map_tooltip, .map_popup {
   display: none;
@@ -3220,7 +3227,7 @@
     line-height: 16px;
     border-top: 1px dashed #adc0c9; }
   #object_page_header h1.with_ticket .type {
-    margin-left: 94px; }
+    margin-left: 90px; }
   #object_page_header .add_to_calendar {
     display: inline-block;
     position: relative;
@@ -3240,7 +3247,7 @@
       background-position: -388px -550px; }
   #object_page_header .buy_ticket {
     position: absolute;
-    bottom: 40px; }
+    bottom: 43px !important; }
 
 #gal_map {
   margin-top: -36px; }

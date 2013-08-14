@@ -1507,18 +1507,25 @@ div.datepicker {
 ---------------------------------------------------------*/
 .datepickerHidden {
   display: none; }
-#overview_cont .thumbnail {
+#overview_cont .overview_left {
   float: left;
-  margin: 0 10px 0 0;
-  width: 165px;
-  height: 110px; }
+  width: 165px; }
+  #overview_cont .overview_left .thumbnail {
+    float: left;
+    margin: 0 10px 10px 0;
+    width: 165px;
+    height: 110px; }
+#overview_cont .overview_right {
+  float: right;
+  width: 520px; }
+  #overview_cont .overview_right #overview_desc {
+    float: left;
+    width: 520px; }
+#overview_cont.no_photo .thumbnail {
+  display: none; }
 #overview_cont.no_photo #overview_desc {
   float: none;
   width: auto; }
-
-#overview_desc {
-  float: left;
-  width: 520px; }
 /* Upcoming Events Sidebar Pod */
 #upcoming_events .list .list_item {
   position: relative; }

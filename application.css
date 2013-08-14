@@ -2687,22 +2687,71 @@ button,
 .buy_ticket,
 .buy_ticket:link,
 .buy_ticket:visited {
+  background-image: url(/assets/content_bg/app_sprite_2.png);
+  color: #FFFFFF;
   display: inline-block;
-  width: 87px;
-  height: 20px;
-  color: #fff;
-  font-size: 9px;
-  font-weight: bold;
-  text-indent: 29px;
   text-transform: uppercase;
   text-decoration: none;
+  text-shadow: -1px -1px 0px #ea7900;
+  filter: dropshadow(color=#ea7900, offx=-1, offy=-1); }
+  .buy_ticket.tix_sml,
+  .buy_ticket:link.tix_sml,
+  .buy_ticket:visited.tix_sml {
+    background-position: -330px 0;
+    font-size: 9px;
+    font-weight: bold;
+    height: 17px;
+    letter-spacing: 1px;
+    text-indent: 29px;
+    width: 85px; }
+    .buy_ticket.tix_sml:hover,
+    .buy_ticket:link.tix_sml:hover,
+    .buy_ticket:visited.tix_sml:hover {
+      background-position: -419px 0; }
+  .buy_ticket.tix_med,
+  .buy_ticket:link.tix_med,
+  .buy_ticket:visited.tix_med {
+    background-position: -330px -26px;
+    font-size: 13px;
+    font-weight: normal;
+    height: 24px;
+    letter-spacing: 1px;
+    padding-top: 8px;
+    text-align: center;
+    text-transform: none;
+    width: 117px; }
+    .buy_ticket.tix_med:hover,
+    .buy_ticket:link.tix_med:hover,
+    .buy_ticket:visited.tix_med:hover {
+      background-position: -460px -26px; }
+
+.buy_ticket_small .buy_ticket {
+  background-position: -330px 0;
+  font-size: 9px;
+  font-weight: bold;
+  height: 17px;
   letter-spacing: 1px;
-  background-image: url(/assets/content_bg/app_sprite_2.png);
-  background-position: -329px 0; }
-  .buy_ticket:hover,
-  .buy_ticket:link:hover,
-  .buy_ticket:visited:hover {
-    background-position: -418px 0; }
+  text-indent: 29px;
+  width: 85px; }
+  .buy_ticket_small .buy_ticket:hover {
+    background-position: -419px 0; }
+
+.buy_ticket_large {
+  font-size: 16px;
+  font-weight: bold; }
+  .buy_ticket_large.right {
+    display: block;
+    margin-top: 45px; }
+  .buy_ticket_large .buy_ticket {
+    background-position: -657px 0;
+    height: 27px;
+    letter-spacing: 1px;
+    padding-top: 9px;
+    text-indent: 48px;
+    text-transform: none;
+    width: 156px; }
+    .buy_ticket_large .buy_ticket:hover {
+      background-position: -827px 0; }
 
 /* EMBED BUTTON
 --------------------------------------------*/
@@ -4043,6 +4092,9 @@ h3.large_gray_btn_full {
   border: 1px solid #d3cbcb;
   border-radius: 2px;
   cursor: pointer; }
+  .add_to_calendar.schedule_events {
+    text-align: center;
+    width: 107px; }
   .add_to_calendar .point {
     display: none;
     position: absolute;
