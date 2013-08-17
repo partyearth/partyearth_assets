@@ -536,6 +536,35 @@
       background-position: -61px -33px; }
     .liked_by .disabled.emma .character {
       background-position: -91px -33px; }
+#fresh_lists .list_cont {
+  border-bottom: 1px dashed #adc0c9;
+  padding-bottom: 8px;
+  margin-bottom: 8px; }
+  #fresh_lists .list_cont:last-child {
+    border: none;
+    margin: 0;
+    padding: 0; }
+  #fresh_lists .list_cont .avatar {
+    float: left;
+    margin-right: 10px;
+    height: 85px;
+    width: 85px; }
+  #fresh_lists .list_cont .info {
+    color: #acacac;
+    float: right;
+    font-size: 11px;
+    line-height: 12px;
+    width: 175px; }
+    #fresh_lists .list_cont .info .list_name {
+      font-size: 14px;
+      line-height: 15px;
+      color: #252525; }
+      #fresh_lists .list_cont .info .list_name:hover {
+        color: #597686; }
+    #fresh_lists .list_cont .info .user {
+      padding: 2px 0; }
+    #fresh_lists .list_cont .info span.items {
+      display: block; }
 #new_user_reviews .review {
   color: #252525;
   font-size: 11px;
@@ -1261,8 +1290,6 @@
     font-size: 12px;
     line-height: 16px;
     vertical-align: bottom; }
-    .soe_sect .soe_sect_cont .soe_event_xtra .buy_ticket {
-      margin: 0 0 3px; }
 /* STYLES FOR RIGHT SIDEBAR
 -----------------------------------------------------
 :: Styles for the right sidebar and universal elements like pods.
@@ -2572,24 +2599,24 @@
         width: 33px;
         height: 33px;
         border: 1px solid #cbd7dd; }
-#overview_cont .overview_left {
+/* Overview Description Container */
+#overview_cont .thumbnail {
+  display: block;
   float: left;
-  width: 165px; }
-  #overview_cont .overview_left .thumbnail {
-    float: left;
-    margin: 0 10px 10px 0;
-    width: 165px;
-    height: 110px; }
-#overview_cont .overview_right {
+  margin: 0 0 10px; }
+  #overview_cont .thumbnail img {
+    height: 110px;
+    width: 165px; }
+#overview_cont .buy_lrg {
+  float: left;
+  width: 157px; }
+#overview_cont #overview_desc {
   float: right;
+  min-height: 122px;
   width: 520px; }
-  #overview_cont .overview_right #overview_desc {
-    float: left;
-    width: 520px; }
-#overview_cont.no_photo .thumbnail {
-  display: none; }
 #overview_cont.no_photo #overview_desc {
   float: none;
+  min-height: inherit;
   width: auto; }
 /* Map Tooltip / Popup */
 .map_tooltip, .map_popup {
@@ -3242,6 +3269,7 @@
 .in_season_sticker:hover {
   background-position: -297px -393px; }
 /*
+
 
 
 

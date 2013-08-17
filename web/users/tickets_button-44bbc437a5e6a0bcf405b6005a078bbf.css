@@ -1,0 +1,229 @@
+.tickets_button {
+  display: inline-block;
+  font-family: Arial;
+  text-align: center;
+  padding-bottom: 0;
+  position: relative;
+}
+
+/* White Button */
+
+.white {
+  background: #f1f5f6;
+  border: solid #8fa9b6 1px;
+  color: #597686;
+}
+
+/* Button Sizes */
+
+.large {}
+.medium {
+  min-width: 120px;
+  height: 40px;
+}
+.small {}
+
+/* Text Sizes */
+
+.btn_text {
+  float: left;
+  font-weight: bold;
+}
+
+.btn_text .no_logo_text {
+  display: none;
+  font-size: 10px;
+  font-weight: normal;
+}
+
+.large .btn_text {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+.medium .btn_text {
+  margin: 11px 10px 0 10px;
+  font-size: 18px;
+}
+
+.small .btn_text {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+/* Logo Sizes */
+
+.img_cont {
+  float: right;
+}
+
+.large > .img_cont {
+  height: 40px;
+  padding: 0 10px;
+}
+
+.medium > .img_cont {
+  height: 40px;
+  padding: 0 10px;
+}
+
+.small > .img_cont {
+  height: 40px;
+  padding: 0 10px;
+}
+
+.full_image .img {
+  background: url("http://cdn.partyearth.com/images/tickets/logo-stacked.png") no-repeat;
+  height: 34px;
+  margin: 3px auto 0;
+  width: 54px;
+}
+
+.mini_image .img {
+  background: url("http://cdn.partyearth.com/images/tickets/logo-small.png") no-repeat;
+  height: 26px;
+  margin: 8px auto 0;
+  width: 36px;
+}
+
+.no_image .img_cont {
+  display: none;
+}
+
+.no_image .no_logo_text {
+  color: #97acb7;
+  display: block;
+  position: absolute;
+  top: 0px;
+  z-index: 910 !important;
+}
+
+
+/* White Button Styles */
+
+.white > .btn_text {
+  color: #597686;
+  text-shadow: 0px 1px 0px #f8f9fa;
+  filter: dropshadow(color=#f8f9fa, offx=0, offy=1);
+}
+
+.white .img_cont {
+  border-left: 1px solid #8fa9b6;
+  background: #ffffff;
+}
+
+
+
+
+
+
+
+/*.large .img {*/
+  /*background: #FFFFFF;*/
+/*}*/
+
+/*.medium .img {*/
+  /*background: #FFFFFF;*/
+/*}*/
+
+/*.small .img {*/
+  /*background: #FFFFFF;*/
+/*}*/
+
+
+
+
+/*
+
+.tickets_button .text {
+  text-decoration: none;
+  font-size: 12px;
+  position: absolute;
+}
+
+.tickets_button.large {
+    font-size: 20pt
+}
+
+.tickets_button.large .text {
+    top: 15px;
+    left: 23px;
+}
+
+.tickets_button.medium .text {
+    top: 8px;
+    left: 9px;
+}
+
+.tickets_button.small .text {
+    top: 3px;
+    left: 5px;
+}
+
+.tickets_button.medium {
+    font-size: 15pt
+}
+
+.tickets_button.small {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.img {
+    position: absolute;
+    z-index: 0;
+}
+
+.tickets_button.no_image .img {
+    display: none;
+}
+
+.tickets_button.mini_image .img {
+    width: 20px;
+    height: 20px;
+    background: yellow;
+}
+
+.tickets_button.large.full_image .img {
+    height: 30px;
+    color: rgb(71, 71, 71);
+    bottom: 0px;
+    right: 28px;
+    top: 32px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.tickets_button.medium.full_image .img {
+    height: 30px;
+    color: gray;
+    bottom: 0px;
+    right: 85px;
+    top: 32px;
+    font-size: 9px;
+}
+
+.tickets_button.small.full_image .img {
+    height: 30px;
+    color: gray;
+    bottom: 0px;
+    right: 114px;
+    top: 22px;
+    font-size: 9px;
+    font-weight: normal;
+}
+
+
+*/
+
+.button_wrapper {
+  position: relative;
+}
+.clearfix {
+  clear: both;
+}
+
+body {
+    margin: 0 !important;
+    padding: 0 !important;
+}

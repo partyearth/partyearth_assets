@@ -1454,24 +1454,24 @@
       counter-increment: index; }
       .page_slider .page_slider_pagination .page_number:before {
         content: counter(index); }
-#overview_cont .overview_left {
+/* Overview Description Container */
+#overview_cont .thumbnail {
+  display: block;
   float: left;
-  width: 165px; }
-  #overview_cont .overview_left .thumbnail {
-    float: left;
-    margin: 0 10px 10px 0;
-    width: 165px;
-    height: 110px; }
-#overview_cont .overview_right {
+  margin: 0 0 10px; }
+  #overview_cont .thumbnail img {
+    height: 110px;
+    width: 165px; }
+#overview_cont .buy_lrg {
+  float: left;
+  width: 157px; }
+#overview_cont #overview_desc {
   float: right;
+  min-height: 122px;
   width: 520px; }
-  #overview_cont .overview_right #overview_desc {
-    float: left;
-    width: 520px; }
-#overview_cont.no_photo .thumbnail {
-  display: none; }
 #overview_cont.no_photo #overview_desc {
   float: none;
+  min-height: inherit;
   width: auto; }
 /*
 

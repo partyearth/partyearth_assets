@@ -559,8 +559,6 @@
     font-size: 12px;
     line-height: 16px;
     vertical-align: bottom; }
-    .soe_sect .soe_sect_cont .soe_event_xtra .buy_ticket {
-      margin: 0 0 3px; }
 /* STYLES FOR RIGHT SIDEBAR
 -----------------------------------------------------
 :: Styles for the right sidebar and universal elements like pods.
@@ -2260,24 +2258,24 @@
         width: 33px;
         height: 33px;
         border: 1px solid #cbd7dd; }
-#overview_cont .overview_left {
+/* Overview Description Container */
+#overview_cont .thumbnail {
+  display: block;
   float: left;
-  width: 165px; }
-  #overview_cont .overview_left .thumbnail {
-    float: left;
-    margin: 0 10px 10px 0;
-    width: 165px;
-    height: 110px; }
-#overview_cont .overview_right {
+  margin: 0 0 10px; }
+  #overview_cont .thumbnail img {
+    height: 110px;
+    width: 165px; }
+#overview_cont .buy_lrg {
+  float: left;
+  width: 157px; }
+#overview_cont #overview_desc {
   float: right;
+  min-height: 122px;
   width: 520px; }
-  #overview_cont .overview_right #overview_desc {
-    float: left;
-    width: 520px; }
-#overview_cont.no_photo .thumbnail {
-  display: none; }
 #overview_cont.no_photo #overview_desc {
   float: none;
+  min-height: inherit;
   width: auto; }
 /* Map Tooltip / Popup */
 .map_tooltip, .map_popup {
@@ -3227,7 +3225,7 @@
     line-height: 16px;
     border-top: 1px dashed #adc0c9; }
   #object_page_header h1.with_ticket .type {
-    margin-left: 90px; }
+    margin-left: 79px; }
   #object_page_header .add_to_calendar {
     display: inline-block;
     position: relative;
@@ -3245,9 +3243,6 @@
     #object_page_header .add_to_calendar:hover {
       background-color: #fff;
       background-position: -388px -550px; }
-  #object_page_header .buy_ticket {
-    position: absolute;
-    bottom: 43px !important; }
 
 #gal_map {
   margin-top: -36px; }
@@ -3431,3 +3426,6 @@
     right: -363px !important; }
 #object_page_info .liked_by_big .being_evaluated, #object_page_info .liked_by_big .no_reviews {
   display: none !important; }
+#object_page_info .buy_lrg_cont {
+  float: right !important;
+  margin-top: 4px; }

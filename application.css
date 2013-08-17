@@ -2684,74 +2684,110 @@ button,
     color: #537a8b;
     text-decoration: none; }
 
+/* BUY TICKET BUTTON
+--------------------------------------------*/
 .buy_ticket,
 .buy_ticket:link,
 .buy_ticket:visited {
-  background-image: url(/assets/content_bg/app_sprite_2.png);
+  background-color: #ff9000;
+  border-bottom: 1px solid #d27700;
   color: #FFFFFF;
   display: inline-block;
-  text-transform: uppercase;
+  position: relative;
+  text-align: right;
   text-decoration: none;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
   text-shadow: -1px -1px 0px #ea7900;
   filter: dropshadow(color=#ea7900, offx=-1, offy=-1); }
-  .buy_ticket.tix_sml,
-  .buy_ticket:link.tix_sml,
-  .buy_ticket:visited.tix_sml {
-    background-position: -330px 0;
+  .buy_ticket:hover,
+  .buy_ticket:link:hover,
+  .buy_ticket:visited:hover {
+    background-color: #ff9a17;
+    cursor: pointer;
+    -webkit-box-shadow: 0px 1px 2px rgba(50, 50, 50, 0.5);
+    -moz-box-shadow: 0px 1px 2px rgba(50, 50, 50, 0.5);
+    box-shadow: 0px 1px 2px rgba(50, 50, 50, 0.5); }
+  .buy_ticket.buy_sml,
+  .buy_ticket:link.buy_sml,
+  .buy_ticket:visited.buy_sml {
+    background-image: url(/assets/tickets/pe_icons_tickets_small_vertical.png);
+    background-position: top;
     font-size: 9px;
     font-weight: bold;
-    height: 17px;
     letter-spacing: 1px;
-    text-indent: 29px;
-    width: 85px; }
-    .buy_ticket.tix_sml:hover,
-    .buy_ticket:link.tix_sml:hover,
-    .buy_ticket:visited.tix_sml:hover {
-      background-position: -419px 0; }
-  .buy_ticket.tix_med,
-  .buy_ticket:link.tix_med,
-  .buy_ticket:visited.tix_med {
-    background-position: -330px -26px;
-    font-size: 13px;
-    font-weight: normal;
-    height: 24px;
-    letter-spacing: 1px;
-    padding-top: 8px;
+    text-transform: uppercase;
+    margin-top: 3px;
+    padding-right: 5px;
+    height: 16px;
+    width: 70px; }
+    .buy_ticket.buy_sml:hover,
+    .buy_ticket:link.buy_sml:hover,
+    .buy_ticket:visited.buy_sml:hover {
+      background-position-y: 17px; }
+  .buy_ticket.buy_med,
+  .buy_ticket:link.buy_med,
+  .buy_ticket:visited.buy_med {
+    font-size: 16px;
     text-align: center;
-    text-transform: none;
-    width: 117px; }
-    .buy_ticket.tix_med:hover,
-    .buy_ticket:link.tix_med:hover,
-    .buy_ticket:visited.tix_med:hover {
-      background-position: -460px -26px; }
+    margin-bottom: 5px;
+    padding-top: 8px;
+    height: 22px;
+    width: 115px; }
+  .buy_ticket.buy_lrg,
+  .buy_ticket:link.buy_lrg,
+  .buy_ticket:visited.buy_lrg {
+    background-image: url(/assets/tickets/pe_icons_tickets_big_vertical.png);
+    background-position: top;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 8px 10px 0 0;
+    height: 26px;
+    width: 155px; }
+    .buy_ticket.buy_lrg:hover,
+    .buy_ticket:link.buy_lrg:hover,
+    .buy_ticket:visited.buy_lrg:hover {
+      background-position-y: 35px; }
 
-.buy_ticket_small .buy_ticket {
-  background-position: -330px 0;
-  font-size: 9px;
-  font-weight: bold;
-  height: 17px;
-  letter-spacing: 1px;
-  text-indent: 29px;
-  width: 85px; }
-  .buy_ticket_small .buy_ticket:hover {
-    background-position: -419px 0; }
-
-.buy_ticket_large {
-  font-size: 16px;
-  font-weight: bold; }
-  .buy_ticket_large.right {
-    display: block;
-    margin-top: 45px; }
-  .buy_ticket_large .buy_ticket {
-    background-position: -657px 0;
-    height: 27px;
+.buy_sml_cont {
+  cursor: pointer;
+  position: absolute;
+  top: 51px; }
+  .buy_sml_cont .buy_ticket,
+  .buy_sml_cont .buy_ticket:link,
+  .buy_sml_cont .buy_ticket:visited {
+    background-image: url(/assets/tickets/pe_icons_tickets_small_vertical.png);
+    background-position: top;
+    font-size: 9px;
+    font-weight: bold;
     letter-spacing: 1px;
-    padding-top: 9px;
-    text-indent: 48px;
-    text-transform: none;
-    width: 156px; }
-    .buy_ticket_large .buy_ticket:hover {
-      background-position: -827px 0; }
+    text-transform: uppercase;
+    margin-top: 3px;
+    padding-right: 5px;
+    height: 16px;
+    width: 70px; }
+    .buy_sml_cont .buy_ticket:hover,
+    .buy_sml_cont .buy_ticket:link:hover,
+    .buy_sml_cont .buy_ticket:visited:hover {
+      background-position-y: 17px; }
+
+.buy_lrg_cont {
+  float: left; }
+  .buy_lrg_cont .buy_ticket,
+  .buy_lrg_cont .buy_ticket:link,
+  .buy_lrg_cont .buy_ticket:visited {
+    background-image: url(/assets/tickets/pe_icons_tickets_big_vertical.png);
+    background-position: top;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 8px 10px 0 0;
+    height: 26px;
+    width: 155px; }
+    .buy_lrg_cont .buy_ticket:hover,
+    .buy_lrg_cont .buy_ticket:link:hover,
+    .buy_lrg_cont .buy_ticket:visited:hover {
+      background-position-y: 35px; }
 
 /* EMBED BUTTON
 --------------------------------------------*/
