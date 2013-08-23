@@ -1,0 +1,291 @@
+/* Ticket Form - Left Area */
+.ticket_form {
+  float: left;
+  width: 680px;
+  /* Venue Name Container */
+  /* Ticket Form */
+  /* Additional Info */ }
+  .ticket_form .venue_name_cont {
+    height: 60px;
+    position: relative; }
+    .ticket_form .venue_name_cont h1 {
+      font-size: 22px;
+      font-weight: bold;
+      line-height: 20px;
+      margin: 0;
+      padding: 0; }
+      .ticket_form .venue_name_cont h1 a {
+        color: #000000 !important; }
+        .ticket_form .venue_name_cont h1 a:hover {
+          color: #597686 !important; }
+    .ticket_form .venue_name_cont .date {
+      color: #0099FF;
+      font-size: 16px;
+      font-weight: bold;
+      padding-top: 8px; }
+  .ticket_form .form_cont {
+    /* Submit Button */ }
+    .ticket_form .form_cont .ticket_table {
+      width: 100%; }
+      .ticket_form .form_cont .ticket_table tr {
+        border-bottom: 1px dashed #d7d7d7; }
+        .ticket_form .form_cont .ticket_table tr:first-child, .ticket_form .form_cont .ticket_table tr:last-child {
+          border-bottom-style: solid; }
+        .ticket_form .form_cont .ticket_table tr:first-child {
+          border-bottom: none; }
+      .ticket_form .form_cont .ticket_table th {
+        background-color: #ebebeb;
+        color: #acacac;
+        font-size: 11px;
+        height: 22px;
+        text-align: left;
+        text-transform: uppercase; }
+        .ticket_form .form_cont .ticket_table th.ticket_type {
+          padding-left: 10px;
+          width: 180px; }
+        .ticket_form .form_cont .ticket_table th.show_time {
+          width: 205px; }
+        .ticket_form .form_cont .ticket_table th.ages {
+          text-align: center;
+          width: 35px; }
+        .ticket_form .form_cont .ticket_table th.price {
+          text-align: right;
+          width: 65px; }
+        .ticket_form .form_cont .ticket_table th.fee {
+          text-align: right;
+          width: 65px; }
+        .ticket_form .form_cont .ticket_table th.quantity {
+          text-align: right;
+          padding-right: 5px;
+          width: 115px; }
+      .ticket_form .form_cont .ticket_table td {
+        color: #252525;
+        font-family: "Roboto Light", Arial, sans-serif;
+        font-size: 14px;
+        padding: 8px 0;
+        vertical-align: top; }
+        .ticket_form .form_cont .ticket_table td.ticket_type {
+          padding-top: 14px;
+          text-align: left; }
+          .ticket_form .form_cont .ticket_table td.ticket_type .more_info_cont {
+            display: block; }
+            .ticket_form .form_cont .ticket_table td.ticket_type .more_info_cont .link {
+              font-size: 11px; }
+              .ticket_form .form_cont .ticket_table td.ticket_type .more_info_cont .link span {
+                border-bottom: 1px dotted #8ea8b5;
+                color: #8ea8b5;
+                cursor: pointer;
+                text-decoration: none; }
+                .ticket_form .form_cont .ticket_table td.ticket_type .more_info_cont .link span:hover {
+                  border-bottom: 1px dotted #000000;
+                  color: #000000; }
+            .ticket_form .form_cont .ticket_table td.ticket_type .more_info_cont p {
+              color: #959595;
+              font-size: 11px;
+              line-height: 100%;
+              padding: 5px 0 0;
+              width: 175px; }
+        .ticket_form .form_cont .ticket_table td.show_time {
+          padding-top: 14px; }
+        .ticket_form .form_cont .ticket_table td.ages {
+          padding-top: 14px;
+          text-align: center; }
+        .ticket_form .form_cont .ticket_table td.price, .ticket_form .form_cont .ticket_table td.fee {
+          padding-top: 14px;
+          text-align: right; }
+        .ticket_form .form_cont .ticket_table td.quantity {
+          line-height: 15px;
+          text-align: right; }
+          .ticket_form .form_cont .ticket_table td.quantity span {
+            display: block;
+            padding: 7px 0; }
+          .ticket_form .form_cont .ticket_table td.quantity select {
+            border: 1px solid #c4c3c3;
+            font-family: "Roboto Light", Arial, sans-serif;
+            font-size: 14px;
+            padding: 5px 8px 5px 0;
+            width: 85px;
+            -webkit-border-radius: 4px;
+            border-radius: 4px;
+            text-indent: 6px;
+            line-height: 24px; }
+    .ticket_form .form_cont .submit_button {
+      border-bottom: 1px solid #adc0c9;
+      padding: 8px 0;
+      position: relative;
+      -webkit-text-size-adjust: none; }
+      .ticket_form .form_cont .submit_button .error_msg {
+        bottom: 14px;
+        color: red;
+        right: 175px;
+        position: absolute; }
+      .ticket_form .form_cont .submit_button .btn_orange {
+        float: right;
+        font-size: 16px;
+        font-weight: bold;
+        text-transform: uppercase;
+        width: 165px;
+        -webkit-appearance: none; }
+  .ticket_form h2 {
+    border-bottom: 1px dashed #adc0c9;
+    color: #0099FF;
+    font-size: 23px;
+    font-weight: normal;
+    line-height: 27px;
+    padding: 10px 0 8px;
+    margin-bottom: 10px; }
+  .ticket_form .ticket_photo {
+    float: left;
+    height: 100%;
+    margin-right: 15px;
+    width: 100px; }
+    .ticket_form .ticket_photo img {
+      width: 100px; }
+  .ticket_form .ticket_info {
+    color: #252525;
+    float: right;
+    font-family: "Roboto Light", "Arimo", Arial, sans-serif;
+    font-size: 13px;
+    line-height: 16px;
+    width: 565px; }
+    .ticket_form .ticket_info.full {
+      width: 100% !important; }
+
+/* Ticket Sidebar - Right Area */
+.ticket_sidebar {
+  float: right;
+  width: 300px;
+  /* Venue Address */
+  /* Map Container */
+  /* Ask Party Earth Container */ }
+  .ticket_sidebar .venue {
+    color: #252525;
+    font-family: "Roboto Light", Arial, sans-serif;
+    font-size: 13px;
+    line-height: 16px; }
+    .ticket_sidebar .venue .name {
+      font-size: 16px;
+      margin-bottom: 5px; }
+    .ticket_sidebar .venue .address {
+      line-height: 14px; }
+      .ticket_sidebar .venue .address p {
+        padding: 0; }
+  .ticket_sidebar .map_cont {
+    border: 1px solid #d3cbcb;
+    background-color: #efebe2;
+    height: 240px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px; }
+  .ticket_sidebar .ask_party_earth {
+    position: relative;
+    width: 300px;
+    /* Question Link */
+    /* Misc Items */
+    /* Form */ }
+    .ticket_sidebar .ask_party_earth .questions {
+      border-bottom: 1px dashed #adc0c9;
+      border-top: 1px solid #adc0c9;
+      color: #0099FF;
+      font-size: 20px;
+      font-weight: bold;
+      margin-top: 11px;
+      padding: 14px 0; }
+      .ticket_sidebar .ask_party_earth .questions span {
+        border-bottom: 1px dotted #0099FF;
+        color: #0099FF;
+        cursor: pointer;
+        text-decoration: none; }
+        .ticket_sidebar .ask_party_earth .questions span:hover {
+          border-bottom: 1px dotted #597686;
+          color: #597686; }
+    .ticket_sidebar .ask_party_earth .required_text {
+      color: #c2c2c2;
+      font-size: 12px;
+      position: absolute;
+      right: 0;
+      top: 18px; }
+    .ticket_sidebar .ask_party_earth .congrats_msg {
+      color: #375363;
+      font-size: 13px;
+      line-height: 17px;
+      margin-top: 10px; }
+    .ticket_sidebar .ask_party_earth form {
+      margin-top: 10px; }
+      .ticket_sidebar .ask_party_earth form ol {
+        position: relative; }
+        .ticket_sidebar .ask_party_earth form ol li .inline-errors {
+          color: red;
+          font-size: 10px;
+          margin-left: 78px; }
+      .ticket_sidebar .ask_party_earth form label {
+        color: #375363;
+        display: inline-block;
+        font-size: 14px;
+        padding-top: 11px;
+        position: absolute;
+        right: 235px;
+        text-align: left; }
+        .ticket_sidebar .ask_party_earth form label abbr {
+          color: #0099FF; }
+      .ticket_sidebar .ask_party_earth form input, .ticket_sidebar .ask_party_earth form textarea {
+        border: 1px solid #cdd9df;
+        float: right;
+        margin-top: 7px;
+        padding: 5px;
+        width: 210px;
+        -webkit-border-radius: 2px;
+        border-radius: 2px; }
+        .ticket_sidebar .ask_party_earth form input:first-child, .ticket_sidebar .ask_party_earth form textarea:first-child {
+          margin: 0; }
+      .ticket_sidebar .ask_party_earth form textarea {
+        height: 90px;
+        resize: none; }
+      .ticket_sidebar .ask_party_earth form img {
+        position: absolute;
+        right: 5px;
+        top: 15px; }
+      .ticket_sidebar .ask_party_earth form .send_btn {
+        border: 1px solid #cdd9df;
+        color: #597686;
+        cursor: pointer;
+        font-size: 16px;
+        margin-top: 7px !important;
+        padding: 5px 0;
+        width: 80px;
+        text-shadow: 1px 1px 0px #ffffff;
+        filter: dropshadow(color=white, offx=1, offy=1);
+        background: #f9fafb;
+        /* Old browsers */
+        background: -moz-linear-gradient(top, #f9fafb 0%, #e5eaed 100%);
+        /* FF3.6+ */
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f9fafb), color-stop(100%, #e5eaed));
+        /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(top, #f9fafb 0%, #e5eaed 100%);
+        /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(top, #f9fafb 0%, #e5eaed 100%);
+        /* Opera 11.10+ */
+        background: -ms-linear-gradient(top, #f9fafb 0%, #e5eaed 100%);
+        /* IE10+ */
+        background: linear-gradient(to bottom, #f9fafb 0%, #e5eaed 100%);
+        /* W3C */
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9fafb', endColorstr='#e5eaed',GradientType=0 );
+        /* IE6-9 */
+        -webkit-border-radius: 2px;
+        border-radius: 2px; }
+        .ticket_sidebar .ask_party_earth form .send_btn:hover {
+          background: #e5eaed;
+          /* Old browsers */
+          background: -moz-linear-gradient(top, #e5eaed 0%, #f9fafb 100%);
+          /* FF3.6+ */
+          background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #e5eaed), color-stop(100%, #f9fafb));
+          /* Chrome,Safari4+ */
+          background: -webkit-linear-gradient(top, #e5eaed 0%, #f9fafb 100%);
+          /* Chrome10+,Safari5.1+ */
+          background: -o-linear-gradient(top, #e5eaed 0%, #f9fafb 100%);
+          /* Opera 11.10+ */
+          background: -ms-linear-gradient(top, #e5eaed 0%, #f9fafb 100%);
+          /* IE10+ */
+          background: linear-gradient(to bottom, #e5eaed 0%, #f9fafb 100%);
+          /* W3C */
+          filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e5eaed', endColorstr='#f9fafb',GradientType=0 );
+          /* IE6-9 */ }

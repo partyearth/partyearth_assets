@@ -1,18 +1,18 @@
 /* Recent Articles Sidebar Pod */
 #recent_articles .list .list_item {
   float: left;
-  width: 100px;
-  margin: 0 0 0 12px;
+  width: 127px;
+  margin: 0;
   padding: 0;
   line-height: 15px;
   border-top: none; }
   #recent_articles .list .list_item:first-child + li {
-    margin-left: 0; }
+    margin-right: 16px; }
   #recent_articles .list .list_item .thumbnail_link {
     margin: 0 0 5px; }
   #recent_articles .list .list_item .title {
-    font-size: 11px;
-    line-height: 13px; }
+    font-size: 12px;
+    line-height: 14px; }
   #recent_articles .list .list_item.featured {
     float: none;
     width: auto;

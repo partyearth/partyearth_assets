@@ -1,55 +1,3 @@
-/*PAGINATOR STYLES*/
-.prev_next {
-  margin: 0 auto;
-  width: 119px; }
-
-#content_home .prev_next,
-#city_home_content .prev_next,
-#neighborhood_content .prev_next {
-  width: 112px; }
-
-.prev_btn, .next_btn {
-  background: url(/assets/content_bg/application_sprite.png) no-repeat;
-  width: 30px;
-  height: 30px;
-  display: block; }
-
-.prev_btn {
-  background-position: 0 -386px; }
-
-.prev_btn:hover {
-  background-position: 0 -416px; }
-
-#content_home .page_count,
-#city_home_content .page_count,
-#neighborhood_content .page_count {
-  min-width: 40px; }
-
-.page_count {
-  display: block;
-  min-width: 47px;
-  padding: 6px;
-  text-align: center; }
-
-#city_home_content .page_count {
-  min-width: 40px; }
-
-.next_btn {
-  background-position: -35px -386px; }
-
-.next_btn:hover {
-  background-position: -35px -416px; }
-
-/*DISABLED STATES*/
-.prev_btn.disabled,
-.prev_btn.disabled:hover {
-  background-position: 0 -446px;
-  cursor: default; }
-
-.next_btn.disabled,
-.next_btn.disabled:hover {
-  background-position: -35px -446px;
-  cursor: default; }
 .TitleContainer {
   background: url(/assets/content_bg/dropdown_extra_sprite.png) no-repeat scroll 100% -116px transparent;
   padding: 0 29px 0 0; }
@@ -300,8 +248,8 @@ fieldset .inline-errors {
 fieldset .inline-success, fieldset img {
   display: block;
   position: absolute;
-  top: 7px;
-  left: 451px; }
+  top: 8px;
+  left: 457px; }
 fieldset .toggle {
   display: block;
   position: relative;
@@ -387,17 +335,14 @@ div.actions fieldset, .store_action_btns fieldset {
       display: inline-block;
       margin: 0 4px 0 0; }
   #social_login .social_icon {
-    display: inline-block;
-    width: 24px;
-    height: 24px;
-    font-size: 12px;
-    line-height: 24px;
-    box-shadow: 0 1px 3px #696969;
+    background-image: url(/assets/content_bg/social_login_sprite.png);
     border-radius: 5px;
+    display: inline-block;
+    font-size: 12px;
+    height: 37px;
+    line-height: 24px;
     text-indent: -9999px;
-    background-image: url(/assets/content_bg/social_login_sprite.png); }
-    #social_login .social_icon:hover {
-      box-shadow: 0 2px 3px #1c1c1c; }
+    width: 33px; }
     #social_login .social_icon.facebook, #social_login .social_icon.facebook_big {
       width: 138px;
       padding: 0 0 0 30px;
@@ -421,35 +366,115 @@ div.actions fieldset, .store_action_btns fieldset {
   #social_login .facebook {
     background-position: 0 -52px; }
   #social_login .twitter {
-    background-position: -170px -52px; }
+    background-position: -171px -52px; }
   #social_login .google {
-    background-position: -196px -52px; }
-  #social_login .foursquare {
-    background-position: -222px -52px; }
-  #social_login .messenger {
-    background-position: -248px -52px; }
-  #social_login .aol {
-    background-position: -274px -52px; }
+    background-position: -211px -52px; }
   #social_login .yahoo {
-    background-position: -300px -52px; }
+    background-position: -411px -52px; }
+  #social_login .messenger {
+    background-position: -291px -52px; }
+  #social_login .aol {
+    background-position: -331px -52px; }
+  #social_login .googleplus {
+    background-position: -371px -52px; }
+  #social_login .foursquare {
+    background-position: -251px -52px; }
   #social_login .facebook_big:hover {
     background-position: -286px 0; }
   #social_login .facebook:hover {
     background-position: 0 -78px; }
   #social_login .twitter:hover {
-    background-position: -170px -78px; }
+    background-position: -171px -95px; }
   #social_login .google:hover {
-    background-position: -196px -78px; }
-  #social_login .foursquare:hover {
-    background-position: -222px -78px; }
+    background-position: -211px -95px; }
+  #social_login .yahoo:hover {
+    background-position: -411px -95px; }
   #social_login .messenger:hover {
-    background-position: -248px -78px; }
+    background-position: -291px -95px; }
   #social_login .aol:hover {
-    background-position: -274px -78px; }
-  #social_login .yahoo:hover:hover {
-    background-position: -300px -78px; }
+    background-position: -331px -95px; }
+  #social_login .googleplus:hover {
+    background-position: -371px -95px; }
+  #social_login .foursquare:hover {
+    background-position: -251px -95px; }
 /*
 
 
-
 */
+#user_info #login_area {
+  margin-top: 20px; }
+  #user_info #login_area form .login_box {
+    background-color: #FFFFFF;
+    background-image: none;
+    color: #999999 !important;
+    padding: 0 !important; }
+    #user_info #login_area form .login_box abbr {
+      color: #0099FF;
+      font-weight: bold;
+      padding-left: 2px; }
+    #user_info #login_area form .login_box fieldset ol {
+      padding: 0; }
+      #user_info #login_area form .login_box fieldset ol .radio_group legend {
+        margin-top: -8px !important; }
+    #user_info #login_area form .login_box .form_fields {
+      margin: 0;
+      padding: 0; }
+      #user_info #login_area form .login_box .form_fields li {
+        margin: 0;
+        padding: 0 !important; }
+        #user_info #login_area form .login_box .form_fields li label {
+          color: #375363;
+          font-size: 14px;
+          padding-right: 14px;
+          margin: 0 !important;
+          width: 160px; }
+          #user_info #login_area form .login_box .form_fields li label abbr {
+            color: #0099ff;
+            padding-left: 5px;
+            font-weight: bold; }
+        #user_info #login_area form .login_box .form_fields li span {
+          font-size: 11px;
+          padding-left: 10px; }
+        #user_info #login_area form .login_box .form_fields li span.inline-errors {
+          font-size: 12px;
+          left: 170px;
+          padding-left: 20px; }
+        #user_info #login_area form .login_box .form_fields li .inline-success {
+          left: 457px;
+          top: 8px; }
+  #user_info #login_area form .accounts_cont {
+    border-top: 1px dashed #adc0c9;
+    border-bottom: 1px dashed #adc0c9;
+    display: block;
+    padding: 5px 0;
+    position: relative;
+    width: 100%; }
+    #user_info #login_area form .accounts_cont span.label {
+      color: #999999;
+      display: block;
+      float: left;
+      padding: 11px 0 0 48px !important; }
+    #user_info #login_area form .accounts_cont .social_accounts {
+      position: relative !important;
+      display: block;
+      width: 385px !important; }
+      #user_info #login_area form .accounts_cont .social_accounts table table tr:nth-child(2) {
+        height: 0; }
+      #user_info #login_area form .accounts_cont .social_accounts #ProfileLinkAccounts_bottomLink {
+        position: absolute;
+        top: 18px;
+        right: 105px; }
+  #user_info #login_area form .change_pw_cont {
+    border-bottom: 1px solid #adc0c9;
+    display: block;
+    padding: 12px 0;
+    width: 100%; }
+    #user_info #login_area form .change_pw_cont .pw_inputs {
+      margin-top: 15px; }
+  #user_info #login_area form .actions {
+    margin-top: 7px; }
+    #user_info #login_area form .actions a {
+      margin-top: 7px; }
+    #user_info #login_area form .actions .btn_blue {
+      padding: 8px 0;
+      width: 80px; }

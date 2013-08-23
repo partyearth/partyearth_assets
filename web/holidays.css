@@ -194,8 +194,315 @@
     font-size: 12px;
     line-height: 16px;
     vertical-align: bottom; }
-    .soe_sect .soe_sect_cont .soe_event_xtra .buy_ticket {
-      margin: 0 0 3px; }
+/* TOOLTIP STYLES
+--------------------------------------------------------------
+:: Basic Styles for the tooltip container and point.
+:: Position and border need to be adjusted for specific usage.
+-------------------------------------------------------------- */
+.dialog_box {
+  position: absolute;
+  z-index: 6000;
+  padding: 4px;
+  background-color: #889aa4;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px; }
+  .dialog_box .dialog_content_wrapper {
+    padding: 11px 14px 9px;
+    background-color: #f7f9fb;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px; }
+  .dialog_box .dialog_img {
+    display: none; }
+  .dialog_box .dialog_content h1 {
+    color: #09f;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 18px;
+    margin: 0 0 6px; }
+  .dialog_box .dialog_content p {
+    padding: 0;
+    font-size: 13px;
+    line-height: 16px !important;
+    /* To override venue styles for  #object_page_info dd p */ }
+  .dialog_box .dialog_content .title {
+    float: left;
+    text-transform: uppercase;
+    line-height: 16px; }
+  .dialog_box .close_btn, .dialog_box .close_btn:hover {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 8px;
+    height: 8px;
+    background-image: url(/assets/characters/liked_by_sprite.png);
+    background-position: -172px -138px; }
+
+.dialog_point {
+  position: absolute;
+  width: 0;
+  height: 0;
+  margin: 0 0 -12px;
+  border-top: 12px solid transparent;
+  border-right: 12px solid transparent;
+  border-bottom: 12px solid transparent;
+  border-left: 12px solid transparent; }
+  .dialog_point .dialog_inner_point {
+    position: absolute;
+    z-index: 6001;
+    width: 0;
+    height: 0;
+    margin: 0 0 10px;
+    border-top: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid transparent;
+    overflow: hidden; }
+
+/* Help Button Tooltip Trigger/Container
+-------------------------------------------------------------- */
+.help_btn {
+  position: relative;
+  z-index: 3000;
+  width: 16px;
+  height: 16px;
+  background-image: url(/assets/content_bg/application_sprite.png);
+  background-position: -27px -185px;
+  /* Position of dialog box and point specific to help trigger */ }
+  .help_btn:hover {
+    background-position: -44px -185px;
+    cursor: pointer; }
+  .help_btn .dialog_box {
+    width: 260px;
+    top: -22px;
+    left: 29px; }
+  .help_btn .dialog_point {
+    top: -4px;
+    left: 18px;
+    border-right: 12px solid #889AA4;
+    border-left: none; }
+    .help_btn .dialog_point .dialog_inner_point {
+      left: 5px;
+      top: -10px;
+      border-right: 10px solid #F7F9FB;
+      border-left: none; }
+
+/* Ratings Help Tooltip */
+#ratings-help p {
+  padding: 0;
+  color: #000;
+  font-size: 11px;
+  line-height: 13px; }
+#ratings-help table {
+  margin: 5px 0 0; }
+#ratings-help td {
+  vertical-align: top; }
+#ratings-help .char-link {
+  text-decoration: none; }
+  #ratings-help .char-link:hover {
+    text-decoration: underline; }
+#ratings-help .lucas-color {
+  color: #3375C4; }
+#ratings-help .adriana-color {
+  color: #B8529E; }
+#ratings-help .jonah-color {
+  color: #73B808; }
+#ratings-help .emma-color {
+  color: #FFCC05; }
+#ratings-help .stars {
+  display: block;
+  width: 66px;
+  height: 14px;
+  margin: 1px 15px 0 0;
+  background-image: url(/assets/characters/char_page_ratings_stars.png); }
+  #ratings-help .stars.row1 {
+    background-position: 0 -47px; }
+  #ratings-help .stars.row2 {
+    background-position: 0 -61px; }
+  #ratings-help .stars.row3 {
+    background-position: 0 -75px; }
+  #ratings-help .stars.row4 {
+    background-position: 0 -89px; }
+  #ratings-help .stars.row5 {
+    background-position: 0 -103px; }
+/*
+
+*/
+.liked_by {
+  /* Specific character styles */
+  /* Disabled styles */ }
+  .liked_by div, .liked_by p, .liked_by span {
+    -moz-user-select: none;
+    user-select: none; }
+  .liked_by dt {
+    float: left;
+    margin-bottom: 2px;
+    color: #8ea8b5;
+    font-size: 9px;
+    line-height: 11px;
+    text-transform: uppercase; }
+  .liked_by dd {
+    float: right; }
+  .liked_by ul {
+    position: relative; }
+  .liked_by .character_cont {
+    float: left;
+    margin: 0 4px 0 0;
+    padding: 0 0 2px;
+    border-bottom: 2px solid;
+    /* Tooltip container and point positioning for liked by characters */ }
+    .liked_by .character_cont:hover {
+      cursor: pointer; }
+    .liked_by .character_cont .character {
+      display: block;
+      width: 25px;
+      height: 25px;
+      background-image: url(/assets/characters/liked_by_sprite.png);
+      border: 1px solid #adc0c9;
+      border-radius: 2px;
+      cursor: pointer; }
+    .liked_by .character_cont .dialog_box {
+      bottom: 38px;
+      right: 0 !important;
+      padding: 2px;
+      z-index: 9999;
+      -webkit-border-radius: 2px;
+      -moz-border-radius: 2px;
+      border-radius: 2px; }
+      .liked_by .character_cont .dialog_box .dialog_content_wrapper {
+        background-color: #FFFFFF;
+        padding: 10px;
+        width: 188px;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        border-radius: 0; }
+      .liked_by .character_cont .dialog_box .dialog_img {
+        display: block;
+        float: left;
+        width: 50px;
+        height: 110px;
+        background-image: url(/assets/characters/liked_by.png) !important; }
+      .liked_by .character_cont .dialog_box .dialog_content {
+        float: left;
+        width: 138px;
+        margin: 0; }
+        .liked_by .character_cont .dialog_box .dialog_content .title {
+          display: block;
+          font-size: 22px;
+          font-weight: bold;
+          padding-bottom: 10px;
+          text-align: left;
+          text-transform: capitalize;
+          width: 100%; }
+        .liked_by .character_cont .dialog_box .dialog_content p {
+          font-size: 11px;
+          line-height: 14px !important; }
+    .liked_by .character_cont .dialog_point {
+      position: relative;
+      bottom: 40px;
+      left: 2px !important;
+      border-top: 12px solid #889AA4;
+      border-bottom: none; }
+      .liked_by .character_cont .dialog_point .dialog_inner_point {
+        bottom: -5px;
+        left: -10px;
+        border-top: 10px solid #FFFFFF;
+        border-bottom: none;
+        margin: 0 0 8px;
+        z-index: 9999; }
+  .liked_by .lucas {
+    border-color: #4175ab; }
+    .liked_by .lucas .character {
+      background-position: -1px -3px; }
+    .liked_by .lucas .title {
+      color: #4175ab; }
+    .liked_by .lucas .dialog_img {
+      background-position: -260px -195px; }
+    .liked_by .lucas:hover {
+      border-color: #4175ab; }
+      .liked_by .lucas:hover .character {
+        border-color: #4175ab !important;
+        background-position: -1px -3px !important; }
+  .liked_by .adriana {
+    border-color: #c675b1; }
+    .liked_by .adriana .character {
+      background-position: -31px -3px; }
+    .liked_by .adriana .title {
+      color: #c675b1; }
+    .liked_by .adriana .dialog_img {
+      background-position: -312px -195px; }
+    .liked_by .adriana:hover {
+      border-color: #c675b1; }
+      .liked_by .adriana:hover .character {
+        border-color: #c675b1 !important;
+        background-position: -31px -3px !important; }
+  .liked_by .jonah {
+    border-color: #95c946; }
+    .liked_by .jonah .character {
+      background-position: -61px -3px; }
+    .liked_by .jonah .title {
+      color: #95c946; }
+    .liked_by .jonah .dialog_img {
+      background-position: -365px -195px; }
+    .liked_by .jonah:hover {
+      border-color: #95c946; }
+      .liked_by .jonah:hover .character {
+        border-color: #95c946 !important;
+        background-position: -61px -3px !important; }
+  .liked_by .emma {
+    margin-right: 0;
+    border-color: #ffb637; }
+    .liked_by .emma .character {
+      background-position: -91px -3px; }
+    .liked_by .emma .title {
+      color: #ffb637; }
+    .liked_by .emma .dialog_img {
+      background-position: -420px -195px; }
+    .liked_by .emma:hover {
+      border-color: #ffb637; }
+      .liked_by .emma:hover .character {
+        border-color: #ffb637 !important;
+        background-position: -91px -3px !important; }
+  .liked_by .disabled {
+    border-color: #dae4e9; }
+    .liked_by .disabled.lucas .character {
+      background-position: -1px -33px; }
+    .liked_by .disabled.adriana .character {
+      background-position: -31px -33px; }
+    .liked_by .disabled.jonah .character {
+      background-position: -61px -33px; }
+    .liked_by .disabled.emma .character {
+      background-position: -91px -33px; }
+#fresh_lists .list_cont {
+  border-bottom: 1px dashed #adc0c9;
+  padding-bottom: 8px;
+  margin-bottom: 8px; }
+  #fresh_lists .list_cont:last-child {
+    border: none;
+    margin: 0;
+    padding: 0; }
+  #fresh_lists .list_cont .avatar {
+    float: left;
+    margin-right: 10px;
+    height: 85px;
+    width: 85px; }
+  #fresh_lists .list_cont .info {
+    color: #acacac;
+    float: right;
+    font-size: 11px;
+    line-height: 12px;
+    width: 175px; }
+    #fresh_lists .list_cont .info .list_name {
+      font-size: 14px;
+      line-height: 15px;
+      color: #252525; }
+      #fresh_lists .list_cont .info .list_name:hover {
+        color: #597686; }
+    #fresh_lists .list_cont .info .user {
+      padding: 2px 0; }
+    #fresh_lists .list_cont .info span.items {
+      display: block; }
 /* STYLES FOR RIGHT SIDEBAR
 -----------------------------------------------------
 :: Styles for the right sidebar and universal elements like pods.
@@ -203,12 +510,15 @@
 #right_sidebar {
   /* Lists used in Pods. If list needs specific styles override specific attributes in seperate stylesheet..*/
   /* Pod list stripped down with no border/padding etc. */
+  /* Free Things To Do */
+  /* Popular Nightlife */
   /* Pod list with a thumbnail next to each item */
   /* Arrow Select list - List with arrows that appear only when hovered*/
   /* Pod footer used on some pods. Any that goes in the footer should be added here.*/
   /* Little orange arrow mostly used on pod footer after a link. */
   /* Styles for Popular Entertainers/DJs */
-  /* Styles for the Get Paid To Party pods */ }
+  /* Styles for the Get Paid To Party pods */
+  /* Missing Venue Event */ }
   #right_sidebar h3, #right_sidebar .featured .title {
     display: block;
     color: #375363;
@@ -217,8 +527,7 @@
     line-height: 28px;
     margin: 0 0 8px;
     padding: 0 0 8px;
-    border-bottom: 1px dashed #adc0c9;
-    color: #375363; }
+    border-bottom: 1px dashed #adc0c9; }
     #right_sidebar h3 a, #right_sidebar h3 a:link, #right_sidebar h3 a:visited, #right_sidebar .featured .title a, #right_sidebar .featured .title a:link, #right_sidebar .featured .title a:visited {
       color: #375363;
       text-decoration: underline; }
@@ -240,8 +549,9 @@
     #right_sidebar .title:hover {
       color: #000; }
   #right_sidebar .desc {
-    position: relative;
-    overflow: hidden; }
+    height: 64px;
+    overflow: hidden;
+    position: relative; }
     #right_sidebar .desc a, #right_sidebar .desc a:link, #right_sidebar .desc a:visited {
       color: #09f; }
     #right_sidebar .desc .neighborhood {
@@ -253,14 +563,15 @@
       position: absolute;
       right: 0;
       bottom: 0;
-      background-color: #fff; }
+      background-color: #fff;
+      font-size: 11px; }
   #right_sidebar .thumbnail_link {
     margin: 0 0 8px;
-    width: 98px;
-    height: 65px; }
+    width: 125px;
+    height: 83px; }
     #right_sidebar .thumbnail_link img {
-      width: 98px;
-      height: 65px; }
+      width: 125px;
+      height: 83px; }
   #right_sidebar .quick_nav_links {
     border-bottom: 1px dashed #ADC0C9;
     padding: 0 0 5px;
@@ -271,7 +582,7 @@
         color: #597686; }
   #right_sidebar .name {
     color: #09f;
-    font-size: 10px;
+    font-size: 11px;
     line-height: 10px;
     text-transform: uppercase; }
     #right_sidebar .name .date {
@@ -281,8 +592,7 @@
       padding: 0 6px 0 0;
       border-right: 1px solid #e4ebef; }
     #right_sidebar .name a {
-      display: inline-block;
-      width: 160px;
+      display: inline;
       height: 11px;
       color: #09f;
       text-decoration: none;
@@ -296,12 +606,12 @@
     border-bottom: 1px solid #dae4e9; }
   #right_sidebar .list .list_item.featured .thumbnail_link,
   #right_sidebar .changer .thumbnail_link {
-    width: 210px;
-    height: 140px; }
+    width: 268px;
+    height: 178px; }
     #right_sidebar .list .list_item.featured .thumbnail_link img,
     #right_sidebar .changer .thumbnail_link img {
-      width: 210px;
-      height: 140px; }
+      width: 268px;
+      height: 178px; }
   #right_sidebar .list .list_item {
     margin: 8px 0 0;
     padding: 8px 0 0;
@@ -325,7 +635,7 @@
       #right_sidebar .list .list_item p.name {
         line-height: 10px; }
     #right_sidebar .list .list_item .date {
-      color: #09f;
+      color: #0099FF;
       font-size: 9px;
       line-height: 11px;
       text-transform: uppercase; }
@@ -364,6 +674,26 @@
       color: #375363; }
       #right_sidebar .simple_list .list_item a:hover, #right_sidebar .simple_list .list_item a:link:hover, #right_sidebar .simple_list .list_item a:visited:hover {
         color: #000; }
+  #right_sidebar .free_things_to_do .list .arrow {
+    top: 6px; }
+  #right_sidebar .free_things_to_do .list a {
+    font-size: 15px;
+    line-height: 17px;
+    padding-bottom: 2px; }
+  #right_sidebar .free_things_to_do .list .venue_type {
+    margin-top: 3px; }
+    #right_sidebar .free_things_to_do .list .venue_type a {
+      font-size: 9px;
+      line-height: 11px; }
+  #right_sidebar .popular_nightlife .simple_list .featured a {
+    font-size: 11px !important;
+    line-height: 10px !important; }
+  #right_sidebar .popular_nightlife .simple_list .list_item.featured {
+    margin: 0 0 5px;
+    padding: 0 0 5px; }
+  #right_sidebar .popular_nightlife .simple_list .list_item a {
+    font-size: 15px !important;
+    line-height: 17px !important; }
   #right_sidebar .photo_list .thumbnail_link {
     float: left;
     width: 75px;
@@ -374,10 +704,11 @@
       height: 50px; }
   #right_sidebar .photo_list .details {
     float: left;
-    width: 120px; }
+    width: 184px; }
     #right_sidebar .photo_list .details .title {
-      line-height: 15px;
-      margin: 0 0 3px;
+      font-size: 15px;
+      line-height: 17px;
+      padding-bottom: 2px;
       color: #000; }
       #right_sidebar .photo_list .details .title:hover {
         color: #597686; }
@@ -421,12 +752,15 @@
     text-indent: -10px;
     overflow: hidden; }
   #right_sidebar .popular_entertainers .list li {
+    font-size: 15px;
+    line-height: 17px;
     position: relative;
-    padding: 0 0 0 10px; }
+    padding: 0 0 3px 10px; }
     #right_sidebar .popular_entertainers .list li .arrow {
       display: none;
       position: absolute;
-      left: 0; }
+      left: 0;
+      top: 0; }
     #right_sidebar .popular_entertainers .list li.selected .arrow {
       display: inline-block; }
   #right_sidebar .gptp_right_rail h3 {
@@ -435,8 +769,8 @@
     border: none; }
   #right_sidebar .gptp_right_rail ul li {
     float: left;
-    margin: 0 4px 4px 0; }
-    #right_sidebar .gptp_right_rail ul li:nth-child(4n) {
+    margin: 0 5px 5px 0; }
+    #right_sidebar .gptp_right_rail ul li:nth-child(5n) {
       margin-right: 0; }
     #right_sidebar .gptp_right_rail ul li a, #right_sidebar .gptp_right_rail ul li a:link, #right_sidebar .gptp_right_rail ul li a:visited {
       display: block;
@@ -460,7 +794,7 @@
     #right_sidebar .gptp_right_rail .links .meet_link {
       float: right; }
   #right_sidebar .gptp_right_rail .buttons {
-    width: 217px;
+    width: 270px;
     margin: 8px 0 0;
     padding: 8px 0 0;
     border-top: 1px solid #8ea8b5; }
@@ -479,15 +813,11 @@
         #right_sidebar .gptp_right_rail .buttons a.writer:hover, #right_sidebar .gptp_right_rail .buttons a:link.writer:hover, #right_sidebar .gptp_right_rail .buttons a:visited.writer:hover {
           background-position: -1px -476px; }
       #right_sidebar .gptp_right_rail .buttons a.photographer, #right_sidebar .gptp_right_rail .buttons a:link.photographer, #right_sidebar .gptp_right_rail .buttons a:visited.photographer {
-        right: -3px;
+        right: -55px;
         width: 132px;
         background-position: -88px -422px; }
         #right_sidebar .gptp_right_rail .buttons a.photographer:hover, #right_sidebar .gptp_right_rail .buttons a:link.photographer:hover, #right_sidebar .gptp_right_rail .buttons a:visited.photographer:hover {
           background-position: -88px -476px; }
-  #right_sidebar .missing_venue_event,
-  #right_sidebar .share_btn,
-  #right_sidebar .subscribe_btn,
-  #right_sidebar .follow_btns,
   #right_sidebar .ad {
     cursor: pointer;
     background-image: url(/assets/common/right_colmun_sprite.png);
@@ -497,26 +827,31 @@
     top: -60px;
     left: -9px; }
   #right_sidebar .missing_venue_event {
-    position: relative;
-    left: -2px;
-    width: 246px;
-    height: 154px;
-    margin: 0 0 8px;
-    background-position: -291px -233px; }
-    #right_sidebar .missing_venue_event:hover {
-      background-position: -291px -389px; }
-  #right_sidebar .share_btn,
-  #right_sidebar .subscribe_btn,
-  #right_sidebar .follow_btns {
-    position: relative;
-    right: 0;
-    width: 243px;
-    height: 44px;
-    margin: 0 0 9px; }
-  #right_sidebar .share_btn {
-    background-position: -291px -52px; }
-  #right_sidebar .subscribe_btn {
-    background-position: -291px -102px; }
+    position: relative; }
+    #right_sidebar .missing_venue_event .heading {
+      color: #375363;
+      font-size: 20px;
+      font-weight: bold;
+      line-height: 20px;
+      padding-bottom: 10px; }
+    #right_sidebar .missing_venue_event .text {
+      color: #252525;
+      font-size: 12px;
+      line-height: 14px;
+      width: 180px; }
+    #right_sidebar .missing_venue_event .magnifying_glass {
+      background-image: url(/assets/common/glass.png);
+      position: absolute;
+      bottom: 5px;
+      left: 4px;
+      height: 93px;
+      width: 88px; }
+    #right_sidebar .missing_venue_event .btn_orange {
+      font-weight: bold;
+      height: 24px;
+      margin-top: 5px;
+      padding: 7px 0 0 0;
+      width: 80px; }
   #right_sidebar .follow_btns {
     background-position: -291px -152px;
     cursor: default !important; }
@@ -544,7 +879,7 @@
     display: none;
     position: absolute;
     top: 18px;
-    left: -14px;
+    left: -15px;
     border-top: 7px solid transparent;
     border-right: 7px solid transparent;
     border-bottom: 7px solid transparent;
@@ -577,11 +912,16 @@
       border-bottom: 1px solid #B4BABE; }
   #upcoming_events .list .list_item .name_and_type {
     float: left;
-    width: 168px; }
+    width: 230px; }
+    #upcoming_events .list .list_item .name_and_type .title {
+      font-size: 14px;
+      line-height: 16px;
+      padding-bottom: 2px; }
     #upcoming_events .list .list_item .name_and_type .black_link {
       display: block;
-      line-height: 14px;
-      margin: 0 0 3px; }
+      font-size: 14px;
+      line-height: 16px;
+      padding-bottom: 3px; }
     #upcoming_events .list .list_item .name_and_type .venue_type {
       padding: 0;
       margin: 0; }
@@ -706,6 +1046,8 @@
 
 
 
+
+
 */
 #hday_upc .hday_upc_itm {
   position: relative;
@@ -732,10 +1074,8 @@
   line-height: 26px; }
 #hday_upc .hday_desc {
   float: left;
-  width: 349px;
-  padding: 0 10px 0 0;
-  line-height: 16px;
-  border-right: 1px dotted #ccc; }
+  width: 330px;
+  line-height: 16px; }
   #hday_upc .hday_desc .blue_flag {
     position: absolute;
     top: 15px;
@@ -748,10 +1088,17 @@
     #hday_upc .hday_desc .blue_flag .tip {
       border-bottom: 8px solid transparent; }
 #hday_upc .hday_count {
+  border-left: 1px dotted #ccc;
   float: right;
-  width: 99px; }
+  min-height: 111px;
+  padding-left: 15px;
+  position: relative;
+  width: 120px; }
+  #hday_upc .hday_count .liked_by {
+    bottom: 0;
+    height: 44px;
+    position: absolute; }
   #hday_upc .hday_count .days_left {
-    display: block;
     margin: 0 0 5px;
     color: #8ea8b5;
     font-size: 9px;
@@ -763,43 +1110,51 @@
     #hday_upc .hday_count .num_cont .num {
       display: block;
       float: left;
-      width: 31px;
+      width: 36px;
       height: 35px;
-      margin: 0 2px 0 0;
+      margin: 0 6px 0 0;
       font-size: 20px;
       font-weight: bold;
       line-height: 30px;
       text-align: center;
       text-indent: -9999px;
       background-image: url(/assets/holidays/sprite.png); }
+      #hday_upc .hday_count .num_cont .num:last-child {
+        margin: 0; }
       #hday_upc .hday_count .num_cont .num.num0 {
-        background-position: 0 0; }
+        background-position: -1px -85px; }
       #hday_upc .hday_count .num_cont .num.num1 {
-        background-position: -33px 0; }
+        background-position: -41px -85px; }
       #hday_upc .hday_count .num_cont .num.num2 {
-        background-position: -66px 0; }
+        background-position: -81px -85px; }
       #hday_upc .hday_count .num_cont .num.num3 {
-        background-position: -99px 0; }
+        background-position: -121px -85px; }
       #hday_upc .hday_count .num_cont .num.num4 {
-        background-position: -132px 0; }
+        background-position: -161px -85px; }
       #hday_upc .hday_count .num_cont .num.num5 {
-        background-position: -165px 0; }
+        background-position: -201px -85px; }
       #hday_upc .hday_count .num_cont .num.num6 {
-        background-position: -198px 0; }
+        background-position: -241px -85px; }
       #hday_upc .hday_count .num_cont .num.num7 {
-        background-position: -231px 0; }
+        background-position: -281px -85px; }
       #hday_upc .hday_count .num_cont .num.num8 {
-        background-position: -264px 0; }
+        background-position: -321px -85px; }
       #hday_upc .hday_count .num_cont .num.num9 {
-        background-position: -297px 0; }
+        background-position: -361px -85px; }
     #hday_upc .hday_count .num_cont.is_today .num {
-      background-position: 0 -36px; }
+      background-position: -1px -123px; }
   #hday_upc .hday_count .add_to_calendar {
     padding: 3px 9px; }
 #hday_upc .quick_nav_links {
   margin: 8px 0 0;
   padding: 8px 0 0;
   border-top: 1px dotted #ccc; }
+#hday_upc .calendar {
+  bottom: -2px;
+  position: absolute;
+  right: 0; }
+  #hday_upc .calendar .add_to_calendar {
+    padding: 3px 10px; }
 
 .overview_copy_block {
   font-size: 12px;

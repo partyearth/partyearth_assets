@@ -1,0 +1,440 @@
+/* BASE STYLES FOR RIGHT COLUMN
+-----------------------------------------------------------
+:: Should be included on any page which contains a right sidebar.
+----------------------------------------------------------- */
+#right_sidebar {
+  float: right;
+  width: 240px; }
+  #right_sidebar .admin_info.pod_rounded .grey_section .headline.sub_headline {
+    display: block;
+    margin: 0;
+    padding: 5px 10px;
+    color: #fff;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px #000;
+    background-color: #333;
+    border: 1px inset #fff;
+    border-radius: 0px 6px 0px 6px;
+    box-shadow: inset 0 0 25px #000; }
+/* STYLES FOR RIGHT SIDEBAR
+-----------------------------------------------------
+:: Styles for the right sidebar and universal elements like pods.
+----------------------------------------------------- */
+#right_sidebar {
+  /* Lists used in Pods. If list needs specific styles override specific attributes in seperate stylesheet..*/
+  /* Pod list stripped down with no border/padding etc. */
+  /* Free Things To Do */
+  /* Popular Nightlife */
+  /* Pod list with a thumbnail next to each item */
+  /* Arrow Select list - List with arrows that appear only when hovered*/
+  /* Pod footer used on some pods. Any that goes in the footer should be added here.*/
+  /* Little orange arrow mostly used on pod footer after a link. */
+  /* Styles for Popular Entertainers/DJs */
+  /* Styles for the Get Paid To Party pods */
+  /* Missing Venue Event */ }
+  #right_sidebar h3, #right_sidebar .featured .title {
+    display: block;
+    color: #375363;
+    font-size: 24px;
+    font-weight: normal;
+    line-height: 28px;
+    margin: 0 0 8px;
+    padding: 0 0 8px;
+    border-bottom: 1px dashed #adc0c9; }
+    #right_sidebar h3 a, #right_sidebar h3 a:link, #right_sidebar h3 a:visited, #right_sidebar .featured .title a, #right_sidebar .featured .title a:link, #right_sidebar .featured .title a:visited {
+      color: #375363;
+      text-decoration: underline; }
+      #right_sidebar h3 a:hover, #right_sidebar h3 a:link:hover, #right_sidebar h3 a:visited:hover, #right_sidebar .featured .title a:hover, #right_sidebar .featured .title a:link:hover, #right_sidebar .featured .title a:visited:hover {
+        color: #000; }
+    #right_sidebar h3.small, #right_sidebar .featured .title.small {
+      margin: 0 0 6px;
+      padding: 0;
+      color: #09F;
+      font-size: 15px;
+      font-weight: bold;
+      line-height: 16px;
+      border-bottom: 0; }
+  #right_sidebar .title {
+    display: block;
+    margin: 0 0 3px;
+    line-height: 15px;
+    text-decoration: underline; }
+    #right_sidebar .title:hover {
+      color: #000; }
+  #right_sidebar .desc {
+    height: 64px;
+    overflow: hidden;
+    position: relative; }
+    #right_sidebar .desc a, #right_sidebar .desc a:link, #right_sidebar .desc a:visited {
+      color: #09f; }
+    #right_sidebar .desc .neighborhood {
+      color: #8ea8b5;
+      font-size: 10px;
+      line-height: 10px;
+      text-transform: uppercase; }
+    #right_sidebar .desc .ellipsis {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      background-color: #fff;
+      font-size: 11px; }
+  #right_sidebar .thumbnail_link {
+    margin: 0 0 8px;
+    width: 125px;
+    height: 83px; }
+    #right_sidebar .thumbnail_link img {
+      width: 125px;
+      height: 83px; }
+  #right_sidebar .quick_nav_links {
+    border-bottom: 1px dashed #ADC0C9;
+    padding: 0 0 5px;
+    margin: 0 0 5px; }
+    #right_sidebar .quick_nav_links a, #right_sidebar .quick_nav_links a:link, #right_sidebar .quick_nav_links a:visited {
+      color: #09f; }
+      #right_sidebar .quick_nav_links a:hover, #right_sidebar .quick_nav_links a:link:hover, #right_sidebar .quick_nav_links a:visited:hover {
+        color: #597686; }
+  #right_sidebar .name {
+    color: #09f;
+    font-size: 11px;
+    line-height: 10px;
+    text-transform: uppercase; }
+    #right_sidebar .name .date {
+      display: block;
+      float: left;
+      margin: 0 4px 0 0;
+      padding: 0 6px 0 0;
+      border-right: 1px solid #e4ebef; }
+    #right_sidebar .name a {
+      display: inline;
+      height: 11px;
+      color: #09f;
+      text-decoration: none;
+      text-transform: none;
+      overflow: hidden; }
+  #right_sidebar .changer .name {
+    height: 10px;
+    margin: 0 0 6px;
+    padding: 0 0 6px;
+    vertical-align: top;
+    border-bottom: 1px solid #dae4e9; }
+  #right_sidebar .list .list_item.featured .thumbnail_link,
+  #right_sidebar .changer .thumbnail_link {
+    width: 268px;
+    height: 178px; }
+    #right_sidebar .list .list_item.featured .thumbnail_link img,
+    #right_sidebar .changer .thumbnail_link img {
+      width: 268px;
+      height: 178px; }
+  #right_sidebar .list .list_item {
+    margin: 8px 0 0;
+    padding: 8px 0 0;
+    border-top: 1px dashed #adc0c9; }
+    #right_sidebar .list .list_item.featured {
+      margin: 0 0 15px;
+      padding: 0 0 15px;
+      border-bottom: 1px solid #8ea8b5; }
+      #right_sidebar .list .list_item.featured .title {
+        margin: 0 0 8px;
+        padding: 0;
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 20px;
+        border: none; }
+      #right_sidebar .list .list_item.featured .venue_type {
+        margin: 0 0 6px; }
+    #right_sidebar .list .list_item p {
+      padding: 0;
+      line-height: 16px; }
+      #right_sidebar .list .list_item p.name {
+        line-height: 10px; }
+    #right_sidebar .list .list_item .date {
+      color: #0099FF;
+      font-size: 9px;
+      line-height: 11px;
+      text-transform: uppercase; }
+    #right_sidebar .list .list_item .arrow {
+      color: #09f;
+      font-size: 17px;
+      line-height: 17px; }
+    #right_sidebar .list .list_item .venue_type {
+      margin: 0;
+      padding: 0;
+      color: #6C8898;
+      line-height: 11px; }
+      #right_sidebar .list .list_item .venue_type a, #right_sidebar .list .list_item .venue_type a:link, #right_sidebar .list .list_item .venue_type a:visited {
+        color: #6C8898; }
+        #right_sidebar .list .list_item .venue_type a:hover, #right_sidebar .list .list_item .venue_type a:link:hover, #right_sidebar .list .list_item .venue_type a:visited:hover {
+          color: #597686;
+          text-decoration: underline; }
+    #right_sidebar .list .list_item:first-child {
+      margin-top: 0;
+      padding-top: 0;
+      border-top: none; }
+    #right_sidebar .list .list_item .name a, #right_sidebar .list .list_item .name a:link, #right_sidebar .list .list_item .name a:visited {
+      color: #09f; }
+      #right_sidebar .list .list_item .name a:hover, #right_sidebar .list .list_item .name a:link:hover, #right_sidebar .list .list_item .name a:visited:hover {
+        color: #597686;
+        text-decoration: underline; }
+  #right_sidebar .list a {
+    color: #000; }
+    #right_sidebar .list a:hover {
+      color: #597686; }
+  #right_sidebar .simple_list .list_item {
+    margin: 0 0 3px;
+    padding: 0;
+    border: none; }
+    #right_sidebar .simple_list .list_item a, #right_sidebar .simple_list .list_item a:link, #right_sidebar .simple_list .list_item a:visited {
+      color: #375363; }
+      #right_sidebar .simple_list .list_item a:hover, #right_sidebar .simple_list .list_item a:link:hover, #right_sidebar .simple_list .list_item a:visited:hover {
+        color: #000; }
+  #right_sidebar .free_things_to_do .list .arrow {
+    top: 6px; }
+  #right_sidebar .free_things_to_do .list a {
+    font-size: 15px;
+    line-height: 17px;
+    padding-bottom: 2px; }
+  #right_sidebar .free_things_to_do .list .venue_type {
+    margin-top: 3px; }
+    #right_sidebar .free_things_to_do .list .venue_type a {
+      font-size: 9px;
+      line-height: 11px; }
+  #right_sidebar .popular_nightlife .simple_list .featured a {
+    font-size: 11px !important;
+    line-height: 10px !important; }
+  #right_sidebar .popular_nightlife .simple_list .list_item.featured {
+    margin: 0 0 5px;
+    padding: 0 0 5px; }
+  #right_sidebar .popular_nightlife .simple_list .list_item a {
+    font-size: 15px !important;
+    line-height: 17px !important; }
+  #right_sidebar .photo_list .thumbnail_link {
+    float: left;
+    width: 75px;
+    height: 50px;
+    margin: 0 9px 0 0; }
+    #right_sidebar .photo_list .thumbnail_link img {
+      width: 75px;
+      height: 50px; }
+  #right_sidebar .photo_list .details {
+    float: left;
+    width: 184px; }
+    #right_sidebar .photo_list .details .title {
+      font-size: 15px;
+      line-height: 17px;
+      padding-bottom: 2px;
+      color: #000; }
+      #right_sidebar .photo_list .details .title:hover {
+        color: #597686; }
+  #right_sidebar .arrow_select .list_item {
+    position: relative;
+    padding: 0 0 0 12px;
+    border: none; }
+    #right_sidebar .arrow_select .list_item .arrow {
+      display: none;
+      position: absolute;
+      top: 0;
+      left: 0; }
+    #right_sidebar .arrow_select .list_item.selected .arrow {
+      display: block; }
+  #right_sidebar .pod_footer {
+    margin: 5px 0 0;
+    padding: 5px 0 0;
+    border-top: 1px solid #adc0c9; }
+    #right_sidebar .pod_footer a, #right_sidebar .pod_footer a:link, #right_sidebar .pod_footer a:visited, #right_sidebar .pod_footer .fake_link {
+      float: right;
+      color: #09f;
+      text-align: right;
+      font-size: 11px;
+      line-height: 12px;
+      text-decoration: none; }
+      #right_sidebar .pod_footer a:hover, #right_sidebar .pod_footer a:link:hover, #right_sidebar .pod_footer a:visited:hover, #right_sidebar .pod_footer .fake_link:hover {
+        color: #597686; }
+      #right_sidebar .pod_footer a span, #right_sidebar .pod_footer a:link span, #right_sidebar .pod_footer a:visited span, #right_sidebar .pod_footer .fake_link span {
+        text-decoration: underline; }
+        #right_sidebar .pod_footer a span.arrow, #right_sidebar .pod_footer a:link span.arrow, #right_sidebar .pod_footer a:visited span.arrow, #right_sidebar .pod_footer .fake_link span.arrow {
+          top: 0;
+          color: #ff9000;
+          text-decoration: none; }
+  #right_sidebar .arrow {
+    display: inline-block;
+    position: relative;
+    width: 6px;
+    font-family: "Times New Roman";
+    font-size: 16px;
+    font-weight: normal;
+    text-indent: -10px;
+    overflow: hidden; }
+  #right_sidebar .popular_entertainers .list li {
+    font-size: 15px;
+    line-height: 17px;
+    position: relative;
+    padding: 0 0 3px 10px; }
+    #right_sidebar .popular_entertainers .list li .arrow {
+      display: none;
+      position: absolute;
+      left: 0;
+      top: 0; }
+    #right_sidebar .popular_entertainers .list li.selected .arrow {
+      display: inline-block; }
+  #right_sidebar .gptp_right_rail h3 {
+    padding: 0;
+    font-weight: normal;
+    border: none; }
+  #right_sidebar .gptp_right_rail ul li {
+    float: left;
+    margin: 0 5px 5px 0; }
+    #right_sidebar .gptp_right_rail ul li:nth-child(5n) {
+      margin-right: 0; }
+    #right_sidebar .gptp_right_rail ul li a, #right_sidebar .gptp_right_rail ul li a:link, #right_sidebar .gptp_right_rail ul li a:visited {
+      display: block;
+      width: 50px;
+      height: 50px; }
+      #right_sidebar .gptp_right_rail ul li a img, #right_sidebar .gptp_right_rail ul li a:link img, #right_sidebar .gptp_right_rail ul li a:visited img {
+        opacity: .85; }
+      #right_sidebar .gptp_right_rail ul li a:hover img, #right_sidebar .gptp_right_rail ul li a:link:hover img, #right_sidebar .gptp_right_rail ul li a:visited:hover img {
+        opacity: 100; }
+  #right_sidebar .gptp_right_rail .links {
+    font-size: 11px;
+    line-height: 11px; }
+    #right_sidebar .gptp_right_rail .links a, #right_sidebar .gptp_right_rail .links .fake_link {
+      text-decoration: underline; }
+    #right_sidebar .gptp_right_rail .links .arrow {
+      color: #ff9000;
+      font-size: 16px;
+      top: 1px; }
+    #right_sidebar .gptp_right_rail .links .learn_link {
+      float: left; }
+    #right_sidebar .gptp_right_rail .links .meet_link {
+      float: right; }
+  #right_sidebar .gptp_right_rail .buttons {
+    width: 270px;
+    margin: 8px 0 0;
+    padding: 8px 0 0;
+    border-top: 1px solid #8ea8b5; }
+    #right_sidebar .gptp_right_rail .buttons a, #right_sidebar .gptp_right_rail .buttons a:link, #right_sidebar .gptp_right_rail .buttons a:visited {
+      display: block;
+      position: relative;
+      float: left;
+      height: 46px;
+      margin-top: 2px;
+      margin-bottom: -6px;
+      background-image: url(/assets/common/right_colmun_sprite-52ec6ce6bebd1918015a5a85d6386ec6.png); }
+      #right_sidebar .gptp_right_rail .buttons a.writer, #right_sidebar .gptp_right_rail .buttons a:link.writer, #right_sidebar .gptp_right_rail .buttons a:visited.writer {
+        left: -2px;
+        width: 85px;
+        background-position: -1px -422px; }
+        #right_sidebar .gptp_right_rail .buttons a.writer:hover, #right_sidebar .gptp_right_rail .buttons a:link.writer:hover, #right_sidebar .gptp_right_rail .buttons a:visited.writer:hover {
+          background-position: -1px -476px; }
+      #right_sidebar .gptp_right_rail .buttons a.photographer, #right_sidebar .gptp_right_rail .buttons a:link.photographer, #right_sidebar .gptp_right_rail .buttons a:visited.photographer {
+        right: -55px;
+        width: 132px;
+        background-position: -88px -422px; }
+        #right_sidebar .gptp_right_rail .buttons a.photographer:hover, #right_sidebar .gptp_right_rail .buttons a:link.photographer:hover, #right_sidebar .gptp_right_rail .buttons a:visited.photographer:hover {
+          background-position: -88px -476px; }
+  #right_sidebar .ad {
+    cursor: pointer;
+    background-image: url(/assets/common/right_colmun_sprite-52ec6ce6bebd1918015a5a85d6386ec6.png);
+    background-repeat: no-repeat; }
+  #right_sidebar #right_rail_simple_share {
+    position: absolute;
+    top: -60px;
+    left: -9px; }
+  #right_sidebar .missing_venue_event {
+    position: relative; }
+    #right_sidebar .missing_venue_event .heading {
+      color: #375363;
+      font-size: 20px;
+      font-weight: bold;
+      line-height: 20px;
+      padding-bottom: 10px; }
+    #right_sidebar .missing_venue_event .text {
+      color: #252525;
+      font-size: 12px;
+      line-height: 14px;
+      width: 180px; }
+    #right_sidebar .missing_venue_event .magnifying_glass {
+      background-image: url(/assets/common/glass-742326b8001001b712e3ac3296818f63.png);
+      position: absolute;
+      bottom: 5px;
+      left: 4px;
+      height: 93px;
+      width: 88px; }
+    #right_sidebar .missing_venue_event .btn_orange {
+      font-weight: bold;
+      height: 24px;
+      margin-top: 5px;
+      padding: 7px 0 0 0;
+      width: 80px; }
+  #right_sidebar .follow_btns {
+    background-position: -291px -152px;
+    cursor: default !important; }
+    #right_sidebar .follow_btns a {
+      display: block;
+      position: absolute;
+      top: 9px;
+      width: 28px;
+      height: 28px;
+      margin: 0; }
+    #right_sidebar .follow_btns .gig-followbar-providerButton {
+      right: 44px; }
+    #right_sidebar .follow_btns .gig-followbar-providerButton-last {
+      right: 11px; }
+  #right_sidebar .ad {
+    width: 240px;
+    height: 400px;
+    background-position: 0 0; }
+.infographic_content .infographic {
+  padding: 22px;
+  background-image: url(/assets/content_bg/grey_stripes_repeat-282a687b384107de1424ec79a19c30fb.gif); }
+  .infographic_content .infographic .image {
+    width: 664px;
+    height: 2216px; }
+.infographic_content .embed_infographic {
+  margin: 20px 0 0; }
+  .infographic_content .embed_infographic .headline.sub_headline {
+    margin: 0 0 8px;
+    font-size: 17px; }
+  .infographic_content .embed_infographic .embed_code {
+    width: 678px;
+    height: 63px;
+    padding: 12px 13px;
+    color: #adc0c9;
+    box-shadow: inset 0 0 7px #ccc;
+    white-space: normal;
+    border: 1px solid #c4c4c4;
+    overflow: hidden; }
+
+/* GREAT COCKTAILS PROPERTIES
+------------------------------*/
+#right_sidebar .great_cocktail_spots .city_section {
+  margin: 0 0 12px; }
+  #right_sidebar .great_cocktail_spots .city_section .city {
+    margin: 0 0 9px;
+    padding: 2px 7px 1px;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #D2E2E9;
+    text-transform: uppercase; }
+#right_sidebar .great_cocktail_spots .pod_footer {
+  margin: 0;
+  padding: 0;
+  border-top: none; }
+/*
+
+
+
+*/
+.quick_nav_btns {
+  float: right;
+  padding: 0;
+  margin: 0;
+  border: none; }
+
+#right_sidebar .great_cocktail_spots h3 {
+  padding: 0;
+  border-bottom: none; }
+#right_sidebar .great_cocktail_spots .list .list_item {
+  margin: 0 0 8px;
+  padding: 0 0 8px;
+  border-bottom: 1px dashed #adc0c9;
+  border-top: none; }

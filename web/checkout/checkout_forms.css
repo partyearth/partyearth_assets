@@ -396,8 +396,9 @@ label[for="card_month"] {
       margin: 6px 0 0; }
 
 .store_content.checkout_form_page .newsletter_opt_in {
-  width: 287px;
-  margin: 0 0 0 85px; }
+  font-size: 11px;
+  margin: 0;
+  width: 350px; }
 
 /*AUTHORIZE.NET SEAL*/
 #seal_wrapper {

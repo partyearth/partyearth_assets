@@ -1,0 +1,23 @@
+.spinnable {
+  background-color: #f9f9f9;
+  padding: 15px; }
+
+.close {
+  color: #CCC;
+  font-size: 12px;
+  position: absolute;
+  top: 0;
+  right: 5px; }
+  .close:hover {
+    color: #adc0c9;
+    cursor: pointer; }
+
+.error_msg {
+  color: red;
+  font-size: 11px; }
+
+.error_msg_block {
+  display: block;
+  color: red;
+  font-size: 11px;
+  padding-bottom: 1px; }

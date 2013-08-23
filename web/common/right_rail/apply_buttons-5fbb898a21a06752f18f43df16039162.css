@@ -1,0 +1,42 @@
+/* APPLY BUTTONS
+=========================================================
+:: Styles for the apply buttons that appear on the right rail.
+========================================================= */
+.apply_btn_container {
+  position: relative;
+  margin: 0 0 7px; }
+  .apply_btn_container a {
+    text-decoration: none; }
+    .apply_btn_container a:hover {
+      text-decoration: none; }
+  .apply_btn_container .btn_blue {
+    color: #FFFFFF;
+    display: block;
+    font-family: 'Arimo', Arial, sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 15px;
+    margin-bottom: 12px;
+    padding: 9px 0 7px;
+    width: 300px; }
+    .apply_btn_container .btn_blue span {
+      display: block;
+      color: #aedfff;
+      font-size: 11px;
+      padding-top: 3px; }
+    .apply_btn_container .btn_blue.writer_inactive {
+      border-bottom: 1px solid #9F9F9F;
+      color: #656565;
+      cursor: default;
+      background-color: #CCC;
+      text-shadow: none; }
+    .apply_btn_container .btn_blue.photographer_inactive {
+      border-bottom: 1px solid #9F9F9F;
+      color: #656565;
+      cursor: default;
+      background-color: #CCC;
+      text-shadow: none; }
+
+/* Bio page specific */
+.get_paid_to_party_content.writer_bio_page .apply_btn_container .apply_btn {
+  background-image: url(/assets/writers/writer_bio_page_sprite-f28a5434ba71e3778861f6b6e7248399.png); }

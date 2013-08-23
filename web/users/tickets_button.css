@@ -1,0 +1,351 @@
+/* Tickets Button */
+
+
+body {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.button_wrapper {
+  position: relative;
+}
+.clearfix {
+  clear: both;
+}
+
+.tickets_button {
+  display: inline-block;
+  font-family: Arial;
+  text-align: center;
+  padding: 0;
+  position: relative;
+}
+
+.border_cont {
+  padding: 0 10px;
+  position: relative;
+  float: left;
+}
+
+.gradient {
+  display: block;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 900;
+}
+
+/***********************/
+/* Silver Button Color */
+/***********************/
+
+.silver .border_cont {
+  background: #e1e8ec;
+  border: 1px solid #b4c6cf;
+}
+
+.silver .border_cont .gradient {
+  background: #f1f5f6;
+}
+
+/*********************/
+/* Blue Button Color */
+/*********************/
+
+.blue .border_cont {
+  background: #0085de;
+  border: 1px solid #0378c6;
+}
+
+.blue .border_cont .gradient {
+  background: #0099FF;
+}
+
+/***********************/
+/* Orange Button Color */
+/***********************/
+
+.orange .border_cont {
+  background: #f47b00;
+  border: 1px solid #c88003;
+}
+
+.orange .border_cont .gradient {
+  background: #ff9000;
+}
+
+/****************/
+/* Button Sizes */
+/****************/
+
+.large  {
+  height: 50px !important;
+}
+
+.medium {
+  height: 40px !important;
+}
+.small {
+  height: 30px !important;
+}
+
+.large .border_cont {
+  height: 48px !important;
+}
+
+.medium .border_cont {
+  height: 38px !important;
+}
+
+.small .border_cont {
+  height: 28px !important;
+}
+
+.large .gradient {
+  height: 25px;
+}
+
+.medium .gradient {
+  height: 20px;
+}
+
+.small .gradient {
+  height: 15px;
+}
+
+/**************/
+/* Text Sizes */
+/**************/
+
+.no_logo_text {
+  display: none;
+  font-size: 10px;
+  font-weight: normal;
+}
+
+.btn_text {
+  display: block;
+  font-weight: bold;
+  line-height: 100%;
+  position: relative;
+  z-index: 902;
+}
+
+.large .btn_text {
+  font-size: 26px;
+  margin-top: 9px;
+}
+
+.medium .btn_text {
+  font-size: 18px;
+  margin-top: 9px;
+}
+
+.small .btn_text {
+  font-size: 14px;
+  margin-top: 6px;
+}
+
+/************************/
+/* Logo Container Sizes */
+/************************/
+
+.img_cont {
+  float: left;
+  padding: 0 10px;
+  z-index: 909;
+}
+
+.img_cont .img {
+  display: block;
+}
+
+.large .img_cont {
+  height: 48px;
+}
+
+.medium .img_cont {
+  height: 38px;
+}
+
+.small .img_cont {
+  height: 28px;
+}
+
+/**************/
+/* Logo Sizes */
+/**************/
+
+.large.full_image .img {
+  background: url("http://cdn.partyearth.com/images/tickets/large-stacked.png") no-repeat;
+  height: 39px;
+  margin: 4px auto 0;
+  width: 61px;
+}
+
+.large.mini_image .img {
+  background: url("http://cdn.partyearth.com/images/tickets/large.png") no-repeat;
+  height: 32px;
+  margin: 9px auto 0;
+  width: 45px;
+}
+
+.medium.full_image .img {
+  background: url("http://cdn.partyearth.com/images/tickets/medium-stacked.png") no-repeat;
+  height: 32px;
+  margin: 3px auto 0;
+  width: 51px;
+}
+
+.medium.mini_image .img {
+  background: url("http://cdn.partyearth.com/images/tickets/medium.png") no-repeat;
+  height: 25px;
+  margin: 8px auto 0;
+  width: 34px;
+}
+
+.small.full_image .img {
+  background: url("http://cdn.partyearth.com/images/tickets/small-stacked.png") no-repeat;
+  height: 22px;
+  margin: 2px auto 0;
+  width: 35px;
+}
+
+.small.mini_image .img {
+  background: url("http://cdn.partyearth.com/images/tickets/small.png") no-repeat;
+  height: 20px;
+  margin: 5px auto 0;
+  width: 27px;
+}
+
+/***********/
+/* No Logo */
+/***********/
+
+.no_logo .img_cont {
+  display: none;
+}
+
+.no_logo.small .btn_text {
+  min-width: 85px;
+}
+
+.no_logo .no_logo_text {
+  display: none;
+}
+
+/************/
+/* No Image */
+/************/
+
+.no_image .img_cont {
+  display: none;
+}
+
+.no_image.small .btn_text {
+  min-width: 85px;
+}
+
+.no_image .no_logo_text {
+  display: block;
+  line-height: 100%;
+  z-index: 910 !important;
+}
+
+/******************/
+/* No Image Large */
+/******************/
+
+.no_image.large .btn_text {
+  margin-top: 4px;
+}
+
+.no_image.large .no_logo_text {
+  font-size: 11px;
+}
+
+/*******************/
+/* No Image Medium */
+/*******************/
+
+.no_image.medium .btn_text {
+  margin-top: 5px;
+}
+
+.no_image.medium .no_logo_text {
+  font-size: 11px;
+  margin-top: -1px;
+}
+
+/******************/
+/* No Image Small */
+/******************/
+
+.no_image.small .btn_text {
+  margin-top: 2px;
+}
+
+.no_image.small .no_logo_text {
+  font-size: 10px;
+}
+
+/************************/
+/* Silver Button Styles */
+/************************/
+
+.silver .btn_text {
+  color: #597686;
+  text-shadow: 0px 1px 0px #f8f9fa;
+}
+
+.silver .no_logo_text {
+  color: #97acb7 !important;
+}
+
+.silver .img_cont {
+  background: #ffffff;
+  border-top: 1px solid #90aab6;
+  border-right: 1px solid #90aab6;
+  border-bottom: 1px solid #90aab6;
+}
+
+/**********************/
+/* Blue Button Styles */
+/**********************/
+
+.blue .btn_text {
+  color: #ffffff;
+  text-shadow: -1px -1px 0px #006cb4;
+}
+
+.blue .no_logo_text {
+  color: #98d6ff !important;
+}
+
+.blue .img_cont {
+  background: #ffffff;
+  border-top: 1px solid #d9e3e8;
+  border-right: 1px solid #d9e3e8;
+  border-bottom: 1px solid #d9e3e8;
+}
+
+/************************/
+/* Orange Button Styles */
+/************************/
+
+.orange .btn_text {
+  color: #ffffff;
+  text-shadow: -1px -1px 0px #d76c00;
+}
+
+.orange .no_logo_text {
+  color: #ffc868 !important;
+}
+
+.orange .img_cont {
+  background: #ffffff;
+  border-top: 1px solid #b4c6cf;
+  border-right: 1px solid #b4c6cf;
+  border-bottom: 1px solid #b4c6cf;
+}

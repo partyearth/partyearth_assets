@@ -183,8 +183,8 @@ fieldset .inline-errors {
 fieldset .inline-success, fieldset img {
   display: block;
   position: absolute;
-  top: 7px;
-  left: 451px; }
+  top: 8px;
+  left: 457px; }
 fieldset .toggle {
   display: block;
   position: relative;
@@ -270,17 +270,14 @@ div.actions fieldset, .store_action_btns fieldset {
       display: inline-block;
       margin: 0 4px 0 0; }
   #social_login .social_icon {
-    display: inline-block;
-    width: 24px;
-    height: 24px;
-    font-size: 12px;
-    line-height: 24px;
-    box-shadow: 0 1px 3px #696969;
+    background-image: url(/assets/content_bg/social_login_sprite.png);
     border-radius: 5px;
+    display: inline-block;
+    font-size: 12px;
+    height: 37px;
+    line-height: 24px;
     text-indent: -9999px;
-    background-image: url(/assets/content_bg/social_login_sprite.png); }
-    #social_login .social_icon:hover {
-      box-shadow: 0 2px 3px #1c1c1c; }
+    width: 33px; }
     #social_login .social_icon.facebook, #social_login .social_icon.facebook_big {
       width: 138px;
       padding: 0 0 0 30px;
@@ -304,33 +301,37 @@ div.actions fieldset, .store_action_btns fieldset {
   #social_login .facebook {
     background-position: 0 -52px; }
   #social_login .twitter {
-    background-position: -170px -52px; }
+    background-position: -171px -52px; }
   #social_login .google {
-    background-position: -196px -52px; }
-  #social_login .foursquare {
-    background-position: -222px -52px; }
-  #social_login .messenger {
-    background-position: -248px -52px; }
-  #social_login .aol {
-    background-position: -274px -52px; }
+    background-position: -211px -52px; }
   #social_login .yahoo {
-    background-position: -300px -52px; }
+    background-position: -411px -52px; }
+  #social_login .messenger {
+    background-position: -291px -52px; }
+  #social_login .aol {
+    background-position: -331px -52px; }
+  #social_login .googleplus {
+    background-position: -371px -52px; }
+  #social_login .foursquare {
+    background-position: -251px -52px; }
   #social_login .facebook_big:hover {
     background-position: -286px 0; }
   #social_login .facebook:hover {
     background-position: 0 -78px; }
   #social_login .twitter:hover {
-    background-position: -170px -78px; }
+    background-position: -171px -95px; }
   #social_login .google:hover {
-    background-position: -196px -78px; }
-  #social_login .foursquare:hover {
-    background-position: -222px -78px; }
+    background-position: -211px -95px; }
+  #social_login .yahoo:hover {
+    background-position: -411px -95px; }
   #social_login .messenger:hover {
-    background-position: -248px -78px; }
+    background-position: -291px -95px; }
   #social_login .aol:hover {
-    background-position: -274px -78px; }
-  #social_login .yahoo:hover:hover {
-    background-position: -300px -78px; }
+    background-position: -331px -95px; }
+  #social_login .googleplus:hover {
+    background-position: -371px -95px; }
+  #social_login .foursquare:hover {
+    background-position: -251px -95px; }
 /* STYLES FOR RIGHT SIDEBAR
 -----------------------------------------------------
 :: Styles for the right sidebar and universal elements like pods.
@@ -338,12 +339,15 @@ div.actions fieldset, .store_action_btns fieldset {
 #right_sidebar {
   /* Lists used in Pods. If list needs specific styles override specific attributes in seperate stylesheet..*/
   /* Pod list stripped down with no border/padding etc. */
+  /* Free Things To Do */
+  /* Popular Nightlife */
   /* Pod list with a thumbnail next to each item */
   /* Arrow Select list - List with arrows that appear only when hovered*/
   /* Pod footer used on some pods. Any that goes in the footer should be added here.*/
   /* Little orange arrow mostly used on pod footer after a link. */
   /* Styles for Popular Entertainers/DJs */
-  /* Styles for the Get Paid To Party pods */ }
+  /* Styles for the Get Paid To Party pods */
+  /* Missing Venue Event */ }
   #right_sidebar h3, #right_sidebar .featured .title {
     display: block;
     color: #375363;
@@ -352,8 +356,7 @@ div.actions fieldset, .store_action_btns fieldset {
     line-height: 28px;
     margin: 0 0 8px;
     padding: 0 0 8px;
-    border-bottom: 1px dashed #adc0c9;
-    color: #375363; }
+    border-bottom: 1px dashed #adc0c9; }
     #right_sidebar h3 a, #right_sidebar h3 a:link, #right_sidebar h3 a:visited, #right_sidebar .featured .title a, #right_sidebar .featured .title a:link, #right_sidebar .featured .title a:visited {
       color: #375363;
       text-decoration: underline; }
@@ -375,8 +378,9 @@ div.actions fieldset, .store_action_btns fieldset {
     #right_sidebar .title:hover {
       color: #000; }
   #right_sidebar .desc {
-    position: relative;
-    overflow: hidden; }
+    height: 64px;
+    overflow: hidden;
+    position: relative; }
     #right_sidebar .desc a, #right_sidebar .desc a:link, #right_sidebar .desc a:visited {
       color: #09f; }
     #right_sidebar .desc .neighborhood {
@@ -388,14 +392,15 @@ div.actions fieldset, .store_action_btns fieldset {
       position: absolute;
       right: 0;
       bottom: 0;
-      background-color: #fff; }
+      background-color: #fff;
+      font-size: 11px; }
   #right_sidebar .thumbnail_link {
     margin: 0 0 8px;
-    width: 98px;
-    height: 65px; }
+    width: 125px;
+    height: 83px; }
     #right_sidebar .thumbnail_link img {
-      width: 98px;
-      height: 65px; }
+      width: 125px;
+      height: 83px; }
   #right_sidebar .quick_nav_links {
     border-bottom: 1px dashed #ADC0C9;
     padding: 0 0 5px;
@@ -406,7 +411,7 @@ div.actions fieldset, .store_action_btns fieldset {
         color: #597686; }
   #right_sidebar .name {
     color: #09f;
-    font-size: 10px;
+    font-size: 11px;
     line-height: 10px;
     text-transform: uppercase; }
     #right_sidebar .name .date {
@@ -416,8 +421,7 @@ div.actions fieldset, .store_action_btns fieldset {
       padding: 0 6px 0 0;
       border-right: 1px solid #e4ebef; }
     #right_sidebar .name a {
-      display: inline-block;
-      width: 160px;
+      display: inline;
       height: 11px;
       color: #09f;
       text-decoration: none;
@@ -431,12 +435,12 @@ div.actions fieldset, .store_action_btns fieldset {
     border-bottom: 1px solid #dae4e9; }
   #right_sidebar .list .list_item.featured .thumbnail_link,
   #right_sidebar .changer .thumbnail_link {
-    width: 210px;
-    height: 140px; }
+    width: 268px;
+    height: 178px; }
     #right_sidebar .list .list_item.featured .thumbnail_link img,
     #right_sidebar .changer .thumbnail_link img {
-      width: 210px;
-      height: 140px; }
+      width: 268px;
+      height: 178px; }
   #right_sidebar .list .list_item {
     margin: 8px 0 0;
     padding: 8px 0 0;
@@ -460,7 +464,7 @@ div.actions fieldset, .store_action_btns fieldset {
       #right_sidebar .list .list_item p.name {
         line-height: 10px; }
     #right_sidebar .list .list_item .date {
-      color: #09f;
+      color: #0099FF;
       font-size: 9px;
       line-height: 11px;
       text-transform: uppercase; }
@@ -499,6 +503,26 @@ div.actions fieldset, .store_action_btns fieldset {
       color: #375363; }
       #right_sidebar .simple_list .list_item a:hover, #right_sidebar .simple_list .list_item a:link:hover, #right_sidebar .simple_list .list_item a:visited:hover {
         color: #000; }
+  #right_sidebar .free_things_to_do .list .arrow {
+    top: 6px; }
+  #right_sidebar .free_things_to_do .list a {
+    font-size: 15px;
+    line-height: 17px;
+    padding-bottom: 2px; }
+  #right_sidebar .free_things_to_do .list .venue_type {
+    margin-top: 3px; }
+    #right_sidebar .free_things_to_do .list .venue_type a {
+      font-size: 9px;
+      line-height: 11px; }
+  #right_sidebar .popular_nightlife .simple_list .featured a {
+    font-size: 11px !important;
+    line-height: 10px !important; }
+  #right_sidebar .popular_nightlife .simple_list .list_item.featured {
+    margin: 0 0 5px;
+    padding: 0 0 5px; }
+  #right_sidebar .popular_nightlife .simple_list .list_item a {
+    font-size: 15px !important;
+    line-height: 17px !important; }
   #right_sidebar .photo_list .thumbnail_link {
     float: left;
     width: 75px;
@@ -509,10 +533,11 @@ div.actions fieldset, .store_action_btns fieldset {
       height: 50px; }
   #right_sidebar .photo_list .details {
     float: left;
-    width: 120px; }
+    width: 184px; }
     #right_sidebar .photo_list .details .title {
-      line-height: 15px;
-      margin: 0 0 3px;
+      font-size: 15px;
+      line-height: 17px;
+      padding-bottom: 2px;
       color: #000; }
       #right_sidebar .photo_list .details .title:hover {
         color: #597686; }
@@ -556,12 +581,15 @@ div.actions fieldset, .store_action_btns fieldset {
     text-indent: -10px;
     overflow: hidden; }
   #right_sidebar .popular_entertainers .list li {
+    font-size: 15px;
+    line-height: 17px;
     position: relative;
-    padding: 0 0 0 10px; }
+    padding: 0 0 3px 10px; }
     #right_sidebar .popular_entertainers .list li .arrow {
       display: none;
       position: absolute;
-      left: 0; }
+      left: 0;
+      top: 0; }
     #right_sidebar .popular_entertainers .list li.selected .arrow {
       display: inline-block; }
   #right_sidebar .gptp_right_rail h3 {
@@ -570,8 +598,8 @@ div.actions fieldset, .store_action_btns fieldset {
     border: none; }
   #right_sidebar .gptp_right_rail ul li {
     float: left;
-    margin: 0 4px 4px 0; }
-    #right_sidebar .gptp_right_rail ul li:nth-child(4n) {
+    margin: 0 5px 5px 0; }
+    #right_sidebar .gptp_right_rail ul li:nth-child(5n) {
       margin-right: 0; }
     #right_sidebar .gptp_right_rail ul li a, #right_sidebar .gptp_right_rail ul li a:link, #right_sidebar .gptp_right_rail ul li a:visited {
       display: block;
@@ -595,7 +623,7 @@ div.actions fieldset, .store_action_btns fieldset {
     #right_sidebar .gptp_right_rail .links .meet_link {
       float: right; }
   #right_sidebar .gptp_right_rail .buttons {
-    width: 217px;
+    width: 270px;
     margin: 8px 0 0;
     padding: 8px 0 0;
     border-top: 1px solid #8ea8b5; }
@@ -614,15 +642,11 @@ div.actions fieldset, .store_action_btns fieldset {
         #right_sidebar .gptp_right_rail .buttons a.writer:hover, #right_sidebar .gptp_right_rail .buttons a:link.writer:hover, #right_sidebar .gptp_right_rail .buttons a:visited.writer:hover {
           background-position: -1px -476px; }
       #right_sidebar .gptp_right_rail .buttons a.photographer, #right_sidebar .gptp_right_rail .buttons a:link.photographer, #right_sidebar .gptp_right_rail .buttons a:visited.photographer {
-        right: -3px;
+        right: -55px;
         width: 132px;
         background-position: -88px -422px; }
         #right_sidebar .gptp_right_rail .buttons a.photographer:hover, #right_sidebar .gptp_right_rail .buttons a:link.photographer:hover, #right_sidebar .gptp_right_rail .buttons a:visited.photographer:hover {
           background-position: -88px -476px; }
-  #right_sidebar .missing_venue_event,
-  #right_sidebar .share_btn,
-  #right_sidebar .subscribe_btn,
-  #right_sidebar .follow_btns,
   #right_sidebar .ad {
     cursor: pointer;
     background-image: url(/assets/common/right_colmun_sprite.png);
@@ -632,26 +656,31 @@ div.actions fieldset, .store_action_btns fieldset {
     top: -60px;
     left: -9px; }
   #right_sidebar .missing_venue_event {
-    position: relative;
-    left: -2px;
-    width: 246px;
-    height: 154px;
-    margin: 0 0 8px;
-    background-position: -291px -233px; }
-    #right_sidebar .missing_venue_event:hover {
-      background-position: -291px -389px; }
-  #right_sidebar .share_btn,
-  #right_sidebar .subscribe_btn,
-  #right_sidebar .follow_btns {
-    position: relative;
-    right: 0;
-    width: 243px;
-    height: 44px;
-    margin: 0 0 9px; }
-  #right_sidebar .share_btn {
-    background-position: -291px -52px; }
-  #right_sidebar .subscribe_btn {
-    background-position: -291px -102px; }
+    position: relative; }
+    #right_sidebar .missing_venue_event .heading {
+      color: #375363;
+      font-size: 20px;
+      font-weight: bold;
+      line-height: 20px;
+      padding-bottom: 10px; }
+    #right_sidebar .missing_venue_event .text {
+      color: #252525;
+      font-size: 12px;
+      line-height: 14px;
+      width: 180px; }
+    #right_sidebar .missing_venue_event .magnifying_glass {
+      background-image: url(/assets/common/glass.png);
+      position: absolute;
+      bottom: 5px;
+      left: 4px;
+      height: 93px;
+      width: 88px; }
+    #right_sidebar .missing_venue_event .btn_orange {
+      font-weight: bold;
+      height: 24px;
+      margin-top: 5px;
+      padding: 7px 0 0 0;
+      width: 80px; }
   #right_sidebar .follow_btns {
     background-position: -291px -152px;
     cursor: default !important; }
@@ -686,49 +715,54 @@ div.actions fieldset, .store_action_btns fieldset {
     border-radius: 4px; }
   #gptp_in_press li .details {
     float: left;
-    width: 145px; }
+    margin-bottom: 5px;
+    width: 210px; }
     #gptp_in_press li .details .name_location {
+      color: #8ea8b5;
       display: block;
       font-size: 10px;
-      color: #8ea8b5;
-      text-decoration: none; }
+      text-decoration: none;
+      margin-top: 2px; }
       #gptp_in_press li .details .name_location .name {
         color: #09f;
-        text-decoration: underline; }
+        text-decoration: underline;
+        text-transform: capitalize; }
         #gptp_in_press li .details .name_location .name:hover {
           color: #597686; }
     #gptp_in_press li .details .article {
+      color: #375363;
       display: block;
-      color: #375363; }
+      font-size: 15px;
+      line-height: 17px; }
       #gptp_in_press li .details .article:hover {
-        color: #000; }
+        color: #000000; }
   #gptp_in_press li .featured {
     display: block;
-    clear: left;
     color: #8ea8b5;
     font-size: 10px;
+    margin: 5px 0;
     text-transform: uppercase; }
     #gptp_in_press li .featured span {
-      display: block;
       position: relative;
       margin: 0 0 6px;
       background-image: url(/assets/writer_applications/sprite.png); }
       #gptp_in_press li .featured span.maxim {
-        width: 126px;
-        height: 33px;
-        margin-top: -18px;
-        margin-bottom: -2px;
-        margin-left: 77px;
+        float: right;
+        width: 82px;
+        height: 22px;
+        margin-right: 112px;
         background-position: 0 -46px; }
       #gptp_in_press li .featured span.thp {
-        width: 217px;
-        height: 13px;
+        float: right;
+        width: 180px;
+        height: 12px;
+        margin: 2px 14px 0 0;
         background-position: -128px -46px; }
       #gptp_in_press li .featured span.look {
-        width: 73px;
-        height: 27px;
-        margin-top: -13px;
-        margin-left: 77px;
+        float: right;
+        width: 50px;
+        height: 19px;
+        margin: 0 144px 0 0;
         background-position: -347px -46px; }
   #gptp_in_press li:first-child {
     border-top: none; }
@@ -743,20 +777,11 @@ div.actions fieldset, .store_action_btns fieldset {
         display: block;
         position: relative;
         top: -10px;
-        left: 7px;
+        left: 35px;
         width: 196px;
         height: 208px;
         text-indent: -9999px;
-        background-image: url(/assets/writer_applications/in_the_press_polaroids.jpg);
-        transform: scale(1) rotate(-4deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
-        -moz-transform: scale(1) rotate(-4deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
-        -webkit-transform: scale(1) rotate(-4deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
-        -o-transform: scale(1) rotate(-4deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
-        -ms-transform: scale(1) rotate(-4deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
-        /* Uncomment if we want to implement for IE8 [https://snipt.net/viatropos/cross-browser-css-rotation-with-and-without-sass/]
-        filter:             progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=cos(-4deg), M12=-sin(-4deg), M21=sin(-4deg), M22=cos(-4deg));
-        -ms-filter:         "progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=cos(-4deg), M12=-sin(-4deg), M21=sin(-4deg), M22=cos(-4deg))"; */
-        zoom: 1; }
+        background-image: url(/assets/writer_applications/in_the_press_polaroids.jpg); }
       #gptp_in_press li:first-child .name_location .location {
         visibility: hidden; }
     #gptp_in_press li:first-child .article {

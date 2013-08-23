@@ -1,0 +1,707 @@
+/* Ticket Form - Left Area */
+.ticket_form {
+  float: left;
+  width: 680px;
+  /* Venue Name Container */
+  /* Ticket Form */
+  /* Additional Info */ }
+  .ticket_form .venue_name_cont {
+    height: 60px;
+    position: relative; }
+    .ticket_form .venue_name_cont h1 {
+      font-size: 22px;
+      font-weight: bold;
+      line-height: 20px;
+      margin: 0;
+      padding: 0; }
+      .ticket_form .venue_name_cont h1 a {
+        color: #000000 !important; }
+        .ticket_form .venue_name_cont h1 a:hover {
+          color: #597686 !important; }
+    .ticket_form .venue_name_cont .date {
+      color: #0099FF;
+      font-size: 16px;
+      font-weight: bold;
+      padding-top: 8px; }
+  .ticket_form .form_cont {
+    /* Submit Button */ }
+    .ticket_form .form_cont .ticket_table {
+      width: 100%; }
+      .ticket_form .form_cont .ticket_table tr {
+        border-bottom: 1px dashed #d7d7d7; }
+        .ticket_form .form_cont .ticket_table tr:first-child, .ticket_form .form_cont .ticket_table tr:last-child {
+          border-bottom-style: solid; }
+        .ticket_form .form_cont .ticket_table tr:first-child {
+          border-bottom: none; }
+      .ticket_form .form_cont .ticket_table th {
+        background-color: #ebebeb;
+        color: #acacac;
+        font-size: 11px;
+        height: 22px;
+        text-align: left;
+        text-transform: uppercase; }
+        .ticket_form .form_cont .ticket_table th.ticket_type {
+          padding-left: 10px;
+          width: 180px; }
+        .ticket_form .form_cont .ticket_table th.show_time {
+          width: 205px; }
+        .ticket_form .form_cont .ticket_table th.ages {
+          text-align: center;
+          width: 35px; }
+        .ticket_form .form_cont .ticket_table th.price {
+          text-align: right;
+          width: 65px; }
+        .ticket_form .form_cont .ticket_table th.fee {
+          text-align: right;
+          width: 65px; }
+        .ticket_form .form_cont .ticket_table th.quantity {
+          text-align: right;
+          padding-right: 5px;
+          width: 115px; }
+      .ticket_form .form_cont .ticket_table td {
+        color: #252525;
+        font-family: "Roboto Light", Arial, sans-serif;
+        font-size: 14px;
+        padding: 8px 0;
+        vertical-align: top; }
+        .ticket_form .form_cont .ticket_table td.ticket_type {
+          padding-top: 14px;
+          text-align: left; }
+          .ticket_form .form_cont .ticket_table td.ticket_type .more_info_cont {
+            display: block; }
+            .ticket_form .form_cont .ticket_table td.ticket_type .more_info_cont .link {
+              font-size: 11px; }
+              .ticket_form .form_cont .ticket_table td.ticket_type .more_info_cont .link span {
+                border-bottom: 1px dotted #8ea8b5;
+                color: #8ea8b5;
+                cursor: pointer;
+                text-decoration: none; }
+                .ticket_form .form_cont .ticket_table td.ticket_type .more_info_cont .link span:hover {
+                  border-bottom: 1px dotted #000000;
+                  color: #000000; }
+            .ticket_form .form_cont .ticket_table td.ticket_type .more_info_cont p {
+              color: #959595;
+              font-size: 11px;
+              line-height: 100%;
+              padding: 5px 0 0;
+              width: 175px; }
+        .ticket_form .form_cont .ticket_table td.show_time {
+          padding-top: 14px; }
+        .ticket_form .form_cont .ticket_table td.ages {
+          padding-top: 14px;
+          text-align: center; }
+        .ticket_form .form_cont .ticket_table td.price, .ticket_form .form_cont .ticket_table td.fee {
+          padding-top: 14px;
+          text-align: right; }
+        .ticket_form .form_cont .ticket_table td.quantity {
+          line-height: 15px;
+          text-align: right; }
+          .ticket_form .form_cont .ticket_table td.quantity span {
+            display: block;
+            padding: 7px 0; }
+          .ticket_form .form_cont .ticket_table td.quantity select {
+            border: 1px solid #c4c3c3;
+            font-family: "Roboto Light", Arial, sans-serif;
+            font-size: 14px;
+            padding: 5px 8px 5px 0;
+            width: 85px;
+            -webkit-border-radius: 4px;
+            border-radius: 4px;
+            text-indent: 6px;
+            line-height: 24px; }
+    .ticket_form .form_cont .submit_button {
+      border-bottom: 1px solid #adc0c9;
+      padding: 8px 0;
+      position: relative;
+      -webkit-text-size-adjust: none; }
+      .ticket_form .form_cont .submit_button .error_msg {
+        bottom: 14px;
+        color: red;
+        right: 175px;
+        position: absolute; }
+      .ticket_form .form_cont .submit_button .btn_orange {
+        float: right;
+        font-size: 16px;
+        font-weight: bold;
+        text-transform: uppercase;
+        width: 165px;
+        -webkit-appearance: none; }
+  .ticket_form h2 {
+    border-bottom: 1px dashed #adc0c9;
+    color: #0099FF;
+    font-size: 23px;
+    font-weight: normal;
+    line-height: 27px;
+    padding: 10px 0 8px;
+    margin-bottom: 10px; }
+  .ticket_form .ticket_photo {
+    float: left;
+    height: 100%;
+    margin-right: 15px;
+    width: 100px; }
+    .ticket_form .ticket_photo img {
+      width: 100px; }
+  .ticket_form .ticket_info {
+    color: #252525;
+    float: right;
+    font-family: "Roboto Light", "Arimo", Arial, sans-serif;
+    font-size: 13px;
+    line-height: 16px;
+    width: 565px; }
+    .ticket_form .ticket_info.full {
+      width: 100% !important; }
+
+/* Ticket Sidebar - Right Area */
+.ticket_sidebar {
+  float: right;
+  width: 300px;
+  /* Venue Address */
+  /* Map Container */
+  /* Ask Party Earth Container */ }
+  .ticket_sidebar .venue {
+    color: #252525;
+    font-family: "Roboto Light", Arial, sans-serif;
+    font-size: 13px;
+    line-height: 16px; }
+    .ticket_sidebar .venue .name {
+      font-size: 16px;
+      margin-bottom: 5px; }
+    .ticket_sidebar .venue .address {
+      line-height: 14px; }
+      .ticket_sidebar .venue .address p {
+        padding: 0; }
+  .ticket_sidebar .map_cont {
+    border: 1px solid #d3cbcb;
+    background-color: #efebe2;
+    height: 240px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px; }
+  .ticket_sidebar .ask_party_earth {
+    position: relative;
+    width: 300px;
+    /* Question Link */
+    /* Misc Items */
+    /* Form */ }
+    .ticket_sidebar .ask_party_earth .questions {
+      border-bottom: 1px dashed #adc0c9;
+      border-top: 1px solid #adc0c9;
+      color: #0099FF;
+      font-size: 20px;
+      font-weight: bold;
+      margin-top: 11px;
+      padding: 14px 0; }
+      .ticket_sidebar .ask_party_earth .questions span {
+        border-bottom: 1px dotted #0099FF;
+        color: #0099FF;
+        cursor: pointer;
+        text-decoration: none; }
+        .ticket_sidebar .ask_party_earth .questions span:hover {
+          border-bottom: 1px dotted #597686;
+          color: #597686; }
+    .ticket_sidebar .ask_party_earth .required_text {
+      color: #c2c2c2;
+      font-size: 12px;
+      position: absolute;
+      right: 0;
+      top: 18px; }
+    .ticket_sidebar .ask_party_earth .congrats_msg {
+      color: #375363;
+      font-size: 13px;
+      line-height: 17px;
+      margin-top: 10px; }
+    .ticket_sidebar .ask_party_earth form {
+      margin-top: 10px; }
+      .ticket_sidebar .ask_party_earth form ol {
+        position: relative; }
+        .ticket_sidebar .ask_party_earth form ol li .inline-errors {
+          color: red;
+          font-size: 10px;
+          margin-left: 78px; }
+      .ticket_sidebar .ask_party_earth form label {
+        color: #375363;
+        display: inline-block;
+        font-size: 14px;
+        padding-top: 11px;
+        position: absolute;
+        right: 235px;
+        text-align: left; }
+        .ticket_sidebar .ask_party_earth form label abbr {
+          color: #0099FF; }
+      .ticket_sidebar .ask_party_earth form input, .ticket_sidebar .ask_party_earth form textarea {
+        border: 1px solid #cdd9df;
+        float: right;
+        margin-top: 7px;
+        padding: 5px;
+        width: 210px;
+        -webkit-border-radius: 2px;
+        border-radius: 2px; }
+        .ticket_sidebar .ask_party_earth form input:first-child, .ticket_sidebar .ask_party_earth form textarea:first-child {
+          margin: 0; }
+      .ticket_sidebar .ask_party_earth form textarea {
+        height: 90px;
+        resize: none; }
+      .ticket_sidebar .ask_party_earth form img {
+        position: absolute;
+        right: 5px;
+        top: 15px; }
+      .ticket_sidebar .ask_party_earth form .send_btn {
+        border: 1px solid #cdd9df;
+        color: #597686;
+        cursor: pointer;
+        font-size: 16px;
+        margin-top: 7px !important;
+        padding: 5px 0;
+        width: 80px;
+        text-shadow: 1px 1px 0px #ffffff;
+        filter: dropshadow(color=white, offx=1, offy=1);
+        background: #f9fafb;
+        /* Old browsers */
+        background: -moz-linear-gradient(top, #f9fafb 0%, #e5eaed 100%);
+        /* FF3.6+ */
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f9fafb), color-stop(100%, #e5eaed));
+        /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(top, #f9fafb 0%, #e5eaed 100%);
+        /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(top, #f9fafb 0%, #e5eaed 100%);
+        /* Opera 11.10+ */
+        background: -ms-linear-gradient(top, #f9fafb 0%, #e5eaed 100%);
+        /* IE10+ */
+        background: linear-gradient(to bottom, #f9fafb 0%, #e5eaed 100%);
+        /* W3C */
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9fafb', endColorstr='#e5eaed',GradientType=0 );
+        /* IE6-9 */
+        -webkit-border-radius: 2px;
+        border-radius: 2px; }
+        .ticket_sidebar .ask_party_earth form .send_btn:hover {
+          background: #e5eaed;
+          /* Old browsers */
+          background: -moz-linear-gradient(top, #e5eaed 0%, #f9fafb 100%);
+          /* FF3.6+ */
+          background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #e5eaed), color-stop(100%, #f9fafb));
+          /* Chrome,Safari4+ */
+          background: -webkit-linear-gradient(top, #e5eaed 0%, #f9fafb 100%);
+          /* Chrome10+,Safari5.1+ */
+          background: -o-linear-gradient(top, #e5eaed 0%, #f9fafb 100%);
+          /* Opera 11.10+ */
+          background: -ms-linear-gradient(top, #e5eaed 0%, #f9fafb 100%);
+          /* IE10+ */
+          background: linear-gradient(to bottom, #e5eaed 0%, #f9fafb 100%);
+          /* W3C */
+          filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e5eaed', endColorstr='#f9fafb',GradientType=0 );
+          /* IE6-9 */ }
+/* TOOLTIP STYLES
+--------------------------------------------------------------
+:: Basic Styles for the tooltip container and point.
+:: Position and border need to be adjusted for specific usage.
+-------------------------------------------------------------- */
+.dialog_box {
+  position: absolute;
+  z-index: 6000;
+  padding: 4px;
+  background-color: #889aa4;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px; }
+  .dialog_box .dialog_content_wrapper {
+    padding: 11px 14px 9px;
+    background-color: #f7f9fb;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px; }
+  .dialog_box .dialog_img {
+    display: none; }
+  .dialog_box .dialog_content h1 {
+    color: #09f;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 18px;
+    margin: 0 0 6px; }
+  .dialog_box .dialog_content p {
+    padding: 0;
+    font-size: 13px;
+    line-height: 16px !important;
+    /* To override venue styles for  #object_page_info dd p */ }
+  .dialog_box .dialog_content .title {
+    float: left;
+    text-transform: uppercase;
+    line-height: 16px; }
+  .dialog_box .close_btn, .dialog_box .close_btn:hover {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 8px;
+    height: 8px;
+    background-image: url(/assets/characters/liked_by_sprite.png);
+    background-position: -172px -138px; }
+
+.dialog_point {
+  position: absolute;
+  width: 0;
+  height: 0;
+  margin: 0 0 -12px;
+  border-top: 12px solid transparent;
+  border-right: 12px solid transparent;
+  border-bottom: 12px solid transparent;
+  border-left: 12px solid transparent; }
+  .dialog_point .dialog_inner_point {
+    position: absolute;
+    z-index: 6001;
+    width: 0;
+    height: 0;
+    margin: 0 0 10px;
+    border-top: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid transparent;
+    overflow: hidden; }
+
+/* Help Button Tooltip Trigger/Container
+-------------------------------------------------------------- */
+.help_btn {
+  position: relative;
+  z-index: 3000;
+  width: 16px;
+  height: 16px;
+  background-image: url(/assets/content_bg/application_sprite.png);
+  background-position: -27px -185px;
+  /* Position of dialog box and point specific to help trigger */ }
+  .help_btn:hover {
+    background-position: -44px -185px;
+    cursor: pointer; }
+  .help_btn .dialog_box {
+    width: 260px;
+    top: -22px;
+    left: 29px; }
+  .help_btn .dialog_point {
+    top: -4px;
+    left: 18px;
+    border-right: 12px solid #889AA4;
+    border-left: none; }
+    .help_btn .dialog_point .dialog_inner_point {
+      left: 5px;
+      top: -10px;
+      border-right: 10px solid #F7F9FB;
+      border-left: none; }
+
+/* Ratings Help Tooltip */
+#ratings-help p {
+  padding: 0;
+  color: #000;
+  font-size: 11px;
+  line-height: 13px; }
+#ratings-help table {
+  margin: 5px 0 0; }
+#ratings-help td {
+  vertical-align: top; }
+#ratings-help .char-link {
+  text-decoration: none; }
+  #ratings-help .char-link:hover {
+    text-decoration: underline; }
+#ratings-help .lucas-color {
+  color: #3375C4; }
+#ratings-help .adriana-color {
+  color: #B8529E; }
+#ratings-help .jonah-color {
+  color: #73B808; }
+#ratings-help .emma-color {
+  color: #FFCC05; }
+#ratings-help .stars {
+  display: block;
+  width: 66px;
+  height: 14px;
+  margin: 1px 15px 0 0;
+  background-image: url(/assets/characters/char_page_ratings_stars.png); }
+  #ratings-help .stars.row1 {
+    background-position: 0 -47px; }
+  #ratings-help .stars.row2 {
+    background-position: 0 -61px; }
+  #ratings-help .stars.row3 {
+    background-position: 0 -75px; }
+  #ratings-help .stars.row4 {
+    background-position: 0 -89px; }
+  #ratings-help .stars.row5 {
+    background-position: 0 -103px; }
+/*
+
+
+
+*/
+/* TODO: SECURITY CODE TOOLTIP (copied from checkout_form.css) */
+#cc_security_tip {
+  display: inline-block; }
+  #cc_security_tip .help_btn {
+    top: 5px; }
+  #cc_security_tip .dialog_box {
+    width: 514px;
+    top: -13px; }
+  #cc_security_tip .divider {
+    height: 6px; }
+  #cc_security_tip .security-code-help {
+    width: 250px;
+    margin: 0 0 0 15px; }
+    #cc_security_tip .security-code-help img {
+      margin: 6px 0 0; }
+
+.ticket_form {
+  /* Venue Name Container */
+  /* Form Container */
+  /* CC Info */
+  /* Payment & Billing Info */ }
+  .ticket_form .venue_name_cont .edit_order {
+    bottom: 10px;
+    color: #0099FF !important;
+    font-size: 12px;
+    left: 0;
+    position: absolute; }
+    .ticket_form .venue_name_cont .edit_order:hover {
+      color: #597686 !important; }
+  .ticket_form .form_cont {
+    position: relative;
+    /* Purchase Table */
+    /* Ticket Total */ }
+    .ticket_form .form_cont .inline-errors {
+      color: red;
+      font-size: 11px;
+      margin-left: 5px; }
+    .ticket_form .form_cont .edit_order {
+      color: #0099FF;
+      text-decoration: underline;
+      left: 0;
+      position: absolute;
+      top: 0; }
+    .ticket_form .form_cont .purchase_table th.qty {
+      text-align: center;
+      width: 15px !important; }
+    .ticket_form .form_cont .purchase_table th.price {
+      width: 85px; }
+    .ticket_form .form_cont .purchase_table th.fee {
+      width: 73px !important; }
+    .ticket_form .form_cont .purchase_table th.total {
+      width: 100px;
+      padding-right: 5px;
+      text-align: right; }
+    .ticket_form .form_cont .purchase_table td {
+      padding: 8px 0 !important; }
+      .ticket_form .form_cont .purchase_table td.qty {
+        text-align: center; }
+      .ticket_form .form_cont .purchase_table td.total {
+        padding-right: 5px !important;
+        text-align: right; }
+    .ticket_form .form_cont .ticket_total {
+      border-bottom: 1px solid #adc0c9;
+      color: #000000;
+      font-size: 16px;
+      font-weight: bold;
+      line-height: 100%;
+      padding: 12px 5px 10px 0;
+      text-align: right;
+      text-transform: uppercase; }
+      .ticket_form .form_cont .ticket_total .label {
+        padding-right: 38px; }
+  .ticket_form h2 {
+    border-bottom: 1px dashed #adc0c9;
+    color: #0099FF;
+    font-size: 23px;
+    font-weight: normal;
+    line-height: 27px;
+    padding: 10px 0 5px;
+    margin-bottom: 15px;
+    -webkit-text-size-adjust: none !important; }
+    .ticket_form h2 span {
+      color: #c2c2c2;
+      font-size: 12px; }
+  .ticket_form .payment_info {
+    /* Error Message */
+    /* Inputs & Labels */
+    /* Credit Card Info */
+    /* Billing Info */
+    /* Delivery Info */
+    /* Email Info */
+    /* Submit Button & Errors */ }
+    .ticket_form .payment_info .msg_cont {
+      text-align: center;
+      width: 680px; }
+      .ticket_form .payment_info .msg_cont .error_msg {
+        border: 2px solid red;
+        color: red;
+        display: none;
+        font-weight: bold;
+        margin-top: 10px;
+        padding: 5px; }
+    .ticket_form .payment_info label {
+      color: #375363;
+      display: inline-block;
+      font-size: 14px;
+      margin-right: 13px;
+      text-align: right;
+      width: 180px; }
+    .ticket_form .payment_info input, .ticket_form .payment_info select {
+      border: 1px solid #cdd9df;
+      color: #252525;
+      display: inline-block;
+      margin-bottom: 8px;
+      padding: 5px 10px;
+      width: 170px;
+      -webkit-border-radius: 2px;
+      border-radius: 2px; }
+      .ticket_form .payment_info input.cc_type, .ticket_form .payment_info select.cc_type {
+        width: 158px; }
+      .ticket_form .payment_info input.cc_number, .ticket_form .payment_info select.cc_number {
+        width: 136px; }
+      .ticket_form .payment_info input.cc_month, .ticket_form .payment_info select.cc_month {
+        width: 67px; }
+      .ticket_form .payment_info input.cc_year, .ticket_form .payment_info select.cc_year {
+        width: 77px; }
+      .ticket_form .payment_info input.cc_month, .ticket_form .payment_info select.cc_month {
+        margin-right: 10px; }
+      .ticket_form .payment_info input.cc_cvc, .ticket_form .payment_info select.cc_cvc {
+        width: 30px; }
+      .ticket_form .payment_info input.cc_fname, .ticket_form .payment_info input.cc_lname, .ticket_form .payment_info input.cc_address1, .ticket_form .payment_info input.cc_address2, .ticket_form .payment_info input.cc_city, .ticket_form .payment_info select.cc_fname, .ticket_form .payment_info select.cc_lname, .ticket_form .payment_info select.cc_address1, .ticket_form .payment_info select.cc_address2, .ticket_form .payment_info select.cc_city {
+        width: 240px; }
+      .ticket_form .payment_info input.cc_state, .ticket_form .payment_info input.cc_zip, .ticket_form .payment_info select.cc_state, .ticket_form .payment_info select.cc_zip {
+        width: 60px; }
+      .ticket_form .payment_info input.cc_phone, .ticket_form .payment_info select.cc_phone {
+        width: 150px; }
+    .ticket_form .payment_info select {
+      line-height: 20px;
+      padding: 5px 8px 5px 0;
+      text-indent: 6px; }
+    .ticket_form .payment_info .credit_card_info {
+      border-bottom: 1px solid #adc0c9;
+      padding-bottom: 10px;
+      position: relative; }
+      .ticket_form .payment_info .credit_card_info .cc_image {
+        height: 40px;
+        margin: 0 0 15px 197px;
+        width: 320px; }
+        .ticket_form .payment_info .credit_card_info .cc_image .cc_mastercard,
+        .ticket_form .payment_info .credit_card_info .cc_image .cc_visa,
+        .ticket_form .payment_info .credit_card_info .cc_image .cc_amex,
+        .ticket_form .payment_info .credit_card_info .cc_image .cc_discover {
+          cursor: pointer;
+          float: left;
+          height: 40px;
+          padding-right: 8px; }
+        .ticket_form .payment_info .credit_card_info .cc_image .cc_mastercard {
+          background: url(/assets/tickets/pe_www_tickets_mastercard.png) no-repeat;
+          width: 62px; }
+        .ticket_form .payment_info .credit_card_info .cc_image .cc_visa {
+          background: url(/assets/tickets/pe_www_tickets_visa.png) no-repeat;
+          width: 62px; }
+        .ticket_form .payment_info .credit_card_info .cc_image .cc_amex {
+          background: url(/assets/tickets/pe_www_tickets_amex.png) no-repeat;
+          width: 40px; }
+        .ticket_form .payment_info .credit_card_info .cc_image .cc_discover {
+          background: url(/assets/tickets/pe_www_tickets_discover.png) no-repeat;
+          width: 63px; }
+      .ticket_form .payment_info .credit_card_info .card_id .inline-success {
+        bottom: 24px;
+        left: 273px;
+        position: absolute; }
+    .ticket_form .payment_info .billing_info {
+      border-bottom: 1px dashed #d7d7d7;
+      padding-bottom: 6px; }
+    .ticket_form .payment_info .delivery_info {
+      position: relative; }
+      .ticket_form .payment_info .delivery_info ul {
+        border-bottom: 1px dashed #d7d7d7;
+        height: 50px;
+        margin-top: 14px;
+        padding-bottom: 6px; }
+        .ticket_form .payment_info .delivery_info ul li {
+          position: relative; }
+          .ticket_form .payment_info .delivery_info ul li label {
+            float: left; }
+            .ticket_form .payment_info .delivery_info ul li label.will_call {
+              bottom: -5px;
+              right: -13px;
+              position: absolute; }
+            .ticket_form .payment_info .delivery_info ul li label input {
+              border: none !important;
+              margin-top: 2px;
+              position: absolute;
+              right: 469px;
+              width: 13px; }
+            .ticket_form .payment_info .delivery_info ul li label span {
+              margin-top: 1px;
+              position: absolute;
+              right: 0;
+              text-align: left;
+              width: 465px; }
+      .ticket_form .payment_info .delivery_info .no_options {
+        height: 26px; }
+        .ticket_form .payment_info .delivery_info .no_options span {
+          color: #375363;
+          display: block;
+          padding-top: 1px; }
+    .ticket_form .payment_info .email_info {
+      margin-top: 14px;
+      padding-bottom: 14px;
+      position: relative; }
+      .ticket_form .payment_info .email_info .email_text {
+        color: #375363;
+        margin-left: 197px; }
+      .ticket_form .payment_info .email_info .inline-success {
+        left: 393px;
+        position: absolute;
+        top: 8px; }
+      .ticket_form .payment_info .email_info .inline-errors {
+        margin-left: 192px; }
+    .ticket_form .payment_info .action_cont {
+      border-top: 1px solid #d7d7d7;
+      padding-top: 14px;
+      /* Error & Success Message */ }
+      .ticket_form .payment_info .action_cont .terms {
+        color: #252525;
+        font-size: 11px;
+        float: left;
+        margin-top: 7px; }
+        .ticket_form .payment_info .action_cont .terms a {
+          color: #464646; }
+          .ticket_form .payment_info .action_cont .terms a:hover {
+            text-decoration: none; }
+      .ticket_form .payment_info .action_cont .btn_orange {
+        float: right;
+        font-size: 16px;
+        font-weight: bold;
+        text-transform: uppercase;
+        width: 170px; }
+      .ticket_form .payment_info .action_cont .msg_cont {
+        text-align: center;
+        width: 680px; }
+        .ticket_form .payment_info .action_cont .msg_cont .success_msg {
+          border: 2px solid green;
+          color: green;
+          display: none;
+          font-weight: bold;
+          margin-top: 10px;
+          padding: 5px; }
+    .ticket_form .payment_info .inline-errors {
+      color: red;
+      font-size: 11px;
+      padding-left: 5px; }
+
+/* Ticket Sidebar - Right Area */
+.ticket_sidebar .timer_cont {
+  background-color: #fff9d0;
+  margin-top: 10px;
+  padding: 10px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px; }
+  .ticket_sidebar .timer_cont .timer {
+    color: #ff9000;
+    float: left;
+    font-family: "Roboto Light", Arial, sans-serif;
+    font-size: 60px;
+    letter-spacing: -3px;
+    margin-top: 14px;
+    text-align: right;
+    width: 105px; }
+  .ticket_sidebar .timer_cont .info {
+    color: #959595;
+    float: left;
+    font-size: 11px;
+    line-height: 12px;
+    margin-left: 10px;
+    text-align: left;
+    width: 165px; }
