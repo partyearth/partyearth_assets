@@ -106,6 +106,15 @@
   width: 15px !important;
   margin-top: 0 !important;
   right: 460px !important; }
+
+.silver .btn_text {
+  text-shadow: none !important; }
+
+.blue .btn_text {
+  text-shadow: none !important; }
+
+.orange .btn_text {
+  text-shadow: none !important; }
 .map_controls #result_types {
   margin: 6px 0 2px; }
 

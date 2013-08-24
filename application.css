@@ -2309,6 +2309,8 @@ div.fake_link:hover {
       color: #8EA8B5; }
       .breadcrumbs li a:hover, .breadcrumbs li a:link:hover, .breadcrumbs li a:visited:hover {
         color: #6c8898; }
+    .breadcrumbs li:last-child:after {
+      content: '' !important; }
 
 /* BEGIN GENERIC BUTTON STYLES
 -------------------------------------------------------------------
@@ -2754,6 +2756,8 @@ button,
   cursor: pointer;
   position: absolute;
   top: 51px; }
+  .buy_sml_cont.events {
+    bottom: 43px !important; }
   .buy_sml_cont .buy_ticket,
   .buy_sml_cont .buy_ticket:link,
   .buy_sml_cont .buy_ticket:visited {
@@ -3379,6 +3383,8 @@ input, select, textarea {
       #masthead #main_nav li.current_city {
         width: 131px;
         padding: 0; }
+        #masthead #main_nav li.current_city .top {
+          color: #0099FF !important; }
         #masthead #main_nav li.current_city a, #masthead #main_nav li.current_city a:visited, #masthead #main_nav li.current_city .fake_link {
           color: #0099FF; }
           #masthead #main_nav li.current_city a:hover, #masthead #main_nav li.current_city a:visited:hover, #masthead #main_nav li.current_city .fake_link:hover {

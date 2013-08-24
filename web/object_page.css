@@ -2179,23 +2179,52 @@
           padding: 0; }
       .map_tooltip .main .details .liked_by, .map_popup .main .details .liked_by {
         position: absolute;
-        bottom: 10px;
+        bottom: 7px;
         padding: 5px 0 0;
         border-top: 1px dashed #adc0c9; }
+        .map_tooltip .main .details .liked_by dt, .map_popup .main .details .liked_by dt {
+          float: left;
+          margin-bottom: 2px;
+          color: #8ea8b5;
+          font-size: 9px;
+          line-height: 11px;
+          text-transform: uppercase; }
         .map_tooltip .main .details .liked_by dd, .map_popup .main .details .liked_by dd {
           float: left; }
         .map_tooltip .main .details .liked_by .character_cont, .map_popup .main .details .liked_by .character_cont {
           cursor: default !important;
+          float: left;
+          margin: 0 4px 0 0;
+          padding: 0 0 2px;
+          border-bottom: 2px solid;
           /* Force Disabled styles */ }
           .map_tooltip .main .details .liked_by .character_cont .character, .map_popup .main .details .liked_by .character_cont .character {
+            display: block;
+            width: 25px;
+            height: 25px;
+            background-image: url(/assets/characters/liked_by_sprite.png);
+            border: 1px solid #adc0c9;
+            border-radius: 2px;
             cursor: default !important; }
+          .map_tooltip .main .details .liked_by .character_cont.lucas, .map_popup .main .details .liked_by .character_cont.lucas {
+            border-color: #4175ab; }
+          .map_tooltip .main .details .liked_by .character_cont.adriana, .map_popup .main .details .liked_by .character_cont.adriana {
+            border-color: #c675b1; }
+          .map_tooltip .main .details .liked_by .character_cont.jonah, .map_popup .main .details .liked_by .character_cont.jonah {
+            border-color: #95c946; }
+          .map_tooltip .main .details .liked_by .character_cont.emma, .map_popup .main .details .liked_by .character_cont.emma {
+            border-color: #ffb637; }
           .map_tooltip .main .details .liked_by .character_cont.lucas .character, .map_popup .main .details .liked_by .character_cont.lucas .character {
+            background-position: -1px -3px;
             border-color: #4175ab !important; }
           .map_tooltip .main .details .liked_by .character_cont.adriana .character, .map_popup .main .details .liked_by .character_cont.adriana .character {
+            background-position: -31px -3px;
             border-color: #c675b1 !important; }
           .map_tooltip .main .details .liked_by .character_cont.jonah .character, .map_popup .main .details .liked_by .character_cont.jonah .character {
+            background-position: -61px -3px;
             border-color: #95c946 !important; }
           .map_tooltip .main .details .liked_by .character_cont.emma .character, .map_popup .main .details .liked_by .character_cont.emma .character {
+            background-position: -91px -3px;
             border-color: #ffb637 !important; }
           .map_tooltip .main .details .liked_by .character_cont.disabled, .map_popup .main .details .liked_by .character_cont.disabled {
             border-color: #dae4e9 !important; }
