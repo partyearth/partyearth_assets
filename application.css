@@ -2757,7 +2757,8 @@ button,
   position: absolute;
   top: 51px; }
   .buy_sml_cont.events {
-    bottom: 43px !important; }
+    bottom: 43px !important;
+    top: auto !important; }
   .buy_sml_cont .buy_ticket,
   .buy_sml_cont .buy_ticket:link,
   .buy_sml_cont .buy_ticket:visited {
@@ -4616,8 +4617,11 @@ formfield ol:before, .formfield ol:after,
     padding: 0 !important; }
 
 #right_sidebar {
+  /* Los Feliz Advert */
   /* Advertisement.com Ads */
   /* Google Ads */ }
+  #right_sidebar .los_feliz_advert {
+    margin: -10px 0 0 -10px; }
   #right_sidebar .advert_pod {
     margin-bottom: 12px; }
     #right_sidebar .advert_pod .ad_300x250 {

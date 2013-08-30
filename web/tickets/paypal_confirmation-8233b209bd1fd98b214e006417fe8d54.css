@@ -1,0 +1,27 @@
+.paypal_cont {
+  padding: 10px 0; }
+  .paypal_cont .logo {
+    background: url(/assets/tickets/paypal_logo-7238da80d244b856e41e549bbf164d28.png) no-repeat;
+    float: left;
+    margin-top: 4px;
+    height: 33px;
+    width: 122px; }
+  .paypal_cont .text {
+    color: #597686;
+    font-size: 15px;
+    float: left;
+    line-height: 19px;
+    margin-left: 20px;
+    width: 533px; }
+
+.btn_cont {
+  border-top: 1px solid #d7d7d7;
+  padding-top: 10px;
+  width: 100%; }
+  .btn_cont .btn_orange {
+    float: right;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 200px;
+    -webkit-appearance: none; }

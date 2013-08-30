@@ -271,80 +271,145 @@ table {
   top: 0;
   right: 0; }
 
-.admin_pages_content .left_column abbr {
-  color: #000000; }
-.admin_pages_content .left_column li {
-  position: relative; }
-  .admin_pages_content .left_column li .inline-success {
-    top: 6px;
-    left: 0;
-    position: absolute; }
-.admin_pages_content .left_column .ticket_spacing {
-  height: 30px !important; }
-.admin_pages_content .left_column #ticket_type, .admin_pages_content .left_column #event_date {
-  width: 550px !important; }
-.admin_pages_content .left_column #ticket_type .inline-success {
-  left: 95px; }
-.admin_pages_content .left_column #event_date .inline-success {
-  left: 25px; }
-.admin_pages_content .left_column #TicketEndDate {
-  width: 550px; }
-  .admin_pages_content .left_column #TicketEndDate .inline-success {
-    left: 85px; }
-.admin_pages_content .left_column #ticket_price {
-  width: 250px; }
-  .admin_pages_content .left_column #ticket_price .inline-success {
-    left: 50px; }
-.admin_pages_content .left_column #ticket_fee {
-  width: 250px; }
-  .admin_pages_content .left_column #ticket_fee .inline-success {
-    left: 100px; }
-.admin_pages_content .left_column #ticket_max {
-  margin-right: 110px;
-  width: 250px; }
-  .admin_pages_content .left_column #ticket_max .inline-success {
-    left: 205px; }
-.admin_pages_content .left_column #ticket_quantity {
-  margin-right: 110px;
-  width: 250px; }
-  .admin_pages_content .left_column #ticket_quantity .inline-success {
-    left: 110px; }
-.admin_pages_content .left_column #ticket_sold {
-  margin-right: 110px;
-  width: 250px; }
-  .admin_pages_content .left_column #ticket_sold .inline-success {
-    left: 145px; }
-.admin_pages_content .left_column #availability,
-.admin_pages_content .left_column #ticket_status,
-.admin_pages_content .left_column #email_tickets,
-.admin_pages_content .left_column #will_call {
-  left: 572px;
-  position: absolute;
-  width: 150px; }
-.admin_pages_content .left_column #ticket_status {
-  top: 227px; }
-.admin_pages_content .left_column #availability {
-  top: 316px; }
-.admin_pages_content .left_column #email_tickets {
-  top: 314px; }
-.admin_pages_content .left_column #will_call {
-  top: 334px; }
-.admin_pages_content .left_column #percentage {
-  height: 50px;
-  margin: 0;
-  width: 199px; }
-.admin_pages_content .left_column .options {
-  position: absolute;
-  bottom: 22px;
-  left: 640px; }
-.admin_pages_content .left_column .ticket_spacing {
-  height: 30px; }
-.admin_pages_content .left_column .fragment {
-  float: left; }
-  .admin_pages_content .left_column .fragment label {
-    font-size: 12px;
-    font-weight: normal; }
-.admin_pages_content .left_column .ticket_id {
-  color: #000000;
-  display: block;
-  margin-top: -24px; }
+.admin_pages_content .left_column {
+  /* Promo */
+  /* Fees */ }
+  .admin_pages_content .left_column abbr {
+    color: #000000; }
+  .admin_pages_content .left_column li {
+    position: relative; }
+    .admin_pages_content .left_column li .inline-success {
+      top: 6px;
+      left: 0;
+      position: absolute; }
+  .admin_pages_content .left_column .ticket_spacing {
+    height: 30px !important; }
+  .admin_pages_content .left_column #ticket_type, .admin_pages_content .left_column #event_date {
+    width: 550px !important; }
+  .admin_pages_content .left_column #ticket_type .inline-success {
+    left: 95px; }
+  .admin_pages_content .left_column #event_date .inline-success {
+    left: 25px; }
+  .admin_pages_content .left_column #TicketEndDate {
+    width: 300px; }
+    .admin_pages_content .left_column #TicketEndDate .inline-success {
+      left: 85px; }
+  .admin_pages_content .left_column #ages {
+    width: 246px; }
+  .admin_pages_content .left_column #ticket_price {
+    width: 250px; }
+    .admin_pages_content .left_column #ticket_price .inline-success {
+      left: 50px; }
+  .admin_pages_content .left_column #ticket_fee {
+    width: 230px; }
+    .admin_pages_content .left_column #ticket_fee .inline-success {
+      left: 100px; }
+  .admin_pages_content .left_column #ticket_max {
+    width: 250px; }
+    .admin_pages_content .left_column #ticket_max .inline-success {
+      left: 205px; }
+  .admin_pages_content .left_column #ticket_quantity {
+    width: 199px; }
+    .admin_pages_content .left_column #ticket_quantity .inline-success {
+      left: 110px; }
+  .admin_pages_content .left_column #ticket_sold {
+    width: 250px;
+    margin-right: 0; }
+    .admin_pages_content .left_column #ticket_sold .inline-success {
+      left: 145px; }
+  .admin_pages_content .left_column #promo_codes ol li {
+    display: block;
+    width: 100%; }
+  .admin_pages_content .left_column #availability,
+  .admin_pages_content .left_column #ticket_status,
+  .admin_pages_content .left_column #email_tickets,
+  .admin_pages_content .left_column #will_call {
+    left: 572px;
+    position: absolute;
+    width: 150px; }
+  .admin_pages_content .left_column #ticket_status {
+    top: 227px; }
+  .admin_pages_content .left_column #availability {
+    top: 316px; }
+  .admin_pages_content .left_column #email_tickets {
+    top: 314px; }
+  .admin_pages_content .left_column #will_call {
+    top: 334px; }
+  .admin_pages_content .left_column #percentage {
+    height: 50px;
+    margin: 0;
+    width: 199px; }
+  .admin_pages_content .left_column .ticket_spacing {
+    height: 30px; }
+  .admin_pages_content .left_column .fragment {
+    float: left; }
+    .admin_pages_content .left_column .fragment label {
+      font-size: 12px;
+      font-weight: normal; }
+  .admin_pages_content .left_column .ticket_id {
+    color: #000000;
+    display: block;
+    margin-top: -24px; }
+  .admin_pages_content .left_column p.small {
+    font-size: 11px; }
+  .admin_pages_content .left_column .fee_spacer {
+    margin: 10px 0; }
+  .admin_pages_content .left_column .three_column h2 {
+    font-size: 22px;
+    margin: 10px 0; }
+  .admin_pages_content .left_column .three_column li {
+    float: left;
+    width: 250px; }
+  .admin_pages_content .left_column .three_column .total_cont {
+    box-shadow: none;
+    border: none;
+    padding: 0;
+    margin: 3px 0 0 5px;
+    background-color: #D5D9DC;
+    width: 194px;
+    font-size: 16px; }
+    .admin_pages_content .left_column .three_column .total_cont div {
+      margin-top: 2px; }
+  .admin_pages_content .left_column .fee_row {
+    display: block;
+    font-size: 22px;
+    padding: 10px 0;
+    width: 100%; }
+    .admin_pages_content .left_column .fee_row span {
+      font-weight: normal; }
+  .admin_pages_content .left_column .options li {
+    box-shadow: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    background-color: #D5D9DC; }
+
+/* Promo Fields */
+.form_fields {
+  margin: 0; }
+  .form_fields li .inline-success {
+    left: auto !important;
+    right: 5px !important; }
+  .form_fields #PromoId {
+    width: 350px; }
+  .form_fields #PromoPercentageType {
+    margin-top: 19px;
+    width: 60px; }
+  .form_fields #PromoDiscount {
+    width: 245px; }
+  .form_fields #PromoUsesLimit {
+    width: 134px; }
+  .form_fields #ticket_promo_code_has_unset_uses_limit_input {
+    margin-top: 25px;
+    width: 110px; }
+  .form_fields #ticket_promo_code_ticket_types_input ol li {
+    display: block !important; }
+  .form_fields .left_column {
+    float: left;
+    width: 49%; }
+  .form_fields .right_column {
+    float: right;
+    width: 49%; }
+
+.promo_save {
+  float: right; }

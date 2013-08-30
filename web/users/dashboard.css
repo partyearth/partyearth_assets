@@ -36,7 +36,7 @@ form input, form select {
   border: 1px solid #CDD9DF;
   color: #252525;
   display: inline-block;
-  margin-bottom: 8px;
+  margin-bottom: 6px;
   padding: 5px 10px;
   width: 350px;
   -webkit-border-radius: 2px;
@@ -89,21 +89,21 @@ form .submit_cont {
     .payment_method .payment_input .choices-group li label {
       font-size: 16px;
       font-weight: bold;
-      margin: 0;
+      margin: 0 0 8px 0;
       text-align: left;
       width: auto; }
       .payment_method .payment_input .choices-group li label input {
         margin-top: 1px;
         width: 20px; }
     .payment_method .payment_input .choices-group li:nth-child(1) {
-      width: 140px; }
+      width: 150px; }
     .payment_method .payment_input .choices-group li:nth-child(2) {
-      width: 85px; }
+      width: 95px; }
     .payment_method .payment_input .choices-group li:nth-child(3) {
-      width: 80px; }
+      width: 90px; }
 .payment_method #client_payment_information_attributes_bank_account_type_input .choices-group {
   float: left;
-  margin: -19px 0 0 210px; }
+  margin: -19px 0 6px 210px; }
   .payment_method #client_payment_information_attributes_bank_account_type_input .choices-group li {
     display: inline-block;
     position: relative; }
@@ -153,7 +153,7 @@ form .submit_cont {
   float: right;
   font-size: 11px;
   line-height: 15px;
-  margin: -10px 126px 10px 0;
+  margin: 0 126px 10px 0;
   width: 340px; }
 
 .disclaimer {
@@ -175,28 +175,27 @@ form {
       position: absolute;
       top: 7px; }
   form #client_tax_information_attributes_full_name_input label,
-  form #client_tax_information_attributes_business_name_input label {
+  form #client_tax_information_attributes_business_name_input label,
+  form #client_tax_information_attributes_signature_input label {
     margin-top: -2px; }
   form #client_tax_information_attributes_taxpayer_id_no_input .inline-errors {
-    right: 39px;
-    top: -38px; }
+    right: 54px;
+    top: -28px; }
   form #client_tax_information_attributes_taxpayer_id_no_input .inline-success {
-    top: -36px;
-    right: 43px; }
+    top: -25px;
+    right: 58px; }
   form input {
-    margin-bottom: 15px;
     vertical-align: top;
     width: 320px; }
     form input#TaxIdentificationNo {
       bottom: 0;
       height: 16px;
       position: absolute;
-      right: 60px;
+      right: 75px;
       width: 72px; }
     form input#client_tax_information_attributes_permanent_address_attributes_zip_code {
       width: 50px; }
   form select {
-    margin-bottom: 15px;
     padding: 4px 10px;
     width: 290px; }
     form select#client_tax_information_attributes_taxpayer_id_type {
@@ -209,6 +208,8 @@ form {
       display: block;
       font-size: 11px;
       margin-top: -5px; }
+  form .btn_submit {
+    margin: 0; }
 /*
 
 
@@ -314,6 +315,7 @@ p.inline-errors {
     margin: 10px 0;
     font-size: 15px; }
     .dashboard_sidebar .your_account ul li {
+      color: #375363;
       padding: 5px 0;
       position: relative; }
       .dashboard_sidebar .your_account ul li .arrow {
@@ -512,7 +514,7 @@ p.inline-errors {
       width: 165px; }
 
 /* Detailed Title */
-.detailed_title {
+.detailed_title, .promote_event {
   border-bottom: 1px dashed #d7d7d7;
   border-top: 1px solid #adc0c9;
   color: #0099FF;
@@ -600,8 +602,23 @@ p.inline-errors {
     font-size: 11px;
     display: block;
     text-align: left;
-    margin: -10px 0 10px 214px; }
+    margin: 0 0 10px 214px; }
   .password_cont .password .inline-success {
     right: 108px; }
   .password_cont .password .inline-errors {
     right: 104px; }
+
+/* Promote Event */
+.promote {
+  margin: 10px 0;
+  font-size: 15px; }
+  .promote li {
+    color: #375363;
+    padding: 5px 0;
+    position: relative; }
+    .promote li .arrow {
+      color: #ff9000; }
+    .promote li a {
+      color: #445e6d; }
+      .promote li a:hover {
+        text-decoration: none; }

@@ -6,7 +6,7 @@
   /* Ticket Form */
   /* Additional Info */ }
   .ticket_form .venue_name_cont {
-    height: 60px;
+    min-height: 60px;
     position: relative; }
     .ticket_form .venue_name_cont h1 {
       font-size: 22px;
@@ -22,9 +22,10 @@
       color: #0099FF;
       font-size: 16px;
       font-weight: bold;
-      padding-top: 8px; }
+      padding: 8px 0; }
   .ticket_form .form_cont {
-    /* Submit Button */ }
+    position: relative;
+    /* Promo, Total & Submit Button */ }
     .ticket_form .form_cont .ticket_table {
       width: 100%; }
       .ticket_form .form_cont .ticket_table tr {
@@ -109,23 +110,115 @@
             border-radius: 4px;
             text-indent: 6px;
             line-height: 24px; }
-    .ticket_form .form_cont .submit_button {
+    .ticket_form .form_cont .submit_promo_cont,
+    .ticket_form .form_cont .total_promo_cont {
       border-bottom: 1px solid #adc0c9;
+      min-height: 34px;
       padding: 8px 0;
       position: relative;
-      -webkit-text-size-adjust: none; }
-      .ticket_form .form_cont .submit_button .error_msg {
-        bottom: 14px;
-        color: red;
-        right: 175px;
-        position: absolute; }
-      .ticket_form .form_cont .submit_button .btn_orange {
-        float: right;
-        font-size: 16px;
-        font-weight: bold;
-        text-transform: uppercase;
-        width: 165px;
-        -webkit-appearance: none; }
+      -webkit-text-size-adjust: none;
+      /* Submit Button */
+      /* Promo Code */ }
+      .ticket_form .form_cont .submit_promo_cont .submit_button,
+      .ticket_form .form_cont .total_promo_cont .submit_button {
+        position: absolute;
+        right: 0;
+        top: 8px;
+        width: 400px; }
+        .ticket_form .form_cont .submit_promo_cont .submit_button .error_msg,
+        .ticket_form .form_cont .total_promo_cont .submit_button .error_msg {
+          top: 7px;
+          color: red;
+          right: 175px;
+          position: absolute; }
+          .ticket_form .form_cont .submit_promo_cont .submit_button .error_msg.two_lines,
+          .ticket_form .form_cont .total_promo_cont .submit_button .error_msg.two_lines {
+            top: 4px;
+            line-height: 14px; }
+        .ticket_form .form_cont .submit_promo_cont .submit_button .btn_orange,
+        .ticket_form .form_cont .total_promo_cont .submit_button .btn_orange {
+          float: right;
+          font-size: 16px;
+          font-weight: bold;
+          text-transform: uppercase;
+          width: 165px;
+          -webkit-appearance: none; }
+      .ticket_form .form_cont .submit_promo_cont .promo_cont,
+      .ticket_form .form_cont .total_promo_cont .promo_cont {
+        float: left;
+        margin-top: 3px;
+        z-index: 1; }
+        .ticket_form .form_cont .submit_promo_cont .promo_cont .fake_link,
+        .ticket_form .form_cont .total_promo_cont .promo_cont .fake_link {
+          margin-top: 4px;
+          text-decoration: underline !important; }
+        .ticket_form .form_cont .submit_promo_cont .promo_cont .promo_fields .promo_input,
+        .ticket_form .form_cont .total_promo_cont .promo_cont .promo_fields .promo_input {
+          border: 1px solid #cdd9df;
+          float: left;
+          padding: 5px;
+          width: 170px;
+          -webkit-border-radius: 2px;
+          border-radius: 2px; }
+        .ticket_form .form_cont .submit_promo_cont .promo_cont .promo_fields .promo_msg,
+        .ticket_form .form_cont .total_promo_cont .promo_cont .promo_fields .promo_msg {
+          float: left;
+          margin: 6px 5px 0 0; }
+        .ticket_form .form_cont .submit_promo_cont .promo_cont .promo_fields .error_msg,
+        .ticket_form .form_cont .total_promo_cont .promo_cont .promo_fields .error_msg {
+          color: red;
+          line-height: 100%; }
+          .ticket_form .form_cont .submit_promo_cont .promo_cont .promo_fields .error_msg span,
+          .ticket_form .form_cont .total_promo_cont .promo_cont .promo_fields .error_msg span {
+            display: inline-block;
+            padding-top: 10px; }
+        .ticket_form .form_cont .submit_promo_cont .promo_cont .promo_fields .btn_promo,
+        .ticket_form .form_cont .total_promo_cont .promo_cont .promo_fields .btn_promo {
+          border: 1px solid #cdd9df;
+          color: #0099FF;
+          cursor: pointer;
+          font-size: 13px;
+          float: left;
+          margin-left: 5px;
+          padding: 4px 10px 3px;
+          text-shadow: 1px 1px 0px #ffffff;
+          filter: dropshadow(color=white, offx=1, offy=1);
+          background: #f9fafb;
+          /* Old browsers */
+          background: -moz-linear-gradient(top, #f9fafb 0%, #e5eaed 100%);
+          /* FF3.6+ */
+          background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f9fafb), color-stop(100%, #e5eaed));
+          /* Chrome,Safari4+ */
+          background: -webkit-linear-gradient(top, #f9fafb 0%, #e5eaed 100%);
+          /* Chrome10+,Safari5.1+ */
+          background: -o-linear-gradient(top, #f9fafb 0%, #e5eaed 100%);
+          /* Opera 11.10+ */
+          background: -ms-linear-gradient(top, #f9fafb 0%, #e5eaed 100%);
+          /* IE10+ */
+          background: linear-gradient(to bottom, #f9fafb 0%, #e5eaed 100%);
+          /* W3C */
+          filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9fafb', endColorstr='#e5eaed',GradientType=0 );
+          /* IE6-9 */
+          -webkit-border-radius: 2px;
+          border-radius: 2px; }
+          .ticket_form .form_cont .submit_promo_cont .promo_cont .promo_fields .btn_promo:hover,
+          .ticket_form .form_cont .total_promo_cont .promo_cont .promo_fields .btn_promo:hover {
+            background: #e5eaed;
+            /* Old browsers */
+            background: -moz-linear-gradient(top, #e5eaed 0%, #f9fafb 100%);
+            /* FF3.6+ */
+            background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #e5eaed), color-stop(100%, #f9fafb));
+            /* Chrome,Safari4+ */
+            background: -webkit-linear-gradient(top, #e5eaed 0%, #f9fafb 100%);
+            /* Chrome10+,Safari5.1+ */
+            background: -o-linear-gradient(top, #e5eaed 0%, #f9fafb 100%);
+            /* Opera 11.10+ */
+            background: -ms-linear-gradient(top, #e5eaed 0%, #f9fafb 100%);
+            /* IE10+ */
+            background: linear-gradient(to bottom, #e5eaed 0%, #f9fafb 100%);
+            /* W3C */
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e5eaed', endColorstr='#f9fafb',GradientType=0 );
+            /* IE6-9 */ }
   .ticket_form h2 {
     border-bottom: 1px dashed #adc0c9;
     color: #0099FF;
@@ -289,6 +382,33 @@
           /* W3C */
           filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e5eaed', endColorstr='#f9fafb',GradientType=0 );
           /* IE6-9 */ }
+.paypal_cont {
+  padding: 10px 0; }
+  .paypal_cont .logo {
+    background: url(/assets/tickets/paypal_logo.png) no-repeat;
+    float: left;
+    margin-top: 4px;
+    height: 33px;
+    width: 122px; }
+  .paypal_cont .text {
+    color: #597686;
+    font-size: 15px;
+    float: left;
+    line-height: 19px;
+    margin-left: 20px;
+    width: 533px; }
+
+.btn_cont {
+  border-top: 1px solid #d7d7d7;
+  padding-top: 10px;
+  width: 100%; }
+  .btn_cont .btn_orange {
+    float: right;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 200px;
+    -webkit-appearance: none; }
 /* TOOLTIP STYLES
 --------------------------------------------------------------
 :: Basic Styles for the tooltip container and point.
@@ -425,7 +545,113 @@
 
 
 
+
 */
+.total_promo_cont {
+  border-bottom: 1px solid #adc0c9;
+  min-height: 27px;
+  padding: 8px 0;
+  position: relative;
+  -webkit-text-size-adjust: none;
+  /* Submit Button */
+  /* Promo Code */ }
+  .total_promo_cont .submit_button {
+    position: absolute;
+    right: 0;
+    top: 8px;
+    width: 400px; }
+    .total_promo_cont .submit_button .error_msg {
+      top: 7px;
+      color: red;
+      right: 175px;
+      position: absolute; }
+    .total_promo_cont .submit_button .btn_orange {
+      float: right;
+      font-size: 16px;
+      font-weight: bold;
+      text-transform: uppercase;
+      width: 165px;
+      -webkit-appearance: none; }
+  .total_promo_cont .promo_cont {
+    float: left;
+    z-index: 1; }
+    .total_promo_cont .promo_cont .fake_link {
+      margin-top: 4px;
+      text-decoration: underline !important; }
+    .total_promo_cont .promo_cont .promo_fields .promo_input {
+      border: 1px solid #cdd9df;
+      float: left;
+      padding: 5px;
+      width: 170px;
+      -webkit-border-radius: 2px;
+      border-radius: 2px; }
+    .total_promo_cont .promo_cont .promo_fields .promo_msg {
+      float: left;
+      margin: 6px 5px 0 0; }
+    .total_promo_cont .promo_cont .promo_fields .error_msg {
+      color: red;
+      line-height: 100%; }
+      .total_promo_cont .promo_cont .promo_fields .error_msg span {
+        display: inline-block;
+        padding-top: 10px; }
+    .total_promo_cont .promo_cont .promo_fields .btn_promo {
+      border: 1px solid #cdd9df;
+      color: #0099FF;
+      cursor: pointer;
+      font-size: 13px;
+      float: left;
+      margin-left: 5px;
+      padding: 4px 10px 3px;
+      text-shadow: 1px 1px 0px #ffffff;
+      filter: dropshadow(color=white, offx=1, offy=1);
+      background: #f9fafb;
+      /* Old browsers */
+      background: -moz-linear-gradient(top, #f9fafb 0%, #e5eaed 100%);
+      /* FF3.6+ */
+      background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f9fafb), color-stop(100%, #e5eaed));
+      /* Chrome,Safari4+ */
+      background: -webkit-linear-gradient(top, #f9fafb 0%, #e5eaed 100%);
+      /* Chrome10+,Safari5.1+ */
+      background: -o-linear-gradient(top, #f9fafb 0%, #e5eaed 100%);
+      /* Opera 11.10+ */
+      background: -ms-linear-gradient(top, #f9fafb 0%, #e5eaed 100%);
+      /* IE10+ */
+      background: linear-gradient(to bottom, #f9fafb 0%, #e5eaed 100%);
+      /* W3C */
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9fafb', endColorstr='#e5eaed',GradientType=0 );
+      /* IE6-9 */
+      -webkit-border-radius: 2px;
+      border-radius: 2px; }
+      .total_promo_cont .promo_cont .promo_fields .btn_promo:hover {
+        background: #e5eaed;
+        /* Old browsers */
+        background: -moz-linear-gradient(top, #e5eaed 0%, #f9fafb 100%);
+        /* FF3.6+ */
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #e5eaed), color-stop(100%, #f9fafb));
+        /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(top, #e5eaed 0%, #f9fafb 100%);
+        /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(top, #e5eaed 0%, #f9fafb 100%);
+        /* Opera 11.10+ */
+        background: -ms-linear-gradient(top, #e5eaed 0%, #f9fafb 100%);
+        /* IE10+ */
+        background: linear-gradient(to bottom, #e5eaed 0%, #f9fafb 100%);
+        /* W3C */
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e5eaed', endColorstr='#f9fafb',GradientType=0 );
+        /* IE6-9 */ }
+  .total_promo_cont .ticket_total {
+    color: #000000;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 100%;
+    position: absolute;
+    right: 5px;
+    top: 15px;
+    text-align: right;
+    text-transform: uppercase; }
+    .total_promo_cont .ticket_total .label {
+      padding-right: 38px; }
+
 /* TODO: SECURITY CODE TOOLTIP (copied from checkout_form.css) */
 #cc_security_tip {
   display: inline-block; }
@@ -448,11 +674,10 @@
   /* CC Info */
   /* Payment & Billing Info */ }
   .ticket_form .venue_name_cont .edit_order {
-    bottom: 10px;
     color: #0099FF !important;
+    display: inline-block;
     font-size: 12px;
-    left: 0;
-    position: absolute; }
+    padding: 8px 0; }
     .ticket_form .venue_name_cont .edit_order:hover {
       color: #597686 !important; }
   .ticket_form .form_cont {
@@ -488,16 +713,7 @@
         padding-right: 5px !important;
         text-align: right; }
     .ticket_form .form_cont .ticket_total {
-      border-bottom: 1px solid #adc0c9;
-      color: #000000;
-      font-size: 16px;
-      font-weight: bold;
-      line-height: 100%;
-      padding: 12px 5px 10px 0;
-      text-align: right;
-      text-transform: uppercase; }
-      .ticket_form .form_cont .ticket_total .label {
-        padding-right: 38px; }
+      display: none !important; }
   .ticket_form h2 {
     border-bottom: 1px dashed #adc0c9;
     color: #0099FF;
@@ -509,7 +725,8 @@
     -webkit-text-size-adjust: none !important; }
     .ticket_form h2 span {
       color: #c2c2c2;
-      font-size: 12px; }
+      font-size: 12px;
+      -webkit-text-size-adjust: none !important; }
   .ticket_form .payment_info {
     /* Error Message */
     /* Inputs & Labels */
@@ -594,10 +811,81 @@
         .ticket_form .payment_info .credit_card_info .cc_image .cc_discover {
           background: url(/assets/tickets/pe_www_tickets_discover.png) no-repeat;
           width: 63px; }
-      .ticket_form .payment_info .credit_card_info .card_id .inline-success {
-        bottom: 24px;
-        left: 273px;
-        position: absolute; }
+      .ticket_form .payment_info .credit_card_info .card_id {
+        position: relative; }
+        .ticket_form .payment_info .credit_card_info .card_id .cvc_hint {
+          background: url(/assets/content_bg/application_sprite.png) no-repeat;
+          background-position: -27px -185px;
+          cursor: pointer;
+          height: 16px;
+          width: 16px;
+          position: absolute;
+          top: 5px;
+          right: 410px; }
+          .ticket_form .payment_info .credit_card_info .card_id .cvc_hint:hover {
+            background-position: -44px -185px; }
+        .ticket_form .payment_info .credit_card_info .card_id .cvc_dialog {
+          background-color: #FFFFFF;
+          border: 2px solid #0099ff;
+          color: #464646;
+          display: none;
+          font-size: 11px;
+          line-height: 14px;
+          padding: 7px 11px;
+          position: absolute;
+          bottom: -205px;
+          left: 282px;
+          width: 255px;
+          -webkit-border-radius: 3px;
+          -moz-border-radius: 3px;
+          border-radius: 3px; }
+          .ticket_form .payment_info .credit_card_info .card_id .cvc_dialog:after, .ticket_form .payment_info .credit_card_info .card_id .cvc_dialog:before {
+            right: 100%;
+            border: solid transparent;
+            content: " ";
+            height: 0;
+            width: 0;
+            position: absolute;
+            pointer-events: none; }
+          .ticket_form .payment_info .credit_card_info .card_id .cvc_dialog:after {
+            border-color: rgba(255, 255, 255, 0);
+            border-right-color: #ffffff;
+            border-width: 10px;
+            top: 50%;
+            margin-top: -82px; }
+          .ticket_form .payment_info .credit_card_info .card_id .cvc_dialog:before {
+            border-color: rgba(0, 153, 255, 0);
+            border-right-color: #0099ff;
+            border-width: 13px;
+            top: 50%;
+            margin-top: -85px; }
+          .ticket_form .payment_info .credit_card_info .card_id .cvc_dialog .close {
+            float: right;
+            cursor: pointer;
+            font-size: 13px;
+            color: #CDD9DF;
+            margin: -4px -6px 0 0; }
+            .ticket_form .payment_info .credit_card_info .card_id .cvc_dialog .close:hover {
+              color: #0099FF; }
+          .ticket_form .payment_info .credit_card_info .card_id .cvc_dialog p {
+            font-size: 14px;
+            font-weight: bold;
+            padding: 0 0 5px 0; }
+          .ticket_form .payment_info .credit_card_info .card_id .cvc_dialog .visa {
+            background: url("http://cdn.partyearth.com/images/security-code/visa.jpg") no-repeat;
+            height: 122px;
+            width: 261px;
+            margin-bottom: 10px; }
+          .ticket_form .payment_info .credit_card_info .card_id .cvc_dialog .amex {
+            background: url("http://cdn.partyearth.com/images/security-code/amex.jpg") no-repeat;
+            height: 122px;
+            width: 261px; }
+        .ticket_form .payment_info .credit_card_info .card_id .inline-errors {
+          padding-left: 22px; }
+        .ticket_form .payment_info .credit_card_info .card_id .inline-success {
+          left: 275px;
+          position: absolute;
+          top: 7px; }
     .ticket_form .payment_info .billing_info {
       border-bottom: 1px dashed #d7d7d7;
       padding-bottom: 6px; }
@@ -655,7 +943,8 @@
         color: #252525;
         font-size: 11px;
         float: left;
-        margin-top: 7px; }
+        margin-top: 7px;
+        -webkit-text-size-adjust: none !important; }
         .ticket_form .payment_info .action_cont .terms a {
           color: #464646; }
           .ticket_form .payment_info .action_cont .terms a:hover {
@@ -737,12 +1026,31 @@
   /* Upcoming Events */
   /* Upcoming Events Footer */ }
   .ticket_form .venue_name_cont {
-    height: 35px; }
+    height: auto !important; }
+    .ticket_form .venue_name_cont h1 {
+      padding-bottom: 15px; }
   .ticket_form .form_cont {
     padding-bottom: 10px; }
+    .ticket_form .form_cont .ticket_total {
+      border-bottom: 1px solid #adc0c9;
+      color: #000000;
+      display: block !important;
+      font-size: 16px;
+      font-weight: bold;
+      line-height: 100%;
+      padding: 12px 5px 10px 0;
+      text-align: right;
+      text-transform: uppercase; }
+      .ticket_form .form_cont .ticket_total .label {
+        padding-right: 38px; }
   .ticket_form .customer_details {
     color: #464646;
-    font-size: 12px; }
+    font-size: 12px;
+    position: relative; }
+    .ticket_form .customer_details .promo_code {
+      position: absolute;
+      top: -38px;
+      left: 0px; }
     .ticket_form .customer_details .delivery_method {
       float: left;
       text-align: left;

@@ -1050,6 +1050,7 @@
 
 */
 #hday_upc .hday_upc_itm {
+  height: 143px;
   position: relative;
   margin: 15px 0 0;
   padding: 10px 0 0;

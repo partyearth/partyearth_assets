@@ -36,7 +36,7 @@ form input, form select {
   border: 1px solid #CDD9DF;
   color: #252525;
   display: inline-block;
-  margin-bottom: 8px;
+  margin-bottom: 6px;
   padding: 5px 10px;
   width: 350px;
   -webkit-border-radius: 2px;
@@ -89,21 +89,21 @@ form .submit_cont {
     .payment_method .payment_input .choices-group li label {
       font-size: 16px;
       font-weight: bold;
-      margin: 0;
+      margin: 0 0 8px 0;
       text-align: left;
       width: auto; }
       .payment_method .payment_input .choices-group li label input {
         margin-top: 1px;
         width: 20px; }
     .payment_method .payment_input .choices-group li:nth-child(1) {
-      width: 140px; }
+      width: 150px; }
     .payment_method .payment_input .choices-group li:nth-child(2) {
-      width: 85px; }
+      width: 95px; }
     .payment_method .payment_input .choices-group li:nth-child(3) {
-      width: 80px; }
+      width: 90px; }
 .payment_method #client_payment_information_attributes_bank_account_type_input .choices-group {
   float: left;
-  margin: -19px 0 0 210px; }
+  margin: -19px 0 6px 210px; }
   .payment_method #client_payment_information_attributes_bank_account_type_input .choices-group li {
     display: inline-block;
     position: relative; }
@@ -153,7 +153,7 @@ form .submit_cont {
   float: right;
   font-size: 11px;
   line-height: 15px;
-  margin: -10px 126px 10px 0;
+  margin: 0 126px 10px 0;
   width: 340px; }
 
 .disclaimer {
@@ -175,28 +175,27 @@ form {
       position: absolute;
       top: 7px; }
   form #client_tax_information_attributes_full_name_input label,
-  form #client_tax_information_attributes_business_name_input label {
+  form #client_tax_information_attributes_business_name_input label,
+  form #client_tax_information_attributes_signature_input label {
     margin-top: -2px; }
   form #client_tax_information_attributes_taxpayer_id_no_input .inline-errors {
-    right: 39px;
-    top: -38px; }
+    right: 54px;
+    top: -28px; }
   form #client_tax_information_attributes_taxpayer_id_no_input .inline-success {
-    top: -36px;
-    right: 43px; }
+    top: -25px;
+    right: 58px; }
   form input {
-    margin-bottom: 15px;
     vertical-align: top;
     width: 320px; }
     form input#TaxIdentificationNo {
       bottom: 0;
       height: 16px;
       position: absolute;
-      right: 60px;
+      right: 75px;
       width: 72px; }
     form input#client_tax_information_attributes_permanent_address_attributes_zip_code {
       width: 50px; }
   form select {
-    margin-bottom: 15px;
     padding: 4px 10px;
     width: 290px; }
     form select#client_tax_information_attributes_taxpayer_id_type {
@@ -209,6 +208,8 @@ form {
       display: block;
       font-size: 11px;
       margin-top: -5px; }
+  form .btn_submit {
+    margin: 0; }
 /*
 
 
@@ -314,6 +315,7 @@ p.inline-errors {
     margin: 10px 0;
     font-size: 15px; }
     .dashboard_sidebar .your_account ul li {
+      color: #375363;
       padding: 5px 0;
       position: relative; }
       .dashboard_sidebar .your_account ul li .arrow {
@@ -512,7 +514,7 @@ p.inline-errors {
       width: 165px; }
 
 /* Detailed Title */
-.detailed_title {
+.detailed_title, .promote_event {
   border-bottom: 1px dashed #d7d7d7;
   border-top: 1px solid #adc0c9;
   color: #0099FF;
@@ -600,11 +602,26 @@ p.inline-errors {
     font-size: 11px;
     display: block;
     text-align: left;
-    margin: -10px 0 10px 214px; }
+    margin: 0 0 10px 214px; }
   .password_cont .password .inline-success {
     right: 108px; }
   .password_cont .password .inline-errors {
     right: 104px; }
+
+/* Promote Event */
+.promote {
+  margin: 10px 0;
+  font-size: 15px; }
+  .promote li {
+    color: #375363;
+    padding: 5px 0;
+    position: relative; }
+    .promote li .arrow {
+      color: #ff9000; }
+    .promote li a {
+      color: #445e6d; }
+      .promote li a:hover {
+        text-decoration: none; }
 /* Tickets Button */
 
 
@@ -621,6 +638,7 @@ body {
 }
 
 .tickets_button {
+  border-collapse: collapse;
   display: inline-block;
   font-family: Arial;
   text-align: center;
@@ -628,14 +646,20 @@ body {
   position: relative;
 }
 
+.tickets_button td {
+  padding: 0;
+}
+
+.tickets_button td {
+  vertical-align: top;
+}
+
 .border_cont {
-  padding: 0 10px;
+  padding: 0 5px;
   position: relative;
-  float: left;
 }
 
 .gradient {
-  display: block;
   left: 0;
   position: absolute;
   top: 0;
@@ -741,17 +765,23 @@ body {
 
 .large .btn_text {
   font-size: 26px;
-  margin-top: 9px;
+  line-height: 20px;
+  margin-top: 13px;
+  min-width: 155px;
 }
 
 .medium .btn_text {
   font-size: 18px;
-  margin-top: 9px;
+  line-height: 14px;
+  margin-top: 11px;
+  min-width: 110px;
 }
 
 .small .btn_text {
   font-size: 14px;
-  margin-top: 6px;
+  line-height: 10px;
+  margin-top: 8px;
+  min-width: 85px;
 }
 
 /************************/
@@ -787,42 +817,42 @@ body {
 .large.full_image .img {
   background: url("http://cdn.partyearth.com/images/tickets/large-stacked.png") no-repeat;
   height: 39px;
-  margin: 4px auto 0;
+  margin-top: 4px;
   width: 61px;
 }
 
 .large.mini_image .img {
   background: url("http://cdn.partyearth.com/images/tickets/large.png") no-repeat;
   height: 32px;
-  margin: 9px auto 0;
+  margin-top: 10px;
   width: 45px;
 }
 
 .medium.full_image .img {
   background: url("http://cdn.partyearth.com/images/tickets/medium-stacked.png") no-repeat;
   height: 32px;
-  margin: 3px auto 0;
+  margin-top: 2px;
   width: 51px;
 }
 
 .medium.mini_image .img {
   background: url("http://cdn.partyearth.com/images/tickets/medium.png") no-repeat;
   height: 25px;
-  margin: 8px auto 0;
+  margin-top: 7px;
   width: 34px;
 }
 
 .small.full_image .img {
   background: url("http://cdn.partyearth.com/images/tickets/small-stacked.png") no-repeat;
   height: 22px;
-  margin: 2px auto 0;
+  margin-top: 2px;
   width: 35px;
 }
 
 .small.mini_image .img {
   background: url("http://cdn.partyearth.com/images/tickets/small.png") no-repeat;
   height: 20px;
-  margin: 5px auto 0;
+  margin-top: 5px;
   width: 27px;
 }
 
@@ -855,8 +885,8 @@ body {
 }
 
 .no_image .no_logo_text {
-  display: block;
-  line-height: 100%;
+  display: block !important;
+  width: 100% !important;
   z-index: 910 !important;
 }
 
@@ -865,11 +895,13 @@ body {
 /******************/
 
 .no_image.large .btn_text {
-  margin-top: 4px;
+  margin-top: 7px;
 }
 
 .no_image.large .no_logo_text {
-  font-size: 11px;
+  font-size: 12px;
+  line-height: 9px;
+  margin-top: 5px;
 }
 
 /*******************/
@@ -877,12 +909,13 @@ body {
 /*******************/
 
 .no_image.medium .btn_text {
-  margin-top: 5px;
+  margin-top: 6px;
 }
 
 .no_image.medium .no_logo_text {
   font-size: 11px;
-  margin-top: -1px;
+  line-height: 9px;
+  margin-top: 4px;
 }
 
 /******************/
@@ -890,11 +923,13 @@ body {
 /******************/
 
 .no_image.small .btn_text {
-  margin-top: 2px;
+  margin-top: 3px;
 }
 
 .no_image.small .no_logo_text {
-  font-size: 10px;
+  font-size: 9px;
+  line-height: 8px;
+  margin-top: 3px;
 }
 
 /************************/
@@ -907,7 +942,7 @@ body {
 }
 
 .silver .no_logo_text {
-  color: #97acb7 !important;
+  color: #57707d !important;
 }
 
 .silver .img_cont {
@@ -927,7 +962,7 @@ body {
 }
 
 .blue .no_logo_text {
-  color: #98d6ff !important;
+  color: #a9ddff !important;
 }
 
 .blue .img_cont {
@@ -947,7 +982,7 @@ body {
 }
 
 .orange .no_logo_text {
-  color: #ffc868 !important;
+  color: #ffdc9f !important;
 }
 
 .orange .img_cont {
@@ -1077,9 +1112,26 @@ body {
           padding: 5px 0;
           width: 125px; }
         .generator_cont .section_cont .right_cont .btn_white.copy {
+          cursor: pointer !important;
           float: left;
           font-size: 12px;
           padding: 3px 0;
           width: 150px; }
           .generator_cont .section_cont .right_cont .btn_white.copy.hover {
-            cursor: pointer !important; }
+            cursor: pointer !important;
+            background: #e5eaed;
+            /* Old browsers */
+            background: -moz-linear-gradient(top, #e5eaed 0%, #f9fafb 100%);
+            /* FF3.6+ */
+            background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #e5eaed), color-stop(100%, #f9fafb));
+            /* Chrome,Safari4+ */
+            background: -webkit-linear-gradient(top, #e5eaed 0%, #f9fafb 100%);
+            /* Chrome10+,Safari5.1+ */
+            background: -o-linear-gradient(top, #e5eaed 0%, #f9fafb 100%);
+            /* Opera 11.10+ */
+            background: -ms-linear-gradient(top, #e5eaed 0%, #f9fafb 100%);
+            /* IE10+ */
+            background: linear-gradient(to bottom, #e5eaed 0%, #f9fafb 100%);
+            /* W3C */
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e5eaed', endColorstr='#f9fafb',GradientType=0 );
+            /* IE6-9 */ }

@@ -1,0 +1,147 @@
+#floating_bar .bottom_bar .kevin_module .dropdown_wrapper .dropdown {
+  margin: 0 0 9px; }
+
+#floating_bar .bottom_bar .kevin_module .dropdown_wrapper .Title.select.Opened {
+  bottom: 0; }
+
+#floating_bar .bottom_bar .kevin_module .field_item {
+  margin: 0 9px -5px 0; }
+
+#floating_bar .bottom_bar .kevin_module .in.Opened {
+  background-position: 0 -649px; }
+
+#floating_bar .bottom_bar .kevin_module .looking_for.Opened {
+  background-position: 0 -541px; }
+
+#floating_bar .bottom_bar .kevin_module .on.Opened {
+  background-position: 0 -772px; }
+
+#floating_bar .bottom_bar .kevin_module .recommended_by.Opened {
+  background-position: 0 -793px; }
+
+#floating_bar .bottom_bar .popup .kevin_module .go_btn {
+  margin: 15px 0 0; }
+
+#floating_bar .bottom_bar .email_page_to_friend_popup .field_item img,
+#floating_bar .bottom_bar .invite_friend_popup .field_item img {
+  left: 70px;
+  top: 50px; }
+
+#floating_bar .bottom_bar .popup .grey_text {
+  line-height: 11px; }
+
+#floating_bar .bottom_bar .share_btn .email_page_to_friend_popup, #floating_bar .bottom_bar .share_btn .invite_friend_popup {
+  width: 374px; }
+
+#floating_bar .bottom_bar .popup label {
+  width: auto !important; }
+
+#floating_bar .bottom_bar .popup .title {
+  margin: 0; }
+
+/*CHOICE HOVERS*/
+/*IN*/
+#floating_bar .bottom_bar .kevin_module .in .dropdown_wrapper .dropdown .choice {
+  background: url(/assets/bottom_bar/in_dropdown_choice_bg_repeat-3c510d27db80f08d20f9ab56596abbe2.png) repeat-y;
+  padding: 0 11px; }
+
+#floating_bar .bottom_bar .kevin_module .in .dropdown_wrapper .dropdown .choice:hover {
+  color: #fff;
+  background: #0099ff;
+  margin: 0 1px; }
+
+/*LOOKING FOR*/
+#floating_bar .bottom_bar .kevin_module .looking_for .dropdown_wrapper .dropdown .choice {
+  background: url(/assets/bottom_bar/looking_for_dropdown_choice_bg_repeat-fd8c1a68f822de5af06eec51e85fa2a5.png) repeat-y;
+  padding: 0 11px; }
+
+#floating_bar .bottom_bar .kevin_module .looking_for .dropdown_wrapper .dropdown .choice:hover {
+  color: #fff;
+  background: #0099ff;
+  margin: 0 0 0 1px; }
+
+/*ON*/
+#floating_bar .bottom_bar .kevin_module .on .dropdown_wrapper .dropdown .choice {
+  background: url(/assets/bottom_bar/on_dropdown_choice_bg_repeat-c9eac5aede8d8eeea5447b8826260c58.png) repeat-y;
+  padding: 0 11px; }
+
+/*RECOMMENDED BY*/
+#floating_bar .bottom_bar .kevin_module .recommended_by .dropdown_wrapper .dropdown .choice {
+  background: url(/assets/bottom_bar/recommended_by_dropdown_choice_bg_repeat-92ad9f729d742ca075e4913ef87e62fb.png) repeat-y;
+  padding: 0 11px; }
+
+#floating_bar .bottom_bar .kevin_module .recommended_by .dropdown_wrapper .dropdown .choice:hover {
+  color: #fff;
+  background: #0099ff;
+  margin: 0 1px; }
+.headline {
+  /* FOR IE7 */
+  *line-height: 36px; }
+
+/*FOOTER RELATED*/
+#footer_content .pod .subtitle {
+  font-size: 11pt;
+  line-height: 1.05em; }
+
+#footer_content {
+  *position: static;
+  *margin: 10px 0 0 -3px; }
+
+/* Newsletter Popup */
+.ui-widget-overlay {
+  width: 99.99% !important; }
+
+/* Profile Sort */
+.list_tab form select {
+  padding: 3px 2px 2px 2px;
+  height: 23px; }
+
+.action_bar form select {
+  padding: 3px 2px 2px 2px;
+  height: 23px; }
+
+.ticket_form select {
+  padding: 5px !important; }
+.ticket_form .payment_info .delivery_info input {
+  width: 15px !important;
+  margin-top: 0 !important;
+  right: 460px !important; }
+
+.payment_method input[type=radio] {
+  background: none !important;
+  border: none !important;
+  margin: 0 !important;
+  padding: 4px 0 0 0 !important; }
+
+.silver .btn_text {
+  text-shadow: none !important; }
+
+.blue .btn_text {
+  text-shadow: none !important; }
+
+.orange .btn_text {
+  text-shadow: none !important; }
+.map_controls #result_types {
+  margin: 6px 0 2px; }
+
+#advanced_search_text {
+  margin: 6px 0 0; }
+.city_map .overlay #neighborhood .dropdown {
+  bottom: 40px; }
+
+.city_map .overlay input.styled {
+  display: none; }
+
+.city_map .overlay #location .location_input {
+  margin: 0 3px 0 0; }
+
+.city_map .overlay #venue_types_wrapper #action_btns {
+  bottom: 7px; }
+/**
+ * ie7.css
+ *
+
+
+
+
+ */
