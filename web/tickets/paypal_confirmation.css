@@ -1,3 +1,6 @@
+.paypal h1 {
+  margin-bottom: 15px !important; }
+
 .paypal_cont {
   padding: 10px 0; }
   .paypal_cont .logo {

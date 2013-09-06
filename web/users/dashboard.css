@@ -56,7 +56,7 @@ form input[type=submit] {
   display: block;
   float: right;
   font-size: 18px;
-  padding: 8px 10px 6px;
+  padding: 5px 10px 6px;
   position: relative;
   text-align: center;
   text-decoration: none;
@@ -280,7 +280,7 @@ p.inline-errors {
       padding: 8px 0;
       vertical-align: top; }
       .dashboard_index table td.event {
-        padding: 8px 5px;
+        padding: 8px 20px 8px 0;
         text-align: left; }
         .dashboard_index table td.event a {
           color: #000000; }
@@ -288,7 +288,8 @@ p.inline-errors {
             color: #464646;
             text-decoration: none; }
       .dashboard_index table td.event_day {
-        text-align: left; }
+        text-align: left;
+        white-space: nowrap; }
       .dashboard_index table td.tickets_sold {
         text-align: center; }
       .dashboard_index table td.total_qty {
@@ -335,15 +336,20 @@ p.inline-errors {
     .show_cont .dashboard_show .event_info {
       margin-top: 15px;
       /* Info */ }
-      .show_cont .dashboard_show .event_info .thumbnail {
-        float: left;
-        height: 100px;
-        width: 100px; }
+      .show_cont .dashboard_show .event_info .left_column {
+        float: left; }
+        .show_cont .dashboard_show .event_info .left_column .thumbnail {
+          height: 100px;
+          width: 100px; }
+        .show_cont .dashboard_show .event_info .left_column .btn_blue {
+          font-size: 12px;
+          margin-top: 5px;
+          padding: 5px 5px 4px; }
       .show_cont .dashboard_show .event_info .info {
-        float: left;
+        float: right;
         margin-left: 15px;
         position: relative;
-        width: 563px;
+        width: 562px;
         /* Event Name */
         /* Event Date */
         /* Event Venue */ }

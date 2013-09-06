@@ -3458,11 +3458,6 @@
 #object_page_info .buy_lrg_cont {
   float: right !important;
   margin-top: 4px; }
-  #object_page_info .buy_lrg_cont .buy_ticket {
-    font-size: 16px;
-    height: 26px;
-    padding: 10px 23px 0 0;
-    width: 153px; }
 /* TODO (VH): Combine with Neighborhood map styles */
 #map_l .map_l_cont {
   position: relative; }

@@ -2784,11 +2784,11 @@ button,
   .buy_lrg_cont .buy_ticket:visited {
     background-image: url(/assets/tickets/pe_icons_tickets_big_vertical.png);
     background-position: top;
-    font-size: 20px;
-    font-weight: bold;
-    padding: 8px 10px 0 0;
+    font-size: 16px;
     height: 26px;
-    width: 155px; }
+    padding: 10px 23px 0 0;
+    font-weight: bold;
+    width: 144px; }
     .buy_lrg_cont .buy_ticket:hover,
     .buy_lrg_cont .buy_ticket:link:hover,
     .buy_lrg_cont .buy_ticket:visited:hover {
