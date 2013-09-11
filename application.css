@@ -3437,7 +3437,7 @@ input, select, textarea {
 .red_links {
   /*To prevent the tab labels from turning red on hover*/ }
   .red_links .login_dropdown li a, .red_links .login_dropdown li a:link, .red_links .login_dropdown li a:visited {
-    color: #8ea8b5; }
+    color: #8ea8b5 !important; }
     .red_links .login_dropdown li a:hover, .red_links .login_dropdown li a:link:hover, .red_links .login_dropdown li a:visited:hover {
       color: #fff; }
   .red_links #masthead #site_logo {
@@ -3455,15 +3455,15 @@ input, select, textarea {
     .red_links #masthead #main_nav li a:hover, .red_links #masthead #main_nav li a:visited:hover, .red_links #masthead #main_nav li .fake_link:hover {
       color: #cc0000; }
   .red_links #masthead #main_nav li.current_city a, .red_links #masthead #main_nav li.current_city a:visited, .red_links #masthead #main_nav li.current_city .fake_link {
-    color: #cc0000; }
+    color: #cc0000 !important; }
     .red_links #masthead #main_nav li.current_city a:hover, .red_links #masthead #main_nav li.current_city a:visited:hover, .red_links #masthead #main_nav li.current_city .fake_link:hover {
       color: #cc0000; }
   .red_links #masthead #main_nav li.current_city ul li a, .red_links #masthead #main_nav li.current_city ul li a:visited, .red_links #masthead #main_nav li.current_city ul li .fake_link {
-    color: #375363; }
+    color: #375363 !important; }
   .red_links #masthead #main_nav li.current_city ul li:hover {
-    background-color: #09f; }
+    background-color: #09f !important; }
     .red_links #masthead #main_nav li.current_city ul li:hover a, .red_links #masthead #main_nav li.current_city ul li:hover a:visited, .red_links #masthead #main_nav li.current_city ul li:hover .fake_link {
-      color: #fff;
+      color: #fff !important;
       text-decoration: none; }
   .red_links a, .red_links .fake_link {
     color: #cc0000;
@@ -4617,11 +4617,8 @@ formfield ol:before, .formfield ol:after,
     padding: 0 !important; }
 
 #right_sidebar {
-  /* Los Feliz Advert */
   /* Advertisement.com Ads */
   /* Google Ads */ }
-  #right_sidebar .los_feliz_advert {
-    margin: -10px 0 0 -10px; }
   #right_sidebar .advert_pod {
     margin-bottom: 12px; }
     #right_sidebar .advert_pod .ad_300x250 {
