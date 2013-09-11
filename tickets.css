@@ -62,6 +62,9 @@ a:hover,
   .clearfix:after {
     clear: both; }
 
+.hidden {
+  display: none !important; }
+
 input {
   border: none; }
 
