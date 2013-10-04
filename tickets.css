@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, blockquote, th, td {
+  margin: 0;
+  padding: 0; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+fieldset, img {
+  border: 0; }
+
+address, caption, cite, code, dfn, th, var {
+  font-style: normal;
+  font-weight: normal; }
+
+ol, ul {
+  list-style: none; }
+
+caption, th {
+  text-align: left; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal; }
+
+q:before, q:after {
+  content: ''; }
+
+abbr, acronym {
+  border: 0; }
+/*
+
+*/
+/* General Styles */
+body {
+  background: #597686;
+  font-family: 'Arimo', Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px; }
+
+a:link,
+a:visited,
+.fake_link,
+.fake-link {
+  color: #09f;
+  cursor: pointer; }
+
+a:hover,
+.fake_link:hover {
+  color: #597686;
+  text-decoration: underline; }
+
+.clearfix {
+  *zoom: 1; }
+  .clearfix:before, .clearfix:after {
+    content: " ";
+    display: table; }
+  .clearfix:after {
+    clear: both; }
+
+.hidden {
+  display: none !important; }
+
+input {
+  border: none; }
+
+.btn_orange {
+  background-color: #ff9000;
+  border-bottom: 1px solid #d27700;
+  color: #FFF;
+  display: block;
+  font-size: 13px;
+  padding: 8px 10px 6px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: -1px -1px #f17f00;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  z-index: 1000; }
+  .btn_orange:hover {
+    background-color: #ff9a17;
+    cursor: pointer;
+    -webkit-box-shadow: 0px 1px 2px rgba(50, 50, 50, 0.5);
+    -moz-box-shadow: 0px 1px 2px rgba(50, 50, 50, 0.5);
+    box-shadow: 0px 1px 2px rgba(50, 50, 50, 0.5); }
+
+.arrow {
+  font-family: "Times New Roman";
+  font-size: 17px;
+  line-height: 17px;
+  font-weight: normal;
+  height: 13px;
+  width: 6px;
+  display: inline-block;
+  text-indent: -10px;
+  overflow: hidden;
+  zoom: 1;
+  position: relative;
+  top: -1px; }
+
+.type {
+  margin: 0 0 5px;
+  font-size: 9px;
+  line-height: 11px;
+  text-transform: uppercase;
+  font-family: 'Arial', sans-serif;
+  color: #597686; }
+
+a:active, input:active {
+  outline: none; }
+
+a:focus, input:focus {
+  outline-style: none; }
+
+/* Private Label Styles */
+#wrapper {
+  position: relative;
+  width: 1050px;
+  margin: 0 auto; }
+  #wrapper .pl_logo {
+    margin: 5px 0 10px; }
+  #wrapper .pod {
+    background-color: #FFF;
+    border-radius: 2px;
+    box-shadow: 0 0 6px #666;
+    margin: 0 0 42px;
+    padding: 13px 17px;
+    position: relative; }
+
+/* Footer */
+.footer {
+  background-color: #323232;
+  bottom: 0;
+  height: 30px;
+  position: fixed;
+  width: 100%;
+  z-index: 9999; }
+  .footer .copyright {
+    color: #636363;
+    font-size: 10px;
+    margin: 7px auto 0;
+    padding: 0 10px;
+    width: 1030px; }
+  .footer .pl_powered_by {
+    background: url(/assets/tickets/pl_powered_by_pe.png) no-repeat;
+    height: 25px;
+    float: right;
+    position: relative;
+    top: -4px;
+    width: 183px; }

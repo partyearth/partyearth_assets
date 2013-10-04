@@ -1,0 +1,90 @@
+strong {
+  color: #0587C3; }
+
+#misc_info {
+  min-height: 360px; }
+
+#misc_info p {
+  line-height: 20px; }
+
+/*FOR ERROR PAGES*/
+#misc_info.error_pages .message1 {
+  font-size: 18px; }
+
+#misc_info.error_pages .message2 {
+  font-size: 16px; }
+
+#misc_info.error_pages .text_field {
+  background: url(/assets/content_bg/login_sprite-ce271cea1a0a405beb369403daea500c.png) no-repeat scroll 0 0 transparent;
+  height: 17px;
+  margin: 0 0 12px;
+  padding: 4px 8px 8px;
+  width: 292px; }
+
+#misc_info .blue_btn {
+  margin: 0 0 0 7px; }
+
+/*FOR CONTACT US PAGE*/
+#misc_info.contact_us td {
+  vertical-align: top;
+  display: inline-block;
+  position: relative; }
+
+#misc_info.contact_us label {
+  color: #000000;
+  float: right;
+  margin: 3px 25px 0 0;
+  width: 80px; }
+
+#misc_info.contact_us label {
+  /*FOR IE7*/
+  *line-height: 28px;
+  *margin-top: 0px; }
+
+#misc_info.contact_us label abbr {
+  color: #0099FF;
+  font-size: 20px;
+  margin: 0 0 0 4px;
+  position: relative;
+  top: 2px; }
+
+#misc_info.contact_us .text_field {
+  background: url(/assets/content_bg/contact_sprite-8ee6c30fabeb86569779d0c0379869ac.png) no-repeat scroll 0 0 transparent;
+  height: 17px;
+  margin: 0 0 12px;
+  padding: 4px 8px 8px;
+  width: 292px; }
+
+#misc_info.contact_us .text_area_inner_wrapper {
+  background: url(/assets/content_bg/contact_sprite-8ee6c30fabeb86569779d0c0379869ac.png) no-repeat scroll 0 -64px transparent;
+  height: 83px;
+  padding: 4px 8px 8px;
+  vertical-align: top;
+  /*width: 292px;*/ }
+
+#misc_info.contact_us .text_area_inner_wrapper textarea {
+  height: 83px;
+  width: 292px;
+  overflow-x: hidden;
+  overflow-y: auto; }
+
+#misc_info.contact_us .text_area_inner_wrapper textarea:focus {
+  outline: none; }
+
+#misc_info.contact_us .submit_btn {
+  left: 325px;
+  margin: 6px -3px 0 0;
+  position: absolute; }
+
+/*FOR CONTACT FORM VALIDATION*/
+#misc_info.contact_us .inline-errors {
+  left: 308px;
+  position: absolute;
+  top: 0;
+  width: 260px; }
+
+.inputs img {
+  margin: 0 0 -4px 5px;
+  left: 308px;
+  position: absolute;
+  top: 5px; }

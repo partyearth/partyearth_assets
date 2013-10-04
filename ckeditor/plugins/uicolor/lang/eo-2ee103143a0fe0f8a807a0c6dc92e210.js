@@ -1,0 +1,1 @@
+CKEDITOR.plugins.setLang("uicolor","eo",{uicolor:{title:"UI Kolorselektilo",preview:"Vidigi la aspekton",config:"Gluu tiun signo\u0109enon en vian dosieron config.js",predefined:"Anta\u016ddifinita koloraro"}});

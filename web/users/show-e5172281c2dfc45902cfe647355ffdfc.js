@@ -1,0 +1,2 @@
+$(document).ready(function(){gigya&&(gigya.socialize&&0<$("#ProfileLinkAccounts").size())&&gigya.socialize.showAddConnectionsUI({showTermsLink:!1,hideGigyaLink:!0,onConnectionAdded:pe.on_social_connection_added,width:120,height:40,containerID:"ProfileLinkAccounts",UIConfig:'<config><body><controls><snbuttons buttonsize="20" /></controls></body></config>',facepilePosition:"none",enabledProviders:"facebook,twitter,foursquare,yahoo,aol,messenger,google,googleplus",requiredCapabilities:"Login",showEditLink:!0});
+pe.init_page_framework()});

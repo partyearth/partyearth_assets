@@ -1,0 +1,126 @@
+#character_home_content .more_link,
+#character_home_content .less_link {
+  position: absolute;
+  bottom: -1px;
+  left: 43%;
+  width: 41px;
+  height: 25px;
+  background-image: url(/assets/content_bg/application_sprite.png);
+  background-position: 0 -265px; }
+#character_home_content .less_link {
+  background-position: 0 -290px; }
+
+/* BEGIN GENERAL PAGE PROPERTIES */
+#character_home_content {
+  z-index: 1000; }
+
+/* BEGIN LEFT COLUMN */
+#left_container {
+  width: 240px; }
+  #left_container .headline {
+    margin: 0 0 10px;
+    line-height: 30px; }
+  #left_container .char_link {
+    text-decoration: none; }
+    #left_container .char_link:hover {
+      text-decoration: underline; }
+  #left_container .lucas_color {
+    color: #3375c4; }
+  #left_container .adriana_color {
+    color: #b8529e; }
+  #left_container .jonah_color {
+    color: #73b808; }
+  #left_container .emma_color {
+    color: #ffcc05; }
+  #left_container #reviewer_ratings .read_more .clipped {
+    height: 159px; }
+  #left_container #reviewers_desc {
+    min-height: 284px; }
+    #left_container #reviewers_desc .read_more .clipped {
+      height: 265px; }
+  #left_container #ratings_desc {
+    min-height: 180px; }
+    #left_container #ratings_desc .ratings_img {
+      width: 55px;
+      height: 47px;
+      margin: 0 10px 7px 0;
+      background-image: url(/assets/characters/char_page_ratings_stars.png); }
+    #left_container #ratings_desc table {
+      margin: 0 0 10px; }
+      #left_container #ratings_desc table td {
+        vertical-align: top; }
+    #left_container #ratings_desc .stars {
+      display: block;
+      width: 66px;
+      height: 14px;
+      margin: 3px 15px 0 0;
+      background-image: url(/assets/characters/char_page_ratings_stars.png); }
+      #left_container #ratings_desc .stars.row1 {
+        background-position: 0 -47px; }
+      #left_container #ratings_desc .stars.row2 {
+        background-position: 0 -61px; }
+      #left_container #ratings_desc .stars.row3 {
+        background-position: 0 -75px; }
+      #left_container #ratings_desc .stars.row4 {
+        background-position: 0 -89px; }
+      #left_container #ratings_desc .stars.row5 {
+        background-position: 0 -103px; }
+
+/* BEGIN CENTER COLUMN */
+#center_column {
+  width: 480px;
+  margin: 0 0 0 15px; }
+  #center_column #select_title {
+    background: url(/assets/characters/character_page_sprite.png) 0 0 no-repeat;
+    width: 464px;
+    height: 53px;
+    margin: 0 0 11px -3px;
+    padding: 8px 11px 0;
+    font-size: 20px;
+    color: #fff;
+    text-align: center; }
+  #center_column #character_select {
+    position: relative;
+    min-height: 595px; }
+    #center_column #character_select .characters {
+      height: 417px;
+      background-image: url(/assets/characters/character_page_sprite.png);
+      cursor: pointer; }
+    #center_column #character_select .lucas {
+      width: 148px;
+      background-position: 0 -84px; }
+      #center_column #character_select .lucas:hover {
+        background-position: 0 -501px; }
+    #center_column #character_select .adriana {
+      width: 106px;
+      background-position: -148px -84px; }
+      #center_column #character_select .adriana:hover {
+        background-position: -148px -501px; }
+    #center_column #character_select .jonah {
+      background-position: -254px -84px;
+      width: 123px; }
+      #center_column #character_select .jonah:hover {
+        background-position: -254px -501px; }
+    #center_column #character_select .emma {
+      width: 103px;
+      background-position: -377px -84px; }
+      #center_column #character_select .emma:hover {
+        background-position: -377px -501px; }
+    #center_column #character_select #char_desc {
+      color: #000000;
+      min-height: 154px;
+      padding: 10px 0 0; }
+      #center_column #character_select #char_desc .more_txt_link {
+        background: url(/assets/characters/character_page_sprite.png) 0 -938px no-repeat transparent;
+        width: 10px;
+        height: 10px;
+        display: inline-block; }
+
+/*BEGIN RIGHT COLUMN*/
+#right_sidebar {
+  z-index: 1000;
+  /*So that find your scene dropdown covers footer in IE */
+  position: relative;
+  /*So that find your scene dropdown covers footer in IE */ }
+  #right_sidebar #ad_240x400 {
+    margin: 0 0 2px; }

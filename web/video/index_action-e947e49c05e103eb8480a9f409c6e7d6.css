@@ -1,0 +1,75 @@
+.admin_info.pod_rounded {
+  /*.grey_section.subscribed_channels:hover,
+  .grey_section.current_videos:hover,
+  .grey_section.channel_search_results:hover,
+  .grey_section.video_search_results:hover {
+    background:#bcc4c9;
+    border-top:1px solid #999;
+    border-right:1px solid #999;
+    border-bottom:1px solid #999;
+    border-left:1px solid #999;
+    box-shadow: inset 0 0 14px #888;
+  }    */ }
+  .admin_info.pod_rounded .SearchQuery {
+    width: 848px; }
+  .admin_info.pod_rounded .CurrentChannels,
+  .admin_info.pod_rounded .FoundChannels,
+  .admin_info.pod_rounded .ConnectedSortable {
+    padding: 6px 6px 60px; }
+  .admin_info.pod_rounded .video_search_results .ConnectedSortable {
+    margin-top: 5px; }
+  .admin_info.pod_rounded .placeholder {
+    background: #bcc4c9;
+    border-top: 1px solid #999;
+    border-right: 1px solid #999;
+    border-bottom: 1px solid #999;
+    border-left: 1px solid #999;
+    box-shadow: inset 0 0 14px #888; }
+  .admin_info.pod_rounded .ConnectedSortable li {
+    border-top: 1px solid #fff;
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    cursor: move;
+    padding: 12px 5px 0;
+    position: relative;
+    border-radius: 4px; }
+  .admin_info.pod_rounded .ConnectedSortable li:hover {
+    background: #efefef;
+    border: 1px solid #ccc; }
+  .admin_info.pod_rounded .ConnectedSortable li .title {
+    cursor: pointer;
+    position: relative;
+    z-index: 1; }
+  .admin_info.pod_rounded .ConnectedSortable li .title.headline.sub_headline {
+    font-size: 12px;
+    line-height: 14px;
+    margin: 0 0 10px 0;
+    width: 361px; }
+  .admin_info.pod_rounded .ConnectedSortable li .title textarea {
+    width: 423px !important; }
+  .admin_info.pod_rounded .ConnectedSortable li .edit_title_label {
+    position: absolute;
+    right: 5px;
+    top: 12px;
+    z-index: 0; }
+  .admin_info.pod_rounded .ConnectedSortable li .image:hover {
+    cursor: pointer; }
+  .admin_info.pod_rounded .ConnectedSortable li .image img {
+    margin: 0 10px 0 0; }
+  .admin_info.pod_rounded .ConnectedSortable li .image iframe {
+    width: 437px !important;
+    height: 320px !important; }
+  .admin_info.pod_rounded .ConnectedSortable li .status_dropdown {
+    width: 83%; }
+  .admin_info.pod_rounded .ConnectedSortable li .status_dropdown .Choices.choices {
+    width: 362px; }
+    .admin_info.pod_rounded .ConnectedSortable li .status_dropdown .Choices.choices .Choice.choice {
+      text-shadow: none; }
+  .admin_info.pod_rounded .subscribed_channels,
+  .admin_info.pod_rounded .current_videos {
+    width: 465px; }
+  .admin_info.pod_rounded .channel_search_results,
+  .admin_info.pod_rounded .video_search_results {
+    width: 443px;
+    margin-left: 9px; }

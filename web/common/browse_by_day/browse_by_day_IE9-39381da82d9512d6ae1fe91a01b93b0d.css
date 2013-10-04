@@ -1,0 +1,44 @@
+.blue_tag {
+  line-height: 7px;
+  padding-top: 4px;
+  padding-bottom: 4px; }
+  .blue_tag .point {
+    width: 0px; }
+
+.top_section_header .section {
+  background: #0f84e1;
+  border-radius: 2px 2px 2px 2px;
+  height: 10px;
+  font-size: 12px; }
+  .top_section_header .section .small_text {
+    font-size: 8px; }
+.top_section_header .section:hover {
+  background: #177ad4; }
+.top_section_header .section.Selected {
+  background: url(/assets/content_bg/browse_by_today_selected_bg-78ac3e364bdd977862b6bcaf2f76f94b.gif) 0 0 repeat-x #ff6600;
+  height: 9px;
+  line-height: 7px;
+  box-shadow: 0 1px 2px #bfbfbf;
+  border-radius: 2px 2px 2px 2px;
+  border-top: none;
+  border-bottom: 1px inset #ff6600; }
+  .top_section_header .section.Selected .point {
+    border-color: #d35800 transparent transparent transparent;
+    border-style: solid;
+    border-width: 10px;
+    position: absolute;
+    bottom: -16px;
+    left: 33px; }
+.top_section_header .section.Selected:hover {
+  background: url(/assets/content_bg/browse_by_today_selected_bg-78ac3e364bdd977862b6bcaf2f76f94b.gif) 0 0 repeat-x #ff6600; }
+.top_section_header .tomorrow.section.Selected .point {
+  left: 45px; }
+.top_section_header .more_dates .section {
+  padding-left: 25px;
+  padding-right: 25px; }
+.top_section_header .more_dates .date_picker_block {
+  left: -8px; }
+
+.top_section_content .small_items .blue_tag {
+  line-height: 7px;
+  padding-top: 4px; }
