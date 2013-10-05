@@ -1045,11 +1045,17 @@
       text-transform: none;
       overflow: hidden; }
   #right_sidebar .changer .name {
-    height: 10px;
+    min-height: 10px;
+    max-height: 17px;
     margin: 0 0 6px;
-    padding: 0 0 6px;
+    padding: 0 0 8px;
     vertical-align: top;
     border-bottom: 1px solid #dae4e9; }
+  #right_sidebar .changer a {
+    display: inline-block;
+    height: auto !important;
+    overflow: visible;
+    width: 220px; }
   #right_sidebar .list .list_item.featured .thumbnail_link,
   #right_sidebar .changer .thumbnail_link {
     width: 268px;
@@ -1494,7 +1500,7 @@
         padding-top: 0;
         line-height: 100%; }
       #comments .gig-comments-container #Comments-commentBox textarea.gig-comments-commentBox-textarea {
-        width: 694px !important; }
+        width: 642px !important; }
     #comments .gig-comments-container .gig-comments-commentList-header {
       padding: 0 0 10px; }
       #comments .gig-comments-container .gig-comments-commentList-header .gig-comments-commentList-header-commentsCount {
@@ -3458,6 +3464,9 @@
 #object_page_info .buy_lrg_cont {
   float: right !important;
   margin-top: 4px; }
+
+.character_dialog_cont .dialog_box {
+  top: -78px !important; }
 /* TODO (VH): Combine with Neighborhood map styles */
 #map_l .map_l_cont {
   position: relative; }

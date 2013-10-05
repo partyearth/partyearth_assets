@@ -659,7 +659,7 @@
   width: 795px; }
   .admin_pages_content .left_column .sale_status {
     display: block;
-    height: 14px;
+    height: 34px;
     margin: 10px 0; }
   .admin_pages_content .left_column .add_ticket_btn {
     display: block;
@@ -675,9 +675,11 @@
       display: inline-block;
       margin-right: 10px; }
   .admin_pages_content .left_column .sale_status_radio {
-    position: absolute;
-    top: 75px;
-    left: 20px; }
+    position: relative;
+    top: 5px;
+    left: 0;
+    width: 200px;
+    list-style: none; }
     .admin_pages_content .left_column .sale_status_radio li fieldset legend label {
       background: none !important;
       border: none !important;
@@ -690,3 +692,27 @@
     margin-top: 10px;
     text-decoration: none !important;
     text-shadow: none !important; }
+  .admin_pages_content .left_column #event_ticketing_attributes_continue_button_title_input .choices-group {
+    position: relative;
+    width: 200px;
+    top: 15px;
+    left: 0; }
+  .admin_pages_content .left_column #event_ticketing_attributes_has_default_ticket_ordering_input {
+    list-style: none;
+    position: relative; }
+    .admin_pages_content .left_column #event_ticketing_attributes_has_default_ticket_ordering_input label {
+      background: none !important;
+      border: none !important;
+      box-shadow: none !important;
+      position: relative;
+      top: -30px;
+      left: 150px;
+      width: 200px; }
+  .admin_pages_content .left_column .default_order {
+    height: 20px;
+    margin-bottom: 10px;
+    padding-left: 17px; }
+  .admin_pages_content .left_column .payment_processing li {
+    list-style: none; }
+    .admin_pages_content .left_column .payment_processing li select {
+      width: 300px; }

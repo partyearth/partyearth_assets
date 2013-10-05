@@ -70,3 +70,5 @@
     #twitter_pod .tweets li:last-child {
       border-bottom: 1px dashed #adc0c9;
       padding-bottom: 5px; }
+    #twitter_pod .tweets li .tweet_content {
+      overflow: hidden; }

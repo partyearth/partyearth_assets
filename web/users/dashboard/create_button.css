@@ -81,45 +81,80 @@ form .submit_cont {
   margin-top: 4px;
   padding-top: 10px;
   width: 100%; }
-.payment_method .payment_input {
-  margin-top: 15px; }
-  .payment_method .payment_input .choices-group li {
-    display: inline-block;
-    position: relative; }
-    .payment_method .payment_input .choices-group li label {
-      font-size: 16px;
+.payment_heading {
+  color: #375363;
+  display: block;
+  font-size: 16px;
+  margin: 15px 0 10px; }
+
+.payment_method {
+  color: #375363; }
+  .payment_method .pending {
+    background-color: #fffeea;
+    border: 1px solid #ebe3c0;
+    padding: 10px;
+    margin-top: 5px; }
+    .payment_method .pending p {
+      display: block;
+      font-size: 15px;
       font-weight: bold;
-      margin: 0 0 8px 0;
-      text-align: left;
-      width: auto; }
-      .payment_method .payment_input .choices-group li label input {
-        margin-top: 1px;
-        width: 20px; }
-    .payment_method .payment_input .choices-group li:nth-child(1) {
-      width: 150px; }
-    .payment_method .payment_input .choices-group li:nth-child(2) {
-      width: 95px; }
-    .payment_method .payment_input .choices-group li:nth-child(3) {
-      width: 90px; }
-.payment_method #client_payment_information_attributes_bank_account_type_input .choices-group {
-  float: left;
-  margin: -19px 0 6px 210px; }
-  .payment_method #client_payment_information_attributes_bank_account_type_input .choices-group li {
+      padding-bottom: 5px; }
+  .payment_method span {
+    display: inline;
+    margin-right: 5px;
+    font-size: 14px; }
+  .payment_method select {
+    border: 1px solid #CDD9DF;
+    color: #252525;
     display: inline-block;
-    position: relative; }
-    .payment_method #client_payment_information_attributes_bank_account_type_input .choices-group li label {
-      font-size: 14px;
-      font-weight: normal;
-      margin: 0;
-      text-align: left;
-      width: auto; }
-      .payment_method #client_payment_information_attributes_bank_account_type_input .choices-group li label input {
-        margin-top: 2px;
-        width: 20px; }
-    .payment_method #client_payment_information_attributes_bank_account_type_input .choices-group li:nth-child(1) {
-      width: 90px; }
-    .payment_method #client_payment_information_attributes_bank_account_type_input .choices-group li:nth-child(2) {
-      width: 75px; }
+    margin-bottom: 6px;
+    padding: 5px 10px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px; }
+    .payment_method select#client_payment_processor, .payment_method select#client_payment_information_attributes_payment_type {
+      width: 140px; }
+  .payment_method .instruct_text,
+  .payment_method .payment_input {
+    background-color: #EFEFEF; }
+  .payment_method .instruct_text {
+    padding: 12px 0 10px 0;
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 10px;
+    text-align: center; }
+  .payment_method .basic_info {
+    padding: 0 0 4px 0; }
+    .payment_method .basic_info.client_paypal {
+      margin-top: 10px; }
+      .payment_method .basic_info.client_paypal .note {
+        width: 410px;
+        padding-left: 214px;
+        font-size: 11px;
+        color: #000;
+        display: block;
+        padding-bottom: 6px; }
+    .payment_method .basic_info p {
+      padding: 10px 20px;
+      font-size: 13px; }
+  .payment_method #client_payment_information_attributes_bank_account_type_input .choices-group {
+    float: left;
+    margin: -19px 0 6px 210px; }
+    .payment_method #client_payment_information_attributes_bank_account_type_input .choices-group li {
+      display: inline-block;
+      position: relative; }
+      .payment_method #client_payment_information_attributes_bank_account_type_input .choices-group li label {
+        font-size: 14px;
+        font-weight: normal;
+        margin: 0;
+        text-align: left;
+        width: auto; }
+        .payment_method #client_payment_information_attributes_bank_account_type_input .choices-group li label input {
+          margin-top: 2px;
+          width: 20px; }
+      .payment_method #client_payment_information_attributes_bank_account_type_input .choices-group li:nth-child(1) {
+        width: 90px; }
+      .payment_method #client_payment_information_attributes_bank_account_type_input .choices-group li:nth-child(2) {
+        width: 75px; }
 /* Tax Page Styles */
 .tax_cont {
   background-color: #ffffe5;
@@ -208,563 +243,89 @@ form {
       margin-top: -5px; }
   form .btn_submit {
     margin: 0; }
-.dashboard_show .title {
-  font-family: "Roboto Light", "Arimo", Arial, sans-serif;
-  color: #464646;
-  font-size: 20px;
-  line-height: 100%;
-  margin: 12px 0; }
-  .dashboard_show .title span {
-    float: right;
-    font-size: 13px;
-    position: relative;
-    top: 3px; }
-.dashboard_show .generator_cont .widget_cont {
-  margin-bottom: 12px; }
-.dashboard_show .generator_cont .code_content {
-  background: #f0f0f0;
-  margin-top: 12px;
-  padding: 15px;
+.promote_widget .code_content .btn {
   -webkit-border-radius: 2px;
-  border-radius: 2px; }
-  .dashboard_show .generator_cont .code_content textarea {
-    border: 1px solid #cdd9df;
-    font-size: 12px;
-    height: 90px;
-    line-height: 15px;
-    resize: none;
-    padding: 10px;
-    width: 628px;
-    -webkit-border-radius: 2px;
-    border-radius: 2px; }
-  .dashboard_show .generator_cont .code_content .btn_white {
-    float: right;
-    margin-top: 8px;
-    padding: 2px 0;
-    width: 160px; }
-/*
-
-
-
-
-*/
-/* Breadcrumbs */
-.breadcrumbs li:last-child:after {
-  content: '' !important; }
-
-h1 {
-  font-weight: normal !important; }
-  h1 span.small {
-    font-size: 16px; }
-
-span.inline-errors {
-  background: url(/assets/users/error.png);
-  height: 16px;
-  position: absolute;
-  width: 16px;
-  text-indent: -9999px; }
-
-p.inline-errors {
-  color: #FF0000;
-  display: block;
-  font-size: 11px;
-  margin: -10px 0 10px 214px !important;
-  text-align: left; }
-
-.btn_white {
-  border: 1px solid #cdd9df;
+  border-radius: 2px;
   color: #0099FF;
   cursor: pointer;
-  text-align: center;
-  text-shadow: 1px 1px 0px #ffffff;
-  filter: dropshadow(color=white, offx=1, offy=1);
-  background: #f9fafb;
-  /* Old browsers */
-  background: -moz-linear-gradient(top, #f9fafb 0%, #e5eaed 100%);
-  /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f9fafb), color-stop(100%, #e5eaed));
-  /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top, #f9fafb 0%, #e5eaed 100%);
-  /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(top, #f9fafb 0%, #e5eaed 100%);
-  /* Opera 11.10+ */
-  background: -ms-linear-gradient(top, #f9fafb 0%, #e5eaed 100%);
-  /* IE10+ */
-  background: linear-gradient(to bottom, #f9fafb 0%, #e5eaed 100%);
-  /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9fafb', endColorstr='#e5eaed',GradientType=0 );
-  /* IE6-9 */
-  -webkit-border-radius: 4px;
-  border-radius: 4px; }
-  .btn_white:hover {
-    background: #e5eaed;
-    /* Old browsers */
-    background: -moz-linear-gradient(top, #e5eaed 0%, #f9fafb 100%);
-    /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #e5eaed), color-stop(100%, #f9fafb));
-    /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top, #e5eaed 0%, #f9fafb 100%);
-    /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top, #e5eaed 0%, #f9fafb 100%);
-    /* Opera 11.10+ */
-    background: -ms-linear-gradient(top, #e5eaed 0%, #f9fafb 100%);
-    /* IE10+ */
-    background: linear-gradient(to bottom, #e5eaed 0%, #f9fafb 100%);
-    /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e5eaed', endColorstr='#f9fafb',GradientType=0 );
-    /* IE6-9 */ }
-  .btn_white.copy {
-    cursor: pointer !important;
-    float: left;
-    font-size: 12px;
-    padding: 3px 0;
-    width: 150px; }
-    .btn_white.copy.hover {
-      cursor: pointer !important;
-      background: #e5eaed;
-      /* Old browsers */
-      background: -moz-linear-gradient(top, #e5eaed 0%, #f9fafb 100%);
-      /* FF3.6+ */
-      background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #e5eaed), color-stop(100%, #f9fafb));
-      /* Chrome,Safari4+ */
-      background: -webkit-linear-gradient(top, #e5eaed 0%, #f9fafb 100%);
-      /* Chrome10+,Safari5.1+ */
-      background: -o-linear-gradient(top, #e5eaed 0%, #f9fafb 100%);
-      /* Opera 11.10+ */
-      background: -ms-linear-gradient(top, #e5eaed 0%, #f9fafb 100%);
-      /* IE10+ */
-      background: linear-gradient(to bottom, #e5eaed 0%, #f9fafb 100%);
-      /* W3C */
-      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e5eaed', endColorstr='#f9fafb',GradientType=0 );
-      /* IE6-9 */ }
-
-/* Dashboard Index */
-.dashboard_index {
-  float: left;
-  width: 680px;
-  /* Table */ }
-  .dashboard_index table {
-    margin-top: 15px;
-    width: 100%; }
-    .dashboard_index table tr {
-      border-bottom: 1px dashed #d7d7d7; }
-      .dashboard_index table tr:first-child, .dashboard_index table tr:last-child {
-        border-bottom: none; }
-    .dashboard_index table th {
-      background-color: #ebebeb;
-      color: #acacac;
-      font-size: 11px;
-      font-weight: bold;
-      height: 22px;
-      text-align: left;
-      text-transform: uppercase; }
-      .dashboard_index table th.event {
-        padding-left: 5px;
-        width: 235px; }
-      .dashboard_index table th.event_day {
-        width: 150px; }
-      .dashboard_index table th.tickets_sold {
-        text-align: center;
-        width: 110px; }
-      .dashboard_index table th.total_qty {
-        text-align: center;
-        width: 90px; }
-      .dashboard_index table th.revenue {
-        padding-right: 5px;
-        text-align: right;
-        width: 85px; }
-    .dashboard_index table td {
-      color: #464646;
-      font-family: "Roboto Light", Arial, sans-serif;
-      font-size: 14px;
-      padding: 8px 0;
-      vertical-align: top; }
-      .dashboard_index table td.event {
-        padding: 8px 20px 8px 0;
-        text-align: left; }
-        .dashboard_index table td.event a {
-          color: #000000; }
-          .dashboard_index table td.event a:hover {
-            color: #464646;
-            text-decoration: none; }
-      .dashboard_index table td.event_day {
-        text-align: left;
-        white-space: nowrap; }
-      .dashboard_index table td.tickets_sold {
-        text-align: center; }
-      .dashboard_index table td.total_qty {
-        text-align: center; }
-      .dashboard_index table td.revenue {
-        color: #000000;
-        font-weight: bold;
-        padding-right: 5px;
-        text-align: right; }
-
-/* Dashboard Sidebar */
-.dashboard_sidebar {
+  font-size: 13px;
+  font-weight: normal;
   float: right;
-  width: 300px;
-  /* Download Reports */ }
-  .dashboard_sidebar .your_account .account_title {
-    border-bottom: 1px dashed #adc0c9;
-    border-top: 1px solid #adc0c9;
-    color: #0099FF;
-    font-size: 20px;
-    font-weight: bold;
-    padding: 14px 0; }
-  .dashboard_sidebar .your_account ul {
-    margin: 10px 0;
-    font-size: 15px; }
-    .dashboard_sidebar .your_account ul li {
-      color: #375363;
-      padding: 5px 0;
-      position: relative; }
-      .dashboard_sidebar .your_account ul li .arrow {
-        color: #ff9000; }
-      .dashboard_sidebar .your_account ul li a {
-        color: #445e6d; }
-        .dashboard_sidebar .your_account ul li a:hover {
-          text-decoration: none; }
-
-/* Show Container */
-.show_cont {
-  /* Dashboard Show */
-  /* Dashboard Sidebar */ }
-  .show_cont .dashboard_show {
-    float: left;
-    width: 680px; }
-    .show_cont .dashboard_show .event_info {
-      margin-top: 15px;
-      /* Info */ }
-      .show_cont .dashboard_show .event_info .left_column {
-        float: left; }
-        .show_cont .dashboard_show .event_info .left_column .thumbnail {
-          height: 100px;
-          width: 100px; }
-        .show_cont .dashboard_show .event_info .left_column .btn_blue {
-          font-size: 12px;
-          margin-top: 5px;
-          padding: 5px 5px 4px; }
-      .show_cont .dashboard_show .event_info .info {
-        float: right;
-        margin-left: 15px;
-        position: relative;
-        width: 560px;
-        /* Event Name */
-        /* Event Date */
-        /* Event Venue */ }
-        .show_cont .dashboard_show .event_info .info .name {
-          font-size: 20px;
-          font-weight: bold;
-          line-height: 22px;
-          margin-bottom: 5px; }
-          .show_cont .dashboard_show .event_info .info .name a {
-            color: #000000; }
-            .show_cont .dashboard_show .event_info .info .name a:hover {
-              color: #597686; }
-        .show_cont .dashboard_show .event_info .info .date {
-          color: #0099FF;
-          font-size: 16px;
-          font-weight: bold;
-          margin-bottom: 10px; }
-        .show_cont .dashboard_show .event_info .info .venue {
-          font-size: 15px; }
-          .show_cont .dashboard_show .event_info .info .venue a {
-            color: #252525; }
-            .show_cont .dashboard_show .event_info .info .venue a:hover {
-              text-decoration: none; }
-          .show_cont .dashboard_show .event_info .info .venue address {
-            font-size: 12px;
-            line-height: 14px;
-            padding-top: 3px; }
-            .show_cont .dashboard_show .event_info .info .venue address p {
-              margin: 0;
-              padding: 0; }
-  .show_cont .dashboard_sidebar {
-    float: right;
-    width: 300px;
-    /* Download Reports */ }
-    .show_cont .dashboard_sidebar .download_report .reports {
-      border-bottom: 1px dashed #adc0c9;
-      border-top: 1px solid #adc0c9;
-      color: #0099FF;
-      font-size: 20px;
-      font-weight: bold;
-      padding: 14px 0; }
-    .show_cont .dashboard_sidebar .download_report ul {
-      margin: 10px 0;
-      font-size: 15px; }
-      .show_cont .dashboard_sidebar .download_report ul li {
-        padding: 5px 0;
-        position: relative; }
-        .show_cont .dashboard_sidebar .download_report ul li span {
-          background: url(/assets/tickets/pe_web_ticket_dashboard_xls.png);
-          height: 24px;
-          position: absolute;
-          right: 0;
-          top: 2px;
-          width: 24px; }
-        .show_cont .dashboard_sidebar .download_report ul li a {
-          color: #445e6d; }
-          .show_cont .dashboard_sidebar .download_report ul li a:hover {
-            text-decoration: none; }
-
-/* Copy URL Link */
-.copy_links {
-  border-top: 1px dashed #adc0c9;
-  margin-top: 7px;
-  padding-top: 7px; }
-  .copy_links .row {
-    display: block; }
-    .copy_links .row .btn {
-      background: #eff2f3;
-      border: 1px solid #dbdedf;
-      color: #0099FF;
-      cursor: pointer;
-      display: inline-block;
-      font-size: 10px;
-      font-weight: bold;
-      line-height: 100%;
-      margin-right: 5px;
-      padding: 2px 0;
-      text-align: center;
-      width: 68px;
-      -webkit-border-radius: 2px;
-      border-radius: 2px; }
-      .copy_links .row .btn.hover {
-        cursor: pointer;
-        background: #fafafa; }
-    .copy_links .row .text {
-      color: #597686;
-      display: inline-block;
-      font-size: 10px;
-      text-transform: uppercase;
-      width: 85px; }
-    .copy_links .row .url {
-      display: inline-block; }
-      .copy_links .row .url a {
-        color: #959595;
-        font-size: 12px;
-        text-decoration: none; }
-        .copy_links .row .url a:hover {
-          color: #5b5b5b;
-          text-decoration: underline; }
-
-/* Ticket Sales Overview */
-.sales_overview {
-  border-bottom: 1px dashed #adc0c9;
-  border-top: 1px solid #adc0c9;
-  color: #0099FF;
-  font-size: 20px;
-  font-weight: bold;
   line-height: 100%;
-  margin-top: 7px;
-  padding: 15px 0 13px 0; }
-
-/* Ticket Sales Button */
-.stats_cont {
-  margin-top: 10px;
-  /* Buttons */
-  /* Button Misc */ }
-  .stats_cont .sold, .stats_cont .total_qty, .stats_cont .total {
-    background: #FFFFFF;
-    border: 1px solid #b7c6ce;
-    float: left;
-    height: 50px;
-    margin-right: 10px;
-    text-align: center;
-    width: 290px;
-    -webkit-border-radius: 4px;
-    border-radius: 4px;
-    /* Button Title */
-    /* Button Count */ }
-    .stats_cont .sold .title, .stats_cont .total_qty .title, .stats_cont .total .title {
-      background: #dae4e9;
-      color: #8ea8b5;
+  padding: 5px 0;
+  vertical-align: top;
+  width: 160px; }
+  .promote_widget .code_content .btn.hover {
+    cursor: pointer;
+    background: #fafafa; }
+.promote_widget .code_content textarea {
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  border: 1px solid #ADC0C9 !important;
+  color: #656565;
+  font-size: 11px;
+  height: 50px;
+  line-height: 15px;
+  margin-bottom: 7px;
+  padding: 10px;
+  resize: none;
+  width: 972px; }
+.promote_widget .widget_cont {
+  background-color: #FFF;
+  padding: 8px 8px 5px; }
+/*--------*/
+/* Mixins */
+/*--------*/
+/* Tabs */
+.ui-tabs {
+  zoom: 1; }
+  .ui-tabs .ui-tabs-nav {
+    cursor: pointer;
+    list-style: none;
+    position: relative;
+    padding: 0;
+    margin: 0; }
+    .ui-tabs .ui-tabs-nav li {
+      -webkit-border-radius: 4px 4px 0 0;
+      border-radius: 4px 4px 0 0;
+      background-color: #fcfcfc;
+      border: 1px solid #d0d0d0;
       float: left;
-      font-size: 18px;
-      font-weight: bold;
-      height: 50px;
-      position: relative;
-      text-transform: uppercase;
-      width: 130px;
-      text-shadow: 0px 1px 1px #FFFFFF;
-      filter: dropshadow(color=white, offx=0, offy=1); }
-      .stats_cont .sold .title:after, .stats_cont .total_qty .title:after, .stats_cont .total .title:after {
-        left: 100%;
-        border: solid transparent;
-        content: " ";
-        height: 0;
-        width: 0;
-        position: absolute;
-        pointer-events: none; }
-      .stats_cont .sold .title:after, .stats_cont .total_qty .title:after, .stats_cont .total .title:after {
-        border-color: rgba(255, 255, 255, 0);
-        border-left-color: #dae4e9;
-        border-width: 25px;
-        top: 50%;
-        margin-top: -25px; }
-      .stats_cont .sold .title span, .stats_cont .total_qty .title span, .stats_cont .total .title span {
+      margin: 0 3px -1px 0;
+      padding: 0;
+      position: relative; }
+      .ui-tabs .ui-tabs-nav li a {
+        font-family: "Roboto", "Arimo", Arial, sans-serif;
+        font-weight: 500;
+        color: #597686;
+        cursor: pointer;
         display: block;
-        padding: 15px 0 0 10px; }
-    .stats_cont .sold .count, .stats_cont .total_qty .count, .stats_cont .total .count {
-      color: #375363;
-      float: right;
-      font-size: 36px;
-      padding: 16px 15px 0 0;
-      text-align: right; }
-  .stats_cont .total {
-    margin-right: 0;
-    width: 410px; }
-    .stats_cont .total .title {
-      width: 165px; }
-
-/* Detailed Title */
-.detailed_title, .promote_event {
-  border-bottom: 1px dashed #d7d7d7;
-  border-top: 1px solid #adc0c9;
-  color: #0099FF;
-  font-size: 20px;
-  font-weight: bold;
-  line-height: 100%;
-  margin-top: 15px;
-  padding: 15px 0 13px 0; }
-
-/* Detailed Table */
-.detailed {
-  border-collapse: collapse;
-  border-spacing: 0;
-  margin-top: 10px;
-  width: 1015px;
-  /* Promo Code Table */ }
-  .detailed tr {
-    border-bottom: 1px dashed #d7d7d7; }
-    .detailed tr:first-child, .detailed tr:last-child {
-      border-bottom: none; }
-  .detailed th {
-    background-color: #ebebeb;
-    color: #acacac;
-    font-size: 12px;
-    font-weight: bold;
-    height: 22px;
-    text-align: left;
-    text-transform: uppercase; }
-    .detailed th.ticket_type {
-      padding-left: 5px;
-      text-align: left;
-      width: 200px; }
-    .detailed th.show_time {
-      text-align: left;
-      width: 170px; }
-    .detailed th.sales_end {
-      text-align: left;
-      width: 170px; }
-    .detailed th.sold_left, .detailed th.total_qty {
-      text-align: center;
-      width: 70px; }
-    .detailed th.price {
-      text-align: right;
-      width: 70px; }
-    .detailed th.fee {
-      text-align: right;
-      width: 65px; }
-    .detailed th.promo_discounts {
-      text-align: right;
-      width: 95px; }
-    .detailed th.total_sales {
-      padding-right: 5px;
-      text-align: right;
-      width: 105px; }
-  .detailed td {
-    color: #464646;
-    font-family: "Roboto Light", Arial, sans-serif;
-    font-size: 14px;
-    padding: 8px 0;
-    vertical-align: top; }
-    .detailed td.ticket_type {
-      padding-left: 5px;
-      text-align: left; }
-    .detailed td.show_time {
-      text-align: left; }
-    .detailed td.sales_end {
-      text-align: left; }
-    .detailed td.sold_left {
-      text-align: center; }
-    .detailed td.total_qty {
-      text-align: center; }
-    .detailed td.price {
-      text-align: right; }
-    .detailed td.fee {
-      text-align: right; }
-    .detailed td.promo_discounts {
-      text-align: right; }
-    .detailed td.total_sales {
-      color: #000000;
-      font-weight: bold;
-      padding-right: 5px;
-      text-align: right; }
-  .detailed th.promo_code {
-    padding-left: 5px;
-    width: 200px; }
-  .detailed th.discount {
-    width: 90px; }
-  .detailed th.starts {
-    width: 170px; }
-  .detailed th.ends {
-    text-align: left;
-    width: 170px; }
-  .detailed th.used {
-    text-align: center;
-    width: 80px; }
-  .detailed th.available {
-    width: 100px; }
-  .detailed th.total_discount {
-    text-align: right;
-    width: 120px; }
-  .detailed th.status {
-    padding-right: 5px;
-    text-align: right; }
-  .detailed td.promo_code {
-    padding-left: 5px; }
-  .detailed td.stats, .detailed td.used {
-    text-align: center; }
-  .detailed td.available {
-    text-align: left; }
-  .detailed td.ends {
-    text-align: left; }
-  .detailed td.total_discount {
-    text-align: right; }
-  .detailed td.status {
-    padding-right: 5px;
-    text-align: right; }
-
-/* Password Container */
-.password_cont {
-  margin-top: 15px; }
-  .password_cont .toggle {
-    font-size: 11px;
+        font-size: 16px;
+        margin: 0;
+        padding: 7px 15px;
+        outline: none;
+        text-decoration: none !important; }
+      .ui-tabs .ui-tabs-nav li.ui-tabs-selected, .ui-tabs .ui-tabs-nav li.ui-state-disabled, .ui-tabs .ui-tabs-nav li.ui-state-processing {
+        background: #f6f6f6; }
+        .ui-tabs .ui-tabs-nav li.ui-tabs-selected a, .ui-tabs .ui-tabs-nav li.ui-state-disabled a, .ui-tabs .ui-tabs-nav li.ui-state-processing a {
+          cursor: default;
+          border-bottom-style: none; }
+      .ui-tabs .ui-tabs-nav li.ui-tabs-selected {
+        background-color: #f6f6f6;
+        border-bottom: 1px solid #f6f6f6; }
+        .ui-tabs .ui-tabs-nav li.ui-tabs-selected a {
+          color: #0099FF;
+          cursor: pointer; }
+  .ui-tabs.ui-tabs-collapsible {
+    cursor: pointer; }
+  .ui-tabs .ui-tabs-panel {
+    background-color: #f6f6f6;
+    border: 1px solid #d0d0d0;
     display: block;
-    text-align: left;
-    margin: 0 0 10px 214px; }
-  .password_cont .password .inline-success {
-    right: 108px; }
-  .password_cont .password .inline-errors {
-    right: 104px; }
-
-/* Promote Event */
-.promote {
-  margin: 10px 0;
-  font-size: 15px; }
-  .promote li {
-    color: #375363;
-    padding: 5px 0;
-    position: relative; }
-    .promote li .arrow {
-      color: #ff9000; }
-    .promote li a {
-      color: #445e6d; }
-      .promote li a:hover {
-        text-decoration: none; }
+    clear: both;
+    padding: 10px; }
+  .ui-tabs .ui-tabs-hide {
+    display: none; }
 /* Tickets Button */
 
 
@@ -1167,6 +728,649 @@ body {
 .orange .no_logo_text {
   color: #ffdc9f !important;
 }
+/*
+
+
+
+
+
+
+*/
+/*--------*/
+/* Mixins */
+/*--------*/
+/* Breadcrumbs */
+.breadcrumbs li:last-child:after {
+  content: '' !important; }
+
+h1 {
+  font-weight: normal !important; }
+  h1 span.small {
+    font-size: 16px; }
+
+span.inline-errors {
+  background: url(/assets/users/error.png);
+  height: 16px;
+  position: absolute;
+  width: 16px;
+  text-indent: -9999px; }
+
+p.inline-errors {
+  color: #FF0000;
+  display: block;
+  font-size: 11px;
+  margin: -10px 0 10px 214px !important;
+  text-align: left; }
+
+.btn_white {
+  border: 1px solid #cdd9df;
+  color: #0099FF;
+  cursor: pointer;
+  text-align: center;
+  text-shadow: 1px 1px 0px #ffffff;
+  filter: dropshadow(color=white, offx=1, offy=1);
+  background: #f9fafb;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #f9fafb 0%, #e5eaed 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f9fafb), color-stop(100%, #e5eaed));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #f9fafb 0%, #e5eaed 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #f9fafb 0%, #e5eaed 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #f9fafb 0%, #e5eaed 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #f9fafb 0%, #e5eaed 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9fafb', endColorstr='#e5eaed',GradientType=0 );
+  /* IE6-9 */
+  -webkit-border-radius: 4px;
+  border-radius: 4px; }
+  .btn_white:hover {
+    background: #e5eaed;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #e5eaed 0%, #f9fafb 100%);
+    /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #e5eaed), color-stop(100%, #f9fafb));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #e5eaed 0%, #f9fafb 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #e5eaed 0%, #f9fafb 100%);
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #e5eaed 0%, #f9fafb 100%);
+    /* IE10+ */
+    background: linear-gradient(to bottom, #e5eaed 0%, #f9fafb 100%);
+    /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e5eaed', endColorstr='#f9fafb',GradientType=0 );
+    /* IE6-9 */ }
+  .btn_white.copy {
+    cursor: pointer !important;
+    float: left;
+    font-size: 12px;
+    padding: 3px 0;
+    width: 150px; }
+    .btn_white.copy.hover {
+      cursor: pointer !important;
+      background: #e5eaed;
+      /* Old browsers */
+      background: -moz-linear-gradient(top, #e5eaed 0%, #f9fafb 100%);
+      /* FF3.6+ */
+      background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #e5eaed), color-stop(100%, #f9fafb));
+      /* Chrome,Safari4+ */
+      background: -webkit-linear-gradient(top, #e5eaed 0%, #f9fafb 100%);
+      /* Chrome10+,Safari5.1+ */
+      background: -o-linear-gradient(top, #e5eaed 0%, #f9fafb 100%);
+      /* Opera 11.10+ */
+      background: -ms-linear-gradient(top, #e5eaed 0%, #f9fafb 100%);
+      /* IE10+ */
+      background: linear-gradient(to bottom, #e5eaed 0%, #f9fafb 100%);
+      /* W3C */
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e5eaed', endColorstr='#f9fafb',GradientType=0 );
+      /* IE6-9 */ }
+
+/* Dashboard Index */
+.dashboard_index {
+  float: left;
+  width: 680px;
+  /* Table */ }
+  .dashboard_index table {
+    margin-top: 15px;
+    width: 100%; }
+    .dashboard_index table tr {
+      border-bottom: 1px dashed #d7d7d7; }
+      .dashboard_index table tr:first-child, .dashboard_index table tr:last-child {
+        border-bottom: none; }
+    .dashboard_index table th {
+      background-color: #ebebeb;
+      color: #acacac;
+      font-size: 11px;
+      font-weight: bold;
+      height: 22px;
+      text-align: left;
+      text-transform: uppercase; }
+      .dashboard_index table th.event {
+        padding-left: 5px;
+        width: 235px; }
+      .dashboard_index table th.event_day {
+        width: 150px; }
+      .dashboard_index table th.tickets_sold {
+        text-align: center;
+        width: 110px; }
+      .dashboard_index table th.total_qty {
+        text-align: center;
+        width: 90px; }
+      .dashboard_index table th.revenue {
+        padding-right: 5px;
+        text-align: right;
+        width: 85px; }
+    .dashboard_index table td {
+      font-family: "Roboto", "Arimo", Arial, sans-serif;
+      font-weight: 300 !important;
+      color: #464646;
+      font-size: 14px;
+      padding: 8px 0;
+      vertical-align: top; }
+      .dashboard_index table td.event {
+        padding: 8px 20px 8px 0;
+        text-align: left; }
+        .dashboard_index table td.event a {
+          color: #000000; }
+          .dashboard_index table td.event a:hover {
+            color: #464646;
+            text-decoration: none; }
+      .dashboard_index table td.event_day {
+        text-align: left;
+        white-space: nowrap; }
+      .dashboard_index table td.tickets_sold {
+        text-align: center; }
+      .dashboard_index table td.total_qty {
+        text-align: center; }
+      .dashboard_index table td.revenue {
+        color: #000000;
+        font-weight: bold;
+        padding-right: 5px;
+        text-align: right; }
+
+/* Dashboard Sidebar */
+.dashboard_sidebar {
+  float: right;
+  width: 300px;
+  /* Download Reports */ }
+  .dashboard_sidebar .your_account .account_title {
+    border-bottom: 1px dashed #adc0c9;
+    border-top: 1px solid #adc0c9;
+    color: #0099FF;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 14px 0; }
+  .dashboard_sidebar .your_account ul {
+    margin: 10px 0;
+    font-size: 15px; }
+    .dashboard_sidebar .your_account ul li {
+      color: #375363;
+      padding: 5px 0;
+      position: relative; }
+      .dashboard_sidebar .your_account ul li .arrow {
+        color: #ff9000; }
+      .dashboard_sidebar .your_account ul li a {
+        color: #445e6d; }
+        .dashboard_sidebar .your_account ul li a:hover {
+          text-decoration: none; }
+
+/* Show Container */
+.event_info {
+  float: left;
+  margin-bottom: 17px;
+  width: 780px;
+  /* Info */ }
+  .event_info .left_column {
+    float: left; }
+    .event_info .left_column .thumbnail {
+      height: 140px;
+      width: 140px; }
+      .event_info .left_column .thumbnail img {
+        height: 140px;
+        width: 140px; }
+  .event_info .info {
+    float: right;
+    height: 142px;
+    margin-left: 15px;
+    position: relative;
+    width: 623px;
+    /* Event Name */
+    /* Event Date */
+    /* Event Venue */ }
+    .event_info .info .name {
+      font-size: 22px;
+      font-family: "Arimo", Arial, serif;
+      font-weight: bold;
+      line-height: 20px;
+      margin-bottom: 5px; }
+      .event_info .info .name a {
+        color: #000000; }
+        .event_info .info .name a:hover {
+          color: #597686; }
+    .event_info .info .date {
+      font-family: "Roboto", "Arimo", Arial, sans-serif;
+      font-weight: 700 !important;
+      color: #0099FF;
+      font-size: 18px;
+      line-height: 14px;
+      margin-bottom: 12px; }
+    .event_info .info .venue {
+      font-family: "Roboto", "Arimo", Arial, sans-serif;
+      font-weight: 300 !important;
+      bottom: 0;
+      color: #252525;
+      font-size: 16px;
+      line-height: 16px;
+      position: absolute; }
+      .event_info .info .venue a {
+        color: #252525;
+        font-size: 16px;
+        line-height: 16px; }
+        .event_info .info .venue a:hover {
+          text-decoration: none; }
+      .event_info .info .venue address {
+        font-size: 13px !important;
+        font-weight: 300 !important;
+        line-height: 14px !important; }
+        .event_info .info .venue address p {
+          margin: 0;
+          padding: 0; }
+      .event_info .info .venue:nth-child(even) {
+        bottom: 50px; }
+
+/* Dashboard Sidebar */
+.detailed_sidebar {
+  float: right;
+  width: 225px;
+  /* Download Reports */ }
+  .detailed_sidebar .box_office_btn {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 9px 0 7px;
+    position: relative;
+    text-decoration: none;
+    width: 225px; }
+    .detailed_sidebar .box_office_btn:hover {
+      text-decoration: none; }
+    .detailed_sidebar .box_office_btn span {
+      float: left; }
+    .detailed_sidebar .box_office_btn span.barcode {
+      background: url(/assets/tickets/pe_www_tickets_barcode.png);
+      height: 18px;
+      margin: 0 10px 0 13px;
+      width: 26px; }
+    .detailed_sidebar .box_office_btn span.spacer {
+      background: url(/assets/tickets/tickets_barcode_spacer.png);
+      height: 28px;
+      margin-top: -5px;
+      width: 2px; }
+  .detailed_sidebar .download_report {
+    font-family: "Roboto", "Arimo", Arial, sans-serif;
+    font-weight: 300 !important; }
+    .detailed_sidebar .download_report .reports {
+      color: #0099FF;
+      font-size: 18px;
+      margin: 10px 0; }
+    .detailed_sidebar .download_report ul {
+      font-size: 13px; }
+      .detailed_sidebar .download_report ul li {
+        margin-bottom: 3px;
+        position: relative; }
+        .detailed_sidebar .download_report ul li span {
+          background: url(/assets/tickets/pe_web_ticket_dashboard_xls.png);
+          height: 17px;
+          position: absolute;
+          right: 0;
+          top: 2px;
+          width: 16px; }
+        .detailed_sidebar .download_report ul li a {
+          color: #375363;
+          text-decoration: underline; }
+          .detailed_sidebar .download_report ul li a:hover {
+            text-decoration: none; }
+
+/* Copy URL Link */
+.copy_links {
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  border: 1px solid #e4e4e4;
+  background: #FFFFFF;
+  padding: 10px; }
+  .copy_links .row {
+    display: block; }
+    .copy_links .row .btn {
+      -webkit-border-radius: 2px;
+      border-radius: 2px;
+      color: #0099FF;
+      cursor: pointer;
+      display: inline-block;
+      font-size: 13px;
+      line-height: 100%;
+      margin-right: 7px;
+      padding: 5px 0;
+      vertical-align: top;
+      width: 177px; }
+      .copy_links .row .btn.hover {
+        cursor: pointer;
+        background: #fafafa; }
+    .copy_links .row .text {
+      color: #597686;
+      display: inline-block;
+      font-size: 10px;
+      text-transform: uppercase;
+      width: 85px; }
+    .copy_links .row .url {
+      font-family: "Roboto", "Arimo", Arial, sans-serif;
+      font-weight: 300 !important;
+      -webkit-border-radius: 2px;
+      border-radius: 2px;
+      border: 1px solid #c4c3c3;
+      color: #7d7d7d;
+      display: inline-block;
+      padding: 2px 10px 3px;
+      width: 760px; }
+      .copy_links .row .url a {
+        color: #959595;
+        font-size: 12px;
+        text-decoration: none; }
+        .copy_links .row .url a:hover {
+          color: #5b5b5b;
+          text-decoration: underline; }
+
+/* Ticket Sales Overview */
+.sales_overview {
+  border-bottom: 1px dashed #adc0c9;
+  border-top: 1px solid #adc0c9;
+  color: #0099FF;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 100%;
+  margin-top: 7px;
+  padding: 15px 0 13px 0; }
+
+/* Ticket Sales Button */
+.stats_cont {
+  /* Buttons */
+  /* Button Misc */ }
+  .stats_cont .sold, .stats_cont .total_qty, .stats_cont .total {
+    font-family: "Roboto", "Arimo", Arial, sans-serif;
+    font-weight: 700 !important;
+    background: #FFFFFF;
+    border: 1px solid #cbcbcb;
+    float: left;
+    height: 42px;
+    margin-right: 10px;
+    text-align: center;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    /* Button Title */
+    /* Button Count */ }
+    .stats_cont .sold .title, .stats_cont .total_qty .title, .stats_cont .total .title {
+      background: #cbcbcb;
+      color: #FFFFFF;
+      float: left;
+      font-size: 18px;
+      font-weight: bold;
+      height: 42px;
+      position: relative;
+      text-transform: uppercase;
+      text-shadow: 0px -1px 0px #afafaf;
+      filter: dropshadow(color=white, offx=0, offy=1); }
+      .stats_cont .sold .title .point, .stats_cont .total_qty .title .point, .stats_cont .total .title .point {
+        background: url(/assets/tickets/pointer_gray_right.png) no-repeat;
+        height: 42px;
+        width: 11px;
+        position: absolute;
+        top: 0;
+        right: -21px; }
+      .stats_cont .sold .title span, .stats_cont .total_qty .title span, .stats_cont .total .title span {
+        display: block;
+        padding: 11px 0 0 10px; }
+    .stats_cont .sold .count, .stats_cont .total_qty .count, .stats_cont .total .count {
+      color: #597686;
+      float: right;
+      font-size: 24px;
+      font-weight: 500 !important;
+      padding: 11px 15px 0 0;
+      text-align: right; }
+  .stats_cont .sold {
+    width: 230px; }
+    .stats_cont .sold .title {
+      width: 110px; }
+  .stats_cont .total_qty {
+    width: 330px; }
+    .stats_cont .total_qty .title {
+      width: 160px; }
+  .stats_cont .total {
+    margin-right: 0;
+    width: 408px; }
+    .stats_cont .total .title {
+      width: 195px; }
+    .stats_cont .total .count {
+      color: #24a51e; }
+
+/* Detailed Title */
+.promote_event {
+  border-bottom: 1px dashed #d7d7d7;
+  border-top: 1px solid #adc0c9;
+  color: #0099FF;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 100%;
+  margin-top: 15px;
+  padding: 15px 0 13px 0; }
+
+/* Detailed Table */
+.detailed {
+  background: #FFFFFF;
+  margin-top: 10px;
+  padding: 7px 6px 0; }
+  .detailed.promo_code {
+    margin-top: 0; }
+  .detailed.no_promo {
+    color: #375363;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    padding: 20px 0; }
+  .detailed table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    /* Promo Code Table */ }
+    .detailed table tr {
+      border-bottom: 1px dashed #d7d7d7; }
+      .detailed table tr:first-child, .detailed table tr:last-child {
+        border-bottom: none; }
+    .detailed table th {
+      font-family: "Roboto Condensed", Arial, sans-serif;
+      font-weight: normal;
+      background-color: #cbcbcb;
+      border-right: 3px solid #FFFFFF;
+      color: #FFFFFF;
+      font-size: 13px;
+      height: 20px;
+      padding: 0 10px;
+      text-align: left;
+      text-transform: uppercase; }
+      .detailed table th.ticket_type {
+        width: 219px; }
+      .detailed table th.show_time {
+        width: 110px; }
+      .detailed table th.sales_end {
+        width: 110px; }
+      .detailed table th.sold_left, .detailed table th.total_qty {
+        width: 80px; }
+      .detailed table th.price, .detailed table th.fee, .detailed table th.promo_discounts {
+        width: 80px; }
+      .detailed table th.total_sales {
+        border-right: none;
+        width: 100px; }
+    .detailed table td {
+      font-family: "Roboto", "Arimo", Arial, sans-serif;
+      font-weight: 300 !important;
+      color: #464646;
+      font-size: 14px;
+      padding: 8px 10px;
+      text-align: left;
+      vertical-align: top; }
+      .detailed table td.ticket_type, .detailed table td.promo_code {
+        font-family: "Roboto", "Arimo", Arial, sans-serif;
+        font-weight: 500 !important;
+        font-size: 14px; }
+      .detailed table td.total_sales {
+        border-right: none; }
+    .detailed table th.promo_code {
+      width: 240px; }
+    .detailed table th.discount {
+      width: 90px; }
+    .detailed table th.starts, .detailed table th.ends {
+      width: 90px; }
+    .detailed table th.used {
+      width: 70px; }
+    .detailed table th.offered {
+      width: 90px; }
+    .detailed table th.total_discount {
+      width: 120px; }
+
+/* Password Container */
+.password_cont {
+  margin-top: 15px; }
+  .password_cont .toggle {
+    font-size: 11px;
+    display: block;
+    text-align: left;
+    margin: 0 0 10px 214px; }
+  .password_cont .password .inline-success {
+    right: 108px; }
+  .password_cont .password .inline-errors {
+    right: 104px; }
+
+/* Promote Event */
+.promote_events .sub_nav li {
+  font-family: "Roboto", "Arimo", Arial, sans-serif;
+  font-weight: 300 !important;
+  color: #375363;
+  cursor: pointer;
+  float: left;
+  font-size: 13px;
+  margin-right: 20px;
+  text-decoration: underline; }
+  .promote_events .sub_nav li:hover {
+    text-decoration: none; }
+  .promote_events .sub_nav li.Disabled {
+    color: #0099FF !important;
+    cursor: default !important;
+    text-decoration: none !important; }
+.promote_events .title {
+  font-family: "Roboto", "Arimo", Arial, sans-serif;
+  font-weight: 700 !important;
+  border-top: 1px dashed #d7d7d7;
+  color: #464646;
+  font-size: 15px;
+  line-height: 100%;
+  margin-top: 10px;
+  padding: 10px 0; }
+  .promote_events .title span {
+    font-family: "Roboto", "Arimo", Arial, sans-serif;
+    font-weight: 300 !important;
+    float: right;
+    font-size: 13px;
+    position: relative; }
+.promote_events .create_button {
+  border-top: 1px dashed #D7D7D7;
+  margin-top: 10px; }
+  .promote_events .create_button .create_cont {
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    border: 1px solid #E4E4E4;
+    background: #FFFFFF;
+    padding: 10px;
+    margin-top: 10px; }
+    .promote_events .create_button .create_cont .section_cont {
+      position: relative;
+      border-bottom: 1px dashed #E4E4E4;
+      text-align: left;
+      padding: 10px 0; }
+      .promote_events .create_button .create_cont .section_cont.code {
+        border-bottom: 0;
+        margin-bottom: 0;
+        padding-bottom: 0; }
+        .promote_events .create_button .create_cont .section_cont.code .generate, .promote_events .create_button .create_cont .section_cont.code .text {
+          float: left; }
+        .promote_events .create_button .create_cont .section_cont.code .copy_text {
+          font-family: "Roboto", "Arimo", Arial, sans-serif;
+          font-weight: 300 !important;
+          float: left;
+          margin: 5px 0 0 10px;
+          font-size: 13px; }
+        .promote_events .create_button .create_cont .section_cont.code .text {
+          font-family: "Roboto", "Arimo", Arial, sans-serif;
+          font-weight: 300 !important;
+          font-size: 13px;
+          position: relative;
+          padding: 7px 0 0 10px; }
+      .promote_events .create_button .create_cont .section_cont .title {
+        float: left;
+        border-top: 0;
+        margin-top: 0; }
+        .promote_events .create_button .create_cont .section_cont .title .fake_link {
+          font-family: "Roboto", "Arimo", Arial, sans-serif;
+          font-weight: 300 !important;
+          font-size: 12px;
+          margin-top: 10px;
+          text-decoration: underline !important; }
+      .promote_events .create_button .create_cont .section_cont .right_cont {
+        color: #959595;
+        float: right;
+        width: 850px; }
+        .promote_events .create_button .create_cont .section_cont .right_cont label {
+          clear: both;
+          float: left;
+          padding-bottom: 5px;
+          position: relative; }
+          .promote_events .create_button .create_cont .section_cont .right_cont label:last-child {
+            padding-bottom: 0; }
+          .promote_events .create_button .create_cont .section_cont .right_cont label span, .promote_events .create_button .create_cont .section_cont .right_cont label img {
+            display: inline-block;
+            padding-left: 17px; }
+          .promote_events .create_button .create_cont .section_cont .right_cont label input[type=radio] {
+            position: absolute;
+            top: 1px; }
+            .promote_events .create_button .create_cont .section_cont .right_cont label input[type=radio].custom_text {
+              top: 6px; }
+            .promote_events .create_button .create_cont .section_cont .right_cont label input[type=radio].pe_lrg {
+              top: 12px; }
+            .promote_events .create_button .create_cont .section_cont .right_cont label input[type=radio].pe_sml {
+              top: 3px; }
+          .promote_events .create_button .create_cont .section_cont .right_cont label input[type=text], .promote_events .create_button .create_cont .section_cont .right_cont label textarea {
+            border: 1px solid #cdd9df !important;
+            font-size: 13px;
+            padding: 5px;
+            text-indent: 5px;
+            -webkit-border-radius: 2px !important;
+            border-radius: 2px !important; }
+          .promote_events .create_button .create_cont .section_cont .right_cont label input[type=text] {
+            margin-left: 17px;
+            width: 185px; }
+          .promote_events .create_button .create_cont .section_cont .right_cont label textarea {
+            border-color: #adc0c9 !important;
+            color: #656565;
+            font-size: 11px;
+            height: 55px;
+            padding: 10px 10px 0 10px;
+            resize: none;
+            width: 827px; }
+        .promote_events .create_button .create_cont .section_cont .right_cont .btn_white.generate {
+          font-size: 16px;
+          margin-bottom: 10px;
+          padding: 5px 0;
+          width: 125px; }
 /*
 
 

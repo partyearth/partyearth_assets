@@ -3238,8 +3238,8 @@ input, select, textarea {
     #masthead #masthead_search #text_field {
       float: left;
       width: 278px;
-      height: 23px;
-      padding: 4px 8px;
+      line-height: 100% !important;
+      padding: 9px;
       color: #000;
       background: none; }
     #masthead #masthead_search .InfieldLabel {

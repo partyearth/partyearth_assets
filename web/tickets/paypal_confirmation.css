@@ -1,5 +1,7 @@
-.paypal h1 {
-  margin-bottom: 15px !important; }
+.paypal {
+  min-height: auto !important; }
+  .paypal h1 {
+    margin-bottom: 15px !important; }
 
 .paypal_cont {
   padding: 10px 0; }
@@ -17,14 +19,15 @@
     margin-left: 20px;
     width: 533px; }
 
-.btn_cont {
-  border-top: 1px solid #d7d7d7;
-  padding-top: 10px;
+.action_cont {
   width: 100%; }
-  .btn_cont .btn_orange {
+  .action_cont .btn_paypal {
     float: right;
     font-size: 16px;
-    font-weight: bold;
-    text-transform: uppercase;
-    width: 200px;
-    -webkit-appearance: none; }
+    width: 200px; }
+
+.action_paypal {
+  border-top: 1px solid #d7d7d7;
+  padding-top: 14px; }
+  .action_paypal .btn_orange {
+    float: right; }

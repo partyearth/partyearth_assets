@@ -1,0 +1,50 @@
+.admin_info {
+  /* Radio Choices */ }
+  .admin_info input, .admin_info select {
+    background-color: #FFFFFF;
+    border: 1px solid #CCCCCC;
+    border-radius: 4px;
+    box-shadow: inset 1px 1px 0 #999999;
+    box-sizing: border-box;
+    display: block;
+    font-size: 13px;
+    font-family: 'Arimo', Arial, sans-serif;
+    padding: 6px; }
+  .admin_info input[type=text] {
+    padding: 8px 10px; }
+  .admin_info input[type=checkbox] {
+    border: none;
+    box-shadow: none;
+    display: inline-block;
+    padding: 0;
+    position: relative;
+    -webkit-appearance: checkbox;
+    box-sizing: border-box; }
+  .admin_info label {
+    font-weight: bold;
+    font-size: 13px; }
+  .admin_info .fields .custom_label {
+    width: 390px; }
+  .admin_info .fields li {
+    float: left;
+    width: 300px; }
+    .admin_info .fields li#attendee_info_form_field_field_input_type_input {
+      margin-right: 20px; }
+  .admin_info .inc_req {
+    margin: 10px 0 0 0;
+    width: 240px; }
+    .admin_info .inc_req li {
+      float: left;
+      margin-right: 20px; }
+      .admin_info .inc_req li label input {
+        margin: 0 5px 0 0;
+        position: relative;
+        top: 2px; }
+  .admin_info .cancel_link {
+    float: left;
+    margin: 8px 0 0 570px; }
+  .admin_info .answer_cont {
+    margin-top: 15px; }
+    .admin_info .answer_cont input {
+      display: inline-block;
+      width: 245px; }
