@@ -1761,8 +1761,6 @@
 !binary "dGVtcC92ZW51ZV9jaGFyX3RpcF90ZW1wL2luZGV4LmpwZw==": temp/venue_char_tip_temp-5cbce595a2c2af3b4cf95da39f470729.jpg
 !binary "dGlja2V0cy9hcHByb3ZlZC5naWY=": tickets/approved-b68b9a2de2bb2776a7515787ac52bfda.gif
 !binary "dGlja2V0cy9hcHByb3ZlZC9pbmRleC5naWY=": tickets/approved-b68b9a2de2bb2776a7515787ac52bfda.gif
-!binary "dGlja2V0cy9jY19jbGllbnRfcGF5cGFsLnBuZw==": tickets/cc_client_paypal-bd7e41042a9bded5faba04c7378ce317.png
-!binary "dGlja2V0cy9jY19jbGllbnRfcGF5cGFsL2luZGV4LnBuZw==": tickets/cc_client_paypal-bd7e41042a9bded5faba04c7378ce317.png
 !binary "dGlja2V0cy9kZW5pZWQuZ2lm": tickets/denied-a32f70249b15405ea9b4abe084f267a4.gif
 !binary "dGlja2V0cy9kZW5pZWQvaW5kZXguZ2lm": tickets/denied-a32f70249b15405ea9b4abe084f267a4.gif
 !binary "dGlja2V0cy9sb2dvLnBuZw==": tickets/logo-bb184a0395ccf2cbc410d20388a40252.png
@@ -2879,8 +2877,6 @@
 !binary "YWRtaW4vdGlja2V0X3Byb21vX2NvZGVzL2VkaXQvaW5kZXguanM=": admin/ticket_promo_codes/edit-6eed61f6a1258bace65637104249d0f4.js
 !binary "YWRtaW4vdGlja2V0X3R5cGVzLmpz": admin/ticket_types-ea4efa21af296f20151a7032eefb7af8.js
 !binary "YWRtaW4vdGlja2V0X3R5cGVzL2luZGV4Lmpz": admin/ticket_types-ea4efa21af296f20151a7032eefb7af8.js
-!binary "YWRtaW4vdGlja2V0cy9yZXBvcnRzLmpz": admin/tickets/reports-009c55f0ff7f025cd3695c8a2917e536.js
-!binary "YWRtaW4vdGlja2V0cy9yZXBvcnRzL2luZGV4Lmpz": admin/tickets/reports-009c55f0ff7f025cd3695c8a2917e536.js
 !binary "YWRtaW4vdHdpdHRlcl9hY2NvdW50cy9lZGl0Lmpz": admin/twitter_accounts/edit-193c4a4c437398bf32aa83866d0d781e.js
 !binary "YWRtaW4vdHdpdHRlcl9hY2NvdW50cy9lZGl0L2luZGV4Lmpz": admin/twitter_accounts/edit-193c4a4c437398bf32aa83866d0d781e.js
 !binary "YWRtaW4vdHdpdHRlcl9hY2NvdW50cy9pbmRleF9hY3Rpb24uanM=": admin/twitter_accounts/index_action-d1bff6574d933f487f67b566b31fd115.js
@@ -3128,8 +3124,8 @@
 !binary "d2ViL3RpY2tldHMvbWFwL2luZGV4Lmpz": web/tickets/map-93f699216711cd7ba10626206ae39bed.js
 !binary "d2ViL3RpY2tldHMvb3JkZXJfdGlja2V0c19mb3JtLmpz": web/tickets/order_tickets_form-6b30d706a343e12f65bc4bc4ce5fd13a.js
 !binary "d2ViL3RpY2tldHMvb3JkZXJfdGlja2V0c19mb3JtL2luZGV4Lmpz": web/tickets/order_tickets_form-6b30d706a343e12f65bc4bc4ce5fd13a.js
-!binary "d2ViL3RpY2tldHMvcHVyY2hhc2UuanM=": web/tickets/purchase-018fd9f20b4aeadf2dd9f21c3e3550b8.js
-!binary "d2ViL3RpY2tldHMvcHVyY2hhc2UvaW5kZXguanM=": web/tickets/purchase-018fd9f20b4aeadf2dd9f21c3e3550b8.js
+!binary "d2ViL3RpY2tldHMvcHVyY2hhc2UuanM=": web/tickets/purchase-5f370f9b9b8e90e76f5145217349678c.js
+!binary "d2ViL3RpY2tldHMvcHVyY2hhc2UvaW5kZXguanM=": web/tickets/purchase-5f370f9b9b8e90e76f5145217349678c.js
 !binary "d2ViL3RpY2tldHMvdGlja2V0X3Byb21vX2FwcGxpZXIuanM=": web/tickets/ticket_promo_applier-dc0318a52acf583dca1f23b0c15eb23d.js
 !binary "d2ViL3RpY2tldHMvdGlja2V0X3Byb21vX2FwcGxpZXIvaW5kZXguanM=": web/tickets/ticket_promo_applier-dc0318a52acf583dca1f23b0c15eb23d.js
 !binary "d2ViL3RpY2tldHMvd2lkZ2V0Lmpz": web/tickets/widget-37d1dade0309d81f674d23be97bb8d7c.js
@@ -3154,8 +3150,8 @@
 !binary "d2ViL3VzZXJzL2Rhc2hib2FyZC9jb250YWN0X2luZm8vaW5kZXguanM=": web/users/dashboard/contact_info-654357bc912e86381fe16a03c7f89ced.js
 !binary "d2ViL3VzZXJzL2Rhc2hib2FyZC9jcmVhdGVfYnV0dG9uLmpz": web/users/dashboard/create_button-0d6b82bdf99a2df0b42f181c31a0196e.js
 !binary "d2ViL3VzZXJzL2Rhc2hib2FyZC9jcmVhdGVfYnV0dG9uL2luZGV4Lmpz": web/users/dashboard/create_button-0d6b82bdf99a2df0b42f181c31a0196e.js
-!binary "d2ViL3VzZXJzL2Rhc2hib2FyZC9wYXltZW50X2luZm8uanM=": web/users/dashboard/payment_info-0ebe2f5f11754ab97b20491bc34e2f63.js
-!binary "d2ViL3VzZXJzL2Rhc2hib2FyZC9wYXltZW50X2luZm8vaW5kZXguanM=": web/users/dashboard/payment_info-0ebe2f5f11754ab97b20491bc34e2f63.js
+!binary "d2ViL3VzZXJzL2Rhc2hib2FyZC9wYXltZW50X2luZm8uanM=": web/users/dashboard/payment_info-41d8dbd9dbba23b3368da3f289101238.js
+!binary "d2ViL3VzZXJzL2Rhc2hib2FyZC9wYXltZW50X2luZm8vaW5kZXguanM=": web/users/dashboard/payment_info-41d8dbd9dbba23b3368da3f289101238.js
 !binary "d2ViL3VzZXJzL2Rhc2hib2FyZC90YXhfaW5mby5qcw==": web/users/dashboard/tax_info-932d523d6bf202c7d7668472f04ea38a.js
 !binary "d2ViL3VzZXJzL2Rhc2hib2FyZC90YXhfaW5mby9pbmRleC5qcw==": web/users/dashboard/tax_info-932d523d6bf202c7d7668472f04ea38a.js
 !binary "d2ViL3VzZXJzL2Rhc2hib2FyZC90aWNrZXRfZ2VuZXJhdG9yLmpz": web/users/dashboard/ticket_generator-0311b199bee1ef2da259fd0ee12695b8.js
@@ -3375,8 +3371,8 @@
 !binary "YWRtaW4vZW5kcG9pbnRzL25ldy9pbmRleC5jc3M=": admin/endpoints/new-cf483fd96bf807c3ab52180a53a35830.css
 !binary "YWRtaW4vZXZlbnRzL2VkaXQuY3Nz": admin/events/edit-3a7ea3cbc8759e3c6a4b5d8060c2ecf9.css
 !binary "YWRtaW4vZXZlbnRzL2VkaXQvaW5kZXguY3Nz": admin/events/edit-3a7ea3cbc8759e3c6a4b5d8060c2ecf9.css
-!binary "YWRtaW4vZXZlbnRzL2luZGV4X2FjdGlvbi5jc3M=": admin/events/index_action-254a984a52b1dd0d27bc23abb9401659.css
-!binary "YWRtaW4vZXZlbnRzX2FjdGlvbi5jc3M=": admin/events/index_action-254a984a52b1dd0d27bc23abb9401659.css
+!binary "YWRtaW4vZXZlbnRzL2luZGV4X2FjdGlvbi5jc3M=": admin/events/index_action-f501deb54226a45fb0cb05ed19472673.css
+!binary "YWRtaW4vZXZlbnRzX2FjdGlvbi5jc3M=": admin/events/index_action-f501deb54226a45fb0cb05ed19472673.css
 !binary "YWRtaW4vZXZlbnRzL21lcmdlX2R1cGxpY2F0ZS5jc3M=": admin/events/merge_duplicate-463cd2f16bf0caaae43db49e6ac5611f.css
 !binary "YWRtaW4vZXZlbnRzL21lcmdlX2R1cGxpY2F0ZS9pbmRleC5jc3M=": admin/events/merge_duplicate-463cd2f16bf0caaae43db49e6ac5611f.css
 !binary "YWRtaW4vZXZlbnRzL25ldy5jc3M=": admin/events/new-616c68966306d1f27a7cf2cc6d71f0b8.css
@@ -3526,8 +3522,6 @@
 !binary "YWRtaW4vdGFncy9zaG93L2luZGV4LmNzcw==": admin/tags/show-c7544e433421845994910a34c87825ef.css
 !binary "YWRtaW4vdGlja2V0X3R5cGVzL2VkaXQuanM=": admin/ticket_types/edit-71fc42bc38091b1a1fb94a96758e1be7.js
 !binary "YWRtaW4vdGlja2V0X3R5cGVzL2VkaXQvaW5kZXguanM=": admin/ticket_types/edit-71fc42bc38091b1a1fb94a96758e1be7.js
-!binary "YWRtaW4vdGlja2V0cy9yZXBvcnRzLmNzcw==": admin/tickets/reports-c8ec74281361cc1c7ba5df1c2302bcae.css
-!binary "YWRtaW4vdGlja2V0cy9yZXBvcnRzL2luZGV4LmNzcw==": admin/tickets/reports-c8ec74281361cc1c7ba5df1c2302bcae.css
 !binary "YWRtaW4vdHdpdHRlcl9hY2NvdW50cy9lZGl0LmNzcw==": admin/twitter_accounts/edit-714153f17d87c8662bb7fc7e955a535d.css
 !binary "YWRtaW4vdHdpdHRlcl9hY2NvdW50cy9lZGl0L2luZGV4LmNzcw==": admin/twitter_accounts/edit-714153f17d87c8662bb7fc7e955a535d.css
 !binary "YWRtaW4vdHdpdHRlcl9hY2NvdW50cy9pbmRleF9hY3Rpb24uY3Nz": admin/twitter_accounts/index_action-714153f17d87c8662bb7fc7e955a535d.css
@@ -4126,8 +4120,8 @@
 !binary "d2ViL3RpY2tldHMvY29uZmlybWF0aW9uL2luZGV4LmNzcw==": web/tickets/confirmation-e0848b37c157c96c50a5b5aabd3b58a4.css
 !binary "d2ViL3RpY2tldHMvcGF5cGFsX2NvbmZpcm1hdGlvbi5jc3M=": web/tickets/paypal_confirmation-5b565cffd82c2cb05933b434503ff96d.css
 !binary "d2ViL3RpY2tldHMvcGF5cGFsX2NvbmZpcm1hdGlvbi9pbmRleC5jc3M=": web/tickets/paypal_confirmation-5b565cffd82c2cb05933b434503ff96d.css
-!binary "d2ViL3RpY2tldHMvcHVyY2hhc2UuY3Nz": web/tickets/purchase-c243d62a360d0497491516813f8b657c.css
-!binary "d2ViL3RpY2tldHMvcHVyY2hhc2UvaW5kZXguY3Nz": web/tickets/purchase-c243d62a360d0497491516813f8b657c.css
+!binary "d2ViL3RpY2tldHMvcHVyY2hhc2UuY3Nz": web/tickets/purchase-cc49f339dc62bbc4954fd3d1374b9335.css
+!binary "d2ViL3RpY2tldHMvcHVyY2hhc2UvaW5kZXguY3Nz": web/tickets/purchase-cc49f339dc62bbc4954fd3d1374b9335.css
 !binary "d2ViL3RpY2tldHMvc2hvdy5jc3M=": web/tickets/show-887e7be9f96791d0c8529084e07a9a6a.css
 !binary "d2ViL3RpY2tldHMvc2hvdy9pbmRleC5jc3M=": web/tickets/show-887e7be9f96791d0c8529084e07a9a6a.css
 !binary "d2ViL3RpY2tldHMvd2lkZ2V0LmNzcw==": web/tickets/widget-b3bd39cc688a297446e99d403f3bc444.css
@@ -4144,8 +4138,8 @@
 !binary "d2ViL3VzZXJzL2NvbmZpcm1fZW1haWwvaW5kZXguY3Nz": web/users/confirm_email-0b7823f72dd69d51b0047446976a82cd.css
 !binary "d2ViL3VzZXJzL2NyZWF0ZS5jc3M=": web/users/create-0b7823f72dd69d51b0047446976a82cd.css
 !binary "d2ViL3VzZXJzL2NyZWF0ZS9pbmRleC5jc3M=": web/users/create-0b7823f72dd69d51b0047446976a82cd.css
-!binary "d2ViL3VzZXJzL2Rhc2hib2FyZC5jc3M=": web/users/dashboard-516d53503019bda4623919d76ea0493b.css
-!binary "d2ViL3VzZXJzL2Rhc2hib2FyZC9pbmRleC5jc3M=": web/users/dashboard-516d53503019bda4623919d76ea0493b.css
+!binary "d2ViL3VzZXJzL2Rhc2hib2FyZC5jc3M=": web/users/dashboard-6d2ab1e7b9ee2f1ff81c6dd6d9e94fb1.css
+!binary "d2ViL3VzZXJzL2Rhc2hib2FyZC9pbmRleC5jc3M=": web/users/dashboard-6d2ab1e7b9ee2f1ff81c6dd6d9e94fb1.css
 !binary "d2ViL3VzZXJzL2Rhc2hib2FyZC9ib3hvZmZpY2Uvc2hvdy5jc3M=": web/users/dashboard/boxoffice/show-3fbea340350469e665c5712df39f9104.css
 !binary "d2ViL3VzZXJzL2Rhc2hib2FyZC9ib3hvZmZpY2Uvc2hvdy9pbmRleC5jc3M=": web/users/dashboard/boxoffice/show-3fbea340350469e665c5712df39f9104.css
 !binary "d2ViL3VzZXJzL2Rhc2hib2FyZC9jb250YWN0X2luZm9ybWF0aW9uLmNzcw==": web/users/dashboard/contact_information-baf76e8aa22c24ba66e13025503aa9a9.css
@@ -4153,10 +4147,10 @@
   d2ViL3VzZXJzL2Rhc2hib2FyZC9jb250YWN0X2luZm9ybWF0aW9uL2luZGV4
   LmNzcw==
 : web/users/dashboard/contact_information-baf76e8aa22c24ba66e13025503aa9a9.css
-!binary "d2ViL3VzZXJzL2Rhc2hib2FyZC9jcmVhdGVfYnV0dG9uLmNzcw==": web/users/dashboard/create_button-be7a337dd2b365fd0004fee03952eda3.css
-!binary "d2ViL3VzZXJzL2Rhc2hib2FyZC9jcmVhdGVfYnV0dG9uL2luZGV4LmNzcw==": web/users/dashboard/create_button-be7a337dd2b365fd0004fee03952eda3.css
-!binary "d2ViL3VzZXJzL2Rhc2hib2FyZC9wYXltZW50LmNzcw==": web/users/dashboard/payment-294b10cbfbc5c69930e32ea9121dbde8.css
-!binary "d2ViL3VzZXJzL2Rhc2hib2FyZC9wYXltZW50L2luZGV4LmNzcw==": web/users/dashboard/payment-294b10cbfbc5c69930e32ea9121dbde8.css
+!binary "d2ViL3VzZXJzL2Rhc2hib2FyZC9jcmVhdGVfYnV0dG9uLmNzcw==": web/users/dashboard/create_button-ceb7c709808234861e88bcf97d1f46bc.css
+!binary "d2ViL3VzZXJzL2Rhc2hib2FyZC9jcmVhdGVfYnV0dG9uL2luZGV4LmNzcw==": web/users/dashboard/create_button-ceb7c709808234861e88bcf97d1f46bc.css
+!binary "d2ViL3VzZXJzL2Rhc2hib2FyZC9wYXltZW50LmNzcw==": web/users/dashboard/payment-f99eb8d1ffcf990a572f63a3662e1235.css
+!binary "d2ViL3VzZXJzL2Rhc2hib2FyZC9wYXltZW50L2luZGV4LmNzcw==": web/users/dashboard/payment-f99eb8d1ffcf990a572f63a3662e1235.css
 !binary "d2ViL3VzZXJzL2Rhc2hib2FyZC90YWJzLmNzcw==": web/users/dashboard/tabs-2c2f3eb9e22f55257bd8e93eb386f5f1.css
 !binary "d2ViL3VzZXJzL2Rhc2hib2FyZC90YWJzL2luZGV4LmNzcw==": web/users/dashboard/tabs-2c2f3eb9e22f55257bd8e93eb386f5f1.css
 !binary "d2ViL3VzZXJzL2Rhc2hib2FyZC90YXguY3Nz": web/users/dashboard/tax-541dba968f268ae3bec6db08e0cbfa95.css

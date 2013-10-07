@@ -1,74 +1,39 @@
-.payment_heading {
-  color: #375363;
-  display: block;
-  font-size: 16px;
-  margin: 15px 0 10px; }
-
-.payment_method {
-  color: #375363; }
-  .payment_method .pending {
-    background-color: #fffeea;
-    border: 1px solid #ebe3c0;
-    padding: 10px;
-    margin-top: 5px; }
-    .payment_method .pending p {
-      display: block;
-      font-size: 15px;
-      font-weight: bold;
-      padding-bottom: 5px; }
-  .payment_method span {
-    display: inline;
-    margin-right: 5px;
-    font-size: 14px; }
-  .payment_method select {
-    border: 1px solid #CDD9DF;
-    color: #252525;
+.payment_method .payment_input {
+  margin-top: 15px; }
+  .payment_method .payment_input .choices-group li {
     display: inline-block;
-    margin-bottom: 6px;
-    padding: 5px 10px;
-    -webkit-border-radius: 2px;
-    border-radius: 2px; }
-    .payment_method select#client_payment_processor, .payment_method select#client_payment_information_attributes_payment_type {
-      width: 140px; }
-  .payment_method .instruct_text,
-  .payment_method .payment_input {
-    background-color: #EFEFEF; }
-  .payment_method .instruct_text {
-    padding: 12px 0 10px 0;
-    font-size: 15px;
-    font-weight: bold;
-    margin-top: 10px;
-    text-align: center; }
-  .payment_method .basic_info {
-    padding: 0 0 4px 0; }
-    .payment_method .basic_info.client_paypal {
-      margin-top: 10px; }
-      .payment_method .basic_info.client_paypal .note {
-        width: 410px;
-        padding-left: 214px;
-        font-size: 11px;
-        color: #000;
-        display: block;
-        padding-bottom: 6px; }
-    .payment_method .basic_info p {
-      padding: 10px 20px;
-      font-size: 13px; }
-  .payment_method #client_payment_information_attributes_bank_account_type_input .choices-group {
-    float: left;
-    margin: -19px 0 6px 210px; }
-    .payment_method #client_payment_information_attributes_bank_account_type_input .choices-group li {
-      display: inline-block;
-      position: relative; }
-      .payment_method #client_payment_information_attributes_bank_account_type_input .choices-group li label {
-        font-size: 14px;
-        font-weight: normal;
-        margin: 0;
-        text-align: left;
-        width: auto; }
-        .payment_method #client_payment_information_attributes_bank_account_type_input .choices-group li label input {
-          margin-top: 2px;
-          width: 20px; }
-      .payment_method #client_payment_information_attributes_bank_account_type_input .choices-group li:nth-child(1) {
-        width: 90px; }
-      .payment_method #client_payment_information_attributes_bank_account_type_input .choices-group li:nth-child(2) {
-        width: 75px; }
+    position: relative; }
+    .payment_method .payment_input .choices-group li label {
+      font-size: 16px;
+      font-weight: bold;
+      margin: 0 0 8px 0;
+      text-align: left;
+      width: auto; }
+      .payment_method .payment_input .choices-group li label input {
+        margin-top: 1px;
+        width: 20px; }
+    .payment_method .payment_input .choices-group li:nth-child(1) {
+      width: 150px; }
+    .payment_method .payment_input .choices-group li:nth-child(2) {
+      width: 95px; }
+    .payment_method .payment_input .choices-group li:nth-child(3) {
+      width: 90px; }
+.payment_method #client_payment_information_attributes_bank_account_type_input .choices-group {
+  float: left;
+  margin: -19px 0 6px 210px; }
+  .payment_method #client_payment_information_attributes_bank_account_type_input .choices-group li {
+    display: inline-block;
+    position: relative; }
+    .payment_method #client_payment_information_attributes_bank_account_type_input .choices-group li label {
+      font-size: 14px;
+      font-weight: normal;
+      margin: 0;
+      text-align: left;
+      width: auto; }
+      .payment_method #client_payment_information_attributes_bank_account_type_input .choices-group li label input {
+        margin-top: 2px;
+        width: 20px; }
+    .payment_method #client_payment_information_attributes_bank_account_type_input .choices-group li:nth-child(1) {
+      width: 90px; }
+    .payment_method #client_payment_information_attributes_bank_account_type_input .choices-group li:nth-child(2) {
+      width: 75px; }
