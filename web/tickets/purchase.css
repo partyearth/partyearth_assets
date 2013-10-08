@@ -680,6 +680,11 @@ abbr.req {
       border-bottom: 1px solid #adc0c9;
       padding-bottom: 10px;
       position: relative; }
+      .ticket_form .payment_info .credit_card_info .cc_image_paypal {
+        background: url(/assets/tickets/cc_client_paypal.png) no-repeat;
+        height: 40px;
+        margin: 0 0 3px 197px;
+        width: 322px; }
       .ticket_form .payment_info .credit_card_info .cc_image {
         height: 40px;
         margin: 0 0 3px 197px;
