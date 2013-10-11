@@ -100,9 +100,10 @@ form .submit_cont {
       font-weight: bold;
       padding-bottom: 5px; }
   .payment_method span {
-    display: inline;
+    display: inline-block;
     margin-right: 5px;
-    font-size: 14px; }
+    font-size: 14px;
+    width: 130px; }
   .payment_method select {
     border: 1px solid #CDD9DF;
     color: #252525;
@@ -116,29 +117,35 @@ form .submit_cont {
   .payment_method .instruct_text,
   .payment_method .payment_input {
     background-color: #EFEFEF; }
+    .payment_method .instruct_text label,
+    .payment_method .payment_input label {
+      width: 130px; }
   .payment_method .instruct_text {
-    padding: 12px 0 10px 0;
+    padding: 12px 0 12px 20px;
     font-size: 15px;
-    font-weight: bold;
     margin-top: 10px;
-    text-align: center; }
+    text-align: left; }
   .payment_method .basic_info {
     padding: 0 0 4px 0; }
+    .payment_method .basic_info label {
+      width: 130px; }
     .payment_method .basic_info.client_paypal {
       margin-top: 10px; }
+      .payment_method .basic_info.client_paypal #client_primary_paypal_email {
+        width: 350px; }
       .payment_method .basic_info.client_paypal .note {
-        width: 410px;
-        padding-left: 214px;
+        width: 375px;
+        padding-left: 144px;
         font-size: 11px;
         color: #000;
         display: block;
         padding-bottom: 6px; }
     .payment_method .basic_info p {
-      padding: 10px 20px;
+      padding: 10px 10px;
       font-size: 13px; }
   .payment_method #client_payment_information_attributes_bank_account_type_input .choices-group {
     float: left;
-    margin: -19px 0 6px 210px; }
+    margin: -19px 0 6px 140px; }
     .payment_method #client_payment_information_attributes_bank_account_type_input .choices-group li {
       display: inline-block;
       position: relative; }
@@ -149,6 +156,7 @@ form .submit_cont {
         text-align: left;
         width: auto; }
         .payment_method #client_payment_information_attributes_bank_account_type_input .choices-group li label input {
+          border: none !important;
           margin-top: 2px;
           width: 20px; }
       .payment_method #client_payment_information_attributes_bank_account_type_input .choices-group li:nth-child(1) {
