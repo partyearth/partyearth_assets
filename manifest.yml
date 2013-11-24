@@ -2778,6 +2778,8 @@
 !binary "YWRtaW4vY291bnRyaWVzL25ldy9pbmRleC5qcw==": admin/countries/new-299f76164b650f2ac1f03733d838fa25.js
 !binary "YWRtaW4vZGl2ZXJ0ZXJzL2luZGV4X2FjdGlvbi5qcw==": admin/diverters/index_action-ba42f8f28aa2301e6bd612e7d38d33ac.js
 !binary "YWRtaW4vZGl2ZXJ0ZXJzX2FjdGlvbi5qcw==": admin/diverters/index_action-ba42f8f28aa2301e6bd612e7d38d33ac.js
+!binary "YWRtaW4vZG9uYXRpb25zL2VkaXQuanM=": admin/donations/edit-e144144e30f5700bc735ec82418a763c.js
+!binary "YWRtaW4vZG9uYXRpb25zL2VkaXQvaW5kZXguanM=": admin/donations/edit-e144144e30f5700bc735ec82418a763c.js
 !binary "YWRtaW4vZW5kcG9pbnRfcGFnZXMvaW5kZXhfYWN0aW9uLmpz": admin/endpoint_pages/index_action-fb334ea24a6b7165af3ced9f76a389df.js
 !binary "YWRtaW4vZW5kcG9pbnRfcGFnZXNfYWN0aW9uLmpz": admin/endpoint_pages/index_action-fb334ea24a6b7165af3ced9f76a389df.js
 !binary "YWRtaW4vZW5kcG9pbnRzL2VkaXQuanM=": admin/endpoints/edit-7a5028fbfb2a12908cf5ef1498e4f1bf.js
