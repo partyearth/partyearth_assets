@@ -222,7 +222,6 @@ select {
         vertical-align: top; }
         .ticket_form .form_cont .ticket_table td.ticket_type {
           font-family: "Roboto", "Arimo", Arial, sans-serif !important;
-          font-size: 16px;
           padding-top: 14px;
           padding-right: 20px;
           text-align: left; }
@@ -422,3 +421,63 @@ select {
         font-size: 13px;
         margin-left: 5px;
         padding: 4px 10px 3px; }
+
+/*--------------*/
+/* Additional Styles */
+/*--------------*/
+.no_logo.ticket_form .powered_by {
+  display: none !important; }
+
+.rwi.ticket_form {
+  background-color: #050000 !important;
+  border: 1px solid #1482ff !important;
+  min-width: 598px !important;
+  max-width: 598px !important;
+  padding: 0 !important;
+  width: 598px !important; }
+  .rwi.ticket_form .title_cont {
+    display: block;
+    background-color: #1482ff;
+    padding: 10px 10px 10px; }
+    .rwi.ticket_form .title_cont .title {
+      color: #000000 !important;
+      margin-bottom: 0 !important; }
+    .rwi.ticket_form .title_cont .powered_by {
+      display: none !important; }
+  .rwi.ticket_form .table_promo_cont {
+    padding-bottom: 10px; }
+    .rwi.ticket_form .table_promo_cont .promo_cont {
+      width: 200px !important; }
+      .rwi.ticket_form .table_promo_cont .promo_cont .promo_fields .promo_input {
+        width: 120px !important; }
+    .rwi.ticket_form .table_promo_cont .submit_button .btn_cont .btn_processing {
+      background-color: #1266c6 !important;
+      border-bottom: 1px solid #000000 !important; }
+  .rwi.ticket_form .form_cont {
+    padding: 10px 10px 0 !important; }
+    .rwi.ticket_form .form_cont .ticket_table th {
+      background-color: #050000 !important;
+      color: #ffffff !important; }
+      .rwi.ticket_form .form_cont .ticket_table th.ticket_type {
+        padding-left: 0 !important; }
+      .rwi.ticket_form .form_cont .ticket_table th.show_time {
+        width: 155px !important; }
+      .rwi.ticket_form .form_cont .ticket_table th.price {
+        width: 80px !important; }
+      .rwi.ticket_form .form_cont .ticket_table th.ages {
+        display: none !important; }
+      .rwi.ticket_form .form_cont .ticket_table th.quantity {
+        padding-right: 0 !important; }
+    .rwi.ticket_form .form_cont .ticket_table td {
+      color: #ffffff !important; }
+      .rwi.ticket_form .form_cont .ticket_table td.ages {
+        display: none !important; }
+      .rwi.ticket_form .form_cont .ticket_table td.ticket_type .more_info_cont p {
+        color: #ffffff !important; }
+      .rwi.ticket_form .form_cont .ticket_table td.ticket_type .more_info_cont .link span {
+        color: #ffffff !important; }
+        .rwi.ticket_form .form_cont .ticket_table td.ticket_type .more_info_cont .link span:hover {
+          color: #ffffff; }
+      .rwi.ticket_form .form_cont .ticket_table td.quantity select {
+        border: 1px solid #ffffff !important;
+        background-color: #ffffff !important; }

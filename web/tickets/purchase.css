@@ -78,11 +78,9 @@ h2 {
     font-size: 12px;
     -webkit-text-size-adjust: none !important; }
   h2.additional {
-    border-top: 1px solid #ADC0C9;
-    border-bottom: none;
-    margin-bottom: 0; }
-    h2.additional span .required {
-      color: #0099FF; }
+    border-bottom: none !important;
+    border-top: 1px dashed #adc0c9;
+    margin-bottom: 0 !important; }
   h2.buyer {
     border-bottom: 1px dashed #ADC0C9; }
 
@@ -98,6 +96,12 @@ h3 {
     -webkit-text-size-adjust: none !important; }
     h3 span .required {
       color: #0099FF; }
+  h3.additional {
+    border-top: 1px dashed #adc0c9;
+    text-transform: uppercase !important;
+    padding-top: 10px !important;
+    font-size: 16px !important;
+    font-weight: bold !important; }
 
 h4 {
   color: #375363;
@@ -277,7 +281,7 @@ h4 {
       .ticket_form .form_cont .ticket_table.purchase_table th.fee {
         width: 75px; }
       .ticket_form .form_cont .ticket_table.purchase_table th.total {
-        width: 95px;
+        width: 100px;
         padding-right: 5px;
         text-align: right; }
       .ticket_form .form_cont .ticket_table.purchase_table td {
@@ -619,7 +623,8 @@ abbr.req {
     /* Credit Card Info */
     /* Billing Info */
     /* Email Info */
-    /* Submit Button & Errors */ }
+    /* Submit Button & Errors */
+    /* Additional Attendee Info */ }
     .ticket_form .payment_info .inline_errors {
       color: red; }
     .ticket_form .payment_info .msg_cont {
@@ -867,6 +872,8 @@ abbr.req {
       color: red;
       font-size: 11px;
       padding-left: 5px; }
+    .ticket_form .payment_info .dashed {
+      border-bottom: 1px dashed #8ea8b5 !important; }
   .ticket_form .list_spacing {
     margin: 3px 0 10px; }
     .ticket_form .list_spacing label span {
