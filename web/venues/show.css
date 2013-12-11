@@ -2042,6 +2042,14 @@
     .outside .social_media_btns .animation_wrapper .button_view {
       float: right;
       width: 108px; }
+      .outside .social_media_btns .animation_wrapper .button_view div .st_facebook_hcount, .outside .social_media_btns .animation_wrapper .button_view div .st_fblike_hcount, .outside .social_media_btns .animation_wrapper .button_view div .st_twitter_hcount, .outside .social_media_btns .animation_wrapper .button_view div .st_plusone_hcount, .outside .social_media_btns .animation_wrapper .button_view div .st_sharethis_hcount {
+        display: inline-block;
+        line-height: 0 !important;
+        margin-bottom: 10px; }
+      .outside .social_media_btns .animation_wrapper .button_view div .st_facebook_hcount {
+        margin-top: 7px; }
+      .outside .social_media_btns .animation_wrapper .button_view div .st_sharethis_hcount {
+        margin-bottom: 0; }
       .outside .social_media_btns .animation_wrapper .button_view .share_title {
         margin: 2px 3px 8px;
         color: #8EA8B5;
@@ -2058,6 +2066,9 @@
   overflow: hidden; }
 
 /* Width of buttons when inside */
+.inside .button_view .st_fblike_hcount {
+  display: none; }
+
 .inside .gig-button-container-facebook {
   position: relative;
   top: -1px; }
@@ -3446,8 +3457,7 @@
       margin-right: 27px; }
     #review_details ul li {
       margin: 0 0 5px;
-      padding: 8px 0 0;
-      border-top: 1px dashed #d7d7d7; }
+      padding: 8px 0 0; }
   #review_details h3 {
     color: #333;
     font-size: 17px;
@@ -3625,7 +3635,6 @@
   color: #666;
   font-size: 12px; }
 #comments #gigya_header {
-  border-bottom: 1px dashed #adc0c9;
   /* Need to style Gigya review button separate from our button because of limitations in Gigya's HTML structure */ }
   #comments #gigya_header .large_gray_btn {
     float: right;
@@ -3733,8 +3742,7 @@
       filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=#2388f5, endColorStr=#2388f5); }
 #comments #comments_footer {
   margin: 9px 0;
-  padding: 9px 0 0;
-  border-top: 1px dashed #adc0c9; }
+  padding: 9px 0 0; }
   #comments #comments_footer .large_gray_btn {
     float: right;
     height: 33px;

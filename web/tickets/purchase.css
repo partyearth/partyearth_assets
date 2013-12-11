@@ -87,7 +87,8 @@ h2 {
 h3 {
   border-top: 1px dashed #adc0c9;
   text-transform: uppercase;
-  padding-top: 10px; }
+  padding-top: 10px;
+  margin: 0 !important; }
   h3 span {
     color: #c2c2c2;
     font-size: 12px;
@@ -99,7 +100,7 @@ h3 {
   h3.additional {
     border-top: 1px dashed #adc0c9;
     text-transform: uppercase !important;
-    padding-top: 10px !important;
+    padding: 10px 0 !important;
     font-size: 16px !important;
     font-weight: bold !important; }
 
@@ -107,6 +108,10 @@ h4 {
   color: #375363;
   font-size: 16px;
   margin: 10px 0 8px; }
+  h4.additional {
+    margin: 0 !important;
+    padding: 10px 0 !important;
+    border-top: 1px dashed #adc0c9; }
 
 /*-------------*/
 /* Form Styles */
@@ -875,7 +880,12 @@ abbr.req {
     .ticket_form .payment_info .dashed {
       border-bottom: 1px dashed #8ea8b5 !important; }
   .ticket_form .list_spacing {
-    margin: 3px 0 10px; }
+    border-top: 1px dashed #8ea8b5 !important;
+    padding: 3px 0 10px 0; }
+    .ticket_form .list_spacing.additional_questions {
+      border-bottom: none !important; }
+    .ticket_form .list_spacing:last-child {
+      border-bottom: none !important; }
     .ticket_form .list_spacing label span {
       color: #0099FF; }
     .ticket_form .list_spacing .gender {

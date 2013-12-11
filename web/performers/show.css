@@ -1178,6 +1178,14 @@
     .outside .social_media_btns .animation_wrapper .button_view {
       float: right;
       width: 108px; }
+      .outside .social_media_btns .animation_wrapper .button_view div .st_facebook_hcount, .outside .social_media_btns .animation_wrapper .button_view div .st_fblike_hcount, .outside .social_media_btns .animation_wrapper .button_view div .st_twitter_hcount, .outside .social_media_btns .animation_wrapper .button_view div .st_plusone_hcount, .outside .social_media_btns .animation_wrapper .button_view div .st_sharethis_hcount {
+        display: inline-block;
+        line-height: 0 !important;
+        margin-bottom: 10px; }
+      .outside .social_media_btns .animation_wrapper .button_view div .st_facebook_hcount {
+        margin-top: 7px; }
+      .outside .social_media_btns .animation_wrapper .button_view div .st_sharethis_hcount {
+        margin-bottom: 0; }
       .outside .social_media_btns .animation_wrapper .button_view .share_title {
         margin: 2px 3px 8px;
         color: #8EA8B5;
@@ -1194,6 +1202,9 @@
   overflow: hidden; }
 
 /* Width of buttons when inside */
+.inside .button_view .st_fblike_hcount {
+  display: none; }
+
 .inside .gig-button-container-facebook {
   position: relative;
   top: -1px; }
