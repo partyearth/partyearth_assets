@@ -2067,7 +2067,7 @@
 
 /* Width of buttons when inside */
 .inside .button_view .st_fblike_hcount {
-  display: none; }
+  /*display: none; NOTE(SZ): per DM's request */ }
 
 .inside .gig-button-container-facebook {
   position: relative;
