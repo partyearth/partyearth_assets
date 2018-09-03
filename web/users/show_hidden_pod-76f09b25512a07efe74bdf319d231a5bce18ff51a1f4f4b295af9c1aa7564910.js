@@ -1,0 +1,1 @@
+(function(){pe.ShowHiddenPod=function(){function t(t,i,n){this.container=t,this.left_container=i,this.right_container=n,0<this.container.length&&this.show_if_possible()}return t.prototype.show_if_possible=function(){var t;if(t=this.left_container.height(),this.right_container.height()+this.container.outerHeight()<t)return this.container.show()},t}()}).call(this);

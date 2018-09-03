@@ -1,0 +1,1 @@
+$(document).ready(function(){$(".Endpoint").change(function(){var n=$(this).val(),o=[window.location.href,n,"toggle"].join("/");$.post(o,function(){alert("Saved - "+n)})}),pe.init_page_framework()});

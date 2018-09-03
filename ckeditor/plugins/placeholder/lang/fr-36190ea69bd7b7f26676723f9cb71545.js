@@ -1,1 +1,0 @@
-CKEDITOR.plugins.setLang("placeholder","fr",{placeholder:{title:"Propri\u00e9t\u00e9s de l'Espace r\u00e9serv\u00e9",toolbar:"Cr\u00e9er l'Espace r\u00e9serv\u00e9",text:"Texte de l'Espace r\u00e9serv\u00e9",edit:"Modifier l'Espace r\u00e9serv\u00e9",textMissing:"L'Espace r\u00e9serv\u00e9 doit contenir du texte."}});

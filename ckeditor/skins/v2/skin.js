@@ -1,3 +1,0 @@
-CKEDITOR.skins.add("v2",function(){return{editor:{css:["editor.css"]},dialog:{css:["dialog.css"]},separator:{canGroup:!1},templates:{css:["templates.css"]},margins:[0,14,18,14]}}());
-(function(){function c(){CKEDITOR.dialog.on("resize",function(a){a=a.data;var c=a.width,d=a.height,e=a.dialog,f=e.parts.contents;"v2"==a.skin&&(f.setStyles({width:c+"px",height:d+"px"}),CKEDITOR.env.ie&&!CKEDITOR.env.ie9Compat&&setTimeout(function(){var a=e.parts.dialog.getChild([0,0,0]),b=a.getChild(0),c=b.getSize("width");d+=b.getChild(0).getSize("height")+1;b=a.getChild(2);b.setSize("width",c);b=a.getChild(7);b.setSize("width",c-28);b=a.getChild(4);b.setSize("height",d);b=a.getChild(5);b.setSize("height",
-d)},100))})}CKEDITOR.dialog?c():CKEDITOR.on("dialogPluginReady",c)})();

@@ -1,1 +1,0 @@
-CKEDITOR.plugins.setLang("placeholder","pl",{placeholder:{title:"W\u0142a\u015bciwo\u015bci wype\u0142niacza",toolbar:"Utw\u00f3rz wype\u0142niacz",text:"Tekst wype\u0142nienia",edit:"Edytuj wype\u0142nienie",textMissing:"Wype\u0142nienie musi posiada\u0107 jaki\u015b tekst."}});

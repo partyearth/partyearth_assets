@@ -1,0 +1,1 @@
+(function(){pe.bind_show_trigger=function(n,i){return n.click(function(){return i.show(),!1})},pe.bind_hide_trigger=function(n,i){return n.click(function(){return i.hide(),!1})},pe.bind_toggle_trigger=function(n,i){return n.click(function(){return i.toggle(),!1})}}).call(this);

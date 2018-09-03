@@ -1,0 +1,1 @@
+$(document).ready(function(){var n=$(".StartDate, .EndDate").datepicker({changeMonth:!0,changeYear:!0,onSelect:function(t){var a=$(this).hasClass("StartDate")?"minDate":"maxDate",e=$(this).data("datepicker"),i=$.datepicker.parseDate(e.settings.dateFormat||$.datepicker._defaults.dateFormat,t,e.settings);n.not(this).datepicker("option",a,i)}});pe.init_page_framework()});
